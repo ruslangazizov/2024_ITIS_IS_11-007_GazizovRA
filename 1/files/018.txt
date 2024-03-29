@@ -1,648 +1,211 @@
-Python Insider: Python 3.13.0 alpha 5 is now available
-Python core development news and information.
-Tuesday, March 12, 2024
-Python 3.13.0 alpha 5 is now available
- Python 3.13.0 alpha 5 is now available:
-https://www.python.org/downloads/release/python-3130a5/
-This is an early developer preview of Python 3.13
-Major new features of the 3.13 series, compared to 3.12
-Python 3.13 is still in development. This release, 3.13.0a5, is the fifth of six planned alpha releases.
-Alpha releases are intended to make it easier to test the current 
-state of new features and bug fixes and to test the release process.
-During the alpha phase, features may be added up until the start of 
-the beta phase (2024-05-07) and, if necessary, may be modified or 
-deleted up until the release candidate phase (2024-07-30). Please keep 
-in mind that this is a preview release and its use is not recommended for production environments.
-Many new features for Python 3.13 are still being planned and written. Work continues apace on both the work to remove the Global Interpeter Lock , and to improve Python performance. The most notable changes so far:
-In the interactive interpreter, exception tracebacks are now colorized by default .A preliminary, experimental JIT was added, providing the ground work for significant performance improvements. Docstrings now have their leading indentation stripped , reducing memory use and the size of .pyc files. (Most tools handling docstrings already strip leading indentation.)The dbm module has a new dbm.sqlite3 backend that is used by default when creating new files.PEP 594 (Removing dead batteries from the standard library) scheduled removals of many deprecated modules: aifc, audioop, chunk, cgi, cgitb, crypt, imghdr, mailcap, msilib, nis, nntplib, ossaudiodev, pipes, sndhdr, spwd, sunau, telnetlib, uu, xdrlib, lib2to3.Many other removals  of deprecated classes, functions and methods in various standard library modules.New deprecations , most of which are scheduled for removal from Python 3.15 or 3.16.C API removals and deprecations. (Some removals present in alpha 1 have been reverted in alpha 2, as the removals were deemed too disruptive at this time.)
-(Hey, fellow core developer, if a feature you find important is missing from this list, let Thomas know.)
-The next pre-release of Python 3.13 will be 3.13.0a6, currently scheduled for 2024-04-09.
- More resources
-Online DocumentationPEP 719 , 3.13 Release ScheduleReport bugs at Issues · python/cpython · GitHub.Help fund Python directly (or via GitHub Sponsors), and support the Python community.
- Enjoy the new releases
-Thanks to all of the many volunteers who help make Python Development
- and these releases possible! Please consider supporting our efforts by 
-volunteering yourself or through organization contributions to the 
-Python Software Foundation.Regards from wet and chilly Amsterdam,Your release team,Thomas Wouters Ned Deily Steve Dower Łukasz Langa 
-Posted by
-Thomas Wouters
-at
-8:01 PM
-Email ThisBlogThis!Share to TwitterShare to FacebookShare to Pinterest
-Newer Post
-Older Post
-Home
-Subscribe
-Subscribe to Python Insider via RSS, or Twitter
-Related Links
-python.org
-Python-Dev mailing list
-Python Developer's Guide
-Translations
-Chinese (Simplified)
-Chinese (Traditional)
-French
-German
-Japanese
-Korean
-Portuguese
-Romanian
-Russian
-Spanish
-Python-Dev Blogs
-Eli Bendersky
-The life of an Ollama prompt
-3 weeks ago
-PyPy Status Blog
-PyPy's blog has moved
-3 years ago
-Pumpichank
-Creating Python Snaps
-8 years ago
-Tim Golden
-London Python Dojo December 2014
-9 years ago
-R. David Murray
-Asyncio Implementation Overview
-9 years ago
-The Voidspace Techie Blog
-unittest.mock and mock 1.0 alpha 1
-12 years ago
-Tarek Ziadé
-More privacy please
-12 years ago
-Deep Thoughts by Raymond Hettinger
-Python’s super() considered super!
-12 years ago
-Brett Cannon
-Jesse Noller
-Boredom & Laziness
-Brian Curtin
-Senthil Kumaran
-Blog Archive
-        ▼ 
-      
-2024
-(5)
-        ▼ 
-      
-March
-(2)
-Python 3.10.14, 3.9.19, and 3.8.19 is now available
-Python 3.13.0 alpha 5 is now available
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2023
-(18)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(1)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2022
-(23)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(2)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(3)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(3)
-        ► 
-      
-February
-(1)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2021
-(24)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(1)
-        ► 
-      
-April
-(3)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(4)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2020
-(32)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-September
-(3)
-        ► 
-      
-August
-(3)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(4)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(4)
-        ► 
-      
-March
-(3)
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2019
-(36)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(8)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(3)
-        ► 
-      
-July
-(5)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(2)
-        ► 
-      
-March
-(7)
-        ► 
-      
-February
-(3)
-        ► 
-      
-2018
-(24)
-        ► 
-      
-December
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(3)
-        ► 
-      
-April
-(3)
-        ► 
-      
-March
-(5)
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2017
-(17)
-        ► 
-      
-December
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-September
-(3)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2016
-(18)
-        ► 
-      
-December
-(5)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(2)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(5)
-        ► 
-      
-May
-(1)
-        ► 
-      
-2015
-(14)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(1)
-        ► 
-      
-September
-(3)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(1)
-        ► 
-      
-May
-(2)
-        ► 
-      
-March
-(2)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2014
-(8)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(1)
-        ► 
-      
-May
-(1)
-        ► 
-      
-March
-(3)
-        ► 
-      
-February
-(2)
-        ► 
-      
-2013
-(5)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(1)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(1)
-        ► 
-      
-2012
-(9)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(1)
-        ► 
-      
-March
-(1)
-        ► 
-      
-2011
-(25)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(1)
-        ► 
-      
-May
-(7)
-        ► 
-      
-April
-(7)
-        ► 
-      
-March
-(5)
-Contributors
-A.M. Kuchling
-Alfonso de la Guarda
-Anthony Scopatz
-Antoine P.
-Benjamin Peterson
-Brian Curtin
-Davidmh
-Donald Stufft
-Doug Hellmann
-Ee Durbin
-Ezio Melotti
-Georg Brandl
-Jesse
-Kelsey Hightower
-Larry Hastings
-Mathieu Leduc-Hamel
-Michael Markert
-Mike Driscoll
-Ned Deily
-Pablo Galindo
-Paul Moore
-Philip Jenvey
-Sumana Harihareswara
-Thomas Wouters
-Unknown
-Unknown
-Łukasz Langa
-Éric Araujo
-e
-haypo
-tp
-Copyright
-Python Insider by the Python Core Developers is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.Based on a work at blog.python.org.
-Powered by Blogger.
- 
+Сабскрипты - SwiftBook
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+Документация
+ 
+ 
+Развернуть
+Свернуть
+              
+        Документация		
+		  
+		  
+        
+              
+        Знакомство со Swift		
+		  
+		  
+        
+ О языке Swift
+ Совместимость версий Swift
+ Тур по Swift
+ 
+              
+        Руководство Swift		
+		  
+		  
+        
+ Основы
+ Базовые операторы
+ Строки и символы
+ Типы коллекций
+ Управление потоком
+ Функции
+ Замыкания
+ Перечисления
+ Структуры и классы
+ Свойства
+ Методы
+ Сабскрипты
+ Наследование
+ Инициализация
+ Деинициализация
+ Опциональная последовательность
+ Обработка ошибок
+ Согласованность
+ Приведение типов
+ Вложенные типы
+ Расширения
+ Непрозрачные типы
+ Протоколы
+ Универсальные шаблоны
+ Автоматический подсчет ссылок (ARC)
+ Безопасность хранения
+ Контроль доступа
+ Продвинутые операторы
+ 
+              
+        Справочник языка		
+		  
+		  
+        
+ Лексическая структура
+ Типы
+ Выражения
+ Инструкции
+ Объявления
+ Атрибуты
+ Шаблоны
+ Параметры и аргументы универсального типа
+ Резюме по грамматике
+ 
+ 
+		Сабскрипты		
+        
+Сабскрипты
+Классы, структуры и перечисления могут определять сабскрипты, которые являются сокращенным вариантом доступа к члену коллекции, списка или последовательности. Вы можете использовать сабскрипт для получения или установки нового значения элемента без разделения этих двух методов (получения значения и установкой нового). К примеру, вы можете воспользоваться сабскриптом в экземпляре массива для получения значения элемента someArray[index] или в экземпляре словаря someDictionary[key].
+Вы можете определить несколько сабскриптов для одного типа, при необходимости загружается подходящий сабскрипт, который выбирается в зависимости от типа значения сабскрипта, который вы передаете в сабскрипт. Сабскрипты не ограничены одной размерностью, вы можете определить сабскрипты с множественными вводами параметров для удовлетворения потребностей вашего пользовательского типа.
+Синтаксис сабскрипта
+Сабскрипты позволяют вам запрашивать экземпляры определенного типа, написав одно или несколько значений в квадратных скобках после имени экземпляра. Синтаксис сабскрипта аналогичный синтаксису метода экземпляра и вычисляемому свойству. Вы пишете определения сабскрипта с помощью ключевого слова subscript и указываете один или более входных параметров и возвращаемый тип, точно так же как и в методах экземпляра. В отличии от методов экземпляра, сабскрипты могут быть read-write или read-only. Такое поведение сообщается геттером и сеттером в точности так же как и в вычисляемых свойствах:
+subscript(index: Int) -> Int {
+    get {
+        //возвращает надлежащее значение скрипта
+    }
+    set(newValue) {
+        //проводит надлежащие установки 
+    }
+}
+Тип newValue такой же как и у возвращаемого значения сабскрипта. В случае с вычисляемыми свойствами вы можете не указывать параметр сеттера (newValue). Параметр по умолчанию называется newValue и предоставляется, если не было назначено другого.
+Как и в случае с нередактируемыми (read-only) вычисляемыми свойствами, вы можете опустить слово get для нередактируемых (read-only) сабскриптов:
+subscript(index: Int) -> Int {
+   //возвращает надлежащее значение скрипта
+}
+Пример определения нередактируемого сабскрипта, который определяет структуру TimesTable показать таблицу умножения на n:
+struct TimesTable {
+    let multiplier: Int
+    subscript(index: Int) -> Int {
+        return multiplier * index
+    }
+}
+ 
+let threeTimesTable = TimesTable(multiplier: 3)
+print("шесть умножить на три будет \(threeTimesTable[6])")
+// Выведет "шесть умножить на три будет 18"
+В этом примере новый экземпляр TimesTable создан для отображения таблицы умножения на три. Это определяется переданным ему значением 3 в инициализатор структуры как значение для параметра экземпляра multiplier.
+Вы можете запросить экземпляр threeTimesTable с помощью сабскрипта, как уже сделано в примере выше threeTimesTable[6]. Мы запрашиваем шестую запись в таблице умножения на три, которая возвращает значение 18 или 6 умноженное на 3.
+Заметка
+Таблица умножения на n основана на фиксированном математическом правиле. Присваивание нового значения threeTimesTable[someIndex] не подходит для нашего варианта, значит сабскрипт TimesTable определен как неизменяемый сабскрипт.
+Использование сабскрипта
+Точное значение “сабскрипта” зависит от контекста, в котором он применяется. Обычно сабскрипты используются в качестве сокращенного способа обращения к элементу коллекции, списка или последовательности. Вы свободны применять сабскрипты в необходимой форме для вашего класса или для функциональности структуры.
+К примеру, словарь в языке Swift использует сабскрипт для присваивания или получения значения, которое хранится в экземпляре Dictionary. Вы можете задать значение в словаре, и используя ключ типа ключа словаря в квадратных скобках, присваивая значение типа словаря через сабскрипт:
+var numberOfLegs = ["паук": 8, "муравей": 6, "кошка": 4]
+numberOfLegs["птичка"] = 2
+В примере выше мы объявляем переменную numberOfLegs и инициализируем ее с помощью литерала словаря, который содержит три пары ключ-значение. Тип словаря numberOfLegs выводится как [String: Int]. После того как словарь создан, в этом примере используется сабскриптное присваивание для добавления ключа типа String “птичка“, значения типа Int 2.
+Для более подробного описания работы со словарями обратитесь к разделу Доступ и изменение словаря.
+Заметка
+Тип Dictionary в Swift осуществляет ключ-значение индексирование, как сабскрипт, который получает опциональное значение. Для словаря numberOfLegs, сабскрипт ключ-значение берет и возвращает значение типа Int? или “опциональный Int”. Тип Dictionary использует опциональный тип сабскрипта, чтобы смоделировать факт того, что не каждый ключ может иметь значение, и для того, чтобы была возможность удаления значения для ключа, присваивая ему nil.
+Опции сабскрипта
+Сабскрипты могут принимать любое количество входных параметров, и эти параметры могут быть любого типа. Сабскрипты так же могут возвращать любой тип.
+Как и функции сабскрипты могут принимать различное число параметров и предоставлять исходные значения для этих параметров, как обсуждалось в "Вариативные параметры" и "Значения по умолчанию для параметров". Однако в отличие от функций, сабскрипты не могут использовать сквозные параметры.
+Класс или структура могут обеспечить столько сабскриптных реализаций, сколько нужно, и подходящий сабскрипт, который будет использоваться, будет выведен, основываясь на типе значения или значений, которые содержатся внутри скобок сабскрипта, в том месте, где этот сабскрипт используется. Определение множественных сабскриптов так же известно как перегрузка сабскрипта.
+Сейчас в большинстве случаев сабскрипт принимает один единственный параметр, вы так же можете определить сабскрипт с несколькими параметрами, если этот вариант подходит для вашего типа. Следующий пример определяет структуру Matrix, которая представляет собой двухмерную матрицу значений типа Double. Сабскрипт структуры Matrix принимает два целочисленных параметра.
+struct Matrix {
+    let rows: Int, columns: Int
+    var grid: [Double]
+    init(rows: Int, columns: Int) {
+        self.rows = rows
+        self.columns = columns
+        grid = Array(repeating: 0.0, count: rows * columns)
+    }
+    func indexIsValid(row: Int, column: Int) -> Bool {
+        return row >= 0 && row < rows && column >= 0 && column < columns } 
+    
+    subscript(row: Int, column: Int) -> Double {
+        get {
+            assert(indexIsValid(row: row, column: column), "Index out of range")
+            return grid[(row * columns) + column]
+        }
+        set {
+            assert(indexIsValid(row: row, column: column), "Index out of range")
+            grid[(row * columns) + column] = newValue
+        }
+    }
+}
+Matrix предоставляет инициализатор, который принимает два параметра rows и columns, и создает массив типа Double, который имеет размер rows * columns. Каждой позиции в матрице дается начальное значение 0.0. Чтобы этого достичь, размер массива и начальное значение клетки равное 0.0 передаются в инициализатор массива, который создает и инициализирует новый массив необходимого размера. Это описано подробнее в главе Создание массива с дефолтным значением.
+Вы можете создать новый экземпляр типа Matrix, передав количество рядов и столбцов в его инициализатор:
+var matrix = Matrix(rows: 2, columns: 2)
+Этот пример создает новый экземпляр Matrix, который имеет всего два ряда и два столбца. Массив grid для экземпляра Matrix фактически упрощенный вариант версии матрицы, который читается с левой верхней части в правую нижнюю часть:
+Значения в матрице могут быть установлены через передачу значений ряда и столбца в сабскрипте, разделенных между собой запятой:
+matrix[0, 1] = 1.5
+matrix[1, 0] = 3.2
+Эти два выражения в сеттере сабскрипта устанавливают значения 1.5 для верхней правой позиции (где row равен 0, column равен 1), и значение 3.2 для нижней левой позиции (где row равен 1, а column равен 0 ):
+Геттер и сеттер сабскрипта Matrix оба содержат утверждения для проверки валидности значений row и column. Для помощи утверждениям, Matrix имеет удобный метод под названием indexIsValid(row:column:), который проверяет наличие запрашиваемых row, column в существующей матрице:
+func indexIsValid(row: Int, column: Int) -> Bool {
+  return row >= 0 && row < rows && column >= 0 && column < columns
+}
+Утверждения срабатывают, если вы пытаетесь получить доступ к сабскрипту, который находится за пределами матрицы:
+let someValue = matrix[2, 2]
+//это вызывает утверждение, потому что [2, 2] находится за пределами матрицы
+Сабскрипты типа
+Сабскрипты сущностей, как было сказано выше, являются сабскриптами экземпляров конкретного типа. Вы также можете определить сабскрипты, которые вызываются у самого типа. Сабскриты такого типа называются сабскриптом типа. Вы указываете сабскрипт типа при помощи ключевого слова static перед ключевым словом subscript. Классы могут использовать ключевое слово class вместо static, чтобы позволить подклассам переопределять реализацию родительского класса этого сабскрипта. Пример ниже показывает, как вы можете определить и вызывать сабскрипт типа:
+enum Planet: Int {
+    case mercury = 1, venus, earth, mars, jupiter, saturn, uranus, neptune
+    static subscript(n: Int) -> Planet {
+        return Planet(rawValue: n)!
+    }
+}
+let mars = Planet[4]
+print(mars)
+Если вы нашли ошибку, пожалуйста, выделите фрагмент текста и нажмите Ctrl+Enter.
+Методы
+Наследование
+ 
+SwiftBook Самое крупное сообщество iOS разработчиков на языке Swift
+О нас
+Мы в социальных сетяхYouTubeVKontakteFacebookЧат_Telegram
+instagramПолезноеPodlodka
+Подпишись на новости 
+   Политика конфиденциальности
+Пользовательское соглашение
+Найти:
+  © Акулов И.Б., 2014-2021      
+ 
+Сообщить об опечатке
+Текст, который будет отправлен нашим редакторам:
+Ваш комментарий (необязательно):
+Отправить
+Отмена

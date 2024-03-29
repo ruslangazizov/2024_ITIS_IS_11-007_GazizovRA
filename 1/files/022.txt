@@ -1,209 +1,293 @@
-Welcome to wxPython! | wxPython
-Skip to main content
-Toggle navigation
-About 
-Overview
-Screenshots
-License
-History
-News
-Downloads
-Documentation 
-API Reference
-wxPython Wiki
-wxPython Bookshelf
-Presentations
-Full Changelog
-Project README
-Support 
-Issue Tracker
-Discussion Site
-Mail Lists
-IRC Channel
-StackOverflow
-How to report issues
-Developers 
-Contributor Guide
-Full Changelog
-wxPython-dev mail list
-Docs built daily
-Buildbot
-Blog 
-wxForty-Two Blog
-About 42
-Archive
-Tags
+Обработка ошибок - SwiftBook
  
-Welcome to wxPython!
-This website is all about wxPython, the cross-platform GUI toolkit for the
-Python language. With wxPython software developers can create truly native user
-interfaces for their Python applications, that run with little or no
-modifications on Windows, Macs and Linux or other unix-like systems.
-Learn more
-Latest News
-wxPython 4.2.1 Released
-                        The wxPython Team
-                    
-2023-06-07 00:00
-"Size matters not." (Yoda)
-wxPython 4.2.1  is now available at PyPI, with some additional files at Extras
-The biggest change in this release is the addition of Mac and Windows builds for both Python 3.11 and Python 3.12 (beta). In addition there have been some updates in the distro versions used for the Linux wheels available at the extras archive, including some with Python 3.11 builds.
-wxPython 4.2.0 Released
-                        The wxPython Team
-                    
-2022-08-07 00:00
-"Rumors of my death are only slightly exaggerated"
-wxPython 4.2.0 is now available at
-PyPI, with some additional files at
-Extras
-New and improved in this release:
-Yes, it's been a VERY long time since the last release. I'm not dead, just on
-  an extended break. It took me a while to get up to speed on a new day job, and
-  then there was a seemingly perpetual crunch-mode to get the product through a
-  couple release cycles. I can't say that things are fully back to normal yet,
-  but at least I now know what I'm doing. Mostly. <wink>
-This release is built using the wxWidgets' 3.2.0 release tag.
-Tweaked the build scripts a bit to ensure that on non-Windows platforms that
-  the compiler and flags used by default match those used by wxWidgets, (with
-  the flags needed by Python added on.) The compiler commands can be overridden
-  by setting CC and CXX in the environment if needed. #1247
-On Windows the build code that locates and sets up the environment for the
-  MSVC compiler no longer relies on distutils code, but is now using more modern
-  code in setuptools instead. This enables much more compiler flexibility and
-  wxPython should now be buildable with Visual Studio versions from 2015 through
-  2022+.
-Switched to SIP 6 for generating the wrapper code. Rather than a standalone
-  executable, SIP is now a Python package that needs to be installed in the
-  Python environment used for the build. A dependency has been added to
-  requirements/devel.txt to help ensure that the correct version is installed.
-  The wx.siplib module code is no longer kept in the repository, but is
-  generated during the build.
-Changed wx.App.InitLocale to just do locale.setlocale(locale.LC_ALL, "C")
-  to undo what Python (3.8+ on Windows) does. This lets wxWidgets start with an
-  uninitialized locale as it expects. #1637
-Fixed issues related to time_t always being treated as a 32-bit value on
-  Windows. #1910
-Added wx.FullScreenEvent and wx.EVT_FULLSCREEN.
-The legacy, OSX-Only wx.webkit module has been removed.
-Fix building wxPython with Python 3.10 on Windows #2016
-Fix PyProgress on Windows by avoiding invalid sizer flags #1985
-Fix 'More Grid Features' in demo
-Many of the widgets which deal with bitmaps have been changed to use a
-  wx.BitmapBundle object instead of wx.Bitmap. This is the mechanism which
-  wxWidgets has implemented for adapting to things like Hi-DPI displays.
-  Essentially you can load a list of bitmaps of different sizes (but similar or
-  scaled content) into a wx.BitmapBundle, and the widget can choose one based on
-  the display density. Existing code should be able to continue to pass a
-  wx.Bitmap to the widget constructor or to methods like SetBitmap, as wxPython
-  will automatically convert from a wx.Bitmap to a wx.BitmapBundle containing
-  the single image provided.
-Add support for new wx.grid event, EVT_GRID_ROW_MOVE
-Fix path issues in wx.lib.agw.multidirdialog #2120
-Fix eventwatcher checkAll(check=False) #2139
-Fix exception on grid labels click #1841
-Fix a large number of Python 3.10 issues.  In Python 3.10, a change was
-  implemented where extension functions that take integer arguments will no
-  longer silently accept non-integer arguments (e.g., floats) that can only be
-  converted to integers with a loss of precision.  Fixed most of these issues
-  in the pure-Python classes and demos by explicitly converting the parameters
-  to int before passing them to wxWidgets.  There is loss of precision, but
-  this was happening before (automatically) anyway as most wxWidgets
-  DeviceContext functions operate using integers.
-Fix PlotCanvas point label drawing on Linux
-Fix GetPopupMenu override for wx.adv.TaskbarIcon #2067
-Fix invisible text in lib.plot with dark theme
-Add new button type: ShowHideToggleButton.  Like a ToggleButton, but with an
-  associated "menu", a Window or Sizer which is shown/hidden when button is
-  toggled. Includes methods for setting active and inactive fore/background
-  colours.
-Fix unbinding of events in FIFO order #2027
-Enable customization of layout of pdfviewer button panel
-Support newer PyMuPDF versions #2205
-IntCtrl: Change default colour to wx.NullColour so the default color will be
-  used. #2215
-Change PopupControl to respect all the parameters passed to its init method.
-  #2218
-Fixes in flatmenu.py Remove and DestroyItem #2219
-Using the MinGW toolchain to build wxPython has been simplified a bit. #2211
-wxPython 4.1.1 Released
-                        The wxPython Team
-                    
-2020-11-21 00:00
-"An attitude of gratitude"
-wxPython 4.1.1 is now available at
-PyPI, with some additional files at
-Extras
-New and improved in this release:
-This should have been mentioned in the notes for the last release, but alas,
-  it wandered away and got lost. wxWidgets is now validating the flags passed
-  when adding items to a sizer, to ensure that they are the correct flags for
-  the type of the sizer. If the given flags do not make sense, for example using
-  horizontal alignment flags in a horizontal box sizer, then a wxAssertionError
-  error is raised.
-Fixed missing binder for EVT_STC_AUTOCOMP_SELECTION_CHANGE. #1613
-DataViewModel.HasValue can be overridden and will inform the DataViewCtrl
-  whether or not an item and column has data. If HasValue returns False, then
-  GetValue for that item/col will not be called. This allows a distinction
-  between a truly empty cell, and one that has a value even if it is an empty
-  string. #1600
-Added flag that allows blocking of item dragging in the UltimateListControl
-  class. PR#1620
-Add the column index to notification events in UltimateListControl PR#1630
-Added orientation parameter to UltimateListControl.GetScrollPos. PR#1632
-wx.lib.agw.aui.AuiNotebook RemovePage() now hides the removed page, so it
-  needs to be shown again if it is reused in another place. PR#1668
-Fixed issue that could modify bytes objects under Python. PR#1680
-Added wx.lib.agw.aui.EVT_AUI_PANE_CLOSE event which is sent when a AUI (the
-  agw version) Pane has been closed (after it has been closed, not when it is
-  about to be closed, which is when EVT_AUI_PANE_CLOSE is sent.) PR#1628
-Exposed the wx.DC methods GetGraphicsContext and SetGraphicsContext. Depending
-  on the platform and the type of the DC, there may be a wx.GraphicsContext used
-  for the implementation of the DC. If so, the GetGraphicsContext method enables
-  access to it. Be sure to check that the return value is not None before trying
-  to use it.
-Simplified the implementation of the wx.App.InitLocale method. See the
-  MigrationGuide for more information.
-Added wx.lib.agw.aui.AUI_DOCKART_HINT_WINDOW_BORDER_COLOUR constant
-  so the hint window border color can be themed as well.
-The wx.lib.mixins.listCtrl.CheckListCtrlMixin is now obsolete because
-  wx.ListCtrl has new functionality which does pretty much the same thing. In
-  fact there is some overlap in method names which may trip up some use cases.
-  It is advised to drop the use of CheckListCtrlMixin and just use the
-  wx.ListBox functionality. You will need to call EnableCheckBoxes to turn it on,
-  and you may need to change some event handlers or overloaded methods.
-wx.html2.WebView is now able to use Microsoft's Edge browser component as its
-  backend renderer. This should improve the capabilities of the WebView widget
-  on Windows, and be more consistent with the WebViews on the other platforms,
-  compared to the original IE 11 backend. Using this backed requires that a
-  new-ish version of the Edge browser is installed on the end user's computer.
-Added the wx.Image.ConvertToRegion method. This lets you create a wx.Region
-  from an image and a specified color or the mask if the image has one. This
-  was done to workaround a bug in wxMac, but it seems worthwhile enough to keep
-  it around even after the bug was fixed.
-Added the missing context manager methods for wx.LogNull. #1842
-Refactored ScrolledThumbnail out of agw.ThumbnailCtrl so as to be usable
-  outside of ThumbnailCtrl.
-More news
-Quick Links
- Hello World
- API Reference
- wxPython Wiki
- Report a Bug
- GitHub Repository
- Discuss wxPython
-More wx Goodies
- wxWidgets
- wxFormBuilder
- wxGlade
-Friends of wxPython
- wxWidgets Blog
- Mouse vs. Python
- Find My Electric
-Follow
- News feed
- Blog feed
- Tags
- Archive
-            Contents © 2023  The wxPython Team - Powered by Nikola, Python and Magic. 
-            
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+Документация
+ 
+ 
+Развернуть
+Свернуть
+              
+        Документация		
+		  
+		  
         
+              
+        Знакомство со Swift		
+		  
+		  
+        
+ О языке Swift
+ Совместимость версий Swift
+ Тур по Swift
+ 
+              
+        Руководство Swift		
+		  
+		  
+        
+ Основы
+ Базовые операторы
+ Строки и символы
+ Типы коллекций
+ Управление потоком
+ Функции
+ Замыкания
+ Перечисления
+ Структуры и классы
+ Свойства
+ Методы
+ Сабскрипты
+ Наследование
+ Инициализация
+ Деинициализация
+ Опциональная последовательность
+ Обработка ошибок
+ Согласованность
+ Приведение типов
+ Вложенные типы
+ Расширения
+ Непрозрачные типы
+ Протоколы
+ Универсальные шаблоны
+ Автоматический подсчет ссылок (ARC)
+ Безопасность хранения
+ Контроль доступа
+ Продвинутые операторы
+ 
+              
+        Справочник языка		
+		  
+		  
+        
+ Лексическая структура
+ Типы
+ Выражения
+ Инструкции
+ Объявления
+ Атрибуты
+ Шаблоны
+ Параметры и аргументы универсального типа
+ Резюме по грамматике
+ 
+ 
+		Обработка ошибок		
+        
+Обработка ошибок
+Обработка ошибок - это процесс реагирования на возникновение ошибок и восстановление после появления ошибок в программе. Swift предоставляет первоклассную поддержку при генерации, вылавливании и переносе ошибок, устранении ошибок во время выполнения программы.
+Некоторые операции не всегда гарантируют полное выполнение или конечный результат. Опционалы используются для обозначения отсутствия значения, но когда случается сбой, важно понять, что вызвало сбой, для того, чтобы соответствующим образом изменить код.
+В качестве примера, рассмотрим задачу считывания и обработки данных из файла на диске. Задача может провалиться по нескольким причинам, в том числе: файл не существует по указанному пути, или файл не имеет разрешение на чтение, или файл не закодирован в необходимом формате. Отличительные особенности этих различных ситуаций позволяют программе решать некоторые ошибки самостоятельно и сообщать пользователю какие ошибки она не может решить сама.
+Заметка
+Обработка ошибок в Swift перекликается с шаблонами обработки ошибок, которые используются в классе NSError в Cocoa и Objective-C. Для более подробной информации читайте Error Handling и Using Swift With Cocoa and Objective-C (Swift 4).
+Отображение и генерация ошибок
+В Swift ошибки отображаются значениями типов, которые соответствуют протоколу Error. Этот пустой протокол является индикатором того, что это перечисление может быть использовано для обработки ошибок.
+Перечисления в Swift особенно хорошо подходят для группировки схожих между собой условий возникновения ошибок и соответствующих им значений, что позволяет получить дополнительную информацию о природе самой ошибки. Например, вот как отображаются условия ошибки работы торгового автомата внутри игры:
+enum VendingMachineError: Error {
+    case invalidSelection
+    case insufficientFunds(coinsNeeded: Int)
+    case outOfStock
+}
+Генерация ошибки позволяет указать, что произошло что-то неожиданное и обычное выполнение программы не может продолжаться. Для того чтобы «сгенерировать» ошибку, вы используете инструкцию throw. Например, следующий код генерирует ошибку, указывая, что пять дополнительных монет нужны торговому автомату:
+throw VendingMachineError.insufficientFunds(coinsNeeded: 5)
+Обработка ошибок
+Когда генерируется ошибка, то фрагмент кода, окружающий ошибку, должен быть ответственным за ее обработку: например, он должен исправить ее, или испробовать альтернативный подход, или просто информировать пользователя о неудачном исполнении кода.
+В Swift существует четыре способа обработки ошибок. Вы можете передать (propagate) ошибку из функции в код, который вызывает саму эту функцию, обработать ошибку, используя инструкцию do-catch, обработать ошибку, как значение опционала, или можно поставить утверждение, что ошибка в данном случае исключена. Каждый вариант будет рассмотрен далее.
+Когда функция генерирует ошибку, последовательность выполнения вашей программы меняется, поэтому важно сразу обнаружить место в коде, которое может генерировать ошибки. Для того, чтобы выяснить где именно это происходит, напишите ключевое слово try - или варианты try? или try!- до куска кода, вызывающего функцию, метод или инициализатор, который может генерировать ошибку. Эти ключевые слова описываются в следующем параграфе.
+Заметка
+Обработка ошибок в Swift напоминает обработку исключений (exceptions) в других языках, с использованием ключевых слов try, catch и throw. В отличие от обработки исключений во многих языках, в том числе и в Objective-C- обработка ошибок в Swift не включает разворачивание стека вызовов, то есть процесса, который может быть дорогим в вычислительном отношении. Таким образом, производительные характеристики инструкции throw сопоставимы с характеристиками оператора return.
+Передача ошибки с помощью генерирующей функции
+Чтобы указать, что функция, метод или инициализатор могут генерировать ошибку, вам нужно написать ключевое слово throws в реализации функции после ее параметров. Функция, отмеченная throws называется генерирующей функцией. Если у функции установлен возвращаемый тип, то вы пишете ключевое слово throws перед стрелкой возврата (->).
+func canThrowErrors() throws -> String
+func cannotThrowErrors() -> String
+Генерирующая функция передает ошибки, которые возникают внутри нее в область вызова этой функции.
+Заметка
+Только генерирующая ошибку функция может передавать ошибки. Любые ошибки, сгенерированные внутри non-throwing функции, должны быть обработаны внутри самой функции.
+В приведенном ниже примере VendingMachine класс имеет vend(itemNamed: ) метод, который генерирует соответствующую VendingMachineError, если запрошенный элемент недоступен, его нет в наличии, или имеет стоимость, превышающую текущий депозит:
+struct Item {
+    var price: Int
+    var count: Int
+}
+ 
+class VendingMachine {
+    var inventory = [
+        "Candy Bar": Item(price: 12, count: 7),
+        "Chips": Item(price: 10, count: 4),
+        "Pretzels": Item(price: 7, count: 11)
+    ]
+    var coinsDeposited = 0
+    
+    func vend(itemNamed name: String) throws {
+        guard let item = inventory[name] else {
+            throw VendingMachineError.invalidSelection
+        }
+        
+        guard item.count > 0 else {
+            throw VendingMachineError.outOfStock
+        }
+        
+        guard item.price <= coinsDeposited else {
+            throw VendingMachineError.insufficientFunds(coinsNeeded: item.price - coinsDeposited)
+        }
+        
+        coinsDeposited -= item.price
+        
+        var newItem = item
+        newItem.count -= 1
+        inventory[name] = newItem
+        
+        print("Dispensing \(name)")
+    }
+}
+Реализация vend(itemNamed: ) метода использует оператор guard для раннего выхода из метода и генерации соответствующих ошибок, если какое-либо требование для приобретения закуски не будет выполнено. Потому что инструкция throw мгновенно изменяет управление программой, и выбранная позиция будет куплена, только если все эти требования будут выполнены.
+Поскольку vend(itemNamed: ) метод передает все ошибки, которые он генерирует, вызывающему его коду, то они должны быть обработаны напрямую, используя оператор do-catch, try? или try!, или должны быть переданы дальше. Например, buyFavoriteSnack(person:vendingMachine: ) в примере ниже - это тоже генерирующая функция, и любые ошибки, которые генерирует метод vend(itemNamed: ), будут переноситься до точки, где будет вызываться функция buyFavoriteSnack(person:vendingMachine: ).
+let favoriteSnacks = [
+    "Alice": "Chips",
+    "Bob": "Licorice",
+    "Eve": "Pretzels"
+]
+func buyFavoriteSnack(person: String, vendingMachine: VendingMachine) throws {
+    let snackName = favoriteSnacks[person] ?? "Candy Bar"
+    try vendingMachine.vend(itemNamed: snackName)
+}
+В этом примере, функция buyFavoriteSnack(person:vendingMachine: ) подбирает любимые закуски данного человека и пытается их купить, вызывая vend(itemNamed: ) метод. Поскольку метод vend(itemNamed: ) может сгенерировать ошибку, он вызывается с ключевым словом try перед ним.
+Генерирующие ошибку инициализаторы могут распространять ошибки таким же образом, как генерирующие ошибку функции. Например, инициализатор структуры PurchasedSnack в списке ниже вызывает генерирующую ошибку функции как часть процесса инициализации, и он обрабатывает любые ошибки, с которыми сталкивается, путем распространения их до вызывающего его объекта.
+struct PurchasedSnack {
+    let name: String
+    init(name: String, vendingMachine: VendingMachine) throws {
+        try vendingMachine.vend(itemNamed: name)
+        self.name = name
+    }
+}
+Обработка ошибок с использованием do-catch
+Используйте инструкцию do-catch для обработки ошибок, запуская блок кода. Если выдается ошибка в коде условия do, она соотносится с условием catch для определения того, кто именно сможет обработать ошибку.
+Вот общий вид условия do-catch:
+do {
+    try выражение
+    выражение
+} catch шаблон 1 {
+    выражение
+} catch шаблон 2  where условие {
+    выражение
+} catch шаблон 3, шаблон 4 where условие {
+    выражение
+} catch {
+    выражение
+}
+Вы пишете шаблон после ключевого слова catch, чтобы указать какие ошибки могут обрабатываться данным пунктом этого обработчика. Если условие catch не имеет своего шаблона, то оно подходит под любые ошибки и связывает ошибки к локальной константе error. Более подробно о соответствии шаблону см. Шаблоны.
+Например, следующий код обрабатывает все три случая в перечислении VendingMachineError, но все другие ошибки должны быть обработаны окружающей областью:
+var vendingMachine = VendingMachine()
+vendingMachine.coinsDeposited = 8
+do {
+    try buyFavoriteSnack(person: "Alice", vendingMachine: vendingMachine)
+} catch VendingMachineError.invalidSelection {
+    print("Ошибка выбора.")
+} catch VendingMachineError.outOfStock {
+    print("Нет в наличии.")
+} catch VendingMachineError.insufficientFunds(let coinsNeeded) {
+    print("Недостаточно средств. Пожалуйста вставьте еще \(coinsNeeded) монетки.")
+} catch {
+    print("Неожиданная ошибка: \(error).")
+}
+// Выведет "Недостаточно средств. Пожалуйста вставьте еще 2 монетки.
+В приведенном выше примере, buyFavoriteSnack(person:vendingMachine: ) функция вызывается в выражении try, потому что она может сгенерировать ошибку. Если генерируется ошибка, выполнение немедленно переносится в условия catch, которые принимают решение о продолжении передачи ошибки. Если ошибка не генерируется, остальные операторы do выполняются.
+В условии catch не нужно обрабатывать все возможные ошибки, которые может вызвать код в условии do. Если ни одно из условий catch не обрабатывает ошибку, ошибка распространяется на окружающую область. Однако распространяемая ошибка должна обрабатываться некоторой внешней областью. В функции nonthrowing условие включения do-catch должно обрабатывать ошибку. В функции throwing либо включающая условие do-catch, либо вызывающая сторона должна обрабатывать ошибку. Если ошибка распространяется на область верхнего уровня без обработки, вы получите ошибку исполнения.
+Например, приведенный ниже пример можно записать так, чтобы любая ошибка, которая не является VendingMachineError, вместо этого захватывалась вызывающей функцией:
+func nourish(with item: String) throws {
+    do {
+        try vendingMachine.vend(itemNamed: item)
+    } catch is VendingMachineError {
+        print("Некорректный вывод, нет в наличии или недостаточно денег.")
+    }
+}
+do {
+    try nourish(with: "Beet-Flavored Chips")
+} catch {
+    print("Unexpected non-vending-machine-related error: \(error)")
+}
+// Выведет "Некорректный вывод, нет в наличии или недостаточно денег."
+В nourish(with: ), если vend(itemNamed : ) выдает ошибку, которая является одним из кейсов перечисления VendingMachineError, nourish(with: ) обрабатывает ошибку, печатая сообщение. В противном случае, nourish(with: ) распространяет ошибку на свое место вызова. Ошибка затем попадает в общее условие catch.
+Преобразование ошибок в опциональные значения
+Вы можете использовать try? для обработки ошибки, преобразовав ее в опциональное значение. Если ошибка генерируется при условии try?, то значение выражения вычисляется как nil. Например, в следующем коде x и y имеют одинаковые значения и поведение:
+func someThrowingFunction() throws -> Int {
+    // ...
+}
+ 
+let x = try? someThrowingFunction()
+ 
+let y: Int?
+do {
+    y = try someThrowingFunction()
+} catch {
+    y = nil
+}
+Если someThrowingFunction() генерирует ошибку, значение x и y равно nil. В противном случае значение x и y - это возвращаемое значение функции. Обратите внимание, что x и y являются опциональными, независимо от того какой тип возвращает функция someThrowingFunction().
+Использование try? позволяет написать краткий код обработки ошибок, если вы хотите обрабатывать все ошибки таким же образом. Например, следующий код использует несколько попыток для извлечения данных или возвращает nil, если попытки неудачные.
+func fetchData() -> Data? {
+    if let data = try? fetchDataFromDisk() { return data }
+    if let data = try? fetchDataFromServer() { return data }
+    return nil
+}
+Запрет на передачу ошибок
+Иногда вы знаете, что функции throw или методы не сгенерируют ошибку во время исполнения. В этих случаях, вы можете написать try! перед выражением для запрета передачи ошибки и завернуть вызов в утверждение того, что ошибка точно не будет сгенерирована. Если ошибка на самом деле сгенерирована, вы получите сообщение об ошибке исполнения.
+Например, следующий код использует loadImage(atPath: ) функцию, которая загружает ресурс изображения по заданному пути или генерирует ошибку, если изображение не может быть загружено. В этом случае, поскольку изображение идет вместе с приложением, сообщение об ошибке не будет сгенерировано во время выполнения, поэтому целесообразно отключить передачу ошибки.
+let photo = try! loadImage(atPath: "./Resources/John Appleseed.jpg")
+Установка действий по очистке (Cleanup)
+Вы используете оператор defer для выполнения набора инструкций перед тем как исполнение кода оставит текущий блок. Это позволяет сделать любую необходимую очистку, которая должна быть выполнена, независимо от того, как именно это произойдет — либо он покинет из-за сгенерированной ошибки или из-за оператора, такого как break или return. Например, вы можете использовать defer, чтобы удостовериться, что файл дескрипторов закрыт и выделенная память вручную освобождена.
+Оператор defer откладывает выполнение, пока не происходит выход из текущей области. Этот оператор состоит из ключевого слова defer и выражений, которые должны быть выполнены позже. Отложенные выражения могут не содержать кода, изменяющего контроль исполнения изнутри наружу, при помощи таких операторов как break или return, или просто генерирующего ошибку. Отложенные действия выполняются в обратном порядке, как они указаны, то есть, код в первом операторе defer выполняется после кода второго, и так далее.
+func processFile(filename: String) throws {
+    if exists(filename) {
+        let file = open(filename)
+        defer {
+            close(file)
+        }
+        while let line = try file.readline() {
+            // работаем с файлом.
+        }
+        // close(file) вызывается здесь, в конце зоны видимости.
+    }
+}
+Приведенный выше пример использует оператор defer, чтобы удостовериться, что функция open(_: ) имеет соответствующий вызов и для close(_: ).
+Заметка
+Вы можете использовать оператор defer, даже если не используете кода обработки ошибок.
+Если вы нашли ошибку, пожалуйста, выделите фрагмент текста и нажмите Ctrl+Enter.
+Опциональная последовательность
+Согласованность
+ 
+SwiftBook Самое крупное сообщество iOS разработчиков на языке Swift
+О нас
+Мы в социальных сетяхYouTubeVKontakteFacebookЧат_Telegram
+instagramПолезноеPodlodka
+Подпишись на новости 
+   Политика конфиденциальности
+Пользовательское соглашение
+Найти:
+  © Акулов И.Б., 2014-2021      
+ 
+Сообщить об опечатке
+Текст, который будет отправлен нашим редакторам:
+Ваш комментарий (необязательно):
+Отправить
+Отмена

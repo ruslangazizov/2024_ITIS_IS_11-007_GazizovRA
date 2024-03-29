@@ -1,277 +1,173 @@
- 
-Welcome to Python.org
-Notice: While JavaScript is not essential for this website, your interaction with the content will be limited. Please turn JavaScript on for the full experience. 
-Skip to content
-▼ Close
-                
-Python
-PSF
-Docs
-PyPI
-Jobs
-Community
-▲ The Python Network
-                
-Donate
-≡ Menu
-Search This Site
-                                    GO
-                                
-A A
-Smaller
-Larger
-Reset
-Socialize
-LinkedIn
-Mastodon
-Chat on IRC
-Twitter
-About
-Applications
-Quotes
-Getting Started
-Help
-Python Brochure
-Downloads
-All releases
-Source code
-Windows
-macOS
-Other Platforms
-License
-Alternative Implementations
-Documentation
-Docs
-Audio/Visual Talks
-Beginner's Guide
-Developer's Guide
-FAQ
-Non-English Docs
-PEP Index
-Python Books
-Python Essays
-Community
-Diversity
-Mailing Lists
-IRC
-Forums
-PSF Annual Impact Report
-Python Conferences
-Special Interest Groups
-Python Logo
-Python Wiki
-Code of Conduct
-Community Awards
-Get Involved
-Shared Stories
-Success Stories
-Arts
-Business
-Education
-Engineering
-Government
-Scientific
-Software Development
-News
-Python News
-PSF Newsletter
-PSF News
-PyCon US News
-News from the Community
-Events
-Python Events
-User Group Events
-Python Events Archive
-User Group Events Archive
-Submit an Event
- 
->_
-                        Launch Interactive Shell
-# Python 3: Fibonacci series up to n
->>> def fib(n):
->>>     a, b = 0, 1
->>>     while a < n:
->>>         print(a, end=' ')
->>>         a, b = b, a+b
->>>     print()
->>> fib(1000)
-0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987
-Functions Defined
-The core of extensible programming is defining functions. Python allows mandatory and optional arguments, keyword arguments, and even arbitrary argument lists. More about defining functions in Python 3
-# Python 3: List comprehensions
->>> fruits = ['Banana', 'Apple', 'Lime']
->>> loud_fruits = [fruit.upper() for fruit in fruits]
->>> print(loud_fruits)
-['BANANA', 'APPLE', 'LIME']
-# List and the enumerate function
->>> list(enumerate(fruits))
-[(0, 'Banana'), (1, 'Apple'), (2, 'Lime')]
-Compound Data Types
-Lists (known as arrays in other languages) are one of the compound data types that Python understands. Lists can be indexed, sliced and manipulated with other built-in functions. More about lists in Python 3
-# Python 3: Simple arithmetic
->>> 1 / 2
-0.5
->>> 2 ** 3
-8
->>> 17 / 3  # classic division returns a float
-5.666666666666667
->>> 17 // 3  # floor division
-5
-Intuitive Interpretation
-Calculations are simple with Python, and expression syntax is straightforward: the operators +, -, * and / work as expected; parentheses () can be used for grouping. More about simple math functions in Python 3.
-# For loop on a list
->>> numbers = [2, 4, 6, 8]
->>> product = 1
->>> for number in numbers:
-...    product = product * number
-... 
->>> print('The product is:', product)
-The product is: 384
-All the Flow You’d Expect
-Python knows the usual control flow statements that other languages speak — if, for, while and range — with some of its own twists, of course. More control flow tools in Python 3
-# Simple output (with Unicode)
->>> print("Hello, I'm Python!")
-Hello, I'm Python!
-# Input, assignment
->>> name = input('What is your name?\n')
-What is your name?
-Python
->>> print(f'Hi, {name}.')
-Hi, Python.
-Quick & Easy to Learn
-Experienced programmers in any other language can pick up Python very quickly, and beginners find the clean syntax and indentation structure easy to learn. Whet your appetite with our Python 3 overview.
-Python is a programming language that lets you work quickly and integrate systems more effectively. Learn More
-Get Started
-Whether you're new to programming or an experienced developer, it's easy to learn and use Python.
-Start with our Beginner’s Guide
-Download
-Python source code and installers are available for download for all versions!
-Latest: Python 3.12.2
-Docs
-Documentation for Python's standard library, along with tutorials and guides, are available online.
-docs.python.org
-Jobs
-Looking for work or have a Python related position that you're trying to hire for? Our relaunched community-run job board is the place to go.
-jobs.python.org
-Latest News
-More
-2024-03-20
-Announcing a PyPI Support Specialist
-2024-03-20
-Python 3.10.14, 3.9.19, and 3.8.19 is now available
-2024-03-13
-Python 3.13.0 alpha 5 is now available
-2024-02-29
-White House recommends use of memory-safe languages like Python
-2024-02-15
-Python 3.13.0 alpha 4 is now available
-Upcoming Events
-More
-2024-03-29
-PyLadies Amsterdam: Fine-tuning text-to-image diffusion models for personalization and subject-driven generation
-2024-04-02
-PyCon Lithuania 2024
-2024-04-03
-April Helsinki Python meetup - Wolt x Aiven
-2024-04-06
-Django Girls Ecuador 2024
-2024-04-17
-Data Ethics
-Success Stories
-More
-When an Open Data standard is created and promoted, it’s important to think why - what change is this trying to drive? What will people do with this data that they couldn’t do before?
-Saving the world with Open Data and Python by James Baster
-Use Python for…
-More
-Web Development:
-        Django, Pyramid, Bottle, Tornado, Flask, web2py
-GUI Development:
-        tkInter, PyGObject, PyQt, PySide, Kivy, wxPython, DearPyGui
-Scientific and Numeric:
-        
-SciPy, Pandas, IPython
-Software Development:
-        Buildbot, Trac, Roundup
-System Administration:
-        Ansible, Salt, OpenStack, xonsh
->>> Python Enhancement Proposals (PEPs): The future of Python is discussed here.
- RSS
->>> Python Software Foundation
-The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers. Learn more 
-Become a Member
-Donate to the PSF
-▲ Back to Top
-About
-Applications
-Quotes
-Getting Started
-Help
-Python Brochure
-Downloads
-All releases
-Source code
-Windows
-macOS
-Other Platforms
-License
-Alternative Implementations
-Documentation
-Docs
-Audio/Visual Talks
-Beginner's Guide
-Developer's Guide
-FAQ
-Non-English Docs
-PEP Index
-Python Books
-Python Essays
-Community
-Diversity
-Mailing Lists
-IRC
-Forums
-PSF Annual Impact Report
-Python Conferences
-Special Interest Groups
-Python Logo
-Python Wiki
-Code of Conduct
-Community Awards
-Get Involved
-Shared Stories
-Success Stories
-Arts
-Business
-Education
-Engineering
-Government
-Scientific
-Software Development
-News
-Python News
-PSF Newsletter
-PSF News
-PyCon US News
-News from the Community
-Events
-Python Events
-User Group Events
-Python Events Archive
-User Group Events Archive
-Submit an Event
-Contributing
-Developer's Guide
-Issue Tracker
-python-dev list
-Core Mentorship
-Report a Security Issue
-▲ Back to Top
- 
-Help & General Contact
-Diversity Initiatives
-Submit Website Bug
-Status 
-Copyright ©2001-2024.
-                             Python Software Foundation
-                             Legal Statements
-                             Privacy Policy
+SwiftBook
+https://swiftbook.ru
+	Обучение программированию на Swift
+Mon, 13 Jun 2022 11:20:26 +0300
+ru-RU
+	hourly	
+	1	
+https://wordpress.org/?v=5.2.5
+Custom TabBar программно
+https://swiftbook.ru/post/koposhilka/custom-tabbar/
+				https://swiftbook.ru/post/koposhilka/custom-tabbar/#respond
+Mon, 13 Jun 2022 11:19:56 +0000
+swiftbook
+Копошилка
+https://swiftbook.ru/?p=32854
+<p>Всем привет! В этом видео мы посмотрим, как можно программно создавать кастомный таб бар при помощи CAShapeLayer. Поехали! ﻿ Ссылка на проект</p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/custom-tabbar/">Custom TabBar программно</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+<p>Всем привет!</p>
+<p>В этом видео мы посмотрим, как можно программно создавать кастомный таб бар при помощи CAShapeLayer.</p>
+<p>Поехали!</p>
+<p><iframe title="YouTube video player" src="https://www.youtube.com/embed/n91fDwkrwds" width="880" height="495" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></p>
+<p><a href="https://github.com/IvanAkulov/iOS-Demos/blob/master/163.%20iOS%2015%20Xcode%2013%20CustomTabBarApp-main.zip"> Ссылка на проект</a></p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/custom-tabbar/">Custom TabBar программно</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+https://swiftbook.ru/post/koposhilka/custom-tabbar/feed/
+0
+Фреймворк Lottie в SwiftUI
+https://swiftbook.ru/post/koposhilka/lottie-in-swiftui/
+				https://swiftbook.ru/post/koposhilka/lottie-in-swiftui/#respond
+Mon, 06 Jun 2022 17:24:10 +0000
+swiftbook
+Копошилка
+https://swiftbook.ru/?p=32795
+<p>Всем привет! В данном видео познакомимся с фреймворком Lottie и его применением в SwiftUI. Используя хостинг, мы научимся отображать и настраивать Lottie анимации. Поехали! ﻿ Ссылка на проект</p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/lottie-in-swiftui/">Фреймворк Lottie в SwiftUI</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+<p>Всем привет!</p>
+<p>В данном видео познакомимся с фреймворком Lottie и его применением в SwiftUI. Используя хостинг, мы научимся отображать и настраивать Lottie анимации.</p>
+<p>Поехали!</p>
+<p><iframe title="YouTube video player" src="https://www.youtube.com/embed/ObQhnlqUPL0" width="880" height="495" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></p>
+<p><a href="https://github.com/IvanAkulov/iOS-Demos/commit/8e2dad80d71cd939dc437e04b309ff7c8d34e2f5">Ссылка на проект</a></p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/lottie-in-swiftui/">Фреймворк Lottie в SwiftUI</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+https://swiftbook.ru/post/koposhilka/lottie-in-swiftui/feed/
+0
+ARC в замыканиях
+https://swiftbook.ru/post/koposhilka/arc-in-clousers/
+				https://swiftbook.ru/post/koposhilka/arc-in-clousers/#respond
+Mon, 30 May 2022 08:44:53 +0000
+swiftbook
+Копошилка
+https://swiftbook.ru/?p=32747
+<p>Всем привет! В этом видео мы разберём работу ARC (Automatic Reference Counting) в замыканиях, а также посмотрим, как можно избежать цикла сильных ссылок. Поехали! ﻿ Ссылка на проект</p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/arc-in-clousers/">ARC в замыканиях</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+<p>Всем привет!</p>
+<p>В этом видео мы разберём работу ARC (Automatic Reference Counting) в замыканиях, а также посмотрим, как можно избежать цикла сильных ссылок.</p>
+<p>Поехали!</p>
+<p><iframe title="YouTube video player" src="https://www.youtube.com/embed/9kk4ZWwN598" width="880" height="495" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></p>
+<p><a href="https://github.com/IvanAkulov/iOS-Demos/blob/master/161.%20iOS%2015%20Xcode%2013%20arc_closures.playground.zip">Ссылка на проект</a></p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/arc-in-clousers/">ARC в замыканиях</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+https://swiftbook.ru/post/koposhilka/arc-in-clousers/feed/
+0
+Понятие ARC (Automatic Reference Counting)
+https://swiftbook.ru/post/koposhilka/automatic-reference-counting_main-information/
+				https://swiftbook.ru/post/koposhilka/automatic-reference-counting_main-information/#respond
+Mon, 23 May 2022 08:30:42 +0000
+swiftbook
+Копошилка
+https://swiftbook.ru/?p=32689
+<p>Всем привет! В этом видео мы поговорим про ARC (Automatic Reference Counting): что это такое и где применяется. Разберём работу ARC на примере, а также коснёмся темы цикла сильных ссылок. Поехали! ﻿</p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/automatic-reference-counting_main-information/">Понятие ARC (Automatic Reference Counting)</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+<p>Всем привет!</p>
+<p>В этом видео мы поговорим про ARC (Automatic Reference Counting): что это такое и где применяется. Разберём работу ARC на примере, а также коснёмся темы цикла сильных ссылок.</p>
+<p>Поехали!</p>
+<p><iframe title="YouTube video player" src="https://www.youtube.com/embed/0leVGyPplZw" width="880" height="495" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/automatic-reference-counting_main-information/">Понятие ARC (Automatic Reference Counting)</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+https://swiftbook.ru/post/koposhilka/automatic-reference-counting_main-information/feed/
+0
+Создание ScrollView программно
+https://swiftbook.ru/post/koposhilka/scrollview/
+				https://swiftbook.ru/post/koposhilka/scrollview/#respond
+Mon, 16 May 2022 16:06:36 +0000
+swiftbook
+Копошилка
+https://swiftbook.ru/?p=32326
+<p>Всем привет! Сегодня мы научимся создавать ScrollView программно, а также вспомним, как создавать проекты без Storyboard. Поехали! ﻿ Конечный проект</p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/scrollview/">Создание ScrollView программно</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+<p>Всем привет!</p>
+<p>Сегодня мы научимся создавать ScrollView программно, а также вспомним, как создавать проекты без Storyboard.</p>
+<p>Поехали!</p>
+<p><iframe title="YouTube video player" src="https://www.youtube.com/embed/SfcycWTK-mA" width="880" height="495" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></p>
+<p><a href="https://github.com/IvanAkulov/iOS-Demos/blob/master/160.%20iOS%2015%20Xcode%2013%20ScrollViewProg.zip">Конечный проект</a></p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/scrollview/">Создание ScrollView программно</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+https://swiftbook.ru/post/koposhilka/scrollview/feed/
+0
+Переключение светлого/темного режима в приложении с UISwitch
+https://swiftbook.ru/post/koposhilka/uiswitch/
+				https://swiftbook.ru/post/koposhilka/uiswitch/#respond
+Tue, 10 May 2022 09:52:48 +0000
+swiftbook
+Копошилка
+https://swiftbook.ru/?p=32292
+<p>Всем привет! В этом видео мы научимся создавать кастомный UISwitch программно и менять с его помощью цветовую палитру приложения со светлой на темную и наоборот. Поехали! ﻿ Ссылка на проект</p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/uiswitch/">Переключение светлого/темного режима в приложении с UISwitch</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+<p>Всем привет!</p>
+<p>В этом видео мы научимся создавать кастомный UISwitch программно и менять с его помощью цветовую палитру приложения со светлой на темную и наоборот.</p>
+<p>Поехали!</p>
+<p style="text-align: left;"><iframe title="YouTube video player" src="https://www.youtube.com/embed/0ToDBFGAass" width="880" height="495" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></p>
+<p><a href="https://github.com/IvanAkulov/iOS-Demos/blob/master/159.%20iOS15%20Xcode%2013%20DarkLightModeApp-main.zip">Ссылка на проект</a></p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/uiswitch/">Переключение светлого/темного режима в приложении с UISwitch</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+https://swiftbook.ru/post/koposhilka/uiswitch/feed/
+0
+Создание ячейки с кнопкой «Like» в TableView
+https://swiftbook.ru/post/koposhilka/like-button-in-tableview/
+				https://swiftbook.ru/post/koposhilka/like-button-in-tableview/#respond
+Tue, 26 Apr 2022 07:33:49 +0000
+swiftbook
+Копошилка
+https://swiftbook.ru/?p=32191
+<p>Всем привет!  В сегодняшнем видео мы научимся создавать ячейку с кнопкой «Like» в форме сердца и сохранять данные об изменениях статуса ячейки в UserDefaults. ﻿ Конечный проект</p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/like-button-in-tableview/">Создание ячейки с кнопкой «Like» в TableView</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+<p class="p1">Всем привет!<span class="Apple-converted-space"> </span></p>
+<p class="p1">В сегодняшнем видео мы научимся создавать ячейку с кнопкой «Like» в форме сердца и сохранять данные об изменениях статуса ячейки в UserDefaults.</p>
+<p style="text-align: center;"><iframe title="YouTube video player" src="https://www.youtube.com/embed/LzoFm9YaP8Y" width="880" height="495" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></p>
+<p><a href="https://github.com/IvanAkulov/iOS-Demos/blob/master/158.%20iOS%2015%20Xcode%2013%20FavoriteButtonCell-main.zip">Конечный проект</a></p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/like-button-in-tableview/">Создание ячейки с кнопкой «Like» в TableView</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+https://swiftbook.ru/post/koposhilka/like-button-in-tableview/feed/
+0
+Подсчёт компонентов текста в Swift. Метод enumerateSubstrings
+https://swiftbook.ru/post/koposhilka/enumeratesubstrings/
+				https://swiftbook.ru/post/koposhilka/enumeratesubstrings/#respond
+Wed, 20 Apr 2022 09:45:40 +0000
+swiftbook
+Копошилка
+https://swiftbook.ru/?p=32126
+<p>Всем привет! В сегодняшнем видео мы поговорим о том, как можно посчитать компоненты текста в Swift при помощи метода enumerateSubstrings(in: , options:_:), содержащегося в framework Foundation. А также реализуем небольшое приложение на основе этого метода. Поехали! ﻿ Ссылка на проект</p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/enumeratesubstrings/">Подсчёт компонентов текста в Swift. Метод enumerateSubstrings</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+<p>Всем привет!</p>
+<p>В сегодняшнем видео мы поговорим о том, как можно посчитать компоненты текста в Swift при помощи метода<span class="inline-pre"> <span class="inline-pre">enumerateSubstrings(in: , options:_:</span>)</span>, содержащегося в framework Foundation. А также реализуем небольшое приложение на основе этого метода.</p>
+<p>Поехали!</p>
+<p style="text-align: center;"><iframe title="YouTube video player" src="https://www.youtube.com/embed/WlIe7AKv-Ag" width="880" height="495" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></p>
+<p><a href="https://github.com/IvanAkulov/iOS-Demos/blob/master/157.%20iOS15%20Xcode%2013%20CountTextComponents-main.zip">Ссылка на проект</a></p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/enumeratesubstrings/">Подсчёт компонентов текста в Swift. Метод enumerateSubstrings</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+https://swiftbook.ru/post/koposhilka/enumeratesubstrings/feed/
+0
+Применение порождающего паттерна проектирования Singletone
+https://swiftbook.ru/post/koposhilka/pattern-singletone/
+				https://swiftbook.ru/post/koposhilka/pattern-singletone/#respond
+Tue, 12 Apr 2022 15:57:12 +0000
+swiftbook
+Копошилка
+https://swiftbook.ru/?p=32058
+<p>В видео рассматривается большинство аспектов понятия Singletone.  После краткого теоретического материала выполнена классическая реализация паттерна, выявлены наиболее популярные ошибки, и предложено их корректное исправление с объяснениями. Видео учит использовать столь неоднозначный паттерн (антипаттерн) так, чтобы не совершать грубых ошибок реализаци и понимать обоснованность и уместность использования подобных решений. ﻿</p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/pattern-singletone/">Применение порождающего паттерна проектирования Singletone</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+<p class="p1">В видео рассматривается большинство аспектов понятия Singletone.<span class="Apple-converted-space"> </span></p>
+<p class="p1">После краткого теоретического материала выполнена классическая реализация паттерна, выявлены наиболее популярные ошибки, и предложено их корректное исправление с объяснениями.</p>
+<p class="p1">Видео учит использовать столь неоднозначный паттерн (антипаттерн) так, чтобы не совершать грубых ошибок реализаци и понимать обоснованность и уместность использования подобных решений.</p>
+<p style="text-align: center;"><iframe title="YouTube video player" src="https://www.youtube.com/embed/2j7r0eBlhBo" width="880" height="495" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/pattern-singletone/">Применение порождающего паттерна проектирования Singletone</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+https://swiftbook.ru/post/koposhilka/pattern-singletone/feed/
+0
+Применение паттерна проектирования Prototype(Clone)
+https://swiftbook.ru/post/koposhilka/prototype-clone/
+				https://swiftbook.ru/post/koposhilka/prototype-clone/#respond
+Wed, 06 Apr 2022 17:18:12 +0000
+swiftbook
+Копошилка
+https://swiftbook.ru/?p=31933
+<p>Всем привет! В сегодняшнем видео рассказывается, что такое Паттерны проектирования, как часто их спрашивают на собеседованиях и в реальных проектах. Реализован проект на базе XCode Playground, где наглядно показано применение паттерна в контексте бизнес-задачи. Поехали! ﻿</p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/prototype-clone/">Применение паттерна проектирования Prototype(Clone)</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+<p>Всем привет! В сегодняшнем видео рассказывается, что такое Паттерны проектирования, как часто их спрашивают на собеседованиях и в реальных проектах. Реализован проект на базе XCode Playground, где наглядно показано применение паттерна в контексте бизнес-задачи.</p>
+<p>Поехали!</p>
+<p style="text-align: center;"><iframe title="YouTube video player" src="https://www.youtube.com/embed/o_38vt1DxMg" width="880" height="495" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe></p>
+<p>Сообщение <a rel="nofollow" href="https://swiftbook.ru/post/koposhilka/prototype-clone/">Применение паттерна проектирования Prototype(Clone)</a> появились сначала на <a rel="nofollow" href="https://swiftbook.ru">SwiftBook</a>.</p>
+https://swiftbook.ru/post/koposhilka/prototype-clone/feed/
+0

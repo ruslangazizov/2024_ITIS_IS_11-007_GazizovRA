@@ -1,879 +1,845 @@
-Python Software Foundation News: Security Developer-in-Residence 2023 Q3 Report
-  News from the Python Software Foundation
-Tuesday, October 17, 2023
-Security Developer-in-Residence 2023 Q3 Report
-It’s been three months since I was first hired as the inaugural Security Developer-in-Residence. I’m quite proud of what I’ve accomplished so far and think it shows the value of investing into the security of Open Source through hiring folks to work full-time in roles like “Developer-in-Residence” programs. I’m thankful to the Alpha-Omega project at OpenSSF for funding this work. Let’s review all of the accomplishments in the first quarter of this role and what to look forward to in the next quarter.If you’d like to follow along with my work more closely you can subscribe to my personal blog where I publish weekly updates about the work I’m doing. If you have questions or thoughts about what I’m working on you can contact me via email: seth@python.org.The Python Software Foundation authorized as a CVE Numbering Authority (CNA)Back in late August the Python Software Foundation received notice that we’d successfully completed onboarding and had been authorized by CVE as a CVE Numbering Authority or “CNA”. The Python Software Foundation CNA scope covers Python and pip, two projects which are fundamental to the rest of the Python ecosystem.Being a CNA means that the PSF can offer staffing to improve the sustainability and responsiveness of coordination and vulnerability disclosure work for covered projects. The PSF CNA also provides rich metadata for CVE records and advisories, including remediation information, so upgrading or patching for vulnerabilities is as straightforward as possible for downstream users of Python.CPython vulnerability advisories available in Open Source Vulnerability databaseThe Python Software Foundation now hosts a vulnerability database on GitHub using the Open Source Vulnerability format (OSV). This database contains vulnerability information for CPython in addition to vulnerabilities getting published to the security-announce@python.org mailing list. The historical vulnerability information was sourced from Victor Stinner’s “python-security” project in order to provide a complete history of vulnerabilities in CPython.By using the OSV format the vulnerabilities can be ingested and processed by the Open Source Vulnerability database which can be searched or queried using an API for machine-consumable vulnerability information. Having vulnerability information in a machine-consumable format enables tools that scan software deployments for vulnerabilities to easily provide accurate and automatically updated reports for CPython. The Open Source Vulnerability database also is more discoverable compared to the CVE database, having a readily available public API to query for vulnerabilities, products, and versions.Python Security Response TeamI have been helping coordinate reports to the Python Security Response Team (PSRT) since joining the role. This work includes reviewing all reports, gathering information from reporters, discussing timelines, and working with core developers to create and release fixes and advisories in a coordinated manner. I also worked with CVE to get CVE IDs assigned on behalf of reports before the PSF was designated as a CNA.I revitalized the security-announce@python.org mailing list to use for future advisory announcements so interested parties can be notified as soon as new vulnerabilities are published (subscribe to the linked list if you’d like to receive these). I coordinated the two recent vulnerabilities affecting CPython (CVE-2023-40217 and CVE-2023-41105) end-to-end from report to published advisory.Doing this coordination work frees up volunteers on the PSRT to focus on determining whether a report is a vulnerability and working on fixes. I’m also working to further reduce the manual coordination work required by PSRT by moving the reporting and triage process to GitHub using GitHub Security Advisories.OpenSSF Day Europe 2023I co-presented a talk titled “We Make Python Safer than Ever” at OpenSSF Day Europe 2023 with PSF Board Member and OpenSSF Community Manager Cheuk Ting-Ho. The slides are available for download and the talk recording is available to watch on YouTube.The talk introduced the Security Developer-in-Residence role, went over the challenges that are unique to securing Open Source and Python ecosystems, described completed and future projects to make the Python ecosystem more secure, and gave a list of items that viewers themselves could do right away to make their own usage of Python more secure.Sigstore signatures for Python release artifactsPython releases include signatures from the Release Managers using the signing tool “Sigstore”. These signatures mean you can be sure that a given release artifact wasn’t tampered with and was created and vetted by the Release Manager for a given Python release.I did an audit of existing signatures and found some discrepancies between the documented identities and providers and what was published for each release. I worked with Release Managers to fix the discrepancies and added extra safeguards to release tooling to ensure signatures are verifiable as documented. I also was able to back-fill the new Sigstore signature format from existing verification materials to make verifying signatures even easier!$ python -m sigstore verify identity \    --bundle Python-3.12.0.tgz.sigstore \    --cert-identity thomas@python.org \    --cert-oidc-issuer https://accounts.google.com \    Python-3.12.0.tgzHaving consistent artifact signatures is important because any discrepancies while consuming these signatures should raise red flags for downstream users and redistributors. This also helps build confidence in the new signing method over existing methods like GPG.Adoption of system trust stores via TruststoreThere are three packaging tools (pip, PDM, and Conda) that are important to the Python ecosystem that are at various stages of adopting “Truststore”, a library that I authored prior to joining the PSF to enable Python projects to use system trust stores for verifying HTTPS certificates instead of relying on certifi for certificates.PDM has started using Truststore by default starting in v2.9.0, Conda plans to release optional support for Truststore in v23.9.0, and pip already has optional support for Truststore since v22.2 but has recently bundled Truststore into pip to remove the need to “bootstrap” into Truststore by pre-installing the library.Using the system trust store is important because any removals to a trust store (like for e-Tugra root certificates) must be propagated to all end systems in order to avoid “monster-in-the-middle” attacks. Further challenging this propagation is that some tools like pip bundle certifi as a means of bootstrapping, which means that you need to upgrade both certifi and pip in order to completely propagate updates to certifi’s certificate bundle.This propagation is better suited to a centralized system like an OS package manager or an automatic centralized authority or IT department keeping the trust bundles up-to-date, which can only happen through using system trust stores.Recently the Python implementation PyPy added support for Python 3.10, thus enabling PyPy to also use Truststore. I subsequently added support and backwards compatibility tests for PyPy to Truststore to ensure all compliant implementations of Python can take advantage of the benefits.Future Projects and Challenges Software Bills-of-Materials for CPythonSoftware Bill-of-Materials (SBOMs) are a hot topic in the world of software security due to new government requirements and improved software and vulnerability management tooling. Many tools generate or consume SBOMs as a universal format for describing software and its components and then matching those components to known vulnerabilities.I've started working on an authoritative SBOM for the CPython project, you can follow along in this GitHub repository if you are interested. This project is early and this will not be the final product or place where this information is published, this is only a place to experiment and get feedback on the approach and outputs before putting the final infrastructure in place.I started with the most straightforward release artifact, the source tarball, and I am planning to tackle the binary installers later since they'll require more research into the release processes. There is a work-in-progress SBOM file for Python-3.12.0.tgz available in the sboms/ directory on the repository.Using vulnerability scanning tools I was able to see not only vulnerabilities in CPython, but crucially in the bundled subcomponents like expat and pip. Without an SBOM the subcomponents to a project like CPython likely wouldn’t get detected properly and thus would be not covered by vulnerability management tooling.The challenges here will be integrating the creation and maintenance of the SBOMs into the CPython development and release processes while minimally disrupting other core developers workflows and avoiding the need to develop and maintain custom tooling for CPython’s specific use-case.Tracking bundled dependencies in Python packagesPython is the premier “glue” language, meaning that Python is often used alongside many other programming languages like C, C++, Rust, Go, and more thanks to Python C API. This benefit also means that Python packages can include projects and source code from sources both within and external to the Python ecosystem.Those projects and source code from outside the Python ecosystem present a problem for vulnerability scanners which typically rely on explicit metadata about projects and dependencies in order to find vulnerabilities in software manifests. Without a clear way to encode this information into packaging metadata it’s impossible to signal these dependencies even if a maintainer of a project wants to do so.C and C++ projects in particular pose additional issues due to their existence outside of a programming language packaging ecosystem like Python with PyPI or JavaScript and NPM. This makes tracking usage and vulnerabilities in these projects difficult and relies on other identification schemes like CPEs or redistributions in other packaging ecosystems like RPM/DEB. Without this information scanners today miss vulnerable components bundled in Python packages, meaning developers won’t know how or when their Python deployments are vulnerable.Solving this issue completely will be a multi-step process, starting with being able to encode information about bundled projects into Python distributions which will require a new packaging PEP. After the standard has been decided, next is getting bundled project metadata automatically captured to avoid needing an entire ecosystem to manually annotate every project. Concurrently to this I’ll collaborate with SBOM generation tooling to add support for consuming the new standard and adding that information to SBOMs generated from Python environments.CPython and pip release process improvementsCPython and pip are two of the most important projects in the Python ecosystem and each have non-trivial release processes. In an effort to increase the integrity of these projects’ releases I’ve researched and documented their release process and with SLSA’s list of historical supply chain attacks against software projects have been making suggestions and implementing improvements.These improvements include reproducibility of built artifacts, extra guarantees on the integrity of inputs, automating the build processes to reduce attack surface area to only services like GitHub Actions and Azure Pipelines instead of individuals’ computers, and making it so that in the event of an attack that it would need to be publicly detectable and traceable.By improving the integrity of these processes I am hoping to prevent disaster scenarios such as malware being injected into Python or pip at the “last mile” before being published to python.org. Injection of malware during build time has happened to multiple other Open Source projects with disastrous results for users. This work means users can be even more confident in their usage of Python and upgrade early and often to take advantage of Python’s latest features.
-Posted by
-Seth Michael Larson
-at
-10/17/2023 02:00:00 PM
-Newer Post
-Older Post
-Home
-Mission
-The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers.
-Python Software Foundation
-Grants Program
-Membership
-Awards
-Meeting Minutes
-PSF Sponsors
-A big thank you to the above PSF sponsors for supporting our mission!
-Tweets by ThePSF 
-Blog Archive
-        ► 
-      
-2024
-(8)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(4)
-        ▼ 
-      
-2023
-(37)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(3)
-        ▼ 
-      
-October
-(3)
-Announcing our new Community Communications Manager!
-September & October Board Votes
-Security Developer-in-Residence 2023 Q3 Report
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(3)
-        ► 
-      
-June
-(5)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2022
-(35)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(2)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(3)
-        ► 
-      
-February
-(1)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2021
-(42)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(2)
-        ► 
-      
-June
-(4)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(5)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(4)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2020
-(51)
-        ► 
-      
-December
-(8)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(4)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(10)
-        ► 
-      
-April
-(11)
-        ► 
-      
-March
-(4)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2019
-(45)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(4)
-        ► 
-      
-August
-(3)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(5)
-        ► 
-      
-May
-(11)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(5)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2018
-(31)
-        ► 
-      
-December
-(5)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(5)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(1)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2017
-(32)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(6)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(2)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(3)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(4)
-        ► 
-      
-2016
-(27)
-        ► 
-      
-December
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(6)
-        ► 
-      
-April
-(4)
-        ► 
-      
-March
-(2)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2015
-(67)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(4)
-        ► 
-      
-April
-(13)
-        ► 
-      
-March
-(14)
-        ► 
-      
-February
-(9)
-        ► 
-      
-January
-(4)
-        ► 
-      
-2014
-(14)
-        ► 
-      
-October
-(1)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(1)
-        ► 
-      
-May
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2013
-(18)
-        ► 
-      
-November
-(1)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(5)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2012
-(21)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(4)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(1)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2011
-(55)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(7)
-        ► 
-      
-September
-(5)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(8)
-        ► 
-      
-April
-(8)
-        ► 
-      
-March
-(13)
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2010
-(35)
-        ► 
-      
-December
-(4)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(8)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(4)
-        ► 
-      
-March
-(2)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2009
-(21)
-        ► 
-      
-December
-(1)
-        ► 
-      
-October
-(1)
-        ► 
-      
-September
-(6)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(1)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(1)
-        ► 
-      
-February
-(1)
-        ► 
-      
-2008
-(23)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(1)
-        ► 
-      
-August
-(3)
-        ► 
-      
-July
-(1)
-        ► 
-      
-May
-(3)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(5)
-        ► 
-      
-February
-(4)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2007
-(26)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(6)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2006
-(39)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(5)
-        ► 
-      
-September
-(4)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(3)
-        ► 
-      
-May
-(7)
-        ► 
-      
-April
-(6)
-        ► 
-      
-March
-(3)
-Powered by Blogger.
+Курсы - SwiftBook
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+Курсы
+ 
+Здесь вы видите все наши курсы. Мы расположили их по уровню сложности. Начните с самого простого и двигайтесь дальше. Так вы не пропустите ничего нужного и важного. Удачи в обучении!
+Swift
+  Курс: Основы программированияСложность: Новичок
+  Курс: Гид по языку программирования SwiftСложность: Новичок
+  Курс: Мои первые приложенияСложность: Новичок
+  Курс: Приложения на основе коллекцийСложность: Новичок
+  Курс: Фреймворк UIKitСложность: Новичок
+  Курс: Приложения на основе UITableViewСложность: Продолжающий
+  Курс: Изучаем основы Core DataСложность: Продолжающий
+  Курс: Изучаем Grand Central DispatchСложность: Продолжающий
+  Курс: Application Programming InterfaceСложность: Продолжающий
+  Курс: Изучаем систему Git. GitHubСложность: Продолжающий
+  Курс: Встроенные покупки (in-app purchases)Сложность: Продолжающий
+  Курс: Firebase - Наше первое приложениеСложность: Продолжающий
+  Курс: Фреймворк для создания игр SpriteKitСложность: Продолжающий
+  Курс по SketchСложность: Продолжающий
+  Курс: Паттерны проектированияСложность: Продолжающий
+  Курс: Изучаем знаменитый паттерн MVCСложность: Продолжающий
+  Курс: Дополненная реальность. ARKitСложность: Продолжающий
+  Курс: Изучаем паттерн MVVMСложность: Продолжающий
+  Курс: УведомленияСложность: Продолжающий
+  Курс: NetworkingСложность: Продолжающий
+  Курс: TDD. Unit TestingСложность: Продолжающий
+  Курс: VK News Feed AppСложность: Продолжающий
+  Курс: Работаем с CloudKit/iCloudСложность: Продолжающий
+  Курс: Алгоритмы И Структуры ДанныхСложность: Продолжающий
+  Курс: Принципы S.O.L.I.D.Сложность: Продолжающий
+  Курс: Apple Music с использованием SwiftUI и UIKitСложность: Продолжающий
+  Курс: Свой мессенджер iChatСложность: Продолжающий
+  Курс: Изучаем класс и подклассы CALayerСложность: Продолжающий
+  Apple WatchСложность: Продолжающий
+Оформить подписку
+    144 Комментария  
+ 
+ Denn написал: 
+Войдите, чтобы ответить 
+Отличные видео! Реально все понятно и в голове укладывается как надо! Спасибо, Иван!
+ 11.05.2018 в 08:31         
+ 
+ Василий написал: 
+Войдите, чтобы ответить 
+Стоит ли ожидать курс по анимации?core animation
+И стоит ли вообще ожидать курсы?
+ 12.05.2018 в 20:26         
+ 
+ Vitaliy Podolskiy написал: 
+Войдите, чтобы ответить 
+Я так понимаю, что тема достаточно интересная и рано или поздно у Ивана дойдут руки для рассмотрения данной темы.
+ 14.05.2018 в 12:56         
+ 
+ Василий написал: 
+надеюсь портал не будет делать большой упор на вебинары
+ 14.05.2018 в 21:36         
+ 
+ admin написал: 
+Войдите, чтобы ответить 
+Добрый день!
+По Core Animation пока не планировали ничего нового. Новый  курс будет опубликован завтра.
+Вебинары — относительно новое для нас направление и мы будем его развивать, но все это будет для общего развития SwiftBook, а не для смены деятельности.
+ 15.05.2018 в 10:59         
+ 
+ Василий написал: 
+Надеюсь курс будет полезным!)
+Могли бы вы как-то информировать подписчиков насчет курсов?
+Материал всегда хочется новый, или можно поддержать выход курсов не подпиской а донатом?)
+ 16.05.2018 в 00:09         
+ 
+ admin написал: 
+Думаю на patreon создать аккаунт, он как раз для этих целей и создан!
+ 16.05.2018 в 15:18         
+ 
+ Дмитрий 22 написал: 
+Войдите, чтобы ответить 
+вебинары это хорошо но можно было бы сделать так же как и курсы появилось 6 000 рублей получи доступ к тем записям вебинария которые ты хочешь изучить
+ 15.05.2018 в 17:10         
+ 
+ Дмитрий 22 написал: 
+Войдите, чтобы ответить 
+просто не всегда есть 6000 рублей а новичку нада выкладывать за год очень много
+ 16.05.2018 в 07:23         
+ 
+ admin написал: 
+Войдите, чтобы ответить 
+Вам не нужно каждый месяц платить по 6000р :)
+Вам достаточно набрать необходимую базу, чтобы развиваться самостоятельно.
+ 16.05.2018 в 15:17         
+ 
+ Михаил написал: 
+Войдите, чтобы ответить 
+Здравствуйте Иван!, Будет ли перевод документации UIkit?
+ 16.05.2018 в 13:09         
+ 
+ admin написал: 
+Войдите, чтобы ответить 
+Добрый день! Будет отдельный курс по UIKit, перевод пока не планировали.
+ 16.05.2018 в 13:10         
+ 
+ nikita написал: 
+ого, когда выйдет этот курс?
+ 17.05.2018 в 17:32         
+ 
+ Dimarious написал: 
+Войдите, чтобы ответить 
+цена на курсы повышается?
+ 16.05.2018 в 15:11         
+ 
+ admin написал: 
+Войдите, чтобы ответить 
+Добрый день!
+Да, с 1 июня.
+ 16.05.2018 в 15:12         
+ 
+ Dimarious написал: 
+эх…
+ 16.05.2018 в 16:06         
+ 
+ yegorswift написал: 
+Войдите, чтобы ответить 
+Привет Иван!
+Спасибо за новый курс!
+Интересует вопрос, какая будет периодичность выхода видео, так как портал развивается, и обороты увеличиваются, не всегда есть время на поиск новой информации в интернете и на амереканских ресурсах, обучаясь на swiftbook я всегда знаю что получу качественный курс, надеюсь новый курс будет выходить раз в месяц, это было бы идеально :)
+ 17.05.2018 в 12:37         
+ 
+ admin написал: 
+Войдите, чтобы ответить 
+У нас команда стала больше, поэтому будем стараться пуще прежнего!
+ 17.05.2018 в 14:03         
+ 
+ yegorswift написал: 
+Будут ли курсы от Алексея?
+ 17.05.2018 в 15:53         
+ 
+ admin написал: 
+Войдите, чтобы ответить 
+да, конечно
+ 17.05.2018 в 17:53         
+ 
+ Дмитрий 22 написал: 
+Войдите, чтобы ответить 
+хотелось бы курсов типа курса мои первые приложения
+ 18.05.2018 в 17:53         
+ 
+ abdula571 написал: 
+Войдите, чтобы ответить 
+поддерживаю
+ 25.06.2019 в 22:58         
+ 
+ Андрей Казарин написал: 
+Войдите, чтобы ответить 
+Иван, огромное спасибо за Вашу работу! В моем не малом опыте онлайн обучения, Вы лучший преподаватель! Отличные курсы!
+ 19.05.2018 в 08:02         
+ 
+ admin написал: 
+Войдите, чтобы ответить 
+Спасибо, Андрей!
+ 19.05.2018 в 13:47         
+ 
+ Vitaliy Podolskiy написал: 
+Войдите, чтобы ответить 
+Курс по MVVM на русском языке, это эксклюзив! Все очень качественно сделано
+ 20.05.2018 в 23:23         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Спасибо! Очень постарались, чтобы получилось хорошо.
+ 21.05.2018 в 12:50         
+ 
+ Дмитрий 22 написал: 
+Войдите, чтобы ответить 
+Можно сделать так что бы покупать квкой нибудь курс по отдельности
+ 26.05.2018 в 14:58         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Добрый день!
+Напишите пожалуйста на почту info@swiftBook.ru
+ 27.05.2018 в 07:29         
+ 
+ san8k написал: 
+Войдите, чтобы ответить 
+Отличные курсы! Но хотелось бы каких-то заданий для самостоятельного решения после каждой темы.
+ 31.05.2018 в 19:16         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Спасибо! Мы работаем над тестами и к некоторым курса скоро их добавим. Если Вам нужны задания для решения практических задач для курса «гид по языку Swift», то можете написать на info@swiftbook.ru и мы Вам их вышлем.
+ 31.05.2018 в 21:03         
+ 
+ YaroslavSherstyuk написал: 
+Войдите, чтобы ответить 
+Курсы реально супер. Ребят спасибо Вам за работу
+ 31.05.2018 в 19:53         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Спасибо, Ярослав! Мы рады, что Вы с нами!
+ 31.05.2018 в 21:02         
+ 
+ asksimon написал: 
+Войдите, чтобы ответить 
+я так понял по андройду курсы можно ждать, раз по джаве появились?)
+ 01.06.2018 в 16:07         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Добрый день!
+Да, мы отделим Java в отдельную ветку и все будет доступно по одной общей подписке.
+ 01.06.2018 в 16:42         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Да можно со временем :) пока просто на джаве остановились, так что отсюда можно и в андройд и в серверную разработку!
+ 03.06.2018 в 18:32         
+ 
+ Дмитрий 22 написал: 
+Войдите, чтобы ответить 
+хотелось что бы было  домашнее задание по работе с xcode  типа практических задач для курса «гид по языку Swift»
+ 01.06.2018 в 16:27         
+ 
+ Павел написал: 
+Войдите, чтобы ответить 
+Здравствуйте, Иван.  Хотелось бы хороший курс по TDD. О нем много говорят, многие кое как используют. Есть много статей и примеров из области «Hello World». Но чтобы ощутить мощь данного подхода, все таки хочется увидеть более сложные примеры. Уверен Вы бы смогли это сделать!
+ 02.06.2018 в 22:01         
+ 
+ Dennis написал: 
+Войдите, чтобы ответить 
+Cпасибо за ваши курсы! Очень качественный и понятный материал! Я в восторге! Хочется побольше подобного контента. А еще хочется увидеть курсы или даже ресурс подобного качества еще и по другим языкам и фреймворкам.
+ 14.06.2018 в 19:46         
+ 
+ kdubrovsky написал: 
+Войдите, чтобы ответить 
+Совершенно неожиданного качества курсы. Аналогичных по уровню просто не встречал.
+ 23.06.2018 в 22:46         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Спасибо Вам большое!
+ 26.06.2018 в 15:14         
+ 
+ Дмитрий 22 написал: 
+Войдите, чтобы ответить 
+Хотелось бы курс по созданию будильника и мекундомера
+ 25.06.2018 в 14:39         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Будильника у нас пока что нет, а вот секундомер есть в отдельном видео на youtube
+ 26.06.2018 в 15:16         
+ 
+ ifraer написал: 
+Войдите, чтобы ответить 
+Вы можете осветить вопрос UI Testing и Unit Testing?
+Показать пару простых примеров с их использованием. И самое главное просветить их концептуальное значение. Насколько эти тесты актуальны если пишешь приложение в одиночку или если пишет группа разработчиков? Как эти тесты применяют большие компании? И кто из сотрудников занимается их написание (в большой команде), это отдельный человек?
+Заранее СПАСИБО!
+ 27.06.2018 в 17:47         
+ 
+ Vitaliy Podolskiy написал: 
+Войдите, чтобы ответить 
+Примеры в комментарии не получится привести, Вам следовало этот вопрос задать на форуме. Ну а если кратко, насчет UI-тестирования ничего не скажу, пробовал, но не посчитал их слишком полезными… Это мое мнение, я могу ошибаться! Unit Testing — очень полезно уметь писать. Позволяют на ранних этапах вскрыть множество проблем, которые теоретически и не должны были возникнуть. По поводу актуальности, то разработчик пишущий тесты оценивается на рынке труда выше, его код менее подвержен ошибкам. Тест пишет сам разработчик, что и работает над модулем. Нет необходимости привлекать отдельного человека.
+ 29.06.2018 в 17:59         
+ 
+ 89995258097 написал: 
+Войдите, чтобы ответить 
+Добрый день, Хотелось бы узнать: планируется ли курсы с рассмотрением arkit?
+ 03.07.2018 в 18:42         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+А у нас есть курс по ARKit в разделе «Курсы» :)
+ 03.07.2018 в 18:59         
+ 
+ 89995258097 написал: 
+Простите =)
+Почему-то не заметил)
+ 03.07.2018 в 20:07         
+ 
+ Alex_Saraev написал: 
+Войдите, чтобы ответить 
+Иван, повторно обращаюсь с просьбой — сделайте курсы по UI & Unit Testing, очень важная тема, я не знаю почему вы её обходите стороной.
+ 04.07.2018 в 17:12         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Добрый день!
+Мы не обходим данную тему стороной, но данная тема должна быть представлена в достойном качестве, что требует времени.
+ 05.07.2018 в 07:31         
+ 
+ Дмитрий 22 написал: 
+Войдите, чтобы ответить 
+можно сделать статью как загрузить видео с ютуба
+ 15.07.2018 в 07:32         
+ 
+ Кирилл написал: 
+Войдите, чтобы ответить 
+Сделайте курс по Тестированию!!! Плиз )
+ 16.07.2018 в 20:44         
+ 
+ gorizont написал: 
+Войдите, чтобы ответить 
+Не думал, что это может так увлечь человека с совершенно нулевым опытом :) но у вас обалденные курсы. Всё очень доступно и понятно и прям верится, что получится освоить все курсы  :)
+Ну и здорово, если будет появляться что-то новое и обновляться старое под новые Swift’ы :)
+ 26.07.2018 в 03:36         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Спасибо большое! Конечно получится и новеньким постоянно балуем наших подписчиков!
+ 26.07.2018 в 04:54         
+ 
+ Наталья написал: 
+Войдите, чтобы ответить 
+Добрый день! Подскажите пожалуйста, достаточно ли будет пройти все курсы (без вебинаров) при нулевом опыте в разработке, чтобы достичь уровня junior? Спасибо.
+ 08.08.2018 в 15:36         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Добрый день! Да, но Вы должны понимать, что junior трактуется в каждой компании по-своему. Но если тут вопрос про трудоустройство, то, конечно, после освоения информации со всех курсов можно смело идти и пытать свое счастье на джуна :)
+ 10.08.2018 в 13:11         
+ 
+ Дмитрий 22 написал: 
+Войдите, чтобы ответить 
+хотелось что бы с тестами были и домашнии задания по курсам
+ 13.08.2018 в 14:42         
+ 
+ Tegrato написал: 
+Войдите, чтобы ответить 
+Курс: UIKit. Есть некоторая путаница с архивами-исходниками, например: для видео №2 и №3 прицеплен один и тот же архив.
+ 15.08.2018 в 01:04         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Спасибо! Поправили!
+ 15.08.2018 в 08:07         
+ 
+ Дмитрий 22 написал: 
+Войдите, чтобы ответить 
+Курс: UIKit. урок 5. UITextField конечный продукт от урока 6 UIScrollView
+ 25.08.2018 в 17:23         
+ 
+ Дмитрий 22 написал: 
+Войдите, чтобы ответить 
+можно сделать видео как работать с видеофайлами и ютубом в swift
+ 28.09.2018 в 10:23         
+ 
+ VolkovSA написал: 
+Войдите, чтобы ответить 
+Хорошое каство курсов — это правда. Но допустим, по Firebase совсем почему-то мало, там же столько инструментов — очень хотелось бы изучить подробнее! Планируется ли дополнить курс? Планируется ли курс по Cloud Firestore и его отличию от realtime database?
+ 22.10.2018 в 22:08         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Спасибо! В ближайших планах конкретно по firebase не думали курс делать, так как firebase используют чаще всего внутри проекта, поэтому мы его распределяем по разным курсам разные его сегменты.
+ 24.10.2018 в 14:33         
+ 
+ VolkovSA написал: 
+Очень жаль :(
+По особенностям Firestore и правильной организации и работы с данной БД в русском сегменте ютуб вообще пара видео всего (( — большое поле для деятельности ;)
+Про использование понятно, но есть базовые вещи, которыми можно дополнить существующий курс или создать отлельные курсы:
+1) Отличие realtime database от Firestore (впринципе и так понятно, но новичкам будет полезно)
+2) Разграничение доступа к БД и раздача прав доступа.
+3) Использование аналитики в приложениях через Firebase!
+4) Хранение файлов.
+5) Хостинг и «функции» пока непонятные мне )
+6) Ну и машинное обучение: распознование лиц, предметов, текста, штрихкодов и прочего через пару функций в наших приложениях — ну огонь же!
+И всё это через один понятный сервис с «отличной документацией» ;) — просто опытный програмист с хорошим знанием английского сразу выделит суть и поскажет как быстрее усвоить суть. С таким сервисом обычный и не самый талантливый человек, вроде меня, может просто отличные проекты создавать, не хватает малости — хорошего наставника :)
+Мизерное количество материала по это теме в ютуб по-моему хороший аргумент!
+ 24.10.2018 в 22:21         
+ 
+ vokhstag написал: 
+Войдите, чтобы ответить 
+По моему курс «мои первые приложения» более легкий чем «Фреймворк UIKit».
+ 01.11.2018 в 14:42         
+ 
+ dmitriyvara написал: 
+Войдите, чтобы ответить 
+Добрый день! подскажите в чем разница между подписками — премиум, базовый, эксперт — это время доступа к курсам??
+ 01.11.2018 в 23:47         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Добрый день!
+Разница в стоимости подписки в пересчете на месяц. Если сравнивать Базовый и Эксперт, то разница будет 1299руб/мес и 899 руб/мес. Ну и более длительные сроки берут, когда уверены, что будут Swift изучать, а для изучения языка программирования и платформы, конечно, месяца мало.
+ 02.11.2018 в 07:45         
+ 
+ Кирилл написал: 
+Войдите, чтобы ответить 
+Дорогие друзья, благодарю вас за время, проведенное с вами, за полученный опыт и желание двигаться дальше. Было и просто и сложно одновременно: просто от понятных лекций Алексея, сложно от домашней работы, на которой иногда не хватало времени.
+Как мне кажется, самое главное отличие курса от остальных (в том числе и оригинального курса Apple) в том, что вам дадут основную базу по разным направлениям, например анимация и работа с данными со сторонними фрэймворками. Это, в свою очередь поможет кому-то в трудоустройстве, другим в ускорении написания, понимания сути программирования и получения результата. В курсе достаточно много того, чего нет в оригинальной документации. Ощущение, что за вас отсеяли ненужное и дали только то, что укажет для вас направление движения в дальнейшем.
+Еще раз благодарю Ивана и Алексея за месяц, который прошел как один день.
+ 05.12.2018 в 20:06         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Огромное спасибо, Кирилл! Очень рады, что мы так хорошо с Вами сработались :)
+ 06.12.2018 в 14:36         
+ 
+ vokhstag написал: 
+Войдите, чтобы ответить 
+В курсе про CALayer в описании курса опечатка написано UView вместо UIView. Публиковать не надо, просто чтоб заметили написал:)
+ 07.12.2018 в 22:19         
+ 
+ vokhstag написал: 
+Войдите, чтобы ответить 
+Думал сообщения проходят проверку:)
+ 07.12.2018 в 22:21         
+ 
+ DenisFomichev написал: 
+Войдите, чтобы ответить 
+Курс: Networking — нет стартового проекта на урок 5, а конечный проект это на самом деле проект из 3 урока
+ 20.12.2018 в 15:43         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Спасибо, поправили.
+ 21.12.2018 в 08:59         
+ 
+ DenisFomichev написал: 
+Войдите, чтобы ответить 
+Будут ли курсы по  macOS и iMessage ?
+ 20.12.2018 в 15:44         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Будут, но пока сроков нет.
+ 21.12.2018 в 08:52         
+ 
+ Zabadal написал: 
+Войдите, чтобы ответить 
+Приветствую! Спасибо разработчикам этого отличного сайта и курсов. Очень хотелось бы, после прохождения тестов на курсах для начинающих, узнавать ответы в конце или пометку с номером вопроса где ошибка. Просто бывает по несколько раз приходится проходить чтобы понять. Конечно можно еще раз просмотреть видео, но не всегда это помогает.
+ 29.12.2018 в 23:50         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Добрый день!
+Да, как Вы говорите будет удобнее. Скорее всего в следующей версии сайта мы пересмотрим тесты.
+Спасибо!
+ 08.01.2019 в 17:23         
+ 
+ Сергей написал: 
+Войдите, чтобы ответить 
+а вроде был курс по cloudKit или я что-то путаю?
+ 08.01.2019 в 22:17         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Добрый день!
+По CloudKit курса не было :)
+ 14.01.2019 в 06:44         
+ 
+ VolkovSA написал: 
+Войдите, чтобы ответить 
+А был курс cloudKit или я что-то путаю?
+ 09.01.2019 в 12:25         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Добрый день!
+По cloudKit курса не было :)
+ 14.01.2019 в 06:43         
+ 
+ Olesia_Buldakova написал: 
+Войдите, чтобы ответить 
+есть подозрение, что в курсе Firebase — Наше Первое Приложение в уроке Keyboard issue информация для предыдущей версии, не для 4.2
+ 25.01.2019 в 00:01         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Добрый день. Сегодня обновим урок, в Swift 4.2 чуть изменился способ именования уведомления.
+ 28.01.2019 в 08:07         
+ 
+ Игорь написал: 
+Войдите, чтобы ответить 
+Добрый день. Планируется выход нового курса в скором времени? Например по RxSwift
+ 05.02.2019 в 13:14         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Добрый день!
+Пока нет, скоро не будет )
+ 05.02.2019 в 13:21         
+ 
+ Mad1988 написал: 
+Войдите, чтобы ответить 
+Скажите , пожалуйста , когда будет вторая часть по ARKIt?
+ 08.02.2019 в 15:53         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Добрый день. Пока в ближайший месяц не будет точно.
+ 19.02.2019 в 20:06         
+ 
+ Salmik написал: 
+Войдите, чтобы ответить 
+Добрый день. Планируется выход нового курса? Желательно advanced курс с созданием сложного приложения и функционала
+ 20.02.2019 в 16:18         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Добрый день! Сейчас в записи 3 курса, один из которых предусматривает работу с версткой через код. Что Вы имеете в виду под сложным функционалом?
+ 25.02.2019 в 15:30         
+ 
+ houston написал: 
+Верстка через код!) как раз то что мне нужно)
+ 01.05.2019 в 19:41         
+ 
+ Helen написал: 
+Войдите, чтобы ответить 
+Всем привет!
+Только начала изучать курсы, начала с основ.
+До этого посещала курсы ИТМО в СПб и честно нифига не поняла (((
+Иван очень здорово обьясняет, что и до ржавого чайника дойдет, т.е. меня ))))
+ 25.02.2019 в 17:24         
+ 
+ МахДИ написал: 
+Войдите, чтобы ответить 
+Жесть !!!!!!!!!!! Я после каждого курса чувствую себя супергероем )))))))) Мне кажется я уже SENIOR ))))))))))  Network — Курс нормально меня прокачал )) Мне кажется даже бицуха подросла ))))))))))
+ 03.03.2019 в 11:52         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Ха-ха! Ну значит так и есть! Вы попробуйте замерить бицепс до прохождения и после, а вдруг… :)
+ 03.03.2019 в 12:13         
+ 
+ Artem написал: 
+Войдите, чтобы ответить 
+Курсы очень хорошие в плане эффективности потраченного времени/обретению новых знаний. Очень хочу курс по Viper у как по MVC, а так же было бы круто разобраться с паттерном Cordinator и новомодным направлением RXSwift. Пожалуйста сделайте курсы по этим трем направлениям также классно и можно смело говорить, что после ваших курсов можно устроиться IOS разработчиком в 2019))
+ 06.03.2019 в 18:04         
+ 
+ Сергей написал: 
+Войдите, чтобы ответить 
+Скажите в данный момент курсы актуальны ? У вас написано что это Swift 4.0, под пятый Свифт они будут нормально ?
+ 12.03.2019 в 19:26         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Версия 4.0 от 5.0 в основном отличается наличием новых возможностей, так что никаких существенных различий там не будет.
+ 12.03.2019 в 20:30         
+ 
+ Gaunt написал: 
+Войдите, чтобы ответить 
+Спасибо большое за курсы. В прошлом году я будучи в отпуске прошел их (ну и плюс читал еще книги от Рэя Вендерлиха))) и в итоге получил работу. Сменил полностью сферу деятельности. В итоге жизнь налаживается. Сайт ребята у вас просто супер — кладезь для всех кто хочет научится кодить. Язык объяснения очень простой… Очень грамотно построенные курсы. Еще раз вам спасибо)))
+ 18.04.2019 в 15:49         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Спасибо большое! :) очень стараемся, чтобы у каждого, кто захочет была возможность в минимальные сроки профессию iOS разработчика. Ваш отзыв очень мотивирует нас продолжать в том же духе! Мы очень рады, что у Вас все налаживается и Вы нашли работу :) Примите поздравления от всего коллектива SwiftBook!
+ 18.04.2019 в 16:17         
+ 
+ Антон написал: 
+Войдите, чтобы ответить 
+Добрый день! А планируется ли курс по MongoDB? Было бы очень полезно изучить работу с этой базой данных.
+Спасибо!
+ 30.04.2019 в 08:40         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Добрый день! Пока в планах ближайшего будущего не было, но посмотрим, что можно придумать.
+ 30.04.2019 в 08:42         
+ 
+ Талгат написал: 
+Войдите, чтобы ответить 
+Добрый день! не могли бы вы сделать урок по этому фреймворку GPUImage2, а то в сети почти нету туториалов
+ 18.05.2019 в 03:52         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Добрый день!
+Пока обещать не будем, но обязательно посмотрим, что можно сделать.
+ 18.05.2019 в 09:56         
+ 
+ Александр написал: 
+Войдите, чтобы ответить 
+Привет! Планируется курс по VIPER? И выше спрашивали, также, про RxSwift. Очень интересно узнать, заранее спасибо.
+ 14.06.2019 в 15:41         
+ 
+ Mussakhanov написал: 
+Войдите, чтобы ответить 
+Спасибо огромное! За курсы. Все четко, ясно и актуально!!! И самое главное аудио и видео дорожки качественные!
+ 04.07.2019 в 13:55         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+:) спасибо!
+ 04.07.2019 в 15:35         
+ 
+ iModern написал: 
+Войдите, чтобы ответить 
+Прошел третью серию вебинаров Swift Developer и остался более чем доволен.
+Никто тебя не бросает, все стараются тебе помочь. На любой вопрос сразу же отвечает преподаватель либо даже сам Иван, что очень приятно :)
+Вообщем всем советую обучаться здесь. А я пойду смотреть вебинар по SSSD ;)
+ 18.07.2019 в 09:33         
+ 
+ Maksim написал: 
+Войдите, чтобы ответить 
+Добрый день ) Было бы здорово снять курс на тему xcode instruments, тк я толковых туториалов по этим темам не находил  ) 
+Спасибо )
+ 18.07.2019 в 12:05         
+ 
+ Aleksey написал: 
+Войдите, чтобы ответить 
+Посмотрел курс по «Git»  Шикарно! Мне лично очень хорошо вошло.  Надеюсь остальные будут тоже такими же интересными, не перегруженными и наглядными. Спасибо.
+ 19.08.2019 в 01:10         
+ 
+ Bios90 написал: 
+Войдите, чтобы ответить 
+Всем доброго времени. Спасибо за отличный сервис для изучения Swift.  Очень бы хотел увидеть курсы на темы Viper/RxSwift именно от вас. Это сейчас требуется во многих вакансиях на ios разработчиков а информации по этим темам крайне мало даже на английском.
+ 06.11.2019 в 19:13         
+ 
+ Alexmg86 написал: 
+Войдите, чтобы ответить 
+Добрый день!
+Дошел до курса «Курс: Мои первые приложения», но у меня последний XCode и при создании нового приложения нет ViewController, да и в целом структура отличается. Выходит подписка не актуальная? Старый Xcode установить не выходит, да и к тому что вместо UIKit там подрубается SwiftUi. Как мне быть?
+ 01.12.2019 в 13:32         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Добрый день! В Xcode 11 появилась возможность использовать SwiftUI вместо UIKit, но пока это имеет смысл, если вы хотите поковыряться в SwiftUI, а не делать проект, который будете переделывать через полгода из-за изменений в SwiftUI. Поэтому при создании Xcode проекта, просто выберите UIKit и создайте проект. Что касается самой структуры проекта, то там добавился новый файл SceneDelegate, но это не имеет значения для данного курса, так как там работать мы не будем. И последнее, в течение этой недели мы будем обновлять данный курс, чтобы знакомить уже с обновленным интерфейсом Xcode.
+ 01.12.2019 в 14:11         
+ 
+ Alexmg86 написал: 
+Буду ждать, надеюсь, что не запутаюсь в конечном итоге :)
+ 02.12.2019 в 15:00         
+ 
+ sefsdf написал: 
+Войдите, чтобы ответить 
+Как записаться?в Минске
+ 07.12.2019 в 16:48         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+У нас все занятия онлайн, так что студенты со всех точек планеты бывают)
+ 07.12.2019 в 17:35         
+ 
+ whitecolorsand написал: 
+Войдите, чтобы ответить 
+Товарищи, вот я прошел первые курсы для новичков. В каком порядке проходить стоит дальше? Имеет ли смысл выстраивать какой-то свой путь или можно просто идти от начала до конца?
+ 12.12.2019 в 21:14         
+ 
+ Alex_Demidov написал: 
+Войдите, чтобы ответить 
+Привет. Спасибо за материалы. Планируете ввести статусы прохождения курсов с отметкой завершенных?
+ 24.12.2019 в 18:18         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Планируем :)
+ 12.01.2020 в 18:59         
+ 
+ Radioaktivnoe_Salo написал: 
+Войдите, чтобы ответить 
+Ребят, вы уже обновили курс «Курс: Мои первые приложения» ?
+ 09.01.2020 в 00:38         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Все обновлено и работает со сторибордами.
+ 12.01.2020 в 18:59         
+ 
+ arvrmrxr написал: 
+Войдите, чтобы ответить 
+Здравствуйте, хочу купить подписку, но не могу найти в теме с ARKit работу с 2D изображениями, их трекинг и наложение на них видео
+ 20.02.2020 в 11:36         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Добрый день! Этого в курсе по ARKit у нас нет.
+ 20.02.2020 в 11:47         
+ 
+ arvrmrxr написал: 
+не планируете добавить ? очень нужна эта информация, но ее нигде нет ни за какие деньги :(((
+ 20.02.2020 в 13:26         
+ 
+ arvrmrxr написал: 
+и еще подскажите, если оформить подписку и пройти все курсы, есть ли хоть какая-нибудь вероятность, что я потом сама разберусь в 2D и с подключением серверов, что бы изображения закидывать на сервер, а не в приложение ?
+ 20.02.2020 в 13:27         
+ 
+ Dmitry1996 написал: 
+Войдите, чтобы ответить 
+Добрый вечер!
+А есть курс по SwiftUI?(Когда вбиваю в поисковике он его находит(Курс 29), но если заходить через главную страницу его нет)
+ 21.02.2020 в 21:40         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Он немного устарел и мы его сняли с открытого доступа.
+ 31.03.2020 в 22:30         
+ 
+ iModern написал: 
+Войдите, чтобы ответить 
+Последний курс по iChat просто великий!
+ 04.03.2020 в 00:18         
+ 
+ Arseniy написал: 
+Войдите, чтобы ответить 
+Самые лучшие курсы по разработке приложений!
+ 21.03.2020 в 19:41         
+ 
+ g4andrey написал: 
+Войдите, чтобы ответить 
+Скажите, а куда делся курс по  UITableView???
+ 31.03.2020 в 21:17         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Он все еще находится по старой ссылке: https://swiftbook.ru/content/26-index/
+ 31.03.2020 в 22:30         
+ 
+ arvrmrxr написал: 
+Войдите, чтобы ответить 
+Здравствуйте, сейчас в Xcode создаётся файл SceneDelegate, а у вас в курсе все происходит в AppDelegate, но если обращаться из апп, то не работает аутентификация :(((( курс Firebase
+и Xcode у вас отличается от моего, например у меня сверху нет Assistant :(
+это будет обновляться?
+ 02.04.2020 в 20:38         
+ 
+ Sunny_Junne написал: 
+Войдите, чтобы ответить 
+Так жаль, что старый курс по API теперь не поддерживается : (
+Регистрация на Dark Sky теперь невозможна из-за слияния с Apple, а курс так хорошо начался!
+ 09.06.2020 в 12:46         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Добрый день! Мы же записали новый курс с использованием другого сервиса. Dark Sky это лишь один из сервисов, который вы можете использовать. По сути это не так важно.
+ 09.06.2020 в 17:36         
+ 
+ Mari_18 написал: 
+Войдите, чтобы ответить 
+Добрый день! Спасибо за качественный и подробный материал курсов, всё понятно и доступно!
+ 09.06.2020 в 16:07         
+ 
+ hoodieboy написал: 
+Войдите, чтобы ответить 
+Здравствуйте!
+У меня нет компьютера с MacOs, на ноутбуке стоит Windows 10.
+Скажите, пожалуйста, подойдут ли для меня эти курсы(задумываюсь над покупкой подписки)? С какими трудностями я могу столкнуться из-за операционной системы?
+ 23.07.2020 в 15:45         
+ 
+ SwiftBook написал: 
+Войдите, чтобы ответить 
+Добрый день!
+Нужен именно macOS, на windows работать не получится.
+ 23.07.2020 в 16:11         
+ 
+ hoodieboy написал: 
+https://tproger.ru/news/xamarin-live-player/
+А как же это?
+ 23.07.2020 в 18:05         
+ 
+ Victor26 написал: 
+Войдите, чтобы ответить 
+Добрый день! Подскажите, пожалуйста, как совмещать ваш курс по подписке с книгой? Боюсь расфокусироваться))
+ 19.11.2020 в 16:41         
+ 
+ swiftbook написал: 
+Войдите, чтобы ответить 
+Добрый день! Вообще курс по основам затрагивает самые необходимые моменты из книги по Swift. Так что можете его посмотреть, а если уже что-то отдельное нужно, то можно посмотреть в справочнике (книге).
+ 19.11.2020 в 20:10         
+ 
+ Khasan7778 написал: 
+Войдите, чтобы ответить 
+Добрый день. Изучив курсы по подписке, по уровню знаний это будет ближе к джуниору или мидлу?
+ 27.05.2021 в 06:32         
+ 
+ swiftbook написал: 
+Войдите, чтобы ответить 
+Если прямо все изучите, то теория будет на уровне Junior+/Middle-, но практику никто не отменял, так что если еще все примените, то тут точно middle
+ 21.06.2021 в 22:03         
+ 
+ TonyM3110 написал: 
+Войдите, чтобы ответить 
+Здравствуйте!
+Хочу выразить благодарность всем спикерам! Все супер понятно, короткие видео, которые легко слушать. Есть с чем сравнивать.
+ 16.03.2022 в 06:38         
+ 
+ Rail написал: 
+Войдите, чтобы ответить 
+Добрый день.
+Подскажите, куда можно сообщить об ошибке в видео?
+ 11.04.2022 в 13:48         
+ 
+ swiftbook написал: 
+Войдите, чтобы ответить 
+в чат на сайте напишите пожалуйста
+ 17.05.2022 в 13:17         
+ 
+ Nikolay26 написал: 
+Войдите, чтобы ответить 
+Добрый день! Есть несколько вопросов.
+Чем отличаются ваши курсы по платной подписке от бесплатных?
+Я изучаю основы по бесплатным видео на данный момент, на всех курсах стоит пометка swift 5.0, текущая версия xcode 5.6.2. у вас выходит не актуальные видео уроки?
+После того как я кликаю на онлайн курс ios разработчик я попадаю на страницу платного курса , но программа та же что и на бесплатном доступе, так в чем тогда разница?
+Буду благодарен, если ответите на вопросы.
+ 13.07.2022 в 16:58         
+ 
+ swiftbook написал: 
+Войдите, чтобы ответить 
+добрый день
+курсы в записи и профессия — разные способы обучаться. Курсы в записи обновлены до версии swift 5.0, но профессия всегда идет по последней версии Swift.
+Swift изменился, но не так сильно с 5 до 5.6, там действительно в курсах могут возникать ошибки, но как правило, они легко чинятся. Сейчас идет перезапись курсов, и создание нового для них формата. А к профессии, вы можете смело приступать, так как там все самое современное.
+ 13.07.2022 в 17:50         
+Комментарии Отменить ответДля отправки комментария вам необходимо авторизоваться. 
+ 
+SwiftBook Самое крупное сообщество iOS разработчиков на языке Swift
+О нас
+Мы в социальных сетяхYouTubeVKontakteFacebookЧат_Telegram
+instagramПолезноеPodlodka
+Подпишись на новости 
+   Политика конфиденциальности
+Пользовательское соглашение
+Найти:
+  © Акулов И.Б., 2014-2021      
+ 
+Сообщить об опечатке
+Текст, который будет отправлен нашим редакторам:
+Ваш комментарий (необязательно):
+Отправить
+Отмена

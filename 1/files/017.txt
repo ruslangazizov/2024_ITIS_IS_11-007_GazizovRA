@@ -1,673 +1,288 @@
-Python Insider: Python 3.10.14, 3.9.19, and 3.8.19 is now available
-Python core development news and information.
-Tuesday, March 19, 2024
-Python 3.10.14, 3.9.19, and 3.8.19 is now available
-Howdy!
-Those are the boring security releases that aren’t supposed to bring 
-anything new. But not this time! We do have a bit of news, actually. But
- first things first: go update your systems!
-Python 3.10.14
-Get it here: Python Release Python 3.10.1426 commits since the last release.Python 3.9.19
-Get it here: Python Release Python 3.9.19
-26 commits since the last release. 
-Python 3.8.19
-Get it here: Python Release Python 3.8.1928 commits since the last release.Security content in this release
-gh-115399 & gh-115398: bundled libexpat was updated to 2.6.0 to address CVE-2023-52425,
- and control of the new reparse deferral functionality was exposed with 
-new APIs. Thanks to Sebastian Pipping, the maintainer of libexpat, who 
-worked with us directly on incorporating those fixes!gh-109858: zipfile is now protected from the “quoted-overlap” zipbomb to address CVE-2024-0450. It now raises BadZipFile when attempting to read an entry that overlaps with another entry or central directorygh-91133: tempfile.TemporaryDirectory cleanup no longer dereferences symlinks when working around file system permission errors to address CVE-2023-6597gh-115197: urllib.request no longer resolves the hostname before checking it against the system’s proxy bypass list on macOS and Windowsgh-81194: a crash in socket.if_indextoname() with a specific value (UINT_MAX) was fixed. Relatedly,  an integer overflow in socket.if_indextoname() on 64-bit non-Windows platforms was fixedgh-113659: .pth files with names starting with a dot or containing the hidden file attribute are now skippedgh-102388: iso2022_jp_3 and iso2022_jp_2004 codecs no longer read out of boundsgh-114572: ssl.SSLContext.cert_store_stats() and ssl.SSLContext.get_ca_certs() now correctly lock access to the certificate store, when the ssl.SSLContext is shared across multiple threads
-Stay safe and upgrade!
-Upgrading is highly recommended to all users of affected versions.
-Source builds are moving to GitHub Actions
-It’s not something you will notice when downloading, but 3.10.14 here is the first release we’ve done where the source artifacts were built on GHA and not on a local computer of one of the release managers. We have the Security Developer in Residence @sethmlarson to thank for that!
-It’s a big deal since public builds allow for easier auditing and 
-repeatability. It also helps with the so-called bus factor. In fact, to 
-test this out, this build of 3.10.14 was triggered by me and not Pablo, 
-who would usually release Python 3.10.
-The artifacts are later still signed by the respective release manager, ensuring integrity when put on the downloads server.
-Python now manages its own CVEs
-The security releases you’re looking at are the first after the PSF became a CVE Numbering Authority. That’s also thanks to @sethmlarson.
- What being our own CNA allows us is to ensure the quality of the 
-vulnerability reports is high, and that the severity estimates are accurate. 
-Seth summarized it best in his announcement here.
-What this also allows us to do is to combine announcement of CVEs 
-with the release of patched versions of Python. This is in fact the case
- with two of the CVEs listed above (CVE-2023-6597 and CVE-2024-0450). And since Seth is now traveling, this announcement duty was fulfilled by the PSF’s Director of Infrastructure @EWDurbin. Thanks!
-I’m happy to see us successfully testing bus factor resilience on multiple fronts with this round of releases.
-Thank you for your support
-Thanks to all of the many volunteers who help make Python Development
- and these releases possible! Please consider supporting our efforts by 
-volunteering yourself or through organization contributions to the 
-Python Software Foundation.
-Python.org - the official home of the Python Programming Language.
-  
-  
-–
-Łukasz Langa @ambv
-on behalf of your friendly release team,
-Ned Deily @nad
-Steve Dower @steve.dower
-Pablo Galindo Salgado @pablogsal
-Łukasz Langa @ambv
-Thomas Wouters @thomas
-Posted by
-Łukasz Langa
-at
-8:29 PM
-Email ThisBlogThis!Share to TwitterShare to FacebookShare to Pinterest
-Older Post
-Home
-Subscribe
-Subscribe to Python Insider via RSS, or Twitter
-Related Links
-python.org
-Python-Dev mailing list
-Python Developer's Guide
-Translations
-Chinese (Simplified)
-Chinese (Traditional)
-French
-German
-Japanese
-Korean
-Portuguese
-Romanian
-Russian
-Spanish
-Python-Dev Blogs
-Eli Bendersky
-The life of an Ollama prompt
-3 weeks ago
-PyPy Status Blog
-PyPy's blog has moved
-3 years ago
-Pumpichank
-Creating Python Snaps
-8 years ago
-Tim Golden
-London Python Dojo December 2014
-9 years ago
-R. David Murray
-Asyncio Implementation Overview
-9 years ago
-The Voidspace Techie Blog
-unittest.mock and mock 1.0 alpha 1
-12 years ago
-Tarek Ziadé
-More privacy please
-12 years ago
-Deep Thoughts by Raymond Hettinger
-Python’s super() considered super!
-12 years ago
-Brett Cannon
-Jesse Noller
-Boredom & Laziness
-Brian Curtin
-Senthil Kumaran
-Blog Archive
-        ▼ 
-      
-2024
-(5)
-        ▼ 
-      
-March
-(2)
-Python 3.10.14, 3.9.19, and 3.8.19 is now available
-Python 3.13.0 alpha 5 is now available
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2023
-(18)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(1)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2022
-(23)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(2)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(3)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(3)
-        ► 
-      
-February
-(1)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2021
-(24)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(1)
-        ► 
-      
-April
-(3)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(4)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2020
-(32)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-September
-(3)
-        ► 
-      
-August
-(3)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(4)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(4)
-        ► 
-      
-March
-(3)
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2019
-(36)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(8)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(3)
-        ► 
-      
-July
-(5)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(2)
-        ► 
-      
-March
-(7)
-        ► 
-      
-February
-(3)
-        ► 
-      
-2018
-(24)
-        ► 
-      
-December
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(3)
-        ► 
-      
-April
-(3)
-        ► 
-      
-March
-(5)
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2017
-(17)
-        ► 
-      
-December
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-September
-(3)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2016
-(18)
-        ► 
-      
-December
-(5)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(2)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(5)
-        ► 
-      
-May
-(1)
-        ► 
-      
-2015
-(14)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(1)
-        ► 
-      
-September
-(3)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(1)
-        ► 
-      
-May
-(2)
-        ► 
-      
-March
-(2)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2014
-(8)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(1)
-        ► 
-      
-May
-(1)
-        ► 
-      
-March
-(3)
-        ► 
-      
-February
-(2)
-        ► 
-      
-2013
-(5)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(1)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(1)
-        ► 
-      
-2012
-(9)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(1)
-        ► 
-      
-March
-(1)
-        ► 
-      
-2011
-(25)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(1)
-        ► 
-      
-May
-(7)
-        ► 
-      
-April
-(7)
-        ► 
-      
-March
-(5)
-Contributors
-A.M. Kuchling
-Alfonso de la Guarda
-Anthony Scopatz
-Antoine P.
-Benjamin Peterson
-Brian Curtin
-Davidmh
-Donald Stufft
-Doug Hellmann
-Ee Durbin
-Ezio Melotti
-Georg Brandl
-Jesse
-Kelsey Hightower
-Larry Hastings
-Mathieu Leduc-Hamel
-Michael Markert
-Mike Driscoll
-Ned Deily
-Pablo Galindo
-Paul Moore
-Philip Jenvey
-Sumana Harihareswara
-Thomas Wouters
-Unknown
-Unknown
-Łukasz Langa
-Éric Araujo
-e
-haypo
-tp
-Copyright
-Python Insider by the Python Core Developers is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.Based on a work at blog.python.org.
-Powered by Blogger.
- 
+Методы - SwiftBook
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+Документация
+ 
+ 
+Развернуть
+Свернуть
+              
+        Документация		
+		  
+		  
+        
+              
+        Знакомство со Swift		
+		  
+		  
+        
+ О языке Swift
+ Совместимость версий Swift
+ Тур по Swift
+ 
+              
+        Руководство Swift		
+		  
+		  
+        
+ Основы
+ Базовые операторы
+ Строки и символы
+ Типы коллекций
+ Управление потоком
+ Функции
+ Замыкания
+ Перечисления
+ Структуры и классы
+ Свойства
+ Методы
+ Сабскрипты
+ Наследование
+ Инициализация
+ Деинициализация
+ Опциональная последовательность
+ Обработка ошибок
+ Согласованность
+ Приведение типов
+ Вложенные типы
+ Расширения
+ Непрозрачные типы
+ Протоколы
+ Универсальные шаблоны
+ Автоматический подсчет ссылок (ARC)
+ Безопасность хранения
+ Контроль доступа
+ Продвинутые операторы
+ 
+              
+        Справочник языка		
+		  
+		  
+        
+ Лексическая структура
+ Типы
+ Выражения
+ Инструкции
+ Объявления
+ Атрибуты
+ Шаблоны
+ Параметры и аргументы универсального типа
+ Резюме по грамматике
+ 
+ 
+		Методы		
+        
+Методы
+Методы - это функции, которые связаны с определенным типом. Классы, структуры и перечисления - все они могут определять методы экземпляра, которые включают в себя определенные задачи и функциональность для работы с экземпляром данного типа. Классы, структуры и перечисления так же могут определить методы типа, которые связаны с самим типом. Методы типа работают аналогично методам класса в Objective-C.
+Дело в том, что структуры и перечисления могут определить методы в Swift, что является главным отличием от C или Objective-C. В Objective-C классы единственный тип, который может определять методы. В Swift вы можете выбирать, стоит ли вам определять класс, структуру или перечисление, и вы все равно, при любом раскладе, получаете возможность определения методов типа, который вы создадите.
+Методы экземпляра
+Методы экземпляра являются функциями, которые принадлежат экземплярам конкретного класса, структуры или перечисления. Они обеспечивают функциональность этих экземпляров, либо давая возможность доступа и изменения свойств экземпляра, либо обеспечивая функциональность экземпляра в соответствии с его целью. Методы экземпляра имеют абсолютно одинаковый синтаксис как и функции, что описаны в разделе Функции.
+Вы пишете метод экземпляра внутри фигурных скобок типа, которому он принадлежит. Метод экземпляра имеет неявный доступ ко всем остальным методам экземпляра и свойствам этого типа. Метод экземпляра может быть вызван только для конкретного экземпляра типа, которому он принадлежит. Его нельзя вызвать в изоляции, без существующего экземпляра.
+Ниже пример, который определяет простой класс Counter, который может быть использован для счета количества повторений действия:
+class Counter {
+    var count = 0
+    func increment() {
+        count += 1
+    }
+    func increment(by amount: Int) {
+        count += amount
+    }
+    func reset() {
+        count = 0
+    }
+}
+Класс Counter() определяет три метода экземпляра:
+increment увеличивает значение счетчика на 1
+increment(by: Int) увеличивает значение счетчика на определенное значение amount.
+reset() сбрасывает значение счетчика на 0.
+Класс Counter так же определяет переменное свойство count, для отслеживания значения счетчика.
+Вы можете вызвать методы экземпляра с тем же точечным синтаксисом:
+let counter = Counter()
+// начальное значение counter равно 0
+counter.increment()
+// теперь значение counter равно 1
+counter.increment(by: 5)
+// теперь значение counter равно 6
+counter.reset()
+// теперь значение counter равно 0
+Параметры функций могут иметь и имя аргумента (для использования внутри функций), и ярлык аргумента (для использования при вызове функций), что описано Ярлыки аргументов и имена параметров функций. То же самое верно для имен параметров методов, потому как методы те же самые функции, но ассоциированные с определенным типом.
+Свойство self
+Каждый экземпляр типа имеет неявное свойство self, которое является абсолютным эквивалентом самому экземпляру. Вы используете свойство self для ссылки на текущий экземпляр, внутри методов этого экземпляра.
+Метод increment может быть вызван так:
+func increment() {
+    self.count += 1
+}
+На практике вам не нужно писать self очень часто. Если вы не пишете self, то Swift полагает, что вы ссылаетесь на свойство или метод текущего экземпляра каждый раз, когда вы используете известное имя свойства или метода внутри метода. Это хорошо видно при использовании свойства count (а не self.count) внутри трех методов Counter.
+Главное исключение из этого правила получается, когда имя параметра метода экземпляра совпадает с именем свойства экземпляра. В этой ситуации имя параметра имеет приоритет и появляется необходимость ссылаться на свойство в более подходящей форме. Вы используете свойство self для того, чтобы увидеть различие между именем параметра и именем свойства.
+Здесь self разграничивает параметр метода x и свойство экземпляра, которое тоже x:
+struct Point {
+    var x = 0.0, y = 0.0
+    func isToTheRightOf(x: Double) -> Bool {
+        return self.x > x
+    }
+}
+let somePoint = Point(x: 4.0, y: 5.0)
+if somePoint.isToTheRightOf(x: 1.0) {
+    print("Эта точка находится справа от линии, где x == 1.0")
+}
+// Выведет "Эта точка находится справа от линии, где x == 1.0"
+Без префикса self, Swift будет думать, что в обоих случаях x будет как раз параметром метода, который так же называется x.
+Изменение типов значений методами экземпляра
+Структуры и перечисления являются типами значений. По умолчанию, свойства типов значений не могут быть изменены изнутри методов экземпляра.
+Однако, если вам нужно изменить свойства вашей структуры или перечисления изнутри конкретного метода, то вы можете выбрать поведение как изменяющее для этого метода. После этого метод может изменить свои свойства изнутри метода, и все изменения будут сохранены в исходную структуру, когда выполнение метода закончится. Метод так же может присвоить совершенно новый экземпляр для свойства self, и этот новый экземпляр заменит существующий, после того как выполнение метода закончится.
+Вы можете все это осуществить, если поставите ключевое слово mutating перед словом func для определения метода:
+struct Point {
+   var x = 0.0, y = 0.0
+   mutating func moveBy(x deltaX: Double, y deltaY: Double) {
+      x += deltaX
+      y += deltaY
+   }
+}
+var somePoint = Point(x: 1.0, y: 1.0)
+somePoint.moveBy(x: 2.0, y: 3.0)
+print("Сейчас эта точка на (\(somePoint.x), \(somePoint.y))")
+// Выведет "Сейчас эта точка на (3.0, 4.0)"
+Структура Point определяет метод moveBy(x:y:), который передвигает точку типа Point на определенное количество значений. Вместо того, чтобы вернуть новую точку, этот метод фактически изменяет координаты точки, которая его вызвала. Ключевое слово mutating добавлено к определению метода, для того, чтобы изменить значения свойств.
+Обратите внимание, что вы не можете вызвать изменяющий (mutating) метод для константных типов структуры, потому как ее свойства не могут быть изменены, даже если свойства являются переменными, что описано в главе Свойства хранения постоянных экземпляров структуры.
+let fixedPoint = Point(x: 3.0, y: 3.0)
+fixedPoint.moveBy(x: 2.0, y: 3.0)
+// это вызовет сообщение об ошибке
+Присваивание значения для self внутри изменяющего метода
+Изменяющие методы могут присваивать полностью новый экземпляр неявному свойству self. Пример Point, приведенный выше, мог бы быть записан в такой форме:
+struct Point {
+    var x = 0.0, y = 0.0
+    mutating func moveBy(x deltaX: Double, y deltaY: Double) {
+        self = Point(x: x + deltaX, y: y + deltaY)
+    }
+}
+Такая версия изменяющего метода moveBy(x:y:) создает абсолютно новую структуру, чьим значениям x, y присвоены значения конечной точки. Конечный результат вызова этой альтернативной версии метода будет абсолютно таким же как и в ранней версии.
+Изменяющие методы для перечислений могут установить отдельный член перечисления как неявный параметр self:
+enum TriStateSwitch {
+    case off, low, high
+    mutating func next() {
+        switch self {
+        case .off:
+            self = .low
+        case .low:
+            self = .high
+        case .high:
+            self = .off
+        }
+    }
+}
+var ovenLight = TriStateSwitch.low
+ovenLight.next()
+// ovenLight равен .high
+ovenLight.next()
+// ovenLight равен .off
+В этом примере мы рассматриваем перечисление с тремя положениями переключателя. Переключатель проходит последовательно три положения (off, low, high), каждый раз меняя положение, как вызывается метод next().
+Методы типа
+Методы экземпляра, которые описаны выше, являются методами, которые вызываются экземпляром конкретного типа. Вы так же можете определить методы, которые вызываются самим типом. Такие методы зовутся методами типа. Индикатор такого метода - ключевое слово static, которое ставится до ключевого слова метода func. Классы так же могут использовать ключевое слово class, чтобы разрешать подклассам переопределение инструкций суперкласса этого метода.
+Заметка
+В Objective-C определять методы типов можно только для классов. В Swift вы можете создавать методы типа не только для классов, но и для структур и перечислений. Метод каждого типа ограничен самим типом, который его поддерживает.
+Такие методы так же используют точечный синтаксис, как и методы экземпляра. Однако эти методы вы вызываете самим типом, а не экземпляром этого типа. Вот как вы можете вызвать метод самим классом SomeClass:
+class SomeClass {
+    class func someTypeMethod(){
+        //здесь идет реализация метода
+    }
+}
+ 
+SomeClass.someTypeMethod()
+Внутри тела метода типа неявное свойство self ссылается на сам тип, а не на экземпляр этого типа. Это значит, что вы можете использовать self для того, чтобы устранить неоднозначность между свойствами типа и параметрами метода типа, точно так же как вы делали для свойств экземпляра и параметров метода экземпляра.
+Если обобщить, то любое имя метода и свойства, которое вы используете в теле метода типа, будет ссылаться на другие методы и свойства на уровне типа. Метод типа может вызвать другой метод типа с иным именем метода, без использования какого-либо префикса имени типа. Аналогично, методы типа в структурах и перечислениях могут получить доступ к свойствам типа, используя имя этого свойства, без написания префикса имени типа.
+Пример ниже определяет структуру с именем LevelTracker, которая отслеживает прогресс игрока на разных уровнях игры. Это одиночная игра, но может хранить информацию для нескольких игроков на одном устройстве.
+Все уровни игры (кроме первого уровня) заблокированы, когда играют в первый раз. Каждый раз, заканчивая уровень, этот уровень открывается и у остальных игроков на устройстве. Структура LevelTracker использует свойства и методы типа для отслеживания уровней, которые были разблокированы. Так же она отслеживает текущий уровень каждого игрока.
+struct LevelTracker {
+    static var highestUnlockedLevel = 1
+    var currentLevel = 1
+    
+    static func unlock(_ level: Int) {
+        if level > highestUnlockedLevel { highestUnlockedLevel = level }
+    }
+    
+    static func isUnlocked(_ level: Int) -> Bool {
+        return level <= highestUnlockedLevel 
+    } 
+    @discardableResult mutating func advance(to level: Int) -> Bool {
+        if LevelTracker.isUnlocked(level) {
+            currentLevel = level
+            return true
+        } else {
+            return false
+        }
+    }
+}
+Структура LevelTracker следит за самым последним уровнем, который разблокировал игрок. Это значение лежит в свойстве типа highestUnlockedLevel.
+LevelTracker так же определяет две функции для работы со свойством highestUnlockedLevel. Первая функция типа unlock(_:), которая обновляет значение highestUnlockedLevel, каждый раз когда открывается новый уровень. Вторая функция типа isUnlocked(_:), которая возвращает true, если конкретный уровень уже разблокирован. (Обратите внимание, что методы типа могут получить доступ к highestUnlockedLevel без написания LevelTracker.highestUnlockedLevel.)
+В дополнение к его свойствам типа и методам типа, структура LevelTracker так же отслеживает и текущий прогресс игрока в игре. Она использует свойство экземпляра currentLevel для отслеживания уровня, на котором игрок играет.
+Для помощи в управлении свойством currentLevel, структура LevelTracker определяет метод экземпляра advance(to:). До того как обновить currentLevel, этот метод проверяет доступен ли запрашиваемый новый уровень. Метод advance(to:) возвращает логическое значение, указывающее, удалось ли ему поставить currentLevel. Не обязательно должно быть ошибкой игнорирование результата работы функции advance(to:), поэтому этот метод имеет маркировку @discardableResult. Об атрибутах подробнее можно прочитать в разделе Атрибуты.
+Структура LevelTracker используется классом Player, который описан ниже, для отслеживания и обновления прогресса конкретного игрока:
+class Player {
+    var tracker = LevelTracker()
+    let playerName: String
+    func complete(level: Int) {
+        LevelTracker.unlock(level + 1)
+        tracker.advance(to: level + 1)
+    }
+    init(name: String) {
+        playerName = name
+    }
+}
+Класс Player создает новый экземпляр LevelTracker для отслеживания прогресса игрока. Так же он определяет и использует метод complete(level:), который вызывается каждый раз, как игрок заканчивает уровень. Этот метод открывает следующий уровень для всех игроков. (Логическое значение advance(to:) игнорируется, так как уровень открывается функцией LevelTracker.unlock(_:) на предыдущей строке.)
+Вы можете создать экземпляр класса Player для нового игрока и увидеть, что будет, когда игрок закончит первый уровень:
+var player = Player(name: "Argyrios")
+player.complete(level: 1)
+print("Самый последний доступный уровень сейчас равен \(LevelTracker.highestUnlockedLevel)")
+//Выведет "Самый последний доступный уровень сейчас равен 2"
+Если вы создадите второго игрока, и попробуете им начать прохождение уровня, который не был разблокирован ни одним игроком в игре, то вы увидите, что эта попытка будет неудачной:
+player = Player(name: "Beto")
+if player.tracker.advance(to: 6) {
+    print("Игрок на уровне 6")
+} else {
+    print("Уровень 6 еще не разблокирован")
+}
+// Выведет "Уровень 6 еще не разблокирован"
+Если вы нашли ошибку, пожалуйста, выделите фрагмент текста и нажмите Ctrl+Enter.
+Если вы нашли ошибку, пожалуйста, выделите фрагмент текста и нажмите Ctrl+Enter.
+Свойства
+Сабскрипты
+ 
+SwiftBook Самое крупное сообщество iOS разработчиков на языке Swift
+О нас
+Мы в социальных сетяхYouTubeVKontakteFacebookЧат_Telegram
+instagramПолезноеPodlodka
+Подпишись на новости 
+   Политика конфиденциальности
+Пользовательское соглашение
+Найти:
+  © Акулов И.Б., 2014-2021      
+ 
+Сообщить об опечатке
+Текст, который будет отправлен нашим редакторам:
+Ваш комментарий (необязательно):
+Отправить
+Отмена

@@ -1,885 +1,428 @@
-Python Software Foundation News
-  News from the Python Software Foundation
-Wednesday, March 20, 2024
-Announcing a PyPI Support Specialist
-We launched the Python Package Index (PyPI) in 2003 and for most of its history a robust and dedicated volunteer community kept it running. Eventually, we put a bit of PSF staff time into the maintenance of the Index, and last year with support from AWS we hired Mike Fiedler to work full-time on PyPI’s urgent security needs. PyPI has grown enormously in the last 20+ years, and in recent years it has reached a truly massive scale with growth only continuing upward. In 2022 alone, PyPI saw a 57% growth and as of this writing, there are over a half a million packages on PyPI. The impact PyPI has these days is pretty breathtaking. Running a free public service of that size has come with challenges, too. As PyPI has grown, the work of communicating with users and solving account issues here has grown in tandem and out-stripped our current volunteer plus one tenth of a staff person capacity. We also know that some community members have noticed and expressed frustration with the time-frame that goes with tasks that don't have sufficient staffing. Much of this work is sensitive and complex such that it needs to be performed by a PSF staff person. It involves personal information and verification processes to make sure we’re giving access and names to the correct entities. Work like this needs to be done by a person who is here day after day to carry out multi-step verification procedures and is accountable to the PSF. We are very happy to share the news that we are hiring a person to help us manage the increased capacity and allow us to keep pace with PyPI’s seemingly unstoppable growth. This is an associate role that is 100% remote. Please take a look at this posting for a PyPI Support Specialist and share it with your networks. 
-Posted by
-Deb Nicholson
-at
-3/20/2024 03:06:00 PM
-Thursday, February 29, 2024
- White House recommends use of memory-safe languages like Python
-Earlier this week the White House published a report recommending the use of memory-safe programming languages to eliminate an entire class of vulnerabilities affecting software. The report quotes claims from large software producers like Google and Microsoft which estimate that 70% of vulnerabilities affecting software are due to memory-safety issues.Back in December of 2023, the Cybersecurity and Infrastructure Security Agency (CISA) published a report that included a list of memory-safe programming languages, among them was the Python programming language.The Python Software Foundation’s response to the US Government's Request for Information noted Python's memory-safety and ability to wrap code written in C, C++, and Rust among other systems languages. Part of Python’s popularity stems from the large number of community-maintained packages using this feature for performance, wrapping existing libraries, and low-level API access.Cryptography is one of the most depended on Python libraries for cryptographic primitives, installed nearly 10 million times per day. Cryptography started migrating from using C to Rust for security reasons in 2020 and made the first release with Rust binary extensions in 2021. You can listen to maintainers Paul Kehrer and Alex Gaynor discuss this non-trivial migration in their PyCon 2022 talk.The migration of the cryptography library included tools like PyO3 and setuptools-rust that enable easier adoption of Rust binary extensions. There’s already plenty of buzz for using Rust and Python together, the adoption of Rust in Python packages is steadily increasing from the single digits in 2020 to today with hundreds of packages using Rust.There are many opportunities to learn about writing Python binary extensions using Rust, for example, at PyCon US 2024 there will be a tutorial about getting started with PyO3 and a talk on PyO3 and maturin, a PEP 517 build backend for Rust by a maintainer of the PyO3 project.Historically Python binary extensions were built mostly using C and C++ meaning there are many projects which, for reasons like backwards compatibility or lack of resources and time, cannot or do not want to migrate to Rust. For these projects, the use of compiler options can harden binaries against some memory safety issues. The OpenSSF Best Practices working group has published a list of compiler options to consider adopting in order to harden builds of C and C++ code.There is still much work to be done to secure the Python ecosystem and it can’t be done without our amazing community of contributors and maintainers. We look forward to more investment in this area as part of the industries’ adoption of memory-safe programming languages. If you are interested in being part of conversations around improving security in Python, we invite you to open a thread on discuss.python.org.
-Posted by
-Seth Michael Larson
-at
-2/29/2024 11:37:00 AM
-Older Posts
-Home
-Subscribe to:
-Posts (Atom)
-Mission
-The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers.
-Python Software Foundation
-Grants Program
-Membership
-Awards
-Meeting Minutes
-PSF Sponsors
-A big thank you to the above PSF sponsors for supporting our mission!
-Tweets by ThePSF 
-Blog Archive
-        ▼ 
-      
-2024
-(8)
-        ▼ 
-      
-March
-(1)
-Announcing a PyPI Support Specialist
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(4)
-        ► 
-      
-2023
-(37)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(3)
-        ► 
-      
-June
-(5)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2022
-(35)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(2)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(3)
-        ► 
-      
-February
-(1)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2021
-(42)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(2)
-        ► 
-      
-June
-(4)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(5)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(4)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2020
-(51)
-        ► 
-      
-December
-(8)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(4)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(10)
-        ► 
-      
-April
-(11)
-        ► 
-      
-March
-(4)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2019
-(45)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(4)
-        ► 
-      
-August
-(3)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(5)
-        ► 
-      
-May
-(11)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(5)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2018
-(31)
-        ► 
-      
-December
-(5)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(5)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(1)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2017
-(32)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(6)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(2)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(3)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(4)
-        ► 
-      
-2016
-(27)
-        ► 
-      
-December
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(6)
-        ► 
-      
-April
-(4)
-        ► 
-      
-March
-(2)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2015
-(67)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(4)
-        ► 
-      
-April
-(13)
-        ► 
-      
-March
-(14)
-        ► 
-      
-February
-(9)
-        ► 
-      
-January
-(4)
-        ► 
-      
-2014
-(14)
-        ► 
-      
-October
-(1)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(1)
-        ► 
-      
-May
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2013
-(18)
-        ► 
-      
-November
-(1)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(5)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2012
-(21)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(4)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(1)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2011
-(55)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(7)
-        ► 
-      
-September
-(5)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(8)
-        ► 
-      
-April
-(8)
-        ► 
-      
-March
-(13)
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2010
-(35)
-        ► 
-      
-December
-(4)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(8)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(4)
-        ► 
-      
-March
-(2)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2009
-(21)
-        ► 
-      
-December
-(1)
-        ► 
-      
-October
-(1)
-        ► 
-      
-September
-(6)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(1)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(1)
-        ► 
-      
-February
-(1)
-        ► 
-      
-2008
-(23)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(1)
-        ► 
-      
-August
-(3)
-        ► 
-      
-July
-(1)
-        ► 
-      
-May
-(3)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(5)
-        ► 
-      
-February
-(4)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2007
-(26)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(6)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2006
-(39)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(5)
-        ► 
-      
-September
-(4)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(3)
-        ► 
-      
-May
-(7)
-        ► 
-      
-April
-(6)
-        ► 
-      
-March
-(3)
-Powered by Blogger.
+Функции - SwiftBook
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+Документация
+ 
+ 
+Развернуть
+Свернуть
+              
+        Документация		
+		  
+		  
+        
+              
+        Знакомство со Swift		
+		  
+		  
+        
+ О языке Swift
+ Совместимость версий Swift
+ Тур по Swift
+ 
+              
+        Руководство Swift		
+		  
+		  
+        
+ Основы
+ Базовые операторы
+ Строки и символы
+ Типы коллекций
+ Управление потоком
+ Функции
+ Замыкания
+ Перечисления
+ Структуры и классы
+ Свойства
+ Методы
+ Сабскрипты
+ Наследование
+ Инициализация
+ Деинициализация
+ Опциональная последовательность
+ Обработка ошибок
+ Согласованность
+ Приведение типов
+ Вложенные типы
+ Расширения
+ Непрозрачные типы
+ Протоколы
+ Универсальные шаблоны
+ Автоматический подсчет ссылок (ARC)
+ Безопасность хранения
+ Контроль доступа
+ Продвинутые операторы
+ 
+              
+        Справочник языка		
+		  
+		  
+        
+ Лексическая структура
+ Типы
+ Выражения
+ Инструкции
+ Объявления
+ Атрибуты
+ Шаблоны
+ Параметры и аргументы универсального типа
+ Резюме по грамматике
+ 
+ 
+		Функции		
+        
+Функции
+Функции – это самостоятельные фрагменты кода, решающие определенную задачу. Каждой функции присваивается уникальное имя, по которому ее можно идентифицировать и "вызвать" в нужный момент.
+Язык Swift предлагает достаточно гибкий единый синтаксис функций – от простых C-подобных функций без параметров до сложных методов в стиле Objective-C с локальными и внешними параметрами. Параметры могут служить как для простой инициализации значений внутри функции, так и для изменения внешних переменных после выполнения функции.
+Каждая функция в Swift имеет тип, описывающий тип параметров функции и тип возвращаемого значения. Тип функции можно использовать аналогично любым другим типам в Swift, т. е. одна функция может быть параметром другой функции либо ее результирующим значением. Функции также могут вкладываться друг в друга, что позволяет инкапсулировать определенный алгоритм внутри локального контекста.
+Объявление и вызов функций
+При объявлении функции можно задать одно или несколько именованных типизированных значений, которые будут ее входными данными (или параметрами), а также тип значения, которое функция будет возвращать в качестве результата (или возвращаемый тип).
+У каждой функции должно быть имя, которое отражает решаемую задачу. Чтобы воспользоваться функцией, ее нужно "вызвать", указав имя и входные значения (аргументы), соответствующие типам параметров этой функции. Аргументы функции всегда должны идти в том же порядке, в каком они были указаны при объявлении функции.
+В приведенном ниже примере функция называется greet(person:), потому что это отражает ее задачу – получить имя пользователя и вежливо поздороваться. Для этого задается один входной параметр типа String под названием person, а возвращается тоже значение типа String, но уже содержащее приветствие:
+func greet(person: String) -> String {
+    let greeting = "Привет, " + person + "!"
+    return greeting
+}
+Вся эта информация указана в объявлении функции, перед которым стоит ключевое слово func. Тип возвращаемого значения функции ставится после результирующей стрелки -> (это дефис и правая угловая скобка).
+Из объявления функции можно узнать, что она делает, какие у нее входные данные и какой результат она возвращает. Объявленную функцию можно однозначно вызывать из любого участка кода:
+print(greet(person: "Anna"))
+// Выведет "Привет, Anna!"
+print(greet(person: "Brian"))
+// Выведет "Привет, Brian!"
+Функция greet(person:) вызывается, принимая значение типа String, которое стоит после имени person, например вот так - greet(person: "Anna"). Поскольку функция возвращает значение типа String, вызов функции greet(person:) может быть завернут в вызов для функции print(_:separator:terminator:), чтобы напечатать полученную строку и увидеть возвращаемое значение (см. выше).
+Заметка
+У print(_:separator:terminator:) нет ярлыка для первого аргумента, и его другие аргументы являются опциональными, поскольку имеют дефолтное значение (по умолчанию). Эти вариации синтаксиса функции рассматриваются ниже в Ярлыки аргументов и имена параметров функций и Значения по умолчанию для параметров.
+Тело функции greet(person:) начинается с объявления новой константы типа String под названием greeting, и устанавливается простое сообщение-приветствие. Затем это приветствие возвращается в точку вызова функции с помощью ключевого слова return. После выполнения оператора return greeting функция завершает свою работу и возвращает текущее значение greeting.
+Функцию greet(person:) можно вызывать многократно и с разными входными значениями. В примере выше показано, что будет, если функцию вызвать с аргументом "Anna" и со значением "Brian". В каждом случае функция возвратит персональное приветствие.
+Чтобы упростить код этой функции, можно записать создание сообщения и его возврат в одну строку:
+func greetAgain(person: String) -> String {
+    return "Hello again, " + person + "!"
+}
+print(greetAgain(person: "Anna"))
+// Выведет "Hello again, Anna!"
+Параметры функции и возвращаемые значения
+В языке Swift параметры функций и возвращаемые значения реализованы очень гибко. Разработчик может объявлять любые функции – от простейших, с одним безымянным параметром, до сложных, со множеством параметров и составными именами.
+Функции без параметров
+В некоторых случаях функции могут не иметь входных параметров. Вот пример функции без входных параметров, которая при вызове всегда возвращает одно и то же значение типа String:
+func sayHelloWorld() -> String {
+    return "hello, world"
+}
+print(sayHelloWorld())
+// Выведет "hello, world"
+Обратите внимание, что несмотря на отсутствие параметров, в объявлении функции все равно нужно ставить скобки после имени. При вызове после имени функции также указываются пустые скобки.
+Функции с несколькими входными параметрами
+У функции может быть несколько параметров, которые указываются через запятую в скобках.
+Эта функция принимает два параметра: имя человека и булево значение, приветствовали ли его уже, и возвращает соответствующее приветствие для этого человека:
+func greet(person: String, alreadyGreeted: Bool) -> String {
+    if alreadyGreeted {
+        return greetAgain(person: person)
+    } else {
+        return greet(person: person)
+    }
+}
+print(greet(person: "Tim", alreadyGreeted: true))
+// Выведет "Hello again, Tim!"
+Вы вызываете функцию greet(person:alreadyGreeted:), передавая значение типа String параметру с ярлыком person и булево значение с ярлыком alreadyGreeted, взятое в скобки через запятую. Обратите внимание, что эта функция отличается от функции greet(person:), которую вы видели в предыдущем разделе. Хотя имена обеих функций начинаются с greet, функция greet(person:alreadyGreeted:) принимает два аргумента, а greet(person:) принимает только один.
+Функции, не возвращающие значения
+В некоторых случаях функции могут не иметь возвращаемого типа. Вот другая реализация функции greet(person:), которая выводит свое собственное значение типа String, но не возвращает его:
+func greet(person: String) {
+    print("Привет, \(person)!")
+}
+greet(person: "Dave")
+// Выведет "Привет, Dave!"
+Так как у функции нет выходного значения, в ее объявлении отсутствует результирующая стрелка (->) и возвращаемый тип.
+Заметка
+Строго говоря, функция greet(person:) все же возвращает значение, хотя оно нигде и не указано. Функции, для которых не задан возвращаемый тип, получают специальный тип Void. По сути, это просто пустой кортеж, т. е. кортеж с нулем элементов, который записывается как ().
+Выходное значение функции может быть игнорировано:
+func printAndCount(string: String) -> Int {
+    print(string)
+    return string.count
+}
+func printWithoutCounting(string: String) {
+    let _ = printAndCount(string: string)
+}
+printAndCount(string: "hello, world")
+// Выведет "hello, world" и возвращает значение 12
+printWithoutCounting(string: "hello, world")
+// Выведет "hello, world", но не возвращает значения
+Первая функция, printAndCount(string:) выводит строку, а затем возвращает подсчет символов в виде целого (Int). Вторая функция, printWithoutCounting(string:) вызывает первую, но игнорирует ее возвращаемое значение. При вызове второй функции первая функция по-прежнему печатает сообщение, но ее возвращаемое значение не используется.
+Заметка
+Хотя возвращаемые значения можно игнорировать, функция все же должна возвратить то, что задано в ее объявлении. Функция, для которой указан возвращаемый тип, не может заканчиваться оператором, который ничего не возвращает, иначе произойдет ошибка во время компиляции.
+Функции, возвращающие несколько значений
+Вы можете использовать кортежный тип в качестве возвращаемого типа для функции для возврата нескольких значений в виде составного параметра.
+В следующем примере объявлена функция minMax(array:), которая ищет минимальный и максимальный элементы в массиве типа Int:
+func minMax(array: [Int]) -> (min: Int, max: Int) {
+    var currentMin = array[0]
+    var currentMax = array[0]
+    for value in array[1..<array.count] {
+        if value < currentMin {
+            currentMin = value
+        } else if value > currentMax {
+            currentMax = value
+        }
+    }
+    return (currentMin, currentMax)
+}
+Функция minMax(array:) возвращает кортеж из двух значений типа Int. Этим значениям присвоены имена min и max, чтобы к ним можно было обращаться при запросе возвращаемого типа функции.
+Тело функции minMax(array:) начинается с инициализации двух рабочих переменных currentMin и currentMax значением первого целого элемента в массиве. Затем функция последовательно проходит по всем остальным значениям в массиве и сравнивает их со значениями currentMin и currentMax соответственно. И наконец, самое маленькое и самое большое значения возвращаются внутри кортежа типа Int.
+Так как имена элементов кортежа указаны в возвращаемом типе функции, к ним можно обращаться через точку и считывать значения:
+let bounds = minMax(array: [8, -6, 2, 109, 3, 71])
+print("min is \(bounds.min) and max is \(bounds.max)")
+// Выведет "min is -6 and max is 109"
+Обратите внимание, что элементам кортежа не нужно давать название в момент возвращения кортежа из функции, так как их имена уже указаны как часть возвращаемого типа функции.
+Опциональный кортеж как возвращаемый тип
+Если возвращаемый из функции кортеж может иметь "пустое значение", то его следует объявить как опциональный кортеж, т. е. кортеж, который может равняться nil. Чтобы сделать возвращаемый кортеж опциональным, нужно поставить вопросительный знак после закрывающей скобки:(Int, Int)? или (String, Int, Bool)?.
+Заметка
+Кортеж-опционал вида (Int, Int)? - это не то же самое, что кортеж, содержащий опционалы: (Int?, Int?). Кортеж-опционал сам является опционалом, но не обязан состоять из опциональных значений.
+Функция minMax(array:) выше возвращает кортеж из двух значений типа Int, однако не проверяет корректность передаваемого массива. Если аргумент array содержит пустой массив, для которого count равно 0, функция minMax в том виде, в каком она приведена выше, выдаст ошибку выполнения, когда попытается обратиться к элементу array[0].
+Для устранения этого недочета перепишем функцию minMax(array:) так, чтобы она возвращала кортеж-опционал, который в случае пустого массива примет значение nil:
+func minMax(array: [Int]) -> (min: Int, max: Int)? {
+    if array.isEmpty { return nil }
+    var currentMin = array[0]
+    var currentMax = array[0]
+    for value in array[1..<array.count] {
+        if value < currentMin {
+            currentMin = value
+        } else if value > currentMax {
+            currentMax = value
+        }
+    }
+    return (currentMin, currentMax)
+}
+Чтобы проверить, возвращает ли эта версия функции minMax(array:) фактическое значение кортежа или nil, можно использовать привязку опционала:
+if let bounds = minMax(array: [8, -6, 2, 109, 3, 71]) {
+    print("min is \(bounds.min) and max is \(bounds.max)")
+}
+// Выведет "min is -6 and max is 109"
+Функции с неявным возвращаемым значением
+Если тело функции состоит из единственного выражения, то функция неявно возвращает это выражение. Например, обе функции в примере ниже имеют одно и то же поведение:
+func greeting(for person: String) -> String {
+    "Привет, " + person + "!"
+}
+print(greeting(for: "Дейв"))
+// Выведет "Привет, Дейв!"
+func anotherGreeting(for person: String) -> String {
+    return "Привет, " + person + "!"
+}
+print(anotherGreeting(for: "Дейв"))
+// Выведет "Привет, Дейв!"
+Поведение функции greeting(for:) заключается в том, чтобы просто вернуть приветственное сообщение, что означает, что мы можем использовать сокращенную запись этой функции. Функция anotherGreeting(for:) возвращает то же самое приветственное сообщение, используя ключевое слово return. Таким образом, если вы пишите функцию, которая состоит из одного лишь возвращаемого значения, то вы можете опустить слово return.
+Как вы увидите в главе "Сокращенный вариант объявления геттера", геттер так же может использовать сокращенную форму записи с опущенным словом return.
+Заметка
+Код, который вы написали с неявным возвращаемым значением должен иметь это самое возвращаемое значение. Например, вы не можете использовать print(13) как неявное возвращаемые значения. Однако вы можете использовать функцию, которая никогда не возвращает значение, например, fatalError("Oh no!"), в качестве неявного возвращаемого значения, потому что Swift знает, что неявного возврата не происходит.
+Ярлыки аргументов и имена параметров функций
+Каждый параметр функции имеет ярлык аргумента и имя параметра. Ярлык аргумента используется при вызове функции. Каждый параметр при вызове функции записывается  с ярлыком аргумента, стоящим перед ним. Имя параметра используется при реализации функции. По умолчанию параметры используют имена их параметров в качестве ярлыка аргумента.
+func someFunction(firstParameterName: Int, secondParameterName: Int) {
+    // Внутри тела функции firstParameterName и secondParameterName
+    // ссылаются на значения аргументов, первого и второго параметров.
+}
+someFunction(firstParameterName: 1, secondParameterName: 2)
+Все параметры должны иметь уникальные имена. Несмотря на то, что несколько параметров могут иметь один ярлык аргумента, уникальные ярлыки аргумента метки помогают сделать ваш код более читабельным.
+Указываем ярлыки аргументов
+Вы пишете ярлык аргумента перед именем параметра через пробел:
+func someFunction(argumentLabel parameterName: Int) {
+    // В теле функции parameterName относится к значению аргумента
+    // для этого параметра.
+}
+Вот вариант функции greet(person:), которая принимает имя человека и его родной город, затем возвращает приветствие:
+func greet(person: String, from hometown: String) -> String {
+    return "Hello \(person)!  Glad you could visit from \(hometown)."
+}
+print(greet(person: "Bill", from: "Cupertino"))
+// Выводит "Hello Bill!  Glad you could visit from Cupertino."
+Использование ярлыков аргументов позволяет функции вызываться в более выразительной манере, в виде предложения, при этом все же предоставляя тело функции в более читаемом виде и с более понятыми намерениями.
+Пропуск ярлыков аргумента
+Если вы не хотите использовать имя параметра в качестве ярлыка аргумента - используйте подчеркивание (_) вместо явного ярлыка аргумента для этого параметра.
+func someFunction(_ firstParameterName: Int, secondParameterName: Int) {
+    // В теле функции firstParameterName и secondParameterName
+    // ссылаются на значения аргументов для первого и второго параметров.
+}
+someFunction(1, secondParameterName: 2)
+Если у параметра есть ярлык аргумента, то аргумент должен иметь ярлык при вызове функции.
+Значения по умолчанию для параметров
+При объявлении функции любому из ее параметров можно присвоить значение по умолчанию. Если у параметра есть значение по умолчанию, то при вызове функции этот параметр можно опустить.
+func someFunction(parameterWithoutDefault: Int, parameterWithDefault: Int = 12) {
+    // Если вы пропускаете второй аргумент при вызове функции, то
+    // значение parameterWithDefault будет равняться 12 внутри тела функции.
+}
+someFunction(parameterWithoutDefault: 3, parameterWithDefault: 6) // parameterWithDefault равен 6
+someFunction(parameterWithoutDefault: 4) // parameterWithDefault равен 12
+Расположите параметры, у которых нет дефолтных значений в начале списка параметров функции до параметров с дефолтными значениями. Параметры, не имеющие значения по умолчанию, как правило, более важны для значения функции - их запись в первую очередь облегчает распознавание функции уже вызванной ранее, независимо от того, опущены ли какие-то параметры по умолчанию.
+Вариативные параметры
+Вариативным называют параметр, который может иметь сразу несколько значений или не иметь ни одного. С помощью вариативного параметра можно передать в функцию произвольное число входных значений. Чтобы объявить параметр как вариативный, нужно поставить три точки (...) после его типа.
+Значения, переданные через вариативный параметр, доступны внутри функции в виде массива соответствующего типа. Например, вариативный параметр numbers типа Double... доступен внутри функции в виде массива-константы numbers типа [Double].
+В приведенном ниже примере вычисляется среднее арифметическое (или же среднее) последовательности чисел, имеющей произвольную длину:
+func arithmeticMean(_ numbers: Double...) -> Double {
+    var total: Double = 0
+    for number in numbers {
+        total += number
+    }
+    return total / Double(numbers.count)
+}
+arithmeticMean(1, 2, 3, 4, 5)
+// возвращает 3.0, что является средним арифметическим этих пяти чисел
+arithmeticMean(3, 8.25, 18.75)
+// возвращает 10.0, что является средним арифметическим этих трех чисел
+Функции могут иметь несколько вариативных параметров. Первый параметр, который идет после вариативного параметра должен иметь ярлык аргумента. Ярлык аргумента позволяет однозначно определить, какие аргументы передаются вариативному, а какие - параметрам, которые идут после вариативного параметра.
+Сквозные параметры
+Параметры функции по умолчанию являются константами. Попытка изменить значение параметра функции из тела этой функции приводит к ошибке компиляции. Это означает, что вы не сможете изменить значение параметра по ошибке. Если вы хотите, чтобы функция изменила значение параметра, и вы хотите, чтобы эти изменения сохранились после того, как закончился вызов функции, определите этот параметр в качестве сквозного параметра.
+Для создания сквозного параметра нужно поставить ключевое слово inout перед типом объявлением параметра. Сквозной параметр передает значение в функцию, которое затем изменяется в ней и возвращается из функции, заменяя исходное значение. Более подробную информацию поведения сквозных параметров и связанных с ними оптимизаций компилятора см. Сквозные Параметры.
+Вы можете передать только переменную в качестве аргумента для сквозного параметра. Вы не можете передать константу или значения литерала в качестве аргумента, так как константы и литералы не могут быть изменены. Вы ставите амперсанд (&) непосредственно перед именем переменной, когда передаете ее в качестве аргумента сквозного параметра, чтобы указать, что он может быть изменен с помощью функции.
+Заметка
+Сквозные параметры не могут иметь значения по умолчанию, а вариативные параметры не могут быть сквозными, с ключевым словом inout.
+Вот пример функции под названием swapTwoInts(_:_:), у которой есть два сквозных целочисленных параметра – a и b:
+func swapTwoInts(_ a: inout Int, _ b: inout Int) {
+    let temporaryA = a
+    a = b
+    b = temporaryA
+}
+Функция swapTwoInts(_:_:) просто меняет значение переменной b на значение a, а значение a – на значение b. Для этого функция сохраняет значение a в локальной константе temporaryA, присваивает значение b переменной a, а затем присваивает значение temporaryA переменной b.
+Вы можете вызвать функцию swapTwoInts (_: _:) с двумя переменными типа Int, чтобы поменять их значения. Обратите внимание, что имена someInt и anotherInt начинаются с амперсанда, когда они передаются в swapTwoInts (_: _:) функции:
+var someInt = 3
+var anotherInt = 107
+swapTwoInts(&someInt, &anotherInt)
+print("someInt is now \(someInt), and anotherInt is now \(anotherInt)")
+// Выведет "someInt is now 107, and anotherInt is now 3"
+В вышеприведенном примере видно, что исходные значения переменных someInt и anotherInt изменены функцией swapTwoInts (_: _:), несмотря на то, что изначально они были объявлены за ее пределами.
+Заметка
+Сквозные параметры – это не то же самое, что возвращаемые функцией значения. В примере с функцией swapTwoInts нет ни возвращаемого типа, ни возвращаемого значения, но параметры someInt и anotherInt все равно изменяются. Сквозные параметры – это альтернативный способ передачи изменений, сделанных внутри функции, за пределы тела этой функции.
+Функциональные типы
+У каждой функции есть специальный функциональный тип, состоящий из типов параметров и типа возвращаемого значения.
+Пример:
+func addTwoInts(a: Int, _ b: Int) -> Int {
+  return a + b
+}
+func multiplyTwoInts(a: Int, _ b: Int) -> Int {
+  return a * b
+}
+В данном примере объявлены две простые математические функции – addTwoInts и multiplyTwoInts. Каждая из этих функций принимает два значения типа Int и возвращает одно значение типа Int, содержащее результат математической операции.
+Обе функции имеют тип (Int, Int) -> Int. Эта запись означает следующее:
+"функция с двумя параметрами типа Int, возвращающая значение типа Int".
+Вот еще один пример, но уже функции без параметров и возвращаемого значения:
+func printHelloWorld() {
+  print("hello, world")
+}
+Эта функция имеет тип () -> Void, т. е. "функция без параметров, которая возвращает Void".
+Использование функциональных типов
+В Swift с функциональными типами можно работать так же, как и с другими типами. Например, можно объявить константу или переменную функционального типа и присвоить ей функцию соответствующего типа:
+var mathFunction: (Int, Int) -> Int = addTwoInts
+Эта запись означает следующее:
+"Объявить переменную mathFunction, имеющую тип "функция, принимающая два значения типа Int, и возвращающая одно значение типа Int". Присвоить этой новой переменной указатель на функцию addTwoInts".
+Функция addTwoInts имеет тот же тип, что и переменная mathFunction, поэтому с точки зрения языка Swift такое присваивание корректно.
+Теперь функцию можно вызывать с помощью переменной mathFunction:
+print("Result: \(mathFunction(2, 3))")
+// Выведет "Result: 5"
+Той же переменной можно присвоить и другую функцию такого же типа – аналогично нефункциональным типам:
+mathFunction = multiplyTwoInts
+print("Result: \(mathFunction(2, 3))")
+// Выведет "Result: 6"
+Как и в случае с любым другим типом, вы можете не указывать тип явно, а предоставить Swift самостоятельно вывести функциональный тип при присваивании функции константе или переменной:
+let anotherMathFunction = addTwoInts
+// для константы anotherMathFunction выведен тип (Int, Int) -> Int
+Функциональные типы как типы параметров
+Функциональные типы наподобие (Int, Int) -> Int могут быть типами параметров другой функции. Это позволяет определять некоторые аспекты реализации функции непосредственно во время ее вызова.
+Следующий код печатает на экране результаты работы приведенных выше математических функций:
+func printMathResult(_ mathFunction: (Int, Int) -> Int, _ a: Int, _ b: Int) {
+    print("Result: \(mathFunction(a, b))")
+}
+printMathResult(addTwoInts, 3, 5)
+// Выведет "Result: 8"
+В этом примере объявлена функция printMathResult(_:_:_:), у которой есть три параметра. Первый параметр под названием mathFunction имеет тип (Int, Int) -> Int. Соответственно, аргументом этого параметра может быть любая функция такого же типа. Второй и третий параметры называются a и b и относятся к типу Int. Они служат для передачи двух входных значений для математической функции.
+При вызове printMathResult(_:_:_:) получает в качестве входных данных функцию addTwoInts(_:_:) и два целочисленных значения 3 и 5. Затем она вызывает переданную функцию со значениями 3 и 5, а также выводит на экран результат 8.
+Задача функции printMathResult(_:_:_:) заключается в том, чтобы печатать результат работы математической функции соответствующего типа. При этом конкретные детали этой математической функции не имеют значения – главное, чтобы она была подходящего типа. Все это позволяет безопасно управлять работой функции printMathResult(_:_:_:) непосредственно во время вызова.
+Функциональные типы как возвращаемые типы
+Функциональный тип можно сделать возвращаемым типом другой функции. Для этого нужно записать полный функциональный тип сразу же после возвратной стрелки (->) в возвращаемой функции.
+В следующем примере объявлены две простые функции – stepForward(_:) и stepBackward(_:). Функция stepForward(_:) возвращает входное значение, увеличенное на единицу, а функция stepBackward(_:) – уменьшенное на единицу. Обе функции имеют тип (Int) -> Int:
+func stepForward(_ input: Int) -> Int {
+    return input + 1
+}
+func stepBackward(_ input: Int) -> Int {
+    return input - 1
+}
+Следующая функция под названием chooseStepFunction(backward:) имеет возвращаемый тип (Int) -> Int. Функция chooseStepFunction(backward:) возвращает функцию stepForward(_:) или функцию stepBackward(_:) в зависимости от значения логического параметра backward:
+func chooseStepFunction(backward: Bool) -> (Int) -> Int {
+    return backward ? stepBackward : stepForward
+}
+Теперь с помощью chooseStepFunction(backward:) можно получать функцию, которая будет сдвигать значение влево или вправо:
+var currentValue = 3
+let moveNearerToZero = chooseStepFunction(backward: currentValue > 0)
+// moveNearerToZero ссылается на функцию stepBackward()
+В предыдущем примере мы определяли, нужно ли прибавить или отнять единицу, чтобы последовательно приблизить переменную currentValue к нулю. Изначально currentValue имеет значение 3, т. е. сравнение currentValue > 0 даст true, а функция chooseStepFunction(backward:), соответственно, возвратит функцию stepBackward(_:). Указатель на возвращаемую функцию хранится в константе moveNearerToZero.
+Так как moveNearerToZero теперь ссылается на нужную функцию, можно использовать эту константу для отсчета до нуля:
+print("Counting to zero:")
+// Counting to zero:
+while currentValue != 0 {
+    print("\(currentValue)... ")
+    currentValue = moveNearerToZero(currentValue)
+}
+print("zero!")
+// 3...
+// 2...
+// 1...
+// zero!
+Вложенные функции
+Все ранее рассмотренные в этом разделе функции являются глобальными, т. е. определенными в глобальном контексте. Но помимо глобальных можно объявлять и функции, находящиеся внутри других функций, или же вложенные.
+Вложенные функции по умолчанию недоступны извне, а вызываются и используются только заключающей функцией. Заключающая функция может также возвращать одну из вложенных, чтобы вложенную функцию можно было использовать за ее пределами.
+Приведенный выше пример с функцией chooseStepFunction(backward:) можно переписать со вложенными функциями:
+func chooseStepFunction(backward: Bool) -> (Int) -> Int {
+    func stepForward(input: Int) -> Int { return input + 1 }
+    func stepBackward(input: Int) -> Int { return input - 1 }
+    return backward ? stepBackward : stepForward
+}
+var currentValue = -4
+let moveNearerToZero = chooseStepFunction(backward: currentValue > 0)
+// moveNearerToZero теперь ссылается на вложенную функцию stepForward() 
+while currentValue != 0 {
+    print("\(currentValue)... ")
+    currentValue = moveNearerToZero(currentValue)
+}
+print("zero!")
+// -4...
+// -3...
+// -2...
+// -1...
+// zero!
+Если вы нашли ошибку, пожалуйста, выделите фрагмент текста и нажмите Ctrl+Enter.
+Управление потоком
+Замыкания
+ 
+SwiftBook Самое крупное сообщество iOS разработчиков на языке Swift
+О нас
+Мы в социальных сетяхYouTubeVKontakteFacebookЧат_Telegram
+instagramПолезноеPodlodka
+Подпишись на новости 
+   Политика конфиденциальности
+Пользовательское соглашение
+Найти:
+  © Акулов И.Б., 2014-2021      
+ 
+Сообщить об опечатке
+Текст, который будет отправлен нашим редакторам:
+Ваш комментарий (необязательно):
+Отправить
+Отмена

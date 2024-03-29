@@ -1,187 +1,428 @@
+Функции - SwiftBook
  
-Python Software Foundation Staff | Python Software Foundation
-Notice: While JavaScript is not essential for this website, your interaction with the content will be limited. Please turn JavaScript on for the full experience. 
-Skip to content
-▼ Close
-                
-Python
-PSF
-Docs
-PyPI
-Jobs
-Community
-▲ The Python Network
-                
-Donate
-≡ Menu
-Search This Site
-                                    GO
-                                
-A A
-Smaller
-Larger
-Reset
-Socialize
-LinkedIn
-Mastodon
-Chat on IRC
-Twitter
-About
-Mission Statement
-Board of Directors & Officers
-PSF Staff
-Annual Impact Report
-Fiscal Sponsorees
-Public Records
-Legal & Policies
-PSF FAQ
-Sponsorship
-PSF Sponsors
-Apply to Sponsor
-Membership
-Sign up as a Member of the PSF!
-Membership FAQ
-PSF Elections
-Nominate a Fellow & Fellows Roster
-Donate
-Donate to the PSF
-Become a Supporting Member of the PSF
-PSF Matching Donations
-Volunteer
-Volunteer for the PSF
-PSF Work Groups
-Volunteer for PyCon US
-Grants
-Grants program
-Grants Program FAQ
-PyCon US
-News & Community
-Subscribe to the Newsletter
-PSF Blog
-Python Community Code of Conduct
-Community Awards
-Discourse
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
  
-Python Software Foundation Staff
-Deb Nicholson
-Executive Director
-Deb Nicholson joined the PSF in April 2022. She is an experienced non-profit professional and passionate open source community builder who has worked at the Open Source Initiative, Software Freedom Conservancy and the Open Invention Network. She is also a founding organizer of the Seattle GNU/Linux Conference, an annual event dedicated to surfacing new voices and welcoming new people to the free software community. She'll be building on the PSF's existing work to strengthen and diversify the global Python community, identifying new education and outreach opportunities and increasing technical and organizational capacities. She is a sci-fi nerd who lives with her partner and her lucky black cat in Cambridge, Massachusetts.
-Loren Crary
-Director of Resource Development
-Loren joined the PSF in November 2021 to grow and diversify the PSF’s base of financial support. She will work with members, donors, sponsors, grant-awarding organizations, and the Board of Directors to expand the resources available to run our programs and strengthen the long term sustainability of the PSF. Loren has a B.A. from Amherst College and a J.D. from Stanford Law School. Prior to the PSF, she spent seven years leading fundraising and strategic revenue growth for Educate!, a non-profit social enterprise serving youth in Uganda, Rwanda, and Kenya. Outside of work, Loren enjoys solving cryptic crosswords, writing fiction, and playing with her rescue pup.
-Ee Durbin
-Director of Infrastructure 
+Найти:
  
-Ee joined the PSF after years of volunteering with the PSF Infrastructure Working Group, PyPI, and PyCon US. They support Python community infrastructure such as www.python.org, pypi.org, and mail.python.org collaborating with volunteers from from around the globe. Internally, Ee takes responsibility for evaluating, strengthening, and implementing systems used by the PSF staff and board of directors to fulfill our mission. Outside of the PSF Ee enjoys making and consuming tacos, riding their bikes, and convincing themself that their cats love them.
-Phyllis Dobbs
-Controller 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
  
-Phyllis joined the PSF in January of 2017.  She is a CPA in the state of Illinois, has a B.S. in Accounting from Clemson University, and an M.B.A from Duke University.  After beginning her career in public accounting, she worked in educational publishing  for over 14 years including supporting Ed Tech group.  In 2015, she switched to supporting small non-profits in accounting, tax, budgeting, payroll, and human resources matters.  In her spare time, Phyllis enjoys practicing yoga, reading, traveling, and serving as a Library Board Trustee.
-Olivia Sauls
-Program Director
+Найти:
+Документация
  
-Olivia joined the PSF in August 2021 to assist in the planning of PyCon US and provide administrative support. She holds a B.S. in Biology and a B.S. in Nonprofit Management from the University of Wisconsin-Madison and has worked in various roles throughout the nonprofit sector. When she’s not working, Olivia can be found attempting and failing DIY projects, hiking with her dog, or spending time with friends and family.
-Joe Carey
-Accounting Manager 
  
-Joe joined the PSF's accounting team in 2019 to support the accurate recording and reporting of the PSF's activities. He is a CPA who has been using Python to make accounting easier since 2016, and he holds a B.S. and M.S. in Accounting from the University of Texas at Arlington. In his spare time he builds things and dreams up plans for additional entrepreneurial pursuits.
-Laura Graves
-Senior Accountant 
+Развернуть
+Свернуть
+              
+        Документация		
+		  
+		  
+        
+              
+        Знакомство со Swift		
+		  
+		  
+        
+ О языке Swift
+ Совместимость версий Swift
+ Тур по Swift
  
-Laura joined the PSF in February 2019 to assist with processing grants and donations, tracking expenses, and other general accounting functions. She has her Master's of Accountancy from the University of Alabama, and has worked in various accounting roles across many industries. When she's not working, Laura can usually be found reading, scuba diving, or petting a nearby dog.
-Seth Larson
-Python Security Developer in Residence
+              
+        Руководство Swift		
+		  
+		  
+        
+ Основы
+ Базовые операторы
+ Строки и символы
+ Типы коллекций
+ Управление потоком
+ Функции
+ Замыкания
+ Перечисления
+ Структуры и классы
+ Свойства
+ Методы
+ Сабскрипты
+ Наследование
+ Инициализация
+ Деинициализация
+ Опциональная последовательность
+ Обработка ошибок
+ Согласованность
+ Приведение типов
+ Вложенные типы
+ Расширения
+ Непрозрачные типы
+ Протоколы
+ Универсальные шаблоны
+ Автоматический подсчет ссылок (ARC)
+ Безопасность хранения
+ Контроль доступа
+ Продвинутые операторы
  
-Seth joined the PSF in June 2023 as the Security Developer in Residence. He works on broadly improving the security posture of the Python ecosystem across many projects including CPython and PyPI.
-Outside of work, Seth enjoys playing games of all varieties, tending to his garden, and eating at new restaurants in his hometown of Minneapolis, Minnesota.
-Mike Fiedler
-PyPI Safety and Security Engineer
+              
+        Справочник языка		
+		  
+		  
+        
+ Лексическая структура
+ Типы
+ Выражения
+ Инструкции
+ Объявления
+ Атрибуты
+ Шаблоны
+ Параметры и аргументы универсального типа
+ Резюме по грамматике
  
-With over thirty years of software and systems experience, Mike is a seasoned professional who has accumulated extensive knowledge and expertise in the field. He has actively engaged with the Python community, contributing to open source projects and sharing his insights. His leadership roles at companies like Datadog, Warby Parker, and others have enabled him to mentor and guide others in the tech industry. Recognized as an AWS Container Hero and an avid open source maintainer, Mike's dedication to learning, problem-solving reflects his holistic approach to technology.
-Beyond his professional pursuits, Mike's personal life is just as vibrant. He has been a dedicated volunteer roller derby referee for the past 15 years, and he enjoys experimenting with various vegetarian dishes in the kitchen. Mike currently resides in New York City with his partner, Elyssa.
-Marisa Camacho
-Community Events Coordinator
  
-Marisa is entering the PSF team as the Community Events Coordinator from a Sustainable Peacebuilding and community engagement background. They have focused much of their work on digital arts and culture and have worked on various events, from an international peace conference to a film festival, to a gala fundraiser, and even a fashion show. For fun, Marisa loves to bake, paint, read, and watch a lot of movies-horror being their favorite genre.
-Marie Nordin
-Community Communications Manager
+		Функции		
+        
+Функции
+Функции – это самостоятельные фрагменты кода, решающие определенную задачу. Каждой функции присваивается уникальное имя, по которому ее можно идентифицировать и "вызвать" в нужный момент.
+Язык Swift предлагает достаточно гибкий единый синтаксис функций – от простых C-подобных функций без параметров до сложных методов в стиле Objective-C с локальными и внешними параметрами. Параметры могут служить как для простой инициализации значений внутри функции, так и для изменения внешних переменных после выполнения функции.
+Каждая функция в Swift имеет тип, описывающий тип параметров функции и тип возвращаемого значения. Тип функции можно использовать аналогично любым другим типам в Swift, т. е. одна функция может быть параметром другой функции либо ее результирующим значением. Функции также могут вкладываться друг в друга, что позволяет инкапсулировать определенный алгоритм внутри локального контекста.
+Объявление и вызов функций
+При объявлении функции можно задать одно или несколько именованных типизированных значений, которые будут ее входными данными (или параметрами), а также тип значения, которое функция будет возвращать в качестве результата (или возвращаемый тип).
+У каждой функции должно быть имя, которое отражает решаемую задачу. Чтобы воспользоваться функцией, ее нужно "вызвать", указав имя и входные значения (аргументы), соответствующие типам параметров этой функции. Аргументы функции всегда должны идти в том же порядке, в каком они были указаны при объявлении функции.
+В приведенном ниже примере функция называется greet(person:), потому что это отражает ее задачу – получить имя пользователя и вежливо поздороваться. Для этого задается один входной параметр типа String под названием person, а возвращается тоже значение типа String, но уже содержащее приветствие:
+func greet(person: String) -> String {
+    let greeting = "Привет, " + person + "!"
+    return greeting
+}
+Вся эта информация указана в объявлении функции, перед которым стоит ключевое слово func. Тип возвращаемого значения функции ставится после результирующей стрелки -> (это дефис и правая угловая скобка).
+Из объявления функции можно узнать, что она делает, какие у нее входные данные и какой результат она возвращает. Объявленную функцию можно однозначно вызывать из любого участка кода:
+print(greet(person: "Anna"))
+// Выведет "Привет, Anna!"
+print(greet(person: "Brian"))
+// Выведет "Привет, Brian!"
+Функция greet(person:) вызывается, принимая значение типа String, которое стоит после имени person, например вот так - greet(person: "Anna"). Поскольку функция возвращает значение типа String, вызов функции greet(person:) может быть завернут в вызов для функции print(_:separator:terminator:), чтобы напечатать полученную строку и увидеть возвращаемое значение (см. выше).
+Заметка
+У print(_:separator:terminator:) нет ярлыка для первого аргумента, и его другие аргументы являются опциональными, поскольку имеют дефолтное значение (по умолчанию). Эти вариации синтаксиса функции рассматриваются ниже в Ярлыки аргументов и имена параметров функций и Значения по умолчанию для параметров.
+Тело функции greet(person:) начинается с объявления новой константы типа String под названием greeting, и устанавливается простое сообщение-приветствие. Затем это приветствие возвращается в точку вызова функции с помощью ключевого слова return. После выполнения оператора return greeting функция завершает свою работу и возвращает текущее значение greeting.
+Функцию greet(person:) можно вызывать многократно и с разными входными значениями. В примере выше показано, что будет, если функцию вызвать с аргументом "Anna" и со значением "Brian". В каждом случае функция возвратит персональное приветствие.
+Чтобы упростить код этой функции, можно записать создание сообщения и его возврат в одну строку:
+func greetAgain(person: String) -> String {
+    return "Hello again, " + person + "!"
+}
+print(greetAgain(person: "Anna"))
+// Выведет "Hello again, Anna!"
+Параметры функции и возвращаемые значения
+В языке Swift параметры функций и возвращаемые значения реализованы очень гибко. Разработчик может объявлять любые функции – от простейших, с одним безымянным параметром, до сложных, со множеством параметров и составными именами.
+Функции без параметров
+В некоторых случаях функции могут не иметь входных параметров. Вот пример функции без входных параметров, которая при вызове всегда возвращает одно и то же значение типа String:
+func sayHelloWorld() -> String {
+    return "hello, world"
+}
+print(sayHelloWorld())
+// Выведет "hello, world"
+Обратите внимание, что несмотря на отсутствие параметров, в объявлении функции все равно нужно ставить скобки после имени. При вызове после имени функции также указываются пустые скобки.
+Функции с несколькими входными параметрами
+У функции может быть несколько параметров, которые указываются через запятую в скобках.
+Эта функция принимает два параметра: имя человека и булево значение, приветствовали ли его уже, и возвращает соответствующее приветствие для этого человека:
+func greet(person: String, alreadyGreeted: Bool) -> String {
+    if alreadyGreeted {
+        return greetAgain(person: person)
+    } else {
+        return greet(person: person)
+    }
+}
+print(greet(person: "Tim", alreadyGreeted: true))
+// Выведет "Hello again, Tim!"
+Вы вызываете функцию greet(person:alreadyGreeted:), передавая значение типа String параметру с ярлыком person и булево значение с ярлыком alreadyGreeted, взятое в скобки через запятую. Обратите внимание, что эта функция отличается от функции greet(person:), которую вы видели в предыдущем разделе. Хотя имена обеих функций начинаются с greet, функция greet(person:alreadyGreeted:) принимает два аргумента, а greet(person:) принимает только один.
+Функции, не возвращающие значения
+В некоторых случаях функции могут не иметь возвращаемого типа. Вот другая реализация функции greet(person:), которая выводит свое собственное значение типа String, но не возвращает его:
+func greet(person: String) {
+    print("Привет, \(person)!")
+}
+greet(person: "Dave")
+// Выведет "Привет, Dave!"
+Так как у функции нет выходного значения, в ее объявлении отсутствует результирующая стрелка (->) и возвращаемый тип.
+Заметка
+Строго говоря, функция greet(person:) все же возвращает значение, хотя оно нигде и не указано. Функции, для которых не задан возвращаемый тип, получают специальный тип Void. По сути, это просто пустой кортеж, т. е. кортеж с нулем элементов, который записывается как ().
+Выходное значение функции может быть игнорировано:
+func printAndCount(string: String) -> Int {
+    print(string)
+    return string.count
+}
+func printWithoutCounting(string: String) {
+    let _ = printAndCount(string: string)
+}
+printAndCount(string: "hello, world")
+// Выведет "hello, world" и возвращает значение 12
+printWithoutCounting(string: "hello, world")
+// Выведет "hello, world", но не возвращает значения
+Первая функция, printAndCount(string:) выводит строку, а затем возвращает подсчет символов в виде целого (Int). Вторая функция, printWithoutCounting(string:) вызывает первую, но игнорирует ее возвращаемое значение. При вызове второй функции первая функция по-прежнему печатает сообщение, но ее возвращаемое значение не используется.
+Заметка
+Хотя возвращаемые значения можно игнорировать, функция все же должна возвратить то, что задано в ее объявлении. Функция, для которой указан возвращаемый тип, не может заканчиваться оператором, который ничего не возвращает, иначе произойдет ошибка во время компиляции.
+Функции, возвращающие несколько значений
+Вы можете использовать кортежный тип в качестве возвращаемого типа для функции для возврата нескольких значений в виде составного параметра.
+В следующем примере объявлена функция minMax(array:), которая ищет минимальный и максимальный элементы в массиве типа Int:
+func minMax(array: [Int]) -> (min: Int, max: Int) {
+    var currentMin = array[0]
+    var currentMax = array[0]
+    for value in array[1..<array.count] {
+        if value < currentMin {
+            currentMin = value
+        } else if value > currentMax {
+            currentMax = value
+        }
+    }
+    return (currentMin, currentMax)
+}
+Функция minMax(array:) возвращает кортеж из двух значений типа Int. Этим значениям присвоены имена min и max, чтобы к ним можно было обращаться при запросе возвращаемого типа функции.
+Тело функции minMax(array:) начинается с инициализации двух рабочих переменных currentMin и currentMax значением первого целого элемента в массиве. Затем функция последовательно проходит по всем остальным значениям в массиве и сравнивает их со значениями currentMin и currentMax соответственно. И наконец, самое маленькое и самое большое значения возвращаются внутри кортежа типа Int.
+Так как имена элементов кортежа указаны в возвращаемом типе функции, к ним можно обращаться через точку и считывать значения:
+let bounds = minMax(array: [8, -6, 2, 109, 3, 71])
+print("min is \(bounds.min) and max is \(bounds.max)")
+// Выведет "min is -6 and max is 109"
+Обратите внимание, что элементам кортежа не нужно давать название в момент возвращения кортежа из функции, так как их имена уже указаны как часть возвращаемого типа функции.
+Опциональный кортеж как возвращаемый тип
+Если возвращаемый из функции кортеж может иметь "пустое значение", то его следует объявить как опциональный кортеж, т. е. кортеж, который может равняться nil. Чтобы сделать возвращаемый кортеж опциональным, нужно поставить вопросительный знак после закрывающей скобки:(Int, Int)? или (String, Int, Bool)?.
+Заметка
+Кортеж-опционал вида (Int, Int)? - это не то же самое, что кортеж, содержащий опционалы: (Int?, Int?). Кортеж-опционал сам является опционалом, но не обязан состоять из опциональных значений.
+Функция minMax(array:) выше возвращает кортеж из двух значений типа Int, однако не проверяет корректность передаваемого массива. Если аргумент array содержит пустой массив, для которого count равно 0, функция minMax в том виде, в каком она приведена выше, выдаст ошибку выполнения, когда попытается обратиться к элементу array[0].
+Для устранения этого недочета перепишем функцию minMax(array:) так, чтобы она возвращала кортеж-опционал, который в случае пустого массива примет значение nil:
+func minMax(array: [Int]) -> (min: Int, max: Int)? {
+    if array.isEmpty { return nil }
+    var currentMin = array[0]
+    var currentMax = array[0]
+    for value in array[1..<array.count] {
+        if value < currentMin {
+            currentMin = value
+        } else if value > currentMax {
+            currentMax = value
+        }
+    }
+    return (currentMin, currentMax)
+}
+Чтобы проверить, возвращает ли эта версия функции minMax(array:) фактическое значение кортежа или nil, можно использовать привязку опционала:
+if let bounds = minMax(array: [8, -6, 2, 109, 3, 71]) {
+    print("min is \(bounds.min) and max is \(bounds.max)")
+}
+// Выведет "min is -6 and max is 109"
+Функции с неявным возвращаемым значением
+Если тело функции состоит из единственного выражения, то функция неявно возвращает это выражение. Например, обе функции в примере ниже имеют одно и то же поведение:
+func greeting(for person: String) -> String {
+    "Привет, " + person + "!"
+}
+print(greeting(for: "Дейв"))
+// Выведет "Привет, Дейв!"
+func anotherGreeting(for person: String) -> String {
+    return "Привет, " + person + "!"
+}
+print(anotherGreeting(for: "Дейв"))
+// Выведет "Привет, Дейв!"
+Поведение функции greeting(for:) заключается в том, чтобы просто вернуть приветственное сообщение, что означает, что мы можем использовать сокращенную запись этой функции. Функция anotherGreeting(for:) возвращает то же самое приветственное сообщение, используя ключевое слово return. Таким образом, если вы пишите функцию, которая состоит из одного лишь возвращаемого значения, то вы можете опустить слово return.
+Как вы увидите в главе "Сокращенный вариант объявления геттера", геттер так же может использовать сокращенную форму записи с опущенным словом return.
+Заметка
+Код, который вы написали с неявным возвращаемым значением должен иметь это самое возвращаемое значение. Например, вы не можете использовать print(13) как неявное возвращаемые значения. Однако вы можете использовать функцию, которая никогда не возвращает значение, например, fatalError("Oh no!"), в качестве неявного возвращаемого значения, потому что Swift знает, что неявного возврата не происходит.
+Ярлыки аргументов и имена параметров функций
+Каждый параметр функции имеет ярлык аргумента и имя параметра. Ярлык аргумента используется при вызове функции. Каждый параметр при вызове функции записывается  с ярлыком аргумента, стоящим перед ним. Имя параметра используется при реализации функции. По умолчанию параметры используют имена их параметров в качестве ярлыка аргумента.
+func someFunction(firstParameterName: Int, secondParameterName: Int) {
+    // Внутри тела функции firstParameterName и secondParameterName
+    // ссылаются на значения аргументов, первого и второго параметров.
+}
+someFunction(firstParameterName: 1, secondParameterName: 2)
+Все параметры должны иметь уникальные имена. Несмотря на то, что несколько параметров могут иметь один ярлык аргумента, уникальные ярлыки аргумента метки помогают сделать ваш код более читабельным.
+Указываем ярлыки аргументов
+Вы пишете ярлык аргумента перед именем параметра через пробел:
+func someFunction(argumentLabel parameterName: Int) {
+    // В теле функции parameterName относится к значению аргумента
+    // для этого параметра.
+}
+Вот вариант функции greet(person:), которая принимает имя человека и его родной город, затем возвращает приветствие:
+func greet(person: String, from hometown: String) -> String {
+    return "Hello \(person)!  Glad you could visit from \(hometown)."
+}
+print(greet(person: "Bill", from: "Cupertino"))
+// Выводит "Hello Bill!  Glad you could visit from Cupertino."
+Использование ярлыков аргументов позволяет функции вызываться в более выразительной манере, в виде предложения, при этом все же предоставляя тело функции в более читаемом виде и с более понятыми намерениями.
+Пропуск ярлыков аргумента
+Если вы не хотите использовать имя параметра в качестве ярлыка аргумента - используйте подчеркивание (_) вместо явного ярлыка аргумента для этого параметра.
+func someFunction(_ firstParameterName: Int, secondParameterName: Int) {
+    // В теле функции firstParameterName и secondParameterName
+    // ссылаются на значения аргументов для первого и второго параметров.
+}
+someFunction(1, secondParameterName: 2)
+Если у параметра есть ярлык аргумента, то аргумент должен иметь ярлык при вызове функции.
+Значения по умолчанию для параметров
+При объявлении функции любому из ее параметров можно присвоить значение по умолчанию. Если у параметра есть значение по умолчанию, то при вызове функции этот параметр можно опустить.
+func someFunction(parameterWithoutDefault: Int, parameterWithDefault: Int = 12) {
+    // Если вы пропускаете второй аргумент при вызове функции, то
+    // значение parameterWithDefault будет равняться 12 внутри тела функции.
+}
+someFunction(parameterWithoutDefault: 3, parameterWithDefault: 6) // parameterWithDefault равен 6
+someFunction(parameterWithoutDefault: 4) // parameterWithDefault равен 12
+Расположите параметры, у которых нет дефолтных значений в начале списка параметров функции до параметров с дефолтными значениями. Параметры, не имеющие значения по умолчанию, как правило, более важны для значения функции - их запись в первую очередь облегчает распознавание функции уже вызванной ранее, независимо от того, опущены ли какие-то параметры по умолчанию.
+Вариативные параметры
+Вариативным называют параметр, который может иметь сразу несколько значений или не иметь ни одного. С помощью вариативного параметра можно передать в функцию произвольное число входных значений. Чтобы объявить параметр как вариативный, нужно поставить три точки (...) после его типа.
+Значения, переданные через вариативный параметр, доступны внутри функции в виде массива соответствующего типа. Например, вариативный параметр numbers типа Double... доступен внутри функции в виде массива-константы numbers типа [Double].
+В приведенном ниже примере вычисляется среднее арифметическое (или же среднее) последовательности чисел, имеющей произвольную длину:
+func arithmeticMean(_ numbers: Double...) -> Double {
+    var total: Double = 0
+    for number in numbers {
+        total += number
+    }
+    return total / Double(numbers.count)
+}
+arithmeticMean(1, 2, 3, 4, 5)
+// возвращает 3.0, что является средним арифметическим этих пяти чисел
+arithmeticMean(3, 8.25, 18.75)
+// возвращает 10.0, что является средним арифметическим этих трех чисел
+Функции могут иметь несколько вариативных параметров. Первый параметр, который идет после вариативного параметра должен иметь ярлык аргумента. Ярлык аргумента позволяет однозначно определить, какие аргументы передаются вариативному, а какие - параметрам, которые идут после вариативного параметра.
+Сквозные параметры
+Параметры функции по умолчанию являются константами. Попытка изменить значение параметра функции из тела этой функции приводит к ошибке компиляции. Это означает, что вы не сможете изменить значение параметра по ошибке. Если вы хотите, чтобы функция изменила значение параметра, и вы хотите, чтобы эти изменения сохранились после того, как закончился вызов функции, определите этот параметр в качестве сквозного параметра.
+Для создания сквозного параметра нужно поставить ключевое слово inout перед типом объявлением параметра. Сквозной параметр передает значение в функцию, которое затем изменяется в ней и возвращается из функции, заменяя исходное значение. Более подробную информацию поведения сквозных параметров и связанных с ними оптимизаций компилятора см. Сквозные Параметры.
+Вы можете передать только переменную в качестве аргумента для сквозного параметра. Вы не можете передать константу или значения литерала в качестве аргумента, так как константы и литералы не могут быть изменены. Вы ставите амперсанд (&) непосредственно перед именем переменной, когда передаете ее в качестве аргумента сквозного параметра, чтобы указать, что он может быть изменен с помощью функции.
+Заметка
+Сквозные параметры не могут иметь значения по умолчанию, а вариативные параметры не могут быть сквозными, с ключевым словом inout.
+Вот пример функции под названием swapTwoInts(_:_:), у которой есть два сквозных целочисленных параметра – a и b:
+func swapTwoInts(_ a: inout Int, _ b: inout Int) {
+    let temporaryA = a
+    a = b
+    b = temporaryA
+}
+Функция swapTwoInts(_:_:) просто меняет значение переменной b на значение a, а значение a – на значение b. Для этого функция сохраняет значение a в локальной константе temporaryA, присваивает значение b переменной a, а затем присваивает значение temporaryA переменной b.
+Вы можете вызвать функцию swapTwoInts (_: _:) с двумя переменными типа Int, чтобы поменять их значения. Обратите внимание, что имена someInt и anotherInt начинаются с амперсанда, когда они передаются в swapTwoInts (_: _:) функции:
+var someInt = 3
+var anotherInt = 107
+swapTwoInts(&someInt, &anotherInt)
+print("someInt is now \(someInt), and anotherInt is now \(anotherInt)")
+// Выведет "someInt is now 107, and anotherInt is now 3"
+В вышеприведенном примере видно, что исходные значения переменных someInt и anotherInt изменены функцией swapTwoInts (_: _:), несмотря на то, что изначально они были объявлены за ее пределами.
+Заметка
+Сквозные параметры – это не то же самое, что возвращаемые функцией значения. В примере с функцией swapTwoInts нет ни возвращаемого типа, ни возвращаемого значения, но параметры someInt и anotherInt все равно изменяются. Сквозные параметры – это альтернативный способ передачи изменений, сделанных внутри функции, за пределы тела этой функции.
+Функциональные типы
+У каждой функции есть специальный функциональный тип, состоящий из типов параметров и типа возвращаемого значения.
+Пример:
+func addTwoInts(a: Int, _ b: Int) -> Int {
+  return a + b
+}
+func multiplyTwoInts(a: Int, _ b: Int) -> Int {
+  return a * b
+}
+В данном примере объявлены две простые математические функции – addTwoInts и multiplyTwoInts. Каждая из этих функций принимает два значения типа Int и возвращает одно значение типа Int, содержащее результат математической операции.
+Обе функции имеют тип (Int, Int) -> Int. Эта запись означает следующее:
+"функция с двумя параметрами типа Int, возвращающая значение типа Int".
+Вот еще один пример, но уже функции без параметров и возвращаемого значения:
+func printHelloWorld() {
+  print("hello, world")
+}
+Эта функция имеет тип () -> Void, т. е. "функция без параметров, которая возвращает Void".
+Использование функциональных типов
+В Swift с функциональными типами можно работать так же, как и с другими типами. Например, можно объявить константу или переменную функционального типа и присвоить ей функцию соответствующего типа:
+var mathFunction: (Int, Int) -> Int = addTwoInts
+Эта запись означает следующее:
+"Объявить переменную mathFunction, имеющую тип "функция, принимающая два значения типа Int, и возвращающая одно значение типа Int". Присвоить этой новой переменной указатель на функцию addTwoInts".
+Функция addTwoInts имеет тот же тип, что и переменная mathFunction, поэтому с точки зрения языка Swift такое присваивание корректно.
+Теперь функцию можно вызывать с помощью переменной mathFunction:
+print("Result: \(mathFunction(2, 3))")
+// Выведет "Result: 5"
+Той же переменной можно присвоить и другую функцию такого же типа – аналогично нефункциональным типам:
+mathFunction = multiplyTwoInts
+print("Result: \(mathFunction(2, 3))")
+// Выведет "Result: 6"
+Как и в случае с любым другим типом, вы можете не указывать тип явно, а предоставить Swift самостоятельно вывести функциональный тип при присваивании функции константе или переменной:
+let anotherMathFunction = addTwoInts
+// для константы anotherMathFunction выведен тип (Int, Int) -> Int
+Функциональные типы как типы параметров
+Функциональные типы наподобие (Int, Int) -> Int могут быть типами параметров другой функции. Это позволяет определять некоторые аспекты реализации функции непосредственно во время ее вызова.
+Следующий код печатает на экране результаты работы приведенных выше математических функций:
+func printMathResult(_ mathFunction: (Int, Int) -> Int, _ a: Int, _ b: Int) {
+    print("Result: \(mathFunction(a, b))")
+}
+printMathResult(addTwoInts, 3, 5)
+// Выведет "Result: 8"
+В этом примере объявлена функция printMathResult(_:_:_:), у которой есть три параметра. Первый параметр под названием mathFunction имеет тип (Int, Int) -> Int. Соответственно, аргументом этого параметра может быть любая функция такого же типа. Второй и третий параметры называются a и b и относятся к типу Int. Они служат для передачи двух входных значений для математической функции.
+При вызове printMathResult(_:_:_:) получает в качестве входных данных функцию addTwoInts(_:_:) и два целочисленных значения 3 и 5. Затем она вызывает переданную функцию со значениями 3 и 5, а также выводит на экран результат 8.
+Задача функции printMathResult(_:_:_:) заключается в том, чтобы печатать результат работы математической функции соответствующего типа. При этом конкретные детали этой математической функции не имеют значения – главное, чтобы она была подходящего типа. Все это позволяет безопасно управлять работой функции printMathResult(_:_:_:) непосредственно во время вызова.
+Функциональные типы как возвращаемые типы
+Функциональный тип можно сделать возвращаемым типом другой функции. Для этого нужно записать полный функциональный тип сразу же после возвратной стрелки (->) в возвращаемой функции.
+В следующем примере объявлены две простые функции – stepForward(_:) и stepBackward(_:). Функция stepForward(_:) возвращает входное значение, увеличенное на единицу, а функция stepBackward(_:) – уменьшенное на единицу. Обе функции имеют тип (Int) -> Int:
+func stepForward(_ input: Int) -> Int {
+    return input + 1
+}
+func stepBackward(_ input: Int) -> Int {
+    return input - 1
+}
+Следующая функция под названием chooseStepFunction(backward:) имеет возвращаемый тип (Int) -> Int. Функция chooseStepFunction(backward:) возвращает функцию stepForward(_:) или функцию stepBackward(_:) в зависимости от значения логического параметра backward:
+func chooseStepFunction(backward: Bool) -> (Int) -> Int {
+    return backward ? stepBackward : stepForward
+}
+Теперь с помощью chooseStepFunction(backward:) можно получать функцию, которая будет сдвигать значение влево или вправо:
+var currentValue = 3
+let moveNearerToZero = chooseStepFunction(backward: currentValue > 0)
+// moveNearerToZero ссылается на функцию stepBackward()
+В предыдущем примере мы определяли, нужно ли прибавить или отнять единицу, чтобы последовательно приблизить переменную currentValue к нулю. Изначально currentValue имеет значение 3, т. е. сравнение currentValue > 0 даст true, а функция chooseStepFunction(backward:), соответственно, возвратит функцию stepBackward(_:). Указатель на возвращаемую функцию хранится в константе moveNearerToZero.
+Так как moveNearerToZero теперь ссылается на нужную функцию, можно использовать эту константу для отсчета до нуля:
+print("Counting to zero:")
+// Counting to zero:
+while currentValue != 0 {
+    print("\(currentValue)... ")
+    currentValue = moveNearerToZero(currentValue)
+}
+print("zero!")
+// 3...
+// 2...
+// 1...
+// zero!
+Вложенные функции
+Все ранее рассмотренные в этом разделе функции являются глобальными, т. е. определенными в глобальном контексте. Но помимо глобальных можно объявлять и функции, находящиеся внутри других функций, или же вложенные.
+Вложенные функции по умолчанию недоступны извне, а вызываются и используются только заключающей функцией. Заключающая функция может также возвращать одну из вложенных, чтобы вложенную функцию можно было использовать за ее пределами.
+Приведенный выше пример с функцией chooseStepFunction(backward:) можно переписать со вложенными функциями:
+func chooseStepFunction(backward: Bool) -> (Int) -> Int {
+    func stepForward(input: Int) -> Int { return input + 1 }
+    func stepBackward(input: Int) -> Int { return input - 1 }
+    return backward ? stepBackward : stepForward
+}
+var currentValue = -4
+let moveNearerToZero = chooseStepFunction(backward: currentValue > 0)
+// moveNearerToZero теперь ссылается на вложенную функцию stepForward() 
+while currentValue != 0 {
+    print("\(currentValue)... ")
+    currentValue = moveNearerToZero(currentValue)
+}
+print("zero!")
+// -4...
+// -3...
+// -2...
+// -1...
+// zero!
+Если вы нашли ошибку, пожалуйста, выделите фрагмент текста и нажмите Ctrl+Enter.
+Управление потоком
+Замыкания
  
-Marie joined the PSF in October 2023 as Community Communications Manager to strengthen our communications, as well as enhance our support of Python community initiatives. She has a background in community architecture, program management, Code of Conduct, and graphic design. Marie's Open Source journey began as an Outreachy intern in 2013 for the Fedora Project, where she has continued to contribute and serve in various roles. She is also a founder of the Creative Freedom Summit, an annual event dedicated to sharing knowledge around creative free software, raising awareness, and connecting artists and designers. Outside of work, Marie enjoys making art, solving the hardest jigsaw puzzles she can find, and playing board and video games.
-    
-The PSF
-The Python Software Foundation is the organization behind Python. Become a member of the PSF and help advance the software and our mission. 
-▲ Back to Top
-About
-Applications
-Quotes
-Getting Started
-Help
-Python Brochure
-Downloads
-All releases
-Source code
-Windows
-macOS
-Other Platforms
-License
-Alternative Implementations
-Documentation
-Docs
-Audio/Visual Talks
-Beginner's Guide
-Developer's Guide
-FAQ
-Non-English Docs
-PEP Index
-Python Books
-Python Essays
-Community
-Diversity
-Mailing Lists
-IRC
-Forums
-PSF Annual Impact Report
-Python Conferences
-Special Interest Groups
-Python Logo
-Python Wiki
-Code of Conduct
-Community Awards
-Get Involved
-Shared Stories
-Success Stories
-Arts
-Business
-Education
-Engineering
-Government
-Scientific
-Software Development
-News
-Python News
-PSF Newsletter
-PSF News
-PyCon US News
-News from the Community
-Events
-Python Events
-User Group Events
-Python Events Archive
-User Group Events Archive
-Submit an Event
-Contributing
-Developer's Guide
-Issue Tracker
-python-dev list
-Core Mentorship
-Report a Security Issue
-▲ Back to Top
+SwiftBook Самое крупное сообщество iOS разработчиков на языке Swift
+О нас
+Мы в социальных сетяхYouTubeVKontakteFacebookЧат_Telegram
+instagramПолезноеPodlodka
+Подпишись на новости 
+   Политика конфиденциальности
+Пользовательское соглашение
+Найти:
+  © Акулов И.Б., 2014-2021      
  
-Help & General Contact
-Diversity Initiatives
-Submit Website Bug
-Status 
-Copyright ©2001-2024.
-                             Python Software Foundation
-                             Legal Statements
-                             Privacy Policy
+Сообщить об опечатке
+Текст, который будет отправлен нашим редакторам:
+Ваш комментарий (необязательно):
+Отправить
+Отмена

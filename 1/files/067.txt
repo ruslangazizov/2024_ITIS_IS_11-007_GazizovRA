@@ -1,879 +1,462 @@
-Python Software Foundation News: Announcing Our New PyPI Safety & Security Engineer!
-  News from the Python Software Foundation
-Friday, August 04, 2023
-Announcing Our New PyPI Safety & Security Engineer!
-We announced our intention back in May to fill this role with generous funding by Amazon Web Services (AWS), and after a thorough search, we are delighted to announce Mike Fiedler is joining the team! He joins the PSF for the next year as our first ever PyPI Safety & Security Engineer. Mike is already a dedicated member of the Python packaging community – he has been a Python user for some 15 years, maintains and contributes to open source, and became a PyPI Maintainer in 2022.This critical role would not be possible without funding from AWS: "We are happy to be able to invest in the sustainable and secure development of Python and PyPI, and we look forward to Mike's contributions." - Tom Callaway, AWS. Mike begins his work with the Python Packaging Index (PyPI) this week. He says, “Very excited to join the team in improving the safety and security of PyPI for end users, package publishers, maintainers, and PyPI moderators and administrators - that’s a huge audience!” We hope that everyone in the community will join us in welcoming Mike and supporting his critical work for Python packaging!We are thrilled that for the first time we are able to bring on an engineer who will be dedicated full-time  to PyPI. PyPI is a massive project that has become key digital infrastructure serving millions of users. Up until now, PyPI has been almost entirely volunteer-run, depending on a tiny team with only one fraction of one person’s paid time. We’re expecting all PyPI users to have a tangibly improved experience from Mike’s work over the next year. Some of the outcomes we are targeting include increased support for package maintainers including multi-maintainer projects, improvements to reporting infrastructure for malicious projects, as well as a reduced response time for malware reports and account recovery requests. Mike will work closely with our also-recently-announced Security Developer in Residence, Seth Larson. This role is funded by a substantial investment from AWS, inaugural Security Sponsor for PyPI. AWS has been one of the top sponsors of the Python Software Foundation for the last five years, and our long-term partnership with AWS has also included important in-kind donations of cloud computing infrastructure and services to support PyPI. The Python Software Foundation (PSF) is the non-profit organization behind Python and PyPI. Our mission is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers. The PSF supports the Python community using corporate sponsorships, grants, and donations. Are you interested in sponsoring or donating to the PSF so it can continue supporting Python and its community? Check out our sponsorship program, donate directly here, or contact our team!
-Posted by
-Loren Crary
-at
-8/04/2023 12:32:00 PM
-Newer Post
-Older Post
-Home
-Mission
-The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers.
-Python Software Foundation
-Grants Program
-Membership
-Awards
-Meeting Minutes
-PSF Sponsors
-A big thank you to the above PSF sponsors for supporting our mission!
-Tweets by ThePSF 
-Blog Archive
-        ► 
-      
-2024
-(8)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(4)
-        ▼ 
-      
-2023
-(37)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ▼ 
-      
-August
-(3)
-The Python Software Foundation has been authorized...
-Announcing Our New PyPI Safety & Security Engineer!
-Announcing Python Software Foundation Fellow Membe...
-        ► 
-      
-June
-(5)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2022
-(35)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(2)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(3)
-        ► 
-      
-February
-(1)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2021
-(42)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(2)
-        ► 
-      
-June
-(4)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(5)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(4)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2020
-(51)
-        ► 
-      
-December
-(8)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(4)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(10)
-        ► 
-      
-April
-(11)
-        ► 
-      
-March
-(4)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2019
-(45)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(4)
-        ► 
-      
-August
-(3)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(5)
-        ► 
-      
-May
-(11)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(5)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2018
-(31)
-        ► 
-      
-December
-(5)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(5)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(1)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2017
-(32)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(6)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(2)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(3)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(4)
-        ► 
-      
-2016
-(27)
-        ► 
-      
-December
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(6)
-        ► 
-      
-April
-(4)
-        ► 
-      
-March
-(2)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2015
-(67)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(4)
-        ► 
-      
-April
-(13)
-        ► 
-      
-March
-(14)
-        ► 
-      
-February
-(9)
-        ► 
-      
-January
-(4)
-        ► 
-      
-2014
-(14)
-        ► 
-      
-October
-(1)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(1)
-        ► 
-      
-May
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2013
-(18)
-        ► 
-      
-November
-(1)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(5)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2012
-(21)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(4)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(1)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2011
-(55)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(7)
-        ► 
-      
-September
-(5)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(8)
-        ► 
-      
-April
-(8)
-        ► 
-      
-March
-(13)
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2010
-(35)
-        ► 
-      
-December
-(4)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(8)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(4)
-        ► 
-      
-March
-(2)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2009
-(21)
-        ► 
-      
-December
-(1)
-        ► 
-      
-October
-(1)
-        ► 
-      
-September
-(6)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(1)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(1)
-        ► 
-      
-February
-(1)
-        ► 
-      
-2008
-(23)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(1)
-        ► 
-      
-August
-(3)
-        ► 
-      
-July
-(1)
-        ► 
-      
-May
-(3)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(5)
-        ► 
-      
-February
-(4)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2007
-(26)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(6)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2006
-(39)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(5)
-        ► 
-      
-September
-(4)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(3)
-        ► 
-      
-May
-(7)
-        ► 
-      
-April
-(6)
-        ► 
-      
-March
-(3)
-Powered by Blogger.
+Расширенная Привязка Данных в Android: Observables - SwiftBook
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+Расширенная Привязка Данных в Android: Observables
+ 
+  17.02.2022  
+swiftbook Туториалы 
+Расширенная Привязка Данных в Android: Observables 
+Узнайте, как использовать Data Binding Library (Библиотека Привязки Данных) для привязки UI-элементов в ваших XML-макетах к источникам данных в вашем приложении с помощью LiveData и StateFlow.
+Версия
+Kotlin 1.5, Android 4.4, Android Studio 2020.3.1
+Data Binding Library была создана с учетом наблюдаемости - шаблона, который стал довольно популярным в разработке мобильных приложений.
+Наблюдаемость является дополнением к привязке данных, основная концепция которой просто принимает во внимание ваше вью и объекты данных. Однако именно благодаря этому шаблону ваши данные могут автоматически распространять свои изменения во вью. Это устраняет необходимость вручную обновлять ваши вью всякий раз, когда доступны новые данные, тем самым упрощая кодовую базу и сокращая шаблонный код.
+В этом туториале вы узнаете, как в вашем макете связать наблюдаемые источники данных. Вы создадите экран регистрации для SweatBar, приложения для тренажерного зала. В процессе вы научитесь как:
+Настраивать наблюдаемые источники данных с помощью LiveData и StateFlow.
+Делать наблюдаемыми различные типы данных, включая простые типы, коллекции и объекты.
+Преобразовывать данные из других источников и раскрывать их в своих макетах.
+ 
+Приступим
+Скачайте Материалы. Откройте Android Studio и импортируйте стартовый проект.
+Найдите минутку, чтобы ознакомиться с кодом. Основные файлы следующие:
+MainActivity.kt: Activity, в которой пользователь вводит свою информацию для регистрации. Вы найдете этот класс в пакетах livedata и stateflow. Оба файла в основном одинаковы, и в этом туториале в любой момент времени вы будете запускать только один из них.
+MainViewModel.kt: ViewModel, содержащая UI-данные. Как и MainActivity, вы найдете этот класс в пакетах livedata и stateflow. Оба файла в основном одинаковы, и в этом туториале в любой момент времени вы также будете запускать только один из них.
+Session.kt: Enum-класс с различными типами сеансов, в которые пользователь может зарегистрироваться.
+PhoneNumber.kt: модель, представляющая номер телефона.
+activity_main_*.xml: файл макета с регистрационными полями.
+Соберите и запустите. Вы увидите экран, на котором пользователь может ввести информацию для регистрации. В данный момент UI мало что делает. Вы будете работать над его улучшением в следующих разделах!
+ 
+Наблюдение за Источниками Данных
+Когда Data Binding Library была запущена, она включала в себя наблюдаемые классы для простых типов, таких как ObservableBoolean, ObservableInt и ObservableDouble, а также универсальный ObservableField. Эти наблюдаемые области пришли со встроенной в них наблюдаемостью, учитывающей жизненный цикл, поскольку Библиотека Привязки Данных обновляла View -шки только тогда, когда они были активны.
+Спустя годы компоненты Jetpack Architecture представили еще один наблюдаемый класс - LiveData. Помимо того, что он учитывает жизненный цикл, он также поддерживает преобразования и другие компоненты Архитектуры, такие как Room и WorkManager, поэтому теперь рекомендуется использовать LiveData вместо наблюдаемых областей.
+ 
+Включение Привязки Данных
+Сейчас вы включите привязку данных в проекте. Откройте build.gradle файл этого приложения. Внутри блока buildFeatures замените // TODO: enable data binding следующим:
+buildFeatures {
+  ...
+  dataBinding true
+}
+Нажмите Sync Now, чтобы синхронизировать проект с Gradle-файлом. Все настроено!
+ 
+Наблюдение с помощью LiveData
+Примечание. В этом разделе вы будете работать с MainActivity и MainViewModel из пакета livedata.
+Начните с настройки привязки данных в Activity и XML макете.
+Откройте activity_main_livedata.xml. Удалите TODO в верхней части файла, затем оберните корневой ScrollView тегом layout и импортируйте MainViewModel, которую вы будете использовать для привязки данных:
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+  <data>
+    <variable
+      name="viewmodel"
+      type="com.raywenderlich.android.databindingobservables.livedata.MainViewModel" />
+  </data>
+  <ScrollView...>
+</layout>
+Также, удалите следующие строки из ScrollView, поскольку они предоставлены тегом layout:
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+Откройте MainActivity.kt и замените // TODO: Set up data binding на следующее:
+val binding = DataBindingUtil.setContentView(
+    this,
+    R.layout.activity_main_livedata
+) // 1
+binding.lifecycleOwner = this // 2
+binding.viewmodel = viewModel // 3
+Наконец, убедитесь, что следующие импорты находятся в верхней части Activity:
+import androidx.databinding.DataBindingUtil
+import com.raywenderlich.android.databindingobservables.databinding.ActivityMainLivedataBinding
+Приведенный выше код устанавливает:
+Контентвью из MainActivity.
+MainActivity в качестве LifecycleOwner для наблюдения за данными в привязке. Тем самым контролируя, когда наблюдения за данными начинаются и заканчиваются.
+Переменную viewmodel типа MainViewModel, которую вы определили выше в файле макета.
+Теперь с данной настройкой вы готовы подключить источники данных приложения к его UI!
+ 
+Наблюдение за Простыми Типами
+Простые типы включают примитивные типы, такие как Boolean, Int и Float, а также String. По умолчанию они недоступны для наблюдения, но XML-макет может наблюдать за ними, просто обернув их в LiveData. Выдача нового значения через LiveData распространяется на UI макет.
+Регистрационная форма включает поля для имени, фамилии и адреса электронной почты пользователя, которые имеют тип данных String. Вы будете добавлять соответствующие источники данных для них в MainViewModel.kt. Откройте MainViewModel.kt и замените // TODO: Add first name, last name and email на:
+val firstName = MutableLiveData(DEFAULT_FIRST_NAME)
+val lastName = MutableLiveData(DEFAULT_LAST_NAME)
+val email = MutableLiveData(DEFAULT_EMAIL)
+Теперь откройте activity_main_livedata.xml и используйте эти только что созданные наблюдаемые поля в EditTexts с соответствующими идентификаторами ниже:
+<EditText
+  android:id="@+id/firstNameEditText"
+  ...
+  android:text="@={viewmodel.firstName}" />
+<EditText
+  android:id="@+id/lastNameEditText"
+  ...
+  android:text="@={viewmodel.lastName}" />
+<EditText
+  android:id="@+id/emailEditText"
+  ...
+  android:text="@={viewmodel.email}" />
+В приведенном выше коде вы привязываете значение имени, фамилии и адреса электронной почты пользователя к полям firstName, lastName и email в MainViewModel соответственно. Это означает, что, например, когда пользователь обновляет свое имя в регистрационной форме, значение firstName обновляется одновременно. Верно и обратное: если значение firstName изменяется, это отражается в UI. Это называется двусторонней привязкой.
+И наоборот, отсутствие знака = и запись только @{viewmodel.firstName} создают одностороннюю привязку, переходя от поля firstName к UI. Это означает, что когда пользователь обновляет имя в регистрационной форме, значение firstName остается прежним.
+ 
+Наблюдение за Коллекциями
+Обычно коллекции содержат данные в приложении. Подумайте о списках пользователей или продуктов и словарях, предпочитающих ключ/значение. Сделать наблюдаемой коллекцию данных схоже с простыми данными - вы просто оборачиваете их в LiveData.
+Форма регистрации, которую вы создаете, должна позволять пользователю выбирать сеансы, в которые он планирует регистрироваться. Класс перечисления Session определяет различные возможные сеансы, из которых пользователи могут выбирать. Если пользователь жаворонок и выбирает MORNING сеанс, вы сохраните эту информацию в схеме: {MORNING: true}. Когда пользователь завершит регистрацию, эта схема будет содержать сеансы, которые он выбрал и от которых отказался.
+Откройте MainViewModel.kt и замените // TODO: Add sessions следующим:
+val sessions = MutableLiveData<EnumMap<Session, Boolean>>(
+    EnumMap(Session::class.java)
+).apply { // 1
+  Session.values().forEach { value?.put(it, false) } // 2
+}
+Импортируйте эти классы, если IDE еще этого не сделала:
+import java.util.EnumMap
+import com.raywenderlich.android.databindingobservables.model.Session
+Вот что происходит в приведенном выше коде:
+Создается схема с ключами типа Session и значениями типа Boolean. EnumMap - это схема, оптимизированная для ключей перечисления.
+Схема заполняется всеми возможными сеансами и устанавливает их значение как false, поскольку по умолчанию пользователь не зарегистрирован ни в каких сеансах.
+Теперь привяжите sessions к UI. Откройте файл activity_main_livedata.xml, найдите сеансы Chip в нижней части файла и обновите их следующим образом:
+<com.google.android.material.chip.Chip
+  android:id="@+id/morningSessionChip"
+  ...
+  android:checked="@={viewmodel.sessions[Session.MORNING]}" />
+<com.google.android.material.chip.Chip
+  android:id="@+id/afternoonSessionChip"
+  ...
+  android:checked="@={viewmodel.sessions[Session.NOON]}" />
+<com.google.android.material.chip.Chip
+  android:id="@+id/eveningSessionChip"
+  ...
+  android:checked="@={viewmodel.sessions[Session.EVENING]}" />
+<com.google.android.material.chip.Chip
+  android:id="@+id/nightSessionChip"
+  ...
+  android:checked="@={viewmodel.sessions[Session.NIGHT]}" />
+В приведенном выше коде вы связываете состояние Chip, независимо от того, отмечен(или проверен) он или нет, с полем sessions. Когда пользователь выбирает MORNING, значение ключа MORNING на схеме сеансов становится true. Его значение становится false, когда пользователь отменяет выбор MORNING.
+Прежде чем двигаться дальше, вы могли заметить ошибку компиляции. Это связано с тем, что XML макет не распознает перечисление Session. Чтобы исправить это, импортируйте перечисление в ваш XML файл макета следующим образом:
+<data>
+  <import type="com.raywenderlich.android.databindingobservables.model.Session" />
+  ...
+</data>
+Как только перечисление будет импортировано в макет, ошибки исчезнут, поскольку теперь он знает, на что ссылается Session.
+ 
+Наблюдение за Объектами
+Объект не является наблюдаемым по умолчанию. Даже если вы обернете его в LiveData, он все равно не будет наблюдаемым, а это означает, что если какой-либо атрибут в этом объекте изменится, это не заставит LiveData отразить изменение. Чтобы объект уведомлял своих наблюдателей об изменении своих атрибутов, он должен реализовать интерфейс Observable.
+Data Binding Library предусматривает удобный класс BaseObservable, реализующий Observable интерфейс и упрощающий распространение изменений в свойствах класса. Это позволяет использовать их непосредственно из файла макета.
+В рамках регистрации пользователь должен предоставить свой номер телефона, который состоит из двух частей: кода города и остальной части номера. Эту структуру данных представляет PhoneNumber.
+Первым шагом к тому, чтобы сделать PhoneNumber наблюдаемым, является расширение класса BaseObservable. Откройте PhoneNumber.kt и обновите его следующим образом:
+class PhoneNumber: BaseObservable() {
+  ...
+}
+Вам также потребуется импортировать следующее, если IDE не проинформировала вас:
+import androidx.databinding.BaseObservable
+Всякий раз, когда какое-либо из свойств класса изменяется, он должен уведомлять своих наблюдателей. Замените TODO в этом файле следующим:
+class PhoneNumber : BaseObservable() {
+  @get:Bindable // 1
+  var areaCode: String = ""
+    set(value) {
+      field = value
+      notifyPropertyChanged(BR.areaCode) // 2
+    }
+  @get:Bindable
+  var number: String = ""
+    set(value) {
+      field = value
+      notifyPropertyChanged(BR.number)
+    }
+}
+Также импортируйте следующее, если IDE не предлагает вам:
+import androidx.databinding.Bindable
+import com.raywenderlich.android.databindingobservables.BR
+Вот что происходит в приведенном выше коде:
+Вы снабжаете areaCode аннотацией Bindable. Это позволяет Data Binding Library создать для нее запись в классе BR.java. Эта запись представляет собой статическое неизменяемое целочисленное поле с тем же именем, areaCode, и оно распознает, когда поле areaCode в PhoneNumber изменяется.
+Когда значение areaCode изменяется, вы передаете это изменение, чтобы уведомить всех наблюдателей. Вы делаете это, используя сгенерированное поле areaCode в BR.java.
+Вы заметите ошибки компиляции в PhoneNumber.kt, так как компилятор пока не может найти поля BR. Соберите проект снова, и Data Binding Library создаст класс BR с соответствующими полями.
+Пришло время использовать этот класс. Откройте MainViewModel.kt и замените // TODO: Add phone number следующим:
+val phoneNumber = PhoneNumber()
+Обязательно импортируйте следующее, если IDE этого не сделала:
+import com.raywenderlich.android.databindingobservables.model.PhoneNumber
+Теперь привяжите этот новый экземпляр к UI. Откройте файл activity_main_livedata.xml, найдите поля EditText для номера телефона и обновите их следующим образом:
+<EditText
+  android:id="@+id/phoneNumberAreaCodeEditText"
+  ...
+  android:text="@={viewmodel.phoneNumber.areaCode}" />
+<EditText
+  android:id="@+id/phoneNumberEditText"
+  ...
+  android:text="@={viewmodel.phoneNumber.number}" />
+Теперь, когда вы редактируете номер телефона в форме регистрации, он также обновляет соответствующий экземпляр в MainViewModel.
+ 
+Преобразование Одного Источника Данных
+Как упоминалось ранее, использование LiveData поверх старых наблюдаемых полей предлагает возможность использования преобразований. Источник данных, за которым наблюдает ваш UI, может сам наблюдать за другим источником данных. Это могут быть даже потоки данных из других компонентов, например как база данных. Затем ваш источник данных может преобразовывать получаемые им данные, перед подготовкой их для UI и отправкой.
+В форме регистрации, как только пользователь введет свой адрес электронной почты, вы будете использовать его как для создания, так и для отображения имени пользователя. Чтобы выполнить это, вы будете использовать Transformations API для LiveData.
+Откройте MainViewModel.kt и замените // TODO: Add username следующим:
+val showUsername: LiveData = Transformations.map(email, ::isValidEmail)
+val username: LiveData = Transformations.map(email, ::generateUsername)
+Убедитесь, что импортировали следующее:
+import androidx.lifecycle.Transformations
+import com.raywenderlich.android.databindingobservables.utils.isValidEmail
+В приведенном выше коде:
+Вы используете email свойство, которое является экземпляром LiveData, чтобы контролировать, отображать или скрывать имя пользователя в UI. Когда имэйл пользователя действителен, showUsername выдает значение true, чтобы отобразить имя пользователя. Но когда имэйл недействителен, showUsername выдает false, чтобы скрыть его.
+Всякий раз, когда значение email изменяется, generateUsername использует это последнее значение для создания нового имени пользователя, которое используется далее в качестве username .
+Теперь вы будете использовать эти два поля в своем макете. Откройте activity_main_livedata.xml, найдите TextView для имени пользователя и обновите его следующим образом:
+<TextView
+  android:id="@+id/usernameTextView"
+  ...
+  android:text="@{@string/username_format(viewmodel.username)}" // 1
+  android:visibility="@{viewmodel.showUsername ? View.VISIBLE : View.GONE}" /> // 2
+Добавление двух строк выше вызывает ошибку компиляции в вашем файле макета, поскольку компилятор не знает, что такое View. Импортируйте его в начало файла:
+<data>
+  <import type="android.view.View" />
+  ...
+</data>
+Здесь вы:
+Настраиваете одностороннюю привязку между username и текстом в TextView. Всякий раз, когда создается новое имя пользователя, текст в TextView пересчитывается. username_format - это просто строковый ресурс, который форматирует имя пользователя, принимаемое в качестве аргумента.
+Используете тернарный оператор, чтобы показать или скрыть TextView в зависимости от значения showUsername.
+Соберите и запустите приложение и введите неверный адрес электронной почты - вы увидите, что имя пользователя не отображается. Теперь введите действующий адрес электронной почты - там есть имя пользователя. Магия!
+Преобразование Нескольких Источников Данных
+Прелесть преобразований LiveData в том, что вам не нужно ограничивать себя одним источником - вы можете преобразовывать несколько источников. AndroidX предоставляет для этого удобный подкласс LiveData - MediatorLiveData. Он может наблюдать за несколькими источниками и выполнять операцию, когда любой из них выдает новое значение.
+После предоставления всей необходимой информации пользователь должен иметь возможность нажать кнопку REGISTER. В настоящее время кнопка всегда активна. Вместо этого его следует отключить до тех пор, пока пользователь не введет всю необходимую информацию, включающую в себя: имя, фамилию и адрес электронной почты пользователя.
+Откройте MainViewModel.kt и замените // TODO: Add a way to enable the registration button следующим образом:
+val enableRegistration: LiveData = MediatorLiveData().apply { // 1
+  addSources(firstName, lastName, email) { // 2
+    value = isUserInformationValid() // 3
+  }
+}
+Вот что происходит в приведенном выше коде:
+Вы создаете новый экземпляр MediatorLiveData, который передает булево значения: true, чтобы включить кнопку регистрации, и false, чтобы отключить ее.
+Вы наблюдаете обязательные поля информации о пользователе: firstName, lastName и email.
+Всякий раз, когда значение любого из полей изменяется, вы создаете новое булево значение, указывающее, следует ли активировать кнопку регистрации или нет.
+Как вы могли заметить, isUserInformationValid всегда возвращает false. Теперь обновите его следующим образом:
+private fun isUserInformationValid(): Boolean {
+  return !firstName.value.isNullOrBlank()
+      && !lastName.value.isNullOrBlank()
+      && isValidEmail(email.value)
+}
+Наконец, привяжите состояние кнопки к этому новому полю. Откройте файл activity_main_livedata.xml, найдите кнопку регистрации и обновите ее следующим образом:
+<Button
+  android:id="@+id/registerButton"
+  ...
+  android:enabled="@{viewmodel.enableRegistration}" // 1
+  android:onClick="@{(view) -> viewmodel.onRegisterClicked()}" /> // 2
+Тем самым вы:
+Настраиваете одностороннюю привязку между enableRegistration и состоянием кнопки.
+Устанавливаете на кнопку “слушатель” кликов, который вызывает onRegisterClicked, когда кнопка доступна и пользователь нажимает ее.
+Проверьте onRegisterClicked. Он позволяет MainActivity отображать диалоговое окно об успешном выполнении и должен регистрировать информацию о пользователе. В данный момент getUserInformation мало что может сделать, поэтому обновите его следующим образом:
+private fun getUserInformation(): String {
+  return "User information:\n" +
+      "First name: ${firstName.value}\n" +
+      "Last name: ${lastName.value}\n" +
+      "Email: ${email.value}\n" +
+      "Username: ${username.value}\n" +
+      "Phone number: ${phoneNumber.areaCode}-${phoneNumber.number}\n" +
+      "Sessions: ${sessions.value}\n"
+}
+Данный код позволяет просмотреть информацию, которую ввел пользователь. В реальном приложении вы, вероятно, отправили бы эту информацию на сервер приложения.
+Сбилдим и запустим. Обратите внимание, что кнопка регистрации остается неактивной до тех пор, пока вы не введете все необходимые данные. Когда она станет активной, нажмите на нее - процесс регистрации завершен!
+ 
+Наблюдение с помощью StateFlow
+Вместо использования LiveData для вашего приложения может иметь больший смысл использовать привязку данных с помощью StateFlow, если вы уже используете Kotlin и корутины. Это помогает сохранить вашу кодовую базу более согласованной и может предоставить дополнительные преимущества по сравнению с использованием LiveData, такие как выполнение асинхронной логики в ваших источниках данных с помощью корутин.
+Примечание. В этом разделе вы будете работать с MainActivity и MainViewModel из пакета stateflow.
+Использование StateFlow в качестве источника привязки данных похоже на использование LiveData.
+Откройте AndroidManifest.xml. Закомментируйте intent-filter из .livedata.MainActivity и раскомментируйте intent-filter из .stateflow.MainActivity следующим образом:
+<!-- LiveData Activity -->
+<activity
+  android:name=".livedata.MainActivity"
+  ...
+<!--  <intent-filter>-->
+<!--    <action android:name="android.intent.action.MAIN" />-->
+<!--    <category android:name="android.intent.category.LAUNCHER" />-->
+<!--  </intent-filter>-->
+</activity>
+<!-- StateFlow Activity -->
+<activity
+  android:name=".stateflow.MainActivity"
+  ...
+  <intent-filter>
+    <action android:name="android.intent.action.MAIN" />
+    <category android:name="android.intent.category.LAUNCHER" />
+  </intent-filter>
+</activity>
+Теперь по умолчанию процесс запускается из .stateflow.MainActivity.
+Настройте привязку данных в MainActivity.kt и замените // TODO: Set up data binding следующим:
+val binding = DataBindingUtil.setContentView(
+    this, 
+    R.layout.activity_main_stateflow
+)
+binding.lifecycleOwner = this
+binding.viewmodel = viewModel
+Добавьте эти импорты:
+import androidx.databinding.DataBindingUtil
+import com.raywenderlich.android.databindingobservables.databinding.ActivityMainStateflowBinding
+Наконец, откройте activity_main_stateflow.xml и удалите TODO в верхней части файла. Затем оберните корневой ScrollView тегом layout и импортируйте MainViewModel, который вы будете использовать для привязки данных.
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+  <data>
+    <variable
+      name="viewmodel"
+      type="com.raywenderlich.android.databindingobservables.stateflow.MainViewModel" />
+  </data>
+  <Scroll
+Также удалите следующие строки из ScrollView:
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+ 
+Наблюдение за Простыми Типами
+Подобно обертыванию простых типов с помощью LiveData, вы можете сделать их наблюдаемыми, обернув в StateFlow. Реализуйте источники данных для имени, фамилии и имэйл пользователя в MainViewModel.kt. Это будет выглядеть так:
+val firstName = MutableStateFlow(DEFAULT_FIRST_NAME)
+val lastName = MutableStateFlow(DEFAULT_LAST_NAME)
+val email = MutableStateFlow(DEFAULT_EMAIL)
+Аналогично тому, как вы привязывали эти области к UI в разделе LiveData, используйте эти области в файле activity_main_stateflow.xml так же, как в файле activity_main_livedata.xml:
+<EditText
+  android:id="@+id/firstNameEditText"
+  ...
+  android:text="@={viewmodel.firstName}" />
+<EditText
+  android:id="@+id/lastNameEditText"
+  ...
+  android:text="@={viewmodel.lastName}" />
+<EditText
+  android:id="@+id/emailEditText"
+  ...
+  android:text="@={viewmodel.email}" />
+ 
+Наблюдение за Коллекциями
+Подобно обертыванию коллекций с помощью LiveData, вы можете сделать коллекцию наблюдаемой, обернув ее в StateFlow. Как и выше, реализуйте источник данных сеансов в MainViewModel.kt.
+val sessions = MutableStateFlow<EnumMap<Session, Boolean>>(EnumMap(Session::class.java)).apply {
+  Session.values().forEach { value[it] = false }
+}
+Импортируйте следующее:
+import java.util.EnumMap
+import com.raywenderlich.android.databindingobservables.model.Session
+Приведенный выше код должен показаться вам знакомым: это почти тот же код, который вы использовали для настройки sessions в разделе LiveData. Вы привяжете его к макету так же, как и раньше. Откройте activity_main_stateflow.xml и обновите чипы для использования сессий StateFlow:
+<com.google.android.material.chip.Chip
+  android:id="@+id/morningSessionChip"
+  ...
+  android:checked="@={viewmodel.sessions[Session.MORNING]}" />
+<com.google.android.material.chip.Chip
+  android:id="@+id/afternoonSessionChip"
+  ...
+  android:checked="@={viewmodel.sessions[Session.NOON]}" />
+<com.google.android.material.chip.Chip
+  android:id="@+id/eveningSessionChip"
+  ...
+  android:checked="@={viewmodel.sessions[Session.EVENING]}" />
+<com.google.android.material.chip.Chip
+  android:id="@+id/nightSessionChip"
+  ...
+  android:checked="@={viewmodel.sessions[Session.NIGHT]}" />
+Вам также нужно будет импортировать перечисление в верхней части макета:
+<data>
+  <import type="com.raywenderlich.android.databindingobservables.model.Session" />
+  ...
+</data>
+ 
+Наблюдение за Объектами
+Независимо от того, используете ли вы LiveData или StateFlow, подход к тому, чтобы сделать объект наблюдаемым, остается тем же. Вы уже сделали PhoneNumber расширенным с помощью BaseObservable в предыдущем разделе. Осталось только добавить поле phoneNumber в MainViewModel.kt и привязать его к EditTextам номера телефона в файле макета.
+Как и раньше, откройте MainViewModel.kt и замените // TODO: Add phone number следующим:
+val phoneNumber = PhoneNumber()
+Откройте файл activity_main_stateflow.xml, найдите поля EditText для номера телефона и обновите их следующим образом:
+<EditText
+  android:id="@+id/phoneNumberAreaCodeEditText"
+  ...
+  android:text="@={viewmodel.phoneNumber.areaCode}" />
+<EditText
+  android:id="@+id/phoneNumberEditText"
+  ...
+  android:text="@={viewmodel.phoneNumber.number}" />
+ 
+Преобразование Одного Источника Данных
+StateFlow предусматривает множество операторов для преобразования источника данных. Они позволяют вам делать гораздо больше, чем просто отображать данные - вы также можете фильтровать, отклонять и собирать данные, и это лишь некоторые из них. По сравнению с LiveData у вас больше контроля над преобразованием источников данных.
+Для вашего варианта использования вам понадобится только оператор сопоставления. Чтобы сгенерировать имя пользователя и решить, когда его показывать, вы будете использовать удобный метод mapToStateFlow в MainViewModel.kt. Замените // TODO: Add username следующим:
+val showUsername: StateFlow = email.mapToStateFlow(::isValidEmail, DEFAULT_SHOW_USERNAME)
+val username: StateFlow = email.mapToStateFlow(::generateUsername, DEFAULT_USERNAME)
+Возможно, вам также потребуется импортировать следующее:
+import com.raywenderlich.android.databindingobservables.utils.isValidEmail
+Как вы могли заметить, в отличие от LiveData, StateFlow требует исходное (начальное) значение.
+Далее, привяжите эти поля в файле activity_main_stateflow.xml:
+<TextView
+  android:id="@+id/usernameTextView"
+  ...
+  android:text="@{@string/username_format(viewmodel.username)}" // 1
+  android:visibility="@{viewmodel.showUsername ? View.VISIBLE : View.GONE}" /> // 2
+Наконец, добавьте этот импорт в тег данных вверху:
+<data>
+  <import type="android.view.View" />
+  ...
+</data>
+Соберите и запустите. Введите действующий адрес электронной почты, и вы увидите отображение сгенерированного имени пользователя.
+ 
+Преобразование нескольких источников данных
+Вы можете комбинировать несколько источников данных и преобразовывать выдаваемые ими значения, используя, как вы уже догадались, метод combine! Он принимает несколько Flow и возвращает Flow, значения которого генерируются с помощью функции преобразования, которая объединяет самые последние значения, выданные каждым потоком. Поскольку привязка данных не распознает Flow, вы преобразуете возвращенный Flow в StateFlow.
+В этом последнем шаге вы установите состояние кнопки регистрации в зависимости от необходимых полей: имени, фамилии и электронной почты.
+val enableRegistration: StateFlow = combine(firstName, lastName, email) { _ ->
+  isUserInformationValid()
+}.toStateFlow(DEFAULT_ENABLE_REGISTRATION)
+Далее, импортируйте это:
+import kotlinx.coroutines.flow.combine
+Это должно выглядеть похоже на то, что вы реализовали с LiveData. Вы наблюдаете за потоками имени, фамилии и электронной почты, и каждый раз, когда какой-либо из них выдает значение, вы вызываете isUserInformationValid(), чтобы активировать или отключить кнопку регистрации.
+Как и раньше, обновите isUserInformationValid() следующим кодом:
+private fun isUserInformationValid(): Boolean {
+  return !firstName.value.isNullOrBlank()
+      && !lastName.value.isNullOrBlank()
+      && isValidEmail(email.value)
+}
+Последним шагом является привязка этого поля к состоянию кнопки регистрации и настройка “слушателя” ее кликов.
+Откройте файл activity_main_stateflow.xml и обновите кнопку регистрации, чтобы она выглядела следующим образом:
+<Button
+  android:id="@+id/registerButton"
+  ...
+  android:enabled="@{viewmodel.enableRegistration}"
+  android:onClick="@{(view) -> viewmodel.onRegisterClicked()}" />
+Вам так же нужно обновить getUserInformation:
+private fun getUserInformation(): String {
+  return "User information:\n" +
+      "First name: ${firstName.value}\n" +
+      "Last name: ${lastName.value}\n" +
+      "Email: ${email.value}\n" +
+      "Username: ${username.value}\n" +
+      "Phone number: ${phoneNumber.areaCode}-${phoneNumber.number}\n" +
+      "Sessions: ${sessions.value}\n"
+}
+Соберите и запустите, затем поэкспериментируйте с формой регистрации. После того, как вы введете необходимые данные, нажмите кнопку регистрации. Появится диалоговое окно об успешной регистрации. Вот и все — вы сделали это снова!
+ 
+Поздравляем! Вы узнали, как использовать одну из самых важных функций привязки данных: observables. Вы увидели, как настроить источники данных для наблюдения с помощью LiveData или StateFlow, а также узнали, как сделать наблюдаемыми различные типы данных, от примитивов до коллекций и сложных объектов. Наконец, вы увидели, как настроить наблюдаемые источники данных, которые предоставляют преобразованные данные из других источников.
+Оригинал статьи
+Комментарии Отменить ответДля отправки комментария вам необходимо авторизоваться. 
+ 
+SwiftBook Самое крупное сообщество iOS разработчиков на языке Swift
+О нас
+Мы в социальных сетяхYouTubeVKontakteFacebookЧат_Telegram
+instagramПолезноеPodlodka
+Подпишись на новости 
+   Политика конфиденциальности
+Пользовательское соглашение
+Найти:
+  © Акулов И.Б., 2014-2021      
+ 
+Сообщить об опечатке
+Текст, который будет отправлен нашим редакторам:
+Ваш комментарий (необязательно):
+Отправить
+Отмена

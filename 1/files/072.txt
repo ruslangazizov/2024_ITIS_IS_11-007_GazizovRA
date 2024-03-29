@@ -1,881 +1,273 @@
-Python Software Foundation News: Board Candidates for 2023 are Announced!
-  News from the Python Software Foundation
-Friday, June 16, 2023
-Board Candidates for 2023 are Announced!
-What an exciting list! Please take a look at who is running for the PSF Board this year here. This year there are 4 seats open on the PSF board. You can see who is on the board currently here. (Dustin Ingram, Jeff Triplett, Nina Zakharenko and Thomas Wouters are at the end of their current terms.) Board Election Timeline:Nominations are open, Thursday, June 1st, 2:00 pm UTCBoard Director Nomination cut-off: Thursday, June 15, 11:59 pm UTCVoter application cut-off date: Thursday, June 15, 11:59 pm UTCAnnounce candidates: Friday, June 16thVoting start date: Tuesday, June 20, 12:01 am UTCVoting end date: Friday, June 30, 11:59 pm UTCNot sure what UTC is for you locally? Check here! Voting takes place from today Tuesday, June 20, through Friday, June 30, 2023 11:59pm UTC. Check here to see how much time you have left to vote. If you are a voting member of the PSF, you will get an email from “OpaVote Voting Link <noreply@opavote.com>” with your ballot, the subject line will read “Python Software Foundation Board of Directors Election 2023”. If you haven’t seen your ballot by Wednesday, please 1) check your spam folder for a message from “noreply@opavote.com” and if you don’t see anything 2) get in touch by emailing psf-elections@python.org so we can make sure we have the most up to date email for you. If you have questions about your membership status or the election, please email psf-elections@python.org You are welcome to join the discussion about the PSF Board election on Slack or on our forum. 
-Posted by
-Deb Nicholson
-at
-6/16/2023 01:19:00 PM
-Newer Post
-Older Post
-Home
-Mission
-The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers.
-Python Software Foundation
-Grants Program
-Membership
-Awards
-Meeting Minutes
-PSF Sponsors
-A big thank you to the above PSF sponsors for supporting our mission!
-Tweets by ThePSF 
-Blog Archive
-        ► 
-      
-2024
-(8)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(4)
-        ▼ 
-      
-2023
-(37)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(3)
-        ▼ 
-      
-June
-(5)
-Announcing the 2023 PSF Board Election Results!
-Announcing Our New Security Developer in Residence!
-The 2023 PSF Board Election is Open!
-Board Candidates for 2023 are Announced!
-Affirming your PSF Membership voting status
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2022
-(35)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(2)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(3)
-        ► 
-      
-February
-(1)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2021
-(42)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(2)
-        ► 
-      
-June
-(4)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(5)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(4)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2020
-(51)
-        ► 
-      
-December
-(8)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(4)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(10)
-        ► 
-      
-April
-(11)
-        ► 
-      
-March
-(4)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2019
-(45)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(4)
-        ► 
-      
-August
-(3)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(5)
-        ► 
-      
-May
-(11)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(5)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2018
-(31)
-        ► 
-      
-December
-(5)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(5)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(1)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2017
-(32)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(6)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(2)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(3)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(4)
-        ► 
-      
-2016
-(27)
-        ► 
-      
-December
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(6)
-        ► 
-      
-April
-(4)
-        ► 
-      
-March
-(2)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2015
-(67)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(4)
-        ► 
-      
-April
-(13)
-        ► 
-      
-March
-(14)
-        ► 
-      
-February
-(9)
-        ► 
-      
-January
-(4)
-        ► 
-      
-2014
-(14)
-        ► 
-      
-October
-(1)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(1)
-        ► 
-      
-May
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2013
-(18)
-        ► 
-      
-November
-(1)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(5)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2012
-(21)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(4)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(1)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2011
-(55)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(7)
-        ► 
-      
-September
-(5)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(8)
-        ► 
-      
-April
-(8)
-        ► 
-      
-March
-(13)
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2010
-(35)
-        ► 
-      
-December
-(4)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(8)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(4)
-        ► 
-      
-March
-(2)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2009
-(21)
-        ► 
-      
-December
-(1)
-        ► 
-      
-October
-(1)
-        ► 
-      
-September
-(6)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(1)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(1)
-        ► 
-      
-February
-(1)
-        ► 
-      
-2008
-(23)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(1)
-        ► 
-      
-August
-(3)
-        ► 
-      
-July
-(1)
-        ► 
-      
-May
-(3)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(5)
-        ► 
-      
-February
-(4)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2007
-(26)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(6)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2006
-(39)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(5)
-        ► 
-      
-September
-(4)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(3)
-        ► 
-      
-May
-(7)
-        ► 
-      
-April
-(6)
-        ► 
-      
-March
-(3)
-Powered by Blogger.
+Пишем лучший код с помощью Swift Algorithms - SwiftBook
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+Пишем лучший код с помощью Swift Algorithms
+ 
+  26.01.2022  
+swiftbook Туториалы 
+Пишем лучший код с помощью Swift Algorithms 
+Стандартная библиотека Swift оснащена типами и функциями для быстрого и эффективного решения наиболее распространенных проблем с кодом, но она не охватывает всего. Поэтому, для более сложных задач нам нужно обратиться к Swift Algorithms: пакету алгоритмов последовательности и сбора данных от компании Apple, с открытым исходным кодом, настроенному на максимальную производительность и гибкость.
+Отличный момент, чтобы увидеть на проходящем прямо сейчас Advent of Code 2021, как Swift Algorithms может помочь вам писать более быстрый, простой и безопасный код. Существует функциональность для создания уникальных последовательностей, их деления, выбора нескольких случайных элементов, их сжатия и т. д. И большинство из них возвращает новые типы последовательностей, с высокой степенью оптимизации, более эффективные, чем сведение всего в простой массив.
+Также Apple заявила, что Swift Algorithms дает возможность изучить проблемы и решения алгоритмов прежде, чем переводить их в основную стандартную библиотеку: вы получаете более качественный код сегодня, и смотрите, какой стандартная библиотека может стать в будущем. Разве не здорово?
+Лучше всего то, что добавление Swift Algorithms в ваш проект Xcode занимает всего несколько минут: перейдите в File, выберите Add Packages, выберите  Apple Swift Packages, затем выберите «swift-algorithms» и нажмите Add Package. Теперь просто добавьте import Algorithms в свой код, и все готово!
+В этой статье я собираюсь выделить лишь немногое из того, что Swift Algorithms уже может делать, фокусируясь на девяти конкретных алгоритмах, которые я нахожу наиболее полезными. Давайте приступим…
+Цепочка последовательностей
+Если у вас есть два массива данных и вы хотите перебрать их оба, вы можете написать что-то вроде этого:
+let names1 = ["Jane", "Elizabeth", "Mary", "Kitty"]
+let names2 = ["Daphne", "Eloise", "Francesca", "Hyacinth"]
+for name in names1 + names2 {
+    print(name)
+}
+Это напечатает все восемь имен, но при этом нам пришлось создать новый временный массив, соединив вместе names1 и names2. В данном случае это не проблема, но если бы ваши массивы были гораздо больше, это было бы довольно затратно.
+У Swift Algorithms есть решение, называемое chain(): оно создает новую последовательность путем конкатенации двух других без выполнения каких-либо дополнительных распределений. Вот как это выглядит:
+for name in chain(names1, names2) {
+    print(name)
+}
+ 
+За кулисами chain() хранит ссылки на две ваши существующие последовательности и просто эффективно связывает их итераторы вместе так, что когда заканчивается один, начинается другой.
+Это работает и с другими типами последовательностей, поэтому мы можем точно проверить, находится ли значение в двух разных диапазонах:
+let tooLow = 0...20
+let tooHigh = 80...100
+let outOfBounds = chain(tooLow, tooHigh)
+let value = 35
+print(outOfBounds.contains(value))
+Более того, это работает для любых типов последовательностей, поэтому мы можем связать диапазон и массив:
+let reservedSeats = 0...50
+let unavailableSeats = [61, 68, 75, 76, 77, 92]
+let disallowed = chain(reservedSeats, unavailableSeats)
+let requestedSeat = 39
+print(disallowed.contains(requestedSeat))
+ 
+Разделение последовательностей
+Вы когда-нибудь хотели разбить последовательность на равные части или, возможно, на основе определенных критериев? Swift Algorithms дает несколько вариантов функций дробления, которые делают именно это: они крайне эффективно превращают сложную, подверженную ошибкам работу в однострочный код.
+В качестве примера мы могли бы создать массив учеников с именами и оценками в виде букв следующим образом:
+struct Student {
+    let name: String
+    let grade: String
+}
+let results = [
+    Student(name: "Taylor", grade: "A"),
+    Student(name: "Sophie", grade: "A"),
+    Student(name: "Bella", grade: "B"),
+    Student(name: "Rajesh", grade: "C"),
+    Student(name: "Tony", grade: "C"),
+    Student(name: "Theresa", grade: "D"),
+    Student(name: "Boris", grade: "F")
+]
+Используя Swift Algorithms, мы могли бы разделить на части этот массив results,  на основе оценок, а затем аккуратно распечатать их:
+let studentsByGrade = results.chunked(on: \.grade)
+for (grade, students) in studentsByGrade {
+    print("Grade \(grade)")
+    for student in students {
+        print("\t\(student.name)")
+    }
+    print()
+}
+Он автоматически будет создавать новый фрагмент всякий раз, когда проверяемое значение изменится, поэтому вам нужно быть осторожным, если ваше значение прыгает. В приведенном выше коде все оценки учеников отображаются по порядку - две «А» вместе, как и две «С», так что это не проблема. Но если нам нужно разбить на части массив, взяв имена учеников , мы должны сначала отсортировать их, чтобы убедиться, что начальные буквы сгруппированы вместе:
+let studentsByName = results.sorted { $0.name < $1.name }.chunked(on: \.name.first!)
+for (firstLetter, students) in studentsByName {
+    print(firstLetter)
+    for student in students {
+        print("\t\(student.name)")
+    }
+    print()
+}
+Существует альтернативный метод фрагментации, который позволяет нам разделить последовательность по количеству элементов в каждом фрагменте. Например, мы могли бы разделить наших студентов на пары следующим образом:
+let pairs = results.chunks(ofCount: 2)
+for pair in pairs {
+    let names = ListFormatter.localizedString(byJoining: pair.map(\.name))
+    print(names)
+}
+Он напечатает «Тейлор и Софи», «Белла и Раджеш» и «Тони и Тереза», но, поскольку у «Бориса» нет пары, это будет фрагмент из одного элемента.
+Будьте осторожны: фрагментация данных вернет срез массива, а не массив, потому что это более эффективно. Это означает, что если вы попытаетесь прочитать такие индексы, как 0 и 1 для нашей пары, вы столкнетесь с проблемой. Так что избегайте такого кода:
+let pairs = results.chunks(ofCount: 2)
+for pair in pairs {
+    if pair.count == 2 {
+        print("\(pair[0].name) and \(pair[1].name) are working together")
+    } else {
+        print("\(pair[0].name) is working alone")
+    }
+}
+Если вам точно нужен массив, а не срез массива, преобразуйте каждый элемент перед циклом, как здесь:
+let pairs = results.chunks(ofCount: 2).map(Array.init)
+ 
+Случайная выборка
+Одной из моих любимых фишек Swift Algorithms является метод randomSample(count:) и его аналог randomStableSample(count:), оба из которых являются улучшенными формами randomElement()  и наоборот выбирают N случайных неповторяющихся элементов.
+Из двух методов, randomSample(count:) является самым быстрым и работает со всеми последовательностями. Однако он не сохраняет порядок ваших элементов, поэтому вы получите N случайных неповторяющихся элементов в любом порядке.
+Например:
+let lotteryBalls = 1...50
+let winningNumbers = lotteryBalls.randomSample(count: 7)
+print(winningNumbers)
+Если вы укажете количество, равное или превышающее количество элементов в вашей последовательности, будет возвращена вся последовательность,  так же в случайном порядке.
+Альтернативой является randomStableSample(count:), который работает немного иначе. Во-первых, он работает только с коллекциями, т.к. ему нужно знать, из какого количества элементов он делает выборку, а также работает немного медленнее, чем randomSample(count:). Однако он сохраняет порядок ваших элементов, что может быть полезно:
+let people = ["Chidi", "Eleanor", "Jason", "Tahani"]
+let selected = people.randomStableSample(count: 2)
+print(selected)
+ 
+Шагая по последовательности
+В Swift Algorithms добавлен новый метод striding(by:), который перемещается по последовательности шагами определенного размера, похожий на stride(from:through:by), за исключением того, что он работает непосредственно с последовательностями и поэтому намного эффективнее.
+Для начала простой пример, чтобы вы могли увидеть прямое отличие старого от нового. Этот код выводит все нечетные числа от 1 до 1000:
+let numbers = 1...1000
+let oddNumbers = numbers.striding(by: 2)
+for oddNumber in oddNumbers {
+    print(oddNumber)
+}
+Мы можем получить тот же результат, используя stride(from:through:by:) вот так:
+let oddNumbers = stride(from: numbers.lowerBound, through: numbers.upperBound, by: 2)
+Преимущество использования striding() заключается в том, что он работает с более сложными коллекциями, такими как строки и фрагменты массива. Таким образом, мы можем эффективно извлекать части строки следующим образом:
+let inputString = "a1b2c3d4e5"
+let letters = inputString.striding(by: 2)
+for letter in letters {
+    print(letter)
+}
+В последнее время я использую это для обработки дешифрования шифров столбчатого транспонирования, где буквы открытого текста располагаются через фиксированные интервалы в строке.
+ 
+Поиск уникальных элементов
+Swift Algorithms имеет полезную функциональность для поиска уникальных элементов в последовательности либо на основе их естественной уникальности (если ваш тип соответствует Hashable), либо с использованием указанной вами функции.
+Давайте начнем с простого примера: вы спрашиваете группу людей о числе, которое они считают счастливым, и получаете разные ответы. Если вы хотите выбрать каждый уникальный ответ, то можете сделать так:
+let allNumbers = [3, 7, 8, 8, 7, 67, 8, 7, 13, 8, 3, 7, 31]
+let uniqueNumbers = allNumbers.uniqued().sorted()
+for number in uniqueNumbers {
+    print("\(number) is a lucky number")
+}
+Если вам нужно что-то более продвинутое, uniqued(on:) позволяет предусмотреть функцию, которая принимает один элемент из последовательности и возвращает Hashable данные любого типа, которые и нужно будет использовать в тесте по выявлению уникальности. Используя key paths в качестве функций, мы можем написать код, чтобы пройти через массив городов и выбрать только один город для каждой страны:
+struct City {
+    let name: String
+    let country: String
+}
+let destinations = [
+    City(name: "Hamburg", country: "Germany"),
+    City(name: "Kyoto", country: "Japan"),
+    City(name: "Osaka", country: "Japan"),
+    City(name: "Naples", country: "Italy"),
+    City(name: "Florence", country: "Italy"),
+]
+let selectedCities = destinations.uniqued(on: \.country)
+for city in selectedCities {
+    print("Visit \(city.name) in \(city.country)")
+}
+В этой ситуации uniqued(on:) всегда будет возвращать первый уникальный элемент из нескольких вариантов, поэтому приведенный выше код вернет Гамбург, Киото и Неаполь.
+ 
+Удаление опциональности
+Стандартная библиотека Swift предоставляет compactMap() для преобразования элемента в какой-то опциональный результат, но затем разворачивает этот опционал и удаляет любые nil. Однако, общепринято воспринимать compactMap { $0 } как способ не выполнения преобразования, а только как хранения опционала развернутым и шаги удаления, например:
+let numbers = [10, nil, 20, nil, 30]
+let safeNumbers = numbers.compactMap { $0 }
+print(safeNumbers.count)
+Это работает, но Swift Algorithms предлагает улучшенную версию, называющуюся просто compacted():
+let numbers = [10, nil, 20, nil, 30]
+let safeNumbers = numbers.compacted()
+print(safeNumbers.count)
+Ок, немногим меньше набирать, но намного понятнее, что вы имеете в виду. Использование $0 в compactMap() всегда казалось скорее обходным путем, чем преднамеренным.
+Однако у compacted() есть еще одно важное преимущество, заключающееся в том, что он всегда lazy (ленив), а не только тогда, когда вы его запрашиваете. Таким образом, процесс развертывания и удаления будет происходить только тогда, когда вы действительно используете его, что делает его намного более эффективным, когда вы объединяете операции в цепочку.
+ 
+Улучшение вложенных циклов
+Вложенные циклы позволяют нам перебирать одну последовательность каждый раз, когда мы перебираем другую, и Swift Algorithms предоставляет функцию product(), которая дает нам дополнительный контроль в подобной ситуации.
+Например, если у нас есть два массива: людей и игр, - мы могли бы использовать product(), чтобы перебрать каждую комбинацию так, что каждый человек мог играть в каждую игру:
+let people = ["Sophie", "Charlotte", "Maddie", "Sennen"]
+let games = ["Mario Kart", "Boomerang Fu"]
+let allOptions = product(people, games)
+for option in allOptions {
+    print("\(option.0) will play \(option.1)")
+}
+Цикл распечатает: «Софи будет играть в Марио Карт», «Софи будет играть в Бумеранг-Фу», «Шарлотта будет играть в Марио Карт», «Шарлотта будет играть в Бумеранг-Фу» и так далее.
+Первым параметром product() может быть любая последовательность, потому что она зацикливается один раз, но второй параметр должен быть коллекцией, потому что она повторяется многократно. Конечно, вы также можете предоставить одну и ту же коллекцию для обоих параметров, если хотите, что означает, что мы можем распечатать полный набор таблиц умножения, например:
+let range = 1...12
+let allMultiples = product(range, range)
+for pair in allMultiples {
+    print("\(pair.0) x \(pair.1) is \(pair.0 * pair.1)")
+}
+Вы можете подумать, что это не лучше, чем использование вложенных циклов for, но магия в том, что product() дает нам новую коллекцию, которой мы можем манипулировать дальше. Например, мы хотим выбрать 20 случайных вопросов из всех возможных таблиц умножения, как здесь:
+let range = 1...12
+let questionCount = 20
+let allMultiples = product(range, range).shuffled().prefix(questionCount)
+for pair in allMultiples {
+    print("\(pair.0) x \(pair.1) is \(pair.0 * pair.1)")
+}
+Если вы внимательно следили, вы могли заметить, что мы можем просто использовать randomSample(count:) вместо перетасовки и приставления:
+let allMultiples = product(range, range).randomSample(count: questionCount)
+Один небольшой недостаток использования product() прямо сейчас заключается в том, что он работает только с двумя параметрами, а это означает, что если вам нужно перебрать несколько коллекций, вам придется вложить вызовы вашего product(). Таким образом, мы могли бы сделать самую утомительную в мире игру Cluedo/Clue (детективная игра) следующим образом:
+let suspects = ["Colonel Mustard", "Professor Plum", "Mrs White"]
+let locations = ["kitchen", "library", "study", "hall"]
+let weapons = ["candlestick", "dagger", "lead pipe", "rope"]
+let guesses = product(product(suspects, locations), weapons)
+for guess in guesses {
+    print("Was it \(guess.0.0) in the \(guess.0.1) with the \(guess.1)?")
+}
+Примерно так играет мой 8-летний ребенок, так что неплохой результат для всего нескольких строк кода!
+ 
+Cдвигая окна в последовательности
+Еще одно из моих любимых дополнений в Swift Algorithms - это возможность читать дублирующиеся(пересекающиеся) подпоследовательности основной последовательности, что отлично подходит для таких вещей, как вычисление скользящих средних по последовательности.
+Если вам просто нужны все соседние пары, вы можете использовать ленивый метод adjacentPairs() в последовательности, как здесь:
+let numbers = (1...100).adjacentPairs()
+for pair in numbers {
+    print("Pair: \(pair.0) and \(pair.1)")
+}
+Однако для более продвинутых задач также есть метод windows(ofCount:), который позволяет вам контролировать, насколько большим должно быть ваше сдвигаемое окно. Таким образом, мы могли бы сделать группы из 5 следующим образом:
+let numbers = (1...100).windows(ofCount: 5)
+for group in numbers {
+    let strings = group.map(String.init)
+    print(ListFormatter.localizedString(byJoining: strings))
+}
+Когда он запустится, то напечатает «1, 2, 3, 4 и 5», «2, 3, 4, 5 и 6», «3, 4, 5, 6 и 7» и так далее. Все это подпоследовательности исходной последовательности, так что опять же, это сверхэффективно.
+Недавно я использовал метод  windows(ofCount:) при декодировании шифра Виженера, потому что он позволял мне просмотреть огромную строку букв и найти все повторяющиеся подстроки.
+ 
+Минимум и максимум
+Наконец, Swift Algorithms предлагает расширенные методы вычисления минимального и максимального значений в последовательности. Вы можете представить собственный тест, если хотите, но если ваша последовательность соответствует Comparable, вы получаете тест по умолчанию, со знаком <, например:
+let names = ["John", "Paul", "George", "Ringo"]
+if let (first, last) = names.minAndMax() {
+    print(first)
+    print(last)
+}
+Также предоставляются методы для одновременного чтения множества самых высоких и самых низких значений, например:
+let scores = [42, 4, 23, 8, 16, 15]
+let threeLowest = scores.min(count: 3)
+print(threeLowest)
+Под капотом результаты будут отсортированы и дополнены вначале или в конце, если вы попробуете прочитать более 10% всей последовательности, но в остальном он использует более быстрый алгоритм, просто делая правильные вещи автоматически, как и многое в Swift Algorithms.
+ 
+И это еще не все!
+Я только что затронул лишь часть из моего любимого в Swift Algorithms.
+Чтобы узнать больше, я рекомендую вам посетить репозиторий Swift Algorithms на GitHub: https://github.com/apple/swift-algorithms. Все это - открытый исходный код Swift, поэтому вы можете изучить его самостоятельно и увидеть, как Swift Algorithms выжимают столько из своего кода.
+Также есть полезное видео с WWDC21: Знакомство с Swift Algorithms and Collections packages.
+Теперь идите и пишите лучший код - благодаря Swift Algorithms!
+Оригинал статьи
+Комментарии Отменить ответДля отправки комментария вам необходимо авторизоваться. 
+ 
+SwiftBook Самое крупное сообщество iOS разработчиков на языке Swift
+О нас
+Мы в социальных сетяхYouTubeVKontakteFacebookЧат_Telegram
+instagramПолезноеPodlodka
+Подпишись на новости 
+   Политика конфиденциальности
+Пользовательское соглашение
+Найти:
+  © Акулов И.Б., 2014-2021      
+ 
+Сообщить об опечатке
+Текст, который будет отправлен нашим редакторам:
+Ваш комментарий (необязательно):
+Отправить
+Отмена

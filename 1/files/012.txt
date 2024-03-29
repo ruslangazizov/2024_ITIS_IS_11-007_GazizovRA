@@ -1,1922 +1,428 @@
-Planet Python
-Planet Python
-Last update: March 29, 2024 10:44 AM UTC
-March 27, 2024
-Real Python
-Reading and Writing WAV Files in Python
-There’s an abundance of third-party tools and libraries for manipulating and analyzing audio WAV files in Python. At the same time, the language ships with the little-known wave module in its standard library, offering a quick and straightforward way to read and write such files. Knowing Python’s wave module can help you dip your toes into digital audio processing.
-If topics like audio analysis, sound editing, or music synthesis get you excited, then you’re in for a treat, as you’re about to get a taste of them!
-In this tutorial, you’ll learn how to:
-Read and write WAV files using pure Python
-Handle the 24-bit PCM encoding of audio samples
-Interpret and plot the underlying amplitude levels
-Record online audio streams like Internet radio stations
-Animate visualizations in the time and frequency domains
-Synthesize sounds and apply special effects
-Although not required, you’ll get the most out of this tutorial if you’re familiar with NumPy and Matplotlib, which greatly simplify working with audio data. Additionally, knowing about numeric arrays in Python will help you better understand the underlying data representation in computer memory.
-Click the link below to access the bonus materials, where you’ll find sample audio files for practice, as well as the complete source code of all the examples demonstrated in this tutorial:
-Get Your Code: Click here to download the free sample code that shows you how to read and write WAV files in Python.
-You can also take the quiz to test your knowledge and see how much you’ve learned:
- Take the Quiz: Test your knowledge with our interactive “Reading and Writing WAV Files in Python” quiz. Upon completion you will receive a score so you can track your learning progress over time:
-Take the Quiz »
-Understand the WAV File Format
-In the early nineties, Microsoft and IBM jointly developed the Waveform Audio File Format, often abbreviated as WAVE or WAV, which stems from the file’s extension (.wav). Despite its older age in computer terms, the format remains relevant today. There are several good reasons for its wide adoption, including:
-Simplicity: The WAV file format has a straightforward structure, making it relatively uncomplicated to decode in software and understand by humans.
-Portability: Many software systems and hardware platforms support the WAV file format as standard, making it suitable for data exchange.
-High Fidelity: Because most WAV files contain raw, uncompressed audio data, they’re perfect for applications that require the highest possible sound quality, such as with music production or audio editing. On the flipside, WAV files take up significant storage space compared to lossy compression formats like MP3.
-It’s worth noting that WAV files are specialized kinds of the Resource Interchange File Format (RIFF), which is a container format for audio and video streams. Other popular file formats based on RIFF include AVI and MIDI. RIFF itself is an extension of an even older IFF format originally developed by Electronic Arts to store video game resources.
-Before diving in, you’ll deconstruct the WAV file format itself to better understand its structure and how it represents sounds. Feel free to jump ahead if you just want to see how to use the wave module in Python.
-The Waveform Part of WAV
-What you perceive as sound is a disturbance of pressure traveling through a physical medium, such as air or water. At the most fundamental level, every sound is a wave that you can describe using three attributes:
-Amplitude is the measure of the sound wave’s strength, which you perceive as loudness.
-Frequency is the reciprocal of the wavelength or the number of oscillations per second, which corresponds to the pitch.
-Phase is the point in the wave cycle at which the wave starts, not registered by the human ear directly.
-The word waveform, which appears in the WAV file format’s name, refers to the graphical depiction of the audio signal’s shape. If you’ve ever opened a sound file using audio editing software, such as Audacity, then you’ve likely seen a visualization of the file’s content that looked something like this:
-Waveform in Audacity
-That’s your audio waveform, illustrating how the amplitude changes over time.
-The vertical axis represents the amplitude at any given point in time. The midpoint of the graph, which is a horizontal line passing through the center, represents the baseline amplitude or the point of silence. Any deviation from this equilibrium corresponds to a higher positive or negative amplitude, which you experience as a louder sound.
-As you move from left to right along the graph’s horizontal scale, which is the timeline, you’re essentially moving forward in time through your audio track.
-Having such a view can help you visually inspect the characteristics of your audio file. The series of the amplitude’s peaks and valleys reflect the volume changes. Therefore, you can leverage the waveform to identify parts where certain sounds occur or find quiet sections that may need editing.
-Coming up next, you’ll learn how WAV files store these amplitude levels in digital form.
-The Structure of a WAV File
-Read the full article at https://realpython.com/python-wav-files/ »
-[ Improve Your Python With 🐍 Python Tricks 💌 – Get a short & sweet Python Trick delivered to your inbox every couple of days. >> Click here to learn more and see examples ]
-March 27, 2024 02:00 PM UTC
-Python GUIs
-Q&A: How Do I Display Images in PySide6? — Using QLabel to easily add images to your applications
-Adding images to your application is a common requirement, whether you're building an image/photo viewer, or just want to add some decoration to your GUI. Unfortunately, because of how this is done in Qt, it can be a little bit tricky to work out at first.
-In this short tutorial, we will look at how you can insert an external image into your PySide6 application layout, using both code and Qt Designer.
-Table of Contents
-Which widget to use?
-Using Qt Designer
-Using Code
-Conclusion
-Which widget to use?
-Since you're wanting to insert an image you might be expecting to use a widget named QImage or similar, but that would make a bit too much sense! QImage is actually Qt's image object type, which is used to store the actual image data for use within your application. The widget you use to display an image is QLabel.
-The primary use of QLabel is of course to add labels to a UI, but it also has the ability to display an image — or pixmap — instead, covering the entire area of the widget. Below we'll look at how to use QLabel to display a widget in your applications.
-Using Qt Designer
-First, create a MainWindow object in Qt Designer and add a "Label" to it. You can find Label at in Display Widgets in the bottom of the left hand panel. Drag this onto the QMainWindow to add it.
-MainWindow with a single QLabel added
-Next, with the Label selected, look in the right hand QLabel properties panel for the pixmap property (scroll down to the blue region). From the property editor dropdown select "Choose File…" and select an image file to insert.
-As you can see, the image is inserted, but the image is kept at its original size, cropped to the boundaries of theQLabel box. You need to resize the QLabel to be able to see the entire image.
-In the same controls panel, click to enable scaledContents.
-When scaledContents is enabled the image is resized to the fit the bounding box of the QLabel widget.  This shows the entire image at all times, although it does not respect the aspect ratio of the image if you resize the widget.
-You can now save your UI to file (e.g. as mainwindow.ui).
-To view the resulting UI,  we can use the standard application template below.  This loads the .ui file we've created (mainwindow.ui) creates the window and starts up the application.
-PySide6
-import sys
-from PySide6 import QtWidgets
-from PySide6.QtUiTools import QUiLoader
-loader = QUiLoader()
-app = QtWidgets.QApplication(sys.argv)
-window = loader.load("mainwindow.ui", None)
-window.show()
-app.exec()
-Running the above code will create a window, with the image displayed in the middle.
-QtDesigner application showing a Cat
-Using Code
-Instead of using Qt Designer, you might also want to show an image in your application through code. As before we use a QLabel widget and add a pixmap image to it. This is done using the QLabel method .setPixmap(). The full code is shown below.
-PySide6
-import sys
-from PySide6.QtGui import QPixmap
-from PySide6.QtWidgets import QMainWindow, QApplication, QLabel
-class MainWindow(QMainWindow):
-    def __init__(self):
-        super(MainWindow, self).__init__()
-        self.title = "Image Viewer"
-        self.setWindowTitle(self.title)
-        label = QLabel(self)
-        pixmap = QPixmap('cat.jpg')
-        label.setPixmap(pixmap)
-        self.setCentralWidget(label)
-        self.resize(pixmap.width(), pixmap.height())
-app = QApplication(sys.argv)
-w = MainWindow()
-w.show()
-sys.exit(app.exec())
-The block of code below shows the process of creating the QLabel, creating a QPixmap object from our file cat.jpg (passed as a file path), setting this QPixmap onto the QLabel with .setPixmap() and then finally resizing the window to fit the image.
-python
-label = QLabel(self)
-pixmap = QPixmap('cat.jpg')
-label.setPixmap(pixmap)
-self.setCentralWidget(label)
-self.resize(pixmap.width(), pixmap.height())
-Launching this code will show a window with the cat photo displayed and the window sized to the size of the image.
-QMainWindow with Cat image displayed
-Just as in Qt designer, you can call .setScaledContents(True) on your QLabel image to enable scaled mode, which resizes the image to fit the available space.
-python
-label = QLabel(self)
-pixmap = QPixmap('cat.jpg')
-label.setPixmap(pixmap)
-label.setScaledContents(True)
-self.setCentralWidget(label)
-self.resize(pixmap.width(), pixmap.height())
-  Notice that you set the scaled state on the QLabel widget and not the image pixmap itself.
-Conclusion
-In this quick tutorial we've covered how to insert images into your Qt UIs using QLabel both from Qt Designer and directly from PySide6 code.
-March 27, 2024 06:00 AM UTC
-March 26, 2024
-PyCoder’s Weekly
-Issue #622 (March 26, 2024)
- #622 – MARCH 26, 2024 View in Browser »     Build a Python Turtle Game: Space Invaders Clone  In this step-by-step tutorial, you’ll use Python’s turtle module to write a Space Invaders clone. You’ll learn about techniques used in animations and games, and consolidate your knowledge of key Python topics. REAL PYTHON    Getting Help (In Python)  When trying to remember just where sleep() was in the Python standard library, Ishaan stumbled through the built-in help and learned how to use it to answer just these kinds of questions. ISHAAN ARORA    Reporting Appsec Risk up to Your CISO Body   Master concise risk reporting for a stronger partnership with your CISO. Translate technical jargon into actionable insights for your CISO with Snyk’s guide on strategies on how to bridge visibility gaps and provide meaningful risk reports → SNYK.IO sponsor    Every Dunder Method in Python  Ever wonder just how many special methods there are in Python? This post explains all of Python’s 100+ dunder methods and 50+ dunder attributes. TREY HUNNER    PyOhio 2024 Announced  PYOHIO    Django REST Framework 3.15  DRF    EuroPython 2024: Community Voting Is Now Live!  EUROPYTHON    Python 3.10.14, 3.9.19, and 3.8.19 Security Releases  CPYTHON DEV BLOG   Discussions  Ideas: Make super() Work in a Class Definition  PYTHON DISCUSS   Articles & Tutorials  SQLite and SQLAlchemy in Python: Beyond Flat Files  In this video course, you’ll learn how to store and retrieve data using Python, SQLite, and SQLAlchemy as well as with flat files. Using SQLite with Python brings with it the additional benefit of accessing data with SQL. By adding SQLAlchemy, you can work with data in terms of objects and methods. REAL PYTHON course    Why Programming Languages Need a Style Czar  The more flexible the language, the more likely you’re going to have a variety of styles in the code. The larger the project the harder it is to manage. This opinion piece explains why having someone dictate how code should look at the language level can be valuable. ADAM GORDON BELL    Elevate Your Python Coding Game with 250 Pythonic Tips!   Discover how to write elegant, efficient Python code with our FREE eBook “Pybites Python Tips”. From basics to advanced techniques, these 250 actionable insights will transform your coding approach. Perfect for Pythonistas aiming for mastery → PYBITES sponsor    Python Basics Exercises: Dictionaries  One of the most useful data structures in Python is the dictionary. In this video course, you’ll practice working with Python dictionaries, see how dictionaries differ from lists and tuples, and define and use dictionaries in your own code. REAL PYTHON course    The (Hidden) Danger of Notebooks in Production  An opinion piece on the perils of utilizing notebooks in a production system. It highlights some of their inherent challenges and presents an alternative approach where notebooks can co-exist with a production system. CHASE GRECO • Shared by Chase Greco    MVC in Python Web Apps: Explained With Lego  This tutorial conceptually explains the Model-View-Controller (MVC) pattern in Python web apps using Lego bricks. Finally understand this important architecture to streamline your web development process. REAL PYTHON    Parsing URLs in Python  Correctly parsing a URL can be tough, in fact the built-in Python functions aren’t fully compliant with the RFC. This post talks about how that is, and a library that gets it right. TYLER KENNEDY    Rapid Prototyping in Python  This post talks about using Python as a prototyping language for more complex projects in other languages. Rather than write pseudo-code, write actual code to test your ideas. AMJITH    Go, Python, Rust, and Production AI Applications  Sameer talks about his use of Go, Python, and Rust, and how their approaches effect your application’s safety, along with how that impacts coding for AI systems. SAMEER AJMANI    20 Django Packages That I Use in Every Project  An opinionated list of Django third-party packages that Will (author of Django for Beginners) uses to add features to his Django web projects. WILL VINCENT    The Wrong Way to Speed Up Your Code With Numba  Numba can make your numeric code faster, but only if you use it right. Learn what “right” means and what to avoid. ITAMAR TURNER-TRAURING    4 Ways to Correct Grammar With Python  This tutorial explains various methods for checking and correcting English language grammatical errors using Python. DEEPANSHU BHALLA    State of WASI Support for CPython: March 2024  Progress on WASI and CPython continues. Brett gives a summary of changes since last year’s post. BRETT CANNON   Projects & Code  likeprogramming: A Python Superset With Slang  GITHUB.COM/STARINGISPOLITE    wifi-heat-mapper: Benchmark Wi-Fi Networks  GITHUB.COM/NISCHAY-PRO    Slightly Simplified Subprocesses  GITHUB.COM/POMPONCHIK • Shared by Evgeniy Blinov    hancho: A Simple, Pleasant Build System in Python  GITHUB.COM/AAPPLEBY    flect: Python Framework for Full-Stack Web Applications  GITHUB.COM/CHAOYINGZ   Events  Weekly Real Python Office Hours Q&A (Virtual)  March 27, 2024 REALPYTHON.COM    SPb Python Drinkup  March 28, 2024 MEETUP.COM    PyCamp Spain 2024  March 29 to April 2, 2024 PYCAMP.ES    PyLadies Amsterdam  March 29, 2024 MEETUP.COM    PythOnRio Meetup  March 30, 2024 PYTHON.ORG.BR    PyCon Lithuania 2024  April 2 to April 7, 2024 PYCON.LT    PyCascades 2024  April 5 to April 9, 2024 PYCASCADES.COM    Happy Pythoning!This was PyCoder’s Weekly Issue #622.View in Browser » 
-[ Subscribe to 🐍 PyCoder’s Weekly 💌 – Get the best Python news, articles, and tutorials delivered to your inbox once a week >> Click here to learn more ]
-March 26, 2024 07:30 PM UTC
-PyPy
-Fixing a Bug in PyPy's Incremental GC
-Introduction
-Since last summer, I've been looking on and off into a weird and hard to
-reproduce crash bug in PyPy. It was
-manifesting only on CI, and it seemed to always happen in the AST rewriting
-phase of pytest, the symptoms being that PyPy would crash
-with a segfault. All my attempts to reproduce it locally failed, and my
-attempts to try to understand the problem by dumping the involved ASTs lead
-nowhere.
-A few weeks ago, we got two more
-bug reports, the last one by
-the authors of the nanobind binding
-generator, with the same symptoms: crash in AST rewriting, only on CI. I
-decided to make a more serious push to try to find the bug this time.
-Ultimately the problem turned out to be several bugs in PyPy's garbage
-collector (GC) that had been there since its inception in
-2013.
-Understanding the
-situation turned out to be quite involved, additionally complicated by this
-being the first time that I was working on this particular aspect of PyPy's GC.
-Since the bug was so much work to find, I thought I'd write a blog post about
-it.
-The blog post consists of three parts: first a chronological description of
-what I did to find the bug, a technical explanation of what goes wrong, some
-reflections on the bug (and then a bonus bug I also found in the process).
-Finding the Bug
-I started from the failing nanobind CI
-runs
-that ended with a segfault of the PyPy interpreter. This was only an
-intermittent problem, not every run was failing. When I tried to just run the
-test suite locally, I couldn't get it to fail. Therefore at first I tried to
-learn more about what was happening by looking on the CI runners.
-Running on CI
-I forked the nanobind repo and hacked the CI script in order to get it to use a
-PyPy build with full debug information and more assertions turned on. In order
-to increase the probability of seeing the crash I added an otherwise unused
-matrix
-variable to the CI script that just contained 32 parameters. This means every
-build is done 32 times (sorry Github for wasting your CPUs 😕). With that
-amount of repetition, I got at least one job of every build that was crashing.
-Then I added the -Xfaulthandler option to the PyPy command which will use the
-faulthandler module
-try to print a Python stacktrace if the VM segfaults to confirm that PyPy was
-indeed crashing in the AST
-rewriting
-phase
-of pytest, which pytest uses for nicer
-assertions.
-I experimented with hacking our faulthandler implementation to also give me a
-C-level callstack, but that didn't work as well as I hoped.
-Then I tried to run gdb on CI to try to get it
-to print a C callstack at the crash point. You can get gdb to execute commands
-as if typed at the prompt with the -ex commandline option, I used something
-like this:
-gdb -ex "set confirm off" -ex "set pagination off" -ex \
-    "set debuginfod enabled off" -ex run -ex where -ex quit \
-    --args <command> <arguments>
-But unfortunately the crash never occurred when running in gdb.
-Afterwards I tried the next best thing, which was configuring the CI runner to
-dump a core file and upload it as a build
-artifact, which worked. Looking
-at the cores locally only sort of worked, because I am running a different
-version of Ubuntu than the CI runners. So I used
-tmate to be able to log into the
-CI runner after a crash and interactively used gdb there. Unfortunately what I
-learned from that was that the bug was some kind of memory corruption,
-which is always incredibly unpleasant to debug. Basically the header word of a
-Python object had been corrupted somehow at the point of the crash, which means
-that it's vtable wasn't
-usable any more.
-(Sidenote: PyPy doesn't really use a vtable
-pointer,
-instead it uses half a word in the header for the vtable, and the other half
-for flags that the GC needs to keep track of the state of the object.
-Corrupting all this is still bad.)
-Reproducing Locally
-At that point it was clear that I had to push to reproduce the problem on my
-laptop, to allow me to work on the problem more directly and not to always have
-to go via the CI runner. Memory corruption bugs often have a lot of randomness
-(depending on which part of memory gets modified, things might crash or more
-likely just happily keep running). Therefore I decided to try to brute-force
-reproducing the crash by simply running the tests many many times. Since the
-crash happened in the AST rewriting phase of pytest, and that happens only if
-no pyc
-files
-of the bytecode-compiled rewritten ASTs exist, I made sure to delete them
-before every test run.
-To repeat the test runs I used
-multitime, which is a simple program
-that runs a command repeatedly. It's meant for lightweight benchmarking
-purposes, but it also halts the execution of the command if that command exits
-with an error (and it sleeps a small random time between runs, which might help
-with randomizing the situation, maybe). Here's a demo:
-(Max pointed out
-autoclave to me when reviewing
-this post, which is a more dedicated tool for this job.)
-Thankfully, running the tests repeatedly eventually lead to a crash, solving my
-"only happens on CI" problem. I then tried various variants to exclude possible
-sources of errors. The first source of errors to exclude in PyPy bugs is the
-just-in-time compiler, so I reran the tests with --jit off to see whether I
-could still get it to crash, and thankfully I eventually could (JIT bugs are
-often very annoying).
-Next source of bugs to exclude where C-extensions. Since those were the tests
-of nanobind, a framework for creating C-extension modules I was a bit worried
-that the bug might be in our emulation of CPython's C-API. But running PyPy
-with the -v option (which will print all the imports as they happen)
-confirmed that at the point of crash no C-extension had been imported yet.
-Using rr
-I still couldn't get the bug to happen in GDB, so the tool I tried next was
-rr, the "reverse debugger". rr can record the execution of a program and
-later replay it arbitrarily often. This gives you a time-traveling debugger
-that allows you to execute the program backwards in addition to forwards.
-Eventually I managed to get the crash to happen when running the tests with
-rr record --chaos (--chaos randomizes some decisions that rr takes, to try to
-increase the chance of reproducing bugs).
-Using rr well is quite hard, and I'm not very good at it. The main approach I
-use with rr to debug memory corruption is to replay the crash, then set a
-watchpoint
-for the corrupted memory location, then use the command reverse-continue to
-find the place in the code that mutated the memory location. reverse-continue
-is like continue, except that it will execute the program backwards from the
-current point. Here's a little demo of this:
-Doing this for my bug revealed that the object that was being corrupted was
-erroneously collected by the garbage collector. For some reason the GC had
-wrongly decided that the object was no longer reachable and therefore put the
-object into a freelist by writing a pointer to the next entry in the freelist
-into the first word of the object, overwriting the object's header. The next
-time the object was used things crashed.
-Side-quest: wrong GC assertions
-At this point in the process, I got massively side-tracked. PyPy's GC has a
-number of debug modes that you can optionally turn on. Those slow down the
-program execution a lot, but they should in theory help to understand why the
-GC goes wrong. When I turned them on, I was getting a failing assertion really
-early in the test execution, complaining about an invariant violation in the GC
-logic. At first this made me very happy. I thought that this would help me fix
-the bug more quickly.
-Extremely frustratingly, after two days of work I concluded that the assertion
-logic itself was wrong. I have fixed that in the meantime too, the details
-of that are in the bonus section at the end of the post.
-Using GDB scripting to find the real bug
-After that disaster I went back to the earlier rr recording without GC assertions
-and tried to understand in more detail why the GC decided to free an object
-that was still being referenced. To be able to do that I used the GDB Python
-scripting
-API to
-write some helper commands to understand the state of the GC heap (rr is an
-extension of GDB, so the GDB scripting API works in rr too).
-The first (small) helper command I wrote with the GDB scripting API was a way
-to pretty-print the currently active GC flags of a random PyPy object, starting
-just from the pointer. The more complex command I wrote was an object tracer,
-which follows pointers to GC objects starting from a root object to explore the
-object graph. The object tracer isn't complete, it doesn't deal with all the
-complexities of PyPy's GC. But it was good enough to help me with my problem, I
-found out that the corrupted object was stored in an array.
-As an example, here's a function that uses the GDB API to walk one of the
-helper data structures of the GC, a stack of pointers:
-def walk_addr_stack(obj):
-    """ walk an instance of the AddressStack class (which is a linked list of
-    arrays of 1019 pointers).
-    the first of the arrays is only partially filled with used_in_last_chunk
-    items, all the other chunks are full."""
-    if obj.type.code == gdb.TYPE_CODE_PTR:
-        obj = obj.dereference()
-    used_in_last_chunk = lookup(obj, "used_in_last_chunk")
-    chunk = lookup(obj, "inst_chunk").dereference()
-    while 1:
-        items = lookup(chunk, "items")
-        for i in range(used_in_last_chunk):
-            yield items[i]
-        chunk = lookup(chunk, "next")
-        if not chunk:
-            break
-        chunk = chunk.dereference()
-        used_in_last_chunk = 1019
-The full file of supporting code I wrote can be found in this
-gist. This is
-pretty rough throw-away code, however.
-In the following recording I show a staged debugging session with some of the
-extra commands I wrote with the Python API. The details aren't important, I
-just wanted to give a bit of a flavor of what inspecting objects looks like:
-The next step was to understand why the array content wasn't being correctly
-traced by the GC, which I eventually managed with some conditional
-breakpoints,
-more watchpoints, and using reverse-continue. It turned out to be a bug that
-occurs when the content of one array was memcopied into another array. The
-technical details of why the array wasn't traced correctly are described in
-detail in the next section.
-Writing a unit test
-To try to make sure I really understood the bug correctly I then wrote a GC
-unit test that shows the problem. Like most of PyPy, our GC is written in
-RPython, a (somewhat strange) subset/dialect of Python2, which can be compiled
-to C code. However, since it is also valid Python2 code, it can be unit-tested
-on top of a Python2
-implementation
-(which is one of the reasons why we keep maintaining PyPy2).
-In the GC unit tests you have a lot of control about what order things happen
-in, e.g. how objects are allocated, when garbage collection phases happen, etc.
-After some trying I managed to write a test that crashes with the same kind of
-memory corruption that my original crash exhibited: an object that is still
-reachable via an array is collected by the GC. To give you a flavor of what
-this kind of test looks like, here's an (edited for clarity) version of the
-test I eventually managed to write
-def test_incrementality_bug_arraycopy(self):
-    source = self.malloc(VAR, 8) # first array
-    # the stackroots list emulates the C stack
-    self.stackroots.append(source)
-    target = self.malloc(VAR, 8) # second array
-    self.stackroots.append(target)
-    node = self.malloc(S) # unrelated object, will be collected
-    node.x = 5
-    # store reference into source array, calling the write barrier
-    self.writearray(source, 0, node)
-    val = self.gc.collect_step()
-    source = self.stackroots[0] # reload arrays, they might have moved
-    target = self.stackroots[1]
-    # this GC step traces target
-    val = self.gc.collect_step()
-    # emulate what a memcopy of arrays does
-    res = self.gc.writebarrier_before_copy(source, target, 0, 0, 2)
-    assert res
-    target[0] = source[0] # copy two elements of the arrays
-    target[1] = source[1]
-    # now overwrite the reference to node in source
-    self.writearray(source, 0, lltype.nullptr(S))
-    # this GC step traces source
-    self.gc.collect_step()
-    # some more collection steps, crucially target isn't traced again
-    # but node is deleted
-    for i in range(3):
-        self.gc.collect_step()
-    # used to crash, node got collected
-    assert target[0].x == 5
-One of the good properties of testing our GC that way is that all the memory is
-emulated. The crash in the last line of the test isn't a segfault at all,
-instead you get a nice exception saying that you tried to access a freed chunk
-of memory and you can then debug this with a python2 debugger.
-Fixing the Bug
-With the unit test in hand, fixing the test was relatively straightforward (the
-diff in its simplest form is anyway only a single line
-change).
-After this first version of my fix, I
-talked to Armin
-Rigo who
-helped me find different case that was still wrong, in the same area of the
-code.
-I also got help by the developers at PortaOne
-who are using PyPy on their servers and had seen some mysterious PyPy
-crashes
-recently, that looked related to the GC. They did test deployments of my fixes
-in their various stages to their servers to try to see whether stability
-improved for them. Unfortunately in the end it turned out that their crashes
-are an unrelated GC bug related to object pinning, which we haven't resolved
-yet.
-Writing a GC fuzzer/property based test
-Finding bugs in the GC is always extremely disconcerting, particularly since
-this one manged to hide for so long (more than ten years!). Therefore I wanted
-to use these bugs as motivation to try to find more problems in PyPy's GC. Given
-the ridiculous effectiveness of fuzzing, I used
-hypothesis to write a
-property-based test. Every test performs a sequence of randomly chosen steps
-from the following list:
-allocate an object
-read a random field from a random object
-write a random reference into a random object
-drop a random stack reference
-perform one GC step
-allocate an array
-read a random index from a random array
-write to an array
-memcopy between two arrays
-This approach of doing a sequence of steps is pretty close to the stateful
-testing approach of
-hypothesis, but I just implemented it manually with the data
-strategy.
-Every one of those steps is always performed on both the tested GC, and on some
-regular Python objects. The Python objects provide the "ground truth" of what
-the heap should look like, so we can compare the state of the GC objects
-with the state of the Python objects to find out whether the GC made a mistake.
-In order to check whether the test is actually useful, I reverted my bug fixes
-and made sure that the test re-finds both the spurious GC assertion error and the
-problems with memcopying an array.
-In addition, the test also found corner cases in my fix. There was a situation
-that I hadn't accounted for, which the test found after eventually.
-I also plan on adding a bunch of other GC features as steps in the
-test to stress them too (for example weakrefs, identity hashes, pinning, maybe
-finalization).
-At the point of publishing this post, the fixes got merged to the 2.7/3.9/3.10
-branches of PyPy, and will be part of the next release (v7.3.16).
-The technical details of the bug
-In order to understand the technical details of the bug, I need to give some
-background explanations about PyPy's GC.
-PyPy's incremental GC
-PyPy uses an incremental generational mark-sweep GC. It's
-generational
-and therefore has minor collections (where only young objects get collected)
-and major collections (collecting long-lived objects eventually, using a
-mark-and-sweep
-algorithm). Young objects are allocated in a nursery using a
-bump-pointer allocator, which makes allocation quite efficient. They are moved
-out of the nursery by minor collections. In order to find references from old
-to young objects the GC uses a write barrier to detect writes into old objects.
-The GC is also
-incremental,
-which means that its major collections aren't done all at once (which would
-lead to long pauses). Instead, major collections are sliced up into small
-steps, which are done directly after a minor collection (the GC isn't
-concurrent though, which would mean that the GC does work in a separate
-thread).
-The incremental GC uses tri-color
-marking
-to reason about the reachable part of the heap during the marking phase, where
-every old object can be:
-black: already marked, reachable, definitely survives the collection
-grey: will survive, but still needs to be marked
-white: potentially dead
-The color of every object is encoded by setting flags
-in the object header.
-The GC maintains the invariant that black objects must never point to white
-objects. At the start of a major collection cycle the stack roots are turned
-gray. During the mark phase of a major collection cycle, the GC will trace gray
-objects, until
-none are left. To trace a gray object, all the objects it references have to be
-marked grey if they are white so far. After a grey object is traced, it can be
-marked black (because all the referenced objects are now either black or gray).
-Eventually, there are no gray objects left. At that point (because no white
-object can be reached from a black one) all the white objects are known to be
-unreachable and can therefore be freed.
-The GC is incremental because every collection step will only trace a limited
-number of gray objects, before giving control back to the program. This leads to
-a problem: if an already traced (black) object is changed between two marking
-steps of the GC, the program can mutate that object and write a new reference
-into one of its fields. This could lead to an invariant violation, if the
-referenced object is white. Therefore, the GC uses the write barrier (which it
-needs anyway to find references from old to young objects) to mark all black
-objects that are modified gray, and then trace them again at one of the
-later collection steps.
-The special write barrier of memcopy
-Arrays use a different kind of write barrier than normal objects. Since they
-can be arbitrarily large, tracing them can take a long time. Therefore it's
-potentially wasteful to trace them fully at a minor collection. To fix this,
-the array write barrier keeps more granular information about which parts of
-the array have been modified since the last collection step. Then only the
-modified parts of the array need to be traced, not the whole array.
-In addition, there is another optimization for arrays, which is that memcopy is
-treated specially by the GC. If memcopy is implemented by simply writing a loop
-that copies the content of one array to the other, that will invoke the write
-barrier every single loop iteration for the write of every array element,
-costing a lot of overhead. Here's some pseudo-code:
-def arraycopy(source, dest, source_start, dest_start, length):
-    for i in range(length):
-        value = source[source_start + i]
-        dest[dest_start + i] = value # <- write barrier inserted here
-Therefore the GC has a special memcopy-specific
-write barrier that will perform the GC logic once before the memcopy loop, and
-then use a regular (typically SIMD-optimized) memcopy implementation from
-libc. Roughly like this:
-def arraycopy(source, dest, source_start, dest_start, length):
-    gc_writebarrier_before_array_copy(source, dest, source_start, dest_start, length)
-    raw_memcopy(cast_to_voidp(source) + source_start,
-                cast_to_voidp(dest) + dest_start,
-                sizeof(itemtype(source)) * length)
-(this is really a rough sketch. The real
-code
-is much more complicated.)
-The bug
-The bugs turned out to be precisely in this memcopy write barrier. When we
-implemented the current GC, we adapted our previous GC, which was a
-generational mark-sweep GC but not incremental. We started with most of the
-previous GC's code, including the write barriers. The regular write barriers
-were adapted to the new incremental assumptions, in particular the need for the
-write barrier to also turn black objects back to gray when they are modified
-during a marking phase. This was simply not done at all for the memcopy write
-barrier, at least in two of the code paths. Fixing this problem fixes the unit
-tests and stops the crashes.
-Reflections
-The way the bug was introduced is really typical. A piece of code (the memcopy
-write barrier) was written under a set of assumptions. Then those assumptions
-changed later. Not all the code pieces that relied on these assumptions to be
-correct were updated. It's pretty hard to prevent this in all situations.
-I still think we could have done more to prevent the bug occurring. Writing a
-property-based test for the GC would have been a good idea given the complexity
-of the GC, and definitely something we did in other parts of our code at the
-time (just using the random module mostly, we started using hypothesis
-later).
-It's a bit of a mystery to me why this bug managed to be undetected for so
-long. Memcopy happens in a lot of pretty core operations of e.g. lists in
-Python (list.extend, to name just one example). To speculate, I would suspect
-that all the other preconditions for the bug occurring made it pretty rare:
-the content of an old list that is not yet marked needs to be copied into
-  another old list that is marked already
-the source of the copy needs to also store an object that has no other
-  references
-the source of the copy then needs to be overwritten with other data
-then the next collection steps need to be happening at the right points
-...
-Given the complexity of the GC logic I also wonder whether some lightweight
-formal methods would have been a good idea. Formalizing some of the core
-invariants in B or
-TLA+ and then model
-checking them up to some number
-of
-objects would have found this problem pretty quickly. There are also correctness
-proofs for GC algorithms in some research papers, but I don't have a good
-overview of the literature to point to any that are particularly good or bad.
-Going such a more formal route might have fixed this and probably a whole bunch
-of other bugs, but of course it's a pretty expensive (and tedious) approach.
-While it was super annoying to track this down, it was definitely good to learn
-a bit more about how to use rr and the GDB scripting interface.
-Bonus Section: The Wrong Assertion
-Some more technical information about the wrong assertion is in this section.
-Background: pre-built objects
-PyPy's VM-building bootstrapping process can "freeze" a bunch of heap objects
-into the final binary. This allows the VM to start up quickly, because those
-frozen objects are loaded by the OS as part of the binary.
-Those frozen pre-built objects are parts of the 'roots' of the garbage
-collector and need to be traced. However, tracing all the pre-built objects at
-every collection would be very expensive, because there are a lot of them
-(about 150,000 in a PyPy 3.10 binary). Tracing them all is also not necessary,
-because most of them are never modified. Unmodified pre-built objects can only reference
-other pre-built objects, which can never be deallocated anyway. Therefore we
-have an optimization that uses the write barrier (which we need anyway to find
-old-to-young pointers) to notice when a pre-built object gets modified for the
-very first time. If that happens, it gets added to the set of pre-built objects
-that gets counted as a root, and is traced as a root at collections
-from then on.
-The wrong assertion
-The assertion that triggered when I turned on the GC debug mode was saying that
-the GC found a reference from a black to a white object, violating its
-invariant. Unmodified pre-built objects count as black, and they aren't roots,
-because they can only ever reference other pre-built objects. However, when a
-pre-built object gets modified for the first time, it becomes part of the root
-set and will be marked gray. This logic works fine.
-The wrong assertion triggers if a pre-built object is mutated for the very
-first time in the middle of an incremental marking phase. While the pre-built
-object gets added to the root set just fine, and will get traced before the
-marking phase ends, this is encoded slightly differently for pre-built objects,
-compared to "regular" old objects. Therefore, the invariant checking code
-wrongly reported a black->white pointer in this situation.
-To fix it I also wrote a unit test checking the problem, made sure that the GC
-hypothesis test also found the bug, and then fixed the wrong assertion to take
-the color encoding of pre-built objects into account.
-The bug managed to be invisible because we don't tend to turn on the GC
-assertions very often. We only do that when we find a GC bug, which is of
-course also when we need it the most to be correct.
-Acknowledgements
-Thanks to Matti Picus, Max Bernstein, Wouter van Heyst for giving me feedback on drafts of the
-post. Thanks to Armin Rigo for reviewing the code and pointing out holes in my
-thinking. Thanks to the original reporters of the various forms of the bug,
-including Lily Foote, David Hewitt, Wenzel Jakob.
-March 26, 2024 07:14 PM UTC
-Real Python
-Finding Python Easter Eggs
-In this Code Conversation, you’ll follow a chat between Philipp and Bartosz as they go on an Easter egg hunt. Along the way, you’ll:
-Learn about Easter egg hunt traditions
-Uncover the first Easter egg in software
-Explore Easter eggs in Python
-There won’t be many code examples in this Code Conversation, so you can lean back and join Philipp and Bartosz on their Easter egg hunt.
-[ Improve Your Python With 🐍 Python Tricks 💌 – Get a short & sweet Python Trick delivered to your inbox every couple of days. >> Click here to learn more and see examples ]
-March 26, 2024 02:00 PM UTC
-Robin Wilson
-My geospatial PDF talk at FOSS4G 2021
-This is only about 3 years late – but I gave a talk at FOSS4G 2021 on geospatial PDFs. The full title was:
-From static PDFs to interactive, geospatial PDFs, or, ‘I never knew PDFs could do that!’
-The video is below:
-In the talk I cover what a geospatial PDF is, how to export as a geospatial PDF from QGIS, how to import that PDF again to extract the geospatial data from it, how to create geospatial PDFs using GDAL (including styling vector data) – and then take things to the nth degree by showing a fully interactive geospatial PDF, providing a UI within the PDF file. Some people attending the talk described it as "the best talk of the conference"!
-A few relevant resources are below:
-gdal_create documentation
-GDAL PDF driver documentation – vector
-GDAL PDF driver documentation – raster
-GDAL PDF Composition File documentation
-GDAL feature style specification
-March 26, 2024 10:32 AM UTC
-Programiz
-Python List
-In this tutorial, we will learn about Python lists (creating lists, changing list items, removing items, and other list operations) with the help of examples.
-March 26, 2024 08:39 AM UTC
-Python Bytes
-#376 Every dunder method in a Python Lockbox
-<strong>Topics covered in this episode:</strong><br>
-<ul>
-	<li><a href="https://micro.webology.dev/2024/03/20/on-robotstxt.html?utm_source=pocket_saves"><strong>🤖</strong></a> <a href="https://micro.webology.dev/2024/03/20/on-robotstxt.html"><strong>On Robots.txt</strong></a></li>
-<li><a href="https://github.com/jawah/niquests"><strong>niquests</strong></a></li>
-<li><a href="https://www.pythonmorsels.com/every-dunder-method/"><strong>Every dunder method in Python</strong></a></li>
-<li><a href="https://github.com/mkjt2/lockbox"><strong>Lockbox</strong></a></li>
-<li><strong>Extras</strong></li>
-<li><strong>Joke</strong></li>
-</ul><a href='https://www.youtube.com/watch?v=wohUfOSl18Q' style='font-weight: bold;'data-umami-event="Livestream-Past" data-umami-event-episode="376">Watch on YouTube</a><br>
-<p><strong>About the show</strong></p>
-<p>Sponsored by ScoutAPM: <a href="https://pythonbytes.fm/scout"><strong>pythonbytes.fm/scout</strong></a></p>
-<p><strong>Connect with the hosts</strong></p>
-<ul>
-<li>Michael: <a href="https://fosstodon.org/@mkennedy"><strong>@mkennedy@fosstodon.org</strong></a></li>
-<li>Brian: <a href="https://fosstodon.org/@brianokken"><strong>@brianokken@fosstodon.org</strong></a></li>
-<li>Show: <a href="https://fosstodon.org/@pythonbytes"><strong>@pythonbytes@fosstodon.org</strong></a></li>
-</ul>
-<p>Join us on YouTube at <a href="https://pythonbytes.fm/stream/live"><strong>pythonbytes.fm/live</strong></a> to be part of the audience. Usually Tuesdays at 11am PT. Older video versions available there too.</p>
-<p><strong>Brian #1:</strong> <a href="https://micro.webology.dev/2024/03/20/on-robotstxt.html?utm_source=pocket_saves"><strong>🤖</strong></a> <a href="https://micro.webology.dev/2024/03/20/on-robotstxt.html"><strong>On Robots.txt</strong></a></p>
-<ul>
-<li>Jeff Triplett</li>
-<li>“In theory, this file helps control what search engines and AI scrapers are allowed to visit, but I need more confidence in its effectiveness in the post-AI apocalyptic world.”</li>
-<li>Resources to get started
-<ul>
-<li><a href="https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/">Block the Bots that Feed “AI” Models by Scraping Your Website</a></li>
-<li><a href="https://coryd.dev/posts/2024/go-ahead-and-block-ai-web-crawlers/">Go ahead and block AI web crawlers</a></li>
-<li><a href="https://darkvisitors.com/">Dark Visitors</a></li>
-<li>Django
-<ul>
-<li><a href="https://learndjango.com/tutorials/add-robotstxt-django-website">Add robots.txt to a Django website</a></li>
-<li><a href="https://adamj.eu/tech/2020/02/10/robots-txt/">How to add a robots.txt to your Django site</a></li>
-</ul></li>
-<li>Hugo
-<ul>
-<li><a href="https://gohugo.io/templates/robots/">Hugo robots.txt</a></li>
-</ul></li>
-</ul></li>
-<li>Podcast questions:
-<ul>
-<li>Should content creators block AI from our work?</li>
-<li>Should’t we set up a standard way to do this?</li>
-<li>I still haven’t found a way to block GitHub repositories. 
-<ul>
-<li>Is there a way?</li>
-<li>Licensing is one thing (not easy), but I don’t think any bots respect any protocol for repos.</li>
-</ul></li>
-</ul></li>
-</ul>
-<p><strong>Michael #2:</strong> <a href="https://github.com/jawah/niquests"><strong>niquests</strong></a></p>
-<ul>
-<li>Requests but with HTTP/3, HTTP/2, Multiplexed Connections, System CAs, Certificate Revocation, DNS over HTTPS / TLS / QUIC or UDP, Async, DNSSEC, and (much) pain removed!</li>
-<li><strong>Niquests</strong> is a simple, yet elegant, HTTP library. It is a drop-in replacement for <strong>Requests</strong>, which is under feature freeze.</li>
-<li><strong>See why you should switch:</strong> <a href="https://medium.com/dev-genius/10-reasons-you-should-quit-your-http-client-98fd4c94bef3">Read about 10 reasons why</a></li>
-</ul>
-<p><strong>Brian #3:</strong>  <a href="https://www.pythonmorsels.com/every-dunder-method/"><strong>Every dunder method in Python</strong></a></p>
-<ul>
-<li>Trey Hunner</li>
-<li>Sure, there’s <code>__repr__()</code>, <code>__str__()</code>, and <code>__init__()</code>, but how about dunder methods for:
-<ul>
-<li>Equality and hashability</li>
-<li>Orderability</li>
-<li>Type conversions and formatting</li>
-<li>Context managers</li>
-<li>Containers and collections</li>
-<li>Callability</li>
-<li>Arithmetic operators</li>
-<li>… and so much more … even a cheat sheet.</li>
-</ul></li>
-</ul>
-<p><strong>Michael #4:</strong> <a href="https://github.com/mkjt2/lockbox"><strong>Lockbox</strong></a></p>
-<ul>
-<li>Lockbox is a forward proxy for making third party API calls.</li>
-<li>Why? Automation or workflow platforms like Zapier and IFTTT allow "webhook" actions for interacting with third party APIs.</li>
-<li>They require you to provide your third party API keys so they can act on your behalf. You are trusting them to keep your API keys safe, and that they do not misuse them.</li>
-<li>How Lockbox helps: When a workflow platform needs to make a third party API call on your behalf, it makes a Lockbox API call instead. Lockbox makes the call to the third party API, and returns the result to the workflow platform.</li>
-</ul>
-<p><strong>Extras</strong> </p>
-<p>Brian:</p>
-<ul>
-<li><a href="https://adamj.eu/tech/2024/02/10/django-join-community-mastodon/"><strong>Django: Join the community on Mastodon</strong></a> - Adam Johnson</li>
-<li><a href="https://unmaintained.tech/"><strong>No maintenance intended</strong></a> - Sent in from Kim van Wyk</li>
-</ul>
-<p>Michael:</p>
-<ul>
-<li>US sues Apple
-<ul>
-<li><a href="https://www.youtube.com/watch?v=_O5XMMvGJ1M">Good video on pluses and minuses</a></li>
-<li><a href="https://www.youtube.com/watch?v=A69-8XxLbJ4">The hot water just the day before</a> [<a href="https://www.youtube.com/watch?v=4ut-de57A2c">and this one</a>]</li>
-<li><a href="https://9to5mac.com/2024/03/25/app-store-proposals-rejected/">https://9to5mac.com/2024/03/25/app-store-proposals-rejected/</a> </li>
-</ul></li>
-<li><a href="https://twitter.com/thepsf/status/1770528868111130683?s=12&t=RL7Nk7OAFSptvENxe1zIqA">PyPI Support Specialist job</a></li>
-<li><a href="https://www.youtube.com/watch?v=Jh24NVM2FDY">VS Code AMA</a>, please <a href="https://forms.gle/thh3pYteN3dGYYvN9">submit your question here</a> </li>
-<li><a href="https://fosstodon.org/@gthomas/112158142020246243">PyData Eindhoven 2024</a> has a date and open CFP</li>
-</ul>
-<p><strong>Joke:</strong>  <a href="https://ioc.exchange/@rye/112079906909625874"><strong>Windows Certified</strong></a></p>
-March 26, 2024 08:00 AM UTC
-Armin Ronacher
-On Tech Debt: My Rust Library is now a CDO
-You're probably familiar with tech debt.  There is a joke that if there is
-tech debt, surely there must be derivatives to work with that debt?  I'm
-happy to say that the Rust ecosystem has created an environment where it
-looks like one solution for tech debt is collateralization.
-Here is how this miracle works.  Say you have a library stuff which depends on some other
-library learned-rust-this-way.
-The author of learned-rust-this-way at one point lost interest in this
-thing and issues keep piling up.  Some of those issues are feature
-requests, others are legitimate bugs.  However you as the person that
-wrote stuff never ran into any of those problems.  Yet it's hard to
-argue that learned-rust-this-way isn't tech debt.  It's one that does
-not bother you all that much, but it's debt nonetheless.
-At one point someone else figures out that learned-rust-this-way is debt.
-One of the ways in which this happens is because the name is great.
-Clearly that's not the only person that learned Rust this way and someone
-else also wants that name.  Except the original author is unreachable.  So
-now there is one more reason for that package to get added to the RUSTSEC
-database and all
-the sudden all hell breaks lose.  Within minutes CI will start failing for
-a lot of people that directly or indirectly use learned-rust-this-way
-notifying them that something happened.  That's because RUSTSEC is
-basically a rating agency and they decided that your debt is now junk.
-What happens next?  As the maintainer of stuff your users all the sudden
-start calling you out for using learned-rust-this-way and you suffer.
-Stress levels increase.  You gotta unload that shit.  Why?  Not because it
-does not work for you, but someone called you out of that debt.  If we
-really want to stress the financial terms this is your margin call.  Your
-users demand action to deal with your debt.
-So what can you do?  One option is to move to alternatives (unload the
-debt).  In this particular case for whatever reason all the alternatives
-to learned-rust-this-way are not looking very appealing either.  One is
-a fork of that thing which also only has a single maintainer, but all the
-sudden pulls in 3 more dependencies, one of which already have a "B-"
-rating.  Another option in the ecosystem just decided to default
-before they are called out.
-Remember you never touched learned-rust-this-way actively.  It worked
-for you in the unmaintained way of the last four years.  If you now fork
-that library (and name it learned-rust-this-way-and-its-okay) you are
-now subject to the same demands.  Forking that library is putting cash on
-the pile of debt.  Except if you don't act on the bug reports there,
-you will eventually be called out like learned-rust-this-way was.  So
-while that might buy you time, it does not really solve the issue.
-However here is what actually does work: you just merge that code into
-your own library.  Now that junk tech debt is suddenly rated “AAA”.  For
-as long as you never touch that code any more, you never reveal to anyone
-that you did that, and you just keep maintaining your library like you did
-before, the world keeps spinning on.
-So as of today: I collateralized yaml-rust by vendoring it in insta.
-It's now an amalgamation of insta code and yaml-rust.  And by doing so, I
-successfully upgraded this junk tech debt to a perfect AAA.
-Who won?  I think nobody really.
-As for the title: a CDO
-is a financial instrument that became pretty infamous during the financial
-crisis of 2007.  An entertaining explanation of that can be found in
-“The Big Short”.
-March 26, 2024 12:00 AM UTC
-March 25, 2024
-PyCharm
-PyCharm 2024.1 Release Candidate Is Out!
-The PyCharm 2024.1 RC is now available!
-You can get the latest build from our website, through the free Toolbox App, or via snaps for Ubuntu.
-Download PyCharm 2024.1 RC
-To use this build, you need to have an active subscription to PyCharm Professional.
-With the major release on the horizon, there’s no better time to explore the newly introduced features before the official launch.
-Our latest build integrates all of the significant updates introduced during the PyCharm 2024.1 Early Access Program. Here’s a short recap of the new features aimed at enhancing various aspects of your development workflows: 
-Full line code completion, now for Python, JavaScript, and TypeScript
-A revamped Terminal tool window
-Sticky lines in the editor 
-In-editor code reviews
-Enriched support for GitHub Actions
-WireMock server support 
-And many more 
-To learn more about these and other improvements, check out the posts tagged under the PyCharm 2024.1 EAP section on our blog.
-Although the addition of new features has finished and the team is now refining those included in v2024.1, we still have updates to share. Take a closer look!
-AI Assistant 
-Beginning with the Beta version of PyCharm 2024.1, AI Assistant has been unbundled and is now available as a separate plugin. This change is driven by the need to offer greater flexibility and control over your various preferences and requirements, enabling you to choose if and when you’d like to use AI-powered technologies in your working environments.
-That’s a wrap! For the full list of updates in the latest build, please refer to the release notes.
-As we put the final touches to ensure a flawless release, we’d like to thank all participants who actively contributed to the Early Access Program for version 2024.1.
-You can drop us a line in the comments below or reach out to us on X (formerly Twitter) – we’re always looking to benefit from your input. Finally, if you happen to spot any bugs, please report them using our issue tracker.
-March 25, 2024 10:02 PM UTC
-Real Python
-Prompt Engineering: A Practical Example
-You’ve used ChatGPT, and you understand the potential of using a large language model (LLM) to assist you in your tasks. Maybe you’re already working on an LLM-supported application and have read about prompt engineering, but you’re unsure how to translate the theoretical concepts into a practical example.
-Your text prompt instructs the LLM’s responses, so tweaking it can get you vastly different output. In this tutorial, you’ll apply multiple prompt engineering techniques to a real-world example. You’ll experience prompt engineering as an iterative process, see the effects of applying various techniques, and learn about related concepts from machine learning and data engineering.
-In this tutorial, you’ll learn how to:
-Work with OpenAI’s GPT-3.5 and GPT-4 models through their API
-Apply prompt engineering techniques to a practical, real-world example
-Use numbered steps, delimiters, and few-shot prompting to improve your results
-Understand and use chain-of-thought prompting to add more context
-Tap into the power of roles in messages to go beyond using singular role prompts
-You’ll work with a Python script that you can repurpose to fit your own LLM-assisted task. So if you’d like to use practical examples to discover how you can use prompt engineering to get better results from an LLM, then you’ve found the right tutorial!
-Get Your Code: Click here to download the sample code  that you’ll use to get the most out of large language models through prompt engineering.
- Take the Quiz: Test your knowledge with our interactive “Practical Prompt Engineering” quiz. Upon completion you will receive a score so you can track your learning progress over time:
-Take the Quiz »
-Understand the Purpose of Prompt Engineering
-Prompt engineering is more than a buzzword. You can get vastly different output from an LLM when using different prompts. That may seem obvious when you consider that you get different output when you ask different questions—but it also applies to phrasing the same conceptual question differently. Prompt engineering means constructing your text input to the LLM using specific approaches.
-You can think of prompts as arguments and the LLM as the function to which you pass these arguments. Different input means different output:
-Python
->>> def hello(name):
-...     print(f"Hello, {name}!")
-...
->>> hello("World")
-Hello, World!
->>> hello("Engineer")
-Hello, Engineer!
-Copied!
-While an LLM is much more complex than the toy function above, the fundamental idea holds true. For a successful function call, you’ll need to know exactly which argument will produce the desired output. In the case of an LLM, that argument is text that consists of many different tokens, or pieces of words.
-Note: The analogy of a function and its arguments has a caveat when dealing with OpenAI’s LLMs. While the hello() function above will always return the same result given the same input, the results of your LLM interactions won’t be 100 percent deterministic. This is currently inherent to how these models operate.
-The field of prompt engineering is still changing rapidly, and there’s a lot of active research happening in this area. As LLMs continue to evolve, so will the prompting approaches that will help you achieve the best results.
-In this tutorial, you’ll cover some prompt engineering techniques, along with approaches to iteratively developing prompts, that you can use to get better text completions for your own LLM-assisted projects:
-Zero-Shot Prompting
-Few-Shot Prompting
-Delimiters
-Numbered Steps
-Role Prompts
-Chain-of-Thought (CoT) Prompting
-Structured Output
-Labeled Conversations
-There are more techniques to uncover, and you’ll also find links to additional resources in the tutorial. Applying the mentioned techniques in a practical example will give you a great starting point for improving your LLM-supported programs. If you’ve never worked with an LLM before, then you may want to peruse OpenAI’s GPT documentation before diving in, but you should be able to follow along either way.
-Get to Know the Practical Prompt Engineering Project
-You’ll explore various prompt engineering techniques in service of a practical example: sanitizing customer chat conversations. By practicing different prompt engineering techniques on a single real-world project, you’ll get a good idea of why you might want to use one technique over another and how you can apply them in practice.
-Imagine that you’re the resident Python developer at a company that handles thousands of customer support chats on a daily basis. Your job is to format and sanitize these conversations. You also help with deciding which of them require additional attention.
-Collect Your Tasks
-Your big-picture assignment is to help your company stay on top of handling customer chat conversations. The conversations that you work with may look like the one shown below:
-Text
-[support_tom] 2023-07-24T10:02:23+00:00 : What can I help you with?
-[johndoe] 2023-07-24T10:03:15+00:00 : I CAN'T CONNECT TO MY BLASTED ACCOUNT
-[support_tom] 2023-07-24T10:03:30+00:00 : Are you sure it's not your caps lock?
-[johndoe] 2023-07-24T10:04:03+00:00 : Blast! You're right!
-Copied!
-You’re supposed to make these text conversations more accessible for further processing by the customer support department in a few different ways:
-Remove personally identifiable information.
-Remove swear words.
-Clean the date-time information to only show the date.
-Read the full article at https://realpython.com/practical-prompt-engineering/ »
-[ Improve Your Python With 🐍 Python Tricks 💌 – Get a short & sweet Python Trick delivered to your inbox every couple of days. >> Click here to learn more and see examples ]
-March 25, 2024 02:00 PM UTC
-Zato Blog
-Systems Automation in Python
-Systems Automation in Python
-  2024-03-25, by Dariusz Suchojad
-How to automate systems in Python and how the Zato Python integration platform differs from a network
-automation tool, how to start using it, along with a couple of examples of integrations with
-Office 365 and Jira, is what the latest article is about.
-➤ Read it here: Systems Automation in Python.
-More blog posts➤
-March 25, 2024 08:00 AM UTC
-March 24, 2024
-Amjith Ramanujam
-Rapid Prototyping in Python
-I was recently assigned to a new project at work. Like any good software engineer I started writing the pseudocode for the modules. We use C++ at work to write our programs.
-I quickly realized it's not easy to translate programming ideas to English statements without a syntactic structure. When I was whining about it to Vijay, he told me to try prototyping it in Python instead of writing pseudocode. Intrigued by this, I decided to write a prototype in Python to test how various modules will come together.
-Surprisingly it took me a mere 2 hours to code up the prototype. I can't emphasize enough, how effortless it was in Python.
-What makes Python an ideal choice for prototyping:
-Dynamically typed language:
-Python doesn't require you to declare the datatype of a variable. This lets you write a function that is generic enough to handle any kind of data. For eg:
-def max_val(a,b):
-    return a if a >b else b
-This function can take integers, floats, strings, a combination of any of those, or lists, dictionaries, tuples, whatever.
-A list in Python need not be homogenous. This is a perfectly good list:
-[1, 'abc', [1,2,3]]
-This lets you pack data in unique ways on the fly which can later be translated to a class or a struct in a statically typed language like C++.
-class newDataType
-{
-    int i;
-    String str;
-    Vector vInts;
-};
-Rich Set to Data-Structures:
-Built-in support for lists, dictionaries, sets, etc reduces the time involved in hunting for a library that provides you those basic data-structures.
-Expressive and Succinct:
-The algorithms that operate on the data-structures are intuitive and simple to use. The final code is more readable than a pseudocode.
-For example: Lets check if a list has an element
->>> lst = [1,2,3]    # Create a list
->>> res = 2 in lst   # Check if 2 is in 'lst'
-True
-If we have to do it in C++.
-list lst;
-lst.push_back(3);
-lst.push_back(1);
-lst.push_back(7);
-list::iterator result = find(lst.begin(), lst.end(), 7); 
-bool res = (result != lst.end())
-Python Interpreter and Help System:
-This is a huge plus. The presence of interpreter not only aids you in testing snippets of code, but it acts as an help system. Lets say we want to look up the functions that operate on a List.
->>> dir([])
-['__add__', '__class__', '__contains__', '__delattr__', '__delitem__',
-'__delslice__', '__doc__', '__eq__', '__format__', '__ge__', 
-'__getattribute__', '__getitem__', '__getslice__', '__gt__', '__hash__',
-'__iadd__', '__imul__', '__init__', '__iter__', '__le__', '__len__',
-'__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__',
-'__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__',
-'__setslice__', '__sizeof__', '__str__', '__subclasshook__', 'append',
-'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
->>> help([].sort)
-Help on built-in function sort:
-     
-sort(...)
-    L.sort(cmp=None, key=None, reverse=False) -- stable sort *IN PLACE*;
-    cmp(x, y) -> -1, 0, 1
- Advantages of prototyping instead of pseudocode: 
-The type definition of the datastructures emerge as we code. 
-The edge cases start to emerge when you prototype. 
-A set of required supporting routines. 
-A better estimation of the time required to complete a task. 
-March 24, 2024 04:35 PM UTC
-March 23, 2024
-Kay Hayen
-Nuitka Release 2.1
-This is to inform you about the new stable release of Nuitka. It is the extremely compatible Python compiler,
-“download now”.
-This release had focus on new features and new optimization. There is a
-also a large amount of compatibility with things newly added to support
-anti-bloat better, and workaround problems with newer package versions
-that would otherwise need source code at run-time.
-Bug Fixes
-Windows: Using older MSVC before 14.3 was not working anymore. Fixed
-in 2.0.1 already.
-Compatibility: The dill-compat plugin didn’t work for functions
-with closure variables taken. Fixed in 2.0.1 already.
-def get_local_closure(b):
-  def _local_multiply(x, y):
-    return x * y + b
-  return _local_multiply
-fn = get_local_closure(1)
-fn2 = dill.loads(dill.dumps(fn))
-print(fn2(2, 3))
-Windows: Fix, sometimes kernel32.dll is actually reported as a
-dependency, remove assertion against that. Fixed in 2.0.1 already.
-UI: The help output for --output-filename was not formatted
-properly. Fixed in 2.0.1 already.
-Standalone: Added support for the scapy package. Fixed in 2.0.2
-already.
-Standalone: Added PonyORM implicit dependencies. Fixed in 2.0.2
-already.
-Standalone: Added support for cryptoauthlib, betterproto,
-tracerite, sklearn.util, and qt_material packages. Fixed
-in 2.0.2 already.
-Standalone: Added missing data file for scipy package. Fixed in
-2.0.2 already.
-Standalone: Added missing DLLs for speech_recognition package.
-Fixed in 2.0.2 already.
-Standalone: Added missing DLL for gmsh package. Fixed in 2.0.2
-already.
-UI: Using reporting path in macOS dependency scan error message,
-otherwise these contain home directory paths for no good reason.
-Fixed in 2.0.2 already.
-UI: Fix, could crash when compiling directories with trailing slashes
-used. At least on Windows, this happened for the “/” slash value.
-Fixed in 2.0.2 already.
-Module: Fix, convenience option --run was not considering
---output-dir directory to load the result module. Without this,
-the check for un-replaced module was always triggering for module
-source in current directory, despite doing the right thing and
-putting it elsewhere. Fixed in 2.0.2 already.
-Python2: Avoid values for __file__ of modules that are unicode
-and solve a TODO that restores consistency over modules mode
-__file__ values. Fixed in 2.0.2 already.
-Windows: Fix, short paths with and without dir name cached wrongly,
-which could lead to shorted paths even where not asked for them.
-Fixed in 2.0.2 already.
-Fix, comparing list values that changed could segfault. This is a bug
-fix Python did, that we didn’t follow yet and that became apparent
-after using our dedicated list helpers more often. Fixed in 2.0.2
-already.
-Standalone: Added support for tiktoken package. Fixed in 2.0.2
-already.
-Standalone: Fix, namespace packages had wrong runtime __path__
-value. Fixed in 2.0.2 already.
-Python3.11: Fix, was using tuples from freelist of the wrong size
-CPython changed the index for the size, to not use zero, which was
-wasteful when introduced with 3.10, but to size-1 but we did
-not follow that and then used a tuple one bit larger than
-necessary.
-As a result, code producing a lot short living tuples could end up
-creating new ones over and over, causing bad memory allocations
-and slow performance.
-Fixed in 2.0.2 already.
-macOS: Fix, need to allow non-existent and versioned dependencies of
-DLLs to themselves. Fixed in 2.0.2 already.
-Windows: Fix PGO (Profile Guided Optimization) build errors with
-MinGW64, this feature is not yet ready for general use, but these
-errors shouldn’t happen. Fixed in 2.0.2 already.
-Plugins: Fix, do not load importlib_metadata unless really
-necessary.
-The pkg_resources plugin used to load it, and that then had
-harmful effects for our handling of distribution information in some
-configurations. Fixed in 2.0.3 already.
-Plugins: Avoid warnings from plugin evaluated code, it could happen
-that a UserWarning would be displayed during compilation. Fixed
-in 2.0.3 already.
-Fix, loading pickles with compiled functions in module mode was not
-working. Fixed in 2.0.3 already.
-Standalone: Added data files for h2o package. Fixed in 2.0.3
-already.
-Fix, variable assignment from variables that started to raise were
-not recognized.
-When a variable assignment from a variable became a raise expression,
-that wasn’t caught and propagated as it should have been. Fixed in
-2.0.3 already.
-Make the NUITKA_PYTHONPATH usage more robust. Fixed in 2.0.3
-already.
-Fix, PySide2/6 argument name for slot connection and disconnect
-should be slot, wasn’t working with keyword argument calls. Fixed
-in 2.0.3 already.
-Standalone: Added support for paddle and paddleocr packages.
-Fixed in 2.0.4 already.
-Standalone: Added support for diatheke. Fixed in 2.0.4 already.
-Standalone: Added support for zaber-motion package. Fixed in
-2.0.4 already.
-Standalone: Added support for plyer package. Fixed in 2.0.4
-already.
-Fix, added handling of OSError for metadata read, otherwise
-corrupt packages can have Nuitka crashing. Fixed in 2.0.4 already.
-Fix, need to annotate potential exception exit when making a fixed
-import from hard module attribute. Fixed in 2.0.4 already.
-Fix, didn’t consider Nuitka project options with --main and
---script-path. This is of course the only way Nuitka-Action does
-call it, so they didn’t work there at all. Fixed in 2.0.4 already.
-Scons: Fix, need to close progress bar when about to error exit.
-Otherwise error outputs will be garbled by incomplete progress bar.
-Fixed in 2.0.4 already.
-Fix, need to convert relative from imports to hard imports too, or
-else packages needed to be followed are not included. Fixed in 2.0.5
-already.
-Standalone: Added pygame_menu data files. Fixed in 2.0.6 already.
-Windows: Fix, wasn’t working when compiling on network mounted drive
-letters. Fixed in 2.0.6 already.
-Fix, the .pyi parser was crashing on some comments with a leading
-from in the line, recognize these better. Fixed in 2.0.6 already.
-Actions: Fix, some yaml configs could fail to load plugins. Fixed in
-2.0.6 already.
-Standalone: Added support for newer torch packages that otherwise
-require source code.
-Fix, inline copies of tqdm etc. left sub-modules behind, removing
-only the top level sys.modules entry may not be enough.
-New Features
-Plugins: Added support for constants in Nuitka package
-configurations. We can now using when clauses, define variable
-values to be defined, e.g. to specify the DLL suffix, or the DLL
-path, based on platform dependent properties.
-Plugins: Make relative_path, suffix, prefix in DLL Nuitka
-package configurations allowed to be an expression rather than just a
-constant value.
-Plugins: Make not only booleans related to the python version
-available, but also strings python_version_str and
-python_version_full_str, to use them when constructing e.g. DLL
-paths in Nuitka package configuration.
-Plugins: Added helper function iterate_modules for producing the
-submodules of a given package, for using in expressions of Nuitka
-package configuration.
-macOS: Added support for Tcl/Tk detection on Homebrew Python.
-Added module attribute to __compiled__ values
-So far it was impossible to distinguish non-standalone, i.e.
-accelerated mode and module compilation by looking at the
-__compiled__ attribute, so we add an indicator for module mode
-that closes this gap.
-Plugins: Added appdirs and importlib for use in Nuitka
-package config expressions.
-Plugins: Added ability to specify modules to not follow when a module
-is used. This nofollow configuration is for rare use cases only.
-Plugins: Added values extension_std_suffix and
-extension_suffix for use in expressions, to e.g. construct DLL
-suffix patterns from it.
-UI: Added more control over caching with per cache category
-environment variables, as documented in the User Manual..
-Plugins: Added support for reporting module detections
-The delvewheel plugin now puts the version of that packaging tool
-used by a particular module in the report rather than tracing it to
-the user, that in the normal case won’t care. This is more for
-debugging purposes of Nuitka.
-Optimization
-Scalability: Do not make loop analysis at all for very trusted value
-traces, their point is to not change, and waiting for that to be
-confirmed has no point.
-Use very trusted value traces in functions not just as mere assign
-traces or else expected optimization will not be done on them in many
-cases. With this a lot more cases of hard values are optimized
-leading also to generally more compact and correct results in terms
-of imports, metadata, code avoided on the wrong OS, etc.
-Scalability: When specializing assignments, make sure to have the
-proper value trace immediately.
-When changing to a hard value, the value trace was still an assign
-trace and not very trusted for one for micro pass of the module.
-This had the effect to need one more micro pass to get to benefiting
-of the unescapable nature of those values, which meant more micro
-passes than necessary and those being more complex due to escaped
-traces, and therefore taking longer for affected modules.
-Scalability: The code trying avoid merge traces of merge traces, and
-to instead flatten merge traces was only handling part of these
-correctly, and correcting it reduced optimization time for some
-functions from infinite to instant. Less memory usage should also
-come out of this, even where this was not affecting compile time as
-much. Added in 2.0.1 already.
-Scalability: Some codes that checked for variables were testing for
-temporary variable and normal variable both one after another, making
-some optimization steps and code generation slower than necessary due
-to the extra calls.
-Scalability: A variable assignment from variable that were later
-recognized to become a raise was not recognized as such, and this
-then wasn’t caught and propagated as it should, preventing more
-optimization of the affected code. Make sure to convert more directly
-when observing things to change, rather than doing it one pass later.
-The fix proper reuse of tuples released to the freelist with matching
-sizes causes less memory usage and faster performance for the 3.11
-version. Added in 2.0.2 already.
-Statically optimize sys.exit into exception raise of
-SystemExit.
-This should make a bunch of dead code obvious to Nuitka, it can now
-tell this aborts execution of a branch, potentially eliminating
-imports, etc.
-macOS: Enable python static link library for Homebrew too. Added in
-2.0.1 already. Added in 2.0.3 already.
-Avoid compiling bloated module namespace of altair package. Added
-in 2.0.3 already.
-Anti-Bloat: Avoid including kubernetes for tensorflow unless
-used otherwise. Added in 2.0.3 already.
-Anti-Bloat: Avoid including setuptools for tqdm. Added in 2.0.3
-already.
-Anti-Bloat: Avoid IPython in fire package. Added in 2.0.3
-already.
-Anti-Bloat: Avoid including Cython for pydantic package.
-Added in 2.0.3 already.
-Anti-Bloat: Changes to avoid triton in newer torch as well.
-Added in 2.0.5 already.
-Anti-Bloat: Avoid setuptools via setuptools_scm in
-pyarrow.
-Anti-Bloat: Made more packages equivalent to using setuptools
-which we want to avoid, all of Cython, cython, pyximport,
-paddle.utils.cpp_extension, torch.utils.cpp_extension were
-added for better reports of the actual causes.
-Organisational
-Moved the changelog of Nuitka to the website, just point to there
-from Nuitka repo.
-UI: Proper error message from Nuitka when scons build fails with a
-detail mnemonic page. Read more on the info page for detailed information.
-Windows: Reject all MinGW64 that are not are not the winlibs that
-Nuitka itself downloaded. As these packages break very easily, we
-need to control if it’s a working set of ccache, make,
-binutils and gcc with all the necessary workarounds and features
-like LTO working on Windows properly.
-Quality: Added auto-format of PNG and JPEG images. This aims at
-making it simpler to add images to our repositories, esp. Nuitka
-Website. This now makes optipng and jpegoptim calls as
-necessary. Previously this was manual steps for the website to be
-applied.
-User Manual: Be more clear about compiler version needs on Windows
-for Python 3.11.
-User Manual: Added examples for error message with low C compiler
-memory, such that maybe they can be found via search by users.
-User Manual: Removed sections that are unnecessary or better
-maintained as separate pages on the website.
-Quality: Avoid empty no-auto-follow values, for silently ignoring
-it there is a dedicated string ignore that must be used.
-Quality: Enforce normalized paths for dest_path and
-relative_path. Users were uncertain if a leading dot made sense,
-but we now disallow it for clarity.
-Quality: Check more keys with expressions for syntax errors, to catch
-these mistakes in configuration sooner.
-Quality: Scanning through all files with the auto-format tool should
-now be faster, and CPython test suite directories (test submodules)
-if present are ignored.
-Release: Remove month from manpage generation, that’s only noise in
-diffs.
-Removed digital art folders, these were only making checkouts larger
-for no good reason. We will have better ones on the website in the
-future.
-Scons: Allow C warnings when compiling for running in debugger
-automatically.
-UI: The macOS app bundle option is not experimental at all. This has
-been untrue for years now, remove that cautioning.
-macOS: Discontinue support for PyQt6.
-With newer PyQt6 we would have to package frameworks properly, and we
-don’t have that yet and it will be a lot of developer time to get it.
-Instead point people to PySide6 which is the better choice and is
-perfectly supported by Qt company and Nuitka.
-Removed version numbering, month of creation, etc. from the man pages
-generated.
-Moved Credits.rst file to be on the website and maintain it there
-rather than syncing of from the Nuitka repository.
-Bumped copyright year and split the license text such that it is now
-at the bottom of the files rather than eating up the first page, this
-is aimed at making the code more readable.
-Cleanups
-With sys.exit being optimized, we were able to make our trick to
-avoid following nuitka because of accidentally finding the
-setup as an import more simple.
-# Don't allow importing this, and make recognizable that
-# the above imports are not to follow. Sometimes code imports
-# setup and then Nuitka ends up including itself.
-if __name__ != "__main__":
-   sys.exit("Cannot import 'setup' module of Nuitka")
-Scons: Don’t scan for ccache on Windows, the winlibs package
-contains it nowadays, and since it’s now required to be used, there
-is no point for this code anymore.
-Minor cleanups coming from trying out ruff as a linter on Nuitka,
-it found a few uses of not using not in, but that was it.
-Tests
-Removed test with chinese filenames, we need to avoid chinese names
-in the repo. These have been seen as preventing installation on some
-systems that are not capable of handling them in the git, zip, pip
-tooling, so lets avoid them entirely now that Nuitka handles these
-just fine.
-Tests: More macOS standalone tests that need to be bundles were
-getting the project configuration to do it.
-Summary
-This release added much needed tools for our Nuitka Package
-configuration, but also cleans up scalability and optimization that was
-supposed to work, but did not yet, or not anymore.
-The usability improved again, as it does always, but the big
-improvements for scalability that will implement existing algorithms
-more efficient, are yet to come, this release was mainly driven by the
-need to get torch to work in its latest version out of the box with
-stable Nuitka, but this couldn’t be done as a hotfix
-March 23, 2024 02:11 PM UTC
-March 22, 2024
-Python Morsels
-Unnecessary else statements
-When your function ends in an else block with a return statement in it, should you remove that else?
-Table of contents
-A function where both if and else return
-Is that else statement unnecessary?
-Sometimes else improves readability
-When should you remove an else statement?
-Considering readability with if-else statements
-A function where both if and else return
-This earliest_date function uses the python-dateutil third-party library to parse two strings as dates:
-from dateutil.parser import parse
-def earliest_date(date1, date2):
-    """Return the string representing the earliest date."""
-    if parse(date1, fuzzy=True) < parse(date2, fuzzy=True):
-        return date1
-    else:
-        return date2
-This function returns the string which represents the earliest given date:
->>> earliest_date("May 3 2024", "June 5 2025")
-'May 3 2024'
->>> earliest_date("Feb 3 2026", "June 5 2025")
-'June 5 2025'
-Note that this function uses an if statement that returns, and an else that also returns.
-Is that else statement unnecessary?
-We don't necessarily need that …
-Read the full article: https://www.pythonmorsels.com/unnecessary-else-statements/
-March 22, 2024 10:00 PM UTC
-Django Weblog
-Welcome our new Fellow - Sarah Boyce
-The DSF Board and Fellows Committee are pleased to introduce Sarah Boyce as our new Django Fellow. Sarah will be joining Natalia Bidart who is continuing her excellent tenure as a Fellow.
-Sarah is a senior developer and developer advocate with 5 years of experience developing with Django under her belt. She graduated with a  first class honours degree in Mathematics from the University of Bath, and transitioned in software development in her first job out of school.
-Sarah first worked as a client project focused developer, where she gained experience directly dealing with requests from clients as well as managing our own internal ticketing system for feature/bug reports. A stint as a backend developer using Django and DRF provided a grounding in working on long term challenges on a single project. Most recently Sarah has been a developer advocate focused on creating content on and about Django and Django development.
-For the past several years, Sarah has been a very active member of the Django community. She has a history of producing well researched and written patches for Django, as well as on a number of highly used third party packages. Sarah is a member of the Django Review and Triage team, helping others to get their patches over the line and into Django. She also finds time to participate in and create content for Django meetups, conferences, and the Django News newsletter.
-Sarah is also a Co-Founder and Co-Organiser of Djangonaut Space, the mentorship program developing future contributors to Django and other Django related packages. Djangonaut Space was awarded the 2023 Malcolm Tredinnick Memorial Prize.
-Please join me in welcoming and wishing Sarah well as the new Fellow.
-Thank you to all of the applicants to the Fellowship. We hope that we will be able to expand the Fellowship program in the future, and knowing that there are more excellent candidates gives us confidence in working towards that goal.
-Finally our deepest thanks and gratitude goes to Mariusz Felisiak. Mariusz is stepping down from the Fellowship after 5 years of dedicated service in order to focus on other areas of the Django and wider world. We wish you well Mariusz.
-March 22, 2024 04:54 PM UTC
-Daniel Roy Greenfeld
-Keynote at PyCon Lithuania 2024
-From April 2nd to April 6th I'll be at PyCon Lithuania 2024 in Vilnius to present a keynote about 25 years of glorious coding mistakes (mostly in Python). Audrey and Uma will be accompanying me, making us the first members of the Lithuanian side of my family to return there in over 100 years!
-At the conference I'll be joined by my old friend Tom Christie, author of HTTPX, Starlette, and Django REST Framework. I hope to meet many new friends, specifically everyone there. At the sprints I'll be joined by my awesome wife, Audrey, author of Cookiecutter.
-Come and join us!
-March 22, 2024 01:00 PM UTC
-Real Python
-The Real Python Podcast – Episode #197: Using Python in Bioinformatics and the Laboratory
-How is Python being used to automate processes in the laboratory? How can it speed up scientific work with DNA sequencing? This week on the show, Chemical Engineering PhD Student Parsa Ghadermazi is here to discuss Python in bioinformatics.
-[ Improve Your Python With 🐍 Python Tricks 💌 – Get a short & sweet Python Trick delivered to your inbox every couple of days. >> Click here to learn more and see examples ]
-March 22, 2024 12:00 PM UTC
-PyCharm
-PyCharm 2023.3.5 Is Out!
-PyCharm 2023.3.5 is an important bug-fix update.
-You can update to this version from inside the IDE, using the Toolbox App, or via snaps, if you’re using Ubuntu. You can also download it directly from our website.
-Here are some of the notable fixes in v2023.3.5: 
-The “Problems” tool window no longer displays outdated project errors that have already been resolved. [PY-71058]
-PyCharm now supports Docker 2.25, eliminating errors that occurred when attempting to create a Docker-compose interpreter with Docker 2.25. [PY-71131]
-We’ve introduced a workaround to reduce the likelihood of IDE crashes following an update to macOS Sonoma 14.4. [JBR-6802]
-We’ve fixed the issue causing erratic screen scaling on Linux. [IDEA-341318]
-For the full list of issues addressed in PyCharm 2023.3.5, please see the release notes.
-March 22, 2024 06:52 AM UTC
-March 21, 2024
-Talk Python to Me
-#454: Data Pipelines with Dagster
-Do you have data that you pull from external sources or is generated and appears at your digital doorstep? I bet that data needs processed, filtered, transformed, distributed, and much more. One of the biggest tools to create these data pipelines with Python is Dagster. And we are fortunate to have Pedram Navid on the show this episode. Pedram is the Head of Data Engineering and DevRel at Dagster Labs. And we're talking data pipelines this week at Talk Python.<br/>
-<br/>
-<strong>Episode sponsors</strong><br/>
-<br/>
-<a href='https://talkpython.fm/training'>Talk Python Courses</a><br>
-<a href='https://talkpython.fm/posit'>Posit</a><br/>
-<br/>
-<strong>Links from the show</strong><br/>
-<br/>
-<div><b>Rock Solid Python with Types Course</b>: <a href="https://training.talkpython.fm/courses/python-type-hint-course-with-hands-on-examples?ref=podcast" target="_blank" rel="noopener">training.talkpython.fm</a><br/>
-<br/>
-<b>Pedram on Twitter</b>: <a href="https://twitter.com/pdrmnvd" target="_blank" rel="noopener">twitter.com</a><br/>
-<b>Pedram on LinkedIn</b>: <a href="https://linkedin.com/in/pedramnavid" target="_blank" rel="noopener">linkedin.com</a><br/>
-<b>Ship data pipelines with extraordinary velocity</b>: <a href="https://dagster.io" target="_blank" rel="noopener">dagster.io</a><br/>
-<b>dagster-open-platform</b>: <a href="https://github.com/dagster-io/dagster-open-platform" target="_blank" rel="noopener">github.com</a><br/>
-<b>The Dagster Master Plan</b>: <a href="https://dagster.io/blog/dagster-master-plan" target="_blank" rel="noopener">dagster.io</a><br/>
-<b>data load tool (dlt)</b>: <a href="https://dlthub.com" target="_blank" rel="noopener">dlthub.com</a><br/>
-<b>DataFrames for the new era</b>: <a href="https://pola.rs" target="_blank" rel="noopener">pola.rs</a><br/>
-<b>Apache Arrow</b>: <a href="https://arrow.apache.org" target="_blank" rel="noopener">arrow.apache.org</a><br/>
-<b>DuckDB is a fast in-process analytical database</b>: <a href="https://duckdb.org" target="_blank" rel="noopener">duckdb.org</a><br/>
-<b>Ship trusted data products faster</b>: <a href="https://www.getdbt.com" target="_blank" rel="noopener">www.getdbt.com</a><br/>
-<b>Watch this episode on YouTube</b>: <a href="https://www.youtube.com/watch?v=vRVhDfQPHBM" target="_blank" rel="noopener">youtube.com</a><br/>
-<b>Episode transcripts</b>: <a href="https://talkpython.fm/episodes/transcript/454/data-pipelines-with-dagster" target="_blank" rel="noopener">talkpython.fm</a><br/>
-<br/>
-<b>--- Stay in touch with us ---</b><br/>
-<b>Subscribe to us on YouTube</b>: <a href="https://talkpython.fm/youtube" target="_blank" rel="noopener">youtube.com</a><br/>
-<b>Follow Talk Python on Mastodon</b>: <a href="https://fosstodon.org/web/@talkpython" target="_blank" rel="noopener"><i class="fa-brands fa-mastodon"></i>talkpython</a><br/>
-<b>Follow Michael on Mastodon</b>: <a href="https://fosstodon.org/web/@mkennedy" target="_blank" rel="noopener"><i class="fa-brands fa-mastodon"></i>mkennedy</a><br/></div>
-March 21, 2024 08:00 AM UTC
-Programiz
-Python Program to Capitalize the First Character of a String
-In this example, you will learn to capitalize the first character of a string.
-March 21, 2024 05:19 AM UTC
-Python⇒Speed
-The wrong way to speed up your code with Numba
-If your NumPy-based code is too slow, you can sometimes use Numba to
-speed it up. Numba is a compiled language that uses the same syntax as
-Python, and it compiles at runtime, so it’s very easy to write. And
-because it re-implements a large part of the NumPy APIs, it can also
-easily be used with existing NumPy-based code.
-However, Numba’s NumPy support can be a trap: it can lead you to missing
-huge optimization opportunities by sticking to NumPy-style code. So in
-this article we’ll show an example of:
-The wrong way to use Numba, writing NumPy-style full array transforms.
-The right way to use Numba, namely for loops.
-Read more...
-March 21, 2024 12:00 AM UTC
-Matt Layman
-Post-launch Punchlist - Building SaaS with Python and Django #186
-In this episode, we had a bunch of issues to resolve post-launch. I set the code that causes trials to expire, made updates to who receives prompt emails, and added some polish to the sign up process and interface to make it clear what will happen in the flow. After those modifications, we worked through a set of smaller changes like setting up Dependabot and adding a missing database index.
-March 21, 2024 12:00 AM UTC
-March 20, 2024
-EuroPython
-EuroPython 2024: Community Voting is now live! Go Vote!
-Hey hey,With 110 days remaining until the big day, the EuroPython programme team is working full steam ahead to put together a power-packed schedule. And what *YOU* want to see at the conference is our guiding light in the process. With that, we are excited to announce the EuroPython 2024 Community Voting: https://ep2024.europython.eu/voting 🎉All past EuroPython attendees between 2015-2024 & prospective speakers from this year are eligible to vote. You can help us spread the word by forwarding this email to your fellow EuroPython friends.The more votes we have, the better informed decisions the programme team can make!Head over to https://ep2024.europython.eu/voting to make your voice heard!Thank you for your continued support,EuroPython 2024 Organisers
-March 20, 2024 10:00 PM UTC
-Python Software Foundation
-Announcing a PyPI Support Specialist
-We launched the Python Package Index (PyPI) in 2003 and for most of its history a robust and dedicated volunteer community kept it running. Eventually, we put a bit of PSF staff time into the maintenance of the Index, and last year with support from AWS we hired Mike Fiedler to work full-time on PyPI’s urgent security needs. PyPI has grown enormously in the last 20+ years, and in recent years it has reached a truly massive scale with growth only continuing upward. In 2022 alone, PyPI saw a 57% growth and as of this writing, there are over a half a million packages on PyPI. The impact PyPI has these days is pretty breathtaking. Running a free public service of that size has come with challenges, too. As PyPI has grown, the work of communicating with users and solving account issues here has grown in tandem and out-stripped our current volunteer plus one tenth of a staff person capacity. We also know that some community members have noticed and expressed frustration with the time-frame that goes with tasks that don't have sufficient staffing. Much of this work is sensitive and complex such that it needs to be performed by a PSF staff person. It involves personal information and verification processes to make sure we’re giving access and names to the correct entities. Work like this needs to be done by a person who is here day after day to carry out multi-step verification procedures and is accountable to the PSF. We are very happy to share the news that we are hiring a person to help us manage the increased capacity and allow us to keep pace with PyPI’s seemingly unstoppable growth. This is an associate role that is 100% remote. Please take a look at this posting for a PyPI Support Specialist and share it with your networks. 
-March 20, 2024 03:08 PM UTC
-RSS feed
-Titles Only
-Powered by Planet!
-Other Python Planets
-            
-Python Summer of Code
-Planet Python Francophone
-Planet Python Argentina
-Planet Python Brasil
-Planet Python Poland
-Python Libraries
-          
-OLPC
-PySoy
-SciPy
-SymPy
-Twisted
-Python/Web Planets
-          
-CherryPy
-Django Community
-Plone
-Turbogears
-Other Languages
-          
-Haskell
-Lisp
-Parrot
-Perl
-Ruby
-Databases
-          
-MySQL
-PostgreSQL
-Subscriptions
-          
-[OPML feed]
-"Mathspp Pydon'ts"
-"Menno's Musings"
-"Michael J.T. O'Kelly"
-"Morphex's Blogologue"
-"Speno's Pythonic Avocado"
-"William's Journal"
-2degrees
-A. Jesse Jiryu Davis
-ABlog for Sphinx
-Aahz
-Abhijeet Pal
-Abu Ashraf Masnun
-Adam Pletcher
-Agendaless Consulting
-Ahmed Bouchefra
-Al-Ahmadgaid Asaad
-Alec Munro
-Alex Grönholm
-Alex Morozov
-Alexander Limi
-Alexandre Conrad
-Alexandre Vassalotti
-Alexey Evseev
-Allison Kaptur
-Amjith Ramanujam
-AmvTek
-Anarcat
-Anatoly Techtonik
-Andre Roberge
-Andrea Grandi
-Andrew Dalke
-Andriy Kornatskyy
-Andy Dustman
-Andy R. Terrel
-Anna Martelli Ravenscroft
-Anthony Baxter
-Anton Belyaev
-Anton Bobrov
-Anwesha Das
-Armin Ronacher
-Artem Golubin
-Artem Rys
-Ashish Vidyarthi
-Astro Code School
-Automating OSINT
-Awesome Python Applications
-Baiju Muthukadan
-Bajusz Tamás
-BeDjango
-Ben Bass
-Ben Cook
-Ben Rousch
-Benjamin Peterson
-Benji York
-Bertrand Mathieu
-Bhavin Gandhi
-Bhishan Bhandari
-BioPython News
-Bit of Cheese
-Bojan Mihelac
-Brandon Rhodes
-BreadcrumbsCollector
-Brendan Scott
-Brett Cannon
-Brian Okken
-Bruno Oliveira
-Bruno Ponne / Coding The Past
-Bruno Rocha
-Caktus Consulting Group
-Calvin Cheng
-Calvin Spealman
-Carl Chenet
-Carl Düvel
-Carl Trachte
-Carlos Eduardo de Paula
-Casey Duncan
-Catherine Devlin
-Ching-Hwa Yu
-Chris Hager
-Chris Miles
-Chris Mitchell
-Chris Moffitt
-Chris Rose
-Chris Warrick
-Christian Heimes
-Christian Ledermann
-Christian Scholz
-Christoph Zwerschke
-CodeGrades
-CodeSnipers
-CodersLegacy
-Coding Diet
-Corey Gallon
-Corey Goldberg
-Cormoran Project
-Cross-Platform Command Line Tools
-CubicWeb
-Curtis Miller
-DSPIllustrations.com
-DaPythonista
-Daily Tech Video (Python)
-Dallas Fort Worth Pythoneers
-Dan Crosta
-Dan Stromberg
-Dan Yeaw
-Daniel Bader
-Daniel Nouri
-Daniel Roy Greenfeld
-Data Community DC
-Data School
-DataWars.io
-Dave Beazley
-David Amos
-David Caron
-David Goodger
-David Lindelof
-David MacIver
-David Malcolm
-David Szotten
-Davide Moro
-Davy Mitchell
-Davy Wybiral
-Declassed Art
-Denis Kurov
-Django Weblog
-Djangostars
-Doing Math with Python
-Doug Hellmann
-Dougal Matthews
-Duncan McGreggor
-Ed Crewe
-Edward K. Ream
-Eli Bendersky
-Eniram Ltd.
-Eray Özkural (examachine)
-Erik Marsja
-Etienne Desautels
-EuroPython
-EuroPython Society
-Evennia
-Everyday Superpowers
-Fabio Zadrozny
-Filip Wasilewski
-Filipe Saraiva
-Flavio Coelho
-Flavio Percoco
-Floris Bruynooghe
-Frank Wierzbicki
-François Dion
-François Marier
-Frederik Rietdijk
-From Python Import Podcast
-Full Stack Python
-Gaël Varoquaux
-Georges Dubus
-Ghaandee on IT
-Giampaolo Rodola
-Giulio Fidente
-Glenn Franxman
-Glyph Lefkowitz
-Go Deh
-Gocept Weblog
-Godson Gera
-Graeme Cross
-Graham Dumpleton
-Graham Wheeler
-Grant Baillie
-Grant Rettke
-Greg Taylor
-Grig Gheorghiu
-Grzegorz Śliwiński
-Guido van Rossum
-Gustavo Narea
-Gustavo Niemeyer
-Gökhan Sever
-Hernan Grecco
-Hilary Mason
-Holger Krekel
-Holger Peters
-Humberto Rocha
-Hynek Schlawack
-Ian Ozsvald
-Ilian Iliev
-Import Python
-Inspired Python
-Ionel Cristian Maries
-IronPython-URLs
-IslandT
-Israel Fruchter
-Itamar Turner Trauring
-Ivan Velichko
-J. Pablo Fernández
-Jack Diederich
-Jacob Perkins
-Jahongir Rahmonov
-Jaime Buelta
-Jamal Moir
-James Bennett
-Janusworx
-Jarrod Millman
-Jean-Paul Calderone
-Jeff Bisbee
-Jeff Bradberry
-Jeff Hinrichs
-Jeff Shell
-Jeremy Epstein
-Jeremy Hylton
-Jim Fulton
-Joe Abbate
-Joe Pitz
-Johan Dahlin
-John Burns
-John Cook
-John Jacobsen
-John Ludhi/nbshare.io
-Jon Parise
-Jonathan Ellis
-Jonathan Harrington
-Jonathan Hartley
-Jonathan Street
-Jorgen Schäfer
-Juan Manuel Contreras
-Julien Danjou
-Julien Tayon
-Juri Pakaste
-Just a little Python
-Justin Mayer
-Kai Lautaportti
-Karim Elghamrawy
-Kay Hayen
-Kay Schluehr
-Kelly Yancey
-Kodnito
-Kogan Dev
-Konrad Delong
-Koodaamo
-Kristján Valur Jónsson
-Kriti Godey
-Kulbir Saini
-Kumar McMillan
-Kumar Vipin Yadav
-Kushal Das
-Károly Nagy
-LAAC Technology
-Laurent Szyster
-Leigh Honeywell
-Lennart Regebro
-Leonhard Vogt
-Lintel Technologies
-Linux Stans
-ListenData
-Logilab
-Low Kian Seong
-Luca Botti
-Lucas Cimon
-Ludovic Gasc
-Ludvig Ericson
-Luke Plant
-Maciej Fijalkowsk
-Made With Mu
-Mahmoud Hashemi
-Malthe Borch
-Marc Richter
-Marc-André Lemburg
-Marcos Dione
-Marius Gedminas
-Mark Dufour
-Mark McLoughlin
-Mark McMahon
-Martijn Pieters
-Martin Fitzpatrick
-Mats Kindahl
-Matt Layman
-Matthew Rocklin
-Matthew Rollings
-Matthew Wilson
-Matthew Wright
-Mattias Brändström
-Mauveweb
-Michael Becker
-Michael Droettboom
-Michael Foord
-Michael Nelson
-Michal Kwiatkowski
-Michał Bultrowicz
-Michele Simionato
-Michy Alice
-Mike C. Fletcher
-Mike Driscoll
-Mike Müller
-Mikhail Korobov
-Mikko Ohtamaa
-Mirek Długosz
-Mitchell Garnaat
-Mitya Sirenef
-Montreal Python User Group
-Moshe Zadka
-Moya Project
-Mozilla Web Development
-Muharem Hrnjadovic
-Mycli
-Nadav Samet
-Naomi Ceder
-Natan Zabkar
-Ned Batchelder
-Neil Schemenauer
-Nick Coghlan
-Nick Craig-Wood
-Nick Efford
-Nick Janetakis
-Nicola Iarocci
-Nicolas Dumazet
-Nicolas Paris
-Nigel Babu
-Nikola
-Nikolaos Diamantis
-Not Invented Here
-Nsukami Patrick
-Obey the Testing Goat
-Ofosos
-Omaha Python Users Group
-Ondřej Čertík
-Paolo Melchiorre
-Pathwright
-Patrice Neff
-Patrick Kennedy
-Paul Everitt
-Paul Harrison
-Paul Redman
-Paweł Fertyk
-Pedro Lima
-Peter Bengtsson
-Peter Eisentraut
-Peter Fankhänel
-Peter Harkins
-Peter Hoffmann
-Phil Hassey
-Philip Jenvey
-Philipp von Weitershausen
-Philippe Normand
-Phillip J. Eby
-Podcast.__init__
-Polyglot.Ninja()
-Possbility and Probability
-Pradeep Gowda
-Pranav Pandey
-Praveen Gollakota
-Programiz
-Programming Ideas With Jake
-Przemysław Kołodziejczyk
-PyATL Bytecode
-PyBites
-PyCharm
-PyCoder’s Weekly
-PyCon
-PyPy
-PyTennessee
-Python 4 Kids
-Python 411 Podcast
-Python Advocacy
-Python Anywhere
-Python Bytes
-Python Celery - Weekly Celery Tutorials and How-tos
-Python Circle
-Python Data
-Python Diary
-Python Does What?!
-Python Engineering at Microsoft
-Python GUIs
-Python Insider
-Python Morsels
-Python People
-Python Piedmont Triad User Group
-Python Pool
-Python Software Foundation
-Python Sweetness
-Python User Groups
-Python for Beginners
-Python on Karan
-Python with Myo
-Python(x,y) News
-PythonClub - A Brazilian collaborative blog about Python
-PythonDebugging.com
-Pythonicity
-Pythonology
-Python⇒Speed
-Péter Szabó
-Péter Zsoldos
-Quansight Labs Blog
-R David Murray
-RMOTR
-Ralph Bean
-Ram Rachum
-Randell Benavidez
-Randle Taylor
-Randy Zwitch
-Raymond Hettinger
-Read the Docs
-Real Python
-Red Hat Developers
-Rene Dudfield
-Reuven Lerner
-Richard Tew
-Richard Wall
-Rickard Lindberg
-Rishi Maker
-Rob Galanakis
-Robert Collins
-Robert Zaremba
-Robin Parmar
-Robin Wilson
-Rodrigo Araúj
-RoseHosting Blog
-Ruslan Spivak
-Ryan Cox
-S. Lott
-S. R. Krishnan
-SDJournal
-SPE Weblog
-STX Next
-Salim Fadhley
-Sandipan Dey
-Sandro Tosi
-Sean McGrath
-Sebastian Pölsterl
-Sebastian Witowski
-Selena Deckelmann
-Senthil Kumaran
-Seth Michael Larson
-Shannon -jj Behrens
-ShiningPanda
-Simeon Franklin
-Simeon Visser
-Simon
-Simon Brunning
-Simon Wittber
-Simple is Better Than Complex
-SoftFormance
-Speed Matters
-Spike ekipS
-Spyder IDE
-Stack Abuse
-Stanislas Morbieu
-Starzel.de
-Stefan Behnel
-Stefan Scherfke
-Stein Magnus Jodal
-Stephen Ferg
-Steve Holden
-Steven Klass
-Stuart Gordon Reid
-Stéphane Wirtel
-Sumana Harihareswara - Cogito, Ergo Sumana
-Suresh Dasari/Tutlane.com
-Swisscom ICT
-Talk Python to Me
-Taylor Edmiston
-TechBeamers Python
-Techiediaries - Django
-Terri Oda
-Terry Jones
-Test and Code
-TestDriven.io
-The Data Scientist
-The Digital Cat
-The Lunar Cowboy
-The No Title® Tech Blog
-The Occasional Occurrence
-The Open Sourcerer
-The Parcon Blog
-The Python Coding Blog
-The Python Papers
-The Three of Wands
-Thibauld Nion
-ThisHosting.Rocks
-Thomas Guest
-Thomas Vander Stichele
-Tibo Beijen
-Tim Arnold / reachtim
-Tim Gilbert
-Tim Knapp
-Tim Lesher
-Tobias Ivarsson
-Tom Christie
-Tomasz Ducin
-Tomaž Muraus
-Tomer Filiba
-Tony Breyal
-Toshio Kuratomi
-Travis Oliphant
-Trey Hunner
-Tryton News
-Turnkey Linux
-Twisted Matrix Labs
-TypeThePipe
-V.S. Babu
-Varun Nischal
-Vasudev Ram
-Vinay Sajip
-Vinay Sajip (Logging)
-Vinayak Mehta
-Virgil Dupras
-Vladimir Perić
-Wayne Witzel
-Weekly Python Chat
-Weekly Python StackOverflow Report
-Wes Mason
-Wesley Chun
-Will Kahn-Greene
-Will McGugan
-Will Pierce
-William Minchin
-William Reade
-Wing Tips
-Wingware
-Wyatt Baldwin
-Yaniv Aknin
-Yann Larrivée
-Yuval Greenfield
-Zaki Akhmad
-Zato Blog
-Zero to Mastery
-Zero-with-Dot (Oleg Żero)
-ZeroDB
-bottlepy-dev
-codeboje
-death and gravity
-eGenix.com
-hypothesis.works articles
-kdev-python
-meejah.ca
-nl-project
-pgcli
-py.CheckIO
-pygame
-pythonwise
-qutebrowser development blog
-saaj/recollection
-scikit-learn
-testmon
-tryexceptpass
-Éric Araujo
-Łukasz Langa
-    To request addition or removal:
-    Open an issue on github
+Функции - SwiftBook
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+Документация
+ 
+ 
+Развернуть
+Свернуть
+              
+        Документация		
+		  
+		  
+        
+              
+        Знакомство со Swift		
+		  
+		  
+        
+ О языке Swift
+ Совместимость версий Swift
+ Тур по Swift
+ 
+              
+        Руководство Swift		
+		  
+		  
+        
+ Основы
+ Базовые операторы
+ Строки и символы
+ Типы коллекций
+ Управление потоком
+ Функции
+ Замыкания
+ Перечисления
+ Структуры и классы
+ Свойства
+ Методы
+ Сабскрипты
+ Наследование
+ Инициализация
+ Деинициализация
+ Опциональная последовательность
+ Обработка ошибок
+ Согласованность
+ Приведение типов
+ Вложенные типы
+ Расширения
+ Непрозрачные типы
+ Протоколы
+ Универсальные шаблоны
+ Автоматический подсчет ссылок (ARC)
+ Безопасность хранения
+ Контроль доступа
+ Продвинутые операторы
+ 
+              
+        Справочник языка		
+		  
+		  
+        
+ Лексическая структура
+ Типы
+ Выражения
+ Инструкции
+ Объявления
+ Атрибуты
+ Шаблоны
+ Параметры и аргументы универсального типа
+ Резюме по грамматике
+ 
+ 
+		Функции		
+        
+Функции
+Функции – это самостоятельные фрагменты кода, решающие определенную задачу. Каждой функции присваивается уникальное имя, по которому ее можно идентифицировать и "вызвать" в нужный момент.
+Язык Swift предлагает достаточно гибкий единый синтаксис функций – от простых C-подобных функций без параметров до сложных методов в стиле Objective-C с локальными и внешними параметрами. Параметры могут служить как для простой инициализации значений внутри функции, так и для изменения внешних переменных после выполнения функции.
+Каждая функция в Swift имеет тип, описывающий тип параметров функции и тип возвращаемого значения. Тип функции можно использовать аналогично любым другим типам в Swift, т. е. одна функция может быть параметром другой функции либо ее результирующим значением. Функции также могут вкладываться друг в друга, что позволяет инкапсулировать определенный алгоритм внутри локального контекста.
+Объявление и вызов функций
+При объявлении функции можно задать одно или несколько именованных типизированных значений, которые будут ее входными данными (или параметрами), а также тип значения, которое функция будет возвращать в качестве результата (или возвращаемый тип).
+У каждой функции должно быть имя, которое отражает решаемую задачу. Чтобы воспользоваться функцией, ее нужно "вызвать", указав имя и входные значения (аргументы), соответствующие типам параметров этой функции. Аргументы функции всегда должны идти в том же порядке, в каком они были указаны при объявлении функции.
+В приведенном ниже примере функция называется greet(person:), потому что это отражает ее задачу – получить имя пользователя и вежливо поздороваться. Для этого задается один входной параметр типа String под названием person, а возвращается тоже значение типа String, но уже содержащее приветствие:
+func greet(person: String) -> String {
+    let greeting = "Привет, " + person + "!"
+    return greeting
+}
+Вся эта информация указана в объявлении функции, перед которым стоит ключевое слово func. Тип возвращаемого значения функции ставится после результирующей стрелки -> (это дефис и правая угловая скобка).
+Из объявления функции можно узнать, что она делает, какие у нее входные данные и какой результат она возвращает. Объявленную функцию можно однозначно вызывать из любого участка кода:
+print(greet(person: "Anna"))
+// Выведет "Привет, Anna!"
+print(greet(person: "Brian"))
+// Выведет "Привет, Brian!"
+Функция greet(person:) вызывается, принимая значение типа String, которое стоит после имени person, например вот так - greet(person: "Anna"). Поскольку функция возвращает значение типа String, вызов функции greet(person:) может быть завернут в вызов для функции print(_:separator:terminator:), чтобы напечатать полученную строку и увидеть возвращаемое значение (см. выше).
+Заметка
+У print(_:separator:terminator:) нет ярлыка для первого аргумента, и его другие аргументы являются опциональными, поскольку имеют дефолтное значение (по умолчанию). Эти вариации синтаксиса функции рассматриваются ниже в Ярлыки аргументов и имена параметров функций и Значения по умолчанию для параметров.
+Тело функции greet(person:) начинается с объявления новой константы типа String под названием greeting, и устанавливается простое сообщение-приветствие. Затем это приветствие возвращается в точку вызова функции с помощью ключевого слова return. После выполнения оператора return greeting функция завершает свою работу и возвращает текущее значение greeting.
+Функцию greet(person:) можно вызывать многократно и с разными входными значениями. В примере выше показано, что будет, если функцию вызвать с аргументом "Anna" и со значением "Brian". В каждом случае функция возвратит персональное приветствие.
+Чтобы упростить код этой функции, можно записать создание сообщения и его возврат в одну строку:
+func greetAgain(person: String) -> String {
+    return "Hello again, " + person + "!"
+}
+print(greetAgain(person: "Anna"))
+// Выведет "Hello again, Anna!"
+Параметры функции и возвращаемые значения
+В языке Swift параметры функций и возвращаемые значения реализованы очень гибко. Разработчик может объявлять любые функции – от простейших, с одним безымянным параметром, до сложных, со множеством параметров и составными именами.
+Функции без параметров
+В некоторых случаях функции могут не иметь входных параметров. Вот пример функции без входных параметров, которая при вызове всегда возвращает одно и то же значение типа String:
+func sayHelloWorld() -> String {
+    return "hello, world"
+}
+print(sayHelloWorld())
+// Выведет "hello, world"
+Обратите внимание, что несмотря на отсутствие параметров, в объявлении функции все равно нужно ставить скобки после имени. При вызове после имени функции также указываются пустые скобки.
+Функции с несколькими входными параметрами
+У функции может быть несколько параметров, которые указываются через запятую в скобках.
+Эта функция принимает два параметра: имя человека и булево значение, приветствовали ли его уже, и возвращает соответствующее приветствие для этого человека:
+func greet(person: String, alreadyGreeted: Bool) -> String {
+    if alreadyGreeted {
+        return greetAgain(person: person)
+    } else {
+        return greet(person: person)
+    }
+}
+print(greet(person: "Tim", alreadyGreeted: true))
+// Выведет "Hello again, Tim!"
+Вы вызываете функцию greet(person:alreadyGreeted:), передавая значение типа String параметру с ярлыком person и булево значение с ярлыком alreadyGreeted, взятое в скобки через запятую. Обратите внимание, что эта функция отличается от функции greet(person:), которую вы видели в предыдущем разделе. Хотя имена обеих функций начинаются с greet, функция greet(person:alreadyGreeted:) принимает два аргумента, а greet(person:) принимает только один.
+Функции, не возвращающие значения
+В некоторых случаях функции могут не иметь возвращаемого типа. Вот другая реализация функции greet(person:), которая выводит свое собственное значение типа String, но не возвращает его:
+func greet(person: String) {
+    print("Привет, \(person)!")
+}
+greet(person: "Dave")
+// Выведет "Привет, Dave!"
+Так как у функции нет выходного значения, в ее объявлении отсутствует результирующая стрелка (->) и возвращаемый тип.
+Заметка
+Строго говоря, функция greet(person:) все же возвращает значение, хотя оно нигде и не указано. Функции, для которых не задан возвращаемый тип, получают специальный тип Void. По сути, это просто пустой кортеж, т. е. кортеж с нулем элементов, который записывается как ().
+Выходное значение функции может быть игнорировано:
+func printAndCount(string: String) -> Int {
+    print(string)
+    return string.count
+}
+func printWithoutCounting(string: String) {
+    let _ = printAndCount(string: string)
+}
+printAndCount(string: "hello, world")
+// Выведет "hello, world" и возвращает значение 12
+printWithoutCounting(string: "hello, world")
+// Выведет "hello, world", но не возвращает значения
+Первая функция, printAndCount(string:) выводит строку, а затем возвращает подсчет символов в виде целого (Int). Вторая функция, printWithoutCounting(string:) вызывает первую, но игнорирует ее возвращаемое значение. При вызове второй функции первая функция по-прежнему печатает сообщение, но ее возвращаемое значение не используется.
+Заметка
+Хотя возвращаемые значения можно игнорировать, функция все же должна возвратить то, что задано в ее объявлении. Функция, для которой указан возвращаемый тип, не может заканчиваться оператором, который ничего не возвращает, иначе произойдет ошибка во время компиляции.
+Функции, возвращающие несколько значений
+Вы можете использовать кортежный тип в качестве возвращаемого типа для функции для возврата нескольких значений в виде составного параметра.
+В следующем примере объявлена функция minMax(array:), которая ищет минимальный и максимальный элементы в массиве типа Int:
+func minMax(array: [Int]) -> (min: Int, max: Int) {
+    var currentMin = array[0]
+    var currentMax = array[0]
+    for value in array[1..<array.count] {
+        if value < currentMin {
+            currentMin = value
+        } else if value > currentMax {
+            currentMax = value
+        }
+    }
+    return (currentMin, currentMax)
+}
+Функция minMax(array:) возвращает кортеж из двух значений типа Int. Этим значениям присвоены имена min и max, чтобы к ним можно было обращаться при запросе возвращаемого типа функции.
+Тело функции minMax(array:) начинается с инициализации двух рабочих переменных currentMin и currentMax значением первого целого элемента в массиве. Затем функция последовательно проходит по всем остальным значениям в массиве и сравнивает их со значениями currentMin и currentMax соответственно. И наконец, самое маленькое и самое большое значения возвращаются внутри кортежа типа Int.
+Так как имена элементов кортежа указаны в возвращаемом типе функции, к ним можно обращаться через точку и считывать значения:
+let bounds = minMax(array: [8, -6, 2, 109, 3, 71])
+print("min is \(bounds.min) and max is \(bounds.max)")
+// Выведет "min is -6 and max is 109"
+Обратите внимание, что элементам кортежа не нужно давать название в момент возвращения кортежа из функции, так как их имена уже указаны как часть возвращаемого типа функции.
+Опциональный кортеж как возвращаемый тип
+Если возвращаемый из функции кортеж может иметь "пустое значение", то его следует объявить как опциональный кортеж, т. е. кортеж, который может равняться nil. Чтобы сделать возвращаемый кортеж опциональным, нужно поставить вопросительный знак после закрывающей скобки:(Int, Int)? или (String, Int, Bool)?.
+Заметка
+Кортеж-опционал вида (Int, Int)? - это не то же самое, что кортеж, содержащий опционалы: (Int?, Int?). Кортеж-опционал сам является опционалом, но не обязан состоять из опциональных значений.
+Функция minMax(array:) выше возвращает кортеж из двух значений типа Int, однако не проверяет корректность передаваемого массива. Если аргумент array содержит пустой массив, для которого count равно 0, функция minMax в том виде, в каком она приведена выше, выдаст ошибку выполнения, когда попытается обратиться к элементу array[0].
+Для устранения этого недочета перепишем функцию minMax(array:) так, чтобы она возвращала кортеж-опционал, который в случае пустого массива примет значение nil:
+func minMax(array: [Int]) -> (min: Int, max: Int)? {
+    if array.isEmpty { return nil }
+    var currentMin = array[0]
+    var currentMax = array[0]
+    for value in array[1..<array.count] {
+        if value < currentMin {
+            currentMin = value
+        } else if value > currentMax {
+            currentMax = value
+        }
+    }
+    return (currentMin, currentMax)
+}
+Чтобы проверить, возвращает ли эта версия функции minMax(array:) фактическое значение кортежа или nil, можно использовать привязку опционала:
+if let bounds = minMax(array: [8, -6, 2, 109, 3, 71]) {
+    print("min is \(bounds.min) and max is \(bounds.max)")
+}
+// Выведет "min is -6 and max is 109"
+Функции с неявным возвращаемым значением
+Если тело функции состоит из единственного выражения, то функция неявно возвращает это выражение. Например, обе функции в примере ниже имеют одно и то же поведение:
+func greeting(for person: String) -> String {
+    "Привет, " + person + "!"
+}
+print(greeting(for: "Дейв"))
+// Выведет "Привет, Дейв!"
+func anotherGreeting(for person: String) -> String {
+    return "Привет, " + person + "!"
+}
+print(anotherGreeting(for: "Дейв"))
+// Выведет "Привет, Дейв!"
+Поведение функции greeting(for:) заключается в том, чтобы просто вернуть приветственное сообщение, что означает, что мы можем использовать сокращенную запись этой функции. Функция anotherGreeting(for:) возвращает то же самое приветственное сообщение, используя ключевое слово return. Таким образом, если вы пишите функцию, которая состоит из одного лишь возвращаемого значения, то вы можете опустить слово return.
+Как вы увидите в главе "Сокращенный вариант объявления геттера", геттер так же может использовать сокращенную форму записи с опущенным словом return.
+Заметка
+Код, который вы написали с неявным возвращаемым значением должен иметь это самое возвращаемое значение. Например, вы не можете использовать print(13) как неявное возвращаемые значения. Однако вы можете использовать функцию, которая никогда не возвращает значение, например, fatalError("Oh no!"), в качестве неявного возвращаемого значения, потому что Swift знает, что неявного возврата не происходит.
+Ярлыки аргументов и имена параметров функций
+Каждый параметр функции имеет ярлык аргумента и имя параметра. Ярлык аргумента используется при вызове функции. Каждый параметр при вызове функции записывается  с ярлыком аргумента, стоящим перед ним. Имя параметра используется при реализации функции. По умолчанию параметры используют имена их параметров в качестве ярлыка аргумента.
+func someFunction(firstParameterName: Int, secondParameterName: Int) {
+    // Внутри тела функции firstParameterName и secondParameterName
+    // ссылаются на значения аргументов, первого и второго параметров.
+}
+someFunction(firstParameterName: 1, secondParameterName: 2)
+Все параметры должны иметь уникальные имена. Несмотря на то, что несколько параметров могут иметь один ярлык аргумента, уникальные ярлыки аргумента метки помогают сделать ваш код более читабельным.
+Указываем ярлыки аргументов
+Вы пишете ярлык аргумента перед именем параметра через пробел:
+func someFunction(argumentLabel parameterName: Int) {
+    // В теле функции parameterName относится к значению аргумента
+    // для этого параметра.
+}
+Вот вариант функции greet(person:), которая принимает имя человека и его родной город, затем возвращает приветствие:
+func greet(person: String, from hometown: String) -> String {
+    return "Hello \(person)!  Glad you could visit from \(hometown)."
+}
+print(greet(person: "Bill", from: "Cupertino"))
+// Выводит "Hello Bill!  Glad you could visit from Cupertino."
+Использование ярлыков аргументов позволяет функции вызываться в более выразительной манере, в виде предложения, при этом все же предоставляя тело функции в более читаемом виде и с более понятыми намерениями.
+Пропуск ярлыков аргумента
+Если вы не хотите использовать имя параметра в качестве ярлыка аргумента - используйте подчеркивание (_) вместо явного ярлыка аргумента для этого параметра.
+func someFunction(_ firstParameterName: Int, secondParameterName: Int) {
+    // В теле функции firstParameterName и secondParameterName
+    // ссылаются на значения аргументов для первого и второго параметров.
+}
+someFunction(1, secondParameterName: 2)
+Если у параметра есть ярлык аргумента, то аргумент должен иметь ярлык при вызове функции.
+Значения по умолчанию для параметров
+При объявлении функции любому из ее параметров можно присвоить значение по умолчанию. Если у параметра есть значение по умолчанию, то при вызове функции этот параметр можно опустить.
+func someFunction(parameterWithoutDefault: Int, parameterWithDefault: Int = 12) {
+    // Если вы пропускаете второй аргумент при вызове функции, то
+    // значение parameterWithDefault будет равняться 12 внутри тела функции.
+}
+someFunction(parameterWithoutDefault: 3, parameterWithDefault: 6) // parameterWithDefault равен 6
+someFunction(parameterWithoutDefault: 4) // parameterWithDefault равен 12
+Расположите параметры, у которых нет дефолтных значений в начале списка параметров функции до параметров с дефолтными значениями. Параметры, не имеющие значения по умолчанию, как правило, более важны для значения функции - их запись в первую очередь облегчает распознавание функции уже вызванной ранее, независимо от того, опущены ли какие-то параметры по умолчанию.
+Вариативные параметры
+Вариативным называют параметр, который может иметь сразу несколько значений или не иметь ни одного. С помощью вариативного параметра можно передать в функцию произвольное число входных значений. Чтобы объявить параметр как вариативный, нужно поставить три точки (...) после его типа.
+Значения, переданные через вариативный параметр, доступны внутри функции в виде массива соответствующего типа. Например, вариативный параметр numbers типа Double... доступен внутри функции в виде массива-константы numbers типа [Double].
+В приведенном ниже примере вычисляется среднее арифметическое (или же среднее) последовательности чисел, имеющей произвольную длину:
+func arithmeticMean(_ numbers: Double...) -> Double {
+    var total: Double = 0
+    for number in numbers {
+        total += number
+    }
+    return total / Double(numbers.count)
+}
+arithmeticMean(1, 2, 3, 4, 5)
+// возвращает 3.0, что является средним арифметическим этих пяти чисел
+arithmeticMean(3, 8.25, 18.75)
+// возвращает 10.0, что является средним арифметическим этих трех чисел
+Функции могут иметь несколько вариативных параметров. Первый параметр, который идет после вариативного параметра должен иметь ярлык аргумента. Ярлык аргумента позволяет однозначно определить, какие аргументы передаются вариативному, а какие - параметрам, которые идут после вариативного параметра.
+Сквозные параметры
+Параметры функции по умолчанию являются константами. Попытка изменить значение параметра функции из тела этой функции приводит к ошибке компиляции. Это означает, что вы не сможете изменить значение параметра по ошибке. Если вы хотите, чтобы функция изменила значение параметра, и вы хотите, чтобы эти изменения сохранились после того, как закончился вызов функции, определите этот параметр в качестве сквозного параметра.
+Для создания сквозного параметра нужно поставить ключевое слово inout перед типом объявлением параметра. Сквозной параметр передает значение в функцию, которое затем изменяется в ней и возвращается из функции, заменяя исходное значение. Более подробную информацию поведения сквозных параметров и связанных с ними оптимизаций компилятора см. Сквозные Параметры.
+Вы можете передать только переменную в качестве аргумента для сквозного параметра. Вы не можете передать константу или значения литерала в качестве аргумента, так как константы и литералы не могут быть изменены. Вы ставите амперсанд (&) непосредственно перед именем переменной, когда передаете ее в качестве аргумента сквозного параметра, чтобы указать, что он может быть изменен с помощью функции.
+Заметка
+Сквозные параметры не могут иметь значения по умолчанию, а вариативные параметры не могут быть сквозными, с ключевым словом inout.
+Вот пример функции под названием swapTwoInts(_:_:), у которой есть два сквозных целочисленных параметра – a и b:
+func swapTwoInts(_ a: inout Int, _ b: inout Int) {
+    let temporaryA = a
+    a = b
+    b = temporaryA
+}
+Функция swapTwoInts(_:_:) просто меняет значение переменной b на значение a, а значение a – на значение b. Для этого функция сохраняет значение a в локальной константе temporaryA, присваивает значение b переменной a, а затем присваивает значение temporaryA переменной b.
+Вы можете вызвать функцию swapTwoInts (_: _:) с двумя переменными типа Int, чтобы поменять их значения. Обратите внимание, что имена someInt и anotherInt начинаются с амперсанда, когда они передаются в swapTwoInts (_: _:) функции:
+var someInt = 3
+var anotherInt = 107
+swapTwoInts(&someInt, &anotherInt)
+print("someInt is now \(someInt), and anotherInt is now \(anotherInt)")
+// Выведет "someInt is now 107, and anotherInt is now 3"
+В вышеприведенном примере видно, что исходные значения переменных someInt и anotherInt изменены функцией swapTwoInts (_: _:), несмотря на то, что изначально они были объявлены за ее пределами.
+Заметка
+Сквозные параметры – это не то же самое, что возвращаемые функцией значения. В примере с функцией swapTwoInts нет ни возвращаемого типа, ни возвращаемого значения, но параметры someInt и anotherInt все равно изменяются. Сквозные параметры – это альтернативный способ передачи изменений, сделанных внутри функции, за пределы тела этой функции.
+Функциональные типы
+У каждой функции есть специальный функциональный тип, состоящий из типов параметров и типа возвращаемого значения.
+Пример:
+func addTwoInts(a: Int, _ b: Int) -> Int {
+  return a + b
+}
+func multiplyTwoInts(a: Int, _ b: Int) -> Int {
+  return a * b
+}
+В данном примере объявлены две простые математические функции – addTwoInts и multiplyTwoInts. Каждая из этих функций принимает два значения типа Int и возвращает одно значение типа Int, содержащее результат математической операции.
+Обе функции имеют тип (Int, Int) -> Int. Эта запись означает следующее:
+"функция с двумя параметрами типа Int, возвращающая значение типа Int".
+Вот еще один пример, но уже функции без параметров и возвращаемого значения:
+func printHelloWorld() {
+  print("hello, world")
+}
+Эта функция имеет тип () -> Void, т. е. "функция без параметров, которая возвращает Void".
+Использование функциональных типов
+В Swift с функциональными типами можно работать так же, как и с другими типами. Например, можно объявить константу или переменную функционального типа и присвоить ей функцию соответствующего типа:
+var mathFunction: (Int, Int) -> Int = addTwoInts
+Эта запись означает следующее:
+"Объявить переменную mathFunction, имеющую тип "функция, принимающая два значения типа Int, и возвращающая одно значение типа Int". Присвоить этой новой переменной указатель на функцию addTwoInts".
+Функция addTwoInts имеет тот же тип, что и переменная mathFunction, поэтому с точки зрения языка Swift такое присваивание корректно.
+Теперь функцию можно вызывать с помощью переменной mathFunction:
+print("Result: \(mathFunction(2, 3))")
+// Выведет "Result: 5"
+Той же переменной можно присвоить и другую функцию такого же типа – аналогично нефункциональным типам:
+mathFunction = multiplyTwoInts
+print("Result: \(mathFunction(2, 3))")
+// Выведет "Result: 6"
+Как и в случае с любым другим типом, вы можете не указывать тип явно, а предоставить Swift самостоятельно вывести функциональный тип при присваивании функции константе или переменной:
+let anotherMathFunction = addTwoInts
+// для константы anotherMathFunction выведен тип (Int, Int) -> Int
+Функциональные типы как типы параметров
+Функциональные типы наподобие (Int, Int) -> Int могут быть типами параметров другой функции. Это позволяет определять некоторые аспекты реализации функции непосредственно во время ее вызова.
+Следующий код печатает на экране результаты работы приведенных выше математических функций:
+func printMathResult(_ mathFunction: (Int, Int) -> Int, _ a: Int, _ b: Int) {
+    print("Result: \(mathFunction(a, b))")
+}
+printMathResult(addTwoInts, 3, 5)
+// Выведет "Result: 8"
+В этом примере объявлена функция printMathResult(_:_:_:), у которой есть три параметра. Первый параметр под названием mathFunction имеет тип (Int, Int) -> Int. Соответственно, аргументом этого параметра может быть любая функция такого же типа. Второй и третий параметры называются a и b и относятся к типу Int. Они служат для передачи двух входных значений для математической функции.
+При вызове printMathResult(_:_:_:) получает в качестве входных данных функцию addTwoInts(_:_:) и два целочисленных значения 3 и 5. Затем она вызывает переданную функцию со значениями 3 и 5, а также выводит на экран результат 8.
+Задача функции printMathResult(_:_:_:) заключается в том, чтобы печатать результат работы математической функции соответствующего типа. При этом конкретные детали этой математической функции не имеют значения – главное, чтобы она была подходящего типа. Все это позволяет безопасно управлять работой функции printMathResult(_:_:_:) непосредственно во время вызова.
+Функциональные типы как возвращаемые типы
+Функциональный тип можно сделать возвращаемым типом другой функции. Для этого нужно записать полный функциональный тип сразу же после возвратной стрелки (->) в возвращаемой функции.
+В следующем примере объявлены две простые функции – stepForward(_:) и stepBackward(_:). Функция stepForward(_:) возвращает входное значение, увеличенное на единицу, а функция stepBackward(_:) – уменьшенное на единицу. Обе функции имеют тип (Int) -> Int:
+func stepForward(_ input: Int) -> Int {
+    return input + 1
+}
+func stepBackward(_ input: Int) -> Int {
+    return input - 1
+}
+Следующая функция под названием chooseStepFunction(backward:) имеет возвращаемый тип (Int) -> Int. Функция chooseStepFunction(backward:) возвращает функцию stepForward(_:) или функцию stepBackward(_:) в зависимости от значения логического параметра backward:
+func chooseStepFunction(backward: Bool) -> (Int) -> Int {
+    return backward ? stepBackward : stepForward
+}
+Теперь с помощью chooseStepFunction(backward:) можно получать функцию, которая будет сдвигать значение влево или вправо:
+var currentValue = 3
+let moveNearerToZero = chooseStepFunction(backward: currentValue > 0)
+// moveNearerToZero ссылается на функцию stepBackward()
+В предыдущем примере мы определяли, нужно ли прибавить или отнять единицу, чтобы последовательно приблизить переменную currentValue к нулю. Изначально currentValue имеет значение 3, т. е. сравнение currentValue > 0 даст true, а функция chooseStepFunction(backward:), соответственно, возвратит функцию stepBackward(_:). Указатель на возвращаемую функцию хранится в константе moveNearerToZero.
+Так как moveNearerToZero теперь ссылается на нужную функцию, можно использовать эту константу для отсчета до нуля:
+print("Counting to zero:")
+// Counting to zero:
+while currentValue != 0 {
+    print("\(currentValue)... ")
+    currentValue = moveNearerToZero(currentValue)
+}
+print("zero!")
+// 3...
+// 2...
+// 1...
+// zero!
+Вложенные функции
+Все ранее рассмотренные в этом разделе функции являются глобальными, т. е. определенными в глобальном контексте. Но помимо глобальных можно объявлять и функции, находящиеся внутри других функций, или же вложенные.
+Вложенные функции по умолчанию недоступны извне, а вызываются и используются только заключающей функцией. Заключающая функция может также возвращать одну из вложенных, чтобы вложенную функцию можно было использовать за ее пределами.
+Приведенный выше пример с функцией chooseStepFunction(backward:) можно переписать со вложенными функциями:
+func chooseStepFunction(backward: Bool) -> (Int) -> Int {
+    func stepForward(input: Int) -> Int { return input + 1 }
+    func stepBackward(input: Int) -> Int { return input - 1 }
+    return backward ? stepBackward : stepForward
+}
+var currentValue = -4
+let moveNearerToZero = chooseStepFunction(backward: currentValue > 0)
+// moveNearerToZero теперь ссылается на вложенную функцию stepForward() 
+while currentValue != 0 {
+    print("\(currentValue)... ")
+    currentValue = moveNearerToZero(currentValue)
+}
+print("zero!")
+// -4...
+// -3...
+// -2...
+// -1...
+// zero!
+Если вы нашли ошибку, пожалуйста, выделите фрагмент текста и нажмите Ctrl+Enter.
+Управление потоком
+Замыкания
+ 
+SwiftBook Самое крупное сообщество iOS разработчиков на языке Swift
+О нас
+Мы в социальных сетяхYouTubeVKontakteFacebookЧат_Telegram
+instagramПолезноеPodlodka
+Подпишись на новости 
+   Политика конфиденциальности
+Пользовательское соглашение
+Найти:
+  © Акулов И.Б., 2014-2021      
+ 
+Сообщить об опечатке
+Текст, который будет отправлен нашим редакторам:
+Ваш комментарий (необязательно):
+Отправить
+Отмена

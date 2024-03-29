@@ -1,405 +1,321 @@
+Атрибуты - SwiftBook
  
-Python Documentation by Version | Python.org
-Notice: While JavaScript is not essential for this website, your interaction with the content will be limited. Please turn JavaScript on for the full experience. 
-Skip to content
-▼ Close
-                
-Python
-PSF
-Docs
-PyPI
-Jobs
-Community
-▲ The Python Network
-                
-Donate
-≡ Menu
-Search This Site
-                                    GO
-                                
-A A
-Smaller
-Larger
-Reset
-Socialize
-LinkedIn
-Mastodon
-Chat on IRC
-Twitter
-About
-Applications
-Quotes
-Getting Started
-Help
-Python Brochure
-Downloads
-All releases
-Source code
-Windows
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+Документация
+ 
+ 
+Развернуть
+Свернуть
+              
+        Документация		
+		  
+		  
+        
+              
+        Знакомство со Swift		
+		  
+		  
+        
+ О языке Swift
+ Совместимость версий Swift
+ Тур по Swift
+ 
+              
+        Руководство Swift		
+		  
+		  
+        
+ Основы
+ Базовые операторы
+ Строки и символы
+ Типы коллекций
+ Управление потоком
+ Функции
+ Замыкания
+ Перечисления
+ Структуры и классы
+ Свойства
+ Методы
+ Сабскрипты
+ Наследование
+ Инициализация
+ Деинициализация
+ Опциональная последовательность
+ Обработка ошибок
+ Согласованность
+ Приведение типов
+ Вложенные типы
+ Расширения
+ Непрозрачные типы
+ Протоколы
+ Универсальные шаблоны
+ Автоматический подсчет ссылок (ARC)
+ Безопасность хранения
+ Контроль доступа
+ Продвинутые операторы
+ 
+              
+        Справочник языка		
+		  
+		  
+        
+ Лексическая структура
+ Типы
+ Выражения
+ Инструкции
+ Объявления
+ Атрибуты
+ Шаблоны
+ Параметры и аргументы универсального типа
+ Резюме по грамматике
+ 
+ 
+		Атрибуты		
+        
+Атрибуты предоставляют больше информации о объявлении или типе. Всего два типа атрибутов в Swift, которые применимы к объявлениям и которые применимы к типам.
+Вы обозначаете атрибут при помощи @, за которым следует имя атрибута и аргументы, которые принимает данный атрибут:
+@имя атрибута
+@имя атрибута ( аргументы атрибута )
+Некоторые атрибуты объявления принимают аргументы, которые указывают больше информации об атрибуте и как он относится к конкретному объявлению. Эти аргументы атрибутов помещены в круглые скобки, а их формат определен атрибутом, к которому они принадлежат.
+Атрибуты объявления
+Вы можете применить атрибут объявления только к объявлениям. Однако вы так же можете применить атрибут noreturn к функции или к методу типа.
+available
+Применяйте этот атрибут в тех случаях, когда вы хотите показать, что жизненный цикл относится к определенной платформе или определенной версии операционной системы.
+Атрибут available всегда появляется с двумя или более разделенных между собой аргументами. Эти аргументы начинаются с одного из имен названий платформ:
+iOS
+iOSApplicationExtension
 macOS
-Other Platforms
-License
-Alternative Implementations
-Documentation
-Docs
-Audio/Visual Talks
-Beginner's Guide
-Developer's Guide
-FAQ
-Non-English Docs
-PEP Index
-Python Books
-Python Essays
-Community
-Diversity
-Mailing Lists
-IRC
-Forums
-PSF Annual Impact Report
-Python Conferences
-Special Interest Groups
-Python Logo
-Python Wiki
-Code of Conduct
-Community Awards
-Get Involved
-Shared Stories
-Success Stories
-Arts
-Business
-Education
-Engineering
-Government
-Scientific
-Software Development
-News
-Python News
-PSF Newsletter
-PSF News
-PyCon US News
-News from the Community
-Events
-Python Events
-User Group Events
-Python Events Archive
-User Group Events Archive
-Submit an Event
+OSXApplicationExtension
+watchOS
+watchOSApplicationExtension
+tvOS
+tvOSApplicationExtension
+swift
+Вы так же можете использовать звездочку (*) для индикации доступности объявления на всех перечисленных выше платформах. Оставшиеся аргументы могут появиться в любой последовательности и указывать дополнительную информацию о цикле объявления, включая важные вехи.
+Остальные аргументы могут отображаться в любом порядке и указывать дополнительную информацию о жизненном цикле объявлений, включая важные этапы.
+Аргумент unavailable является индикатором того, что объявление не доступно для указанной платформы .
+Аргумент introduced указывает первую версию указанной платформы, в которой впервые было введено объявление.
+introduced: номер версии
+Число version number состоит из одного или более положительных целых чисел, разделенных между собой точками.
+Аргумент deprecated указывает версию определенной платформы, начиная с которой указанное объявление будет исключено. Он имеет следующую форму:
+deprecated: номер версии
+Опциональный номер версии состоит из одного или более положительных чисел, разделенных между собой точками. Если вы не указываете номер версии, то это значит что текущее объявление уже не работает, не предоставляя информации с какой версии данное исключение произошло. Если вы не указывает номер версии, то вы так же не должны писать знак присваивания (:).
+Аргумент obsoleted указывает на первую версию платформы, начиная с которого данное объявление считается устаревшим. Когда объявление устаревает, оно удаляется с указанной платформы и не может быть больше использовано. Аргумент имеет следующую форму записи:
+obsoleted: номер версии
+Число version number состоит из одного или более положительных целых чисел, разделенных между собой точками.
+Аргумент message используется для предоставления текстовой информации, которая отображается компилятором, когда появляется предупреждение или ошибка об использовании устаревшего или уже исключенного объявления. Этот аргумент имеет следующую форму:
+message: сообщение
+Аргумент message состоит из строкового литерала.
+Аргумент renamed используется для предоставления текстового сообщения, которое показывает новое имя объявления, которое было изменено. Новое имя отображается компилятором, когда появляется ошибка об использовании переименованного объявления. Этот атрибут имеет следующую форму:
+renamed: новое имя
+Аргумент новое имя состоит из строкового литерала.
+Вы можете использовать аргумент renamed в сочетании с аргументом unavailable и в объявлении псевдонима типа, для отображения того, что старое объявление было удалено. Например, это бывает полезно когда имя объявления поменялось между различными релизами фреймворка или библиотеки.
+    // Первый релиз
+protocol MyProtocol {
+    // определение протокола
+}
+// Переименование MyProtocol в последующих релизах
+protocol MyRenamedProtocol {
+    // определение протокола
+}
+@available(*, unavailable, renamed="MyRenamedProtocol")
+typealias MyProtocol = MyRenamedProtocol
+Вы можете использовать множественные атрибуты available в одном объявлении для указания возможности объявления быть доступным на различных платформах. Компилятор использует атрибут available только когда атрибут указывает платформу, которая соответствует текущей платформе таргета.
+Если атрибут available только указывает аргумент introduced в дополнение к аргументу имени платформы, то может быть использован следующий краткий синтаксис:
+@available(имя платформы номер версии, *)
+@available(swift номер версии)
+Краткий синтаксис для атрибутов available позволяет выразить доступность для нескольких платформ в краткой форме. Несмотря на то, что эти обе формы эквивалентны, но предпочтительнее использовать краткую форму.
+@available(iOS 10.0, macOS 10.12, *)
+class MyClass {
+    // определение класса
+}
+Атрибут available, указывающий наличие версии Swift, не может дополнительно указывать доступность платформы объявления. Вместо этого используйте отдельные атрибуты available для указания доступности версии Swift и одной или нескольких платформ.
+@available(swift 3.0.2)
+@available(macOS 10.12, *)
+struct MyStruct {
+    // struct definition
+}
+discardableResult
+Применяйте этот атрибут к объявлению функции или метода для подавления предупреждения компилятора, когда ваша функции или методы, возвращающие значение, вызываются без дальнейшего использования их результата.
+dynamicCallable
+Примените этот атрибут к классу, структуре, перечислению или протоколу, чтобы обрабатывать экземпляры типа как вызываемые функции. Тип должен реализовывать либо метод dynamicallyCall(withArguments:), либо dynamicallyCall(withKeywordArguments:) метод, или оба этих метода.
+Вы можете вызвать экземпляр динамически вызываемого типа, как если бы это была функция, которая принимает любое количество аргументов.
+@dynamicCallable
+struct TelephoneExchange {
+    func dynamicallyCall(withArguments phoneNumber: [Int]) {
+        if phoneNumber == [4, 1, 1] {
+            print("Get Swift help on forums.swift.org")
+        } else {
+            print("Unrecognized number")
+        }
+    }
+}
+let dial = TelephoneExchange()
+// Use a dynamic method call.
+dial(4, 1, 1)
+// Выведет "Get Swift help on forums.swift.org".
+dial(8, 6, 7, 5, 3, 0, 9)
+// Выведет "Unrecognized number".
+// Call the underlying method directly.
+dial.dynamicallyCall(withArguments: [4, 1, 1])
+Объявление метода dynamicallyCall(withArguments:) должно иметь один параметр, соответствующий протоколу ExpressibleByArrayLiteral, например, [Int] в приведенном выше примере. Тип возвращаемого значения может быть любого типа.
+Вы можете добавить ярлыки в вызове динамического метода, если вы реализуете метод dynamicallyCall(withKeywordArguments:).
+@dynamicCallable
+struct Repeater {
+    func dynamicallyCall(withKeywordArguments pairs: KeyValuePairs<String, Int>) -> String {
+        return pairs
+            .map { label, count in
+                repeatElement(label, count: count).joined(separator: " ")
+            }
+            .joined(separator: "\n")
+    }
+}
+let repeatLabels = Repeater()
+print(repeatLabels(a: 1, b: 2, c: 3, b: 2, a: 1))
+// a
+// b b
+// c c c
+// b b
+// a
+Объявление метода dynamicallyCall(withKeywordArguments:) должно иметь один параметр, соответствующий протоколу ExpressibleByDictionaryLiteral, а тип возвращаемого значения может быть любого типа. Ключ параметра должен быть ExpressibleByStringLiteral. В предыдущем примере KeyValuePairs используется в качестве типа параметра, поэтому вызывающая сторона может включать дубликаты ярлыков параметров - a и b появляются в вызове несколько раз для repeat.
+Если вы реализуете оба метода dynamicallyCall, то dynamicallyCall(withKeywordArguments:) вызывается, когда вызов метода включает аргументы ключевого слова. Во всех других случаях вызывается dynamicallyCall(withArguments:).
+Вы можете вызывать только динамически вызываемый экземпляр с аргументами и возвращаемым значением, которые соответствуют типам, указанным в одной из реализаций метода dynamicallyCall. Вызов в следующем примере не компилируется, потому что нет реализации dynamicallyCall(withArguments:), которая принимает KeyValuePairs <String, String>.
+repeatLabels(a: "four") // Error
+dynamicMemberLookup
+Примените этот атрибут к классу, структуре, перечислению или протоколу, чтобы осуществить поиск по имени во время выполнения. Тип должен реализовать подстрочный индекс subscript(dynamicMemberLookup:).
+В явном выражении члена, если нет соответствующего объявления для именования, выражение понимается как вызов сабскрипта типа subscript(dynamicMemberLookup:), передавая строковый литерал, содержащий имя члена в качестве аргумента. Тип параметра сабскрипта может быть любым типом, который соответствует протоколу ExpressibleByStringLiteral, его возвращающее значение может быть любого типа. В большинстве случаев параметр сабскрипта является значением String. Например:
+@dynamicMemberLookup
+struct DynamicStruct {
+    let dictionary = ["someDynamicMember": 325,
+                      "someOtherMember": 787]
+    subscript(dynamicMember member: String) -> Int {
+        return dictionary[member] ?? 1054
+    }
+}
+let s = DynamicStruct()
+// Using dynamic member lookup
+let dynamic = s.someDynamicMember
+print(dynamic)
+// Выведет "325"
+// Calling the underlying subscript directly
+let equivalent = s[dynamicMember: "someDynamicMember"]
+print(dynamic == equivalent)
+// Выведет "true" 
+GKInspectable
+Примените этот атрибут, чтобы открыть кастомное свойство компонента GameplayKit в интерфейсе редактора SpriteKit. Применение этого атрибута также подразумевает атрибут objc.
+inlinable
+Примените этот атрибут к функции, методу, вычисленному свойству, сабскрипту, инициализации или для удобства объявления деинициализации, чтобы показать реализацию этого объявления как часть открытого модуля интерфейса.
+Этот атрибут не может быть применен к объявлениям, вложенным внутри функций, или к файлам или частным объявлениям. Функции и замыкания, которые определены внутри встроенной функции, неявно прослеживаются, хотя они не могут быть помечены этим атрибутом.
+nonobjc
+Применяйте этот атрибут к методу, свойству, сабскрипту или к объявлению инициализатора для неявного запрета использования атрибута objc Атрибут nonobjc говорит компилятору сделать текущее объявление невозможным в Objective-C, даже если это возможно.
+Вы используете атрибут nonobjc для предотвращения цикла соединяющихся методов класса с маркировкой атрибута objc и для того, чтобы позволить перегружать методы и инициализаторы внутри классов с атрибутом objc.
+Методы имеющие маркировку nonobjc не могут переопределять методы с атрибутом objc. Однако метод с атрибутом objc может переопределять методы с атрибутом nonobjc. Аналогично методы имеющие атрибут nonobjc не могут удовлетворить требования протокола с атрибутом @objc.
+NSApplicationMain
+Применяйте этот атрибут к классу для индикации того, что он является делегатом приложения.
+Применение этого атрибута эквивалентно вызову функции NSApplicationMain(_:_:) и передачей в нее имени класса в качестве имени делегируемого класса.
+Если вы не используете этот атрибут, то разместите в main.swift функцию main(), которая вызывает NSApplicationMain(_:_:).
+import AppKit
+NSApplicationMain(CommandLine.argc, CommandLine.unsafeArgv)
+NSCopying
+Применяйте этот атрибут к переменной свойства хранения класса. Этот атрибут заставляет сеттер свойства быть синтезированным с копией значения свойства, возвращаемой при помощи метода copyWithZone(_:) вместо самого значения свойства. Этот тип свойства должен соответствовать протоколу NSCopying.
+Атрибут NSCopying ведет себя аналогично атрибуту свойства copy в Objective-C.
+NSManaged
+Применяйте этот атрибут к методу или переменному свойству хранения экземпляра класса, который наследует от NSManagedObject для указания того, что Core Data динамически предоставляет его реализацию во время исполнения, основываясь на ассоциативном описании сущности. Для свойства с маркировкой NSManaged, Core Data так же обеспечивает хранение во время исполнения.
+objc
+Применяйте этот атрибут в любом объявлении, которое может быть отображено в Objective-C, например, в невложенных классах, протоколах, не универсальных перечислениях (ограниченными целочисленным типом), свойства и методы (включая геттеры и сеттеры) классов и протоколов, инициализаторы, деинициализаторы и сабскрипты. Атрибут objc говорит компилятору, что объявление доступно для использования в Objective-C коде.
+Компилятор так же неявно добавляет атрибут objc к классу, который наследует от другого класса с атрибутом objc или от класса определенного в Objective-C. Однако класс не должен быть универсальным типом и не должен наследоваться от каких-либо классов универсального типа. Если вы приписываете атрибут objc к классу или протоколу, то он неявно применяется к Objective-C соответствующим членам этого класса или протокола. Протоколы с маркировкой атрибута objc не могут наследовать от протоколов без этой маркировки.
+Атрибут objc также неявно добавляется в следующих случаях:
+Объявление является переопределением в подклассе, а объявление суперкласса имеет атрибут objc.
+Объявление удовлетворяет требованию протокола, который имеет атрибут objc.
+Объявление имеет атрибуты IBAction, IBOutlet, IBDesignable, IBInspectable, NSManaged и GKInspectable.
+Если вы примените атрибут objc к перечислению, то каждый кейс перечисления подвергается воздействию кода Objective-C как объединение имени перечисления и имени кейса. Например, кейс с именем venus в перечислении Swift Planet под воздействием Objective-C воспринимается как кейс с именем PlanetVenus.
+Опционально атрибут objc принимает единственный аргумент, который состоит из идентификатора. Используйте этот атрибут тогда, когда вы хотите указать другое имя в Objective-C для того, к чему применяется objc атрибут. Вы можете использовать этот атрибут в именах классов, перечислений, кейсах перечислений, протоколах, методах, сеттерах, геттерах и инициализаторах. Если вы укажете имя Objective-C для класса, протокола или перечисления, укажите трехбуквенный префикс на имя, как описано в Соглашении в Программировании Objective-C. Пример ниже изменяет геттер для свойства enabled класса ExampleClass в Objective-C коде на isEnabled.
+@objc
+class ExampleClass: NSObject {
+    var enabled: Bool {
+        @objc(isEnabled) get {
+            // Return the appropriate value
+        }
+    }
+}
+objcMembers
+Примените этот атрибут к любому объявлению класса, которое может иметь атрибут objc. Атрибут objc неявно добавляется к совместимым с Objective-C членам класса, его расширениям, его подклассам и всем расширениям его подклассов.
+В большинстве случаев код должен использовать атрибут objc, чтобы выставлять только те объявления, которые необходимы. Если вам нужно выставить много объявлений, вы можете сгруппировать их в расширение, имеющее атрибут objc. Атрибут objcMembers является удобством для библиотек, которые интенсивно используют средства самоанализа в среде выполнения Objective-C. Применение атрибута objc, когда оно не требуется, может увеличить ваш двоичный размер и отрицательно повлиять на производительность.
+testable
+Применяйте этот атрибут для импорта объявлений для компилируемых модулей с включенным режимом тестинга для доступа к сущностям с уровнем доступа internal  как будто они имеют уровень доступа public. Тесты также могут обращаться к классам и членам класса, которые помечены внутренним или общедоступным модификатором уровня доступа, как если бы они были объявлены с помощью модификатора открытого уровня доступа.
+UIApplicationMain
+Применяйте этот атрибут к классу для отображения того, что этот класс является “делегатом приложения”. Использование этого атрибута эквивалентно вызову функции UIApplicationMain и передачи в нее имени класса, в качестве имени класса-делегата.
+Если вы не используете этот атрибут, то вы должны предоставить в main.swift в функцию main вызов функции UIApplicationMain(_:_:_:). Например, если ваше приложение использует пользовательский подкласс UIApplication в качестве своего основного класса, то вызывайте функцию UIApplicationMain(_:_:_:) вместо использования этого атрибута.
+usableFromInline
+Примените этот атрибут к объявлению функции, метода, вычисленного свойства, сабскрипта, инициализатора или деинициализатора, чтобы использовать это обозначение в коде, который определен в том же модуле, что и объявление. Объявление должно иметь модификатор уровня доступа internal.
+Подобно модификатору уровня доступа Public, этот атрибут предоставляет объявление как часть открытого интерфейса модуля. В отличие от public, компилятор не разрешает объявления, помеченные с помощью usableFromInline, ссылаться по имени в коде вне модуля, даже несмотря на то, что объявление экспортируется. Тем не менее, код вне модуля может все еще иметь возможность взаимодействовать с объявлением, используя режим во время выполнения.
+Объявления, отмеченные встроенным атрибутом, неявно используются из встроенного кода. Несмотря на то, что для внутренних объявлений может применяться как встроенная, так и полезная функция FromInline. Применение обоих атрибутов является ошибкой.
+warn_unqualified_access
+Применяйте этот атрибут к функциям высшего уровня, методам экземпляров, к классовым или статическим методам для обозначения, что метод используется без необходимого квалификатора, например, название модуля, имя типа, имя переменной или константы. Используйте этот атрибут, для разграничения двусмысленности между функциями с одним и тем же именем, которые доступны в одной и той же области видимости.
+Например, стандартная библиотека Swift включает в себя две функции высшего порядка: min(_:_:) и min() для последовательностей со сравниваемыми элементами. Этот метод последовательности объявлен с атрибутом warn_unqualified_access для уменьшения путаницы, которая может возникнуть при использовании одного или другого метода внутри расширения Sequence.
+Объявление атрибутов с использованием Interface Builder
+Атрибуты интерфейс билдер являются атрибутами объявления и используются интерфейс билдером для синхронизации с Xcode. Swift предоставляет следующие атрибуты интерфейс билдера: IBAction, IBDesignable, IBInspectable, и IBOutlet. Эти атрибуты концептуально идентичны своим Objective-C коллегам.
+Вы можете применить атрибуты IBOutlet и IBInspectable при объявлении свойства внутри класса. Вы применяете атрибут IBAction к объявлению метода внутри класса, а атрибут IBDesignable вы применяете к объявлению самого класса.
+И IBAction, IBOutlet, IBDesignable и IBInspectable  неявно подразумевают атрибут objc.
+Атрибуты типа
+Вы можете применять атрибуты типа только к самим типам. Однако, вы можете использовать атрибут noreturn к объявлению функции или метода.
+autoclosure
+Этот атрибут используется для того, чтобы отложить вычисление выражения, автоматически заворачивая выражение в замыкание без аргументов. Применяйте этот атрибут к объявлению параметра для функции или метода типа, которая не принимает аргументов и которая возвращает тип выражения. Объявления с атрибутом autoclosure так же подразумевают атрибут noescape, за исключением тех случаев, когда передан опциональный аргумент атрибута escaping. Пример использования autoclosure смотрите в “Автозамыкания" и "Функциональный тип".
+convention
+Применяйте этот атрибут к типу функции, чтобы указать ее соглашения о вызовах.
+Атрибут convention всегда появляется с одним или более аргументами, которые указаны ниже.
+Аргумент swift используется для отображения ссылки на функцию Swift. Это стандартное соглашение о вызове для функциональных типов в Swift.
+Аргумент block используется для отображения ссылки на совместимый блок Objective-C. Значение функции представляется в виде ссылки на блок объекта, который является id-совместимым объектом Objective-C, который в свою очередь встраивает ее вызов функции внутрь объекта. Функция вызова использует соглашение о вызовах языка C.
+Аргумент c используется для отображение ссылки на C функцию. Значение функции не несет никакого контекста и использует соглашение о вызовах языка C.
+Функция с соглашением о вызовах языка C может быть использована в качестве функции с соглашением о вызовах Objective-C блоков, а функция с соглашением о вызовах. Objective-C блоков может быть использована с соглашением о вызовах функции Swift. Однако только неуниверсальные глобальные функции, локальные функции и замыкания, которые не захватывают значения локальных переменных, могут быть использованы как функции с соглашением о вызовах языка C.
+escaping
+Применяйте этот атрибут к объявлению функций или методов для индикации такого параметра, значение которого может быть сохранено для дальнейшего использования. Это значит, что значение может продолжать существовать после окончания вызова. Параметры функционального типа с атрибутом escaping требуют явного self. для свойств и методов. Пример использования escaping атрибутов можно посмотреть в главе Сбегающие замыкания.
+Атрибуты кейсов инструкции switch
+Вы можете применять атрибуты кейсов инструкции switch только для самих кейсов инструкции switch.
+unknown
+Вам нужно применять этот атрибут к кейсу инструкции switch, чтобы указать, что он не должен совпадать ни с одним кейсом перечисления, известным на момент компиляции кода. Для примера того, как использовать атрибут unknown, см. Переключение будущих кейсов перечисления.
+Грамматика атрибута
+attribute → @­ attribute-name­attribute-argument-clause­opt­ attribute-name → identifier­ attribute-argument-clause → (­ balanced-tokens­opt­ )­ attributes → attribute­attributes­opt­ balanced-tokens → balanced-token­balanced-tokens­opt­ balanced-token → (­ balanced-tokens­opt­ )­ balanced-token → [ ­balanced-tokens­opt­] ­ balanced-token → {­ balanced-tokens­opt­ }­ balanced-token → Any identifier, keyword, literal, or operator balanced-token → Any punctuation except (­, )­, [­, ]­, {­, or }­
+Если вы нашли ошибку, пожалуйста, выделите фрагмент текста и нажмите Ctrl+Enter.
+Объявления
+Шаблоны
  
-Python Documentation by Version
-Python Documentation by Version
-Some previous versions of the documentation remain available
-online.  Use the list below to select a version to view.
-For unreleased (in development) documentation, see
-In Development Versions.
-Python 3.12.2, documentation released on 6 February 2024.
-Python 3.12.1, documentation released on 8 December 2023.
-Python 3.12.0, documentation released on 2 October 2023.
-Python 3.11.8, documentation released on 6 February 2024.
-Python 3.11.7, documentation released on 4 December 2023.
-Python 3.11.6, documentation released on 2 October 2023.
-Python 3.11.5, documentation released on 24 August 2023.
-Python 3.11.4, documentation released on 6 June 2023.
-Python 3.11.3, documentation released on 5 April 2023.
-Python 3.11.2, documentation released on 8 February 2023.
-Python 3.11.1, documentation released on 6 December 2022.
-Python 3.11.0, documentation released on 24 October 2022.
-Python 3.10.14, documentation released on 19 March 2024.
-Python 3.10.13, documentation released on 24 August 2023.
-Python 3.10.12, documentation released on 6 June 2023.
-Python 3.10.11, documentation released on 5 April 2023.
-Python 3.10.10, documentation released on 8 February 2023.
-Python 3.10.9, documentation released on 6 December 2022.
-Python 3.10.8, documentation released on 8 October 2022.
-Python 3.10.7, documentation released on 6 September 2022.
-Python 3.10.6, documentation released on 8 August 2022.
-Python 3.10.5, documentation released on 6 June 2022.
-Python 3.10.4, documentation released on 24 March 2022.
-Python 3.10.3, documentation released on 16 March 2022.
-Python 3.10.2, documentation released on 14 January 2022.
-Python 3.10.1, documentation released on 6 December 2021.
-Python 3.10.0, documentation released on 4 October 2021.
-Python 3.9.19, documentation released on 19 March 2024.
-Python 3.9.18, documentation released on 24 August 2023.
-Python 3.9.17, documentation released on 6 June 2023.
-Python 3.9.16, documentation released on 6 December 2022.
-Python 3.9.15, documentation released on 11 October 2022.
-Python 3.9.14, documentation released on 6 September 2022.
-Python 3.9.13, documentation released on 17 May 2022.
-Python 3.9.12, documentation released on 24 March 2022.
-Python 3.9.11, documentation released on 16 March 2022.
-Python 3.9.10, documentation released on 14 January 2022.
-Python 3.9.9, documentation released on 15 November 2021.
-Python 3.9.8, documentation released on 05 November 2021.
-Python 3.9.7, documentation released on 30 August 2021.
-Python 3.9.6, documentation released on 28 June 2021.
-Python 3.9.5, documentation released on 3 May 2021.
-Python 3.9.4, documentation released on 4 April 2021.
-Python 3.9.3, documentation released on 2 April 2021.
-Python 3.9.2, documentation released on 19 February 2021.
-Python 3.9.1, documentation released on 8 December 2020.
-Python 3.9.0, documentation released on 5 October 2020.
-Python 3.8.19, documentation released on 19 March 2024.
-Python 3.8.18, documentation released on 24 August 2023.
-Python 3.8.17, documentation released on 6 June 2023.
-Python 3.8.16, documentation released on 6 December 2022.
-Python 3.8.15, documentation released on 11 October 2022.
-Python 3.8.14, documentation released on 6 September 2022.
-Python 3.8.13, documentation released on 16 March 2022.
-Python 3.8.12, documentation released on 30 August 2021.
-Python 3.8.11, documentation released on 28 June 2021.
-Python 3.8.10, documentation released on 3 May 2021.
-Python 3.8.9, documentation released on 2 April 2021.
-Python 3.8.8, documentation released on 19 February 2021.
-Python 3.8.7, documentation released on 21 December 2020.
-Python 3.8.6, documentation released on 23 September 2020.
-Python 3.8.5, documentation released on 20 July 2020.
-Python 3.8.4, documentation released on 13 July 2020.
-Python 3.8.3, documentation released on 13 May 2020.
-Python 3.8.2, documentation released on 24 February 2020.
-Python 3.8.1, documentation released on 18 December 2019.
-Python 3.8.0, documentation released on 14 October 2019.
-Python 3.7.17, documentation released on 6 June 2023.
-Python 3.7.16, documentation released on 6 December 2022.
-Python 3.7.15, documentation released on 11 October 2022.
-Python 3.7.14, documentation released on 6 September 2022.
-Python 3.7.13, documentation released on 16 March 2022.
-Python 3.7.12, documentation released on 4 September 2021.
-Python 3.7.11, documentation released on 28 June 2021.
-Python 3.7.10, documentation released on 15 February 2021.
-Python 3.7.9, documentation released on 17 August 2020.
-Python 3.7.8, documentation released on 27 June 2020.
-Python 3.7.7, documentation released on 10 March 2020.
-Python 3.7.6, documentation released on 18 December 2019.
-Python 3.7.5, documentation released on 15 October 2019.
-Python 3.7.4, documentation released on 08 July 2019.
-Python 3.7.3, documentation released on 25 March 2019.
-Python 3.7.2, documentation released on 24 December 2018.
-Python 3.7.1, documentation released on 20 October 2018.
-Python 3.7.0, documentation released on 27 June 2018.
-Python 3.6.15, documentation released on 4 September 2021.
-Python 3.6.14, documentation released on 28 June 2021.
-Python 3.6.13, documentation released on 15 February 2021.
-Python 3.6.12, documentation released on 17 August 2020.
-Python 3.6.11, documentation released on 27 June 2020.
-Python 3.6.10, documentation released on 18 December 2019.
-Python 3.6.9, documentation released on 02 July 2019.
-Python 3.6.8, documentation released on 24 December 2018.
-Python 3.6.7, documentation released on 20 October 2018.
-Python 3.6.6, documentation released on 27 June 2018.
-Python 3.6.5, documentation released on 28 March 2018.
-Python 3.6.4, documentation released on 19 December 2017.
-Python 3.6.3, documentation released on 03 October 2017.
-Python 3.6.2, documentation released on 17 July 2017.
-Python 3.6.1, documentation released on 21 March 2017.
-Python 3.6.0, documentation released on 23 December 2016.
-Python 3.5.10, documentation released on 5 September 2020.
-Python 3.5.8, documentation released on 1 November 2019.
-Python 3.5.7, documentation released on 18 March 2019.
-Python 3.5.6, documentation released on 8 August 2018.
-Python 3.5.5, documentation released on 4 February 2018.
-Python 3.5.4, documentation released on 25 July 2017.
-Python 3.5.3, documentation released on 17 January 2017.
-Python 3.5.2, documentation released on 27 June 2016.
-Python 3.5.1, documentation released on 07 December 2015.
-Python 3.5.0, documentation released on 13 September 2015.
-Python 3.4.10, documentation released on 18 March 2019.
-Python 3.4.9, documentation released on 8 August 2018.
-Python 3.4.8, documentation released on 4 February 2018.
-Python 3.4.7, documentation released on 25 July 2017.
-Python 3.4.6, documentation released on 17 January 2017.
-Python 3.4.5, documentation released on 26 June 2016.
-Python 3.4.4, documentation released on 06 December 2015.
-Python 3.4.3, documentation released on 25 February 2015.
-Python 3.4.2, documentation released on 4 October 2014.
-Python 3.4.1, documentation released on 18 May 2014.
-Python 3.4.0, documentation released on 16 March 2014.
-Python 3.3.7, documentation released on 19 September 2017.
-Python 3.3.6, documentation released on 12 October 2014.
-Python 3.3.5, documentation released on 9 March 2014.
-Python 3.3.4, documentation released on 9 February 2014.
-Python 3.3.3, documentation released on 17 November 2013.
-Python 3.3.2, documentation released on 15 May 2013.
-Python 3.3.1, documentation released on 7 April 2013.
-Python 3.3.0, documentation released on 29 September 2012.
-Python 3.2.6, documentation released on 11 October 2014.
-Python 3.2.5, documentation released on 15 May 2013.
-Python 3.2.4, documentation released on 7 April 2013.
-Python 3.2.3, documentation released on 10 April 2012.
-Python 3.2.2, documentation released on 4 September 2011.
-Python 3.2.1, documentation released on 10 July 2011.
-Python 3.2, documentation released on 20 February 2011.
-Python 3.1.5, documentation released on 9 April 2012.
-Python 3.1.4, documentation released on 11 June 2011.
-Python 3.1.3, documentation released on 27 November 2010.
-Python 3.1.2, documentation released on 21 March 2010.
-Python 3.1.1, documentation released on 17 August 2009.
-Python 3.1, documentation released on 27 June 2009.
-Python 3.0.1, documentation released on 13 February 2009.
-Python 3.0, documentation released on 3 December 2008.
-Python 2.7.18, documentation released on 20 April 2020
-Python 2.7.17, documentation released on 19 October 2019
-Python 2.7.16, documentation released on 02 March 2019
-Python 2.7.15, documentation released on 30 April 2018
-Python 2.7.14, documentation released on 16 September 2017
-Python 2.7.13, documentation released on 17 December 2016
-Python 2.7.12, documentation released on 26 June 2016.
-Python 2.7.11, documentation released on 5 December 2015.
-Python 2.7.10, documentation released on 23 May 2015.
-Python 2.7.9, documentation released on 10 December 2014.
-Python 2.7.8, documentation released on 1 July 2014.
-Python 2.7.7, documentation released on 31 May 2014.
-Python 2.7.6, documentation released on 10 November 2013.
-Python 2.7.5, documentation released on 15 May 2013.
-Python 2.7.4, documentation released on 6 April 2013.
-Python 2.7.3, documentation released on 9 April 2012.
-Python 2.7.2, documentation released on 11 June 2011.
-Python 2.7.1, documentation released on 27 November 2010.
-Python 2.7, documentation released on 4 July 2010.
-Python 2.6.9, documentation released on 29 October 2013.
-Python 2.6.8, documentation released on 10 April 2012.
-Python 2.6.7, documentation released on 3 June 2011.
-Python 2.6.6, documentation released on 24 August 2010.
-Python 2.6.5, documentation released on 19 March 2010.
-Python 2.6.4, documentation released on 25 October 2009.
-Python 2.6.3, documentation released on 2 October 2009.
-Python 2.6.2, documentation released on 14 April 2009.
-Python 2.6.1, documentation released on 4 December 2008.
-Python 2.6, documentation released on 1 October 2008.
-Python 2.5.4, documentation released on 23 December 2008.
-Python 2.5.3, documentation released on 19 December 2008.
-Python 2.5.2, documentation released on 21 February 2008.
-Python 2.5.1, documentation released on 18 April 2007.
-Python 2.5, documentation released on 19 September 2006.
-Python 2.4.4, documentation released on 18 October 2006.
-Python 2.4.3, documentation released on 29 March 2006.
-Python 2.4.2, documentation released on 28 September 2005.
-Python 2.4.1, documentation released on 30 March 2005.
-Python 2.4, documentation released on 30 November 2004.
-Python 2.3.5, documentation released on 8 February 2005.
-Python 2.3.4, documentation released on 27 May 2004.
-Python 2.3.3, documentation released on 19 December 2003.
-Python 2.3.2, documentation released on
-3 October 2003.
-Python 2.3.1, documentation released on
-23 September 2003.
-Python 2.3, documentation released on
-29 July 2003.
-Python 2.2.3, documentation released on
-30 May 2003.
-Python 2.2.2, documentation released on
-14 October 2002.
-Python 2.2.1, documentation released on
-10 April 2002.
-Python 2.2p1, documentation released on
-29 March 2002.
-Python 2.2, documentation released on
-21 December 2001.
-Python 2.1.3, documentation released on
-8 April 2002.
-Python 2.1.2, documentation released on
-16 January 2002.
-Python 2.1.1, documentation released on
-20 July 2001.
-Python 2.1, documentation released on
-15 April 2001.
-Python 2.0.1, documentation released on
-22 June 2001.
-Python 2.0, documentation released on
-16 October 2000.
-Python 1.6, documentation released on
-5 September 2000.
-Python 1.5.2p2, documentation released on
-22 March 2000.
-Python 1.5.2p1, documentation released on
-6 July 1999.
-Python 1.5.2, documentation released on
-30 April 1999.
-Python 1.5.1p1, documentation released on
-6 August 1998.
-Python 1.5.1, documentation released on
-14 April 1998.
-Python 1.5, documentation released on
-17 February 1998.
-Python 1.4, documentation released on
-25 October 1996.
-In Development Versions
-The latest, and unreleased, documentation for versions of Python still under development:
-https://docs.python.org/dev/
-https://docs.python.org/3/
-The PSF
-The Python Software Foundation is the organization behind Python. Become a member of the PSF and help advance the software and our mission. 
-▲ Back to Top
-About
-Applications
-Quotes
-Getting Started
-Help
-Python Brochure
-Downloads
-All releases
-Source code
-Windows
-macOS
-Other Platforms
-License
-Alternative Implementations
-Documentation
-Docs
-Audio/Visual Talks
-Beginner's Guide
-Developer's Guide
-FAQ
-Non-English Docs
-PEP Index
-Python Books
-Python Essays
-Community
-Diversity
-Mailing Lists
-IRC
-Forums
-PSF Annual Impact Report
-Python Conferences
-Special Interest Groups
-Python Logo
-Python Wiki
-Code of Conduct
-Community Awards
-Get Involved
-Shared Stories
-Success Stories
-Arts
-Business
-Education
-Engineering
-Government
-Scientific
-Software Development
-News
-Python News
-PSF Newsletter
-PSF News
-PyCon US News
-News from the Community
-Events
-Python Events
-User Group Events
-Python Events Archive
-User Group Events Archive
-Submit an Event
-Contributing
-Developer's Guide
-Issue Tracker
-python-dev list
-Core Mentorship
-Report a Security Issue
-▲ Back to Top
+SwiftBook Самое крупное сообщество iOS разработчиков на языке Swift
+О нас
+Мы в социальных сетяхYouTubeVKontakteFacebookЧат_Telegram
+instagramПолезноеPodlodka
+Подпишись на новости 
+   Политика конфиденциальности
+Пользовательское соглашение
+Найти:
+  © Акулов И.Б., 2014-2021      
  
-Help & General Contact
-Diversity Initiatives
-Submit Website Bug
-Status 
-Copyright ©2001-2024.
-                             Python Software Foundation
-                             Legal Statements
-                             Privacy Policy
+Сообщить об опечатке
+Текст, который будет отправлен нашим редакторам:
+Ваш комментарий (необязательно):
+Отправить
+Отмена

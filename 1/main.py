@@ -1,5 +1,4 @@
 import re
-import time
 from pathlib import Path
 
 import requests
@@ -65,10 +64,10 @@ def main(urls: [str]):
                 except UnicodeDecodeError:
                     print("Failed to find links:", url)
                 else:
-                    urls.extend(link for link in links if link.startswith('http') and link not in visited_urls)
+                    urls.extend(link for link in links
+                                if link.startswith('http') and 'css' not in link and link not in visited_urls)
             else:
                 print("Failed to crawl:", url)
-            time.sleep(0.5)  # Пауза между запросами для предотвращения блокировки
         else:
             print("Already visited:", url)
 
@@ -79,5 +78,5 @@ def main(urls: [str]):
 
 if __name__ == "__main__":
     main([
-        "https://docs.python.org/3/tutorial/index.html"
+        "https://swiftbook.ru/content/languageguide/basics/"
     ])

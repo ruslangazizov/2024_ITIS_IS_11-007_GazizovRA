@@ -1,104 +1,321 @@
-The Fundamentals of DevSecOps in DevOps - GitHub ResourcesSearch/ResourcesDevSecOps explainedMay 23, 2022 // 11 min readDevSecOps builds on the ideas of DevOps by applying security practices throughout the software development lifecycle to ship more secure code faster.Through collaboration, automation, and continuous improvement, DevSecOps offers a set of practices that help companies embed security into their work to build more secure, high-quality software at scale.
-DevOps has transformed how many organizations build and ship software. But until recently one aspect of the software development lifecycle (SDLC) has remained outside DevOps: security. DevSecOps seeks to correct that by baking security into the software development lifecycle (SDLC) in the same way that DevOps prioritizes quality, speed, and deep collaboration throughout all stages of software development. For modern organizations, DevSecOps becomes just “DevOps”: security is baked into the SDLC experience.
-Organizations that adopt DevSecOps typically see advantages that include:
-Reduced risk of data breaches: 
-DevSecOps seeks to make code secure by design. A combination of secure coding cultural practices, secure developer environments, and automated security tests throughout the SDLC help reduce the chances of security vulnerabilities or flaws making it into production software.
-Improved compliance: 
-DevSecOps practitioners often use automation to enforce code compliance and integrate policy enforcement tooling directly into the CI/CD pipeline.
-Greater confidence in dependencies: 
-The modern technology stack depends heavily on third-party code, often from public package repositories. DevSecOps practitioners frequently leverage tooling and automated tests to identify potential issues before a software release.
-Value gets to end users faster: 
-By creating a security-first culture and applying automated checks, DevSecOps reduces the need for distinct security reviews that slow down code deployments.
-What is the main benefit of DevSecOps?
-DevSecOps seeks to build security into every step of the SDLC. This ideally means that security related tests (automated and not) take place at each stage from coding to merging branches to builds, deployments, and on into operation of production software. Moreover, DevSecOps advances the idea that everyone working on a product is accountable for its security. This helps teams catch vulnerabilities before they make it to production and reduces the need for late-stage, manual security reviews, which can slow down software releases.
-DevSecOps best practices
-Push buggy code into production and the result might be a bad customer experience and potential lost business due to downtime. But if you deploy insecure code, the fallout can be far more severe.
-DevSecOps is a natural evolution of DevOps and seeks to make security a core part of the SDLC instead of a siloed process that takes place right before a release. Just like how testing and operations teams were often siloed from development in the pre-DevOps world, security today is often the job of specialized teams whose work take place outside the DevOps lifecycle. 
-DevSecOps argues that security needs to be embedded across the SDLC. Whether your organization already practices DevOps or you’re looking at how to adopt a DevOps culture, here are the foundational best practices you need to establish a DevSecOps practice:
-Create a DevSecOps culture: Success in DevSecOps relies on everyone taking responsibility for security. That means each person in the SDLC codes, builds, tests, and configures application and infrastructure settings defensively. Just like DevOps, DevSecOps thrives in an open culture where each individual works together to build the best and most secure product possible.
-Design security into the product: DevSecOps seeks to design security into products from the initial planning stages to deployed production-level code. This means security work is planned alongside feature work, and practitioners are provided security knowledge and testing throughout each stage of their development work. The goal is to make security an everyday part of your team’s work.
-Build a threat modeling practice: The seeds of security vulnerabilities are often sown before a line of code is written. Model potential threats during the planning phase and design your infrastructure and the application’s architecture to mitigate those issues. And periodic penetration testing, where a trusted person attempts to break into your system, can help unveil weaknesses you may miss in your threat models.
-Automate for speed and security: Automated testing is used throughout the SDLC to ensure the right security checks happen at the right time. That gives people more time to focus on building the core product while ensuring security requirements are met.
-Plan security checkpoints in your product development: 
-Identify transition points in your SDLC where the risk profile changes. That could be the point at which a developer merges their code into the main branch, which might increase the potential for that code to be run on the machines of colleagues and eventually reach production. In that case, opening a pull request might be a good trigger event for automated security checks, along with the appropriate manual escalations.
-Approach security failures as learning opportunities: 
-Building on DevOps’ culture of continuous improvement, a successful DevSecOps practice strives to turn security incidents into learning opportunities. This can be accomplished by leveraging audit logs, building incident reports, and modeling malicious behavior to improve tooling, testing, and processes to further secure your applications and systems. 
-Stay on top of dependencies: 
-Understanding and mitigating the potential threats from dependencies is critical to your product’s security. Apply the same threat modeling and automated testing to your dependencies as to your in-house code. At GitHub we’ve identified and shared details of tens of millions of threats in open source software, helping organizations and developers be more aware of and avoid vulnerabilities. 
-Build your analytics and reporting capabilities: 
-Continuous monitoring is a critical part of a DevSecOps practice—and that includes real-time alerts, system analytics, and proactive threat monitoring. By measuring every aspect of your application and your DevSecOps pipeline you can create a common point for understanding application health. Reporting dashboards and alerts highlight problems early. When a problem does occur, the telemetry you’ve set up—such as application-level logging—provides insight for incident resolution and root cause analysis.
-DevSecOps culture
-Creating a DevSecOps culture begins by making security everyone’s responsibility. This can be a big change for many organizations. Traditionally, security was something developers left in the hands of specialist security professionals. It could also become a point of friction as well. Engineering teams often looked at security practices as an impediment to shipping software fast.
-DevSecOps fundamentally seeks to change this perception by making security as core to the SDLC as writing code, running tests, configuring services. Each new feature or fix begins with considering its security implications. Security and compliance policies are enforced through tests. When something goes wrong, it’s an opportunity to learn and to do it better next time.
-And instead of something that slows down software releases, security in a DevSecOps practice becomes a part of the release itself leading to faster and more secure deployments.
-But building a successful DevSecOps practice requires building security into every stage of the SDLC. This varies from one organization to another. Even so, there are core pillars that define a DevSecOps culture. These include: 
-People: 
-A DevSecOps practice seeks to remove the barriers between different disciplines and build a naturally collaborative environment where  each person shares responsibility for a product’s security and quality.
-Process: 
-DevSecOps moves security from being a distinct stage that often comes at the end of the SDLC to an integral part of each person’s work. Automated security evaluations, security-focused unit testing, widespread monitoring, and defensive coding create rapid feedback loops where vulnerabilities are surfaced earlier in the product life cycle and can be fixed faster.
-Products: 
-DevSecOps builds on the DevOps toolchain by using technologies such as CI/CD to automate the identification of security issues. Dependency scanning, static and dynamic application security testing, and automated policy enforcement tools are often used to help build security into every stage of the SDLC. A wide range of best-in-breed solutions can be integrated with one another to create an “open” toolchain. Other organizations, however, may find that more integrated and security-focused product suites can often provide a more holistic experience.
-Governance: 
-Continuous improvement is central to DevSecOps and it requires creating a culture of measurement that enables practitioners to identify opportunities to refine processes and tooling.
-DevSecOps pipeline
-A DevSecOps culture seeks to establish security as a fundamental part of creating software—but that’s only one part of what it takes to successfully adopt a DevSecOps practice. The next step is to integrate security into each stage of a DevOps pipeline.
-With security specific tooling and processes throughout the SDLC, a DevSecOps pipeline helps practitioners design more secure products and catch security issues early in the product life cycle. 
-Common DevSecOps pipeline stages
-DevSecOps builds on DevOps, and a DevSecOps pipeline builds on a DevOps pipeline. Just as DevOps integrated quality and speed into each step, the best DevSecOps pipelines are designed to anticipate key points in the SDLC where security issues are likely to arise.
-This breaks down into the following common DevSecOps pipeline stages: 
-Plan: 
-In a DevSecOps practice, security starts at the planning stage in the SDLC pipeline. This can include analyzing potential security threats and determining how to combat them with threat modeling. It can also involve designing security into your products proactively to ensure it’s baked into the work from the beginning with key data hygiene and other security decisions taken up front. 
-Code: 
-At the coding stage in a DevSecOps pipeline, it’s important to create a culture of defensive programming with policies that help practitioners proactively navigate security and compliance issues. This could be as simple as specifying rules for how to handle particularly risky aspects of code, such as NULLs, or involve broader guidelines on areas such as input validation. 
-Build: 
-In the build stage, a typical DevSecOps pipeline will include automated security checks to catch vulnerabilities in source code before they hit the main branch. This can involve using pre-commit hooks to run static application security testing (SAST) tools where any potential issues in code will stop the build, much like a failed test, and provide time to fix any potential vulnerabilities in proprietary source code before work can progress. It should also include software composition analysis (SCA) tools to track open source components in the codebase and detect any vulnerabilities in dependencies. 
-Test: 
-The test stage of a DevSecOps pipeline is a key point where practitioners will develop a testing strategy and automated testing suite to catch any potential security vulnerabilities or issues. This commonly includes using unit tests at a base level to look for security issues such as the way in which the application deals with unexpected or malformed input. It can also include dynamic application security tests to find vulnerabilities in the application when run. This way, the test phase becomes as much as security as it does functionality. A good tip at this stage is to integrate dynamic application security testing (DAST) into the DevSecOps pipeline.
-Release: 
-In the release stage, a DevSecOps pipeline will often include additional automated security testing and vulnerability scanning to catch issues that might not have been apparent in earlier stages. Some organizations will also deploy the principle of least privilege where each person and tool has access only to precisely what they need. 
-Deploy: 
-At the deployment stage, a DevSecOps practitioner will work to ensure that code makes it to production only if it has passed security checks at each previous stage. This can involve applying automated tests to application code and the underlying infrastructure used to run the software in production to catch any run-time security concerns.
-Operate and monitor: 
-In the operations and monitoring stages of a DevSecOps pipeline, organizations will often use application-level and infrastructure metrics to identify unusual activity that could indicate a security breach. When an incident occurs, use logging and other instrumentation can be used to pinpoint the issue and understand its impact.
-DevSecOps automation principles
-When it’s correctly implemented, automation accelerates the SDLC by enabling people to use technology to accomplish repetitive, manual tasks and deliver higher-quality software faster. DevSecOps takes automation further by integrating security tests across all stages of the SDLC to improve speed, consistency, and mitigate against potential risks. 
-If DevSecOps makes security everyone’s responsibility, DevSecOps automation strives to give everyone the tools they need to ensure code and configurations are secure without requiring them to become security specialists.
-When considering where to apply automation in your own DevSecOps pipeline, consider the following principles:
-Automation should be strategic: 
-A DevOps practice often seeks to use automation to facilitate speed and quality across the SDLC. But just as being strategic is important in a DevOps practice, it’s equally—if not more—important to be strategic about how and when automation is applied in a DevSecOps environment. 
-Let people focus on being creative: 
-Automate repetitive tasks wherever possible. That way, people can save their time and mental energy for more involved work while checks are applied more consistently and at scale.
-Systematize code review: 
-Use tools such as static application security testing to automate elements of your code review. Human-led code review is still important though and it’s critical to ensure your code review checklist covers security issues specific to your technology stack. Create a feedback cycle so each time a new information becomes available you build it into the checklist. For example, when an incident occurs consider how you could have caught the problem earlier with a code review or automated test.
- Learn how GitHub Advanced Security offers leading-edge security tooling for DevSecOps organizations > 
-DevSecOps toolchain
-Adopting DevSecOps starts with a cultural shift that involves making security a core concern of everyone involved in the SDLC. To accomplish this, organizations will often adopt new processes and build a DevSecOps toolchain that applies automated security tests and security tooling to the SDLC.
-DevSecOps tooling often builds on common DevOps tools such as CI/CD, automated tests, configuration management, and monitoring. The goal is to integrate security-focused tooling into each stage of the product life cycle. 
-Key components of the DevSecOps toolchain
-Automated security tests on commits and merges: 
-A basic goal of any DevSecOps practice is to catch issues in code before they can do harm by triggering automatic scans using pre-commit and merge triggers. Some of the scans organizations might implement include:
-Code scanning: Often called static application security testing, this evaluates code at rest—in other words, without having to run it—to discover code that could lead to a vulnerability.
-Vulnerability scanning: Dynamic application scanning tools build and deploy the application to a sandboxed environment and then observe how it responds to known security threats.
-Secret scanning: Even with the most stringent policies, secrets occasionally make it into a commit. Secret scanning tools are used to catch them before the commit is made. These also pair with SCA tools, which are used to detect any vulnerabilities in open source dependencies within a given codebase.
-Explore how GitHub enables DevSecOps organizations to apply in-depth automated security tests at all stages of the SDLC >
-Configuration management: In DevSecOps, a general rule is it’s best to remove the uncertainty from systems configuration—and this is often accomplished by adopting infrastructure as code. Tools such as Docker, Terraform, and Ansible use YAML and similar configuration files that can be automatically scanned for issues, committed to version control, and rolled out automatically to multiple instances of a service.
-Find out how GitHub helps DevSecOps organizations manage application and system configurations through automation > 
-Container orchestration: In some environments, organizations may adopt a microservices architecture to better support complex, cloud-native applications. This requires maintaining multiple containers and scaling them as needed and securely—and that involves container orchestration tools. Just like configuration management tools, container orchestration tooling will often use YAML configuration files to dictate interactions between containers. 
-Runtime verification: Also known as runtime application self-protection tools, these tools will actively monitor and/or direct threats towards your application as it runs with reports highlighting any vulnerabilities.
-Continuous monitoring and reporting: One of the simplest yet highly effective aspects of DevSecOps tooling is measurement—and that involves logging everything at the application and infrastructure level. The best tools will provide real-time intelligence when something goes wrong and include a reporting system so you can catch issues early. Outbound data from an unexpected port, for example, could indicate a compromise but without monitoring and reporting it might go undetected.
-The bottom line
-Security is a defining issue in software development organizations today. Getting it wrong has far-reaching implications—both for the organizations and even the individuals involved. DevSecOps offers a framework for creating software securely from the very first step. And building on the well understood culture and processes of DevOps means that, for most businesses, a shift left to DevSecOps is a natural evolution.
-Build your DevSecOps practice on GitHub
-GitHub is an integrated platform that takes companies from idea to planning to building to production, combining a focused developer experience with powerful, fully managed development, automation, and test infrastructure. 
-Compare pricing plans > 
-Our philosophy is to build automation and great DevOps for the company you will be tomorrow.
-Senior SCM Engineer Todd O'Connor at Adobe
-Go from planning to building
-Increase developer velocity
-Build roadmap plans right next to your codebase and quickly assign tasks to team members with powerful project boards and tables that are fully integrated into your project. Learn about GitHub Issues >
-Reduce the time to commit. Eliminate environment management and context switching for your developers. Simplify IT procurement and maintenance with a secure, managed space in the cloud.  Explore Codespaces >
-Automate everything
-Secure your code as you write it
-Automate all your software development workflows with GitHub Actions. Scale reliably and securely with powerful development, test, and automation infrastructure, fully managed by GitHub. Learn more about GitHub Actions >
-Secure your code, dependencies, tokens, and sensitive data through the entire software development lifecycle and automatically resolve vulnerabilities.  See how we help you stay secure >
-TagsSecurityWondering how GitHub can help your business?Tell us more about your needsLast name *First name *Work Email *Phone🇦🇨  AC🇦🇩  AD🇦🇪  AE🇦🇫  AF🇦🇬  AG🇦🇮  AI🇦🇱  AL🇦🇲  AM🇦🇴  AO🇦🇷  AR🇦🇸  AS🇦🇹  AT🇦🇺  AU🇦🇼  AW🇦🇽  AX🇦🇿  AZ🇧🇦  BA🇧🇧  BB🇧🇩  BD🇧🇪  BE🇧🇫  BF🇧🇬  BG🇧🇭  BH🇧🇮  BI🇧🇯  BJ🇧🇱  BL🇧🇲  BM🇧🇳  BN🇧🇴  BO🇧🇶  BQ🇧🇷  BR🇧🇸  BS🇧🇹  BT🇧🇼  BW🇧🇾  BY🇧🇿  BZ🇨🇦  CA🇨🇨  CC🇨🇩  CD🇨🇫  CF🇨🇬  CG🇨🇭  CH🇨🇮  CI🇨🇰  CK🇨🇱  CL🇨🇲  CM🇨🇳  CN🇨🇴  CO🇨🇷  CR🇨🇺  CU🇨🇻  CV🇨🇼  CW🇨🇽  CX🇨🇾  CY🇨🇿  CZ🇩🇪  DE🇩🇯  DJ🇩🇰  DK🇩🇲  DM🇩🇴  DO🇩🇿  DZ🇪🇨  EC🇪🇪  EE🇪🇬  EG🇪🇭  EH🇪🇷  ER🇪🇸  ES🇪🇹  ET🇫🇮  FI🇫🇯  FJ🇫🇰  FK🇫🇲  FM🇫🇴  FO🇫🇷  FR🇬🇦  GA🇬🇧  GB🇬🇩  GD🇬🇪  GE🇬🇫  GF🇬🇬  GG🇬🇭  GH🇬🇮  GI🇬🇱  GL🇬🇲  GM🇬🇳  GN🇬🇵  GP🇬🇶  GQ🇬🇷  GR🇬🇹  GT🇬🇺  GU🇬🇼  GW🇬🇾  GY🇭🇰  HK🇭🇳  HN🇭🇷  HR🇭🇹  HT🇭🇺  HU🇮🇩  ID🇮🇪  IE🇮🇱  IL🇮🇲  IM🇮🇳  IN🇮🇴  IO🇮🇶  IQ🇮🇷  IR🇮🇸  IS🇮🇹  IT🇯🇪  JE🇯🇲  JM🇯🇴  JO🇯🇵  JP🇰🇪  KE🇰🇬  KG🇰🇭  KH🇰🇮  KI🇰🇲  KM🇰🇳  KN🇰🇵  KP🇰🇷  KR🇰🇼  KW🇰🇾  KY🇰🇿  KZ🇱🇦  LA🇱🇧  LB🇱🇨  LC🇱🇮  LI🇱🇰  LK🇱🇷  LR🇱🇸  LS🇱🇹  LT🇱🇺  LU🇱🇻  LV🇱🇾  LY🇲🇦  MA🇲🇨  MC🇲🇩  MD🇲🇪  ME🇲🇫  MF🇲🇬  MG🇲🇭  MH🇲🇰  MK🇲🇱  ML🇲🇲  MM🇲🇳  MN🇲🇴  MO🇲🇵  MP🇲🇶  MQ🇲🇷  MR🇲🇸  MS🇲🇹  MT🇲🇺  MU🇲🇻  MV🇲🇼  MW🇲🇽  MX🇲🇾  MY🇲🇿  MZ🇳🇦  NA🇳🇨  NC🇳🇪  NE🇳🇫  NF🇳🇬  NG🇳🇮  NI🇳🇱  NL🇳🇴  NO🇳🇵  NP🇳🇷  NR🇳🇺  NU🇳🇿  NZ🇴🇲  OM🇵🇦  PA🇵🇪  PE🇵🇫  PF🇵🇬  PG🇵🇭  PH🇵🇰  PK🇵🇱  PL🇵🇲  PM🇵🇷  PR🇵🇸  PS🇵🇹  PT🇵🇼  PW🇵🇾  PY🇶🇦  QA🇷🇪  RE🇷🇴  RO🇷🇸  RS🇷🇺  RU🇷🇼  RW🇸🇦  SA🇸🇧  SB🇸🇨  SC🇸🇩  SD🇸🇪  SE🇸🇬  SG🇸🇭  SH🇸🇮  SI🇸🇯  SJ🇸🇰  SK🇸🇱  SL🇸🇲  SM🇸🇳  SN🇸🇴  SO🇸🇷  SR🇸🇸  SS🇸🇹  ST🇸🇻  SV🇸🇽  SX🇸🇾  SY🇸🇿  SZ🇹🇦  TA🇹🇨  TC🇹🇩  TD🇹🇬  TG🇹🇭  TH🇹🇯  TJ🇹🇰  TK🇹🇱  TL🇹🇲  TM🇹🇳  TN🇹🇴  TO🇹🇷  TR🇹🇹  TT🇹🇻  TV🇹🇼  TW🇹🇿  TZ🇺🇦  UA🇺🇬  UG🇺🇸  US🇺🇾  UY🇺🇿  UZ🇻🇦  VA🇻🇨  VC🇻🇪  VE🇻🇬  VG🇻🇮  VI🇻🇳  VN🇻🇺  VU🇼🇫  WF🇼🇸  WS🇽🇰  XK🇾🇪  YE🇾🇹  YT🇿🇦  ZA🇿🇲  ZM🇿🇼  ZWCompany *What can we help you with?Country *Select your countryAlbaniaÅland IslandsAlgeriaAmerican SamoaAndorraAngolaAnguillaAntarcticaAntigua and BarbudaArgentinaArmeniaArubaAustraliaAustriaAzerbaijanBahamas (the)BahrainBangladeshBarbadosBelgiumBelizeBeninBermudaBhutanBolivia (Plurinational State of)Bonaire, Sint Eustatius and SabaBosnia and HerzegovinaBotswanaBouvet IslandBrazilBritish Indian Ocean Territory (the)Brunei DarussalamBulgariaBurkina FasoBurundiCabo VerdeCambodiaCameroonCanadaCayman Islands (the)Central African Republic (the)ChadChileChinaChristmas IslandCocos (Keeling) Islands (the)ColombiaComoros (the)Congo (the Democratic Republic of the)Congo (the)Cook Islands (the)Costa RicaCroatiaCuraçaoCyprusCzechiaCôte d'IvoireDenmarkDjiboutiDominicaDominican Republic (the)EcuadorEgyptEl SalvadorEquatorial GuineaEritreaEstoniaEswatiniEthiopiaFalkland Islands (the) [Malvinas]Faroe Islands (the)FijiFinlandFranceFrench GuianaFrench PolynesiaFrench Southern Territories (the)GabonGambia (the)GeorgiaGermanyGhanaGibraltarGreeceGreenlandGrenadaGuadeloupeGuamGuatemalaGuernseyGuineaGuinea-BissauGuyanaHaitiHeard Island and McDonald IslandsHoly See (the)HondurasHong KongHungaryIcelandIndiaIndonesiaIrelandIsle of ManIsraelItalyJamaicaJapanJerseyJordanKazakhstanKenyaKiribatiKorea (the Republic of)KuwaitKyrgyzstanLao People's Democratic Republic (the)LatviaLebanonLesothoLiberiaLiechtensteinLithuaniaLuxembourgMacaoMadagascarMalawiMalaysiaMaldivesMaliMaltaMarshall Islands (the)MartiniqueMauritaniaMauritiusMayotteMexicoMicronesia (Federated States of)Moldova (the Republic of)MonacoMongoliaMontenegroMontserratMoroccoMozambiqueNamibiaNauruNepalNetherlands (the)New CaledoniaNew ZealandNicaraguaNiger (the)NigeriaNiueNorfolk IslandNorthern Mariana Islands (the)NorwayOmanPakistanPalauPalestine, State ofPanamaPapua New GuineaParaguayPeruPhilippines (the)PitcairnPolandPortugalPuerto RicoQatarRepublic of North MacedoniaRomaniaRwandaRéunionSaint BarthélemySaint Helena, Ascension and Tristan da CunhaSaint Kitts and NevisSaint LuciaSaint Martin (French part)Saint Pierre and MiquelonSaint Vincent and the GrenadinesSamoaSan MarinoSao Tome and PrincipeSaudi ArabiaSenegalSerbiaSeychellesSierra LeoneSingaporeSint Maarten (Dutch part)SlovakiaSloveniaSolomon IslandsSomaliaSouth AfricaSouth Georgia and the South Sandwich IslandsSouth SudanSpainSri LankaSudan (the)SurilabelSvalbard and Jan MayenSwedenSwitzerlandSyrian Arab RepublicTaiwanTajikistanTanzania, United Republic ofThailandTimor-LesteTogoTokelauTongaTrinidad and TobagoTunisiaTurkeyTurkmenistanTurks and Caicos Islands (the)TuvaluUgandaUkraineUnited Arab Emirates (the)United Kingdom of Great Britain and Northern Ireland (the)United States Minor Outlying Islands (the)United States of America (the)UruguayUzbekistanVanuatuVenezuela (Bolivarian Republic of)Viet NamVirgin Islands (British)Virgin Islands (U.S.)Wallis and FutunaYemenZambiaZimbabweYes please, I’d like GitHub and affiliates to use my information for personalized communications, targeted advertising and campaign effectiveness. See the GitHub Privacy Statement for more details.Contact GitHub
+Атрибуты - SwiftBook
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+Документация
+ 
+ 
+Развернуть
+Свернуть
+              
+        Документация		
+		  
+		  
+        
+              
+        Знакомство со Swift		
+		  
+		  
+        
+ О языке Swift
+ Совместимость версий Swift
+ Тур по Swift
+ 
+              
+        Руководство Swift		
+		  
+		  
+        
+ Основы
+ Базовые операторы
+ Строки и символы
+ Типы коллекций
+ Управление потоком
+ Функции
+ Замыкания
+ Перечисления
+ Структуры и классы
+ Свойства
+ Методы
+ Сабскрипты
+ Наследование
+ Инициализация
+ Деинициализация
+ Опциональная последовательность
+ Обработка ошибок
+ Согласованность
+ Приведение типов
+ Вложенные типы
+ Расширения
+ Непрозрачные типы
+ Протоколы
+ Универсальные шаблоны
+ Автоматический подсчет ссылок (ARC)
+ Безопасность хранения
+ Контроль доступа
+ Продвинутые операторы
+ 
+              
+        Справочник языка		
+		  
+		  
+        
+ Лексическая структура
+ Типы
+ Выражения
+ Инструкции
+ Объявления
+ Атрибуты
+ Шаблоны
+ Параметры и аргументы универсального типа
+ Резюме по грамматике
+ 
+ 
+		Атрибуты		
+        
+Атрибуты предоставляют больше информации о объявлении или типе. Всего два типа атрибутов в Swift, которые применимы к объявлениям и которые применимы к типам.
+Вы обозначаете атрибут при помощи @, за которым следует имя атрибута и аргументы, которые принимает данный атрибут:
+@имя атрибута
+@имя атрибута ( аргументы атрибута )
+Некоторые атрибуты объявления принимают аргументы, которые указывают больше информации об атрибуте и как он относится к конкретному объявлению. Эти аргументы атрибутов помещены в круглые скобки, а их формат определен атрибутом, к которому они принадлежат.
+Атрибуты объявления
+Вы можете применить атрибут объявления только к объявлениям. Однако вы так же можете применить атрибут noreturn к функции или к методу типа.
+available
+Применяйте этот атрибут в тех случаях, когда вы хотите показать, что жизненный цикл относится к определенной платформе или определенной версии операционной системы.
+Атрибут available всегда появляется с двумя или более разделенных между собой аргументами. Эти аргументы начинаются с одного из имен названий платформ:
+iOS
+iOSApplicationExtension
+macOS
+OSXApplicationExtension
+watchOS
+watchOSApplicationExtension
+tvOS
+tvOSApplicationExtension
+swift
+Вы так же можете использовать звездочку (*) для индикации доступности объявления на всех перечисленных выше платформах. Оставшиеся аргументы могут появиться в любой последовательности и указывать дополнительную информацию о цикле объявления, включая важные вехи.
+Остальные аргументы могут отображаться в любом порядке и указывать дополнительную информацию о жизненном цикле объявлений, включая важные этапы.
+Аргумент unavailable является индикатором того, что объявление не доступно для указанной платформы .
+Аргумент introduced указывает первую версию указанной платформы, в которой впервые было введено объявление.
+introduced: номер версии
+Число version number состоит из одного или более положительных целых чисел, разделенных между собой точками.
+Аргумент deprecated указывает версию определенной платформы, начиная с которой указанное объявление будет исключено. Он имеет следующую форму:
+deprecated: номер версии
+Опциональный номер версии состоит из одного или более положительных чисел, разделенных между собой точками. Если вы не указываете номер версии, то это значит что текущее объявление уже не работает, не предоставляя информации с какой версии данное исключение произошло. Если вы не указывает номер версии, то вы так же не должны писать знак присваивания (:).
+Аргумент obsoleted указывает на первую версию платформы, начиная с которого данное объявление считается устаревшим. Когда объявление устаревает, оно удаляется с указанной платформы и не может быть больше использовано. Аргумент имеет следующую форму записи:
+obsoleted: номер версии
+Число version number состоит из одного или более положительных целых чисел, разделенных между собой точками.
+Аргумент message используется для предоставления текстовой информации, которая отображается компилятором, когда появляется предупреждение или ошибка об использовании устаревшего или уже исключенного объявления. Этот аргумент имеет следующую форму:
+message: сообщение
+Аргумент message состоит из строкового литерала.
+Аргумент renamed используется для предоставления текстового сообщения, которое показывает новое имя объявления, которое было изменено. Новое имя отображается компилятором, когда появляется ошибка об использовании переименованного объявления. Этот атрибут имеет следующую форму:
+renamed: новое имя
+Аргумент новое имя состоит из строкового литерала.
+Вы можете использовать аргумент renamed в сочетании с аргументом unavailable и в объявлении псевдонима типа, для отображения того, что старое объявление было удалено. Например, это бывает полезно когда имя объявления поменялось между различными релизами фреймворка или библиотеки.
+    // Первый релиз
+protocol MyProtocol {
+    // определение протокола
+}
+// Переименование MyProtocol в последующих релизах
+protocol MyRenamedProtocol {
+    // определение протокола
+}
+@available(*, unavailable, renamed="MyRenamedProtocol")
+typealias MyProtocol = MyRenamedProtocol
+Вы можете использовать множественные атрибуты available в одном объявлении для указания возможности объявления быть доступным на различных платформах. Компилятор использует атрибут available только когда атрибут указывает платформу, которая соответствует текущей платформе таргета.
+Если атрибут available только указывает аргумент introduced в дополнение к аргументу имени платформы, то может быть использован следующий краткий синтаксис:
+@available(имя платформы номер версии, *)
+@available(swift номер версии)
+Краткий синтаксис для атрибутов available позволяет выразить доступность для нескольких платформ в краткой форме. Несмотря на то, что эти обе формы эквивалентны, но предпочтительнее использовать краткую форму.
+@available(iOS 10.0, macOS 10.12, *)
+class MyClass {
+    // определение класса
+}
+Атрибут available, указывающий наличие версии Swift, не может дополнительно указывать доступность платформы объявления. Вместо этого используйте отдельные атрибуты available для указания доступности версии Swift и одной или нескольких платформ.
+@available(swift 3.0.2)
+@available(macOS 10.12, *)
+struct MyStruct {
+    // struct definition
+}
+discardableResult
+Применяйте этот атрибут к объявлению функции или метода для подавления предупреждения компилятора, когда ваша функции или методы, возвращающие значение, вызываются без дальнейшего использования их результата.
+dynamicCallable
+Примените этот атрибут к классу, структуре, перечислению или протоколу, чтобы обрабатывать экземпляры типа как вызываемые функции. Тип должен реализовывать либо метод dynamicallyCall(withArguments:), либо dynamicallyCall(withKeywordArguments:) метод, или оба этих метода.
+Вы можете вызвать экземпляр динамически вызываемого типа, как если бы это была функция, которая принимает любое количество аргументов.
+@dynamicCallable
+struct TelephoneExchange {
+    func dynamicallyCall(withArguments phoneNumber: [Int]) {
+        if phoneNumber == [4, 1, 1] {
+            print("Get Swift help on forums.swift.org")
+        } else {
+            print("Unrecognized number")
+        }
+    }
+}
+let dial = TelephoneExchange()
+// Use a dynamic method call.
+dial(4, 1, 1)
+// Выведет "Get Swift help on forums.swift.org".
+dial(8, 6, 7, 5, 3, 0, 9)
+// Выведет "Unrecognized number".
+// Call the underlying method directly.
+dial.dynamicallyCall(withArguments: [4, 1, 1])
+Объявление метода dynamicallyCall(withArguments:) должно иметь один параметр, соответствующий протоколу ExpressibleByArrayLiteral, например, [Int] в приведенном выше примере. Тип возвращаемого значения может быть любого типа.
+Вы можете добавить ярлыки в вызове динамического метода, если вы реализуете метод dynamicallyCall(withKeywordArguments:).
+@dynamicCallable
+struct Repeater {
+    func dynamicallyCall(withKeywordArguments pairs: KeyValuePairs<String, Int>) -> String {
+        return pairs
+            .map { label, count in
+                repeatElement(label, count: count).joined(separator: " ")
+            }
+            .joined(separator: "\n")
+    }
+}
+let repeatLabels = Repeater()
+print(repeatLabels(a: 1, b: 2, c: 3, b: 2, a: 1))
+// a
+// b b
+// c c c
+// b b
+// a
+Объявление метода dynamicallyCall(withKeywordArguments:) должно иметь один параметр, соответствующий протоколу ExpressibleByDictionaryLiteral, а тип возвращаемого значения может быть любого типа. Ключ параметра должен быть ExpressibleByStringLiteral. В предыдущем примере KeyValuePairs используется в качестве типа параметра, поэтому вызывающая сторона может включать дубликаты ярлыков параметров - a и b появляются в вызове несколько раз для repeat.
+Если вы реализуете оба метода dynamicallyCall, то dynamicallyCall(withKeywordArguments:) вызывается, когда вызов метода включает аргументы ключевого слова. Во всех других случаях вызывается dynamicallyCall(withArguments:).
+Вы можете вызывать только динамически вызываемый экземпляр с аргументами и возвращаемым значением, которые соответствуют типам, указанным в одной из реализаций метода dynamicallyCall. Вызов в следующем примере не компилируется, потому что нет реализации dynamicallyCall(withArguments:), которая принимает KeyValuePairs <String, String>.
+repeatLabels(a: "four") // Error
+dynamicMemberLookup
+Примените этот атрибут к классу, структуре, перечислению или протоколу, чтобы осуществить поиск по имени во время выполнения. Тип должен реализовать подстрочный индекс subscript(dynamicMemberLookup:).
+В явном выражении члена, если нет соответствующего объявления для именования, выражение понимается как вызов сабскрипта типа subscript(dynamicMemberLookup:), передавая строковый литерал, содержащий имя члена в качестве аргумента. Тип параметра сабскрипта может быть любым типом, который соответствует протоколу ExpressibleByStringLiteral, его возвращающее значение может быть любого типа. В большинстве случаев параметр сабскрипта является значением String. Например:
+@dynamicMemberLookup
+struct DynamicStruct {
+    let dictionary = ["someDynamicMember": 325,
+                      "someOtherMember": 787]
+    subscript(dynamicMember member: String) -> Int {
+        return dictionary[member] ?? 1054
+    }
+}
+let s = DynamicStruct()
+// Using dynamic member lookup
+let dynamic = s.someDynamicMember
+print(dynamic)
+// Выведет "325"
+// Calling the underlying subscript directly
+let equivalent = s[dynamicMember: "someDynamicMember"]
+print(dynamic == equivalent)
+// Выведет "true" 
+GKInspectable
+Примените этот атрибут, чтобы открыть кастомное свойство компонента GameplayKit в интерфейсе редактора SpriteKit. Применение этого атрибута также подразумевает атрибут objc.
+inlinable
+Примените этот атрибут к функции, методу, вычисленному свойству, сабскрипту, инициализации или для удобства объявления деинициализации, чтобы показать реализацию этого объявления как часть открытого модуля интерфейса.
+Этот атрибут не может быть применен к объявлениям, вложенным внутри функций, или к файлам или частным объявлениям. Функции и замыкания, которые определены внутри встроенной функции, неявно прослеживаются, хотя они не могут быть помечены этим атрибутом.
+nonobjc
+Применяйте этот атрибут к методу, свойству, сабскрипту или к объявлению инициализатора для неявного запрета использования атрибута objc Атрибут nonobjc говорит компилятору сделать текущее объявление невозможным в Objective-C, даже если это возможно.
+Вы используете атрибут nonobjc для предотвращения цикла соединяющихся методов класса с маркировкой атрибута objc и для того, чтобы позволить перегружать методы и инициализаторы внутри классов с атрибутом objc.
+Методы имеющие маркировку nonobjc не могут переопределять методы с атрибутом objc. Однако метод с атрибутом objc может переопределять методы с атрибутом nonobjc. Аналогично методы имеющие атрибут nonobjc не могут удовлетворить требования протокола с атрибутом @objc.
+NSApplicationMain
+Применяйте этот атрибут к классу для индикации того, что он является делегатом приложения.
+Применение этого атрибута эквивалентно вызову функции NSApplicationMain(_:_:) и передачей в нее имени класса в качестве имени делегируемого класса.
+Если вы не используете этот атрибут, то разместите в main.swift функцию main(), которая вызывает NSApplicationMain(_:_:).
+import AppKit
+NSApplicationMain(CommandLine.argc, CommandLine.unsafeArgv)
+NSCopying
+Применяйте этот атрибут к переменной свойства хранения класса. Этот атрибут заставляет сеттер свойства быть синтезированным с копией значения свойства, возвращаемой при помощи метода copyWithZone(_:) вместо самого значения свойства. Этот тип свойства должен соответствовать протоколу NSCopying.
+Атрибут NSCopying ведет себя аналогично атрибуту свойства copy в Objective-C.
+NSManaged
+Применяйте этот атрибут к методу или переменному свойству хранения экземпляра класса, который наследует от NSManagedObject для указания того, что Core Data динамически предоставляет его реализацию во время исполнения, основываясь на ассоциативном описании сущности. Для свойства с маркировкой NSManaged, Core Data так же обеспечивает хранение во время исполнения.
+objc
+Применяйте этот атрибут в любом объявлении, которое может быть отображено в Objective-C, например, в невложенных классах, протоколах, не универсальных перечислениях (ограниченными целочисленным типом), свойства и методы (включая геттеры и сеттеры) классов и протоколов, инициализаторы, деинициализаторы и сабскрипты. Атрибут objc говорит компилятору, что объявление доступно для использования в Objective-C коде.
+Компилятор так же неявно добавляет атрибут objc к классу, который наследует от другого класса с атрибутом objc или от класса определенного в Objective-C. Однако класс не должен быть универсальным типом и не должен наследоваться от каких-либо классов универсального типа. Если вы приписываете атрибут objc к классу или протоколу, то он неявно применяется к Objective-C соответствующим членам этого класса или протокола. Протоколы с маркировкой атрибута objc не могут наследовать от протоколов без этой маркировки.
+Атрибут objc также неявно добавляется в следующих случаях:
+Объявление является переопределением в подклассе, а объявление суперкласса имеет атрибут objc.
+Объявление удовлетворяет требованию протокола, который имеет атрибут objc.
+Объявление имеет атрибуты IBAction, IBOutlet, IBDesignable, IBInspectable, NSManaged и GKInspectable.
+Если вы примените атрибут objc к перечислению, то каждый кейс перечисления подвергается воздействию кода Objective-C как объединение имени перечисления и имени кейса. Например, кейс с именем venus в перечислении Swift Planet под воздействием Objective-C воспринимается как кейс с именем PlanetVenus.
+Опционально атрибут objc принимает единственный аргумент, который состоит из идентификатора. Используйте этот атрибут тогда, когда вы хотите указать другое имя в Objective-C для того, к чему применяется objc атрибут. Вы можете использовать этот атрибут в именах классов, перечислений, кейсах перечислений, протоколах, методах, сеттерах, геттерах и инициализаторах. Если вы укажете имя Objective-C для класса, протокола или перечисления, укажите трехбуквенный префикс на имя, как описано в Соглашении в Программировании Objective-C. Пример ниже изменяет геттер для свойства enabled класса ExampleClass в Objective-C коде на isEnabled.
+@objc
+class ExampleClass: NSObject {
+    var enabled: Bool {
+        @objc(isEnabled) get {
+            // Return the appropriate value
+        }
+    }
+}
+objcMembers
+Примените этот атрибут к любому объявлению класса, которое может иметь атрибут objc. Атрибут objc неявно добавляется к совместимым с Objective-C членам класса, его расширениям, его подклассам и всем расширениям его подклассов.
+В большинстве случаев код должен использовать атрибут objc, чтобы выставлять только те объявления, которые необходимы. Если вам нужно выставить много объявлений, вы можете сгруппировать их в расширение, имеющее атрибут objc. Атрибут objcMembers является удобством для библиотек, которые интенсивно используют средства самоанализа в среде выполнения Objective-C. Применение атрибута objc, когда оно не требуется, может увеличить ваш двоичный размер и отрицательно повлиять на производительность.
+testable
+Применяйте этот атрибут для импорта объявлений для компилируемых модулей с включенным режимом тестинга для доступа к сущностям с уровнем доступа internal  как будто они имеют уровень доступа public. Тесты также могут обращаться к классам и членам класса, которые помечены внутренним или общедоступным модификатором уровня доступа, как если бы они были объявлены с помощью модификатора открытого уровня доступа.
+UIApplicationMain
+Применяйте этот атрибут к классу для отображения того, что этот класс является “делегатом приложения”. Использование этого атрибута эквивалентно вызову функции UIApplicationMain и передачи в нее имени класса, в качестве имени класса-делегата.
+Если вы не используете этот атрибут, то вы должны предоставить в main.swift в функцию main вызов функции UIApplicationMain(_:_:_:). Например, если ваше приложение использует пользовательский подкласс UIApplication в качестве своего основного класса, то вызывайте функцию UIApplicationMain(_:_:_:) вместо использования этого атрибута.
+usableFromInline
+Примените этот атрибут к объявлению функции, метода, вычисленного свойства, сабскрипта, инициализатора или деинициализатора, чтобы использовать это обозначение в коде, который определен в том же модуле, что и объявление. Объявление должно иметь модификатор уровня доступа internal.
+Подобно модификатору уровня доступа Public, этот атрибут предоставляет объявление как часть открытого интерфейса модуля. В отличие от public, компилятор не разрешает объявления, помеченные с помощью usableFromInline, ссылаться по имени в коде вне модуля, даже несмотря на то, что объявление экспортируется. Тем не менее, код вне модуля может все еще иметь возможность взаимодействовать с объявлением, используя режим во время выполнения.
+Объявления, отмеченные встроенным атрибутом, неявно используются из встроенного кода. Несмотря на то, что для внутренних объявлений может применяться как встроенная, так и полезная функция FromInline. Применение обоих атрибутов является ошибкой.
+warn_unqualified_access
+Применяйте этот атрибут к функциям высшего уровня, методам экземпляров, к классовым или статическим методам для обозначения, что метод используется без необходимого квалификатора, например, название модуля, имя типа, имя переменной или константы. Используйте этот атрибут, для разграничения двусмысленности между функциями с одним и тем же именем, которые доступны в одной и той же области видимости.
+Например, стандартная библиотека Swift включает в себя две функции высшего порядка: min(_:_:) и min() для последовательностей со сравниваемыми элементами. Этот метод последовательности объявлен с атрибутом warn_unqualified_access для уменьшения путаницы, которая может возникнуть при использовании одного или другого метода внутри расширения Sequence.
+Объявление атрибутов с использованием Interface Builder
+Атрибуты интерфейс билдер являются атрибутами объявления и используются интерфейс билдером для синхронизации с Xcode. Swift предоставляет следующие атрибуты интерфейс билдера: IBAction, IBDesignable, IBInspectable, и IBOutlet. Эти атрибуты концептуально идентичны своим Objective-C коллегам.
+Вы можете применить атрибуты IBOutlet и IBInspectable при объявлении свойства внутри класса. Вы применяете атрибут IBAction к объявлению метода внутри класса, а атрибут IBDesignable вы применяете к объявлению самого класса.
+И IBAction, IBOutlet, IBDesignable и IBInspectable  неявно подразумевают атрибут objc.
+Атрибуты типа
+Вы можете применять атрибуты типа только к самим типам. Однако, вы можете использовать атрибут noreturn к объявлению функции или метода.
+autoclosure
+Этот атрибут используется для того, чтобы отложить вычисление выражения, автоматически заворачивая выражение в замыкание без аргументов. Применяйте этот атрибут к объявлению параметра для функции или метода типа, которая не принимает аргументов и которая возвращает тип выражения. Объявления с атрибутом autoclosure так же подразумевают атрибут noescape, за исключением тех случаев, когда передан опциональный аргумент атрибута escaping. Пример использования autoclosure смотрите в “Автозамыкания" и "Функциональный тип".
+convention
+Применяйте этот атрибут к типу функции, чтобы указать ее соглашения о вызовах.
+Атрибут convention всегда появляется с одним или более аргументами, которые указаны ниже.
+Аргумент swift используется для отображения ссылки на функцию Swift. Это стандартное соглашение о вызове для функциональных типов в Swift.
+Аргумент block используется для отображения ссылки на совместимый блок Objective-C. Значение функции представляется в виде ссылки на блок объекта, который является id-совместимым объектом Objective-C, который в свою очередь встраивает ее вызов функции внутрь объекта. Функция вызова использует соглашение о вызовах языка C.
+Аргумент c используется для отображение ссылки на C функцию. Значение функции не несет никакого контекста и использует соглашение о вызовах языка C.
+Функция с соглашением о вызовах языка C может быть использована в качестве функции с соглашением о вызовах Objective-C блоков, а функция с соглашением о вызовах. Objective-C блоков может быть использована с соглашением о вызовах функции Swift. Однако только неуниверсальные глобальные функции, локальные функции и замыкания, которые не захватывают значения локальных переменных, могут быть использованы как функции с соглашением о вызовах языка C.
+escaping
+Применяйте этот атрибут к объявлению функций или методов для индикации такого параметра, значение которого может быть сохранено для дальнейшего использования. Это значит, что значение может продолжать существовать после окончания вызова. Параметры функционального типа с атрибутом escaping требуют явного self. для свойств и методов. Пример использования escaping атрибутов можно посмотреть в главе Сбегающие замыкания.
+Атрибуты кейсов инструкции switch
+Вы можете применять атрибуты кейсов инструкции switch только для самих кейсов инструкции switch.
+unknown
+Вам нужно применять этот атрибут к кейсу инструкции switch, чтобы указать, что он не должен совпадать ни с одним кейсом перечисления, известным на момент компиляции кода. Для примера того, как использовать атрибут unknown, см. Переключение будущих кейсов перечисления.
+Грамматика атрибута
+attribute → @­ attribute-name­attribute-argument-clause­opt­ attribute-name → identifier­ attribute-argument-clause → (­ balanced-tokens­opt­ )­ attributes → attribute­attributes­opt­ balanced-tokens → balanced-token­balanced-tokens­opt­ balanced-token → (­ balanced-tokens­opt­ )­ balanced-token → [ ­balanced-tokens­opt­] ­ balanced-token → {­ balanced-tokens­opt­ }­ balanced-token → Any identifier, keyword, literal, or operator balanced-token → Any punctuation except (­, )­, [­, ]­, {­, or }­
+Если вы нашли ошибку, пожалуйста, выделите фрагмент текста и нажмите Ctrl+Enter.
+Объявления
+Шаблоны
+ 
+SwiftBook Самое крупное сообщество iOS разработчиков на языке Swift
+О нас
+Мы в социальных сетяхYouTubeVKontakteFacebookЧат_Telegram
+instagramПолезноеPodlodka
+Подпишись на новости 
+   Политика конфиденциальности
+Пользовательское соглашение
+Найти:
+  © Акулов И.Б., 2014-2021      
+ 
+Сообщить об опечатке
+Текст, который будет отправлен нашим редакторам:
+Ваш комментарий (необязательно):
+Отправить
+Отмена

@@ -1,879 +1,111 @@
-Python Software Foundation News: The Python Sofware Foundation receives the Wonderfully Welcoming Award from GitHub!
-  News from the Python Software Foundation
-Thursday, November 09, 2023
-The Python Sofware Foundation receives the Wonderfully Welcoming Award from GitHub!
-[November 9th, 2023] - The Python Software Foundation is delighted to announce that we are a recipient of a GitHub Award under the Wonderfully Welcoming category, awarded on November 9th at GitHub Universe 2023 in San Francisco, CA, USA. This award exemplifies all the Python community strives to be—enthusiastic, dedicated to encouraging use of the language, and committed to building a diverse and friendly community. We are proud of the Python community for embodying our values on GitHub and this award truly belongs to every contributor. We’re incredibly grateful to be in community with you. GitHub shares:The GitHub Awards celebrates the outstanding contributions and achievements in the developer community by honoring individuals, projects, and organizations for creating an outsized positive impact on the community.Python Software Foundation (@psf) is not just a hub for Python development; it's a community that embraces diversity and inclusion at its core. Through initiatives like PyCon Charlas, PSF breaks language barriers, providing a platform for Spanish-speaking contributors. It also champions gender diversity by backing the pioneering PyLadiesCon. Above all, the PSF is committed to a respectful and safe community experience, fortified by a strong Code of Conduct. It also extends accessibility through captioning and is vigilant about health and safety measures. At PSF, it's not just about code; it's about the people behind it.The Wonderfully Welcoming Award recognizes people or projects that have been the most welcoming and seen an increasing amount of contributors.The PSF Executive Director, Deb Nicholson, states: “We believe that empowering new participants is key to the growth and success of the open source movement. We want to thank GitHub for shining a spotlight on the human side of open source community work.” The Python Software Foundation is a non-profit membership organization devoted to advancing open source technology related to the Python programming language. Our mission is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers.If you would like to help advance our mission, please consider supporting us with a donation!
-Posted by
-Marie Nordin
-at
-11/09/2023 06:00:00 PM
-Newer Post
-Older Post
+Matt Mullenweg | Unlucky in Cards
+Matt Mullenweg
+Unlucky in Cards
+My old HSPVA friend and classmate Joe Santa Maria has a really cool album that I can only describe as if a Chris Potter big band decided to play Indonesian gamelan music, a type of trance-like rhythmic music which I originally discovered through Aaron Taylor Kuffner’s Gamelatron. You can listen or buy the album here. This is the first album I’ve bought in… forever, I’ve gotten so used to streaming. Feels kinda nice. I need to explore Bandcamp more it’s so cool. 
+March 26, 2024 
+Tom Scott on APIs
+I was late to discover Tom Scott, it was only after he did his goodbye video that I came across him, but he is a Youtube treasure with an archive of a ton of good stuff. Here’s one where he ties together scraping, APIs, Web 2.0, privacy, Cliffs of Dover, and some philosophy. So beautiful.
+March 26, 2024AsidesMatt
+Leave a comment 
+Paul Davids and Jacob Collier
+I know I share a lot of Jacob Collier content, but this one is particularly interesting because you can see him learning things in real-time, exploring an instrument that is not his native tongue but he’s already world-class in. It’s so interesting to me the polymath musician friends I have who can play so many instruments how they bring the technique and language across their learning, and this video illustrates it well.
+March 16, 2024AsidesMatt
+One comment so far 
+Hugo on Vision Pro
+March 15, 2024AsidesMatt 
+Many of my friends are ridiculous overachievers, and Hugo Barra is no exception. In response to my birthday blog post present request he has published a magnus opus of over 10,000+ words on his thoughts on the Apple Vision Pro from his perspective having been present for some foundational moments for Google, Meta, and Xiaomi. This is my dream, to get people writing more. We need more of this stuff on the internet! It’s fun to go down rabbit holes with experts. Cool that it’s on Hugo.blog, too. 🙂
+Leave a comment 
+Amazing Brad Mehldau Interview
+Great for everyone, but if you know a little music theory or Bach you’ll appreciate it even more. It’s never too late to learn music!
+March 9, 2024VideojazzMatt
+View all 2 comments 
+On the Reddit IPO
+February 25, 2024AsidesMatt 
+I’m looking forward to the Reddit IPO, and I think it’s awesome that they opened up a top-tier IPO tranche to their community. People with 200,000 karma points or 5,000 moderator actions on Reddit will get access to something that has previously been reserved for the most elite allies of financial institutions. Wow! 
+I’m sure this was not easy to do so Reddit users should understand that at this very important juncture in the company’s history it has gone above and beyond to include you. I’m mostly a lurker on Reddit so my 958 karma doesn’t qualify so I’ll get access with the rest of the normal folks.
+If I ever IPO something from Automattic, it will include the same for people who have contributed to WordPress. And every supporting open-source project underneath it. (It’s turtles all the way down.)
+My only fear is that code contributions are structured in a way that is easily legible, so is anything that happens on w.org, but we may miss including people who have contributed to the growth of WordPress in non-legible ways.
+View all 2 comments 
+Super Bowl!
+February 11, 2024GalleryMatt 
+Going to the Super Bowl with my friends Jaime Waydo and Jason Hoffman was a peak experience, everything about the day felt par none. I captured some Spatial Videos so friends with Vision Pros could watch some of it, but there’s no good way to share those on blogs yet. Friends have asked for some photos from the day, so here they are.
+Leave a comment 
+Vision Pro + Drone
+February 10, 2024AsidesMatt 
+This feels significant. Check out this video. Hat tip: Rory Chitwood.
+One comment so far 
+On StellarWP Podcast
+I’m still doing some podcasts as sabbatical-Matt, especially with the WordPress community which for me isn’t really work, it’s building relationships in our community of practice. If you know me, I can wax poetic about WordPress for hours! It’s what I do for fun. Here’s my first post-sabbatical interview with Michelle Frechette. Another unusual thing about this interview is I was quarantining with Covid!
+February 9, 2024WordPressMatt
+One comment so far 
+WordPress, Taylor Swift, Super Bowl, oh my
+February 9, 2024AsidesMatt 
+There has been quite a bit of buzz in the WordPress community because during the Grammys red carpet Taylor Swift’s website went down and this is what everyone saw:
+Hey there! That looks familiar. What a beautiful WordPress logo! (Hat tip: Alexa Scordato for telling me about this.) The website also had some ups and downs, we haven’t been able to get in touch with anyone on Taylor’s tech team, but if you’re there, we’re standing by and happy to spin up your site on wp.cloud so it can handle any amount of traffic.
+This gets even more interesting, because for the first time in my life, after having orbited around the Super Bowl for decades*, I am attending in person. Thanks to the graciousness of my friend and advisor Jason Hoffman, I’ll be in an owner’s suite, wearing a WordPress t-shirt, possibly not too far from Taylor, watching the game. Look for me on TV! I know she loves Tumblr so I’ll have with me a little gift bag of Tumblr swag just in case I meet her.
+* How have I been orbiting around the Super Bowl? Even though I don’t follow sports, I’m obsessed with the Super Bowl, and typically host watch parties every year. I love seeing the pinnacle of American achievement. The Super Bowl centers around a number of interesting stories in my life, such as when I was in high school and very poor the Super Bowl was in Houston, and they made McNuggets really cheap, so I ate 104 McNuggets in one sitting. (Sweet and sour sauce, natch.) At that infamous Justin Timberlake / Janet Jackson moment, they needed extras on the field to be their audience and my high school girlfriend was one of the kids in the audience when it happened. There’s so many more stories I could tell!
+View all 14 comments 
+Balaji Srinivasan posted a great essay on how founders should think about debt vs equity, unfortunately it’s on X/Twitter so the format isn’t great, but the content is gold. As we exit the ZIRP world and go back into normal interest rates, I think this is really important concept for entrepreneurs to understand.
+February 8, 2024 
+Thoughts on Tech Employment
+February 7, 2024AutomatticMatt 
+The Washington Post writes The U.S. economy is booming. So why are tech companies laying off workers? This article has some good data, but I think misses the point with sub-heads like “Shine has come off the tech industry.” Really? How is that reflected in their stock prices?
+I think a few things are happening.
+First, tech companies are typically best at adopting new technology, which leads to productivity gains. 
+AI may be an obvious example of this, though for all its hype it hasn’t had a huge impact on most companies yet. I agree with Sam Altman when he says there may someday be a billion-dollar company run by one person who is able to highly leverage future AI agents to automate most traditional roles at a company. That said, I think there are advantages to teams including allowing people to go on vacation or take time off, and provide business continuity and succession, so literally one-person is probably an exaggeration. We don’t need AI to see very small teams being valued highly: Instagram had only 13 employees when it sold for a billion dollars to Facebook, in 2012!
+Some of this productivity gains just come from adoption of existing tools like Google Workspace or Office 365, issue trackers and version control with tools like Gitlab, Github, or Jira. At Automattic we don’t use email to work or communicate internally, it’s all Slack and P2. We also leverage our distributed nature to effectively have teams around the world coordinating several shifts of product work per day, and 24/7 coverage for things like systems and customer support without the need for “graveyard shifts.”
+The way tech companies operate, the pace and culture, would be unrecognizable to people at many more traditional companies.
+At tech companies some roles are highly leveraged, like systems, engineering, and design, and everything else in the company really exists to support these. These leveraged roles can create enormous amounts of value, and that’s why it’s not unusual to hear of machine learning engineers working on ads at Google with salaries in the seven figures. (There’s been a weird accounting thing where companies put a lot of their compensation into equity, but I think that’s going away as investors are learning to better account for dilution and employees appreciate the fungibility of cash.)
+Creators are also highly leveraged, which is why Joe Rogan can sign a new $250M deal with Spotify (which smartly puts him back on Youtube) after laying off 1,500 people in December. Some people like Hagen Terschüren try to tie this together and say you should avoid Spotify for it, but there’s nothing wrong with a business becoming more efficient to serve its customers, it’s the whole point of capitalism. Capitalism is, as Nicholas Stern says (via Marc), the best way to take care of people we don’t know. There’s no honor in keeping people employed inefficiently, it’s better for them to find someplace in the market where their talents will be better leveraged for society and themselves.
+There was a bubble in hiring because tech had so much money it tried to throw people at problems. But the unlock in technology can come from a single person, a single insight. It’s the mythical man-month. Tech-first companies are going to become leaner and more leveraged. Fewer people are going to create more value for society, in ways that will follow power laws and I think we should investigate things like Universal Basic Income to provide for all living beings. Technological progress creates abundance, where we have more than what we need.
+At Automattic last year we did not do layoffs, but allowed performance management and natural attrition (voluntary regrettable was 2.9%, non-regrettable 6.8% for us in 2023) to allow our size to shrink down more naturally, on average two people left for every person we hired last year, from a peak of about 2,064 to 1,936 today.
+View all 12 comments 
+It’s hard to pick a favorite tenor player, but the GOATs that come to mind are Dexter Gordon, Sonny Rollins, John Coltrane, Michael Brecker, and I’m missing people but if I had to pick someone to express the human condition and soul, it would be Joshua Redman. He has such incredible fluency with the horn you get an amazing emotional experience with his vibrations. He’s probably the greatest living tenor saxophonist. He just did a Tiny Desk concert, and the audio and visual capture was impeccable. I watched this full-screen on an Apple XDR and listened with Airpods Max—the chords they’re using, the subtlety of the interactions— the experience was exquisite. (Also peep HSPVA grad Paul Cornish!) I can’t embed because it’s not on Youtube yet.
+February 7, 2024 
+What if this VR is training our brains to compute in a different way? How we perceive our thoughts to train the models. We are reconfiguring our model of reality to process things in a way we couldn’t before.
+February 7, 2024 
+If I were President for a day, the first thing I would do is instruct our national security to patch and secure every American technology company, as they are our gems in the world. I would burn every zero-day I had on a US company and help them patch it. The rest of the world would know our immense defense budget was now being used to secure our companies as well, as China does. Apple, Meta, Google, Microsoft, Intel, Cisco, Arista, Unifi, Qualcomm… I’m probably missing a few, they should all have the shield of our national security defense. Right now each company has to create their own defenses, and they are getting eaten and pillaged by foreign companies with state backing.
+February 5, 2024 
+I’m a proud supporter of the Vesuvius Challenge, and they just announced the winners and have a great article in Bloomberg.
+February 5, 2024 
+Child of the 90s
+This is a brilliant ad, true genius. (Hat tip, Ken Gagne.)
+February 4, 2024AsidesMatt
+View all 3 comments 
+When I read things like the iFixit Teardown of Vision Pro, I am moved almost to tears at the sheer beauty of craftsmanship in this thing. It is literally incredible. I have so much respect for the big tech companies like Apple that invest in long-term science, research, and development to create innovations like this. It is literally the engine driving our economy forward.
+February 4, 2024 
+I just replied to an email from 2018. I am tragically, comically, behind on email. Because Automattic doesn’t use email, we use P2, it’s never been a priority for me. But I have been sloppy, careless, and derelict in my duty of answering emails. Apologies to you all. You’re going to get some weird, very late replies.
+February 3, 2024 
+Vision Pro First Impressions
+February 2, 2024AsidesMatt 
+Okay… wow. The hardware and display are like nothing I’ve ever seen, really feels like it’s from the future. That said, I found the setup clunky and buggy. Some might have been user error, for example I kept trying to “select” things with my middle finger and thumb and not my left finger.
+I almost got stuck in the Persona setup, couldn’t continue. I don’t love how my Persona looks. Looking and selecting stopped working and I could only continue by physically reaching out and hitting the buttons. (This must sound ridiculous to someone who hasn’t used a Vision Pro yet. I looked pretty silly!) 
+I got totally stuck at the part of the setup where it was importing iCloud apps from backup, and I was ready to give up. A friend put it on and was able to get past that step for me. Adding credit cards was a terrible UI, with the security code PIN pad in front of the interface.
+I decided to call it a night, and try more tomorrow. Just like I learned to type I think I’m going to need to learn to become fluent in this new interaction paradigm. I did have a before and after feeling, like the world had shifted, not unlike when you saw the first iPod or iPhone. This post probably doesn’t make any sense to someone who hasn’t tried the Vision Pro, but hopefully the team sees it and can take this feedback.
+View all 2 comments 
+			Posts navigation		
+← Older posts
+					Proudly powered by WordPress				
+Menu
+Skip to content
 Home
-Mission
-The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers.
-Python Software Foundation
-Grants Program
-Membership
-Awards
-Meeting Minutes
-PSF Sponsors
-A big thank you to the above PSF sponsors for supporting our mission!
-Tweets by ThePSF 
-Blog Archive
-        ► 
-      
-2024
-(8)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(4)
-        ▼ 
-      
-2023
-(37)
-        ► 
-      
-December
-(1)
-        ▼ 
-      
-November
-(3)
-It's time for our annual year-end PSF fundraiser a...
-The Python Sofware Foundation receives the Wonderf...
-Join the Python Developers Survey 2023: Share and ...
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(3)
-        ► 
-      
-June
-(5)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2022
-(35)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(2)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(3)
-        ► 
-      
-February
-(1)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2021
-(42)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(2)
-        ► 
-      
-June
-(4)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(5)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(4)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2020
-(51)
-        ► 
-      
-December
-(8)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(4)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(10)
-        ► 
-      
-April
-(11)
-        ► 
-      
-March
-(4)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2019
-(45)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(4)
-        ► 
-      
-August
-(3)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(5)
-        ► 
-      
-May
-(11)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(5)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2018
-(31)
-        ► 
-      
-December
-(5)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(5)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(1)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2017
-(32)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(6)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(2)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(3)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(4)
-        ► 
-      
-2016
-(27)
-        ► 
-      
-December
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(6)
-        ► 
-      
-April
-(4)
-        ► 
-      
-March
-(2)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2015
-(67)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(4)
-        ► 
-      
-April
-(13)
-        ► 
-      
-March
-(14)
-        ► 
-      
-February
-(9)
-        ► 
-      
-January
-(4)
-        ► 
-      
-2014
-(14)
-        ► 
-      
-October
-(1)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(1)
-        ► 
-      
-May
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2013
-(18)
-        ► 
-      
-November
-(1)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(5)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2012
-(21)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(4)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(1)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2011
-(55)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(7)
-        ► 
-      
-September
-(5)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(8)
-        ► 
-      
-April
-(8)
-        ► 
-      
-March
-(13)
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2010
-(35)
-        ► 
-      
-December
-(4)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(8)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(4)
-        ► 
-      
-March
-(2)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2009
-(21)
-        ► 
-      
-December
-(1)
-        ► 
-      
-October
-(1)
-        ► 
-      
-September
-(6)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(1)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(1)
-        ► 
-      
-February
-(1)
-        ► 
-      
-2008
-(23)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(1)
-        ► 
-      
-August
-(3)
-        ► 
-      
-July
-(1)
-        ► 
-      
-May
-(3)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(5)
-        ► 
-      
-February
-(4)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2007
-(26)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(6)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2006
-(39)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(5)
-        ► 
-      
-September
-(4)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(3)
-        ► 
-      
-May
-(7)
-        ► 
-      
-April
-(6)
-        ► 
-      
-March
-(3)
-Powered by Blogger.
+About
+Contact
+Distributed
+X
+Mastodon
+Let’s Work Together
+ 
+Search for:
+ 
+ 
+ 
+						Matt Mullenweg					
+Proudly powered by WordPress Theme: Ma.tt.				
+ 
+Loading Comments...
+ 
+Write a Comment...
+Email (Required)
+Name (Required)
+Website

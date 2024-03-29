@@ -1,192 +1,292 @@
+Расширения - SwiftBook
  
-Fiscal Sponsorees | Python Software Foundation
-Notice: While JavaScript is not essential for this website, your interaction with the content will be limited. Please turn JavaScript on for the full experience. 
-Skip to content
-▼ Close
-                
-Python
-PSF
-Docs
-PyPI
-Jobs
-Community
-▲ The Python Network
-                
-Donate
-≡ Menu
-Search This Site
-                                    GO
-                                
-A A
-Smaller
-Larger
-Reset
-Socialize
-LinkedIn
-Mastodon
-Chat on IRC
-Twitter
-About
-Mission Statement
-Board of Directors & Officers
-PSF Staff
-Annual Impact Report
-Fiscal Sponsorees
-Public Records
-Legal & Policies
-PSF FAQ
-Sponsorship
-PSF Sponsors
-Apply to Sponsor
-Membership
-Sign up as a Member of the PSF!
-Membership FAQ
-PSF Elections
-Nominate a Fellow & Fellows Roster
-Donate
-Donate to the PSF
-Become a Supporting Member of the PSF
-PSF Matching Donations
-Volunteer
-Volunteer for the PSF
-PSF Work Groups
-Volunteer for PyCon US
-Grants
-Grants program
-Grants Program FAQ
-PyCon US
-News & Community
-Subscribe to the Newsletter
-PSF Blog
-Python Community Code of Conduct
-Community Awards
-Discourse
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
  
-PSF>>>
-About>>>
-Fiscal Sponsorees
-Fiscal Sponsorees
-At this time, the Python Software Foundation is not accepting new fiscal sponsoree requests.
-The Python Software Foundation promotes, protects, and advances the Python programming language and supports and facilitates the growth of a diverse and international community of Python programmers.
-Part of that mission includes acting as a fiscal sponsor to mission-related Python events, groups, and projects.  The PSF provides 501(c)(3) tax-exempt status to fiscal sponsorees and manages back office issues like cash flow, accounting, budgeting, insurance, and contract/legal support, as well as access to nonprofit discounts.
-To learn more about in the PSF's fiscal sponsorship program, email us!  We will provide you a fiscal sponsorship questionnaire and materials about how the PSF supports fiscal sponsorees.  We will also schedule a call to discuss how your event, group, or project fits with the PSF's charitable mission.
-Note:  we generally do not take new fiscal sponsorship requests the month before and after the annual PyCon US.
-The following groups are active fiscal sponsorees:
-Bandit     
-Bandit is a prominent open source project that focuses on the field of application security in Python. Developed and maintained by a dedicated community of developers, Bandit is designed to identify and highlight potential security vulnerabilities and weaknesses within Python codebases. As a static code analysis tool, Bandit scans through the source code, leveraging a wide range of security checks and rules to detect common security issues, such as SQL injections, cross-site scripting (XSS) attacks, and insecure cryptographic implementations..  Your contribution sustains Bandit developers and maintainers.
-Bay Area Python Association (BAPyA)
-BAPyA is a group of Python community organizers in the San Francisco Bay Area dedicated to supporting local gatherings to learn and discuss Python.  Please consider supporting the BAPyA community with a contribution.
-Boston Python
-Boston Python is one of the world's largest local Python user groups.  We have a presentation night and a project night almost every month, and run weekend workshops to introduce beginners to Python.  Your donation helps keep the Python community in Boston vibrant!
-ChiPy
-Founded in 2003, ChiPy (Chicago Python User Group) has over 1,000 active members with a focus on the Python Programming Language. Meetings are open to all levels!   Our main meetings are on the 2nd Thursday of every month.  We also offer several SIGs (Special Interest Groups) in Mentorship, Data Science, Web technologies, and Finance.  Please consider supporting the Chicago Python community!
-Denver Python Users Group
-Denver Python Users Group welcomes those interested in learning about Python or connecting with other Python professionals. We have a smaller weekly Meetup for people to work on Python projects and a larger monthly Meetup with speakers and talks.  You can help support ongoing meeting costs by donating!
-Jazzband
-Jazzband is a project that secures the long-term maintenance of Python projects that have passed their first life-cycle as single-author projects. Jazzband's intention is to break the cycle of loss of maintenance of established, well-tested, well-documented projects
-when their original author steps away (bus factor problem) using cooperative coding. You can support Jazzband to help keep Python projects alive.
-North Bay Python
-North Bay Python is a boutique, one-track conference held annually in Petaluma, CA. We take inclusion seriously and ensure our speakers come from a diverse, international lineup.  To reduce costs for future attendees, consider donating to North Bay Python.
-Pallets
-Pallets develops and supports Flask, Jinja, Werkzeug, Click, and other Python libraries. These libraries power applications of all sizes around the world and are downloaded millions of times each month. Despite their popularity, the projects are primarily maintained by only a few developers.  You can support Pallets' goal by donating via the PSF or Github Sponsors to grow the community and to create a sustainable group of contributors and users.
-PhillyPUG
-PhillyPUG, the Philadelphia Python Users' Group, has​ 3,200 members ​growing at a rate of one new member per day. The group holds regular events including project nights, lectures, lightning talks, and workshops to attract all levels of programmers from novices to experts. Your contribution helps support the cost of these events, including event space, refreshments, and other logistical expenses.
-PuPPy
-PuPPy, the Puget Sound Programming Python Group, is a fun and friendly user group dedicated to proliferating a diverse and talented Python community in the Puget Sound region.  The group is devoted to exploring Python-based programming knowledge, embracing new and experienced members from all walks of life, and helping those members to achieve their professional goals.  Consider supporting PuPPy!
-PyCascades
-PyCascades is a regional Python conference that moves between Vancouver, Seattle, and Portland.  PyCascades is a two-day, single-track Python conference that celebrates and brings together the Pacific Northwest Python developer and user community.   Your donation helps reduce the cost of future conferences, including providing travel grants.
-PyBeach
-PyBeach is an annual one-day, single-track event, with a main talks track, open source sprints, “hallway track” space, and an expo hall.  Members of the Python communities in the Los Angeles area welcome Python professionals, enthusiasts, and students to join us.  It is a welcoming, volunteer-run, community-driven event with the mission to educate and connect its attendees to one another, and promote Python within the local technology community.   Your donation will help reduce the cost of the conference and support future conferences.
-PyHawaii
-PyHawaii is a community dedicated to the growth and use of the Python Programming Language in Honolulu, the Islands of Hawaii, and across the Pacific.  All skill levels are welcome!  At PyHawaii, we value community, inclusivity and `ohana - so come join our meetup, where you will find friends, family and fantastic opportunities to learn, grow, contribute and advance your skills.  Consider supporting the group with your contribution.
-PyLadies
-PyLadies is a mentorship group for women with a focus on helping more women become active participants and leaders in the Python open source community. We have over 100 worldwide chapters and we encourage women to start their own local groups.  We  support both seasoned and budding developers through workshops, community activities, and local advocacy.  Your donation to PyLadies' outreach efforts will help improve the diversity of the software industry as a whole.
-PyMNtos
-PyMNtos (pronounced pie-min-tose) is a Twin Cities group of Python enthusiasts.  Members range from beginners to hobbyists to experts.  Whoever you are and whatever your skill level is, we would love for you to join us.  There is no membership fee or any other barrier to entry.  To support the cost of Meetups, please donate!
-PyOhio
-PyOhio is an annual, regional PyCon in Ohio that draws attendees from the Midwest US.  Content ranges from beginner to advanced and is intended to be relevant to all types of Python users including students, software professionals, scientists, hobbyists, and anyone looking to learn more.
-PyPA
-The Python Packaging Authority (PyPA) is a working group that maintains a core set of software projects used in Python packaging.  The software developed through the PyPA is used to package, share, and install Python software and to interact with indexes of downloadable Python software such as PyPI, the Python Package Index.  You can support PyPA by supporting them on Github Sponsors.
-PyRVA
-PyRVA is a local user group in Richmond, VA.  PyRVA believes that Python is best enjoyed in the company of others and organizes talks, hackathons, workshops and more to help build up the Richmond, VA Python community.  Donation to PyRVA helps support costs of ongoing events.
-Python San Diego User Group
-The Python San Diego User Group is a volunteer-run group that was restarted in February 2012 and has since grown to several hundred members.  We have a general meetup each month with technical talks and networking, and also hold weekend workshops and hackathons for new to advanced Python programmers in the area.  We depend on individual and corporate sponsors and the PSF to help keep our events free for our members and to grow the Python community.  Your donation helps support the venue, food, and expenses for our workshops and meetups.
-Twisted
-Twisted is an event-driven networking engine written in Python licensed under the open source MIT License.  Twisted makes it easy to implement custom network applications and supports many common network protocols, including SMTP, POP3, IMAP, SSHv2, and DNS.  You can sustain Twisted's ongoing development with a contribution!
-The PSF
-The Python Software Foundation is the organization behind Python. Become a member of the PSF and help advance the software and our mission. 
-▲ Back to Top
-About
-Applications
-Quotes
-Getting Started
-Help
-Python Brochure
-Downloads
-All releases
-Source code
-Windows
-macOS
-Other Platforms
-License
-Alternative Implementations
-Documentation
-Docs
-Audio/Visual Talks
-Beginner's Guide
-Developer's Guide
-FAQ
-Non-English Docs
-PEP Index
-Python Books
-Python Essays
-Community
-Diversity
-Mailing Lists
-IRC
-Forums
-PSF Annual Impact Report
-Python Conferences
-Special Interest Groups
-Python Logo
-Python Wiki
-Code of Conduct
-Community Awards
-Get Involved
-Shared Stories
-Success Stories
-Arts
-Business
-Education
-Engineering
-Government
-Scientific
-Software Development
-News
-Python News
-PSF Newsletter
-PSF News
-PyCon US News
-News from the Community
-Events
-Python Events
-User Group Events
-Python Events Archive
-User Group Events Archive
-Submit an Event
-Contributing
-Developer's Guide
-Issue Tracker
-python-dev list
-Core Mentorship
-Report a Security Issue
-▲ Back to Top
+Найти:
  
-Help & General Contact
-Diversity Initiatives
-Submit Website Bug
-Status 
-Copyright ©2001-2024.
-                             Python Software Foundation
-                             Legal Statements
-                             Privacy Policy
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+Документация
+ 
+ 
+Развернуть
+Свернуть
+              
+        Документация		
+		  
+		  
+        
+              
+        Знакомство со Swift		
+		  
+		  
+        
+ О языке Swift
+ Совместимость версий Swift
+ Тур по Swift
+ 
+              
+        Руководство Swift		
+		  
+		  
+        
+ Основы
+ Базовые операторы
+ Строки и символы
+ Типы коллекций
+ Управление потоком
+ Функции
+ Замыкания
+ Перечисления
+ Структуры и классы
+ Свойства
+ Методы
+ Сабскрипты
+ Наследование
+ Инициализация
+ Деинициализация
+ Опциональная последовательность
+ Обработка ошибок
+ Согласованность
+ Приведение типов
+ Вложенные типы
+ Расширения
+ Непрозрачные типы
+ Протоколы
+ Универсальные шаблоны
+ Автоматический подсчет ссылок (ARC)
+ Безопасность хранения
+ Контроль доступа
+ Продвинутые операторы
+ 
+              
+        Справочник языка		
+		  
+		  
+        
+ Лексическая структура
+ Типы
+ Выражения
+ Инструкции
+ Объявления
+ Атрибуты
+ Шаблоны
+ Параметры и аргументы универсального типа
+ Резюме по грамматике
+ 
+ 
+		Расширения		
+        
+Расширения
+Расширения добавляют новую функциональность существующему типу класса, структуры или перечисления. Это включает в себя возможность расширять типы, к исходным кодам которых у вас нет доступа (известно как ретроактивное моделирование). Расширения очень похожи на категории из Objective-C. (В отличии от категорий из Objective-C, расширения в Swift не имеют имен.)
+Расширения в Swift могут:
+Добавлять вычисляемые свойства и вычисляемые свойства типа
+Определять методы экземпляра и методы типа
+Предоставлять новые инициализаторы
+Определять сабскрипты (индексы)
+Определять новые вложенные типы
+Обеспечить соответствие существующего типа протоколу
+В Swift вы можете даже расширить протокол, предоставив реализацию его требованиям или добавить дополнительные функциональные возможности, преимущества которых могут быть использованы подписанным под протокол типом. Для получения более подробной информации см. Расширения протоколов.
+Заметка
+Расширения могут добавлять новую функциональность типу, но они не могут переписать существующую функциональность.
+Синтаксис расширений
+Расширение объявляется с помощью ключевого слова extension:
+extension SomeType {
+    // описываем новую функциональность для типа SomeType
+}
+Расширение может расширить существующий тип для того, чтобы он соответствовал одному или более протоколам. Там где это имеет место, имена протоколов записываются точно так же, как и в случае с классами или структурами:
+extension SomeType: SomeProtocol, AnotherProtocol {
+    // реализация требования протокола тут
+}
+Описание добавления соответствия протоколу таким образом описано в разделе Добавление реализации протокола через расширение.
+Расширения могут быть использованы для расширения существующего универсального типа, что описано в Расширяем универсальный тип. Так же вы можете расширить универсальный тип, добавляя функциональность зависящую от условия, что описано в Оговорка where.
+Заметка
+Если вы определяете расширение для добавления новой функциональности существующему типу, то новая функциональность будет доступна всем экземплярам этого типа, даже если они были созданы до того, как было определено расширение.
+Вычисляемые свойства в расширениях
+Расширения могут добавлять вычисляемые свойства экземпляра и вычисляемые свойства типа к существующим типам. В примере мы добавляем пять вычисляемых свойств экземпляра во встроенный тип Double языка Swift, для обеспечения работы данного типа с единицами длины:
+extension Double {
+    var km: Double { return self * 1_000.0 }
+    var m: Double { return self }
+    var cm: Double { return self / 100.0 }
+    var mm: Double { return self / 1_000.0 }
+    var ft: Double { return self / 3.28084 }
+}
+let oneInch = 25.4.mm
+print("Один дюйм - это \(oneInch) метра")
+// Выведет "Один дюйм- это 0.0254 метра"
+let threeFeet = 3.ft
+print("Три фута - это \(threeFeet) метра")
+// Выведет "Три фута - это 0.914399970739201 метра"
+Эти вычисляемые свойства объясняют, что тип Double должен считаться как конкретная единица измерения длины. Хотя они реализованы как вычисляемые свойства, имена этих свойств могут быть добавлены к литералу чисел с плавающей точкой через точечный синтаксис, как способ использовать значения литерала для проведения преобразований длины.
+В этом примере, значение 1.0 типа Double отображает “один метр”. Это причина, по которой m возвращает self, что равно 1.m, то есть посчитать Double от числа 1.0.
+Другие единицы требуют некоторых преобразований, чтобы выражать свое значение через метры. Один километр то же самое что и 1000 метров, так что km - вычисляемое свойство, которое умножает значение на 1_000.00, чтобы отобразить величину в километрах. По аналогии поступаем и с остальными свойствами, как например, с футом, футов в одном метре насчитывается 3.28024, так что вычисляемое свойство ft делит подчеркнутое значение Double на 3.28024 для того, чтобы перевести футы в метры.
+Эти свойства являются вычисляемыми свойствами только для чтения, так что они могут быть выражены без ключевого слова get. Их возвращаемое значение является типом Double и может быть использовано в математических вычислениях, где поддерживается тип Double:
+let aMarathon = 42.km + 195.m
+print("Марафон имеет длину \(aMarathon) метров")
+// Выведет "Марафон имеет длину 42195.0 метров"
+Заметка
+Расширения могут добавлять новые вычисляемые свойства, но они не могут добавить свойства хранения или наблюдателей свойства к уже существующим свойствам.
+Инициализаторы в расширениях
+Расширения могут добавить новые инициализаторы существующему типу. Это позволяет вам расширить другие типы для принятия ваших собственных типов в качестве параметров инициализатора, или для обеспечения дополнительных опций инициализации, которые не были включены как часть первоначальной реализации типа.
+Расширения могут добавлять вспомогательные инициализаторы классу, но они не могут добавить новый назначенный инициализатор или деинициализатор классу. Назначенные инициализаторы и деинициализаторы должны всегда предоставляться реализацией исходного класса.
+Если вы используете расширения для того, чтобы добавить инициализатор к типу значений, который обеспечивает значения по умолчанию для всех своих хранимых свойств и не определяет какого-либо пользовательского инициализатора, то вы можете вызвать дефолтный инициализатор и почленный инициализатор для того типа значений изнутри инициализатора вашего расширения. Это не будет работать, если вы уже написали инициализатор как часть исходной реализации значения типа, подробнее см. Делегирование инициализатора для типов значения.
+Если вы используете расширение для добавления инициализатора в структуру, которая была объявлена в другом модуле, новый инициализатор не может получить доступ к self до тех пор, пока он не вызовет инициализатор из модуля определения.
+Пример ниже определяет структуру Rect для отображения геометрического прямоугольника. Пример так же определяет две вспомогательные структуры Size и Point, обе из которых предоставляют значения по умолчанию 0.0 для всех своих свойств:
+struct Size {
+    var width = 0.0, height = 0.0
+}
+struct Point {
+    var x = 0.0, y = 0.0
+}
+struct Rect {
+    var origin = Point()
+    var size = Size()
+}
+Из-за того, что структура Rect предоставляет значения по умолчанию для всех своих свойств, она автоматически получает инициализатор по умолчанию и почленный инициализатор, что описано в главе Дефолтные инициализаторы. Эти инициализаторы могут быть использованы для создания экземпляров Rect:
+let defaultRect = Rect()
+let memberwiseRect = Rect(origin: Point(x: 2.0, y: 2.0),
+                          size: Size(width: 5.0, height: 5.0))
+Вы можете расширить структуру Rect для предоставления дополнительного инициализатора, который принимает определенную точку и размер:
+extension Rect {
+    init(center: Point, size: Size) {
+        let originX = center.x - (size.width / 2)
+        let originY = center.y - (size.height / 2)
+        self.init(origin: Point(x: originX, y: originY), size: size)
+    }
+}
+Этот новый инициализатор начинается с вычисления исходной точки, основываясь на значениях свойств center и size. Потом инициализатор вызывает почленный инициализатор структуры init(origin:size:), который хранит новую исходную точку и размеры в соответствующих свойствах:
+let centerRect = Rect(center: Point(x: 4.0, y: 4.0),
+                      size: Size(width: 3.0, height: 3.0))
+// исходная точка centerRect (2.5, 2.5) и его размер (3.0, 3.0)
+Заметка
+Если вы предоставляете новый инициализатор вместе с расширением, вы все еще отвественены за то, что каждый экземпляр должен быть полностью инициализирован, к моменту, когда инициализатор заканчивает свою работу.
+Методы в расширениях
+Расширения могут добавить новые методы экземпляра или методы типа к уже существующим типам. Следующий пример добавляет новый метод экземпляра repetitions к типу Int:
+extension Int {
+    func repetitions(task: () -> Void) {
+        for _ in 0..<self {
+            task()
+        }
+    }
+}
+Метод repetitions(task:) принимает единственный аргумент типа () -> Void, который указывает на функцию, которая не принимает ни одного параметра и которая не возвращает значения.
+После определения расширения вы можете вызвать метод repetitions(task:) на любом целом числе, чтобы выполнить определенное задание целое число раз:
+3.repetitions {
+    print("Hello!")
+}
+// Hello!
+// Hello!
+// Hello!
+Изменяющиеся методы экземпляра
+Методы экземпляров, добавленные в расширении так же могут менять и сам экземпляр. Методы структуры и перечисления, которые изменяют self или его свойства, должны быть отмечены как mutating.
+Пример ниже добавляет новый изменяющийся (mutating) метод square для типа Int, который возводит в квадрат исходное значение:
+extension Int {
+    mutating func square() {
+        self = self * self
+    }
+}
+var someInt = 3
+someInt.square()
+// теперь переменная someInt имеет значение 9
+Сабскрипты в расширениях
+Расширения могут добавить новые сабскрипты к существующему типу. Этот пример добавляет сабскрипт целого числа во встроенный тип Int языка Swift. Этот сабскрипт [n] возвращает цифру, которая стоит на n позиции справа:
+123456789[0] возвращает 9
+123456789[1] возвращает 8
+и так далее:
+extension Int {
+    subscript(digitIndex: Int) -> Int {
+        var decimalBase = 1
+        for _ in 0..<digitIndex {
+            decimalBase *= 10
+        }
+        return (self / decimalBase) % 10
+    }
+}
+746381295[0]
+// возвращает 5
+746381295[1]
+// возвращает 9
+746381295[2]
+// возвращает 2
+746381295[8]
+// возвращает 7
+Если значение Int не имеет достаточно количество цифр для требуемого индекса, то сабскрипт возвращает 0, как если бы вместо этого числа стоял 0:
+746381295[9]
+// возвращает 0, как если бы вы запросили вот так:
+0746381295[9]
+Вложенные типы в расширениях
+Расширения могут добавлять новые вложенные типы к существующим классам, структурам и перечислениям:
+extension Int {
+    enum Kind {
+        case negative, zero, positive
+    }
+    var kind: Kind {
+        switch self {
+        case 0:
+            return .zero
+        case let x where x > 0:
+            return .positive
+        default:
+            return .negative
+        }
+    }
+}
+Этот пример добавляет новое перечисление в тип Int. Это перечисление Kind описывает значение, которое отображает данное целое число. В частности оно определяет является ли число положительным, отрицательным или нулем.
+Так же этот пример добавляет новое вычисляемое свойство kind к типу Int, которое возвращает соответствующий член перечисления Kind для этого числа.
+Вложенное перечисление может быть использовано типом Int:
+func printIntegerKinds(_ numbers: [Int]) {
+    for number in numbers {
+        switch number.kind {
+        case .negative:
+            print("- ", terminator: "")
+        case .zero:
+            print("0 ", terminator: "")
+        case .positive:
+            print("+ ", terminator: "")
+        }
+    }
+    print("")
+}
+printIntegerKinds([3, 19, -27, 0, -6, 0, 7])
+// Выведет "+ + - 0 - 0 + "
+Эта функция printIntegerKinds(_:) принимает параметр в виде массива значений Int, затем перебирает по очереди все эти значения. Для каждого целого числа в массиве, функция смотрит на его вычисляемое свойство kind и выводит соответствующее описание.
+Заметка
+Как нам уже известно number.kind имеет тип Int.Kind. Значит все значения членов Int.Kind могут быть записаны в короткой форме внутри конструкции switch, как .negative, а не Int.Kind.negative.
+Если вы нашли ошибку, пожалуйста, выделите фрагмент текста и нажмите Ctrl+Enter.
+Вложенные типы
+Непрозрачные типы
+ 
+SwiftBook Самое крупное сообщество iOS разработчиков на языке Swift
+О нас
+Мы в социальных сетяхYouTubeVKontakteFacebookЧат_Telegram
+instagramПолезноеPodlodka
+Подпишись на новости 
+   Политика конфиденциальности
+Пользовательское соглашение
+Найти:
+  © Акулов И.Б., 2014-2021      
+ 
+Сообщить об опечатке
+Текст, который будет отправлен нашим редакторам:
+Ваш комментарий (необязательно):
+Отправить
+Отмена

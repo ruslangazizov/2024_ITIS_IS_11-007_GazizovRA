@@ -1,880 +1,293 @@
-Python Software Foundation News: Kicking off 2024 strong, thanks to our community!
-  News from the Python Software Foundation
-Wednesday, January 31, 2024
-Kicking off 2024 strong, thanks to our community!
-We are starting off the year feeling energized and supported, thanks to each of you who shared or donated to our year-end fundraiser and membership drive. We raised a whopping $43,000 through our PyCharm partnership with JetBrains–that’s more than double last year! With over 150 individual donations, new Supporting Memberships, and JetBrains’ generous partnership, we raised $134,175 total for our work supporting Python and the Python community! All in all, during the period of the fundraiser, we raised close to $200K, which includes donations from our sponsors, donations to our Fiscal Sponsorees, Membership renewals, and proceeds from the special replay of our Humble Bundle, thanks to No Starch Press. Your generous support means we can confidently start 2024 by investing in our key goals for the year. These goals include:Improving dialogue with the global communityInvesting in community supportCreating more pathways for technical contributionsWe rely on community investment–of money, but also time, energy, ideas, and enthusiasm–to reach each of these goals. Supporting Membership is a great way for the community to invest in the PSF’s work. It was exciting to see many new Supporting Members made use of our sliding scale rate option to become Members. Welcome aboard, new members, and thank you for joining us! We’re looking forward to having your voice take part in the PSF’s future.Because the PSF doesn’t buy lists or ads, your help in sharing our fundraiser with your networks makes a big difference, and we really appreciate how many of you took the extra time to help promote it. We’re excited about where 2024 will take us together, and as always, we’d love to hear your ideas and feedback. Looking for how to keep in touch with us? You can find all the ways in our "Where is the PSF?" blog post.Wishing you all a wonderful & Python-filled new year!- The PSF Team
-Posted by
-Marie Nordin
-at
-1/31/2024 08:00:00 AM
-Newer Post
-Older Post
-Home
-Mission
-The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers.
-Python Software Foundation
-Grants Program
-Membership
-Awards
-Meeting Minutes
-PSF Sponsors
-A big thank you to the above PSF sponsors for supporting our mission!
-Tweets by ThePSF 
-Blog Archive
-        ▼ 
-      
-2024
-(8)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(3)
-        ▼ 
-      
-January
-(4)
-Kicking off 2024 strong, thanks to our community!
-Announcing Python Software Foundation Fellow Membe...
-Announcing the Deputy Developer in Residence and t...
-EU’s Cyber Resilience Act Passes with Wins for Ope...
-        ► 
-      
-2023
-(37)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(3)
-        ► 
-      
-June
-(5)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2022
-(35)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(2)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(3)
-        ► 
-      
-February
-(1)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2021
-(42)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(2)
-        ► 
-      
-June
-(4)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(5)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(4)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2020
-(51)
-        ► 
-      
-December
-(8)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(4)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(10)
-        ► 
-      
-April
-(11)
-        ► 
-      
-March
-(4)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2019
-(45)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(4)
-        ► 
-      
-August
-(3)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(5)
-        ► 
-      
-May
-(11)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(5)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2018
-(31)
-        ► 
-      
-December
-(5)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(5)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(1)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2017
-(32)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(6)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(2)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(3)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(4)
-        ► 
-      
-2016
-(27)
-        ► 
-      
-December
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(6)
-        ► 
-      
-April
-(4)
-        ► 
-      
-March
-(2)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2015
-(67)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(4)
-        ► 
-      
-April
-(13)
-        ► 
-      
-March
-(14)
-        ► 
-      
-February
-(9)
-        ► 
-      
-January
-(4)
-        ► 
-      
-2014
-(14)
-        ► 
-      
-October
-(1)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(1)
-        ► 
-      
-May
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2013
-(18)
-        ► 
-      
-November
-(1)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(5)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2012
-(21)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(4)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(1)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2011
-(55)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(7)
-        ► 
-      
-September
-(5)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(8)
-        ► 
-      
-April
-(8)
-        ► 
-      
-March
-(13)
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2010
-(35)
-        ► 
-      
-December
-(4)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(8)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(4)
-        ► 
-      
-March
-(2)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2009
-(21)
-        ► 
-      
-December
-(1)
-        ► 
-      
-October
-(1)
-        ► 
-      
-September
-(6)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(1)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(1)
-        ► 
-      
-February
-(1)
-        ► 
-      
-2008
-(23)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(1)
-        ► 
-      
-August
-(3)
-        ► 
-      
-July
-(1)
-        ► 
-      
-May
-(3)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(5)
-        ► 
-      
-February
-(4)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2007
-(26)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(6)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2006
-(39)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(5)
-        ► 
-      
-September
-(4)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(3)
-        ► 
-      
-May
-(7)
-        ► 
-      
-April
-(6)
-        ► 
-      
-March
-(3)
-Powered by Blogger.
+Обработка ошибок - SwiftBook
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+Документация
+ 
+ 
+Развернуть
+Свернуть
+              
+        Документация		
+		  
+		  
+        
+              
+        Знакомство со Swift		
+		  
+		  
+        
+ О языке Swift
+ Совместимость версий Swift
+ Тур по Swift
+ 
+              
+        Руководство Swift		
+		  
+		  
+        
+ Основы
+ Базовые операторы
+ Строки и символы
+ Типы коллекций
+ Управление потоком
+ Функции
+ Замыкания
+ Перечисления
+ Структуры и классы
+ Свойства
+ Методы
+ Сабскрипты
+ Наследование
+ Инициализация
+ Деинициализация
+ Опциональная последовательность
+ Обработка ошибок
+ Согласованность
+ Приведение типов
+ Вложенные типы
+ Расширения
+ Непрозрачные типы
+ Протоколы
+ Универсальные шаблоны
+ Автоматический подсчет ссылок (ARC)
+ Безопасность хранения
+ Контроль доступа
+ Продвинутые операторы
+ 
+              
+        Справочник языка		
+		  
+		  
+        
+ Лексическая структура
+ Типы
+ Выражения
+ Инструкции
+ Объявления
+ Атрибуты
+ Шаблоны
+ Параметры и аргументы универсального типа
+ Резюме по грамматике
+ 
+ 
+		Обработка ошибок		
+        
+Обработка ошибок
+Обработка ошибок - это процесс реагирования на возникновение ошибок и восстановление после появления ошибок в программе. Swift предоставляет первоклассную поддержку при генерации, вылавливании и переносе ошибок, устранении ошибок во время выполнения программы.
+Некоторые операции не всегда гарантируют полное выполнение или конечный результат. Опционалы используются для обозначения отсутствия значения, но когда случается сбой, важно понять, что вызвало сбой, для того, чтобы соответствующим образом изменить код.
+В качестве примера, рассмотрим задачу считывания и обработки данных из файла на диске. Задача может провалиться по нескольким причинам, в том числе: файл не существует по указанному пути, или файл не имеет разрешение на чтение, или файл не закодирован в необходимом формате. Отличительные особенности этих различных ситуаций позволяют программе решать некоторые ошибки самостоятельно и сообщать пользователю какие ошибки она не может решить сама.
+Заметка
+Обработка ошибок в Swift перекликается с шаблонами обработки ошибок, которые используются в классе NSError в Cocoa и Objective-C. Для более подробной информации читайте Error Handling и Using Swift With Cocoa and Objective-C (Swift 4).
+Отображение и генерация ошибок
+В Swift ошибки отображаются значениями типов, которые соответствуют протоколу Error. Этот пустой протокол является индикатором того, что это перечисление может быть использовано для обработки ошибок.
+Перечисления в Swift особенно хорошо подходят для группировки схожих между собой условий возникновения ошибок и соответствующих им значений, что позволяет получить дополнительную информацию о природе самой ошибки. Например, вот как отображаются условия ошибки работы торгового автомата внутри игры:
+enum VendingMachineError: Error {
+    case invalidSelection
+    case insufficientFunds(coinsNeeded: Int)
+    case outOfStock
+}
+Генерация ошибки позволяет указать, что произошло что-то неожиданное и обычное выполнение программы не может продолжаться. Для того чтобы «сгенерировать» ошибку, вы используете инструкцию throw. Например, следующий код генерирует ошибку, указывая, что пять дополнительных монет нужны торговому автомату:
+throw VendingMachineError.insufficientFunds(coinsNeeded: 5)
+Обработка ошибок
+Когда генерируется ошибка, то фрагмент кода, окружающий ошибку, должен быть ответственным за ее обработку: например, он должен исправить ее, или испробовать альтернативный подход, или просто информировать пользователя о неудачном исполнении кода.
+В Swift существует четыре способа обработки ошибок. Вы можете передать (propagate) ошибку из функции в код, который вызывает саму эту функцию, обработать ошибку, используя инструкцию do-catch, обработать ошибку, как значение опционала, или можно поставить утверждение, что ошибка в данном случае исключена. Каждый вариант будет рассмотрен далее.
+Когда функция генерирует ошибку, последовательность выполнения вашей программы меняется, поэтому важно сразу обнаружить место в коде, которое может генерировать ошибки. Для того, чтобы выяснить где именно это происходит, напишите ключевое слово try - или варианты try? или try!- до куска кода, вызывающего функцию, метод или инициализатор, который может генерировать ошибку. Эти ключевые слова описываются в следующем параграфе.
+Заметка
+Обработка ошибок в Swift напоминает обработку исключений (exceptions) в других языках, с использованием ключевых слов try, catch и throw. В отличие от обработки исключений во многих языках, в том числе и в Objective-C- обработка ошибок в Swift не включает разворачивание стека вызовов, то есть процесса, который может быть дорогим в вычислительном отношении. Таким образом, производительные характеристики инструкции throw сопоставимы с характеристиками оператора return.
+Передача ошибки с помощью генерирующей функции
+Чтобы указать, что функция, метод или инициализатор могут генерировать ошибку, вам нужно написать ключевое слово throws в реализации функции после ее параметров. Функция, отмеченная throws называется генерирующей функцией. Если у функции установлен возвращаемый тип, то вы пишете ключевое слово throws перед стрелкой возврата (->).
+func canThrowErrors() throws -> String
+func cannotThrowErrors() -> String
+Генерирующая функция передает ошибки, которые возникают внутри нее в область вызова этой функции.
+Заметка
+Только генерирующая ошибку функция может передавать ошибки. Любые ошибки, сгенерированные внутри non-throwing функции, должны быть обработаны внутри самой функции.
+В приведенном ниже примере VendingMachine класс имеет vend(itemNamed: ) метод, который генерирует соответствующую VendingMachineError, если запрошенный элемент недоступен, его нет в наличии, или имеет стоимость, превышающую текущий депозит:
+struct Item {
+    var price: Int
+    var count: Int
+}
+ 
+class VendingMachine {
+    var inventory = [
+        "Candy Bar": Item(price: 12, count: 7),
+        "Chips": Item(price: 10, count: 4),
+        "Pretzels": Item(price: 7, count: 11)
+    ]
+    var coinsDeposited = 0
+    
+    func vend(itemNamed name: String) throws {
+        guard let item = inventory[name] else {
+            throw VendingMachineError.invalidSelection
+        }
+        
+        guard item.count > 0 else {
+            throw VendingMachineError.outOfStock
+        }
+        
+        guard item.price <= coinsDeposited else {
+            throw VendingMachineError.insufficientFunds(coinsNeeded: item.price - coinsDeposited)
+        }
+        
+        coinsDeposited -= item.price
+        
+        var newItem = item
+        newItem.count -= 1
+        inventory[name] = newItem
+        
+        print("Dispensing \(name)")
+    }
+}
+Реализация vend(itemNamed: ) метода использует оператор guard для раннего выхода из метода и генерации соответствующих ошибок, если какое-либо требование для приобретения закуски не будет выполнено. Потому что инструкция throw мгновенно изменяет управление программой, и выбранная позиция будет куплена, только если все эти требования будут выполнены.
+Поскольку vend(itemNamed: ) метод передает все ошибки, которые он генерирует, вызывающему его коду, то они должны быть обработаны напрямую, используя оператор do-catch, try? или try!, или должны быть переданы дальше. Например, buyFavoriteSnack(person:vendingMachine: ) в примере ниже - это тоже генерирующая функция, и любые ошибки, которые генерирует метод vend(itemNamed: ), будут переноситься до точки, где будет вызываться функция buyFavoriteSnack(person:vendingMachine: ).
+let favoriteSnacks = [
+    "Alice": "Chips",
+    "Bob": "Licorice",
+    "Eve": "Pretzels"
+]
+func buyFavoriteSnack(person: String, vendingMachine: VendingMachine) throws {
+    let snackName = favoriteSnacks[person] ?? "Candy Bar"
+    try vendingMachine.vend(itemNamed: snackName)
+}
+В этом примере, функция buyFavoriteSnack(person:vendingMachine: ) подбирает любимые закуски данного человека и пытается их купить, вызывая vend(itemNamed: ) метод. Поскольку метод vend(itemNamed: ) может сгенерировать ошибку, он вызывается с ключевым словом try перед ним.
+Генерирующие ошибку инициализаторы могут распространять ошибки таким же образом, как генерирующие ошибку функции. Например, инициализатор структуры PurchasedSnack в списке ниже вызывает генерирующую ошибку функции как часть процесса инициализации, и он обрабатывает любые ошибки, с которыми сталкивается, путем распространения их до вызывающего его объекта.
+struct PurchasedSnack {
+    let name: String
+    init(name: String, vendingMachine: VendingMachine) throws {
+        try vendingMachine.vend(itemNamed: name)
+        self.name = name
+    }
+}
+Обработка ошибок с использованием do-catch
+Используйте инструкцию do-catch для обработки ошибок, запуская блок кода. Если выдается ошибка в коде условия do, она соотносится с условием catch для определения того, кто именно сможет обработать ошибку.
+Вот общий вид условия do-catch:
+do {
+    try выражение
+    выражение
+} catch шаблон 1 {
+    выражение
+} catch шаблон 2  where условие {
+    выражение
+} catch шаблон 3, шаблон 4 where условие {
+    выражение
+} catch {
+    выражение
+}
+Вы пишете шаблон после ключевого слова catch, чтобы указать какие ошибки могут обрабатываться данным пунктом этого обработчика. Если условие catch не имеет своего шаблона, то оно подходит под любые ошибки и связывает ошибки к локальной константе error. Более подробно о соответствии шаблону см. Шаблоны.
+Например, следующий код обрабатывает все три случая в перечислении VendingMachineError, но все другие ошибки должны быть обработаны окружающей областью:
+var vendingMachine = VendingMachine()
+vendingMachine.coinsDeposited = 8
+do {
+    try buyFavoriteSnack(person: "Alice", vendingMachine: vendingMachine)
+} catch VendingMachineError.invalidSelection {
+    print("Ошибка выбора.")
+} catch VendingMachineError.outOfStock {
+    print("Нет в наличии.")
+} catch VendingMachineError.insufficientFunds(let coinsNeeded) {
+    print("Недостаточно средств. Пожалуйста вставьте еще \(coinsNeeded) монетки.")
+} catch {
+    print("Неожиданная ошибка: \(error).")
+}
+// Выведет "Недостаточно средств. Пожалуйста вставьте еще 2 монетки.
+В приведенном выше примере, buyFavoriteSnack(person:vendingMachine: ) функция вызывается в выражении try, потому что она может сгенерировать ошибку. Если генерируется ошибка, выполнение немедленно переносится в условия catch, которые принимают решение о продолжении передачи ошибки. Если ошибка не генерируется, остальные операторы do выполняются.
+В условии catch не нужно обрабатывать все возможные ошибки, которые может вызвать код в условии do. Если ни одно из условий catch не обрабатывает ошибку, ошибка распространяется на окружающую область. Однако распространяемая ошибка должна обрабатываться некоторой внешней областью. В функции nonthrowing условие включения do-catch должно обрабатывать ошибку. В функции throwing либо включающая условие do-catch, либо вызывающая сторона должна обрабатывать ошибку. Если ошибка распространяется на область верхнего уровня без обработки, вы получите ошибку исполнения.
+Например, приведенный ниже пример можно записать так, чтобы любая ошибка, которая не является VendingMachineError, вместо этого захватывалась вызывающей функцией:
+func nourish(with item: String) throws {
+    do {
+        try vendingMachine.vend(itemNamed: item)
+    } catch is VendingMachineError {
+        print("Некорректный вывод, нет в наличии или недостаточно денег.")
+    }
+}
+do {
+    try nourish(with: "Beet-Flavored Chips")
+} catch {
+    print("Unexpected non-vending-machine-related error: \(error)")
+}
+// Выведет "Некорректный вывод, нет в наличии или недостаточно денег."
+В nourish(with: ), если vend(itemNamed : ) выдает ошибку, которая является одним из кейсов перечисления VendingMachineError, nourish(with: ) обрабатывает ошибку, печатая сообщение. В противном случае, nourish(with: ) распространяет ошибку на свое место вызова. Ошибка затем попадает в общее условие catch.
+Преобразование ошибок в опциональные значения
+Вы можете использовать try? для обработки ошибки, преобразовав ее в опциональное значение. Если ошибка генерируется при условии try?, то значение выражения вычисляется как nil. Например, в следующем коде x и y имеют одинаковые значения и поведение:
+func someThrowingFunction() throws -> Int {
+    // ...
+}
+ 
+let x = try? someThrowingFunction()
+ 
+let y: Int?
+do {
+    y = try someThrowingFunction()
+} catch {
+    y = nil
+}
+Если someThrowingFunction() генерирует ошибку, значение x и y равно nil. В противном случае значение x и y - это возвращаемое значение функции. Обратите внимание, что x и y являются опциональными, независимо от того какой тип возвращает функция someThrowingFunction().
+Использование try? позволяет написать краткий код обработки ошибок, если вы хотите обрабатывать все ошибки таким же образом. Например, следующий код использует несколько попыток для извлечения данных или возвращает nil, если попытки неудачные.
+func fetchData() -> Data? {
+    if let data = try? fetchDataFromDisk() { return data }
+    if let data = try? fetchDataFromServer() { return data }
+    return nil
+}
+Запрет на передачу ошибок
+Иногда вы знаете, что функции throw или методы не сгенерируют ошибку во время исполнения. В этих случаях, вы можете написать try! перед выражением для запрета передачи ошибки и завернуть вызов в утверждение того, что ошибка точно не будет сгенерирована. Если ошибка на самом деле сгенерирована, вы получите сообщение об ошибке исполнения.
+Например, следующий код использует loadImage(atPath: ) функцию, которая загружает ресурс изображения по заданному пути или генерирует ошибку, если изображение не может быть загружено. В этом случае, поскольку изображение идет вместе с приложением, сообщение об ошибке не будет сгенерировано во время выполнения, поэтому целесообразно отключить передачу ошибки.
+let photo = try! loadImage(atPath: "./Resources/John Appleseed.jpg")
+Установка действий по очистке (Cleanup)
+Вы используете оператор defer для выполнения набора инструкций перед тем как исполнение кода оставит текущий блок. Это позволяет сделать любую необходимую очистку, которая должна быть выполнена, независимо от того, как именно это произойдет — либо он покинет из-за сгенерированной ошибки или из-за оператора, такого как break или return. Например, вы можете использовать defer, чтобы удостовериться, что файл дескрипторов закрыт и выделенная память вручную освобождена.
+Оператор defer откладывает выполнение, пока не происходит выход из текущей области. Этот оператор состоит из ключевого слова defer и выражений, которые должны быть выполнены позже. Отложенные выражения могут не содержать кода, изменяющего контроль исполнения изнутри наружу, при помощи таких операторов как break или return, или просто генерирующего ошибку. Отложенные действия выполняются в обратном порядке, как они указаны, то есть, код в первом операторе defer выполняется после кода второго, и так далее.
+func processFile(filename: String) throws {
+    if exists(filename) {
+        let file = open(filename)
+        defer {
+            close(file)
+        }
+        while let line = try file.readline() {
+            // работаем с файлом.
+        }
+        // close(file) вызывается здесь, в конце зоны видимости.
+    }
+}
+Приведенный выше пример использует оператор defer, чтобы удостовериться, что функция open(_: ) имеет соответствующий вызов и для close(_: ).
+Заметка
+Вы можете использовать оператор defer, даже если не используете кода обработки ошибок.
+Если вы нашли ошибку, пожалуйста, выделите фрагмент текста и нажмите Ctrl+Enter.
+Опциональная последовательность
+Согласованность
+ 
+SwiftBook Самое крупное сообщество iOS разработчиков на языке Swift
+О нас
+Мы в социальных сетяхYouTubeVKontakteFacebookЧат_Telegram
+instagramПолезноеPodlodka
+Подпишись на новости 
+   Политика конфиденциальности
+Пользовательское соглашение
+Найти:
+  © Акулов И.Б., 2014-2021      
+ 
+Сообщить об опечатке
+Текст, который будет отправлен нашим редакторам:
+Ваш комментарий (необязательно):
+Отправить
+Отмена

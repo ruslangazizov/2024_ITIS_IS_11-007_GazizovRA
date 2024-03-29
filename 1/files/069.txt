@@ -1,913 +1,611 @@
-Python Software Foundation News: Announcing the 2023 PSF Board Election Results!
-  News from the Python Software Foundation
-Friday, June 30, 2023
-Announcing the 2023 PSF Board Election Results!
- It was a really lively and engaged election process for the PSF Board
- this year! First of all, we want to thank everyone who ran and was 
-willing to serve on the PSF Board. Even if you were not elected, we 
-appreciate all the time and effort you put into thinking about how to 
-make the PSF better and how to represent the parts of the community that
- you participate in. We hope that you will continue to think about these
- issues and share your ideas. Congratulations to our five new Board members-elect! Cheuk Ting HoDenny PerezGeorgi KerChristopher NeugebauerKwonHan Bae * We’ll
- be in touch with all the elected candidates next week to schedule 
-onboarding. * The fifth person is being invited to serve for a year to 
-fill the off-cycle vacancy left by Joannah Nanjekye, who stepped down 
-from the Board. I’d like to take this opportunity to thank 
-our outgoing board members for their outstanding service; Dustin Ingram,
- Joannah Nanjekye, Jeff Triplett, Thomas Wouters and Nina Zakharenko. 
-They served on the PSF Board through a particularly eventful time; 
-helping us to navigate the global pandemic, rework PyCon US into a 
-virtual event and hire a new Executive Director. Thank you for 
-supporting the PSF and the Python community through so much change! Our
- heartfelt thanks go out to each of you who took the time to review the 
-candidates and submit your votes. Your participation helps the PSF 
-represent our community. We received 621 total votes, which easily 
-reached quorum–1/3 of affirmed voting members (877). We’re especially 
-grateful for your patience with navigating the changes to the voting 
-process, which ultimately allowed for a valid election and a more 
-sustainable elections system. I also want to thank everyone who helped promote this year’s board election, especially Python Community News
- who took the initiative to cover this year’s election and produced 
-informational videos from each candidate. I also want to highlight the 
-PSF staff members who made some changes to our membership management on 
-the back-end this year, enabling us to affirm voting intention for the 
-first time ever and setting up OpaVote. Thanks to Ee Durbin and Joe 
-Carey!Finally, it might feel a little early to mention this, but
- we will have four seats open again next year. If you're interested in 
-running or learning more, we encourage you to reach out to a current 
-board member or two this year and ask them about serving. 
-Posted by
-Deb Nicholson
-at
-6/30/2023 08:13:00 PM
-Newer Post
-Older Post
-Home
-Mission
-The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers.
-Python Software Foundation
-Grants Program
-Membership
-Awards
-Meeting Minutes
-PSF Sponsors
-A big thank you to the above PSF sponsors for supporting our mission!
-Tweets by ThePSF 
-Blog Archive
-        ► 
-      
-2024
-(8)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(4)
-        ▼ 
-      
-2023
-(37)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(3)
-        ▼ 
-      
-June
-(5)
-Announcing the 2023 PSF Board Election Results!
-Announcing Our New Security Developer in Residence!
-The 2023 PSF Board Election is Open!
-Board Candidates for 2023 are Announced!
-Affirming your PSF Membership voting status
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2022
-(35)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(2)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(3)
-        ► 
-      
-February
-(1)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2021
-(42)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(2)
-        ► 
-      
-June
-(4)
-        ► 
-      
-May
-(12)
-        ► 
-      
-April
-(5)
-        ► 
-      
-March
-(1)
-        ► 
-      
-February
-(4)
-        ► 
-      
-January
-(1)
-        ► 
-      
-2020
-(51)
-        ► 
-      
-December
-(8)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(4)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(10)
-        ► 
-      
-April
-(11)
-        ► 
-      
-March
-(4)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2019
-(45)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(3)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(4)
-        ► 
-      
-August
-(3)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(5)
-        ► 
-      
-May
-(11)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(5)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2018
-(31)
-        ► 
-      
-December
-(5)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(3)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(5)
-        ► 
-      
-April
-(2)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(1)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2017
-(32)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(6)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(2)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(3)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(4)
-        ► 
-      
-2016
-(27)
-        ► 
-      
-December
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(6)
-        ► 
-      
-April
-(4)
-        ► 
-      
-March
-(2)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2015
-(67)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(4)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(4)
-        ► 
-      
-April
-(13)
-        ► 
-      
-March
-(14)
-        ► 
-      
-February
-(9)
-        ► 
-      
-January
-(4)
-        ► 
-      
-2014
-(14)
-        ► 
-      
-October
-(1)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(1)
-        ► 
-      
-May
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2013
-(18)
-        ► 
-      
-November
-(1)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(5)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2012
-(21)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(2)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(4)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(1)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2011
-(55)
-        ► 
-      
-December
-(2)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(7)
-        ► 
-      
-September
-(5)
-        ► 
-      
-August
-(2)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(3)
-        ► 
-      
-May
-(8)
-        ► 
-      
-April
-(8)
-        ► 
-      
-March
-(13)
-        ► 
-      
-February
-(2)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2010
-(35)
-        ► 
-      
-December
-(4)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(3)
-        ► 
-      
-September
-(2)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(8)
-        ► 
-      
-June
-(6)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(4)
-        ► 
-      
-March
-(2)
-        ► 
-      
-January
-(2)
-        ► 
-      
-2009
-(21)
-        ► 
-      
-December
-(1)
-        ► 
-      
-October
-(1)
-        ► 
-      
-September
-(6)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(4)
-        ► 
-      
-June
-(1)
-        ► 
-      
-May
-(2)
-        ► 
-      
-April
-(1)
-        ► 
-      
-February
-(1)
-        ► 
-      
-2008
-(23)
-        ► 
-      
-December
-(1)
-        ► 
-      
-November
-(1)
-        ► 
-      
-October
-(1)
-        ► 
-      
-August
-(3)
-        ► 
-      
-July
-(1)
-        ► 
-      
-May
-(3)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(5)
-        ► 
-      
-February
-(4)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2007
-(26)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(2)
-        ► 
-      
-October
-(6)
-        ► 
-      
-September
-(1)
-        ► 
-      
-August
-(1)
-        ► 
-      
-July
-(1)
-        ► 
-      
-June
-(2)
-        ► 
-      
-May
-(1)
-        ► 
-      
-April
-(1)
-        ► 
-      
-March
-(2)
-        ► 
-      
-February
-(3)
-        ► 
-      
-January
-(3)
-        ► 
-      
-2006
-(39)
-        ► 
-      
-December
-(3)
-        ► 
-      
-November
-(4)
-        ► 
-      
-October
-(5)
-        ► 
-      
-September
-(4)
-        ► 
-      
-August
-(4)
-        ► 
-      
-July
-(3)
-        ► 
-      
-May
-(7)
-        ► 
-      
-April
-(6)
-        ► 
-      
-March
-(3)
-Powered by Blogger.
+Паттерн Repository с помощью Jetpack Compose - SwiftBook
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+ 
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
+ 
+Найти:
+Паттерн Repository с помощью Jetpack Compose
+ 
+  04.02.2022  
+swiftbook Туториалы 
+Паттерн Repository с помощью Jetpack Compose 
+В этом туториале вы узнаете, как объединить Jetpack Compose и паттерн repository (репозиторий), чтобы сделать ваш код Android более удобным для чтения и обслуживания.
+Версия ПО
+Kotlin 1.5, Android 7.0, Android Studio 2020.3.1
+В Android вам всегда приходилось создавать макеты пользовательского интерфейса с использованием XML. Но в 2019 году компания Google представила свежий, новый подход к созданию пользовательских интерфейсов: Jetpack Compose. Compose использует декларативный API для создания пользовательского интерфейса с помощью Kotlin.
+В этом туториале вы объедините возможности Jetpack Compose с паттерном репозитория для создания приложения «Словарь английского языка».
+Для работы с Jetpack Compose вам потребуется установить Android Studio Arctic Fox. Обратите внимание, что это первый стабильный выпуск Android Studio, поддерживающий Jetpack Compose.
+Создавая приложение-словарь, вы научитесь:
+Читать и отображать удаленные данные.
+Сохранять и восстанавливать локальные данные с помощью Room.
+Использовать разбиение на страницы с LazyColumn.
+Управлять и обновлять состояния пользовательского интерфейса с помощью Compose.
+Вы увидите, как Jetpack Compose действительно сияет, устраняя необходимость в RecyclerView и упрощая управление состоянием. OK. Пора начинать!
+Приступим
+Загрузите начальный проект.
+Откройте проект в Android Studio. Вы увидите следующую файловую структуру:
+ 
+Синхронизируйте проект. Затем сделайте сборку и запустите. Приложение будет выглядеть так:
+ 
+Как видите, ничего сверхъестественного пока нет. Перед тем, как углубиться в код, чтобы сделать ваше приложение ярче (эээ, я имею в виду, более полезным), вы узнаете некоторые сведения о паттерне репозиторий.
+Паттерн репозиторий
+Репозиторий определяет операции с данными. Наиболее распространенными операциями являются создание, чтение, обновление и удаление данных (также известные как CRUD – creating, reading, updating, deleting data). Этим операциям иногда нужны параметры, которые определяют, как их запускать. Например, параметр может быть поисковым запросом для фильтрации результатов.
+Паттерн репозитория — это паттерн структурного проектирования. Этот инструмент полезен для организации доступа к данным. Он также помогает разделить проблемы на более мелкие части.
+Паттерн репозитория был впервые представлен в 2004 году Эриком Эвансом (Eric Evans) в его книге Domain-Driven Design: Tackling Complexity in the Heart of Software.
+Вы будете реализовывать паттерн репозитория с помощью Jetpack Compose. Первый шаг — добавить источник данных (datasource). Вы узнаете об этом далее.
+Понимание Datasources (источников данных)
+Операции репозитория делегируются соответствующему источнику данных. Источники данных могут быть удаленными или локальными. Операция с хранилищем имеет логику, которая определяет актуальность данного источника данных. Например, репозиторий может предоставлять значение из локального источника данных или запрашивать удаленный источник данных для загрузки из сети.
+Хранилища (Stores) и источники (Sources) — два наиболее важных типа источников данных. Stores получают свои данные из локальных источников, а Sources получают данные из удаленных источников. На следующем рисунке показано, как выглядит простая реализация репозитория:
+ 
+Использование репозитория
+Когда вам нужно использовать репозиторий? Что ж, представьте, что пользователь вашего приложения хочет увидеть свой профиль. Приложение имеет репозиторий, который проверяет Store на наличие локальной копии профиля пользователя. Если локальная копия отсутствует, репозиторий сверяется с удаленным Source. Реализация такого репозитория выглядит так:
+ 
+К концу этого туториала вы будете использовать паттерн репозитория как с источниками данных Store, так и с Source. Другими словами, ваше приложение будет использовать как удаленные, так и локальные данные для заполнения и хранения слов.
+Другие источники данных могут полагаться на другие типы источников, такие как Location Services (службы определения местоположения), Permission Results (результаты разрешений) или Sensor inputs (входные данные датчиков).
+Например, пользовательский репозиторий может включать два дополнительных источника данных: один для проверки авторизации пользователя, а другой — для кэша в памяти. Первый полезен, если вам нужно убедиться, что пользователь может видеть профиль, а второй полезен при частом доступе к объекту, поскольку вы можете не хотеть, чтобы приложение каждый раз считывало данные из базы данных. Вот простая иллюстрация репозитория с авторизацией и кешем в памяти:
+ 
+Одним из преимуществ паттерна репозитория является простота добавления новых уровней функциональности. И в то же время репозитории разделяют задачи и организуют логику в компоненты. Эти логические компоненты также требуют меньше ответственности. Это делает код компактным и без лишних связей.
+Ладно, хватит пока теории. Настало время повеселиться в программировании. ☺
+Создание пользовательского интерфейса для Words
+Теперь пришло время создать пользовательский интерфейс для вашего приложения Words.
+Создайте файл с именем WordListUi.kt в пакете UI. Внутри файла определите WordListUi с помощью базового Scaffold:
+@Composable
+fun WordListUi() {
+  Scaffold(
+    topBar = { MainTopBar() },
+    content = {
+    }
+  )
+}
+Заметка
+При копировании кода в этом туториале вы можете использовать комбинацию клавиш Alt+Enter для автоматического импорта компонентов.
+Теперь откройте MainActivity.kt и замените Scaffold в onCreate на WordListUi():
+override fun onCreate(savedInstanceState: Bundle?) {
+  super.onCreate(savedInstanceState)
+  setContent {
+    WordsTheme {
+      WordListUi()
+    }
+  }
+}
+Теперь Scaffold, определенный в WordListUi, отображается при запуске приложения внутри main activity.
+Прежде чем создавать дополнительные элементы пользовательского интерфейса, вы создадите модель, определяющую каждое слово. В пакете data.words добавьте новый класс данных Word.kt со следующим кодом:
+data class Word(val value: String)
+Затем в WordsListUi.kt определите Composable ниже WordListUi, чтобы отобразить слово как элемент списка:
+@Composable
+private fun WordColumnItem(
+  word: Word,
+  onClick: () -> Unit,
+) {
+  Row(                                              // 1
+    modifier = Modifier.clickable { onClick() },    // 2
+  ) {
+    Text(
+      modifier = Modifier.padding(16.dp),           // 3
+      text = word.value,                            // 4
+    )
+  }
+}
+Делая это, вы устанавливаете WordColumnItem Composable на:
+1. Определение строки, в которой элементы отображаются горизонтально.
+2. Добавление модификатора для захвата кликов и переадресации их обратному вызову onClick.
+3. Включение отступов в макет, чтобы у контента было пространство «для дыхания».
+4. Использование значение слова в качестве текста.
+Далее вы создадите Composable для отображения списка слов.
+Для этого в Compose добавьте следующий компонуемый файл в конец WordListUi.kt:
+@Composable
+private fun WordsContent(
+  words: List,
+  onSelected: (Word) -> Unit,
+) {
+  LazyColumn {              // 1
+    items(words) { word ->  // 2
+        WordColumnItem(     // 3
+          word = word
+        ) { onSelected(word) }
+    }
+  }
+}
+Приведенный выше код:
+1. Создает LazyColumn.
+2. Указывает LazyColumn отображать список слов.
+3. Создает WordColumnItem для каждого из элементов.
+LazyColumn отображает элементы по мере прокрутки пользователем.
+Это намного проще, чем RecyclerView и ListView! Где вы были всю нашу жизнь, LazyColumns? ☺
+Чтобы протестировать макет, используйте RandomWords. Добавьте следующее внутри содержимого в WordListUi:
+WordsContent(
+  words = RandomWords.map { Word(it) },       // 1                          
+  onSelected = { word -> Log.e("WordsContent", 
+                         "Selected: $word") } // 2
+)
+Два основных действия, которые вы здесь производите:
+1. Преобразование списка строк в список слов.
+2. Печать сообщения в Logcat для проверки нажатий кнопок.
+Теперь сделайте сборку и запустите. Поскольку вы использовали RandomWords для проверки макета, вы увидите список случайных слов:
+ 
+Это тарабарщина, но она дает вам приблизительное представление о том, как будет выглядеть ваше приложение.
+Далее вы создадите ViewModel для главного экрана и репозиторий для Words.
+ 
+Создание Main ViewModel
+ViewModel — это архитектурный компонент Android Jetpack. Основная функция ViewModel — выдерживать изменения конфигурации, такие как чередование.
+Создайте MainViewModel.kt в новом файле в пакете com.raywenderlich.android.words:
+// 1
+class MainViewModel(application: Application) : AndroidViewModel(application) {
+  // 2
+  val words: List = RandomWords.map { Word(it) }                          
+  
+}
+Во ViewModel вы:
+1. Определяете ViewModel как AndroidViewModel с соответствующим application instance (экземпляром приложения). Вы не используете это приложение сейчас, но позже вы будете использовать его для внедрения компонентов.
+2. Возвращаете те же значения, которые у вас есть в WordListUi.
+Затем получите MainViewModel в MainActivity.kt с делегированием. Добавьте следующую строку кода внутри MainActivity над onCreate:
+private val viewModel by viewModels()
+Фреймворк автоматически внедряет текущий экземпляр приложения в MainViewModel.
+Теперь вы подготовите WordListUi к получению данных. Замените WordListUi на:
+@Composable
+fun WordListUi(words: List) { // 1
+  Scaffold(
+    topBar = { MainTopBar() },
+    content = {
+      WordsContent(
+        words = words,              // 2
+        onSelected = { word -> Log.e("WordsContent", 
+                      "Selected: $word") }
+      )
+    }
+  )
+}
+С помощью этого кода вы:
+1. Добавили новый параметр words в WordListUi.
+2. Передали список слов в WordsContent. Помните, что генерация слов теперь находится в MainViewModel.
+Затем перейдите в MainActivity и заполните список слов words из viewModel:
+override fun onCreate(savedInstanceState: Bundle?) {
+  super.onCreate(savedInstanceState)
+  setContent {
+    WordsTheme {
+      WordListUi(words = viewModel.words)
+    }
+  }
+}
+Если вы запустите приложение, все будет выглядеть так же, как и раньше. Но теперь приложение сохраняет компоненты между изменениями конфигурации. Разве это не прекрасное чувство? ☺ Теперь, когда ViewModel на месте, пришло время построить репозиторий.
+ 
+Создание WordRepository
+Далее вы создадите WordRepository и соавторов, начиная с удаленного источника данных.
+Для загрузки данных из Интернета вам понадобится клиент. Создайте файл с именем AppHttpClient.kt в пакете data. Затем добавьте свойство верхнего уровня с именем AppHttpClient:
+val AppHttpClient: HttpClient by lazy {
+  HttpClient()
+}
+Этот код лениво инициализирует клиент Ktor для запуска HTTP-запросов.
+Затем в пакете data.words создайте новый пакет remote и создайте файл с именем WordSource.kt. Затем добавьте в него следующий код:
+       // 1
+class WordSource(private val client: HttpClient = AppHttpClient) {                           // 2
+  suspend fun load(): List = withContext(Dispatchers.IO) {     
+    client.getRemoteWords() // 3
+      .lineSequence()       // 4
+      .map { Word(it) }     // 5
+      .toList()             // 6
+  }
+}
+Код выше:
+1. Устанавливает AppHttpClient значением по умолчанию для HttpClient.
+2. Использует withContext, чтобы убедиться, что ваш код работает в фоновом режиме, а не в основном потоке.
+3. Загружает все слова в виде строки с помощью getRemoteWords. Это функция расширения, которую вы определите позже.
+4. Читает все строки как последовательность.
+5. Преобразовывает каждую строку в Word.
+6. Преобразовывает последовательность в список.
+Затем добавьте следующий код под объявлением WordSource:
+private suspend fun HttpClient.getRemoteWords(): String =
+  get("https://pablisco.com/define/words") 
+Эта функция расширения выполняет сетевой запрос GET на HttpClient. Существует много перегрузок get, поэтому убедитесь, что вы импортируете именно эту:
+import io.ktor.client.request.*
+Теперь создайте новый класс WordRepository.kt в пакете data.words. Затем добавьте в него следующий код:
+class WordRepository(
+  private val wordSource: WordSource = WordSource(),) {
+  suspend fun allWords(): List = wordSource.load()
+}
+WordRepository использует WordSource для получения полного списка слов.
+Теперь, когда репозиторий готов, откройте WordsApp.kt и добавьте его в класс как ленивое свойство (lazy property):
+val wordRepository by lazy { WordRepository() }
+Затем замените тело MainViewModel на:
+private val wordRepository = 
+  getApplication().wordRepository
+val words: List = runBlocking { wordRepository.allWords() }
+Сделайте сборку и запустите. После небольшого ожидания вы увидите список слов, загруженных из сети:
+ 
+Когда репозиторий готов, пришло время управлять состоянием (State) пользовательского интерфейса с помощью Jetpack Compose.
+ 
+Работа с состоянием (State) в Compose
+В Compose есть два взаимодополняющих понятия: State и MutableState. Взгляните на эти два интерфейса, которые их определяют:
+interface State {
+    val value: T
+}
+interface MutableState : State {
+    override var value: T
+}
+Оба предоставляют значение, но MutableState также позволяет обновлять значение. Установите время изменения в этих состояниях. Обновление этих состояний запускает recomposition (рекомпозицию). Рекомпозиция немного похожа на то, как старомодные View  перерисовывались, когда пользовательский интерфейс нуждался в обновлении. Однако Compose достаточно умен, чтобы перерисовывать и обновлять Composables, которые полагаются на изменяемое значение при изменении значения.
+Помня обо всем этом, обновите MainViewModel, чтобы использовать State вместо List:
+class MainViewModel(application: Application) : AndroidViewModel(application) {
+  private val wordRepository = getApplication().wordRepository
+  private val _words = mutableStateOf(emptyList()) // 1
+  val words: State<List> = _words                  // 2
+  fun load() = effect { 
+    _words.value = wordRepository.allWords()             // 3
+  }
+  
+  private fun effect(block: suspend () -> Unit) {
+    viewModelScope.launch(Dispatchers.IO) { block() }    // 4
+  }
+}
+Благодаря этим изменениям вы:
+1. Создаете внутренний MutableState, в котором размещается список слов, который сейчас пуст.
+2. Представляете MutableState как неизменяемый State.
+3. Добавляете функцию для загрузки списка слов.
+4. Добавляете служебную функцию для запуска операций в scope (области действия) сопрограммы (корутины) ViewModel. Используя эту область, вы можете убедиться, что код работает только тогда, когда ViewModel активен, а не в основном потоке.
+Теперь в MainActivity.kt обновите содержимое main activity. Замените код в onCreate на:
+super.onCreate(savedInstanceState)
+viewModel.load()                    // 1
+setContent {
+  val words by viewModel.words      // 2
+  WordsTheme {
+    WordListUi(words = words)       // 3
+  }
+}
+Вот что происходит:
+1. ViewModel начинает загрузку всех слов, вызывая load.
+2. Вы получаете слова, используя делегирование. Любые новые обновления из ViewModel поступают сюда и вызывают рекомпозицию макета.
+3. Теперь вы можете передать слова в WordListUi.
+Все это означает, что UI будет реагировать на новые слова после вызова load().
+Затем вы немного отвлечетесь от теории, когда узнаете о Flows (потоках) и о том, как они будут представлены в вашем приложении.
+ 
+Обновление State до Flow
+Предоставление экземпляров State из ViewModel, как это делает приложение сейчас, делает его слишком зависимым от Compose. Эта зависимость затрудняет перемещение ViewModel в другой модуль, который не использует Compose. Например, перемещение ViewModel будет затруднено, если вы разделяете логику в мультиплатформенном модуле Kotlin. Создание корутины решает эту проблему зависимости, поскольку вы можете использовать StateFlow вместо State.
+Flows, живущие в библиотеке корутин, представляют собой поток значений, потребляемых одним или несколькими компонентами. По умолчанию они cold, а это значит, что они начинают приносить пользу только при использовании.
+SharedFlow — это особый тип потока: hot flow. Это означает, что он выдает значение без потребителя. Когда SharedFlow выдает новое значение, кэш воспроизведения сохраняет его, повторно выдавая SharedFlow новым потребителям. Если кеш заполнен, старые значения удаляются. По умолчанию размер кеша равен 0.
+Существует специальный тип SharedFlow, который называется StateFlow. Он всегда имеет одно значение, и только одно. По сути, он действует как States (состояния) в Compose.
+Далее вы будете использовать StateFlow для доставки обновленных результатов в пользовательский интерфейс и улучшения структуры приложения.
+Использование StateFlow для доставки результатов в пользовательский интерфейс
+Чтобы обновить приложение для использования StateFlow, откройте MainViewModel.kt и измените State с Compose на StateFlow. Также измените mutableStateOf на MutableStateFlow. Тогда код должен выглядеть так:
+private val _words = MutableStateFlow(emptyList())
+val words: StateFlow<List> = _words
+State и StateFlow очень похожи, поэтому вам не нужно обновлять большую часть существующего кода.
+В MainActivity.kt преобразуйте StateFlow в State Compose с помощью collectAsState:
+val words by viewModel.words.collectAsState()
+Теперь MainViewModel не имеет зависимостей от Compose. Затем приложению необходимо отображать состояние загрузки во время загрузки данных.
+ 
+Отображение Loading State (состояние загрузки)
+Сейчас список слов загружается медленно. Но вы же не хотите, чтобы ваши пользователи смотрели на пустой экран во время загрузки! Итак, вы создадите состояние загрузки, чтобы дать им визуальную обратную связь, пока они ждут.
+Начните с создания StateFlow в MainViewModel.kt, добавив следующий фрагмент кода в начало MainViewModel:
+private val _isLoading = MutableStateFlow(true)
+val isLoading: StateFlow = _isLoading
+isLoading показывает, загружается приложение или нет. Теперь обновите значение _isLoading до и после загрузки слов из сети. Замените load на:
+fun load() = effect {
+  _isLoading.value = true
+  _words.value = wordRepository.allWords()
+  _isLoading.value = false
+}
+В приведенном выше коде вы сначала устанавливаете состояние как "loading" (загрузить), а затем устанавливаете его как "not loading" (не загружать) после завершения загрузки всех слов из репозитория.
+Используйте isLoading внутри MainActivity.kt для отображения соответствующего состояния пользовательского интерфейса. Обновите код внутри setContent сразу после объявления words:
+val isLoading by viewModel.isLoading.collectAsState()
+WordsTheme {
+  when {
+    isLoading -> LoadingUi()
+    else -> WordListUi(words)
+  }
+}
+Здесь, если состояние загружается, Compose будет отображать LoadingUi вместо WordListUi.
+Запустите приложение еще раз, и вы увидите, что теперь у него есть индикатор загрузки:
+ 
+Новый индикатор загрузки выглядит великолепно! Однако нужно ли приложению каждый раз загружать все слова из сети? Нет, если данные кэшируются в локальном хранилище данных.
+ 
+Хранение слов с помощью Room
+Слова загружаются медленно прямо сейчас, потому что приложение загружает все слова каждый раз, когда приложение запускается. Вы не хотите, чтобы ваше приложение делало это!
+Итак, вы создадите Store для слов, загружаемых из сети, с помощью Jetpack Room.
+Для начала создайте пакет с именем local в data.words. Затем создайте класс LocalWord.kt в пакете data.words.local:
+@Entity(tableName = "word")      // 1
+data class LocalWord(
+  @PrimaryKey val value: String, // 2
+)
+Локальное представление имеет ту же структуру, что и Word, но с двумя ключевыми отличиями:
+1. Аннотация Entity сообщает Room имя таблицы сущности.
+2. Каждая сущность Room должна иметь первичный ключ.
+Затем определите Data Access Object (DAO) для Word с именем WordDao.kt в local (локальной среде):
+@Dao                                                 // 1
+interface WordDao {
+  @Query("select * from word order by value")        // 2
+  fun queryAll(): List
+  
+  @Insert(onConflict = OnConflictStrategy.REPLACE)   // 3
+  suspend fun insert(words: List)
+  @Query("select count(*) from word")                // 4
+  suspend fun count(): Long
+}
+С помощью приведенного выше кода вы определили четыре операции с базой данных с помощью Room:
+1. @Dao указывает, что этот интерфейс является DAO.
+2. queryAll использует аннотацию @Query для определения Sqlite query. Запрос требует, чтобы все значения были упорядочены по свойству value.
+3. insert добавляет или обновляет слова в базе данных.
+4. count узнает, пуста ли таблица.
+Теперь вы создадите базу данных в новом файле с именем AppDatabase.kt в data.words, чтобы Room мог распознавать Entity и DAO:
+@Database(entities = [LocalWord::class], version = 1)
+abstract class AppDatabase : RoomDatabase() {
+  abstract val words: WordDao
+}
+Эта абстрактная база данных определяет LocalWord как единственную сущность. Она также определяет words как абстрактное свойство для получения экземпляра WordDao.
+Компилятор Room генерирует все биты, необходимые для работы. Как мило! ☺
+Теперь, когда AppDatabase готова, ваш следующий шаг — использовать Dao в хранилище. Создайте WordStore в новом файле WordStore.kt в data.words.local:
+class WordStore(database: AppDatabase) {
+  // 1
+  private val words = database.words
+  // 2
+  fun all(): List = words.queryAll().map { it.fromLocal() }
+  // 3
+  suspend fun save(words: List) {
+    this.words.insert(words.map { it.toLocal() })
+  }
+  // 4
+  suspend fun isEmpty(): Boolean = words.count() == 0L
+}
+private fun Word.toLocal() = LocalWord(
+  value = value,
+)
+private fun LocalWord.fromLocal() = Word(
+  value = value,
+)
+Функции преобразования, toLocal и fromLocal, преобразуют Word из LocalWord и обратно.
+Приведенный выше код выполняет следующие действия с WordStore:
+1. Сохраняет внутренний экземпляр WordDao как words.
+2. Вызывает all, используя WordDao, для доступа к экземплярам LocalWord. Затем map преобразует их в простые Words.
+3. Берет список простых Words, используя save, преобразует их в значения Room и сохраняет их.
+4. Добавляет функцию для определения наличия сохраненных слов.
+Поскольку вы добавили код для сохранения слов в базу данных, следующим шагом будет обновление WordRepository.kt для использования этого кода. Замените WordRepository на:
+class WordRepository(
+  private val wordSource: WordSource,
+  // 1
+  private val wordStore: WordStore,
+) {
+  // 2
+  constructor(database: AppDatabase) : this(
+    wordSource = WordSource(),
+    wordStore = WordStore(database),
+  )
+  // 3
+  suspend fun allWords(): List = 
+    wordStore.ensureIsNotEmpty().all()
+  private suspend fun WordStore.ensureIsNotEmpty() = apply {
+    if (isEmpty()) {
+      val words = wordSource.load()
+      save(words)
+    }
+  }
+}
+Одним из ключевых компонентов здесь является функция расширения sureIsNotEmpty. Она заполняет базу данных в WordStore, если она пуста.
+1. Чтобы гарантировать, что IsNotEmpty работает, вы добавили WordStore в качестве свойства конструктора.
+2. Для удобства вы добавили вторичный конструктор. Он получает базу данных, которая затем используется для создания WordStore.
+3. Затем вы вызвали ensureIsNotEmpty перед вызовом функции all, чтобы убедиться, что в хранилище есть данные.
+Обновите WordsApp с помощью private database и public wordRepository для работы с недавно обновленным WordRepository. Замените тело WordsApp на:
+// 1
+private val database by lazy {
+Room.databaseBuilder(this, AppDatabase::class.java, 
+                     "database.db").build()
+}
+// 2
+val wordRepository by lazy { WordRepository(database) }
+Каждый процесс Android создает один объект Application и только один. Это одно из мест, где можно определить синглтоны для ручного внедрения, и им нужен контекст Android.
+1. Во-первых, вы хотите определить базу данных Room типа AppDatabase с именем database.db. Вы должны сделать ее lazy, потому что ваше приложение еще не существует, пока вы создаете экземпляр базы данных в this.
+2. Затем определите экземпляр WordRepository с базой данных, которую вы только что создали на предыдущем шаге. Вам также нужно сделать его lazy, чтобы избежать слишком раннего создания базы данных.
+Сделайте сборку и запустите. Вы увидите, что загрузка по-прежнему занимает много времени при первом запуске, но после этого слова будут загружаться сразу при каждом запуске приложения.
+ 
+Следующее, что вам нужно сделать, это убедиться, что вы не загружаете в память тысячи слов. Это может вызвать проблему, когда большие объемы данных загружаются в устройства с небольшим объемом памяти. Лучше всего держать в памяти только те слова, которые отображаются или должны быть отображены.
+ 
+Добавление Pagination
+Чтобы не загружать в память все возможные слова, существующие в словаре, а не только те, которые просматриваются в данный момент, вы добавите в свое приложение разбиение на страницы (пагинация).
+В библиотеке Jetpack Paging 3 есть сопутствующая библиотека для Compose, созданная для этой цели. В этой библиотеке есть несколько важных концепций, которые вы должны понять, прежде чем двигаться дальше:
+PagingSource: использует LoadParams для получения экземпляров LoadResult с помощью load.
+LoadParams: сообщает PagingSource, сколько элементов нужно загрузить, а также включает ключ. Этот ключ обычно является номером страницы, но может быть любым.
+LoadResult: закрытый класс, который сообщает вам, есть ли страница или произошла ли ошибка при ее загрузке.
+Pager: удобная утилита, помогающая преобразовать PagingSource в Flow PagingData.
+PagingData: окончательное представление страницы, которую вы собираетесь использовать в пользовательском интерфейсе.
+К счастью, Room хорошо работает с Jetpack Paging 3 и имеет для этого встроенные функции. Итак, вы можете отредактировать queryAll в WordDao.kt, чтобы включить разбиение на страницы:
+@Query("select * from word order by value")
+fun queryAll(): PagingSource<Int, LocalWord>
+Откройте WordStore.kt, и вы увидите, что компилятор не совсем доволен синтаксисом. Вы исправите это дальше.
+Добавьте следующий код в конец WordStore.kt:
+private fun pagingWord(
+  block: () -> PagingSource<Int, LocalWord>,
+): Flow<PagingData> =
+  Pager(PagingConfig(pageSize = 20)) { block() }.flow
+    .map { page -> page.map { localWord -> localWord.fromLocal() } }
+Здесь вы используете Pager для преобразования PagingSource в Flow PagingData. Вложенная map преобразует каждый LocalWords PagingData в обычные экземпляры Word.
+С нумерацией страниц вы можете обновить all:
+fun all(): Flow<PagingData<Word>> = pagingWord { words.queryAll() }
+Вам нужно обновить код еще в нескольких местах, чтобы избежать ошибок компиляции.
+В WordRepository.kt обновите allWords, чтобы он возвращал Flow вместо List:
+suspend fun allWords(): Flow<PagingData<Word>> = ...
+Обратите внимание, что вы также можете удалить возвращаемый тип и позволить компилятору интерпретировать этот тип.
+Теперь откройте MainViewModel.kt и обновите следующие объявления:
+private val _words = MutableStateFlow(emptyFlow<PagingData>())
+val words: StateFlow<Flow<PagingData>> = _words
+Затем в WordListUi.kt обновите WordListUi, чтобы он получал Flow вместо List:
+fun WordListUi(words: Flow<PagingData>) {
+  ...
+}
+Чтобы слова words работали с LazyColumn, вам нужно изменить способ их сбора. Обновите тело WordsContent следующим образом:
+private fun WordsContent(
+  words: Flow<PagingData>,
+  onSelected: (Word) -> Unit,
+) {
+  // 1
+  val items: LazyPagingItems = words.collectAsLazyPagingItems() 
+  LazyColumn {
+    // 2
+    items(items = items) { word ->   
+    // 3
+      if (word != null) {                      
+        WordColumnItem(
+          word = word
+        ) { onSelected(word) }
+      }
+    }
+  }
+}
+Здесь происходит три новых действия:
+1. Сбор страниц в экземпляр LazyPagingItems. LazyPagingItems управляет загрузкой страниц с помощью корутин.
+2. Перегрузка функции items с библиотекой Paging. Эта новая версия использует LazyPagingItems вместо простого List of items (списка элементов).
+3. Проверка, является ли элемент null или нет. Обратите внимание, что если у вас включены заполнители, значение может быть null.
+Сделайте сборку и запустите приложение. Вы увидите, что оно работает так же, как и раньше. Однако производительность была улучшена, потому что теперь приложение не хранит в памяти сразу весь список слов.
+ 
+ 
+Поиск в словаре
+Вы загрузили список слов в свое приложение, но сам по себе список слов бесполезен. Просто попробуйте прокрутить, чтобы найти слово, начинающееся с буквы B. Это займет некоторое время. Вы должны дать своим пользователям возможность искать слова.
+Для этого вам сначала нужно представить текущий поисковый запрос в MainViewModel.kt. Добавьте следующее внутри MainViewModel вверху:
+private val _search = MutableStateFlow(null as String?)
+val search: StateFlow<String?> = _search
+fun search(term: String?) {
+  _search.value = term
+}
+private StateFlow, называемый _search, содержит текущий запрос. Когда кто-то вызывает search (поиск), он отправляет обновления сборщикам.
+Далее вам необходимо обновить параметры WordListUi следующим образом:
+fun WordListUi(
+  words: Flow<PagingData>,
+  search: String?,
+  onSearch: (String?) -> Unit,
+)
+Здесь вы добавили строку для поиска и обратный вызов для запуска фактического поиска.
+Внутри WordListUi замените MainTopBar на SearchBar:
+topBar = {
+  SearchBar(
+    search = search,
+    onSearch = onSearch,
+  )
+}
+SearchBar Composable не встроен в библиотеки Jetpack, но он включен в начальный проект, если вы хотите его проверить. Вы можете найти его в ui.bars.
+В MainActivity.kt добавьте следующее внутри setContent вверху, чтобы собирать состояние поиска следующим образом:
+val search by viewModel.search.collectAsState()
+Затем обновите вызов WordListUi. Передайте условие поиска и функцию поиска из ViewModel:
+WordListUi(
+  words = words,
+  search = search,
+  onSearch = viewModel::search
+)
+Сделайте сборку и запустите. Вы увидите новую верхнюю панель со значком поиска. Щелкните значок, чтобы развернуть поле ввода поиска:
+ 
+На данный момент ваша функция поиска не реагирует на ввод поискового запроса. Вы займетесь этим вопросом сейчас.
+ 
+Реакция на поиск
+Чтобы сделать вашу функцию поиска полностью функциональной, вам необходимо получать данные и обновлять пользовательский интерфейс для каждого поиска. Для этого вы добавите searchAll в WordDao:
+@Query("select * from word where value like :term || '%' order by value")
+fun searchAll(term: String): PagingSource<Int, LocalWord>
+Основное различие между searchAll и предыдущей функцией, queryAll, заключается в условии where. Взгляните повнимательнее:
+where value like :term || '%'
+where фильтрует слова, начинающиеся с заданной строки :term.
+Затем добавьте all в WordStore.kt, чтобы использовать searchAll:
+fun all(term: String): Flow<PagingData> = 
+   pagingWord { words.searchAll(term) }
+В WordRepository.kt добавьте эту перегрузку allWords следующим образом:
+suspend fun allWords(term: String): Flow<PagingData> =
+    wordStore.ensureIsNotEmpty().all(term)
+По сути, вы передаете term функции all. Как и прежде, используйте sureIsNotEmpty, чтобы убедиться, что Store не пуст.
+Затем вам нужно убедиться, что приложение может отображать текущие результаты поиска. Начните с добавления следующего кода в MainViewModel.kt внутри MainViewModel вверху:
+private val allWords = MutableStateFlow(emptyFlow<PagingData>())
+  private val searchWords = MutableStateFlow(emptyFlow<PagingData>())
+Используя приведенный выше код, вы объявляете два отдельных свойства MutableStateFlow: одно для всех слов, а другое для искомых слов.
+Затем обновите load, чтобы она использовала allWords вместо _words. Код будет выглядеть так:
+fun load() = effect {
+    _isLoading.value = true
+    allWords.value = wordRepository.allWords()
+    _isLoading.value = false  }
+Теперь найдите место в верхней части MainViewModel, где вы объявляете words:
+val words: StateFlow<Flow<PagingData<Word>>> = _words
+Замените words следующими строками:
+@OptIn(ExperimentalCoroutinesApi::class)
+  val words: StateFlow<Flow<PagingData>> = 
+    search
+      .flatMapLatest { search -> words(search) }
+      .stateInViewModel(initialValue = emptyFlow())
+Компилятор пока не распознает слова, но вы скоро это исправите.
+Здесь вы используете search StateFlow для создания нового Flow. Новый Flow выбирает allWords, если нет поискового запроса, или searchWords, если поисковый запрос есть. Это благодаря flatMapLatest.
+Поскольку вы больше не используете _words, вы можете удалить ее.
+Наконец, добавьте следующие функции внизу MainViewModel:
+// 1
+private fun words(search: String?) = when {
+  search.isNullOrEmpty() -> allWords
+  else -> searchWords
+}
+// 2
+private fun  Flow.stateInViewModel(initialValue : T): StateFlow =
+    stateIn(scope = viewModelScope, started = SharingStarted.Lazily, initialValue = initialValue)
+  
+fun search(term: String?) = effect {
+  _search.value = term
+  // 3
+  if (term != null) {
+    searchWords.value = wordRepository.allWords(term)
+  }
+}
+Удалите старую версию search.
+Вот что происходит в вашем приложении теперь, когда вы добавили приведенный выше код:
+1. words решает, следует ли использовать allWords или searchWords в зависимости от того, является ли поиск null или пустым.
+2. Вы используете flatMapLatest для возврата Flow вместо StateFlow. С помощью stateIn вы можете вернуть Flow как StateFlow. Возвращенный Stateflow привязан к viewModelScope. Затем он ожидает сборщика, прежде чем выдавать какие-либо значения. Он также обеспечивает начальное значение.
+3. Если поисковый запрос не null, ваше приложение обновит searchWords новым термином.
+Сделайте сборку и запустите, чтобы проверить свою тяжелую работу по созданию функции поиска. Перезапустите приложение и откройте поле ввода поиска. Найдите такое слово, как "Hello":
+ 
+Ура! Ваша функция поиска работает, она отфильтровывает все остальные слова и показывает только слово, которое вы искали.
+Отображение пустого результата поиска
+Прямо сейчас, если ваш поиск не даст результатов, экран будет пустым. Но было бы лучше дать пользователю некоторую обратную связь, а не пустой экран. Итак, вы реализуете экран, который сообщит пользователю, что его поиск не дал результатов.
+Во-первых, добавьте следующий Composable в конец WordlistUi.kt:
+@Composable
+private fun LazyItemScope.EmptyContent() {
+  Box(
+    modifier = Modifier.fillParentMaxSize(),
+    contentAlignment = Alignment.Center,
+  ) {
+    Text(text = "No words")
+  }
+}
+Это простой Composable, который показывает Text. Вы будете использовать его, когда нет результатов поиска. Composable расширяется от LazyItemScope. Это означает, что вы можете использовать fillParentMaxSize вместо fillMaxSize. Это гарантирует, что макет заполнит размер LazyColumn.
+Затем в LazyColumn в WordsContent вызовите элемент, если элементов нет. Внутри нижней части LazyColumn используйте EmptyContent, чтобы отобразить пустое сообщение:
+if(items.itemCount == 0) {
+  item { EmptyContent() }
+}
+Сделайте сборку и запустите. Теперь есть экран, который ясно показывает пользователю, что его поиск не дал результатов.
+ 
+Наконец, вы закончили свое приложение! Ваши пользователи могут искать определения английских слов. Ваше приложение поможет людям выучить английский язык и выиграть в Scrabble. ☺
+Теперь вы видите, как легко создавать декларативные пользовательские интерфейсы с помощью Compose и как паттерн репозитория дополняет этот дизайн.
+Оригинал статьи
+Комментарии Отменить ответДля отправки комментария вам необходимо авторизоваться. 
+ 
+SwiftBook Самое крупное сообщество iOS разработчиков на языке Swift
+О нас
+Мы в социальных сетяхYouTubeVKontakteFacebookЧат_Telegram
+instagramПолезноеPodlodka
+Подпишись на новости 
+   Политика конфиденциальности
+Пользовательское соглашение
+Найти:
+  © Акулов И.Б., 2014-2021      
+ 
+Сообщить об опечатке
+Текст, который будет отправлен нашим редакторам:
+Ваш комментарий (необязательно):
+Отправить
+Отмена
