@@ -1,0 +1,864 @@
+Python Infrastructure Status
+Python Infrastructure
+          x
+        
+              Get email notifications whenever Python Infrastructure creates,  updates or resolves an incident.
+            
+Email address:
+Enter OTP:
+Resend OTP in:  seconds 
+                    Didn't receive the OTP?
+                    Resend OTP 
+By subscribing you agree to our Privacy Policy. This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+ 
+                Get text message notifications whenever Python Infrastructure creates or resolves an incident.
+            
+Country code:
+Afghanistan (+93)
+Albania (+355)
+Algeria (+213)
+American Samoa (+1)
+Andorra (+376)
+Angola (+244)
+Anguilla (+1)
+Antigua and Barbuda (+1)
+Argentina (+54)
+Armenia (+374)
+Aruba (+297)
+Australia/Cocos/Christmas Island (+61)
+Austria (+43)
+Azerbaijan (+994)
+Bahamas (+1)
+Bahrain (+973)
+Bangladesh (+880)
+Barbados (+1)
+Belarus (+375)
+Belgium (+32)
+Belize (+501)
+Benin (+229)
+Bermuda (+1)
+Bolivia (+591)
+Bosnia and Herzegovina (+387)
+Botswana (+267)
+Brazil (+55)
+Brunei (+673)
+Bulgaria (+359)
+Burkina Faso (+226)
+Burundi (+257)
+Cambodia (+855)
+Cameroon (+237)
+Canada (+1)
+Cape Verde (+238)
+Cayman Islands (+1)
+Central Africa (+236)
+Chad (+235)
+Chile (+56)
+China (+86)
+Colombia (+57)
+Comoros (+269)
+Congo (+242)
+Congo, Dem Rep (+243)
+Costa Rica (+506)
+Croatia (+385)
+Cyprus (+357)
+Czech Republic (+420)
+Denmark (+45)
+Djibouti (+253)
+Dominica (+1)
+Dominican Republic (+1)
+Egypt (+20)
+El Salvador (+503)
+Equatorial Guinea (+240)
+Estonia (+372)
+Ethiopia (+251)
+Faroe Islands (+298)
+Fiji (+679)
+Finland/Aland Islands (+358)
+France (+33)
+French Guiana (+594)
+French Polynesia (+689)
+Gabon (+241)
+Gambia (+220)
+Georgia (+995)
+Germany (+49)
+Ghana (+233)
+Gibraltar (+350)
+Greece (+30)
+Greenland (+299)
+Grenada (+1)
+Guadeloupe (+590)
+Guam (+1)
+Guatemala (+502)
+Guinea (+224)
+Guyana (+592)
+Haiti (+509)
+Honduras (+504)
+Hong Kong (+852)
+Hungary (+36)
+Iceland (+354)
+India (+91)
+Indonesia (+62)
+Iraq (+964)
+Ireland (+353)
+Israel (+972)
+Italy (+39)
+Jamaica (+1)
+Japan (+81)
+Jordan (+962)
+Kenya (+254)
+Korea, Republic of (+82)
+Kosovo (+383)
+Kuwait (+965)
+Kyrgyzstan (+996)
+Laos (+856)
+Latvia (+371)
+Lebanon (+961)
+Lesotho (+266)
+Liberia (+231)
+Libya (+218)
+Liechtenstein (+423)
+Lithuania (+370)
+Luxembourg (+352)
+Macao (+853)
+Macedonia (+389)
+Madagascar (+261)
+Malawi (+265)
+Malaysia (+60)
+Maldives (+960)
+Mali (+223)
+Malta (+356)
+Martinique (+596)
+Mauritania (+222)
+Mauritius (+230)
+Mexico (+52)
+Monaco (+377)
+Mongolia (+976)
+Montenegro (+382)
+Montserrat (+1)
+Morocco/Western Sahara (+212)
+Mozambique (+258)
+Namibia (+264)
+Nepal (+977)
+Netherlands (+31)
+New Zealand (+64)
+Nicaragua (+505)
+Niger (+227)
+Nigeria (+234)
+Norway (+47)
+Oman (+968)
+Pakistan (+92)
+Palestinian Territory (+970)
+Panama (+507)
+Paraguay (+595)
+Peru (+51)
+Philippines (+63)
+Poland (+48)
+Portugal (+351)
+Puerto Rico (+1)
+Qatar (+974)
+Reunion/Mayotte (+262)
+Romania (+40)
+Russia/Kazakhstan (+7)
+Rwanda (+250)
+Samoa (+685)
+San Marino (+378)
+Saudi Arabia (+966)
+Senegal (+221)
+Serbia (+381)
+Seychelles (+248)
+Sierra Leone (+232)
+Singapore (+65)
+Slovakia (+421)
+Slovenia (+386)
+South Africa (+27)
+Spain (+34)
+Sri Lanka (+94)
+St Kitts and Nevis (+1)
+St Lucia (+1)
+St Vincent Grenadines (+1)
+Sudan (+249)
+Suriname (+597)
+Swaziland (+268)
+Sweden (+46)
+Switzerland (+41)
+Taiwan (+886)
+Tajikistan (+992)
+Tanzania (+255)
+Thailand (+66)
+Togo (+228)
+Tonga (+676)
+Trinidad and Tobago (+1)
+Tunisia (+216)
+Turkey (+90)
+Turks and Caicos Islands (+1)
+Uganda (+256)
+Ukraine (+380)
+United Arab Emirates (+971)
+United Kingdom (+44)
+United States (+1)
+Uruguay (+598)
+Uzbekistan (+998)
+Venezuela (+58)
+Vietnam (+84)
+Virgin Islands, British (+1)
+Virgin Islands, U.S. (+1)
+Yemen (+967)
+Zambia (+260)
+Zimbabwe (+263)
+Phone number:
+Change number
+Enter OTP:
+Resend OTP in: 30 seconds 
+                      Didn't receive the OTP?
+                      Resend OTP 
+Message and data rates may apply. By subscribing you agree to our Privacy Policy, the Atlassian Terms of Service, and the Atlassian Privacy Policy. This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+ 
+              Get incident updates and maintenance status messages in Slack.
+            
+Subscribe via Slack
+By subscribing you acknowledge our Privacy Policy. In addition, you agree to the Atlassian Cloud Terms of Service and acknowledge Atlassian's Privacy Policy.
+              Get webhook notifications whenever Python Infrastructure creates an incident, updates an incident, resolves an incident or changes a component status.
+            
+Webhook URL:
+The URL we should send the webhooks to
+Email address:
+We'll send you email if your endpoint fails
+By subscribing you agree to our Privacy Policy. This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+ 
+Follow @PythonStatus
+            or 
+            view our profile.
+            
+            Get the Atom Feed or RSS Feed.
+          
+            Service Under Maintenance
+          
+        Uptime over the past 90 days. View historical uptime.
+         python.org
+       
+?
+    Operational
+  
+      python.org - CDN
+   
+?
+    Operational
+  
+      python.org - Backends
+   
+?
+    Operational
+  
+         PyPI
+       
+    Operational
+  
+90 days ago
+  
+99.99
+    % uptime
+  
+Today
+      pypi.org - General
+   
+    Operational
+  
+90 days ago
+  
+99.99
+    % uptime
+  
+Today
+      pypi.org - CDN
+   
+?
+    Operational
+  
+      pypi.org - Backends
+   
+?
+    Operational
+  
+      pypi.org - Email
+   
+?
+    Operational
+  
+      files.pythonhosted.org - Files
+   
+?
+    Operational
+  
+      files.pythonhosted.org - Redirects
+   
+?
+    Operational
+  
+      files.pythonhosted.org - Redirects Backends
+   
+?
+    Operational
+  
+         PyPI Hosting Platforms
+       
+    Operational
+  
+      AWS elasticache-us-east-2
+   
+    Operational
+  
+      AWS elb-us-east-2
+   
+    Operational
+  
+      AWS ec2-us-east-2
+   
+    Operational
+  
+      AWS rds-us-east-2
+   
+    Operational
+  
+      Google Cloud Platform Google Cloud Storage
+   
+    Operational
+  
+         docs.python.org
+       
+    Operational
+  
+      docs.python.org - Backends
+   
+?
+    Operational
+  
+      docs.python.org - CDN
+   
+    Operational
+  
+      bugs.python.org
+   
+    Operational
+  
+      wiki.python.org
+   
+    Operational
+  
+         mail.python.org
+       
+    Operational
+  
+      Message Handling Services
+   
+    Operational
+  
+      Mailing Lists and Archives - Mailman
+   
+    Operational
+  
+      Mailing Lists and Archives - Mailman 3
+   
+    Operational
+  
+      psfmember.org
+   
+    Operational
+  
+      us.pycon.org
+   
+    Operational
+  
+         PyPy
+       
+    Operational
+  
+      pypy.org
+   
+    Operational
+  
+      speed.pypy.org
+   
+    Operational
+  
+         Content Delivery Network
+       
+?
+    Under Maintenance
+  
+      Fastly Asia/Pacific (HK)
+   
+    Operational
+  
+      Fastly US East (IAD)
+   
+    Operational
+  
+      Fastly US East (MIA)
+   
+    Operational
+  
+      Fastly US Central (DEN)
+   
+    Operational
+  
+      Fastly US Central (DFW)
+   
+    Operational
+  
+      Fastly US West (SEA)
+   
+    Operational
+  
+      Fastly US West (SJC)
+   
+    Operational
+  
+      Fastly Europe (FRA)
+   
+    Operational
+  
+      Fastly Europe (AMS)
+   
+    Operational
+  
+      Fastly Europe (LCY)
+   
+    Under Maintenance
+  
+      Fastly Europe (LHR)
+   
+    Operational
+  
+      Fastly Asia/Pacific (SYD)
+   
+    Operational
+  
+      Fastly Asia/Pacific (NZ)
+   
+    Operational
+  
+      Fastly Brisbane (BNE)
+   
+    Operational
+  
+      Fastly Dubai (FJR)
+   
+    Operational
+  
+      Fastly Melbourne (MEL)
+   
+    Operational
+  
+      Fastly Osaka (ITM)
+   
+    Operational
+  
+      Fastly Perth (PER)
+   
+    Operational
+  
+      Fastly Tokyo (HND)
+   
+    Operational
+  
+      Fastly Tokyo (TYO)
+   
+    Operational
+  
+      Fastly Wellington (WLG)
+   
+    Operational
+  
+      Fastly Dublin (DUB)
+   
+    Operational
+  
+      Fastly Copenhagen (CPH)
+   
+    Operational
+  
+      Fastly Frankfurt (HHN)
+   
+    Operational
+  
+      Fastly Helsinki (HEL)
+   
+    Operational
+  
+      Fastly London (LON)
+   
+    Operational
+  
+      Fastly Madrid (MAD)
+   
+    Operational
+  
+      Fastly Manchester (MAN)
+   
+    Operational
+  
+      Fastly Milan (MXP)
+   
+    Operational
+  
+      Fastly Oslo (OSL)
+   
+    Operational
+  
+      Fastly Buenos Aires (EZE)
+   
+    Operational
+  
+      Fastly Bogota (BOG)
+   
+    Operational
+  
+      Fastly Curitiba (CWB)
+   
+    Operational
+  
+      Fastly Rio de Janeiro (GIG)
+   
+    Operational
+  
+      Fastly Santiago (SCL)
+   
+    Operational
+  
+      Fastly Johannesburg (JNB)
+   
+    Operational
+  
+      Fastly Cape Town (CPT)
+   
+    Operational
+  
+      Fastly Vancouver (YVR)
+   
+    Operational
+  
+      Fastly Toronto (YYZ)
+   
+    Operational
+  
+      Fastly St. Louis (STL)
+   
+    Operational
+  
+      Fastly Palo Alto (PAO)
+   
+    Operational
+  
+      Fastly Newark (EWR)
+   
+    Operational
+  
+      Fastly New York (LGA)
+   
+    Operational
+  
+      Fastly Montreal (YUL)
+   
+    Operational
+  
+      Fastly Minneapolis (STP)
+   
+    Operational
+  
+      Fastly Minneapolis (MSP)
+   
+    Operational
+  
+      Fastly Los Angeles (BUR)
+   
+    Operational
+  
+      Fastly Kansas City (MCI)
+   
+    Operational
+  
+      Fastly Houston (IAH)
+   
+    Operational
+  
+      Fastly Dallas (DAL)
+   
+    Operational
+  
+      Fastly Columbus (CMH)
+   
+    Operational
+  
+      Fastly Chicago (CHI)
+   
+    Operational
+  
+      Fastly Boston (BOS)
+   
+    Operational
+  
+      Fastly Atlanta (PDK)
+   
+    Operational
+  
+      Fastly Atlanta (FTY)
+   
+    Operational
+  
+      Fastly Ashburn (WDC)
+   
+    Operational
+  
+      Fastly New Delhi (DEL)
+   
+    Operational
+  
+      Fastly Mumbai (BOM)
+   
+    Operational
+  
+      Fastly Chennai (MAA)
+   
+    Operational
+  
+      Fastly Vienna (VIE)
+   
+    Operational
+  
+      Fastly Stockholm (BMA)
+   
+    Operational
+  
+      Fastly Paris (CDG)
+   
+    Operational
+  
+      Fastly Purging
+   
+    Operational
+  
+      Fastly Tokyo (NRT)
+   
+    Operational
+  
+      Fastly Singapore (QPG)
+   
+    Operational
+  
+      Fastly Seoul (ICN)
+   
+    Operational
+  
+      Fastly Manila (MNL)
+   
+    Operational
+  
+      Fastly Kuala Lumpur (KUL)
+   
+    Operational
+  
+      Fastly Dubai (DXB)
+   
+    Operational
+  
+      Fastly Christchurch (CHC)
+   
+    Operational
+  
+      Fastly Adelaide (ADL)
+   
+    Operational
+  
+      Fastly Ghana (ACC)
+   
+    Operational
+  
+      Fastly Sāo Paulo (CGH)
+   
+    Operational
+  
+      Fastly Lima (LIM)
+   
+    Operational
+  
+      Fastly Fortaleza (FOR)
+   
+    Operational
+  
+      Fastly Seattle (BFI)
+   
+    Operational
+  
+      Fastly Portland (PDX)
+   
+    Operational
+  
+      Fastly Phoenix (PHX)
+   
+    Operational
+  
+      Fastly Los Angeles (LGB - LAX/SNA)
+   
+    Operational
+  
+      Fastly Honolulu (HNL)
+   
+    Operational
+  
+      Fastly Gainesville (GNV)
+   
+    Operational
+  
+      Fastly Detroit (DTW)
+   
+    Operational
+  
+      Fastly Columbus (LCK)
+   
+    Operational
+  
+      Fastly Calgary (YYC)
+   
+    Operational
+  
+      Fastly Atlanta (ATL)
+   
+    Operational
+  
+      Fastly Sydney (SYD)
+   
+    Operational
+  
+      Fastly Palo Alto (PAO)
+   
+    Operational
+  
+      Fastly Amsterdam (AMS)
+   
+    Operational
+  
+      Fastly Kolkata (CCU)
+   
+    Operational
+  
+      Fastly Hyderabad (HYD)
+   
+    Operational
+  
+      Fastly Palermo (PMO)
+   
+    Operational
+  
+      Fastly Sofia (SOF)
+   
+    Operational
+  
+      Fastly Rome (FCO)
+   
+    Operational
+  
+      Fastly Munich (MUC)
+   
+    Operational
+  
+      Fastly Milan (LIN)
+   
+    Operational
+  
+      Fastly Marseille (MRS)
+   
+    Operational
+  
+      Fastly Lisbon (LIS)
+   
+    Operational
+  
+      Fastly Brussels (BRU)
+   
+    Operational
+  
+    Operational
+  
+    Degraded Performance
+  
+    Partial Outage
+  
+    Major Outage
+  
+    Maintenance
+  
+            Major outage
+          
+            Partial outage
+          
+          No downtime recorded on this day.
+        
+          No data exists for this day.
+        
+          had a major outage.
+        
+          had a partial outage.
+        
+Related
+No incidents or maintenance related to this downtime.
+System Metrics
+Month
+Week
+Day
+                    PyPI CDN Edge Errors
+                    
+                      ?
+ 
+Fetching
+                    PyPI Files CDN Edge Errors
+                    
+                      ?
+ 
+Fetching
+                    PyPI CDN Miss Times
+                                      
+Fetching
+                    PyPI Files CDN Miss Times
+                                      
+Fetching
+Past Incidents
+Mar 29, 2024
+No incidents reported today.
+Mar 28, 2024
+PyPI New User Registration and New Project Creation Temporarily Suspended.
+Resolved -
+      	This incident has been resolved.
+            Mar 28, 12:56 UTC
+        
+Identified -
+      	We have temporarily suspended new project creation and new user registration to mitigate an ongoing malware upload campaign.
+            Mar 28, 02:16 UTC
+        
+Mar 27, 2024
+No incidents reported.
+Mar 26, 2024
+No incidents reported.
+Mar 25, 2024
+No incidents reported.
+Mar 24, 2024
+No incidents reported.
+Mar 23, 2024
+No incidents reported.
+Mar 22, 2024
+No incidents reported.
+Mar 21, 2024
+No incidents reported.
+Mar 20, 2024
+No incidents reported.
+Mar 19, 2024
+No incidents reported.
+Mar 18, 2024
+No incidents reported.
+Mar 17, 2024
+No incidents reported.
+Mar 16, 2024
+No incidents reported.
+Mar 15, 2024
+No incidents reported.
+← Incident History
+Powered by Atlassian Statuspage

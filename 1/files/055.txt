@@ -1,0 +1,880 @@
+Python Software Foundation News: Announcing Python Software Foundation Fellow Members for Q3 2023! 🎉
+  News from the Python Software Foundation
+Thursday, January 18, 2024
+Announcing Python Software Foundation Fellow Members for Q3 2023! 🎉
+The PSF is pleased to announce its third batch of PSF Fellows for 2023! Let us welcome the new PSF Fellows for Q3! The following people continue to do amazing things for the Python community:Dustin IngramLinkedIn, Github, Social, WebsiteMarlene Mhangami Twitter, GitHub, WebsiteNikita SobolevGitHub, WebsiteRaquel DouLinkedIn Thank you for your continued contributions. We have added you to our Fellow roster online.The above members help support the Python ecosystem by being phenomenal leaders, sustaining the growth of the Python scientific community, maintaining virtual Python communities, maintaining Python libraries, creating educational material, organizing Python events and conferences, starting Python communities in local regions, and overall being great mentors in our community. Each of them continues to help make Python more accessible around the world. To learn more about the new Fellow members, check out their links above.Let's continue recognizing Pythonistas all over the world for their impact on our community. The criteria for Fellow members is available online: https://www.python.org/psf/fellows/. If you would like to nominate someone to be a PSF Fellow, please send a description of their Python accomplishments and their email address to psf-fellow at python.org. Quarter 4 nominations are currently in review. We are accepting nominations for Quarter 1 2024 through February 20, 2024.Are you a PSF Fellow and want to help the Work Group review nominations? Contact us at psf-fellow at python.org
+Posted by
+Olivia Sauls
+at
+1/18/2024 09:44:00 AM
+Newer Post
+Older Post
+Home
+Mission
+The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers.
+Python Software Foundation
+Grants Program
+Membership
+Awards
+Meeting Minutes
+PSF Sponsors
+A big thank you to the above PSF sponsors for supporting our mission!
+Tweets by ThePSF 
+Blog Archive
+        ▼ 
+      
+2024
+(8)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(3)
+        ▼ 
+      
+January
+(4)
+Kicking off 2024 strong, thanks to our community!
+Announcing Python Software Foundation Fellow Membe...
+Announcing the Deputy Developer in Residence and t...
+EU’s Cyber Resilience Act Passes with Wins for Ope...
+        ► 
+      
+2023
+(37)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(3)
+        ► 
+      
+June
+(5)
+        ► 
+      
+May
+(12)
+        ► 
+      
+April
+(2)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2022
+(35)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(6)
+        ► 
+      
+May
+(12)
+        ► 
+      
+April
+(2)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2021
+(42)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(4)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(2)
+        ► 
+      
+June
+(4)
+        ► 
+      
+May
+(12)
+        ► 
+      
+April
+(5)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(4)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2020
+(51)
+        ► 
+      
+December
+(8)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(4)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(10)
+        ► 
+      
+April
+(11)
+        ► 
+      
+March
+(4)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2019
+(45)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(4)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(5)
+        ► 
+      
+May
+(11)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(5)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2018
+(31)
+        ► 
+      
+December
+(5)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(5)
+        ► 
+      
+April
+(2)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2017
+(32)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(6)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(2)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(3)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(4)
+        ► 
+      
+2016
+(27)
+        ► 
+      
+December
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+August
+(4)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(6)
+        ► 
+      
+April
+(4)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2015
+(67)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(4)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(6)
+        ► 
+      
+May
+(4)
+        ► 
+      
+April
+(13)
+        ► 
+      
+March
+(14)
+        ► 
+      
+February
+(9)
+        ► 
+      
+January
+(4)
+        ► 
+      
+2014
+(14)
+        ► 
+      
+October
+(1)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2013
+(18)
+        ► 
+      
+November
+(1)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(5)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2012
+(21)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(4)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2011
+(55)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(7)
+        ► 
+      
+September
+(5)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(8)
+        ► 
+      
+April
+(8)
+        ► 
+      
+March
+(13)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2010
+(35)
+        ► 
+      
+December
+(4)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(8)
+        ► 
+      
+June
+(6)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(4)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2009
+(21)
+        ► 
+      
+December
+(1)
+        ► 
+      
+October
+(1)
+        ► 
+      
+September
+(6)
+        ► 
+      
+August
+(4)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(1)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(1)
+        ► 
+      
+February
+(1)
+        ► 
+      
+2008
+(23)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(1)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(1)
+        ► 
+      
+May
+(3)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(5)
+        ► 
+      
+February
+(4)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2007
+(26)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(6)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2006
+(39)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(4)
+        ► 
+      
+October
+(5)
+        ► 
+      
+September
+(4)
+        ► 
+      
+August
+(4)
+        ► 
+      
+July
+(3)
+        ► 
+      
+May
+(7)
+        ► 
+      
+April
+(6)
+        ► 
+      
+March
+(3)
+Powered by Blogger.

@@ -1,0 +1,626 @@
+Python Insider: Python 3.12.0 beta 1 released
+Python core development news and information.
+Monday, May 22, 2023
+Python 3.12.0 beta 1 released
+I'm pleased to announce the release of Python 3.12 beta 1 (and feature freeze for Python 3.12).https://www.python.org/downloads/release/python-3120b1/This is a beta preview of Python 3.12Python 3.12 is still in development. This release, 3.12.0b1, is the first of four planned beta release previews of 3.12.Beta release previews are intended to give the wider community the opportunity to test new features and bug fixes and to prepare their projects to support the new feature release.We strongly encourage maintainers of third-party Python projects to test with 3.12 during the beta phase and report issues found to [the Python bug tracker (Issues · python/cpython · GitHub) as soon as possible. While the release is planned to be feature complete entering the beta phase, it is possible that features may be modified or, in rare cases, deleted up until the start of the release candidate phase (Monday, 2023-07-31). Our goal is to have no ABI changes after beta 4 and as few code changes as possible after 3.12.0rc1, the first release candidate. To achieve that, it will be extremely important to get as much exposure for 3.12 as possible during the beta phase.Please keep in mind that this is a preview release and its use is not recommended for production environments.Major new features of the 3.12 series, compared to 3.11Some of the new major new features and changes in Python 3.12 are:New type annotation syntax for generic classes (PEP 695).More flexible f-string parsing, allowing many things previously disallowed (PEP 701).Even more improved error messages. More exceptions potentially caused by typos now make suggestions to the user.Many large and small performance improvements (like PEP 709).Support for the Linux perf profiler to report Python function names in traces.The deprecated wstr and wstr_length members of the C implementation of unicode objects were removed, per PEP 623.In the unittest module, a number of long deprecated methods and classes were removed. (They had been deprecated since Python 3.1 or 3.2).The deprecated smtpd and distutils modules have been removed (see PEP 594 and PEP 632. The setuptools package (installed by default in virtualenvs and many other places) continues to provide the distutils module.A number of other old, broken and deprecated functions, classes and methods have been removed.Invalid backslash escape sequences in strings now warn with SyntaxWarning instead of DeprecationWarning, making them more visible. (They will become syntax errors in the future.)The internal representation of integers has changed in preparation for performance enhancements. (This should not affect most users as it is an internal detail, but it may cause problems for Cython-generated code.)(Hey, fellow core developer, if a feature you find important is missing from this list, let Thomas know.)For more details on the changes to Python 3.12, see What’s new in Python 3.12. The next pre-release of Python 3.12 will be 3.12.0b2, currently scheduled for 2023-05-29.More resourcesOnline Documentation.PEP 693, the Python 3.12 Release Schedule.Report bugs via GitHub Issues.Help fund Python and its community.And now for something completely differentAs the first beta release marks the point at which we fork off the release branch from the main development branch, here’s a poem about forks in the road.Two roads diverged in a yellow wood,And sorry I could not travel bothAnd be one traveler, long I stoodAnd looked down one as far as I couldTo where it bent in the undergrowth;Then took the other, as just as fair,And having perhaps the better claim,Because it was grassy and wanted wear;Though as for that the passing thereHad worn them really about the same,And both that morning equally layIn leaves, no step had trodden black.Oh, I kept the first for another day!Yet knowing how way leads on to way,I doubted if I should ever come back.I shall be telling this with a sighSomewhere ages and ages hence:Two roads diverged in a wood, and I —I took the one less traveled by,And that has made all the difference.The Road Not Taken, by Robert Frost.Enjoy the new releaseThanks to all of the many volunteers who help make Python Development and these releases possible! Please consider supporting our efforts by volunteering yourself or through organization contributions to the Python Software Foundation.Your release team,Thomas WoutersNed DeilySteve Dower
+Posted by
+Thomas Wouters
+at
+4:55 PM
+Email ThisBlogThis!Share to TwitterShare to FacebookShare to Pinterest
+Newer Post
+Older Post
+Home
+Subscribe
+Subscribe to Python Insider via RSS, or Twitter
+Related Links
+python.org
+Python-Dev mailing list
+Python Developer's Guide
+Translations
+Chinese (Simplified)
+Chinese (Traditional)
+French
+German
+Japanese
+Korean
+Portuguese
+Romanian
+Russian
+Spanish
+Python-Dev Blogs
+Eli Bendersky
+The life of an Ollama prompt
+3 weeks ago
+PyPy Status Blog
+PyPy's blog has moved
+3 years ago
+Pumpichank
+Creating Python Snaps
+8 years ago
+Tim Golden
+London Python Dojo December 2014
+9 years ago
+R. David Murray
+Asyncio Implementation Overview
+9 years ago
+The Voidspace Techie Blog
+unittest.mock and mock 1.0 alpha 1
+12 years ago
+Tarek Ziadé
+More privacy please
+12 years ago
+Deep Thoughts by Raymond Hettinger
+Python’s super() considered super!
+12 years ago
+Brett Cannon
+Jesse Noller
+Boredom & Laziness
+Brian Curtin
+Senthil Kumaran
+Blog Archive
+        ► 
+      
+2024
+(5)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(1)
+        ▼ 
+      
+2023
+(18)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(2)
+        ▼ 
+      
+May
+(1)
+Python 3.12.0 beta 1 released
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2022
+(23)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(2)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(3)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2021
+(24)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(3)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(4)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2020
+(32)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(3)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(4)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(4)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2019
+(36)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(8)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(5)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(2)
+        ► 
+      
+March
+(7)
+        ► 
+      
+February
+(3)
+        ► 
+      
+2018
+(24)
+        ► 
+      
+December
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(3)
+        ► 
+      
+April
+(3)
+        ► 
+      
+March
+(5)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2017
+(17)
+        ► 
+      
+December
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(3)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2016
+(18)
+        ► 
+      
+December
+(5)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(5)
+        ► 
+      
+May
+(1)
+        ► 
+      
+2015
+(14)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(1)
+        ► 
+      
+September
+(3)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(1)
+        ► 
+      
+May
+(2)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2014
+(8)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+May
+(1)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(2)
+        ► 
+      
+2013
+(5)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(1)
+        ► 
+      
+2012
+(9)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+2011
+(25)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(1)
+        ► 
+      
+May
+(7)
+        ► 
+      
+April
+(7)
+        ► 
+      
+March
+(5)
+Contributors
+A.M. Kuchling
+Alfonso de la Guarda
+Anthony Scopatz
+Antoine P.
+Benjamin Peterson
+Brian Curtin
+Davidmh
+Donald Stufft
+Doug Hellmann
+Ee Durbin
+Ezio Melotti
+Georg Brandl
+Jesse
+Kelsey Hightower
+Larry Hastings
+Mathieu Leduc-Hamel
+Michael Markert
+Mike Driscoll
+Ned Deily
+Pablo Galindo
+Paul Moore
+Philip Jenvey
+Sumana Harihareswara
+Thomas Wouters
+Unknown
+Unknown
+Łukasz Langa
+Éric Araujo
+e
+haypo
+tp
+Copyright
+Python Insider by the Python Core Developers is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.Based on a work at blog.python.org.
+Powered by Blogger.
+ 

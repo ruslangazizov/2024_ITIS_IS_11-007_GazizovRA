@@ -1,0 +1,427 @@
+The PyCon US Blog
+Skip to main content
+The PyCon US Blog
+Search
+Search This Blog
+Posts
+Travel Grants Process for PyCon US 2024
+Posted by
+Deb Nicholson
+March 07, 2024
+Awarding travel grants to community members to PyCon US and seeing how much they get out of and contribute to the event is one of the most rewarding things we do at the PSF; every year, we wish we could award more. PyCon US 2024 received 852 travel grant requests totaling almost $1.5 million. With estimated revenue of $1.8M and conference costs of $2.1M, we didn’t have the funds to support every applicant. In round one, we offered $360K, or about 24%, of the grant requests received. This is a record number of travel grants received and offered.  We know many folks hoped for a grant and were disappointed not to receive one, so we wanted to share more about the process. Travel Grant Funding PyCon US travel grants are funded by various sources, from PyCon US ticket sales and sponsorships, Python Core Devs, the PSF, and generous contributions from PyLadies. In 2024, some funding sources have contracted. To date, we have not received any corporate travel grant sponsorships. Furthermore, the
+Share
+Get link
+Facebook
+Twitter
+Pinterest
+Email
+Other Apps
+Post a Comment
+Read more
+PyCon US 2024 Schedule Launch. Introducing our Keynote Speakers
+Posted by
+Mariatta
+February 28, 2024
+ We’re excited to announce the full schedule for PyCon US 2024! This year, we received a record number of proposals that our Program Committee had to go through: 990 proposals! As a comparison, last year we received a little more than 700 proposals, so it’s almost 40% more proposals compared to the previous year! Thank you to everyone who submitted their proposals.   With these many proposals received, we could easily have enough speakers to fill the program for multiple Python conferences! Our volunteer Program Committee has worked hard to select only 14% among the many strong proposals to create an excellent conference program covering a wide range of subjects for attendees to enjoy. We’re looking forward to meeting all the presenters and learning from them at PyCon US 2024 . Meet Our Keynote Speakers We are thrilled to announce our Keynote speakers. Please welcome Jay Miller, Kate Chapman, Simon Willison, and Sumana Harihareswara who will be sharing their insights and perspectives o
+Share
+Get link
+Facebook
+Twitter
+Pinterest
+Email
+Other Apps
+Post a Comment
+Read more
+Support PyLadies: Donate to the PyLadies Charity Auction at PyCon US 2024!
+Posted by
+Marie Nordin
+February 15, 2024
+PyCon US 2024  is quickly approaching and we can’t wait to see all of you there! This year, we are reaching out to our community to help support one of our favorite events: the PyLadies Charity Auction . We know our wonderful community is bursting with creative, artsy, and generous folks. That’s why we are sending out a community wide call to donate items to this year’s auction. If you’d like to support PyLadies  by making a donation, please fill out the PyLadies Charity Auction donation form . To learn more about the event and what to donate, read on! What to Donate Need inspiration? Over the years, we’ve seen that people love to bid on items that are artsy, nerdy, and Python-specific. Art, decor, customized tech, and vintage PyCon or Python related swag are all examples of things that will inspire a friendly bidding war. To get more inspiration search ‘PyLadies Auction’ on social media  or check out the PyLadies Instagram . Items that are personalized or have a story tend to attract 
+Share
+Get link
+Facebook
+Twitter
+Pinterest
+Email
+Other Apps
+Post a Comment
+Read more
+Applications For Booth Space on Startup Row Are Now Open!
+Posted by
+Jason Rowley
+January 22, 2024
+ Applications For Booth Space on Startup Row Are Now Open To all the startup founders out there, ‌PyCon US organizers have some awesome news for you! The application window for  Startup Row  at PyCon US is now open. You’ve got until March 15th to apply, but don’t delay. (And if you want to skip all this reading and go straight to the application,  here’s a link for ya .) That’s right! Your startup could get the best of what PyCon US has to offer: Coveted Expo Hall booth space Exclusive placement on the PyCon US website Access to the PyCon Jobs Fair (since, after all, there’s no better place to meet and recruit Python professionals) A unique in-person platform to access a fantastically diverse crowd of thousands of engineers, data wranglers, academic researchers, students, and enthusiasts who come to PyCon US. Corporate sponsors pay thousands of dollars for this level of access, but to support the entrepreneurial community PyCon US organizers are excited to give the PyCon experience to 
+Share
+Get link
+Facebook
+Twitter
+Pinterest
+Email
+Other Apps
+Post a Comment
+Read more
+PyCon US Hatchery is Back in 2024!
+Posted by
+Mariatta
+January 17, 2024
+We are pleased to announce the return of the Hatchery program in PyCon US 2024. What is the Hatchery program? This program offers the pathways for PyCon US attendees to introduce new tracks, activities, summits, demos, etc., at PyCon US—activities that all share and fulfill the Python Software Foundation’s mission  within the PyCon US schedule. The program began as a trial led by Ee Durbin and Naomi Ceder in 2018, resulting in the creation of several new tracks that are now staples of PyCon US, for example: PyCon US Charlas, Mentored Sprints, and Maintainer’s Summit. The Hatchery program was paused during the pandemic, and we are excited to restart and refresh this program for PyCon US 2024. With the Hatchery program, we want to provide the opportunity for you, the Python community members, to take active participation and lead new activities and events at PyCon US. We want to provide a transparent process for this, and we also want to ensure that every attendee, whether they are new t
+Share
+Get link
+Facebook
+Twitter
+Pinterest
+Email
+Other Apps
+Post a Comment
+Read more
+PyCon US 2024 Registration Launch! 
+Posted by
+Olivia Sauls
+December 13, 2023
+The news you’ve been waiting for is finally here - registration for PyCon US 2024 is officially open! PyCon US will take place May 15 - May 23, 2024, online and in Pittsburgh, Pennsylvania. The core of the conference, May 17 - May 19, 2024, packs in three days worth of our community’s best talks, amazing keynote speakers, and our famed lightning talks to close out each day— but it is much more than that! It’s gathering together with the members of our community, to learn from, share with, and connect. It’s joining a conversation in the hallway with the creators of open source projects. It’s taking yourself from beginner to intermediate, or intermediate to advanced. For some, it’s getting started with Python for the first time. We have loads of exciting plans in the works for this year, and we can’t wait to spend this special time with you! How to Register Once you have created an account on the PyCon US 2024 conference website , you can register via the registration button on your dash
+Share
+Get link
+Facebook
+Twitter
+Pinterest
+Email
+Other Apps
+Post a Comment
+Read more
+PyCon US 2024 Launches!
+Posted by
+Mariatta
+October 25, 2023
+We can’t believe it’s been six months since PyCon US 2023, where we came together to celebrate 20 years of PyCon US. If you’d like to revisit some memories of PyCon US 2023, check out our recap and video recordings . Meanwhile, the PyCon US team has continued to plan the next iteration of PyCon US. We’re excited to announce the launch of our conference website, along with the Call for Proposals, and our sponsorship program. We're Coming to Pittsburgh! After two years in Salt Lake City, we will be hosting PyCon US 2024 and 2025 in Pittsburgh, Pennsylvania. We will continue to return in person, with health and safety guidelines  in place. If you’re unable to make it in person, you can attend our virtual event, PyConOX. PyCon US 2024 will be held at the David L. Lawrence Convention Center  in Pittsburgh, Pennsylvania, on the following dates: May 15-16, Tutorials and Sponsor Presentations May 17-19, Main Conference Days—Keynotes, Talks, Charlas, Expo Hall, and more May 20-23, Sprints (
+Share
+Get link
+Facebook
+Twitter
+Pinterest
+Email
+Other Apps
+Post a Comment
+Read more
+More posts
+Archive
+March 20241
+February 20242
+January 20242
+December 20231
+October 20231
+June 20231
+April 20232
+March 20231
+February 20234
+December 20221
+October 20222
+August 20221
+June 20221
+May 20222
+April 20224
+February 20222
+January 20221
+December 20211
+October 20212
+August 20211
+June 20211
+May 20216
+April 20212
+March 20211
+February 20211
+December 20203
+July 20201
+May 20202
+April 20205
+March 20204
+February 20202
+January 20202
+December 20192
+November 20193
+October 20193
+September 20191
+August 20191
+June 20191
+May 20193
+April 20194
+March 20193
+February 20193
+January 20192
+December 20182
+November 20181
+October 20183
+September 20181
+August 20181
+June 20181
+April 20183
+February 20181
+January 20181
+December 20171
+November 20173
+October 20172
+September 20172
+May 20174
+April 20173
+March 20171
+February 20172
+January 20171
+December 20162
+November 20163
+October 20161
+June 20161
+May 20164
+April 20164
+March 20165
+February 20164
+January 20162
+December 20152
+November 20153
+October 20151
+September 20154
+June 20151
+May 20152
+April 20153
+March 20157
+February 20155
+January 20154
+December 20146
+October 20141
+September 20144
+August 20142
+July 20143
+June 20144
+May 20141
+April 20146
+March 20146
+February 201412
+January 20148
+December 20134
+November 20131
+October 20134
+September 20134
+August 20135
+July 20132
+June 20133
+May 20132
+April 20133
+March 201315
+February 201312
+January 201318
+December 201213
+November 20125
+October 20122
+September 201213
+August 201210
+July 20127
+June 201210
+May 20126
+April 20121
+March 201211
+February 201225
+January 201214
+December 20116
+November 20112
+October 20117
+September 20119
+August 201113
+July 20115
+June 20119
+May 20114
+April 20111
+March 201110
+February 201121
+January 201114
+December 20102
+September 20102
+August 20102
+July 20106
+June 20103
+April 20103
+March 20101
+February 20107
+January 20107
+December 20097
+November 20095
+October 20097
+September 20098
+August 20092
+July 20094
+June 20092
+May 20094
+April 20093
+March 20099
+February 20098
+January 20093
+October 20083
+September 20082
+August 20081
+June 20081
+May 20081
+April 200825
+March 200812
+February 20089
+January 20085
+December 20071
+November 20075
+October 20072
+September 20073
+August 20072
+July 20071
+April 20072
+March 20074
+February 200718
+January 200721
+December 20064
+November 20066
+October 20066
+February 20061
+January 20061
+April 20051
+March 200543
+Show more
+Show less
+Labels
+2018
+5k
+apology
+Argentina
+caktus
+Canada
+cfp
+charity
+childcare
+cleveland
+code of conduct
+confoo.ca
+COVID-19
+dinner
+duckling
+earlybird
+education
+education summit
+europython
+EuroSciPy
+expo hall
+financial aid
+financialaid
+Finland
+France
+funrun
+german
+german pycon. PyCon DE
+guidebook
+hatchery
+hotel
+http://www.blogger.com/img/blank.gif
+interview
+job fair
+Johannesburg
+keynotes
+kiwipycon
+latin america
+launch
+lightning talks
+media statement
+Montreal
+open
+open spaces
+outreach
+p
+passport
+podcast
+portland
+poster session
+posters
+proposals
+pyarkansas
+pycon
+PyCon AU
+PyCon Australia
+PyCon Canada
+PyCon DE
+PyCon US
+PyCon US 2022
+pycon-apac
+pycon-au
+pycon-jp
+pycon-nz
+Pycon-Tech
+pycon-us
+PyCon08
+pycon09
+pycon2010
+pycon2011
+pycon2012
+pycon2013
+pycon2014
+pycon2015
+pyconde
+pyconde2012
+pyconfi
+pyconza
+pyladies
+PyLadies Auction
+PyTexas
+Python
+raspberry pi
+reception
+registration
+reservations
+rupy
+schedule
+Science
+scipy
+shuttle bus
+soldout
+South Africa
+Spanish
+sponsors
+sponsorship
+sprint
+sprints
+startup row
+students
+summit
+survey
+talks
+talksiwanttosee
+tutorials
+volunteers
+youngcoder
+Show more
+Show less
+PyCon Blog
+This is the blog of PyCon US, with guest contributions from Python conferences everywhere!
+Visit our official web site.
+PyCon in the World
+PyCon in the United States
+EuroPython in Europe
+EuroSciPy in Europe
+PyCon Asia Pacific in Singapore
+PyCon AR in Argentina
+Python Brasil in Brazil
+Python DE in Germany
+PyCon FR in France
+PyCon India
+PyCon Italia in Italy
+PyCon Japan
+Kiwi PyCon in New Zealand
+PyCon PL in Poland
+PyCon RU in Russia
+PyCon UK in the United Kingdom
+SciPy (US)
+SciPy (India)
+PyCon Australia in Australia
+Python FI in Finland
+Python IE in Ireland
+Python UA in Ukraine
+PyOhio in the United States
+PyTexas in the United States
+PyArkansas in the United States
+PyCon CA in Canada 
+PyCon TW in Taiwan 
+PyCon ES in Spain 
+PyCon PH in the Philippines 
+Tweets by pycon 
+Powered by Blogger
+Copyright © 2009–2021 Python Software Foundation

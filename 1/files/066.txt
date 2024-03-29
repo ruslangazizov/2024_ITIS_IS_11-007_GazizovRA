@@ -1,0 +1,887 @@
+Python Software Foundation News: The Python Software Foundation has been authorized by the CVE Program as a CVE Numbering Authority (CNA)
+  News from the Python Software Foundation
+Tuesday, August 29, 2023
+The Python Software Foundation has been authorized by the CVE Program as a CVE Numbering Authority (CNA)
+When a vulnerability is disclosed in software you're depending on, the last thing you want is for the remediation process to be confusing or ad-hoc. Towards the goal of a more secure and safe Python ecosystem, the Python Software Foundation has been authorized by the CVE Program as a CVE Numbering Authority (CNA).Being authorized as a CNA is one milestone in the Python Software Foundation's strategy to improve the vulnerability response processes of critical projects in the Python ecosystem. The Python Software Foundation CNA scope covers Python and pip, two 
+projects which are fundamental to the rest of Python ecosystem.By becoming a CNA, the PSF will be providing the following benefits to in-scope projects:Paid staffing for CNA operations rather than requiring volunteer time. Quicker allocations of CVE IDs after a vulnerability is reported.Involvement of each projects' security response teams during the reporting of vulnerabilities.Richer published advisories and CVE Records including descriptions, metadata, and remediation information.Consistent disclosures and publishing locations. CNA operations will be staffed primarily by the recently hired Security Developer-in-Residence Seth Michael Larson, Ee Durbin, and Chloe Gerhardson.The PSF wants to help other Open Source organizations and will be sharing lessons learned and developing guidance on becoming a CNA and day-to-day operations.To be alerted of newly published vulnerabilities in Python or pip, subscribe to the security-announce@python.org mailing list for security advisories. There is also a new advisory database published to GitHub using the machine-readable Open Source Vulnerability (OSV) format.If you'd like to report a security vulnerability to Python or pip, the vulnerability disclosure policy is available on python.org.The mission of the Common Vulnerabilities and Exposures (CVE®) Program is toidentify, define, and catalog publicly disclosed cybersecurity vulnerabilities. Thereis one CVE Record for each vulnerability in the catalog. The vulnerabilities arediscovered then assigned and published by organizations from around the worldthat have partnered with the CVE Program. Partners publish CVE Records tocommunicate consistent descriptions of vulnerabilities. Information technologyand cybersecurity professionals use CVE Records to ensure they are discussingthe same issue, and to coordinate their efforts to prioritize and address thevulnerabilities.The Python Software Foundation (PSF) is the non-profit organization 
+behind Python and PyPI. Our mission is to promote, protect, and advance 
+the Python programming language, and to support and facilitate the 
+growth of a diverse and international community of Python programmers. 
+The PSF supports the Python community using corporate sponsorships, 
+grants, and donations. Are you interested in sponsoring or donating to 
+the PSF so it can continue supporting Python and its community? Check 
+out our sponsorship program, donate directly here, or contact our team!
+Posted by
+Seth Michael Larson
+at
+8/29/2023 03:26:00 PM
+Newer Post
+Older Post
+Home
+Mission
+The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers.
+Python Software Foundation
+Grants Program
+Membership
+Awards
+Meeting Minutes
+PSF Sponsors
+A big thank you to the above PSF sponsors for supporting our mission!
+Tweets by ThePSF 
+Blog Archive
+        ► 
+      
+2024
+(8)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(4)
+        ▼ 
+      
+2023
+(37)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ▼ 
+      
+August
+(3)
+The Python Software Foundation has been authorized...
+Announcing Our New PyPI Safety & Security Engineer!
+Announcing Python Software Foundation Fellow Membe...
+        ► 
+      
+June
+(5)
+        ► 
+      
+May
+(12)
+        ► 
+      
+April
+(2)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2022
+(35)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(6)
+        ► 
+      
+May
+(12)
+        ► 
+      
+April
+(2)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2021
+(42)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(4)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(2)
+        ► 
+      
+June
+(4)
+        ► 
+      
+May
+(12)
+        ► 
+      
+April
+(5)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(4)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2020
+(51)
+        ► 
+      
+December
+(8)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(4)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(10)
+        ► 
+      
+April
+(11)
+        ► 
+      
+March
+(4)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2019
+(45)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(4)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(5)
+        ► 
+      
+May
+(11)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(5)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2018
+(31)
+        ► 
+      
+December
+(5)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(5)
+        ► 
+      
+April
+(2)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2017
+(32)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(6)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(2)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(3)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(4)
+        ► 
+      
+2016
+(27)
+        ► 
+      
+December
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+August
+(4)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(6)
+        ► 
+      
+April
+(4)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2015
+(67)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(4)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(6)
+        ► 
+      
+May
+(4)
+        ► 
+      
+April
+(13)
+        ► 
+      
+March
+(14)
+        ► 
+      
+February
+(9)
+        ► 
+      
+January
+(4)
+        ► 
+      
+2014
+(14)
+        ► 
+      
+October
+(1)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2013
+(18)
+        ► 
+      
+November
+(1)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(5)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2012
+(21)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(4)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2011
+(55)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(7)
+        ► 
+      
+September
+(5)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(8)
+        ► 
+      
+April
+(8)
+        ► 
+      
+March
+(13)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2010
+(35)
+        ► 
+      
+December
+(4)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(8)
+        ► 
+      
+June
+(6)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(4)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2009
+(21)
+        ► 
+      
+December
+(1)
+        ► 
+      
+October
+(1)
+        ► 
+      
+September
+(6)
+        ► 
+      
+August
+(4)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(1)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(1)
+        ► 
+      
+February
+(1)
+        ► 
+      
+2008
+(23)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(1)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(1)
+        ► 
+      
+May
+(3)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(5)
+        ► 
+      
+February
+(4)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2007
+(26)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(6)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2006
+(39)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(4)
+        ► 
+      
+October
+(5)
+        ► 
+      
+September
+(4)
+        ► 
+      
+August
+(4)
+        ► 
+      
+July
+(3)
+        ► 
+      
+May
+(7)
+        ► 
+      
+April
+(6)
+        ► 
+      
+March
+(3)
+Powered by Blogger.

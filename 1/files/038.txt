@@ -1,0 +1,198 @@
+The GitHub Blog - Updates, ideas, and inspiration from GitHub to help developers build and design software.
+	Skip to content
+/
+Blog
+EngineeringProductSecurityOpen SourceEnterpriseChangelogCommunityEducationCompanyPolicy 
+Try GitHub Copilot
+Contact sales
+Search by Keyword
+					Search				
+The GitHub Blog
+Open Source
+Empowering women through open sourceA discussion about how tech is aiding organizations fighting for gender equality, what it means to be a woman in tech and the world today, and advice on how we all move forward.
+Jiyon Yun
+March 28, 2024
+Community
+Game Bytes · March 2024Game Bytes is our monthly series taking a peek at the world of gamedev on GitHub—featuring game engine updates, game jam details, open source games, mods, maps, and more. Game on!
+Lee Reilly
+March 27, 2024
+Engineering
+Using GitHub Copilot in your IDE: Tips, tricks and best practicesGitHub Copilot is a powerful AI assistant. Learn practical strategies to get the most out of GitHub Copilot to generate the most relevant and useful code suggestions in your editor.
+Kedasha Kerr
+March 25, 2024
+Product
+Insider newsletter digest: 4 things you didn't know you could do with GitHub ProjectsUnlock the secret to organization and collaboration magic with our GitHub Projects tips and tricks roundup. 
+Sara Verdi
+March 21, 2024
+ 
+Product
+Found means fixed: Introducing code scanning autofix, powered by GitHub Copilot and CodeQLNow in public beta for GitHub Advanced Security customers, code scanning autofix helps developers remediate more than two-thirds of supported alerts with little or no editing.
+Pierre Tempel & Eric Tooley
+March 20, 2024
+Security
+Gaining kernel code execution on an MTE-enabled Pixel 8In this post, I’ll look at CVE-2023-6241, a vulnerability in the Arm Mali GPU that allows a malicious app to gain arbitrary kernel code execution and root on an Android phone. I’ll show how this vulnerability can be exploited even when Memory Tagging Extension (MTE), a powerful mitigation, is enabled on the device.
+Man Yue Mo
+March 18, 2024
+Latest posts
+Enterprise
+GitHub Availability Report: February 2024In February, we experienced two incidents that resulted in degraded performance across GitHub services.
+Jakub Oleksy
+March 13, 2024
+Policy
+Exploring an increase in circumvention claims in our transparency dataOur full year of 2023 transparency reporting data is now available and we’re taking a deep dive into how a form change caused an abrupt increase in circumvention claims. 
+Kevin Xu
+March 7, 2024
+Engineering
+Hard and soft skills for developers coding in the age of AIWhile AI revolutionizes software development, it still relies on developers to pilot its use. In this blog, we’ll cover the skills that developers need to have for navigating this new AI-powered coding frontier. 
+Sara Verdi
+March 7, 2024
+Engineering
+How GitHub uses merge queue to ship hundreds of changes every dayHere's how merge queue transformed the way GitHub deploys changes to production at scale, so you can do the same for your organization.
+Will Smythe & Lawrence Gripper
+March 6, 2024
+ 
+Changelog
+View all changes
+CircleCI is now a GitHub secret scanning partner
+March 28, 2024
+Actions Usage Metrics public beta
+March 28, 2024
+Dependabot grouped security updates generally available
+March 28, 2024
+Mergify is now a GitHub secret scanning partner
+March 27, 2024
+View all changes
+Engineering
+Using GitHub Copilot in your IDE: Tips, tricks and best practicesGitHub Copilot is a powerful AI assistant. Learn practical strategies to get the most out of GitHub Copilot to generate the most relevant and useful code suggestions in your editor.
+Kedasha Kerr
+March 25, 2024
+Hard and soft skills for developers coding in the age of AIWhile AI revolutionizes software development, it still relies on developers to pilot its use. In this blog, we’ll cover the skills that developers need to have for navigating this new AI-powered coding frontier. 
+Sara Verdi
+How GitHub uses merge queue to ship hundreds of changes every dayHere's how merge queue transformed the way GitHub deploys changes to production at scale, so you can do the same for your organization.
+Will Smythe & Lawrence Gripper
+Keeping repository maintainer information accurateDiscover how keeping repository maintainer information accurate through CODEOWNERS files and automating maintenance with tools like cleanowners fosters efficient collaboration and sustainable software projects.
+Zack Koppert
+ 
+Community
+Game Bytes · February 2024Game Bytes is our monthly series taking a peek at the world of gamedev on GitHub—featuring game engine updates, game jam details, open source games, mods, maps, and more. Game on! 🕹️
+Lee Reilly
+Meet Kayla: A college student and open source ambassadorFrom learner to mentor, Kayla, an All In for Students ambassador, has become an open source leader on her campus.
+Sarah Oyetubo
+Powering advancements of AI in the open: Apply now to GitHub AcceleratorFunding AI advancements in the open, and opening applications for second Accelerator cohort.
+Stormy Peters
+Game Bytes · March 2024Game Bytes is our monthly series taking a peek at the world of gamedev on GitHub—featuring game engine updates, game jam details, open source games, mods, maps, and more. Game on!
+Lee Reilly
+March 27, 2024
+ 
+Trending stories
+1Using GitHub Copilot in your IDE: Tips, tricks and best practicesGitHub Copilot is a powerful AI assistant. Learn practical strategies to get the most out of GitHub Copilot to generate the most relevant and useful code suggestions in your editor.
+Kedasha Kerr
+2Octoverse: The state of open source and rise of AI in 2023In this year’s Octoverse report, we study how open source activity around AI, the cloud, and Git are changing the developer experience. 
+Kyle Daigle & GitHub Staff
+3Found means fixed: Introducing code scanning autofix, powered by GitHub Copilot and CodeQLNow in public beta for GitHub Advanced Security customers, code scanning autofix helps developers remediate more than two-thirds of supported alerts with little or no editing.
+Pierre Tempel & Eric Tooley
+4Game Bytes · March 2024Game Bytes is our monthly series taking a peek at the world of gamedev on GitHub—featuring game engine updates, game jam details, open source games, mods, maps, and more. Game on!
+Lee Reilly
+5How to use GitHub Copilot: Prompts, tips, and use casesIn this prompt guide for GitHub Copilot, two GitHub developer advocates, Rizel and Michelle, will share examples and best practices for communicating your desired results to the AI pair programmer. 
+Rizel Scarlett & Michelle Mannering
+6How to build a CI/CD pipeline with GitHub Actions in four simple stepsA quick guide on the advantages of using GitHub Actions as your preferred CI/CD tool—and how to build a CI/CD pipeline with it.
+Brian Douglas
+Product
+Insider newsletter digest: 4 things you didn't know you could do with GitHub ProjectsUnlock the secret to organization and collaboration magic with our GitHub Projects tips and tricks roundup. 
+Sara Verdi
+March 21, 2024
+Found means fixed: Introducing code scanning autofix, powered by GitHub Copilot and CodeQLNow in public beta for GitHub Advanced Security customers, code scanning autofix helps developers remediate more than two-thirds of supported alerts with little or no editing.
+Pierre Tempel & Eric Tooley
+How we’re using GitHub Projects to standardize our workflows and stay alignedLearn how we’re managing feature releases and establishing best practices within and across teams at GitHub using GitHub Projects.
+Riley Broughten
+GitHub Copilot Enterprise is now generally availableOur most advanced AI offering to date is customized to your organization’s knowledge and codebase, infusing GitHub Copilot throughout the software development lifecycle.
+Thomas Dohmke
+Insider newsletter digest: Cook up a controller with GitHub CopilotWhether you're coding up a storm or cooking up code, building a controller function with AI is your secret sauce to a flavorful app.
+Sara Verdi
+Get started with v4 of GitHub Actions ArtifactsWe listened to your feedback and released new versions (v4) of actions/upload-artifact and actions/download-artifact. While this version of the actions to upload and download artifacts includes up to 10x performance improvements and several new features, there are also key differences from previous versions that may require updates to your workflows.
+Konrad Pabjan & Rob Herley
+Copilot in GitHub Support is now available!Experience AI-powered assistance for queries related to GitHub topics.
+Ajay Sarkaria
+ 
+Security
+AppSec is harder than you think. Here’s how AI can help.In practice, shifting left has been more about shifting the burden rather than the ability. But AI is bringing its promise closer to reality. Here’s how. 
+Eric Tooley
+Rotating credentials for GitHub.com and new GHES patchesGitHub received a bug bounty report of a vulnerability that allowed access to the environment variables of a production container. We have patched GitHub.com and rotated all affected credentials. If you have hardcoded or cached a public key owned by GitHub, read on to ensure your systems continue working with the new keys.
+Jacob DePriest
+Keeping secrets out of public repositoriesWith push protection now enabled by default, GitHub helps open source developers safeguard their secrets, and their reputations.
+Eric Tooley & Courtney Claessens
+How to stay safe from repo-jackingRepo-jacking is a specific type of supply chain attack. This blog post explains what it is, what the risk is, and what you can do to stay safe.
+Kevin Backhouse
+Build code security skills with the GitHub Secure Code GameLearn to find and fix security issues while having fun with Secure Code Game, now with new challenges focusing on JavaScript, Python, Go, and GitHub Actions!
+Joseph Katsioloudes
+The architecture of SAST tools: An explainer for developersMore developers will have to fix security issues in the age of shifting left. Here, we break down how SAST tools can help them find and address vulnerabilities. 
+Nicole Choi
+Gaining kernel code execution on an MTE-enabled Pixel 8In this post, I’ll look at CVE-2023-6241, a vulnerability in the Arm Mali GPU that allows a malicious app to gain arbitrary kernel code execution and root on an Android phone. I’ll show how this vulnerability can be exploited even when Memory Tagging Extension (MTE), a powerful mitigation, is enabled on the device.
+Man Yue Mo
+March 18, 2024
+ 
+Open Source
+Empowering women through open sourceA discussion about how tech is aiding organizations fighting for gender equality, what it means to be a woman in tech and the world today, and advice on how we all move forward.
+Jiyon Yun
+March 28, 2024
+Game Bytes · March 2024Game Bytes is our monthly series taking a peek at the world of gamedev on GitHub—featuring game engine updates, game jam details, open source games, mods, maps, and more. Game on!
+Lee Reilly
+March 27, 2024
+Game Bytes · February 2024Game Bytes is our monthly series taking a peek at the world of gamedev on GitHub—featuring game engine updates, game jam details, open source games, mods, maps, and more. Game on! 🕹️
+Lee Reilly
+February 29, 2024
+Highlights from Git 2.44The first Git release of 2024 is here! Take a look at some of our highlights on what's new in Git 2.44.
+Taylor Blau
+February 23, 2024
+Release Radar · January 2024 EditionGet excited for this month's Release Radar. Maintainers were hard at work this past month, shipping major updates for you all. Read on for our top staff picks.
+Michelle Mannering
+February 2, 2024
+EnterpriseGitHub Availability Report: February 2024In February, we experienced two incidents that resulted in degraded performance across GitHub services.
+Jakub Oleksy
+GitHub Enterprise Server 3.12 is now generally availableWith this version, customers can choose how to best scale their security strategy, gain more control over deployments, and so much more.
+Van Ly & David Jarzebowski
+GitHub Copilot Learning Pathway: Accelerate your business with AILearn what GitHub Copilot can help your business achieve in this expert-guided GitHub Learning Pathway, featuring insights from tech leaders at top organizations.
+Ryan J. Salva
+EducationGitHub Fund 2024 and beyond: Looking to the futureCelebrate the first year of GitHub Fund, our first investments, and a brief look of where we’re going. 
+Stormy Peters
+Empowering Uruguay’s future workforce with AIDuring the second cycle of Git Commit Uruguay, students learned the basics of AI and built their own AI-powered projects.
+Karen Bella
+GitHub Certifications are generally availableUnlock your full potential with GitHub Certifications! Earning a GitHub certification will give you the competitive advantage of showing up as a GitHub expert.
+Kedasha Kerr
+PolicyExploring an increase in circumvention claims in our transparency dataOur full year of 2023 transparency reporting data is now available and we’re taking a deep dive into how a form change caused an abrupt increase in circumvention claims. 
+Kevin Xu
+New data and visualizations highlight the resilience of international developer collaborationDiscover the latest trends and insights on public software development activity on GitHub with the release of Q3 2023 data for the Innovation Graph.
+Mike Linksvayer
+GitHub Innovation Graph Q2 2023 Data ReleaseDiscover the latest trends and insights on public software development activity on GitHub with the release of Q2 2023 data for the Innovation Graph.
+Kevin Xu
+CompanyEmpowering all developers to build without barriersGitHub has been awarded the 2024 Axe Accessibility at Scale Award from Deque Systems. Read more about how we’ve implemented accessibility at scale.
+Ed Summers
+How GitHub’s Developer Experience team improved innerloop developmentOur latest solution to the ubiquitous engineering problem of integration testing in a distributed service ecosystem here at GitHub.
+Belal Taher
+GitHub’s top blog posts of 2023As the year winds down, we're highlighting some of the incredible work from GitHub’s engineers, product teams, and security researchers.
+Laura Lindeman & GitHub Staff
+ Subscribe to our newsletter
+Code with confidence. Discover tips, technical guides, and best practices in our biweekly newsletter just for devs.
+Subscribe
+                  Yes please, I’d like GitHub and affiliates to use my information for personalized communications, targeted advertising and campaign effectiveness. See the GitHub Privacy Statement for more details.              
+Subscribe
+ProductFeaturesSecurityEnterpriseCustomer StoriesPricingResourcesPlatformDeveloper APIPartnersAtomElectronGitHub DesktopSupportDocsCommunity ForumTrainingStatusContactCompanyAboutBlogCareersPressShop
+X icon
+GitHub on X
+Facebook icon
+GitHub on Facebook
+YouTube icon
+GitHub on YouTube
+Twitch icon
+GitHub on Twitch
+TikTok icon
+GitHub on TikTok
+LinkedIn icon
+GitHub on LinkedIn
+GitHub icon
+GitHub’s organization on GitHub
+© 2024 GitHub, Inc.
+Terms
+Privacy
+Manage Cookies
+Do not share my personal information

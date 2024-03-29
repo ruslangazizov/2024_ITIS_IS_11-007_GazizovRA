@@ -1,0 +1,405 @@
+ 
+Python Documentation by Version | Python.org
+Notice: While JavaScript is not essential for this website, your interaction with the content will be limited. Please turn JavaScript on for the full experience. 
+Skip to content
+▼ Close
+                
+Python
+PSF
+Docs
+PyPI
+Jobs
+Community
+▲ The Python Network
+                
+Donate
+≡ Menu
+Search This Site
+                                    GO
+                                
+A A
+Smaller
+Larger
+Reset
+Socialize
+LinkedIn
+Mastodon
+Chat on IRC
+Twitter
+About
+Applications
+Quotes
+Getting Started
+Help
+Python Brochure
+Downloads
+All releases
+Source code
+Windows
+macOS
+Other Platforms
+License
+Alternative Implementations
+Documentation
+Docs
+Audio/Visual Talks
+Beginner's Guide
+Developer's Guide
+FAQ
+Non-English Docs
+PEP Index
+Python Books
+Python Essays
+Community
+Diversity
+Mailing Lists
+IRC
+Forums
+PSF Annual Impact Report
+Python Conferences
+Special Interest Groups
+Python Logo
+Python Wiki
+Code of Conduct
+Community Awards
+Get Involved
+Shared Stories
+Success Stories
+Arts
+Business
+Education
+Engineering
+Government
+Scientific
+Software Development
+News
+Python News
+PSF Newsletter
+PSF News
+PyCon US News
+News from the Community
+Events
+Python Events
+User Group Events
+Python Events Archive
+User Group Events Archive
+Submit an Event
+ 
+Python Documentation by Version
+Python Documentation by Version
+Some previous versions of the documentation remain available
+online.  Use the list below to select a version to view.
+For unreleased (in development) documentation, see
+In Development Versions.
+Python 3.12.2, documentation released on 6 February 2024.
+Python 3.12.1, documentation released on 8 December 2023.
+Python 3.12.0, documentation released on 2 October 2023.
+Python 3.11.8, documentation released on 6 February 2024.
+Python 3.11.7, documentation released on 4 December 2023.
+Python 3.11.6, documentation released on 2 October 2023.
+Python 3.11.5, documentation released on 24 August 2023.
+Python 3.11.4, documentation released on 6 June 2023.
+Python 3.11.3, documentation released on 5 April 2023.
+Python 3.11.2, documentation released on 8 February 2023.
+Python 3.11.1, documentation released on 6 December 2022.
+Python 3.11.0, documentation released on 24 October 2022.
+Python 3.10.14, documentation released on 19 March 2024.
+Python 3.10.13, documentation released on 24 August 2023.
+Python 3.10.12, documentation released on 6 June 2023.
+Python 3.10.11, documentation released on 5 April 2023.
+Python 3.10.10, documentation released on 8 February 2023.
+Python 3.10.9, documentation released on 6 December 2022.
+Python 3.10.8, documentation released on 8 October 2022.
+Python 3.10.7, documentation released on 6 September 2022.
+Python 3.10.6, documentation released on 8 August 2022.
+Python 3.10.5, documentation released on 6 June 2022.
+Python 3.10.4, documentation released on 24 March 2022.
+Python 3.10.3, documentation released on 16 March 2022.
+Python 3.10.2, documentation released on 14 January 2022.
+Python 3.10.1, documentation released on 6 December 2021.
+Python 3.10.0, documentation released on 4 October 2021.
+Python 3.9.19, documentation released on 19 March 2024.
+Python 3.9.18, documentation released on 24 August 2023.
+Python 3.9.17, documentation released on 6 June 2023.
+Python 3.9.16, documentation released on 6 December 2022.
+Python 3.9.15, documentation released on 11 October 2022.
+Python 3.9.14, documentation released on 6 September 2022.
+Python 3.9.13, documentation released on 17 May 2022.
+Python 3.9.12, documentation released on 24 March 2022.
+Python 3.9.11, documentation released on 16 March 2022.
+Python 3.9.10, documentation released on 14 January 2022.
+Python 3.9.9, documentation released on 15 November 2021.
+Python 3.9.8, documentation released on 05 November 2021.
+Python 3.9.7, documentation released on 30 August 2021.
+Python 3.9.6, documentation released on 28 June 2021.
+Python 3.9.5, documentation released on 3 May 2021.
+Python 3.9.4, documentation released on 4 April 2021.
+Python 3.9.3, documentation released on 2 April 2021.
+Python 3.9.2, documentation released on 19 February 2021.
+Python 3.9.1, documentation released on 8 December 2020.
+Python 3.9.0, documentation released on 5 October 2020.
+Python 3.8.19, documentation released on 19 March 2024.
+Python 3.8.18, documentation released on 24 August 2023.
+Python 3.8.17, documentation released on 6 June 2023.
+Python 3.8.16, documentation released on 6 December 2022.
+Python 3.8.15, documentation released on 11 October 2022.
+Python 3.8.14, documentation released on 6 September 2022.
+Python 3.8.13, documentation released on 16 March 2022.
+Python 3.8.12, documentation released on 30 August 2021.
+Python 3.8.11, documentation released on 28 June 2021.
+Python 3.8.10, documentation released on 3 May 2021.
+Python 3.8.9, documentation released on 2 April 2021.
+Python 3.8.8, documentation released on 19 February 2021.
+Python 3.8.7, documentation released on 21 December 2020.
+Python 3.8.6, documentation released on 23 September 2020.
+Python 3.8.5, documentation released on 20 July 2020.
+Python 3.8.4, documentation released on 13 July 2020.
+Python 3.8.3, documentation released on 13 May 2020.
+Python 3.8.2, documentation released on 24 February 2020.
+Python 3.8.1, documentation released on 18 December 2019.
+Python 3.8.0, documentation released on 14 October 2019.
+Python 3.7.17, documentation released on 6 June 2023.
+Python 3.7.16, documentation released on 6 December 2022.
+Python 3.7.15, documentation released on 11 October 2022.
+Python 3.7.14, documentation released on 6 September 2022.
+Python 3.7.13, documentation released on 16 March 2022.
+Python 3.7.12, documentation released on 4 September 2021.
+Python 3.7.11, documentation released on 28 June 2021.
+Python 3.7.10, documentation released on 15 February 2021.
+Python 3.7.9, documentation released on 17 August 2020.
+Python 3.7.8, documentation released on 27 June 2020.
+Python 3.7.7, documentation released on 10 March 2020.
+Python 3.7.6, documentation released on 18 December 2019.
+Python 3.7.5, documentation released on 15 October 2019.
+Python 3.7.4, documentation released on 08 July 2019.
+Python 3.7.3, documentation released on 25 March 2019.
+Python 3.7.2, documentation released on 24 December 2018.
+Python 3.7.1, documentation released on 20 October 2018.
+Python 3.7.0, documentation released on 27 June 2018.
+Python 3.6.15, documentation released on 4 September 2021.
+Python 3.6.14, documentation released on 28 June 2021.
+Python 3.6.13, documentation released on 15 February 2021.
+Python 3.6.12, documentation released on 17 August 2020.
+Python 3.6.11, documentation released on 27 June 2020.
+Python 3.6.10, documentation released on 18 December 2019.
+Python 3.6.9, documentation released on 02 July 2019.
+Python 3.6.8, documentation released on 24 December 2018.
+Python 3.6.7, documentation released on 20 October 2018.
+Python 3.6.6, documentation released on 27 June 2018.
+Python 3.6.5, documentation released on 28 March 2018.
+Python 3.6.4, documentation released on 19 December 2017.
+Python 3.6.3, documentation released on 03 October 2017.
+Python 3.6.2, documentation released on 17 July 2017.
+Python 3.6.1, documentation released on 21 March 2017.
+Python 3.6.0, documentation released on 23 December 2016.
+Python 3.5.10, documentation released on 5 September 2020.
+Python 3.5.8, documentation released on 1 November 2019.
+Python 3.5.7, documentation released on 18 March 2019.
+Python 3.5.6, documentation released on 8 August 2018.
+Python 3.5.5, documentation released on 4 February 2018.
+Python 3.5.4, documentation released on 25 July 2017.
+Python 3.5.3, documentation released on 17 January 2017.
+Python 3.5.2, documentation released on 27 June 2016.
+Python 3.5.1, documentation released on 07 December 2015.
+Python 3.5.0, documentation released on 13 September 2015.
+Python 3.4.10, documentation released on 18 March 2019.
+Python 3.4.9, documentation released on 8 August 2018.
+Python 3.4.8, documentation released on 4 February 2018.
+Python 3.4.7, documentation released on 25 July 2017.
+Python 3.4.6, documentation released on 17 January 2017.
+Python 3.4.5, documentation released on 26 June 2016.
+Python 3.4.4, documentation released on 06 December 2015.
+Python 3.4.3, documentation released on 25 February 2015.
+Python 3.4.2, documentation released on 4 October 2014.
+Python 3.4.1, documentation released on 18 May 2014.
+Python 3.4.0, documentation released on 16 March 2014.
+Python 3.3.7, documentation released on 19 September 2017.
+Python 3.3.6, documentation released on 12 October 2014.
+Python 3.3.5, documentation released on 9 March 2014.
+Python 3.3.4, documentation released on 9 February 2014.
+Python 3.3.3, documentation released on 17 November 2013.
+Python 3.3.2, documentation released on 15 May 2013.
+Python 3.3.1, documentation released on 7 April 2013.
+Python 3.3.0, documentation released on 29 September 2012.
+Python 3.2.6, documentation released on 11 October 2014.
+Python 3.2.5, documentation released on 15 May 2013.
+Python 3.2.4, documentation released on 7 April 2013.
+Python 3.2.3, documentation released on 10 April 2012.
+Python 3.2.2, documentation released on 4 September 2011.
+Python 3.2.1, documentation released on 10 July 2011.
+Python 3.2, documentation released on 20 February 2011.
+Python 3.1.5, documentation released on 9 April 2012.
+Python 3.1.4, documentation released on 11 June 2011.
+Python 3.1.3, documentation released on 27 November 2010.
+Python 3.1.2, documentation released on 21 March 2010.
+Python 3.1.1, documentation released on 17 August 2009.
+Python 3.1, documentation released on 27 June 2009.
+Python 3.0.1, documentation released on 13 February 2009.
+Python 3.0, documentation released on 3 December 2008.
+Python 2.7.18, documentation released on 20 April 2020
+Python 2.7.17, documentation released on 19 October 2019
+Python 2.7.16, documentation released on 02 March 2019
+Python 2.7.15, documentation released on 30 April 2018
+Python 2.7.14, documentation released on 16 September 2017
+Python 2.7.13, documentation released on 17 December 2016
+Python 2.7.12, documentation released on 26 June 2016.
+Python 2.7.11, documentation released on 5 December 2015.
+Python 2.7.10, documentation released on 23 May 2015.
+Python 2.7.9, documentation released on 10 December 2014.
+Python 2.7.8, documentation released on 1 July 2014.
+Python 2.7.7, documentation released on 31 May 2014.
+Python 2.7.6, documentation released on 10 November 2013.
+Python 2.7.5, documentation released on 15 May 2013.
+Python 2.7.4, documentation released on 6 April 2013.
+Python 2.7.3, documentation released on 9 April 2012.
+Python 2.7.2, documentation released on 11 June 2011.
+Python 2.7.1, documentation released on 27 November 2010.
+Python 2.7, documentation released on 4 July 2010.
+Python 2.6.9, documentation released on 29 October 2013.
+Python 2.6.8, documentation released on 10 April 2012.
+Python 2.6.7, documentation released on 3 June 2011.
+Python 2.6.6, documentation released on 24 August 2010.
+Python 2.6.5, documentation released on 19 March 2010.
+Python 2.6.4, documentation released on 25 October 2009.
+Python 2.6.3, documentation released on 2 October 2009.
+Python 2.6.2, documentation released on 14 April 2009.
+Python 2.6.1, documentation released on 4 December 2008.
+Python 2.6, documentation released on 1 October 2008.
+Python 2.5.4, documentation released on 23 December 2008.
+Python 2.5.3, documentation released on 19 December 2008.
+Python 2.5.2, documentation released on 21 February 2008.
+Python 2.5.1, documentation released on 18 April 2007.
+Python 2.5, documentation released on 19 September 2006.
+Python 2.4.4, documentation released on 18 October 2006.
+Python 2.4.3, documentation released on 29 March 2006.
+Python 2.4.2, documentation released on 28 September 2005.
+Python 2.4.1, documentation released on 30 March 2005.
+Python 2.4, documentation released on 30 November 2004.
+Python 2.3.5, documentation released on 8 February 2005.
+Python 2.3.4, documentation released on 27 May 2004.
+Python 2.3.3, documentation released on 19 December 2003.
+Python 2.3.2, documentation released on
+3 October 2003.
+Python 2.3.1, documentation released on
+23 September 2003.
+Python 2.3, documentation released on
+29 July 2003.
+Python 2.2.3, documentation released on
+30 May 2003.
+Python 2.2.2, documentation released on
+14 October 2002.
+Python 2.2.1, documentation released on
+10 April 2002.
+Python 2.2p1, documentation released on
+29 March 2002.
+Python 2.2, documentation released on
+21 December 2001.
+Python 2.1.3, documentation released on
+8 April 2002.
+Python 2.1.2, documentation released on
+16 January 2002.
+Python 2.1.1, documentation released on
+20 July 2001.
+Python 2.1, documentation released on
+15 April 2001.
+Python 2.0.1, documentation released on
+22 June 2001.
+Python 2.0, documentation released on
+16 October 2000.
+Python 1.6, documentation released on
+5 September 2000.
+Python 1.5.2p2, documentation released on
+22 March 2000.
+Python 1.5.2p1, documentation released on
+6 July 1999.
+Python 1.5.2, documentation released on
+30 April 1999.
+Python 1.5.1p1, documentation released on
+6 August 1998.
+Python 1.5.1, documentation released on
+14 April 1998.
+Python 1.5, documentation released on
+17 February 1998.
+Python 1.4, documentation released on
+25 October 1996.
+In Development Versions
+The latest, and unreleased, documentation for versions of Python still under development:
+https://docs.python.org/dev/
+https://docs.python.org/3/
+The PSF
+The Python Software Foundation is the organization behind Python. Become a member of the PSF and help advance the software and our mission. 
+▲ Back to Top
+About
+Applications
+Quotes
+Getting Started
+Help
+Python Brochure
+Downloads
+All releases
+Source code
+Windows
+macOS
+Other Platforms
+License
+Alternative Implementations
+Documentation
+Docs
+Audio/Visual Talks
+Beginner's Guide
+Developer's Guide
+FAQ
+Non-English Docs
+PEP Index
+Python Books
+Python Essays
+Community
+Diversity
+Mailing Lists
+IRC
+Forums
+PSF Annual Impact Report
+Python Conferences
+Special Interest Groups
+Python Logo
+Python Wiki
+Code of Conduct
+Community Awards
+Get Involved
+Shared Stories
+Success Stories
+Arts
+Business
+Education
+Engineering
+Government
+Scientific
+Software Development
+News
+Python News
+PSF Newsletter
+PSF News
+PyCon US News
+News from the Community
+Events
+Python Events
+User Group Events
+Python Events Archive
+User Group Events Archive
+Submit an Event
+Contributing
+Developer's Guide
+Issue Tracker
+python-dev list
+Core Mentorship
+Report a Security Issue
+▲ Back to Top
+ 
+Help & General Contact
+Diversity Initiatives
+Submit Website Bug
+Status 
+Copyright ©2001-2024.
+                             Python Software Foundation
+                             Legal Statements
+                             Privacy Policy

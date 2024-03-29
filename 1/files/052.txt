@@ -1,0 +1,879 @@
+Python Software Foundation News: Software Bill-of-Materials documents are now available for CPython
+  News from the Python Software Foundation
+Thursday, February 08, 2024
+Software Bill-of-Materials documents are now available for CPython
+Our Security Developer-in-Residence, Seth Larson, has been working to improve the management of vulnerabilities for Python users. Seth has championed progress on this goal in a variety of areas:Authorizing the Python Software Foundation as a CVE Numbering Authority (CNA) to publish CVE IDs and recordsRevitalizing the security advisory mailing list (security-announce@python.org)Migrating all historical vulnerabilities to the Open Source Vulnerability format (OSV) and having the records indexed into the global OSV databaseWith the release of CPython 3.12.2, the next step of the Python Software Foundation’s vulnerability management strategy is now available in the form of Software Bill-of-Materials (SBOM) documents for CPython source releases. The documents are available for download in their own column labeled “SBOM” in the “Files” table on the release page. User documentation and a getting started guide for CPython SBOMs is available on python.org.These documents are relatively new but have been tested with multiple tools that accept SPDX SBOM documents. Please report any feedback on the SBOM to the CPython issue tracker.What is a Software Bill-of-Materials (SBOM)?Software Bill-of-Materials are machine-readable documents using an ecosystem-independent format like SPDX or CycloneDX to describe what a piece of software is made of and how each component within the software relates to other components. There are multiple use-cases for SBOMs, but for CPython we primarily focused on software supply chain and vulnerability management.Many vulnerability scanning tools support passing an SBOM document as input to provide a comprehensive scan for software vulnerabilities without needing to rely on fallible software discovery. This means there’s less chances for vulnerabilities to be missed by scanners.There are existing tools for automatically creating SBOMs for software, but SBOMs which aren’t accurate are sometimes more dangerous than having no SBOM due to causing a false sense of security. This is especially true for complex pieces of software or projects which exist outside of package ecosystems, both of which apply to CPython and make generating an SBOM difficult. For this reason the content of CPython SBOMs is curated by hand on first pass to ensure accuracy and completeness and then automated to track updates as the software changes.SBOM documents are becoming a requirement for compliance in multiple areas and industries. In order to meet those requirements we are providing a comprehensive and accurate SBOM for CPython that will provide assurance for Python users.What is included in CPython SBOMs?CPython SBOMs use the SPDX SBOM standard. SBOM documents include a description of the contained software, including all of its dependencies. Information in CPython SBOMs includes:Names and versions of all software componentsSoftware identifiers (like CPE and Package URLs)Download URLs for source code with checksumsFile names and content checksumsDependency relationships between each componentCPython SBOMs satisfy the requirements listed in the NTIA Minimum Elements for a Software Bill of Materials. Software identifiers can be used for correlating software in use to vulnerability databases like the CVE database and Open Source Vulnerability database, typically done automatically using vulnerability scanning tools.What isn’t included in CPython SBOMs?Keep in mind that software libraries that you supply yourself to compile CPython, such as OpenSSL and zlib, are not included in the SBOMs for source artifacts. This is due to these libraries not being included in source artifacts, so CPython users have a choice of which version and sources to use for these third-party libraries. Folks who are compiling CPython from source are responsible for tracking their own dependencies either in a separate SBOM document or by appending new entries to your local CPython SBOM.CPython’s SBOMs don’t include licensing information for dependencies. See the CPython licensing page for licensing information.What is coming next for CPython SBOMs?This is only the beginning for CPython SBOMs, as mentioned above there are only SBOM documents published for source releases today. The CPython release managers also publish binary installers for Windows and macOS on a variety of distribution channels. These artifacts will need their own SBOM documents as they are compiled with software that’s typically not available on those platforms (e.g. OpenSSL).There’s also more infrastructure needed to reduce noise and churn for Python users and Python Security Response Team members alike. Vulnerability EXchange (VEX) statements are a set of standards which allows software producers to signal to user tooling whether a piece of software in use is affected by a vulnerability, even for vulnerabilities affecting dependencies. This is an area of active development and is being explored alongside the OpenSSF Security Tooling Working Group.The Security Developer-in-Residence role and this work is funded by a substantial investment from the OpenSSF Alpha-Omega Project. Thanks to Alpha-Omega for their support in improving the security posture of the entire Python ecosystem.The OpenSSF is a non-profit cross-industry collaboration that unifies security initiatives and brings together leaders to improve the security of open source software by building a broader community, targeted initiatives, and best practices. 
+Posted by
+Seth Michael Larson
+at
+2/08/2024 10:53:00 AM
+Newer Post
+Older Post
+Home
+Mission
+The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers.
+Python Software Foundation
+Grants Program
+Membership
+Awards
+Meeting Minutes
+PSF Sponsors
+A big thank you to the above PSF sponsors for supporting our mission!
+Tweets by ThePSF 
+Blog Archive
+        ▼ 
+      
+2024
+(8)
+        ► 
+      
+March
+(1)
+        ▼ 
+      
+February
+(3)
+White House recommends use of memory-safe language...
+Software Bill-of-Materials documents are now avail...
+Introducing PSF Grants Program Office Hours
+        ► 
+      
+January
+(4)
+        ► 
+      
+2023
+(37)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(3)
+        ► 
+      
+June
+(5)
+        ► 
+      
+May
+(12)
+        ► 
+      
+April
+(2)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2022
+(35)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(6)
+        ► 
+      
+May
+(12)
+        ► 
+      
+April
+(2)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2021
+(42)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(4)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(2)
+        ► 
+      
+June
+(4)
+        ► 
+      
+May
+(12)
+        ► 
+      
+April
+(5)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(4)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2020
+(51)
+        ► 
+      
+December
+(8)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(4)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(10)
+        ► 
+      
+April
+(11)
+        ► 
+      
+March
+(4)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2019
+(45)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(4)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(5)
+        ► 
+      
+May
+(11)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(5)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2018
+(31)
+        ► 
+      
+December
+(5)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(5)
+        ► 
+      
+April
+(2)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2017
+(32)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(6)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(2)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(3)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(4)
+        ► 
+      
+2016
+(27)
+        ► 
+      
+December
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+August
+(4)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(6)
+        ► 
+      
+April
+(4)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2015
+(67)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(4)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(6)
+        ► 
+      
+May
+(4)
+        ► 
+      
+April
+(13)
+        ► 
+      
+March
+(14)
+        ► 
+      
+February
+(9)
+        ► 
+      
+January
+(4)
+        ► 
+      
+2014
+(14)
+        ► 
+      
+October
+(1)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2013
+(18)
+        ► 
+      
+November
+(1)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(5)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2012
+(21)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(4)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2011
+(55)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(7)
+        ► 
+      
+September
+(5)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(8)
+        ► 
+      
+April
+(8)
+        ► 
+      
+March
+(13)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2010
+(35)
+        ► 
+      
+December
+(4)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(8)
+        ► 
+      
+June
+(6)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(4)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2009
+(21)
+        ► 
+      
+December
+(1)
+        ► 
+      
+October
+(1)
+        ► 
+      
+September
+(6)
+        ► 
+      
+August
+(4)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(1)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(1)
+        ► 
+      
+February
+(1)
+        ► 
+      
+2008
+(23)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(1)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(1)
+        ► 
+      
+May
+(3)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(5)
+        ► 
+      
+February
+(4)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2007
+(26)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(6)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2006
+(39)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(4)
+        ► 
+      
+October
+(5)
+        ► 
+      
+September
+(4)
+        ► 
+      
+August
+(4)
+        ► 
+      
+July
+(3)
+        ► 
+      
+May
+(7)
+        ► 
+      
+April
+(6)
+        ► 
+      
+March
+(3)
+Powered by Blogger.

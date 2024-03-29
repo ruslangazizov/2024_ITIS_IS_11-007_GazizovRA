@@ -1,0 +1,879 @@
+Python Software Foundation News: Security Developer-in-Residence 2023 Q3 Report
+  News from the Python Software Foundation
+Tuesday, October 17, 2023
+Security Developer-in-Residence 2023 Q3 Report
+It’s been three months since I was first hired as the inaugural Security Developer-in-Residence. I’m quite proud of what I’ve accomplished so far and think it shows the value of investing into the security of Open Source through hiring folks to work full-time in roles like “Developer-in-Residence” programs. I’m thankful to the Alpha-Omega project at OpenSSF for funding this work. Let’s review all of the accomplishments in the first quarter of this role and what to look forward to in the next quarter.If you’d like to follow along with my work more closely you can subscribe to my personal blog where I publish weekly updates about the work I’m doing. If you have questions or thoughts about what I’m working on you can contact me via email: seth@python.org.The Python Software Foundation authorized as a CVE Numbering Authority (CNA)Back in late August the Python Software Foundation received notice that we’d successfully completed onboarding and had been authorized by CVE as a CVE Numbering Authority or “CNA”. The Python Software Foundation CNA scope covers Python and pip, two projects which are fundamental to the rest of the Python ecosystem.Being a CNA means that the PSF can offer staffing to improve the sustainability and responsiveness of coordination and vulnerability disclosure work for covered projects. The PSF CNA also provides rich metadata for CVE records and advisories, including remediation information, so upgrading or patching for vulnerabilities is as straightforward as possible for downstream users of Python.CPython vulnerability advisories available in Open Source Vulnerability databaseThe Python Software Foundation now hosts a vulnerability database on GitHub using the Open Source Vulnerability format (OSV). This database contains vulnerability information for CPython in addition to vulnerabilities getting published to the security-announce@python.org mailing list. The historical vulnerability information was sourced from Victor Stinner’s “python-security” project in order to provide a complete history of vulnerabilities in CPython.By using the OSV format the vulnerabilities can be ingested and processed by the Open Source Vulnerability database which can be searched or queried using an API for machine-consumable vulnerability information. Having vulnerability information in a machine-consumable format enables tools that scan software deployments for vulnerabilities to easily provide accurate and automatically updated reports for CPython. The Open Source Vulnerability database also is more discoverable compared to the CVE database, having a readily available public API to query for vulnerabilities, products, and versions.Python Security Response TeamI have been helping coordinate reports to the Python Security Response Team (PSRT) since joining the role. This work includes reviewing all reports, gathering information from reporters, discussing timelines, and working with core developers to create and release fixes and advisories in a coordinated manner. I also worked with CVE to get CVE IDs assigned on behalf of reports before the PSF was designated as a CNA.I revitalized the security-announce@python.org mailing list to use for future advisory announcements so interested parties can be notified as soon as new vulnerabilities are published (subscribe to the linked list if you’d like to receive these). I coordinated the two recent vulnerabilities affecting CPython (CVE-2023-40217 and CVE-2023-41105) end-to-end from report to published advisory.Doing this coordination work frees up volunteers on the PSRT to focus on determining whether a report is a vulnerability and working on fixes. I’m also working to further reduce the manual coordination work required by PSRT by moving the reporting and triage process to GitHub using GitHub Security Advisories.OpenSSF Day Europe 2023I co-presented a talk titled “We Make Python Safer than Ever” at OpenSSF Day Europe 2023 with PSF Board Member and OpenSSF Community Manager Cheuk Ting-Ho. The slides are available for download and the talk recording is available to watch on YouTube.The talk introduced the Security Developer-in-Residence role, went over the challenges that are unique to securing Open Source and Python ecosystems, described completed and future projects to make the Python ecosystem more secure, and gave a list of items that viewers themselves could do right away to make their own usage of Python more secure.Sigstore signatures for Python release artifactsPython releases include signatures from the Release Managers using the signing tool “Sigstore”. These signatures mean you can be sure that a given release artifact wasn’t tampered with and was created and vetted by the Release Manager for a given Python release.I did an audit of existing signatures and found some discrepancies between the documented identities and providers and what was published for each release. I worked with Release Managers to fix the discrepancies and added extra safeguards to release tooling to ensure signatures are verifiable as documented. I also was able to back-fill the new Sigstore signature format from existing verification materials to make verifying signatures even easier!$ python -m sigstore verify identity \    --bundle Python-3.12.0.tgz.sigstore \    --cert-identity thomas@python.org \    --cert-oidc-issuer https://accounts.google.com \    Python-3.12.0.tgzHaving consistent artifact signatures is important because any discrepancies while consuming these signatures should raise red flags for downstream users and redistributors. This also helps build confidence in the new signing method over existing methods like GPG.Adoption of system trust stores via TruststoreThere are three packaging tools (pip, PDM, and Conda) that are important to the Python ecosystem that are at various stages of adopting “Truststore”, a library that I authored prior to joining the PSF to enable Python projects to use system trust stores for verifying HTTPS certificates instead of relying on certifi for certificates.PDM has started using Truststore by default starting in v2.9.0, Conda plans to release optional support for Truststore in v23.9.0, and pip already has optional support for Truststore since v22.2 but has recently bundled Truststore into pip to remove the need to “bootstrap” into Truststore by pre-installing the library.Using the system trust store is important because any removals to a trust store (like for e-Tugra root certificates) must be propagated to all end systems in order to avoid “monster-in-the-middle” attacks. Further challenging this propagation is that some tools like pip bundle certifi as a means of bootstrapping, which means that you need to upgrade both certifi and pip in order to completely propagate updates to certifi’s certificate bundle.This propagation is better suited to a centralized system like an OS package manager or an automatic centralized authority or IT department keeping the trust bundles up-to-date, which can only happen through using system trust stores.Recently the Python implementation PyPy added support for Python 3.10, thus enabling PyPy to also use Truststore. I subsequently added support and backwards compatibility tests for PyPy to Truststore to ensure all compliant implementations of Python can take advantage of the benefits.Future Projects and Challenges Software Bills-of-Materials for CPythonSoftware Bill-of-Materials (SBOMs) are a hot topic in the world of software security due to new government requirements and improved software and vulnerability management tooling. Many tools generate or consume SBOMs as a universal format for describing software and its components and then matching those components to known vulnerabilities.I've started working on an authoritative SBOM for the CPython project, you can follow along in this GitHub repository if you are interested. This project is early and this will not be the final product or place where this information is published, this is only a place to experiment and get feedback on the approach and outputs before putting the final infrastructure in place.I started with the most straightforward release artifact, the source tarball, and I am planning to tackle the binary installers later since they'll require more research into the release processes. There is a work-in-progress SBOM file for Python-3.12.0.tgz available in the sboms/ directory on the repository.Using vulnerability scanning tools I was able to see not only vulnerabilities in CPython, but crucially in the bundled subcomponents like expat and pip. Without an SBOM the subcomponents to a project like CPython likely wouldn’t get detected properly and thus would be not covered by vulnerability management tooling.The challenges here will be integrating the creation and maintenance of the SBOMs into the CPython development and release processes while minimally disrupting other core developers workflows and avoiding the need to develop and maintain custom tooling for CPython’s specific use-case.Tracking bundled dependencies in Python packagesPython is the premier “glue” language, meaning that Python is often used alongside many other programming languages like C, C++, Rust, Go, and more thanks to Python C API. This benefit also means that Python packages can include projects and source code from sources both within and external to the Python ecosystem.Those projects and source code from outside the Python ecosystem present a problem for vulnerability scanners which typically rely on explicit metadata about projects and dependencies in order to find vulnerabilities in software manifests. Without a clear way to encode this information into packaging metadata it’s impossible to signal these dependencies even if a maintainer of a project wants to do so.C and C++ projects in particular pose additional issues due to their existence outside of a programming language packaging ecosystem like Python with PyPI or JavaScript and NPM. This makes tracking usage and vulnerabilities in these projects difficult and relies on other identification schemes like CPEs or redistributions in other packaging ecosystems like RPM/DEB. Without this information scanners today miss vulnerable components bundled in Python packages, meaning developers won’t know how or when their Python deployments are vulnerable.Solving this issue completely will be a multi-step process, starting with being able to encode information about bundled projects into Python distributions which will require a new packaging PEP. After the standard has been decided, next is getting bundled project metadata automatically captured to avoid needing an entire ecosystem to manually annotate every project. Concurrently to this I’ll collaborate with SBOM generation tooling to add support for consuming the new standard and adding that information to SBOMs generated from Python environments.CPython and pip release process improvementsCPython and pip are two of the most important projects in the Python ecosystem and each have non-trivial release processes. In an effort to increase the integrity of these projects’ releases I’ve researched and documented their release process and with SLSA’s list of historical supply chain attacks against software projects have been making suggestions and implementing improvements.These improvements include reproducibility of built artifacts, extra guarantees on the integrity of inputs, automating the build processes to reduce attack surface area to only services like GitHub Actions and Azure Pipelines instead of individuals’ computers, and making it so that in the event of an attack that it would need to be publicly detectable and traceable.By improving the integrity of these processes I am hoping to prevent disaster scenarios such as malware being injected into Python or pip at the “last mile” before being published to python.org. Injection of malware during build time has happened to multiple other Open Source projects with disastrous results for users. This work means users can be even more confident in their usage of Python and upgrade early and often to take advantage of Python’s latest features.
+Posted by
+Seth Michael Larson
+at
+10/17/2023 02:00:00 PM
+Newer Post
+Older Post
+Home
+Mission
+The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers.
+Python Software Foundation
+Grants Program
+Membership
+Awards
+Meeting Minutes
+PSF Sponsors
+A big thank you to the above PSF sponsors for supporting our mission!
+Tweets by ThePSF 
+Blog Archive
+        ► 
+      
+2024
+(8)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(4)
+        ▼ 
+      
+2023
+(37)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(3)
+        ▼ 
+      
+October
+(3)
+Announcing our new Community Communications Manager!
+September & October Board Votes
+Security Developer-in-Residence 2023 Q3 Report
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(3)
+        ► 
+      
+June
+(5)
+        ► 
+      
+May
+(12)
+        ► 
+      
+April
+(2)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2022
+(35)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(6)
+        ► 
+      
+May
+(12)
+        ► 
+      
+April
+(2)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2021
+(42)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(4)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(2)
+        ► 
+      
+June
+(4)
+        ► 
+      
+May
+(12)
+        ► 
+      
+April
+(5)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(4)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2020
+(51)
+        ► 
+      
+December
+(8)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(4)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(10)
+        ► 
+      
+April
+(11)
+        ► 
+      
+March
+(4)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2019
+(45)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(4)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(5)
+        ► 
+      
+May
+(11)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(5)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2018
+(31)
+        ► 
+      
+December
+(5)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(5)
+        ► 
+      
+April
+(2)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2017
+(32)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(6)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(2)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(3)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(4)
+        ► 
+      
+2016
+(27)
+        ► 
+      
+December
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+August
+(4)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(6)
+        ► 
+      
+April
+(4)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2015
+(67)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(4)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(6)
+        ► 
+      
+May
+(4)
+        ► 
+      
+April
+(13)
+        ► 
+      
+March
+(14)
+        ► 
+      
+February
+(9)
+        ► 
+      
+January
+(4)
+        ► 
+      
+2014
+(14)
+        ► 
+      
+October
+(1)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2013
+(18)
+        ► 
+      
+November
+(1)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(5)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2012
+(21)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(4)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2011
+(55)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(7)
+        ► 
+      
+September
+(5)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(8)
+        ► 
+      
+April
+(8)
+        ► 
+      
+March
+(13)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2010
+(35)
+        ► 
+      
+December
+(4)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(8)
+        ► 
+      
+June
+(6)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(4)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2009
+(21)
+        ► 
+      
+December
+(1)
+        ► 
+      
+October
+(1)
+        ► 
+      
+September
+(6)
+        ► 
+      
+August
+(4)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(1)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(1)
+        ► 
+      
+February
+(1)
+        ► 
+      
+2008
+(23)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(1)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(1)
+        ► 
+      
+May
+(3)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(5)
+        ► 
+      
+February
+(4)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2007
+(26)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(6)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2006
+(39)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(4)
+        ► 
+      
+October
+(5)
+        ► 
+      
+September
+(4)
+        ► 
+      
+August
+(4)
+        ► 
+      
+July
+(3)
+        ► 
+      
+May
+(7)
+        ► 
+      
+April
+(6)
+        ► 
+      
+March
+(3)
+Powered by Blogger.

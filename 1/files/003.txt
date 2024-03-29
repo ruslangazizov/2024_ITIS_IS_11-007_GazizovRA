@@ -1,0 +1,533 @@
+Python.org Jobs Feedhttps://www.python.org/jobs/Python jobs from Python.orgen-usFri, 29 Mar 2024 09:40:35 +0000Django Developer, The Developer Societyhttps://www.python.org/jobs/7541/Birmingham, United Kingdom
+<p><strong>WANTED: A Django developer to join our co-operative digital team. Use your knowledge of technology and your developer skills to help amazing charities and nonprofits change the world through building websites and web apps.</strong></p>
+<p>You will be a crucial part of our team, helping us to deliver our projects and have a big impact on the world.</p>
+<p>There’s plenty of technical jargon in here, but simply put, we're looking for intelligent people who have an eagerness to learn new things, and the communication skills to be able to work effectively with our team and our partners.</p>
+<p>As well as the technical knowledge, we need people that get it—people who are natural problem solvers and know when to yell for support, helping to cut down and simplify complex problems with code that functions smoothly alongside design and front-end code.</p>
+<p><strong>For this particular role, we're looking for someone with proven Django experience</strong>. We're always looking for the right person over any specific laundry list of skills, but here's our wishlist. If you have some/all of these, we'd love to hear from you.</p>
+<p>You should probably have some mix of these...</p>
+<ul class="simple">
+<li>A keenness to be working closely and collaboratively with frontend developers and designers</li>
+<li>Knowledge of Python and Django</li>
+<li>An interest in Wagtail, our favourite CMS framework</li>
+<li>An understanding of working with Git and using GitHub</li>
+<li>Being able to review other peoples code to encourage cooperative learning and promote best practices</li>
+<li>Following test driven development and passing unit tests</li>
+<li>Proven experience</li>
+</ul>
+<p>We also like talking to people who enjoy...</p>
+<ul class="simple">
+<li>Working in an agency environment (albeit a not for profit one!)</li>
+<li>Being able to work on projects for charities and non-profits</li>
+<li>Writing Pythonic code</li>
+<li>Optimising page speed for the right level of performance</li>
+<li>Caring about their impact on society</li>
+</ul>
+https://www.python.org/jobs/7541/Senior Full Stack Engineer, Carbon Equityhttps://www.python.org/jobs/7540/Amsterdam, Netherlands
+<p>Carbon Equity is seeking an experienced senior full stack engineer for our engineering team. In this role, it will be your mission to develop our Climate Investing Platform. An investing platform where people can see and learn more about how their capital is funding pioneering climate tech companies. You'll be involved in the entire product development lifecycle including the design, development, deployment, and maintenance of new and existing features.</p>
+<p>We offer the following benefits:</p>
+<ul class="simple">
+<li>You’re part of the mission — that's why we offer all of our employees a stock option plan based on experience</li>
+<li>Competitive salary at a fast growing climate fintech. Salary based on experience and profile: 80k-95k.</li>
+<li>Lots of room to bring your own ideas and the mandate to work on them</li>
+<li>Hybrid work culture with flexible hours, given that you are at the office at least once a week</li>
+<li>Headquarters located in the heart of Amsterdam, close to the Nieuwmarkt</li>
+<li>Full-time position</li>
+<li>25 holiday days</li>
+<li>Bi-annual company offsites</li>
+</ul>
+<ul class="simple">
+<li>You are able to deliver quality features without much supervision while keeping the rest of the team in the loop.</li>
+<li>You have extensive technical know-how to choose the proper level of architectural complexity for every step along the way and work with technical service providers accordingly.</li>
+<li>You have broad hands-on product development skills to resolve any bottleneck and prioritize shipping over everything else.</li>
+<li>You have the ability to translate user stories into technical and architectural requirements.</li>
+<li>You're curious about new technologies and you're excited to find ways to implement them in your work.</li>
+<li>You are a strong communicator who can collaborate with team members to solve real problems.</li>
+<li>You’re a full-stack engineer with at least 6 years of hands-on experience with Python and Django</li>
+<li>You have good knowledge of front-end web technologies (HTML, JS, CSS)</li>
+<li>You have experience with relational databases</li>
+<li>You have knowledge of deploying web services</li>
+</ul>
+https://www.python.org/jobs/7540/Full-stack Python Developer, Scalable Pathhttps://www.python.org/jobs/7539/Remote, Remote, Remote
+<div class="section" id="duties-and-responsibilities">
+<h1>DUTIES AND RESPONSIBILITIES</h1>
+<ul class="simple">
+<li>Build and ship high-quality features autonomously and efficiently</li>
+<li>Attend brief daily standups for team alignment and blocker resolution</li>
+<li>Understand and address user pain points</li>
+<li>Conduct code reviews for team members</li>
+<li>Debug and troubleshoot software issues.</li>
+<li>Suggest improvements for code base and architecture.</li>
+</ul>
+</div>
+<div class="section" id="relationships-who-you-ll-be-working-with">
+<h1>RELATIONSHIPS - WHO YOU'LL BE WORKING WITH</h1>
+<p>You will be working with 2-4 other software engineers and the E-Commerce Director.</p>
+<p>There is an existing daily meeting at 9:30 am Pacific Standard Time (PST).</p>
+</div>
+<div class="section" id="start-date">
+<h1>START DATE</h1>
+<p>As soon as possible.</p>
+</div>
+<div class="section" id="expected-contract-duration">
+<h1>EXPECTED CONTRACT DURATION</h1>
+<p>12+ months.</p>
+<p>This is a long-term postion.</p>
+</div>
+<div class="section" id="preferred-regions">
+<h1>PREFERRED REGIONS</h1>
+<p>The client's preference is for candidates to be located in Latin America or Europe.</p>
+</div>
+<ul class="simple">
+<li>Python (Must have)</li>
+<li>Django (Must have)</li>
+<li>PostgreSQL (Must have)</li>
+<li>AWS (Must have)</li>
+<li>JavaScript (Strongly preferred)</li>
+<li>HTMX (Strongly preferred)</li>
+<li>Alpine.js (Strongly preferred)</li>
+<li>English (Must have)</li>
+<li>Tailwind CSS (Nice to have)</li>
+</ul>
+https://www.python.org/jobs/7539/Django Developer (100% Remote), Ambienthttps://www.python.org/jobs/7537/Köln, NRW, Germany
+<p>Ambient is looking for Django Developers. With an excellent 4.6* rating on Kununu (german glassdoor) and more than 12 years experience in delivering high quality B2B software we consider ourselves one of the best employers for Django developers in Germany.</p>
+<p>At Ambient you will work in a Scrum Team in close contact with a client company to develop modern, high quality web applications. We make extensive use of code reviews, pair programming, testing and other best practices to build software that we can be proud of.</p>
+<p>What we are looking for:</p>
+<ul class="simple">
+<li>Experience working on at least 2 major projects developing web applications with Django</li>
+<li>Comfortable using relational databases and APIs (e.g. DRF)</li>
+<li>Developers who love to achieve quality through code reviews, pair programming, testing and - planning ahead</li>
+<li>Developers whose preferred working style is collaborative and open</li>
+<li>Ability to speak German fluently (B1-B2 level) in a professional context</li>
+</ul>
+https://www.python.org/jobs/7537/Python Software Engineer, BlockDoxhttps://www.python.org/jobs/7535/UK, UK/EU based
+<p>Senior Python Software Engineer (Python, React, Node, SQL)</p>
+<p>We’ve laid the foundations. Now it’s time to build.</p>
+<p>We are an award winning smart building start-up with patented tech looking to disrupt our market and scale globally.</p>
+<p>We now have an amazing opportunity for a talented and  experienced full-stack software engineer and technology generalist to make a difference in a rapidly progressing business. BlockDox is a data insights engine for building owners and managers. Our core product, called AireaVu, helps organisations manage and exceed their sustainability goals, reduce operational wastage, tackle air quality and improve space utilisation. We have been deployed across a diverse range of customer sites in the UK and worldwide.</p>
+<p>The successful candidate will be a self-starter with a go-to attitude, plenty of initiative and a strong desire to pioneer new technology in construction and building operations. We are looking for an excellent communicator, including a proven ability to explain complex technical concepts clearly and concisely to non-technical people. Excellent problem solving abilities are also important in the role. We are a fully remote, friendly, and international team of highly skilled engineers and scientists.</p>
+<p>Key Skills and Experience:</p>
+<ul class="simple">
+<li>4+ years as a Python Software Engineer</li>
+<li>Full software lifecycle</li>
+<li>Python</li>
+<li>React</li>
+<li>Node.js</li>
+<li>Linux &amp; command line</li>
+<li>RESTful APIs</li>
+<li>SQL (ideally PostgreSQL)</li>
+<li>Git</li>
+<li>Cloud services (ideally Azure + AWS)</li>
+<li>Working knowledge of networks and device configuration</li>
+</ul>
+<p>Desirable skills and experience:</p>
+<ul class="simple">
+<li>Netlify</li>
+<li>Secure, scalable app development</li>
+<li>RemixJS</li>
+<li>Monitoring</li>
+<li>Data visualisation (e.g. Data Studio, Tableau, PowerBI)</li>
+<li>STEM degree (MSc/PhD preferred)</li>
+<li>Agile</li>
+<li>IoT (Networking, MQTT, Monitoring)</li>
+<li>Postgres</li>
+<li>DevOps (IoT, Azure, AWS, Docker, Terraform)</li>
+<li>Data engineering (ETL, pipelines)</li>
+<li>Stats, Data science, Machine Learning, Probabilistic programming (scipy, numpy, pytorch)</li>
+<li>Building management systems</li>
+<li>LLM prompt engineering</li>
+</ul>
+<p>We are looking for someone with:</p>
+<ul class="simple">
+<li>Fluent English who can work the core hours of 10.00-16.00 BST</li>
+<li>Ability to rapidly roll-out new desktop and mobile web product features including dynamic data visualisations and automated downloadable reports</li>
+<li>Passion for writing testable, clean, modular, well-commented, readable and reusable code</li>
+<li>Willingness to adapt to fast changing priorities and learn new skills in a dynamic startup environment</li>
+<li>Desire to contribute to product roadmap and technology choices</li>
+<li>Open and respectful attitude to collaboration and knowledge-sharing in a cross-disciplinary team of experienced engineers and scientists</li>
+<li>As a technology generalist in an IoT startup you will also be expected to be hands-on with the hardware, become comfortable on the command-line in embedded Linux, and be happy to travel to site installations to configure devices, routing and networking when required.</li>
+</ul>
+<p>Restrictions:</p>
+<ul class="simple">
+<li>UK/EU based python engineers only should apply</li>
+</ul>
+https://www.python.org/jobs/7535/Python AI Developer, CORE AIhttps://www.python.org/jobs/7533/Coimbatore, Tamil Nadu, India
+<p>Python Developer wanted for AI startup in the UK</p>
+<p>Experience with: - startups - ChatGPT and other LLMs - Python!</p>
+https://www.python.org/jobs/7533/Software Development Engineer, Patrick J. McGovern Foundationhttps://www.python.org/jobs/7532/Remote, Remote, United States of America
+<p>The Patrick J McGovern Foundation (PJMF) is seeking an experienced, multi-faceted and self-driven Software Development Engineer (SDE). This role sits within the Data Solutions team and will be directly engaged with the development, deployment and maintenance of data and AI products that will drive positive social impact around the world. The charter of the Data Solutions team is to identify, develop and deploy strategic data and AI solutions, focused on unlocking opportunities and addressing broad challenges the social good sector is facing now, and in the near future. The SDE is responsible for full stack development of cloud solutions that are based around ML model predictions, using a rapid prototyping development approach. We are a small, high performance team and in many ways function as a startup. As such, the ideal candidate will be someone who can develop an end-to-end solution around which our ML products will be deployed.</p>
+<p>How you will make an impact:</p>
+<ul class="simple">
+<li>Work closely with the Technical Product Manager, along with partners and end-users, to understand their challenges in order to build effective and safe products</li>
+<li>Understand end-user needs to build applications that can solve their challenges</li>
+<li>Prototype, develop, test and deploy highly reliable, safe and scalable full stack solutions</li>
+<li>Ability to develop frontend and backend applications to support and integrate with our data and AI solutions</li>
+<li>Monitor and maintain application performance, functionality, scalability and security</li>
+<li>Develop secure, modularized, well-documented and reusable code</li>
+<li>Employ rapid prototyping techniques to quickly develop and iterate on product deployment and fast integration of end-user feedback loop</li>
+<li>Integrate necessary data technologies, platforms, tools, and 3rd party tools needed for product deployment and functionality</li>
+<li>Ensure appropriate maintenance, bug fix and feature requests are resolved</li>
+<li>Create appropriate system diagrams and documentation</li>
+</ul>
+<p>What you'll need to succeed:</p>
+<ul class="simple">
+<li>Experience - Demonstrated experience in full stack development and deployment</li>
+<li>Technologies - Strong programming experience with Python, Scala, Java, Javascript or similar languages. Strong production experience with using cloud services and infrastructure, containerization (Docker) and orchestration (Kubernetes) tools. Experience with CI/CD, software bug tracking, version control and feature request management, using tools like Jenkins, Jira, GitHub, etc. Experience with build systems (make, gradle, etc) and package management (pip, etc). Experience with SQL database systems such as MySQL, PostgreSQL, etc and NoSQL systems such as MongoDB, DynamoDB, HBase, etc</li>
+<li>Learning - This role will require an individual with an appetite for (quickly) learning and applying different technologies, programming languages, and techniques needed to build the required solutions.</li>
+<li>Communication - Ability to communicate effectively with cross-functional teams, engineers, partners and end-users. Excellent written and verbal communication skills to technical and non-technical audiences. Excellent technical writing and documentation skills</li>
+<li>Teamwork - Effective team player who understands the responsibility every individual brings to the table and how to encourage and drive results from each team member</li>
+<li>High Performance - Ability to go outside your comfort zone to learn new technologies and methodologies to ensure successful and timely completion of product development</li>
+<li>Results-oriented - Highly organized and detail-oriented, self-driven and able to adapt to learning and implementing new technologies, and creative in solving issues as they arise</li>
+<li>Cultural alignment - An advocate for social progress; interest in emerging technologies and their ability to advance societal outcomes</li>
+<li>Work Eligibility - Applicants must be authorized to work for any employer in the U.S. We are unable to sponsor or take over sponsorship of an employment Visa at this time</li>
+</ul>
+https://www.python.org/jobs/7532/Data Engineering Lead, Adelaidehttps://www.python.org/jobs/7531/New York, NY, USA
+<p>Adelaide is looking for a Data Engineering Lead to join our Product and Engineering organization. As the leader in global attention measurement and activation, at Adelaide we strive for increased transparency of media quality and aligning market incentives around quality over quantity. The ideal candidate for this role will provide leadership to help grow and scale our data engineering team while contributing towards further developing our data pipelines.</p>
+<p>We’re remote for the foreseeable future, but you should expect to be in NYC a couple of times a year. For those in the area, we have a space in Manhattan to work from if interested.</p>
+<p>Responsibilities:</p>
+<ul class="simple">
+<li>Lead the data engineering team in designing, developing, maintaining, and optimizing our data platform.</li>
+<li>Drive technical excellence and innovation by remaining hands-on with coding and problem-solving, setting the standard for engineering best practices within the team.</li>
+<li>Define and Implement strategies to optimize data infrastructure, ensuring high availability, performance, and security of the data platform.</li>
+<li>Develop and execute a comprehensive data strategy that aligns with the company's overall objectives and goals.</li>
+<li>Stay abreast of industry trends and technological advancements, incorporating relevant tools and methodologies to enhance the team's productivity and efficiency.</li>
+<li>Build cross-functional relationships with Data Science, Product Management, and Engineering to understand data needs and deliver on those needs.</li>
+<li>Provide technical guidance and support to the team in tackling complex engineering challenges, ensuring timely and high-quality project delivery.</li>
+<li>Foster a culture of continuous learning and professional growth through effective mentorship and coaching of team members.</li>
+</ul>
+<ul class="simple">
+<li>Bachelor's or Master's degree in Computer Science, Engineering, or a related field.</li>
+<li>Experience leading and scaling data teams, strong operational skills to drive efficiency, and a strong vision for how data can proactively improve companies.</li>
+<li>Extensive hands-on experience in Python programming and a strong understanding of AWS products, including but not limited to S3, Glue, Athena, Redshift, Lambda, ECS, Kinesis, and EMR.</li>
+<li>Demonstrated expertise in designing, architecting, and implementing scalable and reliable data pipelines and ETL processes..</li>
+<li>Excellent communication skills with the ability to collaborate effectively with cross-functional teams and senior stakeholders.</li>
+<li>Experience in the ad tech industry is a plus, however not required</li>
+</ul>
+https://www.python.org/jobs/7531/Senior Python Developer, Gowork.plhttps://www.python.org/jobs/7530/Warszawa, Poland
+<p>As a GoWork.pl employment agency, we provide services on the labor market with people and their professional development in mind. We meet the expectations of people interested in work and offer them employment. We currently represent a client who, due to the dynamic development of its business, is looking for people for the position of Senior Python Developer</p>
+<p>using knowledge in the field of: AWS/Snowflake, RDBMS, Docker and Kubernetes, Redis, Splunk, Atlassian stack: Jira, Confluence, Bitbucket, Bamboo, etc.</p>
+<ul class="simple">
+<li>cooperation with the developer department,</li>
+<li>implementing new processes and maintaining current ones,</li>
+<li>launching and conducting tests,</li>
+<li>creating technical documentation.</li>
+</ul>
+https://www.python.org/jobs/7530/Scientific programmer (m/f/x) (climate modeling), Ludwig-Maximilians-Universität in Munichhttps://www.python.org/jobs/7529/Munich, Germany
+<p>YOUR TASKS AND RESPONSIBILITIES:</p>
+<p>Models are our main tool to project how ecosystems and climate evolve. But a key driver – the vast usage of land through agriculture, forestry and urbanization – is still lacking substantial detail in these models. This impairs our fundamental understanding of the interactions of humans, land, and climate, and is also critical as models are increasingly guiding political decision-making on land-use and climate to limit global warming. You can contribute to building the next generation of climate models, working at the intersection of numerical modeling, high-performance computing, and large-scale data analysis. You will contribute to strategic decision-making as well as to concrete design and implementation of land-use processes in our models. You will work closely with the other researchers in our group, and with external partners, e.g., in natESM, to align the group’s developments with the national and international modeling landscape. While the focus will adjust over the years with the development of the research field and success in related research proposals by our working group, it currently lies on the Earth system model ICON-ESM and its land component JSBACH4 as well as the land-use emission model BLUE, which integrates a range of Earth observational data.</p>
+<p>Further tasks will be to</p>
+<ul class="simple">
+<li>support team members in model development and setup of simulations, and convey good scientific programming skills to the team members</li>
+<li>contribute to scientific publications and scientific outreach activities</li>
+<li>contribute to writing proposals that advance the field of Earth system and ecosystem modeling</li>
+<li>do some teaching in the study programs of the Department of Geography</li>
+</ul>
+<p>BENEFITS:</p>
+<ul class="simple">
+<li>the chance to be part of a dynamic team working at the frontier of Earth system science</li>
+<li>Initially E13 TV-L position, commensurate with work experience, for two years starting June 2024 or soon thereafter. If the candidate’s performance is satisfying it is intended to make the position permanent. A change to civil servant status (A13) is possible under certain conditions, a later promotion up to A14 is feasible.</li>
+<li>career development through the LMU qualification program</li>
+<li>a stimulating working environment at one of Germany’s top-ranked universities. Our institute is located in the centre of the vibrant and internationally diverse city of Munich with excellent public transportation links.</li>
+</ul>
+<p>Handicapped persons with comparable qualifications receive preferential status. We encourage female candidates to apply.</p>
+<p>CONTACT:</p>
+<p>Please send an application outlining your fit for the position (including a cover letter, a curriculum vitae, copies of scientific degrees, and the names and contact information of two references) by e-mail (one PDF-attachment with max. 5 MB including all documents) with subject &quot;ModDat-2024LMU&quot; to <a class="reference external" href="mailto:climate.jobs&#64;geographie.uni-muenchen.de">climate.jobs&#64;geographie.uni-muenchen.de</a>. Deadline for application is March 30, 2024; the position remains open until filled. For further information please contact Prof. Dr. Julia Pongratz (<a class="reference external" href="mailto:julia.pongratz&#64;lmu.de">julia.pongratz&#64;lmu.de</a>).</p>
+<ul class="simple">
+<li>a strong interest in climate and sustainability science</li>
+<li>a PhD in a natural or mathematical science subject (computer sciences, physics, geography, mathematics or similar)</li>
+<li>very good programming skills (our models and scripting is foremost python- and fortran-based), ability to work on high-performance computing systems and with large datasets</li>
+<li>excellent communication skills in English (our working language), proven also by scientific publications</li>
+<li>high communicative skills, high independence and proven ability to structure complex processes and efficiently finish tasks</li>
+</ul>
+https://www.python.org/jobs/7529/Senior Software Engineer, SimpleLegalhttps://www.python.org/jobs/7528/Remote, USA
+<p>Come lead by example and help evolve and improve our technology and team.   Simplelegal has a single git repo and our only high level dependencies are Python and Postgresql, and despite our determination to maintain the spirit of staying 'simple' down to our tech stack, we have a lot of complex and challenging technical problems.  We have generally good methodologies (robust CI, code reviews before merging branches, everything is checked in, careful release and branching process, etc) but we are always trying to find ways to be better.</p>
+<p>A day in the life of a Senior Engineer would include checking in on other engineers to see if they need advice or assistance, giving feedback on code reviews, attending approximately 2 15 minute standups (only one as a participant, the other to help maintain links between teams in other time zones), attending 1 to 2 hours of other meetings, and interacting with other members of the team throughout the work day on Slack.</p>
+<p>Work life balance is good, expectations are clear and communicated, and work proceeds at a regular pace without too many emergencies.</p>
+<ul class="simple">
+<li>5+ years of software engineering experience</li>
+<li>3+ years of Python experience</li>
+<li>Comfortable working in a fully remote environment.</li>
+<li>3+ years experience working with Postgresql</li>
+<li>Experience working with Python Web frameworks</li>
+<li>Experience with Git and Docker</li>
+</ul>
+https://www.python.org/jobs/7528/Python Sr Dev / TL Dev  urgent position, Techuntinghttps://www.python.org/jobs/7527/Latinoamerica, any site, Argentina or any site of Latam
+<p>Python Sr Dev Urgent requirement NEW</p>
+<p>Techunting is looking for a Python Sr Dev for a very important client in the US full time staff devRemote from Argentina, Argentina, Argentina or rest of Latinamerica</p>
+<p>Job Title</p>
+<p>Python Sr Dev Urgent requirement</p>
+<p>Job Description</p>
+<ul class="simple">
+<li>Python full stack</li>
+<li>advanced or intermediate Level of English</li>
+<li>Great opportunity and benefits</li>
+<li>Career dev</li>
+<li>English lessons</li>
+<li>Gym paid</li>
+<li>Salary in USD</li>
+<li>3 weeks vacations</li>
+<li>Rental warranty covered</li>
+<li>Healthcare</li>
+</ul>
+<p>etc..
+Restrictions</p>
+<ul class="simple">
+<li>Bachelor's degree in Computer Science or related field</li>
+<li>5+ years of professional experience as a Node.js backend developer</li>
+<li>In-depth knowledge of AWS services, specifically Lambda, API Gateway, and serverless architectures</li>
+</ul>
+<p>Very important :</p>
+<p>You   must be familiarized using these
+PEP8 python RUles&nbsp; &nbsp;&nbsp;+ &nbsp;black y flake8 rules, bandint good practices y mypy</p>
+<p>Proficiency in MongoDB, including schema design, query optimization, and data modeling
+Strong understanding of RESTful API design principles and best practices
+Experience with Git and GitHub for version control and collaboration</p>
+<p>Experience with other AWS services.</p>
+<p>US american company</p>
+https://www.python.org/jobs/7527/Senior Python Developer, Deep Cognition India Pvt Ltdhttps://www.python.org/jobs/7526/Bengaluru, Karnataka, India
+<p><strong>Responsibilities</strong></p>
+<ul class="simple">
+<li>Design, develop, and implement complex and scalable Python applications.</li>
+<li>Collaborate with engineers, data scientists, and product managers to understand requirements and deliver high-quality solutions.</li>
+<li>Write clean, maintainable, and well-documented code.</li>
+<li>Conduct code reviews and unit testing to ensure code quality.</li>
+<li>Stay up-to-date with the latest Python technologies and best practices.</li>
+<li>Participate in technical discussions and provide input on project direction.</li>
+</ul>
+<p><strong>Qualifications:</strong></p>
+<ul class="simple">
+<li>Minimum 3+ years of experience as a Python developer.</li>
+<li>Strong experience in object-oriented programming (OOP) principles.</li>
+<li>Experience with web frameworks (e.g., Django or Flask) (a plus).</li>
+<li>Experience with databases (e.g., MySQL, PostgreSQL) (a plus).</li>
+<li>Experience with cloud platforms (e.g., AWS, Azure, GCP) (a plus).</li>
+<li>Excellent problem-solving and analytical skills.</li>
+<li>Strong communication and collaboration skills.</li>
+<li>Ability to work independently and as part of a team.</li>
+</ul>
+https://www.python.org/jobs/7526/Python full-stack developer (Django framework + Vue.js), sync.bluehttps://www.python.org/jobs/7525/Haltern am See, NRW, Germany
+<p>As part of our young and uncomplicated team, you are the brains behind our great cloud solution - from small bug fixes to large feature releases. Make the difference in the world of business cloud solutions!</p>
+<p>Your tech stack:</p>
+<ul class="simple">
+<li>Python (Django, Flask)</li>
+<li>HTML/CSS/JS (Vue.js)</li>
+<li>Linux</li>
+</ul>
+<p>​Your language skills:</p>
+<ul class="simple">
+<li>German</li>
+<li>English</li>
+</ul>
+<p>​Your strengths:</p>
+<ul class="simple">
+<li>Highly motivated</li>
+<li>Technically interested</li>
+<li>Team player</li>
+</ul>
+https://www.python.org/jobs/7525/Full-stack Developer, Lemon.iohttps://www.python.org/jobs/7524/Kyiv, Україна
+<p>What do we offer:</p>
+<ul class="simple">
+<li>We respect your time: here is no micromanagement or screen trackers.</li>
+<li>You can earn with us $5k - $9k monthly - the rate depends on your skills and experience. We've already paid out over $10M to our engineers.</li>
+<li>You will enjoy your work - it’s possible to communicate async and choose a schedule that works best for you.</li>
+<li>You will communicate directly with the clients. Most of them have technical backgrounds. Sounds good, yeah?</li>
+<li>We will support you from the time when the application will be started during all our cooperation.</li>
+<li>No more hunting for clients or negotiating rates - let us handle the business side of things so you can focus on what you do best.</li>
+<li>We'll manually find you the best project according to your skills and preferences.</li>
+<li>You will work at the fast-paced startup environment that will keep you motivated and engaged.</li>
+<li>We will connect you with the best developers in the world through our community.</li>
+</ul>
+<p>We also collaborate with other companies through staff augmentation. More details are [here](<a class="reference external" href="https://lemon.io/partnership-with-lemonio/">https://lemon.io/partnership-with-lemonio/</a>).</p>
+<p>Who we are looking for:</p>
+<ul class="simple">
+<li>Senior Software Developer</li>
+<li>Senior+ Software Developer</li>
+</ul>
+<p>Requirements:</p>
+<ul class="simple">
+<li>4+ years of software development experience</li>
+<li>2+ years of experience with React.js</li>
+<li>2+ years of experience with Python and Django AND/OR 2+ years of experience with React Native as a mobile developer</li>
+<li>Hands-on experience with Typescript, Next, AWS would be a plus</li>
+<li>Good command of English, both written and spoken, as you’ll be communicating with clients directly</li>
+<li>Strong organizational skills — ability to work full-time remotely with no supervision</li>
+<li>Responsibility — we want to trust you</li>
+<li>Soft skills — we value clear and effective communication, at the same time don't force you becoming a public speaker</li>
+</ul>
+<p>Ready to take your career to the next level? Apply now and join the Lemon.io community!</p>
+<p>If your experience matches with our requirements be ready for the next steps:</p>
+<ul class="simple">
+<li>VideoAsk (about 10 minutes)</li>
+<li>Completing your me.lemon profile</li>
+<li>30 minutes Screening call with our Recruiters</li>
+<li>Technical Interview with our Developers</li>
+<li>Feedback</li>
+<li>Magic Box (we are looking for best project for you)</li>
+</ul>
+<p>P.S. We work with developers from 59 countries in different regions: Europe, LATAM, Asia (Philippines, Indonesia), Oceania (Australia, New Zealand, Papua New Guinea), Canada and the UK. However, we have some exceptions.</p>
+<p>At the moment, we don’t have a legal basis to accept applicants from certain European countries: Albania, Belarus, Bosnia and Herzegovina, Croatia, Iceland, Liechtenstein, Kosovo, Montenegro, North Macedonia, Russia, Serbia, and Slovenia. Additionally, there are a few countries in Latin America from which we cannot accept applicants: Cuba and Nicaragua, as well as most Asian countries. Furthermore, we are unable to accept applicants from Africa.</p>
+<p>Please note that due to the overwhelming number of applications, only suitable candidates will be contacted for an interview.</p>
+<p>We strongly ask you to send your CVs in ENGLISH. Application in English will be considered first. Good luck to everyone!</p>
+https://www.python.org/jobs/7524/Senior Software Engineer, Valencehttps://www.python.org/jobs/7519/San Francisco or New York, United States
+<ul class="simple">
+<li>Work with the product team to understand and prioritize evolving requirements.</li>
+<li>Writing, reviewing, and deploying code.</li>
+<li>Contribute to the technical roadmap, including architecture and development infrastructure.</li>
+<li>Contribute to the product being scalable and maintainable.</li>
+<li>Support managing and and breaking down large product and technical eﬀorts.</li>
+<li>Contribute to machine learning and large language model (LLM) pipelines and APIs, including OpenAI (GPT-3.5 and GPT-4), Azure (OpenAI), Anthropic (Claude), and others.</li>
+</ul>
+<p>In The First Week, Expect To:</p>
+<ul class="simple">
+<li>Deploy a feature.</li>
+<li>Get up to speed on the product and the team.</li>
+<li>Meet with the broader team and understand their roles and responsibilities.</li>
+<li>Understand the technical architecture and roadmap.</li>
+</ul>
+<p>In The First Month, Expect To:</p>
+<ul class="simple">
+<li>Ship 1-2 major product features or technical enhancements.</li>
+<li>Review the current engineering work and provide inputs on areas for improvement or prioritization.</li>
+<li>Ship an LLM-powered coaching scenario.</li>
+</ul>
+<p>In The First Three Months, Expect To:</p>
+<ul class="simple">
+<li>Strategize and scope on multiple on large technical projects.</li>
+<li>Drive improvements to our codebase and process to quickly build secure, maintainable software.</li>
+<li>Ensure that all code is of high quality and is easily maintainable.</li>
+</ul>
+<p>In The First 6-12 Months, Expect To:</p>
+<ul class="simple">
+<li>Continue shipping work on major product initiatives.</li>
+<li>Support the broader technical team and ensure that all work is executed eﬃciently and eﬀectively</li>
+<li>Become a critical member of the team that is responsible for the success of the product.</li>
+<li>Take on additional responsibility as a senior member of Valence’s team.</li>
+<li>Take the product to scale with dozens of Fortune 1000 companies and thousands of users.</li>
+</ul>
+<ul class="simple">
+<li>Experience working with Python and Django</li>
+<li>Experience working with AWS infrastructure (Elastic Container Service, Terraform, Relational Data Store, etc.) and Heroku</li>
+<li>Experience with LLMs and ML/data is a plus</li>
+<li>Experience managing and executing on large technical endeavors.</li>
+<li>Experience owning a technical architecture and roadmap.</li>
+<li>Exposure to early-stage startups, preferably B2B Saas.</li>
+</ul>
+https://www.python.org/jobs/7519/Python Backend Engineer, Infiniminds Pvt Ltdhttps://www.python.org/jobs/7518/Hyderabad, India
+<p>We are seeking an experienced Backend Developer to join our dynamic and innovative team. The ideal candidate should have a strong background in developing robust, scalable, and high-performance backend systems. As a Python Backend Developer, you will be responsible for designing, implementing, and maintaining backend services, APIs, and databases that power our applications.</p>
+<p>Responsibilities:</p>
+<ul class="simple">
+<li>Collaborate with cross-functional teams to understand business requirements and translate them into technical specifications.</li>
+<li>Design, develop, test, and deploy efficient and maintainable backend solutions using Python and related technologies.</li>
+<li>Build and maintain RESTful APIs to support frontend applications and third-party integrations.</li>
+<li>Implement data models, database schema, and queries for optimal performance and scalability.</li>
+<li>Ensure code quality, security, and adherence to best practices through code reviews and automated testing.</li>
+<li>Troubleshoot and resolve issues related to backend services, performance, and scalability.</li>
+<li>Stay updated on industry trends and best practices to continuously improve our technology stack.</li>
+</ul>
+<p>Requirements:</p>
+<ul class="simple">
+<li>4-8 years of professional experience as a Python Backend Developer.</li>
+<li>Strong proficiency in Python and its frameworks (Django, Flask, etc.).</li>
+<li>Experience with relational databases (e.g., PostgreSQL, MySQL) and NoSQL databases (e.g., MongoDB).</li>
+<li>Solid understanding of RESTful API design and best practices.</li>
+<li>Proficient in version control systems (e.g., Git).</li>
+<li>Experience with cloud platforms such as AWS, Azure, or Google Cloud.</li>
+<li>Familiarity with containerization and orchestration tools (Docker, Kubernetes).</li>
+<li>Strong problem-solving skills and attention to detail.</li>
+<li>Excellent communication and collaboration skills.</li>
+<li>Ability to work independently and as part of a team in a fast-paced environment.</li>
+</ul>
+https://www.python.org/jobs/7518/Full Stack Python Developer, Loginsofthttps://www.python.org/jobs/7517/Hyderabad, Telangana, India
+<ul class="simple">
+<li>Experience in web application development using 𝗖𝗼𝗿𝗲 𝗣𝘆𝘁𝗵𝗼𝗻, 𝗗𝗷𝗮𝗻𝗴𝗼  Rest framework and 𝗖𝗲𝗹𝗲𝗿𝘆.</li>
+<li>Should have working experience in 𝗔𝗻𝗴𝘂𝗹𝗮𝗿.</li>
+<li>Proficient in developing REST API's, Integration and familiar with JSON formatted data.</li>
+<li>Writing high quality code with best practices based on technical requirement.</li>
+<li>Hands-on experience in analysis, design, coding, and implementation of complex, custom-built software products.</li>
+<li>Should have experience on SQL queries, Postgres</li>
+<li>Experience in working with Git or equivalent code management / version control system with best practices.</li>
+<li>Experience with Agile development methods.</li>
+<li>CI/CD pipeline - Good to have experience on Travis CI and Docker</li>
+<li>RabbitMQ - Good to have knowledge on application monitoring tools like RabbitMQ</li>
+<li>Good to have experience on any communication tool preferably Twilio</li>
+<li>Figma - Good to have UI/UX knowledge</li>
+<li>Should have strong analytical and logical skills.</li>
+<li>Should be good at fundamentals: Data Structures, Algorithms, Programming Languages, Distributed Systems, and Information retrieval.</li>
+<li>Should have good communication skills and client facing experience.</li>
+</ul>
+<ul class="simple">
+<li>Experience: 4+ years</li>
+<li>Job Type - Full Time</li>
+<li>Hyrib Mode (3 days work from the office)</li>
+<li>Working experience in Core Python, Django, Celery and Angular.</li>
+</ul>
+https://www.python.org/jobs/7517/Remote Full-stack Python Developer, Scopichttps://www.python.org/jobs/7516/Remote, Any country
+<p>Are you on the hunt for exciting new challenges that boost your professional growth? If you’re a Full-stack Python Developer with extensive experience working with React, and willing to dive into intra-system complexity, we’d love to hear from you! Read on to see if you’d be a good fit for the Scopic team of 250+ professionals from over 60 countries.
+At Scopic, the virtual world is our home so this is a full-time remote position. Only apply if you’re prepared for the zero-hour commute and the thought of collaborating with colleagues from around the globe excites you!</p>
+<p>The secret ingredients that make us special:</p>
+<ul class="simple">
+<li>Your growth is our growth. We invest in your future with paid training and other professional opportunities.</li>
+<li>We’re industry innovators at the forefront of change. Equipped with the latest technologies and a team of knowledgeable colleagues by your side, you’ll embrace new and interesting challenges.</li>
+<li>Your location. Your schedule — Pick your time-zone, choose your preferred hours, and work from the place where you feel most at home.</li>
+<li>Flexibility and freedom are in our DNA! As long as you have a stable internet connection and the drive to thrive, you can travel and work from anywhere you like.</li>
+<li>A workload you can rely on. We’ll set you enough tasks to keep that mind busy! At Scopic, we’ll ensure you always have a consistent flow of engaging, challenging work to do.</li>
+<li>Recognition and reward. We acknowledge diligence and hard work through annual pay increases for good performance.</li>
+</ul>
+<p>Down to business!</p>
+<ul class="simple">
+<li>Rate Range is negotiable depending on your experience and performance during our recruiting process.</li>
+<li>This is a full-time, home-based position. (40 hours/week)</li>
+<li>This is an hourly paid position.</li>
+</ul>
+<p>Our values:</p>
+<p>Scopic offers equal opportunity. We value diversity and do not discriminate on the basis of race, religion, color, marital status, national origin, gender, veteran status, sexual orientation, age, or disability status.</p>
+<p>Have the skills, the drive, and the passion to join the Scopic family?</p>
+<p>Apply today to join our growing team of remote professionals from around the world.</p>
+<p>Attention Job Seekers: Please be aware that scammers may be fraudulently using our company's name in hiring scams. To ensure your safety, all legitimate communication regarding job opportunities from our company will only come from email addresses ending with &#64;scopicsoftware.com or &#64;scopicsoftware.hire.trakstar.com. Please exercise caution and report any suspicious activity to our official channels.</p>
+<p>Please apply online:  <a class="reference external" href="https://scopicsoftware.hire.trakstar.com/jobs/fk0vphd?source=Python">https://scopicsoftware.hire.trakstar.com/jobs/fk0vphd?source=Python</a>
+Learn more about career opportunities at Scopic: . scopicsoftware.com/careers</p>
+<p>The skills and traits we’re looking for:</p>
+<ul class="simple">
+<li>A minimum of 4 years of professional software development experience.</li>
+<li>Senior-level expertise in Python programming.</li>
+<li>Proficiency in Django, as our main framework, with a strong understanding of building RESTful APIs.</li>
+<li>Experience with MongoDB and its integration with Python for development purposes.</li>
+<li>Familiarity with front-end technologies, particularly React, to seamlessly integrate with our back-end services.</li>
+<li>Proficient in using NGINX for web serving and reverse proxying for web applications.</li>
+<li>Solid understanding of cloud services, specifically AWS, where our entire stack is hosted.</li>
+<li>General programming best practices, including proficient use of Git for version control.</li>
+</ul>
+https://www.python.org/jobs/7516/Senior Python Developer, CloudLinuxhttps://www.python.org/jobs/7513/Remote, Europe or West Asia, Remote
+<p>As an Engineer in the Innovation Release Engineering Team, you'll play a vital role in our department. Your focus will be on developing, prototyping, enhancing, and supporting software solutions that aim to improve internal company processes. We're looking for someone who brings a combination of creativity, technical expertise, and a problem-solving mindset to deliver reliable and efficient solutions that can be scaled across the entire company.</p>
+<p>Key Responsibilities:</p>
+<ul class="simple">
+<li>Develop Software Solutions: You'll be responsible for designing and implementing software solutions that streamline internal processes, enhance efficiency, and contribute to cost reduction. Your work will support the company's scaling efforts.</li>
+<li>Prototype Development: You'll creatively approach problem-solving by developing multiple prototypes for the same issue. This will enable the team to explore various solutions and select the most effective one.</li>
+<li>Solution Enhancement and Support: You'll take ownership of refining prototypes, enhancing their functionality, ensuring their reliability, and offering support as these solutions are adopted by various teams within the company.</li>
+<li>Problem Investigation: It'll be your responsibility to proactively identify and investigate issues that arise during development and in deployed solutions. You'll employ up-to-date technologies and best practices to find innovative solutions.</li>
+<li>Collaboration and Innovation: You'll work closely with team members and stakeholders across the company to understand needs, gather feedback, and continuously improve our solutions and processes.</li>
+</ul>
+<p>To excel in this role, you need:</p>
+<ul class="simple">
+<li>At least 4 years of hands-on experience in Python programming.</li>
+<li>Proficiency in System programming, including Sockets, filesystem, and process management.</li>
+<li>A strong command over the GNU/Linux operating system and shell scripting abilities.</li>
+<li>Experience with git-based development processes.</li>
+<li>Familiarity with PyTest.</li>
+<li>Intermediate level of English language proficiency.</li>
+<li>Knowledge of relation databases, along with familiarity in the SQL language (PostgreSQL would be perfect).</li>
+</ul>
+<p>It would be great if you also have:</p>
+<ul class="simple">
+<li>Familiarity with Ansible, Jenkins, Docker.</li>
+<li>Experience in rpm/deb package management (writing rpm spec, deb rules).</li>
+<li>Capability of performing basic DevOps operations, like setting up testing and production environments.</li>
+</ul>
+<p>In addition, it is essential that you:</p>
+<ul class="simple">
+<li>Are quick to learn and proactive.</li>
+<li>Possess a high level of self-motivation and determination to accomplish set goals.</li>
+<li>Can independently analyze tasks and identify optimal solutions.</li>
+<li>Excel in collaboration and thrive in team-based environments.</li>
+<li>Have the versatility to switch between robust production development and speedy rough prototype implementation.</li>
+</ul>
+https://www.python.org/jobs/7513/

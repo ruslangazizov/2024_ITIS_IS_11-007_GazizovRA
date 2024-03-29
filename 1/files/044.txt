@@ -1,0 +1,1023 @@
+ 
+PSF Officers & Board Members | Python Software Foundation
+Notice: While JavaScript is not essential for this website, your interaction with the content will be limited. Please turn JavaScript on for the full experience. 
+Skip to content
+▼ Close
+                
+Python
+PSF
+Docs
+PyPI
+Jobs
+Community
+▲ The Python Network
+                
+Donate
+≡ Menu
+Search This Site
+                                    GO
+                                
+A A
+Smaller
+Larger
+Reset
+Socialize
+LinkedIn
+Mastodon
+Chat on IRC
+Twitter
+About
+Mission Statement
+Board of Directors & Officers
+PSF Staff
+Annual Impact Report
+Fiscal Sponsorees
+Public Records
+Legal & Policies
+PSF FAQ
+Sponsorship
+PSF Sponsors
+Apply to Sponsor
+Membership
+Sign up as a Member of the PSF!
+Membership FAQ
+PSF Elections
+Nominate a Fellow & Fellows Roster
+Donate
+Donate to the PSF
+Become a Supporting Member of the PSF
+PSF Matching Donations
+Volunteer
+Volunteer for the PSF
+PSF Work Groups
+Volunteer for PyCon US
+Grants
+Grants program
+Grants Program FAQ
+PyCon US
+News & Community
+Subscribe to the Newsletter
+PSF Blog
+Python Community Code of Conduct
+Community Awards
+Discourse
+ 
+PSF Officers & Board Members
+Officers & Directors by Year
+2023-2024
+2022-2023
+2021-2022
+2020-2021
+Earlier
+Officers & Directors by Name
+Officers By Title
+Officers & Directors by Year
+See also Duties & Responsibilities of Directors
+2023-2024
+Officers
+President/Chair: Dawn Wages
+Vice Chair Elect: Débora Azevedo
+Vice Chairs: Christopher Neugebauer
+Executive Director: Deb Nicholson
+Secretary: Deb Nicholson
+Assistant Secretary: Olivia Sauls
+Treasurer: Kushal Das
+PyCon US Chair: Mariatta Wijaya
+Board of Directors
+Tania Allard
+Débora Azevedo
+Kwon-Han Bae
+Kushal Das
+Cheuk Ting Ho
+Georgi Ker
+Jannis Leidel
+Christopher Neugebauer
+Deb Nicholson
+Denny Perez
+Dawn Wages
+Simon Willison
+Active Board Committees and Voting Members 2023-2024
+Executive Committee: Débora Azevedo,  Kushal Das, Christopher Neugebauer, Dawn Wages
+Finance Committee: Kushal Das, Cheuk Ting Ho, Georgi Ker, Jannis Leidel, Simon Willison
+PyCon US Committee: Tania Allard, Débora Azevedo,  Cheuk Ting Ho, Georgi Ker, Jannis Leidel, Christopher Neugebauer, Dawn Wages
+Membership Committee: Tania Allard, Débora Azevedo, Cheuk Ting Ho, Georgi Ker, Jannis Leidel, Christopher Neugebauer, Denny Perez
+2022-2023
+Officers
+President: Guido van Rossum
+Chair: Thomas Wouters
+Vice Chair Elect: Débora Azevedo
+Vice Chairs: Jeff Triplett, Nina Zakharenko
+Executive Director: Deb Nicholson
+Secretary: Deb Nicholson
+Assistant Secretary: Olivia Sauls
+Treasurer: Dawn Wages
+Communications:
+PyCon US Chair: Mariatta Wijaya
+Board of Directors
+Débora Azevedo
+Tania Allard
+Kushal Das
+Dustin Ingram
+Deb Nicholson
+Jannis Leidel
+Joannah Nanjekye
+Jeff Triplett
+Dawn Wages
+Simon Willison
+Thomas Wouters
+Nina Zakharenko
+2021-2022
+Officers
+Chair: Lorena Mesa
+Vice Chair Elect: Thomas Wouters
+Vice Chairs: Marlene Mhangami, Joannah Nanjekye
+Executive Director: Deb Nicholson
+Secretary: Deb Nicholson
+Assistant Secretary: Olivia Sauls
+Treasurer: Jeff Triplett
+Communications: Jannis Leidel, Nina Zakharenko, Débora Azevedo
+General Counsel: Van Lindberg
+Event Coordinator: Jackie Augustine
+PyCon Chair: Emily Morehouse-Valcarcel
+Board of Directors
+Débora Azevedo
+Tania Allard
+Kushal Das
+Dustin Ingram
+Deb Nicholson
+Jannis Leidel
+Van Lindberg
+Lorena Mesa
+Marlene Mhangami
+Joannah Nanjekye
+Jeff Triplett
+Thomas Wouters
+Nina Zakharenko
+2020-2021
+Officers
+President: Guido van Rossum
+Chair: Lorena Mesa
+Vice Chair Elect: Thomas Wouters
+Vice Chairs: Marlene Mhangami, Christopher Neugebauer
+Executive Director: Ewa Jodlowska
+Secretary: Ewa Jodlowska
+Assistant Secretary: Betsy Waliszewski
+Treasurer: Jeff Triplett
+Communications: Jannis Leidel, Katie McLaughlin
+General Counsel: Van Lindberg
+Event Coordinator: Jackie Augustine, Betsy Waliszewski
+PyCon Chair: Emily Morehouse-Valcarcel
+Board of Directors
+Kushal Das
+Ewa Jodlowska
+Jannis Leidel
+Van Lindberg
+Lorena Mesa
+Katie McLaughlin
+Marlene Mhangami
+Christopher Neugebauer
+Anna Ossowski
+Jeff Triplett
+Thomas Wouters
+Nina Zakharenko
+Dustin Ingram
+Earlier
+2019-2020
+Officers
+President: Guido van Rossum
+Chair: Naomi Ceder
+Vice Chairs: Lorena Mesa, Anna Ossowski, Christopher Neugebauer
+Executive Director: Ewa Jodlowska
+Secretary: Ewa Jodlowska
+Assistant Secretary; Betsy Waliszewski
+Treasurer: Jacqueline Kazil
+Communications: Marlene Mhangami, Kushal Das, Jannis Leidel
+General Counsel: Van Lindberg
+Event Manager: Jackie Augustine
+PyCon Chair: Emily Morehouse-Valcarcel
+Board of Directors
+Naomi Ceder
+Kushal Das
+Eric Holscher
+Ewa Jodlowska
+Jacqueline Kazil
+Jannis Leidel
+Van Lindberg
+Lorena Mesa
+Katie McLaughlin
+Marlene Mhangami
+Christopher Neugebauer
+Anna Ossowski
+Jeff Triplett
+2018-2019
+Officers
+Guido van Rossum, President
+Chair: Naomi Ceder, Chair
+Jacqueline Kazil, Vice Chair Elect
+Van Lindberg, Vice Chair
+Thomas Wouters, Vice Chair
+Marlene Mhangami, Communication Chair
+Lorena Mesa, Communication Chair
+Ee Durbin, PyCon Chair
+Ewa Jodlowska, Director of Operations
+Kurt Kaiser, Treasurer
+Van Lindberg, General Counsel
+Ewa Jodlowska, Secretary
+Betsy Waliszewski, Assistant Secretary
+Ewa Jodlowska & Betsy Waliszewski, Event Coordinators
+Board of Directors
+Van Lindberg
+Naomi Ceder
+Eric Holscher
+Jacqueline Kazil
+Anna Ossowski
+Lorena Mesa
+Thomas Wouters
+Kushal Das
+Marlene Mhangami
+Christopher Neugebauer
+Jeff Triplett
+Katie McLaughlin
+Ewa Jodlowska
+2017-2018
+Officers
+Guido van Rossum, President
+Chair: Naomi Ceder, Chair
+Van Lindberg, Vice Chair
+Ee Durbin, PyCon Chair
+Ewa Jodlowska, Director of Operations
+Kurt Kaiser, Treasurer
+Van Lindberg, General Counsel
+Ewa Jodlowska, Secretary
+Betsy Waliszewski, Assistant Secretary
+Ewa Jodlowska & Betsy Waliszewski, Event Coordinators
+Board of Directors
+Van Lindberg
+Naomi Ceder
+Eric Holscher
+Jacqueline Kazil
+Paul Hildebrandt
+Lorena Mesa
+Thomas Wouters
+Kushal Das
+Marlene Mhangami
+Kenneth Reitz
+Trey Hunner
+Ewa Jodlowska
+Paola Katherine Pacheco
+2016-2017
+Officers
+Guido van Rossum, President
+Diana Clarke, Chair
+Van Lindberg & Naomi Ceder, Vice Chairs
+Brandon Rhodes, PyCon Chair
+Ewa Jodlowska, Director of Operations
+Kurt Kaiser, Treasurer
+Van Lindberg, General Counsel
+Ewa Jodlowska & Betsy Waliszewski, Event Coordinator
+Ewa Jodlowska , Secretary
+Betsy Waliszewski, Assistant Secretary
+Board of Directors
+Annapoornima Koppad (resigned 2017-01-17)
+Carrie Ann Philbin
+Carol Willing
+Jacqueline Kazil
+Kushal Das
+Lorena Mesa
+Trey Hunner
+Younggun Kim
+Naomi Ceder
+Diana Clarke
+Van Lindberg
+2015-2016
+Officers
+Guido van Rossum, President
+Van Lindberg, Chair
+Kurt Kaiser, Treasurer
+Diana Clarke, Communications
+Brandon Rhodes, PyCon Chair
+Ewa Jodlowska, Director of Operations
+Lynn Root & Naomi Ceder, Vice Chairs
+Betsy Waliszewski, Event Coordinator / Administrator
+Board of Directors
+Naomi Ceder
+Diana Clarke
+Alyssa (Nick) Coghlan
+Alex Gaynor
+Marc-Andre Lemburg
+Van Lindberg
+Ashwini Oruganti
+Anna Ossowski
+Carrie Ann Philbin
+Lynn Root
+Carol Willing
+2014-2015
+Officers
+Guido van Rossum, President
+Van Lindberg, Chair
+Kurt Kaiser, Treasurer
+Brian Curtin, Communications
+Diana Clarke, PyCon Chair
+Ewa Jodlowska, Secretary and Event Coordinator
+David Mertz, Vice-Chair and Chair Elect
+Board of Directors
+Alyssa (Nick) Coghlan
+Brian Curtin
+Kushal Das
+Selena Decklemann
+Alex Gaynor
+Marc-Andre Lemburg
+Van Lindberg
+Jessica McKellar
+David Mertz
+Travis Oliphant
+Lynn Root
+2013-2014
+Officers
+Guido van Rossum, President
+Van Lindberg, Chairman
+Kurt Kaiser, Treasurer
+Brian Curtin, Communications
+Diana Clarke, PyCon Chair
+Ewa Jodlowska, Secretary and Event Coordinator
+Jesse Noller, Vice Chairman
+Board of Directors
+Brett Cannon
+Brian Curtin
+Alex Gaynor
+Marc-Andre Lemburg
+Van Lindberg
+Jessica McKellar
+David Mertz
+Doug Napoleone
+Jesse Noller
+Tim Peters
+Lynn Root
+2012-2013
+Officers:
+Guido van Rossum, President
+Van Lindberg, Chairman
+Kurt Kaiser, Treasurer
+Brian Curtin, Communications
+Jesse Noller, PyCon Chair
+Ewa Jodlowska, Secretary and Event Coordinator
+Marc-Andre Lemburg, Vice Chairman
+Board of Directors:
+Brian Curtin
+Steve Holden
+Andrew Kuchling
+Marc-Andre Lemburg
+Van Lindberg
+Martin von Löwis
+Jessica McKellar
+David Mertz
+Doug Napoleone
+Jesse Noller
+Tim Peters
+2011-2012
+Officers:
+Guido van Rossum, President
+Steve Holden, Chairman
+Pat Campbell, Secretary
+Kurt Kaiser, Treasurer
+Doug Hellmann, Communications
+Jesse Noller, PyCon Chair
+Board of Directors:
+Raymond Hettinger
+Steve Holden
+Marc-Andre Lemburg
+Martin von Löwis
+David Mertz
+Doug Napoleone
+Jesse Noller
+Tim Peters
+Allison Randal
+Jeff Rush
+Greg Stein (resigned 2011-09-19)
+James Tauber (resigned 2011-07-18)
+Gloria Willadsen
+2010-2011
+Officers:
+Guido van Rossum, President
+Steve Holden, Chairman
+Pat Campbell, Secretary
+Kurt Kaiser, Treasurer
+Doug Hellmann, Communications
+Van Lindberg, PyCon Chair
+Board of Directors:
+Raymond Hettinger
+Steve Holden
+Marc-Andre Lemburg
+Martin von Löwis
+David Mertz
+Doug Napoleone
+Jesse Noller
+Tim Peters
+Allison Randal
+Jeff Rush
+Greg Stein
+James Tauber
+Gloria Willadsen
+2009-2010
+Officers:
+Guido van Rossum, President
+Steve Holden, Chairman
+David Goodger, Secretary
+Kurt Kaiser, Treasurer
+Raymond Hettinger, Assistant Treasurer
+Brett Cannon, Executive Vice President
+Van Lindberg, PyCon Chair
+Board of Directors:
+Brett Cannon
+Raymond Hettinger
+Steve Holden
+Andrew Kuchling
+Martin von Löwis
+David Mertz
+Tim Peters
+Jeff Rush
+James Tauber
+(David Goodger resigned from the Board in July 2009 when appointed
+Conference Coordinator.)
+2008-2009
+Officers:
+Guido van Rossum, President
+Steve Holden, Chairman
+David Goodger, Secretary & PyCon Chair
+Kurt Kaiser, Treasurer
+Raymond Hettinger, Assistant Treasurer
+Brett Cannon, Executive Vice President
+James Tauber, Vice President
+Board of Directors:
+Brett Cannon
+Stephan Deibel
+David Goodger
+Raymond Hettinger
+Steve Holden
+Martin von Löwis
+Tim Peters
+James Tauber
+2007-2008
+Officers:
+Guido van Rossum, President
+Stephan Deibel, Chairman
+Steve Holden, Vice Chairman
+David Goodger, Secretary
+Kurt Kaiser, Treasurer
+Neal Norwitz, Assistant Treasurer
+Brett Cannon, Executive Vice President
+Andrew Kuchling, Vice President
+Board of Directors:
+David Ascher
+Brett Cannon
+Stephan Deibel
+David Goodger
+Steve Holden
+Andrew Kuchling
+Martin von Löwis
+Tim Peters
+2006-2007
+Officers:
+Guido van Rossum, President
+Stephan Deibel, Chairman
+Steve Holden, Vice Chairman
+Kurt Kaiser, Treasurer
+Neal Norwitz, Assistant Treasurer
+David Goodger, Secretary
+Jeremy Hylton, Assistant Secretary
+David Ascher, Executive Vice President
+Andrew Kuchling, Vice President
+Martin von Löwis, Vice President
+Brett Cannon, Vice President
+Board of Directors:
+David Ascher
+Brett Cannon
+Stephan Deibel
+David Goodger
+Steve Holden
+Andrew Kuchling
+Martin von Löwis
+Tim Peters
+2005-2006
+Officers:
+Guido van Rossum, President
+Stephan Deibel, Chairman of the Board
+Neal Norwitz, Treasurer through October 18, Assistant Treasurer thereafter
+Kurt Kaiser, Assistant Treasurer through October 18, Treasurer thereafter
+Jeremy Hylton, Secretary
+David Goodger, Assistant Secretary
+Board of Directors:
+David Ascher
+Stephan Deibel
+Steve Holden
+Jeremy Hylton
+Andrew Kuchling
+Martin von Löwis
+Tim Peters
+(Guido van Rossum was elected to the Board of Directors at the
+2005-03-24 members' meeting, but resigned at the Board meeting the
+same day.  He retained the post of President.)
+2004-2005
+Officers:
+Stephan Deibel, Chairman of the Board
+Guido van Rossum, President
+Neal Norwitz, Treasurer
+Jeremy Hylton, Secretary
+Board of Directors:
+David Ascher
+Stephan Deibel
+Steve Holden
+Jeremy Hylton
+Martin von Löwis
+Tim Peters
+Guido van Rossum
+2003-2004
+Officers:
+Guido van Rossum, President and Chairman of the Board
+Neal Norwitz, Treasurer
+Jeremy Hylton, Secretary
+Board of Directors:
+David Ascher
+Jeremy Hylton
+Marc-André Lemburg
+Martin von Löwis
+Tim Peters
+Guido van Rossum
+Thomas Wouters
+2002-2003
+Officers:
+Guido van Rossum, President, Chairman of the Board
+Jeremy Hylton, Treasurer and Secretary
+Board of Directors:
+David Ascher
+Jeremy Hylton
+Marc-André Lemburg
+Martin von Löwis
+Tim Peters
+Guido van Rossum
+Thomas Wouters
+2001-2002
+Officers:
+Dick Hardt, President
+Shawn O'Donnell, Secretary
+Board of Directors:
+David Ascher
+Paul Everitt
+Fredrik Lundh
+Tim Peters
+Guido van Rossum
+Greg Stein
+Thomas Wouters
+First Board Meeting (March 5, 2001)
+Officer:
+Greg Stein, temporary Chairperson
+Board of Directors:
+Paul Everitt
+Greg Stein
+Officers & Directors by Name
+Tania Allard
+David Ascher
+Débora Azevedo
+Brett Cannon
+Pat Campbell
+Diana Clarke
+Naomi Ceder
+Alyssa Coghlan
+Brian Curtin
+Kushal Das
+Selena Deckelmann
+Stephan Deibel
+Paul Everitt
+Alex Gaynor
+David Goodger
+Dick Hardt
+Doug Hellmann
+Raymond Hettinger
+Paul Hildebrandt
+Steve Holden
+Eric Holscher
+Trey Hunner
+Jeremy Hylton
+Dustin Ingram
+Ewa Jodlowska
+Kurt Kaiser
+Jacqueline Kazil
+Younggun Kim
+Annapoornima Koppad
+Andrew Kuchling
+Jannis Leidel
+Marc-André Lemburg
+Van Lindberg
+Martin von Löwis
+Fredrik Lundh
+Jessica McKellar
+Katie McLaughlin
+Marlene Mhangami
+David Mertz
+Lorena Mesa
+Joannah Nanjekye
+Doug Napoleone
+Christopher Neugebauer
+Deb Nicholson
+Jesse Noller
+Neal Norwitz
+Shawn O'Donnell
+Travis Oliphant
+Anna Ossowski
+Paola Katherine Pacheco
+Tim Peters
+Carrie Ann Philbin
+Allison Randal
+Kenneth Reitz
+Guido van Rossum
+Lynn Root
+Jeff Rush
+Greg Stein
+James Tauber
+Jeff Triplett
+Gloria Willadsen
+Dawn Wages
+Carol Willing
+Simon Willison
+Thomas Wouters
+Nina Zakharenko
+Tania Allard
+Director, 2021-2023
+David Ascher
+Director, 2001-2008
+Executive Vice President, 2006-2007
+Débora Azevedo
+Director, 2021-2023
+Vice chair elect, 2022-2023
+Communications officer, 2021-2022
+Brett Cannon
+Director, 2006-2010, 2013-2014
+Executive Vice President, 2007-2010
+Vice President, 2006-2007
+Pat Campbell
+Secretary, 2010-2012
+Diana Clarke
+PyCon Chair, 2014-2015
+Director, 2015-2017
+Communications Officer, 2015
+Chair, 2016-2017
+Naomi Ceder
+Chair, 2017-2020
+Director, 2015-2020
+Vice Chair, 2015-2016
+Alyssa Coghlan
+Director, 2014 - 2016 (as Nick Coghlan)
+Brian Curtin
+Director, 2012-2015
+Communications Officer, 2012-2015
+Kushal Das
+Director, 2014-2015, 2016-2023
+Communications Officer, 2019-2020
+Selena Deckelmann
+Director, 2014-2015
+Stephan Deibel
+Director, 2004-2009
+Chairman of the Board, 2004-2008
+Paul Everitt
+Director, 2001-2002
+Alex Gaynor
+Director, 2013-2016
+David Goodger
+Director, 2006-2009
+Secretary, 2006-2010
+Assistant Secretary, 2005-2006
+PyCon Chair, 2008-2009
+PyCon Chair (informal), 2007-2008
+Dick Hardt
+President, 2001-2002
+Doug Hellmann
+Communications Officer, 2010-2012
+Raymond Hettinger
+Director, 2008-2012
+Assistant Treasurer, 2008-2010
+Paul Hildebrandt
+Director, 2017-2018
+Steve Holden
+Director, 2004-2013
+Vice Chairman, 2006-2008
+Chairman of the Board, 2008-2012
+PyCon Chair (informal), 2002-2005
+Eric Holscher
+Director, 2017-2020
+Trey Hunner
+Director, 2016-2018
+Jeremy Hylton
+Director, 2002-2006
+Treasurer, 2002-2003
+Secretary, 2002-2006
+Assistant Secretary, 2006-2007
+Dustin Ingram
+Director, 2020-2023
+Ewa Jodlowska
+Executive Director, 2019-2021
+Director of Operations, 2015-2019
+Secretary, 2012-2021
+Event Coordinator, 2012-2019
+Kurt Kaiser
+Treasurer, 2005-2019
+Assistant Treasurer, 2005
+Jacqueline Kazil
+Director, 2016-2020
+Treasurer, 2019-2020
+Vice chair elect, 2018-2019
+Younggun Kim
+Director, 2016-2017
+Annapoornima Koppad
+Director, 2016-2017
+Andrew Kuchling
+Director, 2005-2008, 2009-2010, 2012-2013
+Vice President, 2006-2008
+PyCon Chair (informal), 2005-2007
+Jannis Leidel
+Director, 2019-2023
+Communications officer, 2019-2022
+Marc-André Lemburg
+Director, 2002-2004, 2010-2016
+Vice Chairman, June 2012-2013
+Vice President, 2003-2004
+Van Lindberg
+Director, 2012-2023
+Chairman, 2012-2016
+Vice Chairman, April-May 2012, 2016-2019
+PyCon Chair, 2009-2011
+General Council, 2016-2023
+Martin von Löwis
+Director, 2002-2013
+Vice President, 2006-2007
+Fredrik Lundh
+Director, 2001-2002
+Jessica McKellar
+Director, 2012-2014
+Katie McLaughlin
+Director, 2018-2021
+Communications Officer, 2020-2021
+Marlene Mhangami
+Director, 2017-2022
+David Mertz
+Director, 2009-2014
+Vice-Chair and Chair Elect, 2014-15
+Lorena Mesa
+Chair, 2020-2022
+Director, 2016-2022
+Communications Officer, 2016-2022
+Joannah Nanjekye
+Director, 2021-2023
+Vice chair, 2021-2022
+Doug Napoleone
+Director, 2010-2014
+Christopher Neugebauer
+Director, 2018-2021
+Vice chair, 2019-2021
+Deb Nicholson
+Executive Director, 2022-2023
+Secretary, 2022-2023
+Jesse Noller
+Director, 2010-2014
+Vice Chairman, 2013-2014
+PyCon Chair, 2012-2013
+Neal Norwitz
+Treasurer, 2003-2005
+Assistant Treasurer, 2005-2008
+Shawn O'Donnell
+Secretary, 2001-2002
+Travis Oliphant
+Director, 2014-2015
+Anna Ossowski
+Director, 2018-2021
+Vice chair, 2019-2020
+Paola Katherine Pacheco
+Director, 2017-2018
+Tim Peters
+Director, 2001-2014
+Carrie Ann Philbin
+Director, 2015-2017
+Allison Randal
+Director, 2010-2012
+Kenneth Reitz
+Director, 2017-2018
+Guido van Rossum
+Director, 2001-2005
+President, 2002-2023
+Chairman of the Board, 2002-2004
+Lynn Root
+Director, 2013-2016
+Vice-Chair Elect, 2015
+Jeff Rush
+Director, 2009-2012
+PyCon Chair (informal), 2006-2007
+Greg Stein
+Director, 2001-2002, 2010-2012
+Temporary Chairperson, March 5, 2001
+James Tauber
+Director, 2008-2012
+Vice President, 2008-2009
+Jeff Triplett
+Director, 2018-2023
+Vice chair, 2022-2023
+Treasurer, 2020-2022
+Gloria Willadsen
+Director, 2010-2012
+Dawn Wages
+Director, 2022-2023
+Treasurer, 2022-2023
+Carol Willing
+Director, 2015-2017
+Simon Willison
+Director, 2022-2023
+Thomas Wouters
+Director, 2001-2004, 2017-2019, 2020-2023
+Chair, 2022-2023
+Vice chair elect, 2020-2022
+Vice chair, 2018-2019
+Nina Zakharenko
+Director, 2020-2023
+Vice chair, 2022-2023
+Communications officer, 2021-2022
+Officers By Title
+President
+Director of Operations
+Chair
+Vice Chair
+General Council
+Secretary
+Assistant Secretary
+Event Coordinator
+Treasurer
+Assistant Treasurer
+Executive Vice President
+Vice Presidents
+PyCon Chair
+Communications Officer
+President
+2002-2023: Guido van Rossum
+2001-2002: Dick Hardt
+Director of Operations
+2015-2019: Ewa Jodlowska
+Chair
+2022-2023: Thomas Wouters
+2020-2022: Lorena Mesa
+2017-2020: Naomi Ceder
+2016-2017: Diana Clarke
+2012-2016: Van Lindberg
+2008-2012: Steve Holden
+2004-2008: Stephan Deibel
+2002-2004: Guido van Rossum
+2001-03-05: Greg Stein
+Vice Chair
+2022-2023: Débora Azevedo, Jeff Triplett, Nina Zakharenko
+2021-2022: Thomas Wouters, Marlene Mhangami, Joannah Nanjekye
+2020-2021: Thomas Wouters, Marlene Mhangami, Christopher Neugebauer
+2019-2020: Lorena Mesa, Anna Ossowski, Christopher Neugebauer
+2018-2019: Jackie Kazil, Van Lindberg, Thomas Wouters
+2017-2018: Van Lindberg
+2016-2017: Naomi Ceder, Van Lindberg
+2015-2016: Lynn Root, Naomi Ceder
+2014-2015: Marc-Andre Lemburg, David Mertz
+2013-2014: Jesse Noller
+2012-2013: Marc-Andre Lemburg
+April-Man 2012: Van Lindberg
+2006-2008: Steve Holden
+General Council
+2016-2023: Van Lindberg
+Secretary
+2022-2023: Deb Nicholson
+2012-2021: Ewa Jodlowska
+2010-2012: Pat Campbell
+2006-2010: David Goodger
+2002-2006: Jeremy Hylton
+2001-2002: Shawn O'Donnell
+Assistant Secretary
+2015-2021: Betsy Waliszewski
+2006-2007: Jeremy Hylton
+2005-2006: David Goodger
+Event Coordinator
+2021-2023: Jackie Augustine
+2020-2021: Jackie Augustine, Betsy Waliszewski
+2012-2020: Ewa Jodlowska
+2015-2019: Betsy Waliszewski
+Treasurer
+2022-2023: Dawn Wages
+2020-2022: Jeff Triplett
+2019-2020: Jackie Kazil
+2005-2019: Kurt Kaiser
+2003-2005: Neal Norwitz
+2002-2003: Jeremy Hylton
+Assistant Treasurer
+2008-2010: Raymond Hettinger
+2005-2008: Neal Norwitz
+2005: Kurt Kaiser
+Executive Vice President
+2007-2010: Brett Cannon
+2006-2007: David Ascher
+Vice Presidents
+2008-2009: James Tauber
+2006-2008: Andrew Kuchling
+2006-2007: Brett Cannon
+2006-2007: Martin von Löwis
+PyCon Chair
+The position of PyCon Chair was formalized as a PSF officer on March 14, 2008.
+2022-2023: Mariatta Wijaya
+2019-2022: Emily Morehouse-Valcarcel
+2017-2019: Ee Durbin
+2015-2017: Brandon Rhodes
+2013-2015: Diana Clarke
+2011-2013: Jesse Noller
+2009-2011: Van Lindberg
+2008-2009: David Goodger
+Prior to March 2008, the PyCon Chair was an informal position, not an
+officer of the PSF.
+2007-2008: David Goodger
+2006-2007: Andrew Kuchling & Jeff Rush (co-chairs)
+2005-2006: Andrew Kuchling
+2002-2005: Steve Holden
+Communications Officer
+2021-2022: Jannis Leidel, Nina Zakharenko, Débora Azevedo
+2020-2021: Jannis Leidel, Katie McLaughlin
+2019-2020: Marlene Mhangami, Kushal Das, Jannis Leidel
+2018-2019: Lorena Mesa, Marlene Mhangami
+2016-2017: Kushal Das, Lorena Mesa
+2015-2016: Diana Clarke
+2012-2015: Brian Curtin
+2010-2012: Doug Hellmann
+The PSF
+The Python Software Foundation is the organization behind Python. Become a member of the PSF and help advance the software and our mission. 
+▲ Back to Top
+About
+Applications
+Quotes
+Getting Started
+Help
+Python Brochure
+Downloads
+All releases
+Source code
+Windows
+macOS
+Other Platforms
+License
+Alternative Implementations
+Documentation
+Docs
+Audio/Visual Talks
+Beginner's Guide
+Developer's Guide
+FAQ
+Non-English Docs
+PEP Index
+Python Books
+Python Essays
+Community
+Diversity
+Mailing Lists
+IRC
+Forums
+PSF Annual Impact Report
+Python Conferences
+Special Interest Groups
+Python Logo
+Python Wiki
+Code of Conduct
+Community Awards
+Get Involved
+Shared Stories
+Success Stories
+Arts
+Business
+Education
+Engineering
+Government
+Scientific
+Software Development
+News
+Python News
+PSF Newsletter
+PSF News
+PyCon US News
+News from the Community
+Events
+Python Events
+User Group Events
+Python Events Archive
+User Group Events Archive
+Submit an Event
+Contributing
+Developer's Guide
+Issue Tracker
+python-dev list
+Core Mentorship
+Report a Security Issue
+▲ Back to Top
+ 
+Help & General Contact
+Diversity Initiatives
+Submit Website Bug
+Status 
+Copyright ©2001-2024.
+                             Python Software Foundation
+                             Legal Statements
+                             Privacy Policy

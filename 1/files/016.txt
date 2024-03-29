@@ -1,0 +1,876 @@
+Python Software Foundation News: Announcing a PyPI Support Specialist
+  News from the Python Software Foundation
+Wednesday, March 20, 2024
+Announcing a PyPI Support Specialist
+We launched the Python Package Index (PyPI) in 2003 and for most of its history a robust and dedicated volunteer community kept it running. Eventually, we put a bit of PSF staff time into the maintenance of the Index, and last year with support from AWS we hired Mike Fiedler to work full-time on PyPI’s urgent security needs. PyPI has grown enormously in the last 20+ years, and in recent years it has reached a truly massive scale with growth only continuing upward. In 2022 alone, PyPI saw a 57% growth and as of this writing, there are over a half a million packages on PyPI. The impact PyPI has these days is pretty breathtaking. Running a free public service of that size has come with challenges, too. As PyPI has grown, the work of communicating with users and solving account issues here has grown in tandem and out-stripped our current volunteer plus one tenth of a staff person capacity. We also know that some community members have noticed and expressed frustration with the time-frame that goes with tasks that don't have sufficient staffing. Much of this work is sensitive and complex such that it needs to be performed by a PSF staff person. It involves personal information and verification processes to make sure we’re giving access and names to the correct entities. Work like this needs to be done by a person who is here day after day to carry out multi-step verification procedures and is accountable to the PSF. We are very happy to share the news that we are hiring a person to help us manage the increased capacity and allow us to keep pace with PyPI’s seemingly unstoppable growth. This is an associate role that is 100% remote. Please take a look at this posting for a PyPI Support Specialist and share it with your networks. 
+Posted by
+Deb Nicholson
+at
+3/20/2024 03:06:00 PM
+Older Post
+Home
+Mission
+The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers.
+Python Software Foundation
+Grants Program
+Membership
+Awards
+Meeting Minutes
+PSF Sponsors
+A big thank you to the above PSF sponsors for supporting our mission!
+Tweets by ThePSF 
+Blog Archive
+        ▼ 
+      
+2024
+(8)
+        ▼ 
+      
+March
+(1)
+Announcing a PyPI Support Specialist
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(4)
+        ► 
+      
+2023
+(37)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(3)
+        ► 
+      
+June
+(5)
+        ► 
+      
+May
+(12)
+        ► 
+      
+April
+(2)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2022
+(35)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(6)
+        ► 
+      
+May
+(12)
+        ► 
+      
+April
+(2)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2021
+(42)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(4)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(2)
+        ► 
+      
+June
+(4)
+        ► 
+      
+May
+(12)
+        ► 
+      
+April
+(5)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(4)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2020
+(51)
+        ► 
+      
+December
+(8)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(4)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(10)
+        ► 
+      
+April
+(11)
+        ► 
+      
+March
+(4)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2019
+(45)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(3)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(4)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(5)
+        ► 
+      
+May
+(11)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(5)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2018
+(31)
+        ► 
+      
+December
+(5)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(5)
+        ► 
+      
+April
+(2)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2017
+(32)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(6)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(2)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(3)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(4)
+        ► 
+      
+2016
+(27)
+        ► 
+      
+December
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+August
+(4)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(6)
+        ► 
+      
+April
+(4)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2015
+(67)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(4)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(6)
+        ► 
+      
+May
+(4)
+        ► 
+      
+April
+(13)
+        ► 
+      
+March
+(14)
+        ► 
+      
+February
+(9)
+        ► 
+      
+January
+(4)
+        ► 
+      
+2014
+(14)
+        ► 
+      
+October
+(1)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2013
+(18)
+        ► 
+      
+November
+(1)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(5)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2012
+(21)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(4)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2011
+(55)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(7)
+        ► 
+      
+September
+(5)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(8)
+        ► 
+      
+April
+(8)
+        ► 
+      
+March
+(13)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2010
+(35)
+        ► 
+      
+December
+(4)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(8)
+        ► 
+      
+June
+(6)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(4)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2009
+(21)
+        ► 
+      
+December
+(1)
+        ► 
+      
+October
+(1)
+        ► 
+      
+September
+(6)
+        ► 
+      
+August
+(4)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(1)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(1)
+        ► 
+      
+February
+(1)
+        ► 
+      
+2008
+(23)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(1)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(1)
+        ► 
+      
+May
+(3)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(5)
+        ► 
+      
+February
+(4)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2007
+(26)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(6)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(3)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2006
+(39)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(4)
+        ► 
+      
+October
+(5)
+        ► 
+      
+September
+(4)
+        ► 
+      
+August
+(4)
+        ► 
+      
+July
+(3)
+        ► 
+      
+May
+(7)
+        ► 
+      
+April
+(6)
+        ► 
+      
+March
+(3)
+Powered by Blogger.

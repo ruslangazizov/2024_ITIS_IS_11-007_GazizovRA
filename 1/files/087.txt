@@ -1,0 +1,685 @@
+Python Insider: Python 3.11.4, 3.10.12, 3.9.17, 3.8.17, 3.7.17, and 3.12.0 beta 2 are now available
+Python core development news and information.
+Wednesday, June 7, 2023
+Python 3.11.4, 3.10.12, 3.9.17, 3.8.17, 3.7.17, and 3.12.0 beta 2 are now available
+Greetings! Time for another combined release of six separate versions of Python!
+Before you scroll away to the download links
+Please test the 3.12 beta! Downloading it and trying it out helps us a
+ lot in ensuring Python 3.12.0 will be as polished as possible.
+We welcome 3.10 to the prestigious club of security-only releases. 
+It’s officially an old version of Python now! If you haven’t rewritten 
+all your if:elif:else:s with pattern matching yet, are you even still writing Python?
+At the same time, it looks like 3.7 is reaching end-of-life. Unless 
+another security release happens in June, 3.7.17 will be the final 
+release of Python 3.7. I mean, now that I typed it out for all you to 
+read, I’m sure I jinxed it. But in case I didn’t, I would like to thank 
+Ned Deily for serving as the release manager of Python 3.6 and Python 
+3.7. He was my mentor as Release Manager, and continues serving Python 
+as the provider of Mac installers for new releases. Thank you, Ned!
+Speaking of installers, Steve Dower used to be the sole provider of 
+Windows installers for Python releases for years now. His secret was a 
+well-automated Azure pipeline that let him build, sign, and publish 
+releases with minimal manual effort. Now he extended the power to press 
+the blue “Run pipeline” button to more members of the team. Thank you, 
+Steve! This is an important bus factor increment. In fact, the Windows 
+installers for both 3.12.0b2 and 3.11.4 were made by me initiated by me. If there’s anything wrong with them, well, I guess that means I pressed the button wrong.
+Security fixes in today’s releases
+Updating is recommended due to security content:
+3.7 - 3.12: gh-103142:
+ The version of OpenSSL used in Windows and Mac installers has been 
+upgraded to 1.1.1u to address CVE-2023-2650, CVE-2023-0465, 
+CVE-2023-0466, CVE-2023-0464, as well as CVE-2023-0286, CVE-2022-4303, 
+and CVE-2022-4303 fixed previously in 1.1.1t (gh-101727).3.7 - 3.11: gh-102153: urllib.parse.urlsplit()
+ now strips leading C0 control and space characters following the 
+specification for URLs defined by WHATWG in response to CVE-2023-24329.3.7 - 3.11: gh-99889: Fixed a security in flaw in uu.decode() that could allow for directory traversal based on the input if no out_file was specified.3.7 - 3.11: gh-104049: Do not expose the local on-disk location in directory indexes produced by http.client.SimpleHTTPRequestHandler.3.7 - 3.11: gh-101283: subprocess.Popen now uses a safer approach to find cmd.exe when launching with shell=True.3.8 - 3.11: gh-103935: trace.__main__ now uses io.open_code() for files to be executed instead of raw open().3.8 - 3.11: gh-102953: The extraction methods in tarfile, and shutil.unpack_archive(), have a new filter argument that allows limiting tar features than may be surprising or dangerous, such as creating files outside the destination directory. See Extraction filters for details.3.9: gh-102126: Fixed a deadlock at shutdown when clearing thread states if any finalizer tries to acquire the runtime head lock.3.9: gh-100892: Fixed a crash due to a race while iterating over thread states in clearing threading.local.Python 3.12.0 beta 2
+Get it here: 3.12.0b2
+116 new commits since 3.12.0 beta 1.
+Python 3.11.4
+Get it here: 3.11.4
+233 new commits.
+Python 3.10.12
+Get it here: 3.10.12
+Security-only release with no binaries. 20 new commits.
+Python 3.9.17
+Get it here: 3.9.17
+Security-only release with no binaries. 26 commits.
+Python 3.8.17
+Get it here: 3.8.17
+Security-only release with no binaries. 24 commits.
+Python 3.7.17
+Get it here as it might be the last release of 3.7 ever: 3.7.17
+Security-only release with no binaries. 21 commits.
+We hope you enjoy the new releases!
+Thanks to all of the many volunteers who help make Python Development
+ and these releases possible! Please consider supporting our efforts by 
+volunteering yourself or through organization contributions to the Python Software Foundation.
+–
+Łukasz Langa @ambv
+on behalf of your friendly release team,
+Ned Deily @nad
+Steve Dower @steve.dower
+Pablo Galindo Salgado @pablogsal
+Łukasz Langa @ambv
+Thomas Wouters @thomas 
+Posted by
+Łukasz Langa
+at
+2:56 AM
+Email ThisBlogThis!Share to TwitterShare to FacebookShare to Pinterest
+Newer Post
+Older Post
+Home
+Subscribe
+Subscribe to Python Insider via RSS, or Twitter
+Related Links
+python.org
+Python-Dev mailing list
+Python Developer's Guide
+Translations
+Chinese (Simplified)
+Chinese (Traditional)
+French
+German
+Japanese
+Korean
+Portuguese
+Romanian
+Russian
+Spanish
+Python-Dev Blogs
+Eli Bendersky
+The life of an Ollama prompt
+3 weeks ago
+PyPy Status Blog
+PyPy's blog has moved
+3 years ago
+Pumpichank
+Creating Python Snaps
+8 years ago
+Tim Golden
+London Python Dojo December 2014
+9 years ago
+R. David Murray
+Asyncio Implementation Overview
+9 years ago
+The Voidspace Techie Blog
+unittest.mock and mock 1.0 alpha 1
+12 years ago
+Tarek Ziadé
+More privacy please
+12 years ago
+Deep Thoughts by Raymond Hettinger
+Python’s super() considered super!
+12 years ago
+Brett Cannon
+Jesse Noller
+Boredom & Laziness
+Brian Curtin
+Senthil Kumaran
+Blog Archive
+        ► 
+      
+2024
+(5)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(1)
+        ▼ 
+      
+2023
+(18)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ▼ 
+      
+June
+(2)
+Python 3.12.0 beta 3 released
+Python 3.11.4, 3.10.12, 3.9.17, 3.8.17, 3.7.17, an...
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2022
+(23)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(2)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(3)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2021
+(24)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(3)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(4)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2020
+(32)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(3)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(4)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(4)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2019
+(36)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(8)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(5)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(2)
+        ► 
+      
+March
+(7)
+        ► 
+      
+February
+(3)
+        ► 
+      
+2018
+(24)
+        ► 
+      
+December
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(3)
+        ► 
+      
+April
+(3)
+        ► 
+      
+March
+(5)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2017
+(17)
+        ► 
+      
+December
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(3)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2016
+(18)
+        ► 
+      
+December
+(5)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(5)
+        ► 
+      
+May
+(1)
+        ► 
+      
+2015
+(14)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(1)
+        ► 
+      
+September
+(3)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(1)
+        ► 
+      
+May
+(2)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2014
+(8)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+May
+(1)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(2)
+        ► 
+      
+2013
+(5)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(1)
+        ► 
+      
+2012
+(9)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+2011
+(25)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(1)
+        ► 
+      
+May
+(7)
+        ► 
+      
+April
+(7)
+        ► 
+      
+March
+(5)
+Contributors
+A.M. Kuchling
+Alfonso de la Guarda
+Anthony Scopatz
+Antoine P.
+Benjamin Peterson
+Brian Curtin
+Davidmh
+Donald Stufft
+Doug Hellmann
+Ee Durbin
+Ezio Melotti
+Georg Brandl
+Jesse
+Kelsey Hightower
+Larry Hastings
+Mathieu Leduc-Hamel
+Michael Markert
+Mike Driscoll
+Ned Deily
+Pablo Galindo
+Paul Moore
+Philip Jenvey
+Sumana Harihareswara
+Thomas Wouters
+Unknown
+Unknown
+Łukasz Langa
+Éric Araujo
+e
+haypo
+tp
+Copyright
+Python Insider by the Python Core Developers is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.Based on a work at blog.python.org.
+Powered by Blogger.
+ 

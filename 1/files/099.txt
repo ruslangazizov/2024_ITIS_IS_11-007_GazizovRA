@@ -1,0 +1,74 @@
+ 
+Python Software Foundation - December 2023 Newsletter
+ 
+      Campaign URL   Copy       Twitter 0 tweets       Subscribe  Past Issues RSS Translate   English  العربية  Afrikaans  беларуская мова  български  català  中文（简体）  中文（繁體）  Hrvatski  Česky  Dansk  eesti keel  Nederlands  Suomi  Français  Deutsch  Ελληνική  हिन्दी  Magyar  Gaeilge  Indonesia  íslenska  Italiano  日本語  ភាសាខ្មែរ  한국어  македонски јазик  بهاس ملايو  Malti  Norsk  Polski  Português  Português - Portugal  Română  Русский  Español  Kiswahili  Svenska  עברית  Lietuvių  latviešu  slovenčina  slovenščina  српски  தமிழ்  ภาษาไทย  Türkçe  Filipino  украї́нська  Tiếng Việt     
+Register Now for PyCon US 2024 + Join in our End of Year Fundraiser!
+View this email in your browser
+Join our end-of-year fundraiser
++ Register for PyCon US 2024!
+                        
+                            Greetings PSF Newsletter Subscribers 👋
+It’s been a while since we’ve sent a newsletter and a lot has happened in 2023, so get ready for some exciting, rapid-fire, updates! To name a few: we held the 20th anniversary PyCon US, we accepted seven new Fiscal Sponsorees, and we brought on four new folks to work in a variety of areas.
+We’d like to highlight our end-of-year fundraiser, as your donation and Memberships make all the difference in the work the PSF is able to accomplish. There are two ways to contribute:
+Donate directly to the PSF - Every dollar makes an impact on the PSF's financial stability and builds resources that benefit the whole Python community. Many large employers offer matching at the year end, so make sure to check out our matching donations resources to double your impact!  
+Become a Supporting Member - Your PSF Memberships help us to be a steady, bedrock support for the Python community, and to keep investing resources into initiatives that improve the experience every day of Pythonistas around the world. You can become a Supporting Member for as low as $25 USD per year using our Sliding Scale.
+From grants to small trainings around the globe to funding developer roles, your contribution goes a long way in making an impact for individuals and for the whole Python ecosystem.
+Your support means the world to us and we’re incredibly grateful to be in community with you! 🙏
+                        
+PyCon US 2024
+                        
+                            We are so excited to announce that registration for PyCon US 2024 online and in Pittsburgh, PA, is officially open! We hope you’ll join us for our first year in our new host city of Pittsburgh to learn, network, and celebrate all things Python.
+PyCon US will be held May 15 - May 23, 2024, at the David L. Lawrence Convention Center. Early bird discounted rates are available until January 12th, 2024. All the information and details can be found on the registration information page. We are taking the health and safety of our attendees very seriously. Please be sure to read the Health and Safety Guidelines prior to registering.
+Once you register for PyCon US 2024, make sure to check the Venue and Hotels page to take advantage of conference rates.
+We’d love to have you join us without the expense of attending being a burden. PyCon US 2024 travel grants program will offer assistance with travel to attend PyCon US in person. The grants program will also offer a limited number of complimentary online conference registrations. We encourage you to apply for a travel grant or an online registration by filling out the short application linked on your dashboard.
+PyCon US is seeking speakers of all experience levels and backgrounds to contribute to our conference program. All speakers will be presenting in person for PyCon US 2024 at the David L. Lawrence Convention Center. Full details and how to submit your proposal can be found on the PyCon US 2024 website. Travel grants will be available to speakers, so please don’t let that be a deterrent! We want you and your ideas at PyCon US 2024— there are only a couple of days left until submissions close, so don't wait, submit today!
+Deadline to submit is December 18, 2023 AoE.
+ 
+A huge thank you to our current PSF sponsors! PyCon US would not be possible without their support. If you’d like to sign up to sponsor the PSF and PyCon US, you can apply directly through our website or email us at sponsors@python.org.
+Find information about the latest Python related events on the Python Events Calendar and Python Discuss Forum.
+                        
+Python Developers Survey
+                        
+                            The annual Python Developers Survey has been extended! We encourage you to contribute to our community’s knowledge by sharing your experience and perspective. The survey should take you about 10-15 minutes to complete. If you’ve already completed the survey, make sure to pass the link along to your Python friends and local communities. Your participation and support is valued—plus you’ll have the chance to win a prize 🎁
+Contribute to the Python Developers Survey 2023!
+The survey is organized in partnership with JetBrains. After the survey is over, we will publish the aggregated results and randomly choose 20 winners (among those who complete the survey in its entirety), who will each receive a $100 Amazon Gift Card or a local equivalent.
+                        
+Engineering and Development Updates
+                        
+                            Earlier in 2023, the PSF was authorized by the CVE Program as a CVE Numbering Authority (CNA). Achieving this status is one milestone in the PSF's strategy to improve the vulnerability response processes of critical projects in the Python ecosystem. The PSF CNA scope covers Python and pip, two projects which are fundamental to the rest of the Python ecosystem. We also published a guide to the OpenSSF from what we learned on our journey so other open source foundations and projects can better evaluate becoming CNAs themselves.
+The PSF also responded to the US Government Request for Information (RFI) on long-term investments into open source security. Our response includes advocacy for open source maintainers and organizations, incentives, projects, and recommended implementation models like our successful Developer-in-Residence program. This response was authored by multiple staff, including Deb Nicholson, Ee Durbin, Mike Fiedler, Seth Larson, and Loren Crary.
+Our PyPI Safety & Security Engineer, Mike Fiedler, and Director of Infrastructure, Ee Durbin, worked with Trail of Bits with funding from the Open Technology Fund to complete the first PyPI security audit and remediate findings. Warehouse and cabotage are the main software and infrastructure layers powering the Python Package Index (PyPI). The results are promising, no critical or high severity issues were found and many issues that were found are already remediated. Quoting Trail of Bits on their audit results:
+“Warehouse’s design and development practices are consistent with industry-standard best practices, including the enforcement of ordinarily aspirational practices such as 100% branch coverage, automated quality and security linting, and dependency updates.”
+Warehouse (PyPI) has also been preparing to require 2FA for everyone by 2024 (other posts).
+Our Security Developer-in-Residence, Seth Larson, has been working on improving the supply chain security of the CPython release process by auditing Sigstore signatures, automating the build in a hardened SLSA-compliant platform like GitHub Actions, and adding Software Bill-of-Materials for tracking vulnerabilities in dependencies.
+Our CPython Developer in Residence, Łukasz Langa, continued to provide trusted support and advancement of the Python language, including oversight for the releases of Python 3.8 and 3.9, adoption of Sigstore, and stewardship of PEP 703 (to name a few of many!). Łukasz also engaged with the community by orchestrating the Python Language Summit and participating in events such as PyCon US 2023, EuroPython, and PyCon Colombia. This critical role would not be possible without funding from Meta.
+                        
+PSF Board
+                        
+                            In June, we welcomed four new Board Members; Cheuk Ting Ho, Denny Perez, Georgi Ker, KwonHan Bae and one returning Board Member; Christopher Neugebauer. Our total Board is twelve people and we'll be holding elections for four spots again this summer. If you're interested in the PSF Board, you can check out the whole list of Board Members and Officers or catch up on the Board minutes. Only PSF members are eligible to vote in the board elections- if you’d like to have a voice in who is on the PSF Board check out our Membership program.
+                        
+PSF Fiscal Sponsorees
+                        
+                            Fiscal sponsorship is a key plank of the PSF’s mission in supporting the Python community. The PSF supports 20 fiscal sponsorees including regional PyCons, Python Meetup and User Groups, and Python projects. Learn more about our Fiscal Sponsorees on our website and consider supporting the groups with a US-tax deductible donation.
+During 2023, the PSF welcomed 7 new fiscal sponsorees including Bandit, BAPyA, ChiPy, Denver Python User Group,  North Bay Python, PyOhio, and Twisted. (New fiscal sponsoree applications are on hold until June 2024 to allow PSF staff time to fully integrate each group).
+Thanks to the PyLadies organizers who recently held their first ever conference 👏  PyLadies also recently approved 10 new worldwide chapters and welcomed new members and organizers! We’re excited to hold the 12th PyLadies Charity Auction at PyCon US 2024; proceeds support PyCon US travel grants and worldwide PyLadies activities.
+You can join FlaskCon 2023 from December 15-16 and PyOhio 2023 streaming December 16!  Please watch out for announcements about 2024 events for PyCascades, North Bay Python 2024, PyBay, and PyOhio.
+                        
+PSF Staff Updates
+                        
+                            We are excited to share that we added four new folks to the PSF in 2023:
+Security Developer in Residence - Seth Larson joined the PSF earlier this year as our first ever Security Developer-in-Residence. Seth is already well-known to the Python community – he was named a PSF Fellow in 2022 and has already written a lot about Python and security on his blog. This critical role would not be possible without funding from the OpenSSF Alpha-Omega Project.
+PyPI Safety & Security Engineer - Mike Fiedler joined the PSF earlier this year as our first ever PyPI Safety & Security Engineer. Mike is already a dedicated member of the Python packaging community – he has been a Python user for some 15 years, maintains and contributes to open source, and became a PyPI Maintainer in 2022. You can see some of what he's achieved for PyPI already on the PyPI blog. This critical role would not be possible without funding from AWS.
+Welcome, Marisa and Marie! - Marisa Camacho joined as Community Events Manager and Marie Nordin joined as Community Communications Manager. We are happy to have the opportunity to add two full time dedicated staff members to the PSF to support PyCon US, our communications, and the community as a whole.
+Stay up to date by checking out the PSF Blog!
+                        
+Thanks to our Sponsors!
+Where to find the PSF
+                        
+                            Are you looking for places to follow the PSF and connect with other members of the Python Community? We have a full rundown on our blog. We also invite you to follow us on Mastodon!
+                        
+Copyright © 2023 Python Software Foundation, All rights reserved.
+	Want to change how you receive these emails?
+    You can update your preferences or unsubscribe from this list.
+    
+  

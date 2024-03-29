@@ -1,0 +1,825 @@
+Python Insider
+Python core development news and information.
+Tuesday, March 19, 2024
+Python 3.10.14, 3.9.19, and 3.8.19 is now available
+Howdy!
+Those are the boring security releases that aren’t supposed to bring 
+anything new. But not this time! We do have a bit of news, actually. But
+ first things first: go update your systems!
+Python 3.10.14
+Get it here: Python Release Python 3.10.1426 commits since the last release.Python 3.9.19
+Get it here: Python Release Python 3.9.19
+26 commits since the last release. 
+Python 3.8.19
+Get it here: Python Release Python 3.8.1928 commits since the last release.Security content in this release
+gh-115399 & gh-115398: bundled libexpat was updated to 2.6.0 to address CVE-2023-52425,
+ and control of the new reparse deferral functionality was exposed with 
+new APIs. Thanks to Sebastian Pipping, the maintainer of libexpat, who 
+worked with us directly on incorporating those fixes!gh-109858: zipfile is now protected from the “quoted-overlap” zipbomb to address CVE-2024-0450. It now raises BadZipFile when attempting to read an entry that overlaps with another entry or central directorygh-91133: tempfile.TemporaryDirectory cleanup no longer dereferences symlinks when working around file system permission errors to address CVE-2023-6597gh-115197: urllib.request no longer resolves the hostname before checking it against the system’s proxy bypass list on macOS and Windowsgh-81194: a crash in socket.if_indextoname() with a specific value (UINT_MAX) was fixed. Relatedly,  an integer overflow in socket.if_indextoname() on 64-bit non-Windows platforms was fixedgh-113659: .pth files with names starting with a dot or containing the hidden file attribute are now skippedgh-102388: iso2022_jp_3 and iso2022_jp_2004 codecs no longer read out of boundsgh-114572: ssl.SSLContext.cert_store_stats() and ssl.SSLContext.get_ca_certs() now correctly lock access to the certificate store, when the ssl.SSLContext is shared across multiple threads
+Stay safe and upgrade!
+Upgrading is highly recommended to all users of affected versions.
+Source builds are moving to GitHub Actions
+It’s not something you will notice when downloading, but 3.10.14 here is the first release we’ve done where the source artifacts were built on GHA and not on a local computer of one of the release managers. We have the Security Developer in Residence @sethmlarson to thank for that!
+It’s a big deal since public builds allow for easier auditing and 
+repeatability. It also helps with the so-called bus factor. In fact, to 
+test this out, this build of 3.10.14 was triggered by me and not Pablo, 
+who would usually release Python 3.10.
+The artifacts are later still signed by the respective release manager, ensuring integrity when put on the downloads server.
+Python now manages its own CVEs
+The security releases you’re looking at are the first after the PSF became a CVE Numbering Authority. That’s also thanks to @sethmlarson.
+ What being our own CNA allows us is to ensure the quality of the 
+vulnerability reports is high, and that the severity estimates are accurate. 
+Seth summarized it best in his announcement here.
+What this also allows us to do is to combine announcement of CVEs 
+with the release of patched versions of Python. This is in fact the case
+ with two of the CVEs listed above (CVE-2023-6597 and CVE-2024-0450). And since Seth is now traveling, this announcement duty was fulfilled by the PSF’s Director of Infrastructure @EWDurbin. Thanks!
+I’m happy to see us successfully testing bus factor resilience on multiple fronts with this round of releases.
+Thank you for your support
+Thanks to all of the many volunteers who help make Python Development
+ and these releases possible! Please consider supporting our efforts by 
+volunteering yourself or through organization contributions to the 
+Python Software Foundation.
+Python.org - the official home of the Python Programming Language.
+  
+  
+–
+Łukasz Langa @ambv
+on behalf of your friendly release team,
+Ned Deily @nad
+Steve Dower @steve.dower
+Pablo Galindo Salgado @pablogsal
+Łukasz Langa @ambv
+Thomas Wouters @thomas
+Posted by
+Łukasz Langa
+at
+8:29 PM
+Email ThisBlogThis!Share to TwitterShare to FacebookShare to Pinterest
+Tuesday, March 12, 2024
+Python 3.13.0 alpha 5 is now available
+ Python 3.13.0 alpha 5 is now available:
+https://www.python.org/downloads/release/python-3130a5/
+This is an early developer preview of Python 3.13
+Major new features of the 3.13 series, compared to 3.12
+Python 3.13 is still in development. This release, 3.13.0a5, is the fifth of six planned alpha releases.
+Alpha releases are intended to make it easier to test the current 
+state of new features and bug fixes and to test the release process.
+During the alpha phase, features may be added up until the start of 
+the beta phase (2024-05-07) and, if necessary, may be modified or 
+deleted up until the release candidate phase (2024-07-30). Please keep 
+in mind that this is a preview release and its use is not recommended for production environments.
+Many new features for Python 3.13 are still being planned and written. Work continues apace on both the work to remove the Global Interpeter Lock , and to improve Python performance. The most notable changes so far:
+In the interactive interpreter, exception tracebacks are now colorized by default .A preliminary, experimental JIT was added, providing the ground work for significant performance improvements. Docstrings now have their leading indentation stripped , reducing memory use and the size of .pyc files. (Most tools handling docstrings already strip leading indentation.)The dbm module has a new dbm.sqlite3 backend that is used by default when creating new files.PEP 594 (Removing dead batteries from the standard library) scheduled removals of many deprecated modules: aifc, audioop, chunk, cgi, cgitb, crypt, imghdr, mailcap, msilib, nis, nntplib, ossaudiodev, pipes, sndhdr, spwd, sunau, telnetlib, uu, xdrlib, lib2to3.Many other removals  of deprecated classes, functions and methods in various standard library modules.New deprecations , most of which are scheduled for removal from Python 3.15 or 3.16.C API removals and deprecations. (Some removals present in alpha 1 have been reverted in alpha 2, as the removals were deemed too disruptive at this time.)
+(Hey, fellow core developer, if a feature you find important is missing from this list, let Thomas know.)
+The next pre-release of Python 3.13 will be 3.13.0a6, currently scheduled for 2024-04-09.
+ More resources
+Online DocumentationPEP 719 , 3.13 Release ScheduleReport bugs at Issues · python/cpython · GitHub.Help fund Python directly (or via GitHub Sponsors), and support the Python community.
+ Enjoy the new releases
+Thanks to all of the many volunteers who help make Python Development
+ and these releases possible! Please consider supporting our efforts by 
+volunteering yourself or through organization contributions to the 
+Python Software Foundation.Regards from wet and chilly Amsterdam,Your release team,Thomas Wouters Ned Deily Steve Dower Łukasz Langa 
+Posted by
+Thomas Wouters
+at
+8:01 PM
+Email ThisBlogThis!Share to TwitterShare to FacebookShare to Pinterest
+Thursday, February 15, 2024
+Python 3.13.0 alpha 4 is now available
+ Python 3.13.0 alpha 4 is now available:
+https://www.python.org/downloads/release/python-3130a4/
+This is an early developer preview of Python 3.13
+Major new features of the 3.13 series, compared to 3.12
+Python 3.13 is still in development. This release, 3.13.0a4, is the fourth of six planned alpha releases.
+Alpha releases are intended to make it easier to test the current 
+state of new features and bug fixes and to test the release process.
+During the alpha phase, features may be added up until the start of 
+the beta phase (2024-05-07) and, if necessary, may be modified or 
+deleted up until the release candidate phase (2024-07-30). Please keep 
+in mind that this is a preview release and its use is not recommended for production environments.
+Many new features for Python 3.13 are still being planned and written. Work continues apace on both the work to remove the Global Interpeter Lock , and to improve Python performance. The most notable changes so far:
+In the interactive interpreter, exception tracebacks are now colorized by default .A preliminary, experimental JIT was added, providing the ground work for significant performance improvements. Docstrings now have their leading indentation stripped , reducing memory use and the size of .pyc files. (Most tools handling docstrings already strip leading indentation.)PEP 594 (Removing dead batteries from the standard library) scheduled removals of many deprecated modules: aifc, audioop, chunk, cgi, cgitb, crypt, imghdr, mailcap, msilib, nis, nntplib, ossaudiodev, pipes, sndhdr, spwd, sunau, telnetlib, uu, xdrlib, lib2to3.Many other removals  of deprecated classes, functions and methods in various standard library modules.New deprecations , most of which are scheduled for removal from Python 3.15 or 3.16.C API removals and deprecations. (Some removals present in alpha 1 have been reverted in alpha 2, as the removals were deemed too disruptive at this time.)
+(Hey, fellow core developer, if a feature you find important is missing from this list, let Thomas know.)
+The next pre-release of Python 3.13 will be 3.13.0a5, currently scheduled for 2023-03-12.
+ More resources
+Online DocumentationPEP 719 , 3.13 Release ScheduleReport bugs at Issues · python/cpython · GitHub.Help fund Python directly (or via GitHub Sponsors), and support the Python community.
+ Enjoy the new releases
+Thanks to all of the many volunteers who help make Python Development
+ and these releases possible! Please consider supporting our efforts by 
+volunteering yourself or through organization contributions to the 
+Python Software Foundation.Regards from dusky Amsterdam,Your release team,Thomas Wouters Ned Deily Steve Dower Łukasz Langa 
+Posted by
+Thomas Wouters
+at
+4:09 PM
+Email ThisBlogThis!Share to TwitterShare to FacebookShare to Pinterest
+Wednesday, February 7, 2024
+Python 3.12.2 and 3.11.8 are now available.
+Python 3.12.2 and 3.11.8 are now available. In addition to all the usual bugfixes, these releases contain a small security fix: hidden .pth files are no longer automatically read and executed as part of Python startup. (New releases of 3.8, 3.9 and 3.10 containing the same fix are expected next week.) 
+Python 3.12.2https://www.python.org/downloads/release/python-3122/
+Python 3.12’s second bugfix release. In addition to the mentioned 
+security fix and the usual slew of bug fixes, build changes and 
+documentation updates (more than 350 commits), this is also the first 
+release to include a Software Bill-of-Materials for the source packages (Python-3.12.2.tgz and Python-3.12.2.tar.xz). Full changelog. 
+Python 3.11.8
+https://www.python.org/downloads/release/python-3118/More than 300 commits of bug fixes, build changes and documentation updates. Full changelog. 
+We hope you enjoy the new releases!
+ Thanks to all of the many volunteers who help make Python Development
+ and these releases possible! Please consider supporting our efforts by 
+volunteering yourself, or through contributions to the Python Software Foundation  or CPython itself. 
+Thomas Wouters
+on behalf of your release team, 
+Ned DeilySteve Dower
+Pablo Galindo SalgadoŁukasz Langa
+Posted by
+Thomas Wouters
+at
+10:07 AM
+Email ThisBlogThis!Share to TwitterShare to FacebookShare to Pinterest
+Wednesday, January 17, 2024
+Python 3.13.0 alpha 3 is now available.
+We silently skipped releasing in December (it was too close to the 
+holidays, a lot of people were away) so by date you may have been 
+expecting alpha 4, but instead it’s alpha 3:
+https://www.python.org/downloads/release/python-3130a3/
+This is an early developer preview of Python 3.13
+Major new features of the 3.13 series, compared to 3.12
+Python 3.13 is still in development. This release, 3.13.0a3, is the third of six planned alpha releases.
+Alpha releases are intended to make it easier to test the current 
+state of new features and bug fixes and to test the release process.
+During the alpha phase, features may be added up until the start of 
+the beta phase (2024-05-07) and, if necessary, may be modified or 
+deleted up until the release candidate phase (2024-07-30). Please keep 
+in mind that this is a preview release and its use is not recommended for production environments.
+Many new features for Python 3.13 are still being planned and written. Work continues apace on both the work to remove the Global Interpeter Lock , and to improve Python performance. The most notable changes so far:
+In the interactive interpreter, exception tracebacks are now colorized by default .Docstrings now have their leading indentation stripped , reducing memory use and the size of .pyc files. (Most tools handling docstrings already strip leading indentation.)PEP 594 (Removing dead batteries from the standard library) scheduled removals of many deprecated modules: aifc, audioop, chunk, cgi, cgitb, crypt, imghdr, mailcap, msilib, nis, nntplib, ossaudiodev, pipes, sndhdr, spwd, sunau, telnetlib, uu, xdrlib, lib2to3.Many other removals  of deprecated classes, functions and methods in various standard library modules.New deprecations , most of which are scheduled for removal from Python 3.15 or 3.16.C API removals and deprecations. (Some removals present in alpha 1 have been reverted in alpha 2, as the removals were deemed too disruptive at this time.)
+(Hey, fellow core developer, if a feature you find important is missing from this list, let Thomas know.)
+The next pre-release of Python 3.13 will be 3.13.0a4, currently scheduled for 2023-02-13.
+ More resources
+Online DocumentationPEP 719 , 3.13 Release ScheduleReport bugs at Issues · python/cpython · GitHub.Help fund Python and its community.
+ Enjoy the new releases
+Thanks to all of the many volunteers who help make Python Development
+ and these releases possible! Please consider supporting our efforts by 
+volunteering yourself or through organization contributions to the 
+Python Software Foundation.Regards from snowy Amsterdam,Your release team,Thomas Wouters Ned Deily Steve Dower Łukasz Langa 
+Posted by
+Thomas Wouters
+at
+7:30 PM
+Email ThisBlogThis!Share to TwitterShare to FacebookShare to Pinterest
+Sunday, December 10, 2023
+Python 3.11.7 is now available
+  This is the sixth maintenance release of Python 3.11Python 3.11.7 is the newest major release of the Python programming language, and it contains many new features and optimizations. Get it here:https://www.python.org/downloads/release/python-3117/Major new features of the 3.11 series, compared to 3.10Among the new major new features and changes so far:PEP 657 – Include Fine-Grained Error Locations in TracebacksPEP 654 – Exception Groups and except*PEP 673 – Self TypePEP 646 – Variadic GenericsPEP 680 – tomllib: Support for Parsing TOML in the Standard LibraryPEP 675 – Arbitrary Literal String TypePEP 655 – Marking individual TypedDict items as required or potentially-missingbpo-46752 – Introduce task groups to asyncioPEP 681 – Data Class Transformsbpo-433030– Atomic grouping ((?>…)) and possessive quantifiers (*+, ++, ?+, {m,n}+) are now supported in regular expressions.The Faster Cpython Project is already yielding some exciting results. Python 3.11 is up to 10-60% faster than Python 3.10. On average, we measured a 1.22x speedup on the standard benchmark suite. See Faster CPython for details.More resourcesOnline DocumentationPEP 664, 3.11 Release ScheduleReport bugs at https://bugs.python.org.Help fund Python and its community.And now for something completely differentA pentaquark is a human-made subatomic particle, consisting of four quarks and one antiquark bound together; they are not known to occur naturally, or exist outside of experiments specifically carried out to create them.  Quarks quarks have a baryon number of +1/3 and antiquarks of -1/3, the pentaquark would have a total baryon number of 1, and thus would be a baryon. Further, because it has five quarks instead of the usual three found in regular baryons (a.k.a. 'triquarks'), it is classified as an exotic baryon. The name pentaquark was coined by Claude Gignoux and Harry J. Lipkin in 1987; however, the possibility of five-quark particles was identified as early as 1964 when Murray Gell-Mann first postulated the existence of quarks. Although predicted for decades, pentaquarks proved surprisingly difficult to discover and some physicists were beginning to suspect that an unknown law of nature prevented their production.We hope you enjoy the new releases!Thanks to all of the many volunteers who help make Python Development and these releases possible! Please consider supporting our efforts by volunteering yourself or through organization contributions to the Python Software Foundation.https://www.python.org/psf/Your friendly release team,Ned Deily @nad Steve Dower @steve.dower Pablo Galindo Salgado @pablogsal
+Posted by
+Pablo Galindo
+at
+11:10 AM
+Email ThisBlogThis!Share to TwitterShare to FacebookShare to Pinterest
+Thursday, December 7, 2023
+Python 3.12.1 is now available
+ Python 3.12.1 is now available.https://www.python.org/downloads/release/python-3121/ This is the first maintenance release of Python 3.12
+Python 3.12 is the newest major release of the Python programming language, and it contains many new features and optimizations. 3.12.1 is the latest maintenance release, containing more than 400 bugfixes, build improvements and documentation changes since 3.12.0.
+ Major new features of the 3.12 series, compared to 3.11
+ New features
+More flexible f-string parsing , allowing many things previously disallowed (PEP 701).Support for the buffer protocol  in Python code (PEP 688).A new debugging/profiling API  (PEP 669).Support for isolated subinterpreters  with separate Global Interpreter Locks (PEP 684).Even more improved error messages. More exceptions potentially caused by typos now make suggestions to the user.Support for the Linux perf profiler to report Python function names in traces.Many large and small performance improvements  (like PEP 709  and support for the BOLT binary optimizer), delivering an estimated 5% overall performance improvement.
+ Type annotations
+New type annotation syntax  for generic classes (PEP 695).New override decorator  for methods (PEP 698).
+ Deprecations
+The deprecated wstr and wstr_length members of the C implementation of unicode objects were removed, per PEP 623.In the unittest module, a number of long deprecated methods and classes were removed. (They had been deprecated since Python 3.1 or 3.2).The deprecated smtpd and distutils modules have been removed (see PEP 594 and PEP 632. The setuptools package continues to provide the distutils module.A number of other old, broken and deprecated functions, classes and methods have been removed.Invalid backslash escape sequences in strings now warn with SyntaxWarning instead of DeprecationWarning, making them more visible. (They will become syntax errors in the future.)The internal representation of integers has changed in preparation 
+for performance enhancements. (This should not affect most users as it 
+is an internal detail, but it may cause problems for Cython-generated 
+code.)
+For more details on the changes to Python 3.12, see What’s new in Python 3.12.
+ More resources
+Online Documentation.PEP 693, the Python 3.12 Release Schedule.Report bugs via GitHub Issues.Help fund Python directly or via GitHub Sponsors, and support the Python community.  Enjoy the new releases
+Thanks to all of the many volunteers who help make Python Development
+ and these releases possible! Please consider supporting our efforts by 
+volunteering yourself or through organization contributions to the 
+Python Software Foundation.Your release team,
+Thomas Wouters 
+Ned Deily 
+Steve Dower 
+Łukasz Langa
+Posted by
+Thomas Wouters
+at
+7:50 PM
+Email ThisBlogThis!Share to TwitterShare to FacebookShare to Pinterest
+Older Posts
+Home
+Subscribe to:
+Posts (Atom)
+Subscribe
+Subscribe to Python Insider via RSS, or Twitter
+Related Links
+python.org
+Python-Dev mailing list
+Python Developer's Guide
+Translations
+Chinese (Simplified)
+Chinese (Traditional)
+French
+German
+Japanese
+Korean
+Portuguese
+Romanian
+Russian
+Spanish
+Python-Dev Blogs
+Eli Bendersky
+The life of an Ollama prompt
+3 weeks ago
+PyPy Status Blog
+PyPy's blog has moved
+3 years ago
+Pumpichank
+Creating Python Snaps
+8 years ago
+Tim Golden
+London Python Dojo December 2014
+9 years ago
+R. David Murray
+Asyncio Implementation Overview
+9 years ago
+The Voidspace Techie Blog
+unittest.mock and mock 1.0 alpha 1
+12 years ago
+Tarek Ziadé
+More privacy please
+12 years ago
+Deep Thoughts by Raymond Hettinger
+Python’s super() considered super!
+12 years ago
+Brett Cannon
+Jesse Noller
+Boredom & Laziness
+Brian Curtin
+Senthil Kumaran
+Blog Archive
+        ▼ 
+      
+2024
+(5)
+        ▼ 
+      
+March
+(2)
+Python 3.10.14, 3.9.19, and 3.8.19 is now available
+Python 3.13.0 alpha 5 is now available
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2023
+(18)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2022
+(23)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(2)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(3)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2021
+(24)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(3)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(4)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2020
+(32)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(3)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(4)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(4)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2019
+(36)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(8)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(5)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(2)
+        ► 
+      
+March
+(7)
+        ► 
+      
+February
+(3)
+        ► 
+      
+2018
+(24)
+        ► 
+      
+December
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(3)
+        ► 
+      
+April
+(3)
+        ► 
+      
+March
+(5)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2017
+(17)
+        ► 
+      
+December
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(3)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2016
+(18)
+        ► 
+      
+December
+(5)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(5)
+        ► 
+      
+May
+(1)
+        ► 
+      
+2015
+(14)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(1)
+        ► 
+      
+September
+(3)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(1)
+        ► 
+      
+May
+(2)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2014
+(8)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+May
+(1)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(2)
+        ► 
+      
+2013
+(5)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(1)
+        ► 
+      
+2012
+(9)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+2011
+(25)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(1)
+        ► 
+      
+May
+(7)
+        ► 
+      
+April
+(7)
+        ► 
+      
+March
+(5)
+Contributors
+A.M. Kuchling
+Alfonso de la Guarda
+Anthony Scopatz
+Antoine P.
+Benjamin Peterson
+Brian Curtin
+Davidmh
+Donald Stufft
+Doug Hellmann
+Ee Durbin
+Ezio Melotti
+Georg Brandl
+Jesse
+Kelsey Hightower
+Larry Hastings
+Mathieu Leduc-Hamel
+Michael Markert
+Mike Driscoll
+Ned Deily
+Pablo Galindo
+Paul Moore
+Philip Jenvey
+Sumana Harihareswara
+Thomas Wouters
+Unknown
+Unknown
+Łukasz Langa
+Éric Araujo
+e
+haypo
+tp
+Copyright
+Python Insider by the Python Core Developers is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.Based on a work at blog.python.org.
+Powered by Blogger.
+ 

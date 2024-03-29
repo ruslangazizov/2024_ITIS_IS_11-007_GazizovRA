@@ -1,0 +1,276 @@
+Safari - Apple
+AppleStoreMaciPadiPhoneWatchVisionAirPodsTV & HomeEntertainmentAccessoriesSupport
+0+
+Safari
+Blazing fast. Incredibly private.
+Safari is the best way to experience the internet on all your Apple devices. It brings robust customization options, powerful privacy protections, and optimizes battery life — so you can browse how you like, when you like. And when it comes to speed, it’s the world’s fastest browser.1
+Learn how to make Safari your default browser
+Performance
+More with the battery.Less with the loading.
+With a blazing-fast JavaScript engine, Safari is the world’s fastest browser.1 It’s developed to run specifically on Apple devices, so it’s geared to make the most out of your battery life and deliver long-lasting power.
+Increased performance
+We’re always working to make the fastest desktop browser on the planet even faster.
++50%faster on average at loading frequently visited websites than Chrome2
+Improved power efficiency
+Safari lets you do more online on a single charge.
+Up to 4 hours more streaming videos compared with Chrome3
+Up to 17 hours of video streaming3
+Best-in-class browsing
+Safari outperforms both Mac and PC browsers in benchmark after benchmark on the same Mac.4
+							JetStream
+						
+/
+							MotionMark
+						
+/
+							Speedometer
+						
+/
+JavaScript performance on advanced web applications.4
+Safari vs. other Mac browsers
+Safari on macOS
+1.6x
+faster
+Chrome on macOS
+Edge on macOS
+Firefox on macOS
+ Safari vs. Windows 11 browsers
+Safari on macOS
+1.9x
+faster
+Chrome on Windows 11
+Edge on Windows 11
+Firefox on Windows 11
+ 
+Rendering performance of animated content.4
+Safari vs. other Mac browsers
+Safari on macOS
+3.0x
+faster
+Chrome on macOS
+Edge on macOS
+Firefox on macOS
+ Safari vs. Windows 11 browsers
+Safari on macOS
+5.1x
+faster
+Chrome on Windows 11
+Edge on Windows 11
+Firefox on Windows 11
+ 
+Web application responsiveness.4
+Safari vs. other Mac browsers
+Safari on macOS
+1.2x
+faster
+Chrome on macOS
+Edge on macOS
+Firefox on macOS
+ Safari vs. Windows 11 browsers
+Safari on macOS
+1.7x
+faster
+Chrome on Windows 11
+Edge on Windows 11
+Firefox on Windows 11
+ 
+4K video streaming
+See your favorite shows and films in their best light. Safari supports in-browser 4K HDR video playback for YouTube, Netflix, and Apple TV+.5 And it runs efficiently for longer-lasting battery life.
+Privacy
+Privacy is built in.
+Online privacy isn’t just something you should hope for — it’s something you should expect. That’s why Safari comes with industry-leading privacy protection technology built in, including Intelligent Tracking Prevention that identifies trackers and helps prevent them from profiling or following you across the web. Upgrading to iCloud+ gives you even more privacy protections, including the ability to sign up for websites and services without having to share your personal email address.
+Learn more about privacy at Apple 
+Intelligent Tracking Prevention
+Safari stops trackers in their tracks.
+More about tracking prevention
+Intelligent Tracking Prevention
+What you browse is no one’s business but your own. Safari has built‑in protections to help stop websites and data-collection companies from watching and profiling you based on your browsing activity. Intelligent Tracking Prevention uses on‑device intelligence to help prevent cross‑site tracking and stops known trackers from using your IP address — making it incredibly difficult to learn who you are and what you’re interested in.
+Privacy Report
+Safari makes it simple to see how your privacy is protected on all the websites you visit. Click Privacy Report in the Safari menu for a snapshot of cross-site trackers currently prevented from profiling you on the website you’re visiting. Or view a weekly Privacy Report to see how Safari protects you as you browse over time.
+Customization
+Putting the you in URL.
+Safari is more customizable than ever. Organize your tabs into Tab Groups so it’s easy to go from one interest to the next. Set a custom background image and fine-tune your browser window with your favorite features — like Reading List, Favorites, iCloud Tabs, and Siri Suggestions. And third-party extensions for iPhone, iPad, and Mac let you do even more with Safari, so you can browse the way you want across all your devices.
+Profiles
+Safari Profiles allow you to separate your history, extensions, Tab Groups, favorites, cookies, and more. Quickly switch between profiles for topics you create, like Personal and Work.
+Web apps
+Web apps let you save your favorite websites to the Dock on Mac and to the Home Screen on iPhone and iPad. A simplified toolbar and separate settings give you an app-like experience.
+Extensions
+Safari Extensions add functionality to your browser to help you explore the web the way you want. Find and add your favorite extensions in the dedicated Safari category on the App Store.
+Extensions for MacExtensions for iPhone and iPad 
+Tab Groups
+Save and organize your tabs in the way that works best for you. Name your Tab Groups, edit them, and switch among them across devices. You can also share Tab Groups — making planning your next family trip or group project easier and more collaborative.
+Smart Tools
+Designed to helpyour work flow.
+Built-in tools create a browsing experience that’s far more immersive, intuitive, and immediate. Get detailed information about a subject in a photo with just a click, select text within any image, instantly translate an entire web page, and quickly take notes wherever you are on a site — without having to switch apps.
+Quick Note
+Notes is your go-to app to capture any thought. And with the Quick Note feature, you can instantly jot down ideas as you browse websites without having to leave Safari.
+Translation
+Translate entire web pages with a single click. You can also get translations for text in images and paused video without leaving Safari.
+Explore the full list of available languages 
+Hallo
+Hola
+Bonjour
+Hello
+Привет
+你好
+Olá
+こんにちは
+Live Text
+Interact with text in any image or paused video on the web using functions like copy and paste, translate, and lookup.6
+Visual Look Up
+Quickly learn more about landmarks, works of art, breeds of dogs, and more with only a photo or an image you find online. And easily lift the subject of an image from Safari, remove its background, and paste it into Messages, Notes, or other apps.
+Security
+Surf safe and sound.
+Strong security protections in Safari help keep you safe. Passkeys introduce a safer way to sign in. iCloud Keychain securely stores and autofills passkeys and passwords across all your devices. Safari also notifies you when it encounters suspicious websites and prevents them from loading. Because it loads each web page in a separate process, any harmful code is always confined to a single browser tab so it won’t crash the entire application or access your data. And Safari automatically upgrades sites from HTTP to the more secure HTTPS when available.
+Passkeys
+Passkeys introduce a more secure and easier way to sign in. No passwords required.
+More about passkeys
+Passkeys
+Passkeys are end-to-end encrypted and safe from phishing and data leaks, and they are stronger than all common two-factor authentication types. Thanks to iCloud Keychain, they work across all your Apple devices, and they even work on non-Apple devices.
+Learn more about passkeys
+Shopping
+Apple Pay and Wallet make checkout as easy as lifting a finger.
+More about shopping
+Shopping
+Apple Pay is the easiest and most secure way to shop on Safari — allowing you to complete transactions with Face ID or Touch ID on your iPhone or iPad, with Touch ID on your MacBook Pro or MacBook Air, or by double-clicking the side button on your Apple Watch.
+Learn more about Apple Pay
+With AutoFill, you can easily fill in your previously saved credit card information from the Wallet app during checkout. Your credit card details are never shared, and your transactions are protected with industry-leading security.
+Continuity
+Same Safari.Different device.
+Safari works seamlessly and syncs your passwords, bookmarks, history, tabs, and more across Mac, iPad, iPhone, and Apple Watch. And when your Mac, iOS, or iPadOS devices are near each other, they can automatically pass what you’re doing in Safari from one device to another using Handoff. You can even copy images, video, or text from Safari on your iPhone or iPad, then paste into another app on your nearby Mac — or vice versa.
+Learn more about continuity 
+Handoff
+Reading List
+iCloud Keychain
+Handoff.
+When you use Safari on multiple devices, your tabs carry over from one Apple device to another. So you can search, shop, work, or browse on your iPhone, then switch to your iPad or Mac and pick up right where you left off.
+Reading List.
+Save web pages you want to read later by adding them to your Reading List. Then view them on any of your iCloud-connected devices — even if you’re not connected to the internet.
+iCloud Keychain.
+iCloud Keychain securely stores your user names, passkeys, passwords, and credit card numbers and keeps them up to date on your trusted devices. So you can easily sign in to your favorite websites — as well as apps on iOS and iPadOS — and quickly make online purchases.
+Designed for developers.
+Deep WebKit integration between Mac hardware and macOS allows Safari to deliver the fastest performance and the longest battery life of any browser on the platform, while supporting modern web standards for rich experiences in the browser. WebKit in macOS Sonoma includes optimizations that enable even richer browsing experiences, and give developers more control over styling and layout — allowing for more engaging content.
+Learn more
+Resources
+Make Safari your default browser
+Learn more 
+Customize your start page
+Learn more 
+View your browsing Privacy Report
+Learn more 
+Monitor your saved passwords
+Learn more 
+Use Apple Pay in Safari
+Learn more 
+View your tabs across all your devices
+Learn more 
+Read the Safari user guide
+Learn more 
+Get Safari support
+Learn more 
+Apple Footer
+Testing conducted by Apple in August and September 2023 using JetStream 2.1, MotionMark 1.2, and Speedometer 2.1 performance benchmarks. Tested with prerelease Safari 17.0 and latest stable versions of Chrome, Microsoft Edge, and Firefox at the time of testing on: 13-inch MacBook Air systems with Apple M2 and prerelease macOS Sonoma, and Intel Core i7-based PC systems with Intel Iris Xe Graphics and Windows 11 Home; iPad Pro 12.9-inch (6th generation) units with prerelease iPadOS 17.0, and Intel Core i7-based PC systems with Intel Iris Xe Graphics and Windows 11 Pro; and iPhone 14 Pro Max with prerelease iOS 17.0, and Qualcomm Snapdragon 8 Gen 2-based smartphones with Android 13. Devices tested with a WPA2 Wi-Fi network connection. Performance will vary based on usage, system configuration, network connection, and other factors.
+Testing conducted by Apple in August and September 2023 by measuring page load performance of snapshot versions of 10 popular websites under simulated network conditions. Tested on production 13-inch MacBook Air systems with Apple M2, 8GB of RAM, 256GB SSD, and prerelease macOS Sonoma. Tested with prerelease Safari 17.0 and Chrome v117.0.5938.62. Performance will vary based on usage, system configuration, network connection, and other factors.
+Testing conducted by Apple in August and September 2023 on production 13-inch MacBook Air systems with Apple M2, 8GB of RAM, 256GB SSD, and prerelease macOS Sonoma. Systems tested with WPA2 Wi-Fi network connection while running on battery power, with display brightness set to 8 clicks from bottom or 50%. Video streaming (1080p on Safari and Chrome) tested on prerelease Safari 17.0 and Chrome v117.0.5938.62. Not all features are available on all devices. Performance will vary based on system configuration, application workload, and other factors.
+Testing conducted by Apple in August and September 2023 using JetStream 2.1, MotionMark 1.2, and Speedometer 2.1 performance benchmarks. Performance values are rounded; Safari scored higher than other browsers across these benchmarks at the time of testing. Tested on production 13-inch MacBook Air systems with Apple M2, 8GB of RAM, 256GB SSD, and prerelease macOS Sonoma, and Intel Core i7-based PC systems with Intel Iris Xe Graphics and the latest version of Windows 11 Home available at the time of testing. Tested with prerelease Safari 17.0 and Chrome v117.0.5938.62 on macOS, Chrome v117.0.5938.63 on Windows, and Microsoft Edge v116.0.1938.62 and Firefox v117.0 on macOS and Windows, with WPA2 Wi-Fi network connection. Performance will vary based on system configuration, network connection, and other factors.
+HDR video playback requires a 4K monitor or above.
+Live Text is currently supported in English, Chinese, French, Italian, German, Portuguese, and Spanish.
+
+Apple
+Safari
+Shop and Learn
+Shop and Learn
+Store
+Mac
+iPad
+iPhone
+Watch
+Vision
+AirPods
+TV & Home
+AirTag
+Accessories
+Gift Cards
+Apple Wallet
+Apple Wallet
+Wallet
+Apple Card
+Apple Pay
+Apple Cash
+Account
+Account
+Manage Your Apple ID
+Apple Store Account
+iCloud.com
+Entertainment
+Entertainment
+Apple One
+Apple TV+
+Apple Music
+Apple Arcade
+Apple Fitness+
+Apple News+
+Apple Podcasts
+Apple Books
+App Store
+Apple Store
+Apple Store
+Find a Store
+Genius Bar
+Today at Apple
+Apple Camp
+Apple Store App
+Certified Refurbished
+Apple Trade In
+Financing
+Carrier Deals at Apple
+Order Status
+Shopping Help
+For Business
+For Business
+Apple and Business
+Shop for Business
+For Education
+For Education
+Apple and Education
+Shop for K-12
+Shop for College
+For Healthcare
+For Healthcare
+Apple in Healthcare
+Health on Apple Watch
+Health Records on iPhone
+For Government
+For Government
+Shop for Government
+Shop for Veterans and Military
+Apple Values
+Apple Values
+Accessibility
+Education
+Environment
+Inclusion and Diversity
+Privacy
+Racial Equity and Justice
+Supplier Responsibility
+About Apple
+About Apple
+Newsroom
+Apple Leadership
+Career Opportunities
+Investors
+Ethics & Compliance
+Events
+Contact Apple
+			More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE.
+United States
+Copyright ©
+				
+				2024
+				 Apple Inc. All rights reserved.
+			
+Privacy Policy
+Terms of Use
+Sales and Refunds
+Legal
+Site Map

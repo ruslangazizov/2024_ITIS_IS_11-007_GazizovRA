@@ -1,0 +1,649 @@
+Python Insider: Python 3.12.1 is now available
+Python core development news and information.
+Thursday, December 7, 2023
+Python 3.12.1 is now available
+ Python 3.12.1 is now available.https://www.python.org/downloads/release/python-3121/ This is the first maintenance release of Python 3.12
+Python 3.12 is the newest major release of the Python programming language, and it contains many new features and optimizations. 3.12.1 is the latest maintenance release, containing more than 400 bugfixes, build improvements and documentation changes since 3.12.0.
+ Major new features of the 3.12 series, compared to 3.11
+ New features
+More flexible f-string parsing , allowing many things previously disallowed (PEP 701).Support for the buffer protocol  in Python code (PEP 688).A new debugging/profiling API  (PEP 669).Support for isolated subinterpreters  with separate Global Interpreter Locks (PEP 684).Even more improved error messages. More exceptions potentially caused by typos now make suggestions to the user.Support for the Linux perf profiler to report Python function names in traces.Many large and small performance improvements  (like PEP 709  and support for the BOLT binary optimizer), delivering an estimated 5% overall performance improvement.
+ Type annotations
+New type annotation syntax  for generic classes (PEP 695).New override decorator  for methods (PEP 698).
+ Deprecations
+The deprecated wstr and wstr_length members of the C implementation of unicode objects were removed, per PEP 623.In the unittest module, a number of long deprecated methods and classes were removed. (They had been deprecated since Python 3.1 or 3.2).The deprecated smtpd and distutils modules have been removed (see PEP 594 and PEP 632. The setuptools package continues to provide the distutils module.A number of other old, broken and deprecated functions, classes and methods have been removed.Invalid backslash escape sequences in strings now warn with SyntaxWarning instead of DeprecationWarning, making them more visible. (They will become syntax errors in the future.)The internal representation of integers has changed in preparation 
+for performance enhancements. (This should not affect most users as it 
+is an internal detail, but it may cause problems for Cython-generated 
+code.)
+For more details on the changes to Python 3.12, see What’s new in Python 3.12.
+ More resources
+Online Documentation.PEP 693, the Python 3.12 Release Schedule.Report bugs via GitHub Issues.Help fund Python directly or via GitHub Sponsors, and support the Python community.  Enjoy the new releases
+Thanks to all of the many volunteers who help make Python Development
+ and these releases possible! Please consider supporting our efforts by 
+volunteering yourself or through organization contributions to the 
+Python Software Foundation.Your release team,
+Thomas Wouters 
+Ned Deily 
+Steve Dower 
+Łukasz Langa
+Posted by
+Thomas Wouters
+at
+7:50 PM
+Email ThisBlogThis!Share to TwitterShare to FacebookShare to Pinterest
+Newer Post
+Older Post
+Home
+Subscribe
+Subscribe to Python Insider via RSS, or Twitter
+Related Links
+python.org
+Python-Dev mailing list
+Python Developer's Guide
+Translations
+Chinese (Simplified)
+Chinese (Traditional)
+French
+German
+Japanese
+Korean
+Portuguese
+Romanian
+Russian
+Spanish
+Python-Dev Blogs
+Eli Bendersky
+The life of an Ollama prompt
+3 weeks ago
+PyPy Status Blog
+PyPy's blog has moved
+3 years ago
+Pumpichank
+Creating Python Snaps
+8 years ago
+Tim Golden
+London Python Dojo December 2014
+9 years ago
+R. David Murray
+Asyncio Implementation Overview
+9 years ago
+The Voidspace Techie Blog
+unittest.mock and mock 1.0 alpha 1
+12 years ago
+Tarek Ziadé
+More privacy please
+12 years ago
+Deep Thoughts by Raymond Hettinger
+Python’s super() considered super!
+12 years ago
+Brett Cannon
+Jesse Noller
+Boredom & Laziness
+Brian Curtin
+Senthil Kumaran
+Blog Archive
+        ► 
+      
+2024
+(5)
+        ► 
+      
+March
+(2)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(1)
+        ▼ 
+      
+2023
+(18)
+        ▼ 
+      
+December
+(2)
+Python 3.11.7 is now available
+Python 3.12.1 is now available
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2022
+(23)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(2)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(3)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2021
+(24)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(3)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(4)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2020
+(32)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(3)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(4)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(4)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2019
+(36)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(8)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(5)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(2)
+        ► 
+      
+March
+(7)
+        ► 
+      
+February
+(3)
+        ► 
+      
+2018
+(24)
+        ► 
+      
+December
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(3)
+        ► 
+      
+April
+(3)
+        ► 
+      
+March
+(5)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2017
+(17)
+        ► 
+      
+December
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(3)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2016
+(18)
+        ► 
+      
+December
+(5)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(5)
+        ► 
+      
+May
+(1)
+        ► 
+      
+2015
+(14)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(1)
+        ► 
+      
+September
+(3)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(1)
+        ► 
+      
+May
+(2)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2014
+(8)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+May
+(1)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(2)
+        ► 
+      
+2013
+(5)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(1)
+        ► 
+      
+2012
+(9)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+2011
+(25)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(1)
+        ► 
+      
+May
+(7)
+        ► 
+      
+April
+(7)
+        ► 
+      
+March
+(5)
+Contributors
+A.M. Kuchling
+Alfonso de la Guarda
+Anthony Scopatz
+Antoine P.
+Benjamin Peterson
+Brian Curtin
+Davidmh
+Donald Stufft
+Doug Hellmann
+Ee Durbin
+Ezio Melotti
+Georg Brandl
+Jesse
+Kelsey Hightower
+Larry Hastings
+Mathieu Leduc-Hamel
+Michael Markert
+Mike Driscoll
+Ned Deily
+Pablo Galindo
+Paul Moore
+Philip Jenvey
+Sumana Harihareswara
+Thomas Wouters
+Unknown
+Unknown
+Łukasz Langa
+Éric Araujo
+e
+haypo
+tp
+Copyright
+Python Insider by the Python Core Developers is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.Based on a work at blog.python.org.
+Powered by Blogger.
+ 

@@ -1,0 +1,673 @@
+Python Insider: Python 3.10.14, 3.9.19, and 3.8.19 is now available
+Python core development news and information.
+Tuesday, March 19, 2024
+Python 3.10.14, 3.9.19, and 3.8.19 is now available
+Howdy!
+Those are the boring security releases that aren’t supposed to bring 
+anything new. But not this time! We do have a bit of news, actually. But
+ first things first: go update your systems!
+Python 3.10.14
+Get it here: Python Release Python 3.10.1426 commits since the last release.Python 3.9.19
+Get it here: Python Release Python 3.9.19
+26 commits since the last release. 
+Python 3.8.19
+Get it here: Python Release Python 3.8.1928 commits since the last release.Security content in this release
+gh-115399 & gh-115398: bundled libexpat was updated to 2.6.0 to address CVE-2023-52425,
+ and control of the new reparse deferral functionality was exposed with 
+new APIs. Thanks to Sebastian Pipping, the maintainer of libexpat, who 
+worked with us directly on incorporating those fixes!gh-109858: zipfile is now protected from the “quoted-overlap” zipbomb to address CVE-2024-0450. It now raises BadZipFile when attempting to read an entry that overlaps with another entry or central directorygh-91133: tempfile.TemporaryDirectory cleanup no longer dereferences symlinks when working around file system permission errors to address CVE-2023-6597gh-115197: urllib.request no longer resolves the hostname before checking it against the system’s proxy bypass list on macOS and Windowsgh-81194: a crash in socket.if_indextoname() with a specific value (UINT_MAX) was fixed. Relatedly,  an integer overflow in socket.if_indextoname() on 64-bit non-Windows platforms was fixedgh-113659: .pth files with names starting with a dot or containing the hidden file attribute are now skippedgh-102388: iso2022_jp_3 and iso2022_jp_2004 codecs no longer read out of boundsgh-114572: ssl.SSLContext.cert_store_stats() and ssl.SSLContext.get_ca_certs() now correctly lock access to the certificate store, when the ssl.SSLContext is shared across multiple threads
+Stay safe and upgrade!
+Upgrading is highly recommended to all users of affected versions.
+Source builds are moving to GitHub Actions
+It’s not something you will notice when downloading, but 3.10.14 here is the first release we’ve done where the source artifacts were built on GHA and not on a local computer of one of the release managers. We have the Security Developer in Residence @sethmlarson to thank for that!
+It’s a big deal since public builds allow for easier auditing and 
+repeatability. It also helps with the so-called bus factor. In fact, to 
+test this out, this build of 3.10.14 was triggered by me and not Pablo, 
+who would usually release Python 3.10.
+The artifacts are later still signed by the respective release manager, ensuring integrity when put on the downloads server.
+Python now manages its own CVEs
+The security releases you’re looking at are the first after the PSF became a CVE Numbering Authority. That’s also thanks to @sethmlarson.
+ What being our own CNA allows us is to ensure the quality of the 
+vulnerability reports is high, and that the severity estimates are accurate. 
+Seth summarized it best in his announcement here.
+What this also allows us to do is to combine announcement of CVEs 
+with the release of patched versions of Python. This is in fact the case
+ with two of the CVEs listed above (CVE-2023-6597 and CVE-2024-0450). And since Seth is now traveling, this announcement duty was fulfilled by the PSF’s Director of Infrastructure @EWDurbin. Thanks!
+I’m happy to see us successfully testing bus factor resilience on multiple fronts with this round of releases.
+Thank you for your support
+Thanks to all of the many volunteers who help make Python Development
+ and these releases possible! Please consider supporting our efforts by 
+volunteering yourself or through organization contributions to the 
+Python Software Foundation.
+Python.org - the official home of the Python Programming Language.
+  
+  
+–
+Łukasz Langa @ambv
+on behalf of your friendly release team,
+Ned Deily @nad
+Steve Dower @steve.dower
+Pablo Galindo Salgado @pablogsal
+Łukasz Langa @ambv
+Thomas Wouters @thomas
+Posted by
+Łukasz Langa
+at
+8:29 PM
+Email ThisBlogThis!Share to TwitterShare to FacebookShare to Pinterest
+Older Post
+Home
+Subscribe
+Subscribe to Python Insider via RSS, or Twitter
+Related Links
+python.org
+Python-Dev mailing list
+Python Developer's Guide
+Translations
+Chinese (Simplified)
+Chinese (Traditional)
+French
+German
+Japanese
+Korean
+Portuguese
+Romanian
+Russian
+Spanish
+Python-Dev Blogs
+Eli Bendersky
+The life of an Ollama prompt
+3 weeks ago
+PyPy Status Blog
+PyPy's blog has moved
+3 years ago
+Pumpichank
+Creating Python Snaps
+8 years ago
+Tim Golden
+London Python Dojo December 2014
+9 years ago
+R. David Murray
+Asyncio Implementation Overview
+9 years ago
+The Voidspace Techie Blog
+unittest.mock and mock 1.0 alpha 1
+12 years ago
+Tarek Ziadé
+More privacy please
+12 years ago
+Deep Thoughts by Raymond Hettinger
+Python’s super() considered super!
+12 years ago
+Brett Cannon
+Jesse Noller
+Boredom & Laziness
+Brian Curtin
+Senthil Kumaran
+Blog Archive
+        ▼ 
+      
+2024
+(5)
+        ▼ 
+      
+March
+(2)
+Python 3.10.14, 3.9.19, and 3.8.19 is now available
+Python 3.13.0 alpha 5 is now available
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2023
+(18)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(3)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2022
+(23)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(4)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(2)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(3)
+        ► 
+      
+April
+(1)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(1)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2021
+(24)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(1)
+        ► 
+      
+April
+(3)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(4)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2020
+(32)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(3)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(4)
+        ► 
+      
+June
+(4)
+        ► 
+      
+May
+(2)
+        ► 
+      
+April
+(4)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2019
+(36)
+        ► 
+      
+December
+(3)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(8)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(3)
+        ► 
+      
+July
+(5)
+        ► 
+      
+June
+(3)
+        ► 
+      
+May
+(2)
+        ► 
+      
+March
+(7)
+        ► 
+      
+February
+(3)
+        ► 
+      
+2018
+(24)
+        ► 
+      
+December
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(1)
+        ► 
+      
+August
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(3)
+        ► 
+      
+April
+(3)
+        ► 
+      
+March
+(5)
+        ► 
+      
+February
+(2)
+        ► 
+      
+January
+(3)
+        ► 
+      
+2017
+(17)
+        ► 
+      
+December
+(2)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(3)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(1)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(2)
+        ► 
+      
+2016
+(18)
+        ► 
+      
+December
+(5)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(2)
+        ► 
+      
+September
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(5)
+        ► 
+      
+May
+(1)
+        ► 
+      
+2015
+(14)
+        ► 
+      
+December
+(2)
+        ► 
+      
+November
+(1)
+        ► 
+      
+September
+(3)
+        ► 
+      
+August
+(1)
+        ► 
+      
+July
+(1)
+        ► 
+      
+June
+(1)
+        ► 
+      
+May
+(2)
+        ► 
+      
+March
+(2)
+        ► 
+      
+January
+(1)
+        ► 
+      
+2014
+(8)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+May
+(1)
+        ► 
+      
+March
+(3)
+        ► 
+      
+February
+(2)
+        ► 
+      
+2013
+(5)
+        ► 
+      
+November
+(2)
+        ► 
+      
+October
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+February
+(1)
+        ► 
+      
+2012
+(9)
+        ► 
+      
+December
+(1)
+        ► 
+      
+November
+(1)
+        ► 
+      
+October
+(2)
+        ► 
+      
+August
+(1)
+        ► 
+      
+June
+(2)
+        ► 
+      
+May
+(1)
+        ► 
+      
+March
+(1)
+        ► 
+      
+2011
+(25)
+        ► 
+      
+August
+(2)
+        ► 
+      
+July
+(3)
+        ► 
+      
+June
+(1)
+        ► 
+      
+May
+(7)
+        ► 
+      
+April
+(7)
+        ► 
+      
+March
+(5)
+Contributors
+A.M. Kuchling
+Alfonso de la Guarda
+Anthony Scopatz
+Antoine P.
+Benjamin Peterson
+Brian Curtin
+Davidmh
+Donald Stufft
+Doug Hellmann
+Ee Durbin
+Ezio Melotti
+Georg Brandl
+Jesse
+Kelsey Hightower
+Larry Hastings
+Mathieu Leduc-Hamel
+Michael Markert
+Mike Driscoll
+Ned Deily
+Pablo Galindo
+Paul Moore
+Philip Jenvey
+Sumana Harihareswara
+Thomas Wouters
+Unknown
+Unknown
+Łukasz Langa
+Éric Araujo
+e
+haypo
+tp
+Copyright
+Python Insider by the Python Core Developers is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.Based on a work at blog.python.org.
+Powered by Blogger.
+ 

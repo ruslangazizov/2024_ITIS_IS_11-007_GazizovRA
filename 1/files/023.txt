@@ -1,0 +1,467 @@
+Issues · python/cpython · GitHub
+Skip to content
+Toggle navigation
+          Sign in
+        
+ 
+        Product
+        
+Actions
+        Automate any workflow
+      
+Packages
+        Host and manage packages
+      
+Security
+        Find and fix vulnerabilities
+      
+Codespaces
+        Instant dev environments
+      
+Copilot
+        Write better code with AI
+      
+Code review
+        Manage code changes
+      
+Issues
+        Plan and track work
+      
+Discussions
+        Collaborate outside of code
+      
+Explore
+      All features
+    
+      Documentation
+    
+      GitHub Skills
+    
+      Blog
+    
+        Solutions
+        
+For
+      Enterprise
+    
+      Teams
+    
+      Startups
+    
+      Education
+    
+By Solution
+      CI/CD & Automation
+    
+      DevOps
+    
+      DevSecOps
+    
+Resources
+      Learning Pathways
+    
+      White papers, Ebooks, Webinars
+    
+      Customer Stories
+    
+      Partners
+    
+        Open Source
+        
+GitHub Sponsors
+        Fund open source developers
+      
+The ReadME Project
+        GitHub community articles
+      
+Repositories
+      Topics
+    
+      Trending
+    
+      Collections
+    
+Pricing
+Search or jump to...
+Search code, repositories, users, issues, pull requests...
+ 
+        Search
+      
+Clear
+ 
+ 
+              Search syntax tips
+ 
+        Provide feedback
+      
+ 
+We read every piece of feedback, and take your input very seriously.
+Include my email address so I can be contacted
+     Cancel
+    Submit feedback
+        Saved searches
+      
+Use saved searches to filter your results more quickly
+ 
+Name
+Query
+            To see all available qualifiers, see our documentation.
+          
+ 
+     Cancel
+    Create saved search
+              Sign in
+            
+              Sign up
+            
+You signed in with another tab or window. Reload to refresh your session.
+You signed out in another tab or window. Reload to refresh your session.
+You switched accounts on another tab or window. Reload to refresh your session.
+ 
+Dismiss alert
+        python
+ 
+/
+cpython
+Public
+ 
+Notifications
+ 
+Fork
+    28.7k
+ 
+          Star
+ 59.1k
+  
+Code
+Issues
+5k+
+Pull requests
+1.5k
+Actions
+Projects
+27
+Security
+Insights
+ 
+ 
+Additional navigation options
+ 
+          Code
+          Issues
+          Pull requests
+          Actions
+          Projects
+          Security
+          Insights
+ 
+Issues: python/cpython
+ 
+    Labels
+      75
+ 
+    Milestones
+      0
+    Labels
+      75
+ 
+    Milestones
+      0
+    
+    New issue
+  
+ 
+ 
+Have a question about this project? Sign up for a free GitHub account to open an issue and contact its maintainers and the community.
+  
+    Sign up for GitHub
+By clicking “Sign up for GitHub”, you agree to our terms of service and
+  privacy statement. We’ll occasionally send you account related emails.
+    Already on GitHub?
+    Sign in
+    to your account
+  
+      6,911 Open
+    
+      60,057 Closed
+    
+      6,911 Open
+    
+      60,057 Closed
+    
+      Author
+      
+Filter by author
+author:
+Filter by this user
+ 
+    Label
+    
+Filter by label
+Use alt + click/return to exclude labels
+or ⇧ + click/return for logical OR
+    Projects
+    
+ 
+Filter by project
+    Milestones
+    
+ 
+Filter by milestone
+    Assignee
+    
+Filter by who’s assigned
+Assigned to nobody
+assignee:
+Filter by this user
+ 
+    Sort
+Sort by
+Newest
+Oldest
+Most commented
+Least commented
+Recently updated
+Least recently updated
+Best match
+Most reactions
+👍
+👎
+😄
+🎉
+😕
+❤️
+🚀
+👀
+Issues list
+Consider adding doctest.skip_if decorator
+                3.13
+new features, bugs and security fixes
+                stdlib
+Python modules in the Lib dir
+                type-feature
+A feature request or enhancement
+          #117364
+            opened Mar 29, 2024 by
+            sobolevn
+ 
+2
+Improve os.path
+                performance
+Performance or resource usage
+                stdlib
+Python modules in the Lib dir
+                type-feature
+A feature request or enhancement
+          #117361
+            opened Mar 29, 2024 by
+            nineteendo
+4 of 14 tasks
+Download link for Python 3.5.9 is broken and returns a 404
+                docs
+Documentation in the Doc dir
+                type-bug
+An unexpected behavior, bug, or error
+          #117356
+            opened Mar 28, 2024 by
+            willingc
+2
+Handle /: for ntpath.isabs
+                type-bug
+An unexpected behavior, bug, or error
+          #117352
+            opened Mar 28, 2024 by
+            nineteendo
+2
+Speed up os.path
+                type-feature
+A feature request or enhancement
+          #117349
+            opened Mar 28, 2024 by
+            nineteendo
+configparser.RawConfigParser._read is unmanageably complex
+                stdlib
+Python modules in the Lib dir
+                triaged
+The issue has been accepted as valid by a triager.
+                type-feature
+A feature request or enhancement
+          #117348
+            opened Mar 28, 2024 by
+            jaraco
+ 
+1
+test_clinic fails with the --forever argument
+                tests
+Tests in the Lib/test dir
+                topic-argument-clinic
+                type-bug
+An unexpected behavior, bug, or error
+          #117347
+            opened Mar 28, 2024 by
+            Eclips4
+ 
+8
+Worker management race conditions in ThreadPoolExecutor and ProcessPoolExecutor
+                tests
+Tests in the Lib/test dir
+          #117344
+            opened Mar 28, 2024 by
+            colesbury
+Deprecate glob.glob0() and glob.glob1()
+                3.13
+new features, bugs and security fixes
+          #117337
+            opened Mar 28, 2024 by
+            serhiy-storchaka
+re.Match.__getitem__ may support tuples and slices
+                topic-regex
+                type-feature
+A feature request or enhancement
+          #117329
+            opened Mar 28, 2024 by
+            HarryLHW
+1
+The codecs module mostly but not fully supports non str<->bytes codecs
+                type-bug
+An unexpected behavior, bug, or error
+          #117325
+            opened Mar 28, 2024 by
+            zougloub
+Make cell thread-safe in the free-threaded build
+                topic-free-threading
+                type-feature
+A feature request or enhancement
+          #117323
+            opened Mar 28, 2024 by
+            colesbury
+codecs.Stream{Reader,Writer} close parent stream on __exit__
+                topic-IO
+                type-bug
+An unexpected behavior, bug, or error
+          #117322
+            opened Mar 28, 2024 by
+            zougloub
+3
+email.policy.EmailPolicy._fold() breaking multi-byte Unicode sequences
+                3.11
+bug and security fixes
+                3.12
+bugs and security fixes
+                3.13
+new features, bugs and security fixes
+                topic-email
+                topic-unicode
+                type-bug
+An unexpected behavior, bug, or error
+          #117313
+            opened Mar 28, 2024 by
+            davidmcnabnz
+Fix thread-safety for PyType_IsSubtype in free-threaded builds
+                topic-free-threading
+                type-bug
+An unexpected behavior, bug, or error
+          #117306
+            opened Mar 27, 2024 by
+            mpage
+Free-threading crash involving os.fork() and PyThreadState_DeleteCurrent()
+                topic-free-threading
+          #117303
+            opened Mar 27, 2024 by
+            colesbury
+ 
+Use stop-the-world to make sys._current_frames() and sys._current_exceptions() thread-safe in free-threaded build
+                topic-free-threading
+                type-feature
+A feature request or enhancement
+          #117300
+            opened Mar 27, 2024 by
+            colesbury
+ 
+test.libregrtest race condition in runtest_mp leads to 30 second delay in free-threaded build
+                tests
+Tests in the Lib/test dir
+                topic-free-threading
+          #117293
+            opened Mar 27, 2024 by
+            colesbury
+ 
+multiprocessing: Add note that Array(c_char, 128).value is null-terminated
+                docs
+Documentation in the Doc dir
+          #117291
+            opened Mar 27, 2024 by
+            prauscher
+1
+PyTuple_SetItem documentation doesn't warn about refcount requirements
+                docs
+Documentation in the Doc dir
+                topic-C-API
+          #117283
+            opened Mar 27, 2024 by
+            Yhg1s
+Is it possible to remove the feature of auto-completing parentheses for a callable in REPL?
+                type-feature
+A feature request or enhancement
+          #117282
+            opened Mar 27, 2024 by
+            beavailable
+5
+3.13.0a5 SIGSEGV when calling weakref.proxy on a class instance
+                type-crash
+A hard crash of the interpreter, possibly with a core dump
+          #117281
+            opened Mar 27, 2024 by
+            befeleme
+3
+dis.cmp_op doc is inaccurate in Python 3.12.2 and 3.13.0a5
+                3.12
+bugs and security fixes
+                docs
+Documentation in the Doc dir
+                type-bug
+An unexpected behavior, bug, or error
+          #117270
+            opened Mar 26, 2024 by
+            Christopher-Chianelli
+6
+scandir direntry.stat() always returns st_ctime of 0 on Windows
+                3.12
+bugs and security fixes
+                3.13
+new features, bugs and security fixes
+                OS-windows
+                type-bug
+An unexpected behavior, bug, or error
+          #117267
+            opened Mar 26, 2024 by
+            ppixiv
+ 
+SystemError: <method-wrapper '__init__' of ast.AST-child object at ...> returned NULL without setting an exception
+                type-bug
+An unexpected behavior, bug, or error
+          #117266
+            opened Mar 26, 2024 by
+            hroncok
+ 
+7
+Previous 1 2 3 4 5 … 276 277 Next
+Previous Next
+ProTip!
+  What’s not been updated in a month: updated:<2024-02-29.
+Footer
+        © 2024 GitHub, Inc.
+      
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact
+      Manage cookies
+    
+      Do not share my personal information
+    
+    You can’t perform that action at this time.
+  
