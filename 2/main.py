@@ -1,6 +1,5 @@
 import os
 import re
-from collections import defaultdict
 from multiprocessing import Pool
 from pathlib import Path
 
@@ -12,8 +11,8 @@ from pymystem3 import Mystem
 RUSSIAN_STOPWORDS = set(stopwords.words('russian'))
 
 
-def is_valid_word(token: str) -> bool:
-    return re.match(r'^[а-яА-ЯёЁa-zA-Z]+-?[а-яА-ЯёЁa-zA-Z]*$', token) is not None
+def is_valid_word(lemma: str) -> bool:
+    return re.match(r'^[а-яА-ЯёЁa-zA-Z]+-?[а-яА-ЯёЁa-zA-Z]*$', lemma) is not None
 
 
 def process_file(directory: str, file_name: str) -> (str, list[str]):
@@ -26,15 +25,14 @@ def process_file(directory: str, file_name: str) -> (str, list[str]):
         text = file.read()
         tokens = word_tokenize(text, language="russian")
         for word in tokens:
-            lemma = mystem.lemmatize(word)[0]
+            lemma: str = mystem.lemmatize(word)[0]
             if lemma not in RUSSIAN_STOPWORDS and is_valid_word(lemma):
                 file_lemmas.append(lemma)
 
     return file_name, file_lemmas
 
 
-def main(source_dir: str, output_dir: str) -> defaultdict[str, set[str]]:
-    inverted_index: defaultdict[str, set[str]] = defaultdict(set)
+def main(source_dir: str, output_dir: str):
     source_files = os.listdir(source_dir)
     Path(output_dir).mkdir(exist_ok=True)
 
@@ -49,10 +47,7 @@ def main(source_dir: str, output_dir: str) -> defaultdict[str, set[str]]:
         with open(output_file_path, 'w', encoding='utf-8') as output_file:
             for lemma in lemmas:
                 output_file.write(f"{lemma}\n")
-                inverted_index[lemma].add(file_name)
         print(f'Saved file {output_file_path}')
-
-    print(inverted_index)
 
 
 if __name__ == "__main__":
