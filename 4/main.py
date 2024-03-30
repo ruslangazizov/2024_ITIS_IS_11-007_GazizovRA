@@ -14,7 +14,6 @@ def compute_tf(text: list[str]) -> dict[str, float]:
     """
     tf: defaultdict[str, int] = defaultdict(int)
     for word in text:
-        # if word != '-----------------------':  # Исключаем разделитель
         tf[word] += 1
     word_count = sum(tf.values())
     return {word: round(count / word_count, PRECISION) for word, count in tf.items()}
@@ -29,7 +28,6 @@ def compute_idf(corpus: dict[str, list[str]]) -> dict[str, float]:
     total_docs = len(corpus)
     for text in corpus.values():
         for word in set(text):
-            # if word != '-----------------------':
             idf[word] += 1
     return {word: round(math.log10(total_docs / count), PRECISION) for word, count in idf.items()}
 
