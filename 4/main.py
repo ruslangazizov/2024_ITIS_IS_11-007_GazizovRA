@@ -29,7 +29,8 @@ def compute_idf(corpus: dict[str, list[str]]) -> dict[str, float]:
     for text in corpus.values():
         for word in set(text):
             idf[word] += 1
-    return {word: round(math.log10(total_docs / count), PRECISION) for word, count in idf.items()}
+    # добавляем единицу чтобы не было никогда нуля
+    return {word: round(math.log10(total_docs / count) + 1, PRECISION) for word, count in idf.items()}
 
 
 def compute_tf_idf(tf: dict[str, dict[str, float]], idf: dict[str, float]) -> dict[str, dict[str, float]]:
