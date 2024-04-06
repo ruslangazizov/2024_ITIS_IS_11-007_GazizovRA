@@ -64,8 +64,11 @@ def main(urls: [str]):
                 except UnicodeDecodeError:
                     print("Failed to find links:", url)
                 else:
-                    urls.extend(link for link in links
-                                if link.startswith('http') and 'css' not in link and link not in visited_urls)
+                    urls.extend(link.split('#')[0] for link in links
+                                if link.startswith('http') and
+                                'css' not in link and
+                                'json' not in link and
+                                link not in visited_urls)
             else:
                 print("Failed to crawl:", url)
         else:

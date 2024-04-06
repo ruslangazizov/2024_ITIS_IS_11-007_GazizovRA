@@ -1,4 +1,4 @@
-Параметры и аргументы универсального типа - SwiftBook
+Резюме по грамматике - SwiftBook
  
 Учебник
 Курсы
@@ -94,55 +94,553 @@
  Резюме по грамматике
  
  
-		Параметры и аргументы универсального типа		
+		Резюме по грамматике		
         
-В этой главе описываются параметры и аргументы для функций и инициализаторов универсального типа. При объявлении функции или инициализатора универсального типа, вам необходимо указать параметры типа, с которым сможет работать эта функция или инициализатор. Эти параметры типа действуют в качестве плейсхолдера, которые заменяются реальными аргументами конкретного типа, когда создается экземпляр универсального типа или вызывается универсальная функция или инициализатор.
-Подробнее см. Универсальные шаблоны.
-Условие универсального параметра (Generic Parameter Clause)
-Generic Parameter Clause определяет параметры типа универсального типа или функции, наряду с любыми связанными ограничениями и требованиями для этих параметров. Условие универсального параметра заключается в угловые скобки (<>) и имеет одну из следующих форм:
-< список параметров универсального типа >
-Список универсальных параметров является разделенным запятыми списком универсальных параметров, каждый из которых имеет следующий вид:
-параметра типа: ограничение
-Универсальный параметр состоит из параметра типа, за которым следует опциональное ограничение. Параметр типа - это просто имя типа плейсхолдера (например, T, U, V, Key, Value, и так далее). У вас есть доступ к параметрам типа (и к любому из их связанных типов) в остальной части типа, функциям или объявлению инициализатора, в том числе и в подписи функции или инициализатора.
-Констрейнт указывает, что параметр типа наследует от определенного класса или соответствует протоколу или композиции протокола. Например, в универсальной функции ниже, универсальный параметр T: Comparable указывает на то, что любой тип аргументов, заменяемый параметром типа T, должен соответствовать протоколу Comparable.
-func simpleMax<T: Comparable>(_ x: T, _ y: T) -> T {
-   if x < y {
-      return y
-   }
-   return x
-}
-Так как Int и Double, например, оба соответвуют протоколу Comparable, эта функция принимает аргументы любого типа. В отличие от универсальных типов, вам не нужно указывать условие универсального аргумента при использовании универсальной функции или инициализатора. Аргументы типа же вместо этого выводятся из типа аргументов, переданных функции или инициализатору.
-simpleMax(17, 42) // T определеятеся как Int
-simpleMax(3.14159, 2.71828) // T определяется как Double
-Условие Where
-Вы можете указать дополнительные требования к параметрам типа и их связанным типам, включая условие where после универсального списка параметров. Условие where состоит из ключевого слова where, за которым идет разделенный запятыми список из одного или нескольких требований.
-where требования
-Требования в условии where указывают, что параметр типа наследует от класса или соответствует протоколу или композиции протокола. Несмотря на то, что условие where обеспечивает синтаксический сахар для выражения простых ограничений на параметры типа (например, T: Comparable эквивалентно <T> where T: Comparable и так далее), вы можете использовать его для обеспечения более сложных ограничений параметров типа и их связанных типов. Например,  where S.Iterator.Element: Equatable указывает на то, что S соответствует протоколу Sequence и что связанный тип S.Iterator.Element соответствует протоколу Equatable. Данное ограничение проверяет, чтобы каждый элемент последовательности можно было сравнить.
-Вы можете также указать требование, что два типа должны быть идентичны, с помощью оператора == . Например, условие универсального параметра <S1: Sequence, S2: Sequence where S1.Iterator.Element == S2.Iterator.Element> выражает ограничения, где S1 и S2 должны соответствовать протоколу Sequence и что элементы обеих последовательностей должны быть одного и того же типа.
-Любой аргумент типа, заменяемый параметром типа, должны соответствовать всем ограничениям и требованиям, предъявляемым к параметру типа.
-Вы можете перегружать универсальную функцию или инициализатор, предоставляя различные ограничения, требования или все вместе, на параметры типа в условии универсального параметра. Когда вы вызываете перегруженную универсальную функцию или инициализатор, компилятор использует эти ограничения для решения того, какие перегруженные функции или инициализаторы вызвать.
-Для получения дополнительной информации об универсальной оговорке where и примера ее в объявлении универсальной функции, см. Оговорка where.
+Лексическая структура
+Грамматика пустого пространства
+whitespace → whitespace-item whitespace opt
+whitespace-item → line-break
+whitespace-item → comment
+whitespace-item → multiline-comment
+whitespace-item → U+0000, U+0009, U+000B, U+000C, or U+0020
+line-break → U+000A
+line-break → U+000D
+line-break → U+000D followed by U+000A
+comment → // comment-text line-break
+multiline-comment → /* multiline-comment-text */
+comment-text → comment-text-item comment-text opt
+comment-text-item → Any Unicode scalar value except U+000A or U+000D
+multiline-comment-text → multiline-comment-text-item multiline-comment-text opt
+multiline-comment-text-item → multiline-comment
+multiline-comment-text-item → comment-text-item
+multiline-comment-text-item → Any Unicode scalar value except /* or */
+Грамматика идентификатора
+identifier → identifier-head­ identifier-characters­opt­
+identifier → `­identifier-head­ identifier-characters­opt­`­
+identifier → implicit-parameter-name­
+identifier-list → identifier­ identifier­,­identifier-list­
+identifier-head → Upper- or lowercase letter A through Z
+identifier-head → _­
+identifier-head → U+00A8, U+00AA, U+00AD, U+00AF, U+00B2–U+00B5, or U+00B7–U+00BA
+identifier-head → U+00BC–U+00BE, U+00C0–U+00D6, U+00D8–U+00F6, or U+00F8–U+00FF
+identifier-head → U+0100–U+02FF, U+0370–U+167F, U+1681–U+180D, or U+180F–U+1DBF
+identifier-head → U+1E00–U+1FFF
+identifier-head → U+200B–U+200D, U+202A–U+202E, U+203F–U+2040, U+2054, or U+2060–U+206F
+identifier-head → U+2070–U+20CF, U+2100–U+218F, U+2460–U+24FF, or U+2776–U+2793
+identifier-head → U+2C00–U+2DFF or U+2E80–U+2FFF
+identifier-head → U+3004–U+3007, U+3021–U+302F, U+3031–U+303F, or U+3040–U+D7FF
+identifier-head → U+F900–U+FD3D, U+FD40–U+FDCF, U+FDF0–U+FE1F, or U+FE30–U+FE44
+identifier-head → U+FE47–U+FFFD
+identifier-head → U+10000–U+1FFFD, U+20000–U+2FFFD, U+30000–U+3FFFD, or U+40000–U+4FFFD
+identifier-head → U+50000–U+5FFFD, U+60000–U+6FFFD, U+70000–U+7FFFD, or U+80000–U+8FFFD
+identifier-head → U+90000–U+9FFFD, U+A0000–U+AFFFD, U+B0000–U+BFFFD, or U+C0000–U+CFFFD
+identifier-head → U+D0000–U+DFFFD or U+E0000–U+EFFFD
+identifier-character → Цифры от 0 до 9 (включительно)
+identifier-character → U+0300–U+036F, U+1DC0–U+1DFF, U+20D0–U+20FF, or U+FE20–U+FE2F
+identifier-character → identifier-head­
+identifier-characters → identifier-character­identifier-characters­opt­
+implicit-parameter-name → $­decimal-digits­
+Грамматика литерала
+literal → numeric-literal­ | string-literal­| boolean-literal­ | nil-literal­
+numeric-literal → -­opt­ integer-literal­ | -­optfloating-point-literal­
+boolean-literal → true­ | false­
+nil-literal → nil­
+Грамматика целочисленного литерала
+integer-literal → binary-literal­
+integer-literal → octal-literal­
+integer-literal → decimal-literal­
+integer-literal → hexadecimal-literal­
+binary-literal → 0b binary-digit­binary-literal-characters­opt­
+binary-digit → Цифры 0 или 1
+binary-literal-character → binary-digit­ | _­
+binary-literal-characters → binary-literal-character­ binary-literal-characters­opt­
+octal-literal → 0o­ octal-digit­octal-literal-characters­opt­
+octal-digit → Цифры от 0 до 7 включительно
+octal-literal-character → octal-digit­ |  _ ­
+octal-literal-characters → octal-literal-character ­octal-literal-characters­opt­
+decimal-literal → decimal-digit­ decimal-literal-characters­opt­
+decimal-digit → Цифры от 0 до 9 включительно
+decimal-digits → decimal-digit­decimal-digits­opt­
+decimal-literal-character → decimal-digit­  | _­
+decimal-literal-characters → decimal-literal-character ­decimal-literal-characters­opt­
+hexadecimal-literal → 0x hexadecimal-digit­hexa decimal-literal-characters­opt­
+hexadecimal-digit → Цифры от 0 до 9 включительно, от a до f включительно или от A до F включительно
+hexadecimal-literal-character → hexadecimal-digit­ | _­
+hexadecimal-literal-characters → hexadecimal-literal-character­ hexadecimal-literal-characters­opt­
+Грамматика числа с плавающей точкой
+floating-point-literal → decimal-literal­ decimal-fraction­opt­ decimal-exponent­opt­
+floating-point-literal → hexadecimal-literal­ hexadecimal-fraction­opt­ hexadecimal-exponent­
+decimal-fraction → .­decimal-literal­
+decimal-exponent → floating-point-e­sign­opt ­decimal-literal­
+hexadecimal-fraction → .­hexadecimal-digit­ hexadecimal-literal-characters­opt­
+hexadecimal-exponent → floating-point-p­sign­opt­ decimal-literal­
+floating-point-e → e­ | E­
+floating-point-p → p­ | P­
+sign → +­ | -­
+Грамматика строкового литерала
+string-literal → static-string-literal | interpolated-string-literal
+static-string-literal → " quoted-text opt "
+static-string-literal → """ multiline-quoted-text opt """
+quoted-text → quoted-text-item quoted-text opt
+quoted-text-item → escaped-character
+quoted-text-item → Any Unicode scalar value except ", \, U+000A, or U+000D "
+multiline-quoted-text → multiline-quoted-text-item multiline-quoted-text opt
+multiline-quoted-text-item → escaped-character
+multiline-quoted-text-item → Any Unicode scalar value except \
+multiline-quoted-text-item → escaped-newline
+interpolated-string-literal → " interpolated-text opt "
+interpolated-string-literal → """ multiline-interpolated-text opt """
+interpolated-text → interpolated-text-item interpolated-text opt
+interpolated-text-item → \( expression ) | quoted-text-item
+multiline-interpolated-text → multiline-interpolated-text-item multiline-interpolated-text opt
+multiline-interpolated-text-item → \( expression ) | multiline-quoted-text-item
+escaped-character → \0 | \\ | \t | \n | \r | \" | \'
+escaped-character → \u { unicode-scalar-digits }
+unicode-scalar-digits → Between one and eight hexadecimal digits
+escaped-newline → \ whitespace opt line-break
+Грамматика операторов
+operator → operator-head­ operator-characters­opt­
+operator → dot-operator-head­ dot-operator-characters­
+operator-head → /­ | =­ | -­ | +­ | !­ | *­ | %­ | <­ | >­ | &­ | |­ | ^­ | ~­ | ?­
+operator-head → U+00A1–U+00A7
+operator-head → U+00A9 or U+00AB
+operator-head → U+00AC or U+00AE
+operator-head → U+00B0–U+00B1, U+00B6, U+00BB, U+00BF, U+00D7, or U+00F7
+operator-head → U+2016–U+2017 or U+2020–U+2027
+operator-head → U+2030–U+203E
+operator-head → U+2041–U+2053
+operator-head → U+2055–U+205E
+operator-head → U+2190–U+23FF
+operator-head → U+2500–U+2775
+operator-head → U+2794–U+2BFF
+operator-head → U+2E00–U+2E7F
+operator-head → U+3001–U+3003
+operator-head → U+3008–U+3030
+operator-character → operator-head­
+operator-character → U+0300–U+036F
+operator-character → U+1DC0–U+1DFF
+operator-character → U+20D0–U+20FF
+operator-character → U+FE00–U+FE0F
+operator-character → U+FE20–U+FE2F
+operator-character → U+E0100–U+E01EF
+operator-characters → operator-character­ operator-characters­opt­
+dot-operator-head → .­
+dot-operator-character → .­ | operator-character­
+dot-operator-characters → dot-operator-character­dot-operator-characters­opt­
+binary-operator → operator­
+prefix-operator → operator­
+postfix-operator → operator­
+Типы
+Грамматика типа
+type → array-type
+type → dictionary-type­
+type → function-type­
+type → type-identifier­
+type → tuple-type
+type → optional-type­
+type → implicitly-unwrapped-optional-type­
+type → protocol-composition-type
+type → metatype-type
+type → Any
+type → Self
+type → ( type )
+Грамматика аннотации типа
+type-annotation → :­attributes­opt­  inoutopt­ type­
+Грамматика идентификатора типа
+type-identifier → type-name­  generic-argument-clause­opt­  |  type-name­  generic-argument-clause­opt­  . type-identifier­ type-name → identifier­
+Грамматика кортежного типа
+tuple-type → (­tuple-type-body­opt­)­ tuple-type-element-list → tuple-type-element­  |  tuple-type-element­,­tuple-type-element-list­ tuple-type-element →  ­element-name   ­type-annotation­  ­|  type­ element-name → identifier­
+Грамматика функционального типа
+function-type → attributes­opt  ­function-type-argument-clause­  throws­opt­  ->­  type­ function-type → attributes­opt­  function-type-argument-clause­  rethrows­  ->­  type­ function-type-argument-clause → (­)­ function-type-argument-clause → (­function-type-argument-list­...­opt­)­ function-type-argument-list → function-type-argument­ | function-type-argument­ , ­function-type-argument-list­ function-type-argument → attributes­opt­  inout­opt­  type­ | argument-label­  type-annotation­ argument-label → identifier­
+Грамматика типа массива
+array-type → [­type­]­
+Грамматика типа словаря
+dictionary-type → [­type­ :­ type­]­
+Грамматика опционального типа
+optional-type → type­  ?­
+Грамматика неявно извлеченного опционального типа
+implicitly-unwrapped-optional-type → type ­!­
+Грамматика типа композиции протоколов
+protocol-composition-type → protocol-identifier­ & ­protocol-composition-continuation­ protocol-composition-continuation → protocol-identifier­  | protocol-composition-type­ 
+Грамматика метатипа
+metatype-type → type­ .­ Type­  |  type­. ­ Protocol­
+Грамматика наследования типа
+type-inheritance-clause → : type-inheritance-list
+type-inheritance-list → type-identifier | type-identifier, type-inheritance-list
+Выражения
+Грамматика выражений
+expression → try-operator ­opt­ prefix-expression ­binary-expressions­opt­
+expression-list → expression­  | expression­,­expression-list­
+Грамматика префиксных выражений
+prefix-expression → prefix-operator­opt ­postfix-expression­
+prefix-expression → in-out-expression­
+in-out-expression → &­ identifier­
+Грамматика выражения try
+try-operator → try­ | try­?­ | try­!­
+Грамматика бинарных выражений
+binary-expression → binary-operator­ prefix-expression­
+binary-expression → assignment-operator ­try-operator­opt ­prefix-expression­
+binary-expression → conditional-operator­ try-operator­opt ­prefix-expression­
+binary-expression → type-casting-operator­
+binary-expressions → binary-expression ­binary-expressions­opt­
+Грамматика оператора присваивания
+assignment-operator → =­
+Грамматика условного оператора
+conditional-operator → ?­ try-operator­opt­  expression­:­
+Грамматика операторов приведения типа
+type-casting-operator → is­ type­ type-casting-operator → as ­type­ type-casting-operator → as­ ? ­type­ type-casting-operator → as­ !­ type­
+Грамматика первичных выражений
+primary-expression → identifier­ generic-argument-clause­ opt­
+primary-expression → literal-expression­
+primary-expression → self-expression­
+primary-expression → superclass-expression­
+primary-expression → closure-expression­
+primary-expression → parenthesized-expression­
+primary-expression → tuple-expression
+primary-expression → implicit-member-expression­
+primary-expression → wildcard-expression­
+primary-expression → key-path-expression
+primary-expression → selector-expression­
+primary-expression → key-path-string-expression
+Грамматика выражения литерала
+literal-expression → literal­
+literal-expression → array-literal­  | dictionary-literal |­  playground-literal­
+literal-expression → #file­  | #line­ | #column­  |  #function­ array-literal → [­array-literal-items­opt­]­ array-literal-items → array-literal-item­,­opt­  array-literal-item­,­array-literal-items­ array-literal-item → expression­ dictionary-literal → [­dictionary-literal-items­]­ |[­:­]­ dictionary-literal-items → dictionary-literal-item­,­opt­ dictionary-literal-item­,­dictionary-literal-items­ dictionary-literal-item → expression­:­expression­ playground-literal → #colorLiteral­ (­ red­ : ­expression­,­ green­ : ­expression­,­ blue­ : ­expression­, ­alpha­ : ­expression­)­ playground-literal → #fileLiteral­ (­ resourceName­ : ­expression­)­ playground-literal → #imageLiteral­ (­ resourceName­ : ­expression­)­
+Грамматика выражения self
+self-expression → self­  self-method-expression­  | self-subscript-expression­ | self-initializer-expression­ self-method-expression → self­.­identifier­ self-subscript-expression → self­[­expression-list­]­ self-initializer-expression → self­.­init­
+Грамматика выражения суперкласса
+superclass-expression → superclass-method-expression­  | superclass-subscript-expression­ | superclass-initializer-expression­
+superclass-method-expression → super­.­identifier­ superclass-subscript-expression → super­[­expression-list­]­ superclass-initializer-expression → super­.­init­
+Грамматика выражений замыканий
+closure-expression → {closure-signature opt­ statements}
+‌closure-signature → capture-list opt­ closure-parameter-clause throws  opt­ function-result opt­ in
+‌closure-signature → capture-list in
+‌closure-parameter-clause → ( ) | (closure-parameter-list) | identifier-list
+‌closure-parameter-list → closure-parameter | closure-parameter, closure-parameter-list
+‌closure-parameter → closure-parameter-nametype-annotation opt­
+‌closure-parameter → closure-parameter-nametype-annotation...
+‌closure-parameter-name → identifier
+‌capture-list → [capture-list-items]
+‌capture-list-items → capture-list-item capture-list-item, capture-list-items
+‌capture-list-item → capture-specifier opt­ expression
+‌capture-specifier → weak  | unowned | unowned(safe) |  unowned(unsafe)
+Грамматика неявного выражения члена
+implicit-member-expression → .­identifier­
+Грамматика выражения в скобках
+parenthesized-expression → (­expression­)
+Грамматика выражения кортежа
+tuple-expression → (­)­ | (­tuple-element­,­tuple-element-list­)­ tuple-element-list → tuple-element­  | tuple-element­,­tuple-element-list­ tuple-element → expression­  | identifier­:­expression­
+Грамматика выражения wildcard
+wildcard-expression → _­
+Грамматика выражения Key-Path
+key-path-expression → \ type opt . key-path-components
+key-path-components → key-path-component | key-path-component . key-path-components
+key-path-component → identifier key-path-postfixes opt | key-path-postfixes
+key-path-postfixes → key-path-postfix key-path-postfixes opt
+key-path-postfix → ? | ! | [ function-call-argument-list ] 
+Грамматика выражения селектора
+selector-expression → #selector ( expression )
+‌selector-expression → #selector ( getter: expression )
+‌selector-expression → #selector ( setter: expression )
+Грамматика выражения зачения пути по ключу
+key-path-expression → #keyPath ( expression )
+Грамматика постфиксных выражений
+postfix-expression → primary-expression­
+postfix-expression → postfix-expression­postfix-operator­
+postfix-expression → function-call-expression­
+postfix-expression → initializer-expression­
+postfix-expression → explicit-member-expression­
+postfix-expression → postfix-self-expression­
+postfix-expression → dynamic-type-expression­
+postfix-expression → subscript-expression­
+postfix-expression → forced-value-expression­
+postfix-expression → optional-chaining-expression­
+Грамматика выражения вызова функции
+function-call-expression → postfix-expression function-call-argument-clause
+function-call-expression → postfix-expression ­parenthesized-expression­opt­ trailing-closure
+function-call-argument-clause → ( ) | (function-call-argument-list)
+function-call-argument-list → function-call-argument | function-call-argument ,function-call-argument-list
+function-call-argument → expression | identifier  : expression
+function-call-argument → operator | identifier : operator
+­
+trailing-closure → closure-expression­
+Грамматика выражения инициализатора
+initializer-expression → postfix-expression­.­init­ initializer-expression → postfix-expression­.­init­(­argument-names­)­
+Грамматика явного выражения члена
+explicit-member-expression → postfix-expression­.­decimal-digits­ explicit-member-expression → postfix-expression­.­identifier­generic-argument-clause­opt­ explicit-member-expression → postfix-expression­.­identifier­(­argument-names­)­ argument-names → argument-name­ argument-names­opt­ argument-name → identifier­:­
+Грамматика выражения self
+postfix-self-expression → postfix-expression­.­self­
+Грамматика выражения сабскрипта
+subscript-expression → postfix-expression­ [ ­expression-list­ ]­
+Грамматика принудительного значения
+forced-value-expression → postfix-expression­!­
+Грамматика принудительного значения
+forced-value-expression → postfix-expression­!­
+Грамматика выражения опциональной последовательности
+optional-chaining-expression → postfix-expression­?­
+Инструкции
+Грамматика инструкций
+statement → expression­;­opt­ statement → declaration­;­opt­ statement → loop-statement­;­opt­ statement → branch-statement­;­opt­ statement → labeled-statement­;­opt­ statement → control-transfer-statement­;­opt­ statement → defer-statement­;­opt­ statement → do-statement­:­opt­ statement → compiler-control-statement­ statements → statement­ statements­ opt­
+Грамматика инструкции цикла
+loop-statement → for-in-statement­
+loop-statement → while-statement­
+loop-statement → repeat-while-statement­
+Грамматика инструкции for-in
+for-in-statement → for­ case­opt ­pattern ­in ­expression ­where-clause­ opt ­code-block­
+Грамматика инструкции while
+while-statement → while­ condition-clause­ code-block­ condition-clause → expression­ condition-clause → expression­,­condition-list­ condition-clause → condition-list­ condition-clause → availability-condition­,­expression­ condition-list → condition­  |  condition­,­condition-list­ condition → availability-condition­  |  case-condition­  |  optional-binding-condition­ case-condition → case­ pattern­initializer­where-clause­opt­ optional-binding-condition → optional-binding-head­optional-binding-continuation-list­opt­where-clause­opt­ optional-binding-head → let ­pattern­initializer­  | var ­pattern­initializer­ optional-binding-continuation-list → optional-binding-continuation­ optional-binding-continuation­,­optional-binding-continuation-list­ optional-binding-continuation → pattern­initializer­  | optional-binding-head­
+Грамматика repeat-while инструкции
+repeat-while-statement → repeat ­code-block while­ expression­
+Грамматика инструкций ветвления
+branch-statement → if-statement­
+branch-statement → guard-statement­
+branch-statement → switch-statement­
+Грамматика инструкции if
+if-statement → if­ condition-clause­   code-block  ­else-clause ­opt­ else-clause → else­ code-block­  |  else ­if-statement­
+Грамматика инструкции guard
+guard-statement → guard­ condition-clause­ else ­code-block­
+Грамматика инструкции switch
+switch-statement → switch­ expression­{­switch-cases­opt­}­ switch-cases → switch-case­ switch-cases­ opt­ switch-case → case-label­ statements­  |  default-label­ statements­ case-label → case­ case-item-list­:­ case-item-list → pattern­ where-clause­opt­  |  pattern ­where-clause­opt­,­case-item-list­ default-label → default­:­ where-clause → where­ where-expression­ where-expression → expression­
+Грамматика маркированных инструкций
+labeled-statement → statement-label­ loop-statement­  |  statement-label ­if-statement­  |  statement-label­switch-statement­
+statement-label → label-name­:­ label-name → identifier­
+Грамматика инструкции передачи управления
+control-transfer-statement → break-statement­
+control-transfer-statement → continue-statement­
+control-transfer-statement → fallthrough-statement­
+control-transfer-statement → return-statement­
+control-transfer-statement → throw-statement­
+Грамматика инструкции Break
+break-statement → break ­label-name­ opt­
+Грамматика инструкции Continue
+continue-statement → continue­ label-name­ opt­
+Грамматика инструкции fallthrough
+fallthrough-statement → fallthrough­
+Грамматика инструкции return
+return-statement → return­ expression­ opt­
+Грамматика инструкции throw
+throw-statement → throw ­expression­
+Грамматика инструкции defer
+defer-statement → defer­ code-block­
+Грамматика инструкции do
+do-statement → do ­code-block­ catch-clauses­ opt­ catch-clauses → catch-clause ­catch-clauses­ opt­ catch-clause → catch­ pattern­ opt­ where-clause­ opt­ code-block­
+Грамматика инструкций управления компилятором
+compiler-control-statement → build-configuration-statement­
+compiler-control-statement → line-control-statement­
+Грамматика блока условной компиляции
+conditional-compilation-block → if-directive-clause elseif-directive-clauses­opt­ else-directive-clauseopt­ endif-directive
+‌ if-directive-clause → if-directive compilation-condition statements­ opt­
+‌ elseif-directive-clauses → elseif-directive-clause elseif-directive-clauses­ opt­
+‌ elseif-directive-clause → elseif-directive compilation-condition statements­ opt­
+‌ else-directive-clause → else-directive statements­ opt­
+if-directive → #if
+‌ elseif-directive → #elseif
+‌ else-directive → #else
+‌ endif-directive → #endif
+‌ compilation-condition → platform-condition
+‌ compilation-condition → identifier
+‌ compilation-condition → boolean-literal
+‌ compilation-condition → (compilation-condition)
+‌ compilation-condition → !compilation-condition
+‌ compilation-condition → compilation-condition && compilation-condition
+‌ compilation-condition → compilation-condition || compilation-condition
+‌ platform-condition → os (operating-system)
+‌ platform-condition → arch (architecture)
+‌ platform-condition → swift ( >= swift-version)
+‌ operating-system → OSX  iOS  watchOS tvOS
+‌ architecture → i386 | x86_64 |  arm |  arm64
+‌ swift-version → decimal-digits . decimal-digits
+Грамматика инструкции управления строкой
+line-control-statement → #sourceLocation ( file: file-name,line:line-number)
+‌ line-control-statement → #sourceLocation ( )
+‌ line-number → Целое число большее нуля
+‌ file-name → static-string-literal
+Грамматика оператора диагностики времени компиляции
+diagnostic-statement → #error ( diagnostic-message )
+diagnostic-statement → #warning ( diagnostic-message )
+diagnostic-message → static-string-literal 
+Грамматика условий доступности
+availability-condition → #available ( availability-arguments )
+availability-arguments → availability-argument  |  availability-argument , availability-arguments
+‌availability-argument → platform-name platform-version
+‌availability-argument → *
+‌platform-name → iOS  |  iOSApplicationExtension
+‌platform-name → OSX  |  OSXApplicationExtension
+‌platform-name → watchOS
+‌platform-name → tvOS
+‌platform-version → decimal-digits
+‌platform-version → decimal-digits . decimal-digits
+‌platform-version → decimal-digits . decimal-digits . decimal-digits
+Инструкции
+Грамматика объявления
+declaration → import-declaration­
+declaration → constant-declaration­
+declaration → variable-declaration­
+declaration → typealias-declaration­
+declaration → function-declaration­
+declaration → enum-declaration­
+declaration → struct-declaration­
+declaration → class-declaration­
+declaration → protocol-declaration­
+declaration → initializer-declaration­
+declaration → deinitializer-declaration­
+declaration → extension-declaration­
+declaration → subscript-declaration­
+declaration → operator-declaration­
+declarations → declaration­declarations­ opt­
+Грамматика объявления верхнего уровня
+top-level-declaration → statements­ opt­
+Грамматика блока кода
+code-block → {­ statements­ opt­ }­
+Грамматика объявления импорта
+import-declaration → attributes­ opt ­import­ import-kind­opt ­import-path­
+import-kind → typealias­ | struct­ | class­ | enum­ | protocol­ | var­ | func­
+import-path → import-path-identifier­ | import-path-identifier­ .­ import-path­
+import-path-identifier → identifier­ | operator­
+Грамматика объявления константы
+constant-declaration → attributes­ opt­ declaration-modifiers­ opt ­let ­pattern-initializer-list­
+pattern-initializer-list → pattern-initializer­ pattern-initializer­ ,­ pattern-initializer-list­
+pattern-initializer → pattern­ initializer­ opt­
+initializer → =­ expression­
+Грамматика объявления переменной
+variable-declaration → variable-declaration-head­ pattern-initializer-list­
+variable-declaration → variable-declaration-head­ variable-name­ type-annotation­ code-block­
+variable-declaration → variable-declaration-head­ variable-name­ type-annotation­ getter-setter-block­
+variable-declaration → variable-declaration-head­ variable-name ­type-annotation­ getter-setter-keyword-block­
+variable-declaration → variable-declaration-head­ variable-name­ initializer­ willSet-didSet-block­
+variable-declaration → variable-declaration-head ­variable-name­ type-annotation­ initializer­opt­ willSet-didSet-block­
+variable-declaration-head → attributes­ opt­ declaration-modifiers­opt­ var­
+variable-name → identifier­
+getter-setter-block → code-block­
+getter-setter-block → {­ getter-clause­ setter-clause­opt­ }­
+getter-setter-block → {­ setter-clause­ getter-clause­ }­
+getter-clause → attributes­opt­ get­ code-block­
+setter-clause → attributes­opt­ set­ setter-name­opt­ code-block­
+setter-name → (­ identifier­ )­
+getter-setter-keyword-block → {­ getter-keyword-clause ­setter-keyword-clause­opt­ }­
+getter-setter-keyword-block → {­ setter-keyword-clause­ getter-keyword-clause­ }­
+getter-keyword-clause → attributes­opt­ get­
+setter-keyword-clause → attributes­opt ­set­
+willSet-didSet-block → {­ willSet-clause­ didSet-clause­opt­ }­
+willSet-didSet-block → {­ didSet-clause­ willSet-clause­opt­ }­
+willSet-clause → attributes­opt­ willSet­ setter-name­opt­ code-block­
+didSet-clause → attributes­opt­ didSet­ setter-name­opt­ code-block­
+Грамматика объявления псевдонима типа
+typealias-declaration → attributes­opt­ access-level-modifier­opt­ typealias­ typealias-name­ typealias-assignment­
+typealias-name → identifier­
+typealias-assignment → = ­type­
+Грамматика объявления функции
+function-declaration → function-head function-name generic-parameter-clause­opt­ function-signature function-body­opt­
+‌function-head → attributes­opt­ declaration-modifiers­opt­ func
+‌function-name → identifier | operator
+‌function-signature → parameter-clause throws­opt­ function-result­opt­
+‌function-signature → parameter-clause rethrows function-result­opt­
+‌function-result →  -> attributes­opt­ type
+‌function-body → code-block
+‌parameter-clause → () | ( parameter-list )
+‌parameter-list → parameter | parameter , parameter-list
+‌parameter → external-parameter-name­opt­ local-parameter-name type-annotation default-argument-clause­opt­
+parameter → external-parameter-name­opt­ local-parameter-name type-annotation
+‌parameter → external-parameter-name­opt­ local-parameter-namet ype-annotation ...
+‌external-parameter-name → identifier
+‌local-parameter-name → identifier
+‌default-argument-clause → = expression
+Грамматика объявления перечислений
+enum-declaration → attributes­opt­ access-level-modifier­opt­ union-style-enum­
+enum-declaration → attributes­opt­ access-level-modifier­opt­ raw-value-style-enum­
+union-style-enum → indirect­opt­ enum­ enum-name­ generic-parameter-clause­opt­ type-inheritance-clause­opt­ {­ union-style-enum-members­opt­ }­
+union-style-enum-members → union-style-enum-member­ union-style-enum-members­opt­
+union-style-enum-member → declaration­ | union-style-enum-case-clause­
+union-style-enum-case-clause → attributes­opt­ indirect­opt­ case­ union-style-enum-case-list­
+union-style-enum-case-list → union-style-enum-case­ | union-style-enum-case­ , ­union-style-enum-case-list­
+union-style-enum-case → enum-case-name­ tuple-type­opt­
+enum-name → identifier­
+enum-case-name → identifier­
+raw-value-style-enum → enum­ enum-name­ generic-parameter-clause­opt­ type-inheritance-clause­ {­ raw-value-style-enum-members ­}­
+raw-value-style-enum-members → raw-value-style-enum-member­ raw-value-style-enum-members­opt­
+raw-value-style-enum-member → declaration­ raw-value-style-enum-case-clause­
+raw-value-style-enum-case-clause → attributes­opt­ case­ raw-value-style-enum-case-list­
+raw-value-style-enum-case-list → raw-value-style-enum-case­ | raw-value-style-enum-case ­,­ raw-value-style-enum-case-list­ 
+raw-value-style-enum-case → enum-case-name­ raw-value-assignment­opt­
+raw-value-assignment → =­ raw-value-literal­
+raw-value-literal → numeric-literal­ | static-string-literal­ | boolean-literal­
+Грамматика объявления структур
+struct-declaration → attributes­opt ­access-level-modifier­opt­ struct­ - struct-name­  generic-parameter-clause­opt­  type-inheritance-clause­opt­  generic-where-clause­opt ­struct-body­ struct-name → identifier­ struct-body → {­ struct-members­opt­ }­ struct-members → struct-member­struct-members­opt­ struct-member → declaration­  |  compiler-control-statement­
+Грамматика объявления класса
+class-declaration → attributes­opt­  access-level-modifier­opt­  final­opt­  class­ class-name­  generic-parameter-clause­opt  ­type-inheritance-clause­opt­  generic-where-clause­opt­  class-body­ class-declaration → attributes­opt­  final­ access-level-modifier­opt  ­class­ class-name­  generic-parameter-clause­opt  ­type-inheritance-clause­opt­  generic-where-clause­opt­  class-body­ class-name → identifier­ class-body → {­ class-members­opt­ }­ class-members → class-member  ­class-members­opt­ class-member → declaration­  |  compiler-control-statement­
+Грамматика объявления протокола
+protocol-declaration → attributes­opt­ access-level-modifier­opt­ protocol­ protocol-name­ type-inheritance-clause­opt­ protocol-body­ protocol-name → identifier­ protocol-body → {­ protocol-member-declarations­opt­ }­ protocol-member-declaration → protocol-property-declaration­ protocol-member-declaration → protocol-method-declaration­ protocol-member-declaration → protocol-initializer-declaration­ protocol-member-declaration → protocol-subscript-declaration­ protocol-member-declaration → protocol-associated-type-declaration­ protocol-member-declarations → protocol-member-declaration­ protocol-member-declarations­opt­
+Грамматика объявления свойств протокола
+protocol-property-declaration → variable-declaration-head­  variable-name  ­type-annotation  ­getter-setter-keyword-block­
+Грамматика объявления метода протокола
+protocol-method-declaration → function-head  ­function-name  ­generic-parameter-clause­opt   ­function-signature­
+Грамматика объявления инициализатора протокола
+protocol-initializer-declaration → initializer-head­  generic-parameter-clause­opt ­ parameter-clause ­throws­opt­ protocol-initializer-declaration → initializer-head  ­generic-parameter-clause­opt ­ parameter-clause­ rethrows­
+Грамматика объявления сабскрипта протокола
+protocol-subscript-declaration → subscript-head ­subscript-result­ getter-setter-keyword-block­
+Грамматика объявления ассоциированного типа
+protocol-associated-type-declaration → attributes­opt­ access-level-modifier­opt­ associatedtype­ typealias-name­ type-inheritance-clause­opt­ typealias-assignment­opt­
+Грамматика объявления инициализатора
+initializer-declaration → initializer-head­ generic-parameter-clause­opt­ parameter-clause­ throws­opt ­initializer-body­ initializer-declaration → initializer-head­ generic-parameter-clause­opt­ parameter-clause­ rethrows­ initializer-body­ initializer-head → attributes­opt­ declaration-modifiers­opt­ init­ initializer-head → attributes­opt­ declaration-modifiers­opt­ init­?­ initializer-head → attributes­opt­ declaration-modifiers­opt­ init­!­ initializer-body → code-block­
+Грамматика объявления деинициализатора
+deinitializer-declaration → attributes­opt­ deinit­ code-block­
+Грамматика объявления расширений
+extension-declaration → attributes­opt­  access-level-modifier­opt­  extension­ type-identifier  ­type-inheritance-clause­opt  ­extension-body­ extension-declaration → attributes­opt  ­access-level-modifier­opt­  extension ­type-identifier­  generic-where-clause  ­extension-body­ extension-body → {­ extension-members­opt­ }­ extension-members → extension-member­  extension-members­opt­ extension-member → declaration­  compiler-control-statement­
+Грамматика объявления сабскрипта
+subscript-declaration → subscript-head­ subscript-result­ code-block­
+subscript-declaration → subscript-head ­subscript-result­ getter-setter-block­
+subscript-declaration → subscript-head­ subscript-result­getter-setter-keyword-block­
+subscript-head → attributes­opt­ declaration-modifiers­opt­ subscript­ parameter-clause­ subscript-result → ->­attributes­opt­ type­
+Грамматика объявления оператора
+operator-declaration → prefix-operator-declaration­ | postfix-operator-declaration­ | infix-operator-declaration­ prefix-operator-declaration → prefix­ operator ­operator­ postfix-operator-declaration → postfix­ operator­ operator­ infix-operator-declaration → infix­ operator ­operator­ ­infix-operator-attributes­opt­ infix-operator-group → :­ precedence-group-name­
+operator-declaration → prefix-operator-declaration­ | postfix-operator-declaration­ | infix-operator-declaration­ prefix-operator-declaration → prefix­ operator ­operator­ postfix-operator-declaration → postfix­ operator­ operator­ infix-operator-declaration → infix­ operator ­operator­ ­infix-operator-attributes­opt­ infix-operator-group → :­ precedence-group-name­
+Грамматика объявления групп приоритета
+recedence-group-declaration → precedencegroup­ precedence-group-name­ {­ precedence-group-attributes­ opt­ }­ precedence-group-attributes → precedence-group-attribute ­precedence-group-attributes­ opt­ precedence-group-attribute → precedence-group-relation­ precedence-group-attribute → precedence-group-assignment­ precedence-group-attribute → precedence-group-associativity­ precedence-group-relation → higherThan­ :­ precedence-group-names­ precedence-group-relation → lowerThan­ : ­precedence-group-names­ precedence-group-assignment → assignment­ :­ boolean-literal­ precedence-group-associativity → associativity­ :­ left­ precedence-group-associativity → associativity­ :­ right­ precedence-group-associativity → associativity­ : ­none­ precedence-group-names → precedence-group-name­  |  precedence-group-name­,­precedence-group-names­ precedence-group-name → identifier­
+Грамматика объявления модификатора
+declaration-modifier → class­ | convenience­ | dynamic­ | final­ | infix­ | lazy­ | optional­ | override­ | postfix­ | prefix­ | required­ | static­ | unowned­ | unowned­(­safe­)­ | unowned­(­unsafe­)­ | weak­ declaration-modifier → access-level-modifier­ declaration-modifier → mutation-modifier­ declaration-modifiers → declaration-modifier­declaration-modifiers­opt­ access-level-modifier → private­  | private­(­set­)­ access-level-modifier → fileprivate­ | fileprivate­(­set­)­ access-level-modifier → internal­ | internal­(­set­)­ access-level-modifier → public­ | public­(­set­)­ access-level-modifier → open­ | open­(­set­)­ mutation-modifier → mutating­ | nonmutating­
+Атрибуты
+Грамматика атрибута
+attribute → @­ attribute-name­attribute-argument-clause­opt­ attribute-name → identifier­ attribute-argument-clause → (­ balanced-tokens­opt­ )­ attributes → attribute­attributes­opt­ balanced-tokens → balanced-token­balanced-tokens­opt­ balanced-token → (­ balanced-tokens­opt­ )­ balanced-token → [ ­balanced-tokens­opt­] ­ balanced-token → {­ balanced-tokens­opt­ }­ balanced-token → Any identifier, keyword, literal, or operator balanced-token → Any punctuation except (­, )­, [­, ]­, {­, or }­
+Шаблоны
+Грамматика шаблонов
+pattern → wildcard-pattern type-annotationopt­
+pattern → identifier-pattern­ type-annotationopt­
+pattern → value-binding-pattern
+pattern → tuple-pattern­ type-annotation­opt­
+pattern → enum-case-pattern­
+pattern → optional-pattern­
+pattern → type-casting-pattern­
+pattern → expression-pattern­
+Грамматика шаблона wildcard
+wildcard-pattern → _­
+Грамматика шаблона идентификатора
+identifier-pattern → identifier
+Грамматика шаблона присваивающего значение
+value-binding-pattern → var­ pattern­ let­ pattern­
+Грамматика шаблона кортежа
+tuple-pattern → (­ tuple-pattern-element-list­opt ­) ­
+tuple-pattern-element-list → tuple-pattern-element­ | tuple-pattern-element­,­ tuple-pattern-element-list­
+tuple-pattern-element → pattern­ | identifier­ :­ pattern­
+Грамматика кейса перечисления
+enum-case-pattern → type-identifier­opt­ .­ enum-case-name ­tuple-pattern­opt­
+Грамматика опционального шаблона
+optional-pattern → identifier-pattern­?­
+Грамматика шаблона приведения типа
+type-casting-pattern → is-pattern­ as-pattern­
+is-pattern → is­ type
+as-pattern → pattern­ as­ type
+Грамматика шаблона выражения
+expression-pattern → expression
+Параметры и аргументы универсального типа
 Грамматика условия универсального параметра
 generic-parameter-clause → <­generic-parameter-list­>­ generic-parameter-list → generic-parameter­  | generic-parameter­,­generic-parameter-list­ generic-parameter → type-name­ generic-parameter → type-name­:­type-identifier­ generic-parameter → type-name­:­protocol-composition-type­ generic-where-clause → where­requirement-list­ requirement-list → requirement­  | requirement­,­requirement-list­ requirement → conformance-requirement­  | same-type-requirement­ conformance-requirement → type-identifier­ : ­type-identifier­ conformance-requirement → type-identifier­ :­ protocol-composition-type­ same-type-requirement → type-identifier­ ==­ type­
-Условие универсального аргумента
-Условие универсального аргумента определяет аргументы типа универсального типа. Условие универсального аргумента заключается в угловые скобки (<>) и имеет следующий вид:
-<список универсальных аргументов>
-Список универсальных аргументов - это разделенный запятыми список аргументов типа. Тип аргумента - это имя фактического конкретного типа, который заменяет соответствующий параметр типа в условии универсального аргумента. Результатом является специализированная версия этого универсального типа. В качестве примера, стандартная библиотека Swift определяет универсальный словарь типа вот так:
-struct Dictionary<Key: Hashable, Value>: Collection, ExpressibleByDictionaryLiteral {
-    /* ... */
-}
-Специализированная версия универсального типа Dictionary,  Dictionary<String, Int>  формируется через замену универсальных параметров Key: Hashable и Value конкретными аргументами типа String и Int. Каждый аргумент типа должен удовлетворять всем ограничениями универсального параметра, которые он заменяет, в том числе дополнительным требованиям, указанным в условии where. В приведенном выше примере параметр типа Key ограничен для соответствия протоколу Hashable и, следовательно, String должна также соответствовать протоколу Hashable.
-Вы можете также заменить параметр типа аргументом типа, который сам по себе является специализированной версией универсального типа (при том условии, что он удовлетворяет соответствующим ограничениям и требованиям). Например, вы можете заменить параметр типа Element в Array<Element> специализированной версией массива Array<Int>, чтобы сформировать массив, элементы которого сами являются массивами целых чисел.
-let arrayOfArrays: Array<Array<Int>> = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-Как уже упоминалось в "Условие универсального параметра", вы не используете универсального условия аргумента для определения аргументов типа универсальной функции или инициализатора.
 Грамматика условия универсального аргумента
 generic-argument-clause → <­ generic-argument-list >­
 generic-argument-list → generic-argument | generic-argument,­ generic-argument-list
 generic-argument → type
 Если вы нашли ошибку, пожалуйста, выделите фрагмент текста и нажмите Ctrl+Enter.
-Если вы нашли ошибку, пожалуйста, выделите фрагмент текста и нажмите Ctrl+Enter.
-Шаблоны
-Резюме по грамматике
+Параметры и аргументы универсального типа
+ 
  
 SwiftBook Самое крупное сообщество iOS разработчиков на языке Swift
 О нас

@@ -80,22 +80,25 @@ def boolean_search(query: str, inverted_index: defaultdict[str, set[str]]) -> se
         return set()
 
 
-def save_to_file(inverted_index: defaultdict[str, set[str]], queries: list[str], output_file_path: str):
-    with open(output_file_path, 'w', encoding='utf-8') as file:
+def save_to_file(inverted_index: defaultdict[str, set[str]], queries: list[str]):
+    with open('/Users/ruslan/Desktop/ИТИС/informational-search/3/boolean_search.txt', 'w', encoding='utf-8') as file:
         file.write("Boolean search:\n")
         for query in queries:
-            files_names = boolean_search(query, inverted_index)
+            files_names = sorted(boolean_search(query, inverted_index))
             file.write(f"Query - {query}\n")
             file.write(f"Result - {', '.join(files_names) if files_names else 'No files'}\n\n")
 
-        file.write("\nInverted index:\n")
+    with open('/Users/ruslan/Desktop/ИТИС/informational-search/3/inverted_index.txt', 'w', encoding='utf-8') as file:
+        file.write("Inverted index:\n")
         for word, files_names in inverted_index.items():
-            file.write(f"{word} - {', '.join(files_names)}\n")
+            sorted_files_names = sorted(
+                [file_name.split('.')[0] for file_name in files_names]
+            )
+            file.write(f"{word} - {', '.join(sorted_files_names)}\n")
 
 
 if __name__ == "__main__":
     inverted_index = make_inverted_index('/Users/ruslan/Desktop/ИТИС/informational-search/1/files')
-    output_file_path = '/Users/ruslan/Desktop/ИТИС/informational-search/3/boolean_search.txt'
     word1, word2, word3 = "манипулировать", "середина", "декодирование"
     queries = [
         f"{word1} &  {word2} |  {word3}",
@@ -104,4 +107,4 @@ if __name__ == "__main__":
         f"{word1} | !{word2} | !{word3}",
         f"{word1} &  {word2} &  {word3}"
     ]
-    save_to_file(inverted_index, queries, output_file_path)
+    save_to_file(inverted_index, queries)

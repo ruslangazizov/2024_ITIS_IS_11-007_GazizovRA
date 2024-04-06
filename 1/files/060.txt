@@ -1,111 +1,454 @@
-Matt Mullenweg | Unlucky in Cards
-Matt Mullenweg
-Unlucky in Cards
-My old HSPVA friend and classmate Joe Santa Maria has a really cool album that I can only describe as if a Chris Potter big band decided to play Indonesian gamelan music, a type of trance-like rhythmic music which I originally discovered through Aaron Taylor Kuffner’s Gamelatron. You can listen or buy the album here. This is the first album I’ve bought in… forever, I’ve gotten so used to streaming. Feels kinda nice. I need to explore Bandcamp more it’s so cool. 
-March 26, 2024 
-Tom Scott on APIs
-I was late to discover Tom Scott, it was only after he did his goodbye video that I came across him, but he is a Youtube treasure with an archive of a ton of good stuff. Here’s one where he ties together scraping, APIs, Web 2.0, privacy, Cliffs of Dover, and some philosophy. So beautiful.
-March 26, 2024AsidesMatt
-Leave a comment 
-Paul Davids and Jacob Collier
-I know I share a lot of Jacob Collier content, but this one is particularly interesting because you can see him learning things in real-time, exploring an instrument that is not his native tongue but he’s already world-class in. It’s so interesting to me the polymath musician friends I have who can play so many instruments how they bring the technique and language across their learning, and this video illustrates it well.
-March 16, 2024AsidesMatt
-One comment so far 
-Hugo on Vision Pro
-March 15, 2024AsidesMatt 
-Many of my friends are ridiculous overachievers, and Hugo Barra is no exception. In response to my birthday blog post present request he has published a magnus opus of over 10,000+ words on his thoughts on the Apple Vision Pro from his perspective having been present for some foundational moments for Google, Meta, and Xiaomi. This is my dream, to get people writing more. We need more of this stuff on the internet! It’s fun to go down rabbit holes with experts. Cool that it’s on Hugo.blog, too. 🙂
-Leave a comment 
-Amazing Brad Mehldau Interview
-Great for everyone, but if you know a little music theory or Bach you’ll appreciate it even more. It’s never too late to learn music!
-March 9, 2024VideojazzMatt
-View all 2 comments 
-On the Reddit IPO
-February 25, 2024AsidesMatt 
-I’m looking forward to the Reddit IPO, and I think it’s awesome that they opened up a top-tier IPO tranche to their community. People with 200,000 karma points or 5,000 moderator actions on Reddit will get access to something that has previously been reserved for the most elite allies of financial institutions. Wow! 
-I’m sure this was not easy to do so Reddit users should understand that at this very important juncture in the company’s history it has gone above and beyond to include you. I’m mostly a lurker on Reddit so my 958 karma doesn’t qualify so I’ll get access with the rest of the normal folks.
-If I ever IPO something from Automattic, it will include the same for people who have contributed to WordPress. And every supporting open-source project underneath it. (It’s turtles all the way down.)
-My only fear is that code contributions are structured in a way that is easily legible, so is anything that happens on w.org, but we may miss including people who have contributed to the growth of WordPress in non-legible ways.
-View all 2 comments 
-Super Bowl!
-February 11, 2024GalleryMatt 
-Going to the Super Bowl with my friends Jaime Waydo and Jason Hoffman was a peak experience, everything about the day felt par none. I captured some Spatial Videos so friends with Vision Pros could watch some of it, but there’s no good way to share those on blogs yet. Friends have asked for some photos from the day, so here they are.
-Leave a comment 
-Vision Pro + Drone
-February 10, 2024AsidesMatt 
-This feels significant. Check out this video. Hat tip: Rory Chitwood.
-One comment so far 
-On StellarWP Podcast
-I’m still doing some podcasts as sabbatical-Matt, especially with the WordPress community which for me isn’t really work, it’s building relationships in our community of practice. If you know me, I can wax poetic about WordPress for hours! It’s what I do for fun. Here’s my first post-sabbatical interview with Michelle Frechette. Another unusual thing about this interview is I was quarantining with Covid!
-February 9, 2024WordPressMatt
-One comment so far 
-WordPress, Taylor Swift, Super Bowl, oh my
-February 9, 2024AsidesMatt 
-There has been quite a bit of buzz in the WordPress community because during the Grammys red carpet Taylor Swift’s website went down and this is what everyone saw:
-Hey there! That looks familiar. What a beautiful WordPress logo! (Hat tip: Alexa Scordato for telling me about this.) The website also had some ups and downs, we haven’t been able to get in touch with anyone on Taylor’s tech team, but if you’re there, we’re standing by and happy to spin up your site on wp.cloud so it can handle any amount of traffic.
-This gets even more interesting, because for the first time in my life, after having orbited around the Super Bowl for decades*, I am attending in person. Thanks to the graciousness of my friend and advisor Jason Hoffman, I’ll be in an owner’s suite, wearing a WordPress t-shirt, possibly not too far from Taylor, watching the game. Look for me on TV! I know she loves Tumblr so I’ll have with me a little gift bag of Tumblr swag just in case I meet her.
-* How have I been orbiting around the Super Bowl? Even though I don’t follow sports, I’m obsessed with the Super Bowl, and typically host watch parties every year. I love seeing the pinnacle of American achievement. The Super Bowl centers around a number of interesting stories in my life, such as when I was in high school and very poor the Super Bowl was in Houston, and they made McNuggets really cheap, so I ate 104 McNuggets in one sitting. (Sweet and sour sauce, natch.) At that infamous Justin Timberlake / Janet Jackson moment, they needed extras on the field to be their audience and my high school girlfriend was one of the kids in the audience when it happened. There’s so many more stories I could tell!
-View all 14 comments 
-Balaji Srinivasan posted a great essay on how founders should think about debt vs equity, unfortunately it’s on X/Twitter so the format isn’t great, but the content is gold. As we exit the ZIRP world and go back into normal interest rates, I think this is really important concept for entrepreneurs to understand.
-February 8, 2024 
-Thoughts on Tech Employment
-February 7, 2024AutomatticMatt 
-The Washington Post writes The U.S. economy is booming. So why are tech companies laying off workers? This article has some good data, but I think misses the point with sub-heads like “Shine has come off the tech industry.” Really? How is that reflected in their stock prices?
-I think a few things are happening.
-First, tech companies are typically best at adopting new technology, which leads to productivity gains. 
-AI may be an obvious example of this, though for all its hype it hasn’t had a huge impact on most companies yet. I agree with Sam Altman when he says there may someday be a billion-dollar company run by one person who is able to highly leverage future AI agents to automate most traditional roles at a company. That said, I think there are advantages to teams including allowing people to go on vacation or take time off, and provide business continuity and succession, so literally one-person is probably an exaggeration. We don’t need AI to see very small teams being valued highly: Instagram had only 13 employees when it sold for a billion dollars to Facebook, in 2012!
-Some of this productivity gains just come from adoption of existing tools like Google Workspace or Office 365, issue trackers and version control with tools like Gitlab, Github, or Jira. At Automattic we don’t use email to work or communicate internally, it’s all Slack and P2. We also leverage our distributed nature to effectively have teams around the world coordinating several shifts of product work per day, and 24/7 coverage for things like systems and customer support without the need for “graveyard shifts.”
-The way tech companies operate, the pace and culture, would be unrecognizable to people at many more traditional companies.
-At tech companies some roles are highly leveraged, like systems, engineering, and design, and everything else in the company really exists to support these. These leveraged roles can create enormous amounts of value, and that’s why it’s not unusual to hear of machine learning engineers working on ads at Google with salaries in the seven figures. (There’s been a weird accounting thing where companies put a lot of their compensation into equity, but I think that’s going away as investors are learning to better account for dilution and employees appreciate the fungibility of cash.)
-Creators are also highly leveraged, which is why Joe Rogan can sign a new $250M deal with Spotify (which smartly puts him back on Youtube) after laying off 1,500 people in December. Some people like Hagen Terschüren try to tie this together and say you should avoid Spotify for it, but there’s nothing wrong with a business becoming more efficient to serve its customers, it’s the whole point of capitalism. Capitalism is, as Nicholas Stern says (via Marc), the best way to take care of people we don’t know. There’s no honor in keeping people employed inefficiently, it’s better for them to find someplace in the market where their talents will be better leveraged for society and themselves.
-There was a bubble in hiring because tech had so much money it tried to throw people at problems. But the unlock in technology can come from a single person, a single insight. It’s the mythical man-month. Tech-first companies are going to become leaner and more leveraged. Fewer people are going to create more value for society, in ways that will follow power laws and I think we should investigate things like Universal Basic Income to provide for all living beings. Technological progress creates abundance, where we have more than what we need.
-At Automattic last year we did not do layoffs, but allowed performance management and natural attrition (voluntary regrettable was 2.9%, non-regrettable 6.8% for us in 2023) to allow our size to shrink down more naturally, on average two people left for every person we hired last year, from a peak of about 2,064 to 1,936 today.
-View all 12 comments 
-It’s hard to pick a favorite tenor player, but the GOATs that come to mind are Dexter Gordon, Sonny Rollins, John Coltrane, Michael Brecker, and I’m missing people but if I had to pick someone to express the human condition and soul, it would be Joshua Redman. He has such incredible fluency with the horn you get an amazing emotional experience with his vibrations. He’s probably the greatest living tenor saxophonist. He just did a Tiny Desk concert, and the audio and visual capture was impeccable. I watched this full-screen on an Apple XDR and listened with Airpods Max—the chords they’re using, the subtlety of the interactions— the experience was exquisite. (Also peep HSPVA grad Paul Cornish!) I can’t embed because it’s not on Youtube yet.
-February 7, 2024 
-What if this VR is training our brains to compute in a different way? How we perceive our thoughts to train the models. We are reconfiguring our model of reality to process things in a way we couldn’t before.
-February 7, 2024 
-If I were President for a day, the first thing I would do is instruct our national security to patch and secure every American technology company, as they are our gems in the world. I would burn every zero-day I had on a US company and help them patch it. The rest of the world would know our immense defense budget was now being used to secure our companies as well, as China does. Apple, Meta, Google, Microsoft, Intel, Cisco, Arista, Unifi, Qualcomm… I’m probably missing a few, they should all have the shield of our national security defense. Right now each company has to create their own defenses, and they are getting eaten and pillaged by foreign companies with state backing.
-February 5, 2024 
-I’m a proud supporter of the Vesuvius Challenge, and they just announced the winners and have a great article in Bloomberg.
-February 5, 2024 
-Child of the 90s
-This is a brilliant ad, true genius. (Hat tip, Ken Gagne.)
-February 4, 2024AsidesMatt
-View all 3 comments 
-When I read things like the iFixit Teardown of Vision Pro, I am moved almost to tears at the sheer beauty of craftsmanship in this thing. It is literally incredible. I have so much respect for the big tech companies like Apple that invest in long-term science, research, and development to create innovations like this. It is literally the engine driving our economy forward.
-February 4, 2024 
-I just replied to an email from 2018. I am tragically, comically, behind on email. Because Automattic doesn’t use email, we use P2, it’s never been a priority for me. But I have been sloppy, careless, and derelict in my duty of answering emails. Apologies to you all. You’re going to get some weird, very late replies.
-February 3, 2024 
-Vision Pro First Impressions
-February 2, 2024AsidesMatt 
-Okay… wow. The hardware and display are like nothing I’ve ever seen, really feels like it’s from the future. That said, I found the setup clunky and buggy. Some might have been user error, for example I kept trying to “select” things with my middle finger and thumb and not my left finger.
-I almost got stuck in the Persona setup, couldn’t continue. I don’t love how my Persona looks. Looking and selecting stopped working and I could only continue by physically reaching out and hitting the buttons. (This must sound ridiculous to someone who hasn’t used a Vision Pro yet. I looked pretty silly!) 
-I got totally stuck at the part of the setup where it was importing iCloud apps from backup, and I was ready to give up. A friend put it on and was able to get past that step for me. Adding credit cards was a terrible UI, with the security code PIN pad in front of the interface.
-I decided to call it a night, and try more tomorrow. Just like I learned to type I think I’m going to need to learn to become fluent in this new interaction paradigm. I did have a before and after feeling, like the world had shifted, not unlike when you saw the first iPod or iPhone. This post probably doesn’t make any sense to someone who hasn’t tried the Vision Pro, but hopefully the team sees it and can take this feedback.
-View all 2 comments 
-			Posts navigation		
-← Older posts
-					Proudly powered by WordPress				
-Menu
-Skip to content
-Home
-About
-Contact
-Distributed
-X
-Mastodon
-Let’s Work Together
+async/await (асинхронность) в SwiftUI - SwiftBook
  
-Search for:
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
  
+Найти:
  
+Учебник
+Курсы
+Онлайн-курс «iOS-разработчик»
+Курсы по подписке
+Копошилка
+Статьи
+Видео
+Войти
+Вход
+Сброс пароля
  
-						Matt Mullenweg					
-Proudly powered by WordPress Theme: Ma.tt.				
+Найти:
+async/await (асинхронность) в SwiftUI
+ 
+  15.02.2022  
+swiftbook Туториалы 
+async/await (асинхронность) в SwiftUI 
+Преобразуйте приложение SwiftUI, чтобы использовать новый механизм многопоточности в Swift, и узнайте, что происходит под яркой оболочкой.
+Версия ПО
+Swift 5.5, iOS 15, Xcode 13
+Swift 5.5 имеет новую яркую структурированную среду многопоточности, которая поможет вам быстрее писать безопасный код. Чтобы помочь всем начать работу, Apple предоставила кучу видео и примеров кода на WWDC 2021. В конце этого туториала есть краткое изложение того, что они освещают.
+Twitter взорвался, и обычные акторы (actors – это понятие рассмотрим далее в статье)  уже опубликовали несколько инструкций. Это туториал похож на микроверсию Swift concurrency: Update a sample app с WWDC. Вы сделаете небольшие шаги, чтобы преобразовать гораздо более простое приложение, чтобы узнать, как async/await и акторы помогают вам писать более безопасный код. Чтобы помочь вам расшифровать сообщения об ошибках Xcode и защитить вас от неизбежных будущих изменений API, вы изучите, что происходит под яркой поверхностью.
+Заметка
+Вам понадобится Xcode 13. Этот туториал был написан с использованием бета-версии 1. Если вы хотите запустить его на устройстве iOS, Xcode 13 должен работать под управлением бета-версии iOS 15. Для вашего Mac подойдет Big Sur. Если у вас есть Mac [partition], на котором запущена бета-версия Monterey, вы можете попробовать запустить свой код там, если он не работает в Big Sur. Вам должно быть удобно использовать SwiftUI, Swift и Xcode для разработки приложений для iOS.
+Приступим
+Создайте новый проект Xcode, использующий интерфейс SwiftUI, и назовите его WaitForIt.
+ 
+В ContentView.swift замените содержимое body этим кодом:
+AsyncImage(url: URL(string: "https://files.betamax.raywenderlich.com/attachments/collections/194/e12e2e16-8e69-432c-9956-b0e40eb76660.png")) { image in
+  image.resizable()
+} placeholder: {
+  Color.red
+}
+.frame(width: 128, height: 128)
+В Xcode 13 beta 1 вы получаете эту ошибку:
+ 
+Не нажимайте ни одну из кнопок Fix! Перейдите на целевую страницу и измените Deployment Info с iOS 14.0 на iOS 15.0:
+ 
  
-Loading Comments...
+Вернитесь к ContentView.swift. Если сообщение об ошибке все еще присутствует, нажмите Command-B, чтобы собрать проект.
+Запустите Live Preview, чтобы увидеть изображение для видео “SwiftUI vs. UIKit”:
+ 
+Хорошо, это была просто быстрая проверка, чтобы исправить этот сбой Xcode, а также показать вам новое view SwiftUI AsyncImage. Хорошо, не так ли? ☺
+Прежде чем вы приступите к работе над реальным приложением WaitForIt, внимательно посмотрите, как новая многопоточность Swift устраняет проблемы со старой многопоточностью GCD.
  
-Write a Comment...
-Email (Required)
-Name (Required)
-Website
+Старая и новая многопоточность
+Старая многопоточность GCD имеет несколько проблем, которые затрудняют написание приложений, которые безопасно используют многопоточность.
+Многопоточность Swift предоставляет необходимые инструменты для разделения работы на более мелкие задачи, которые могут выполняться одновременно. Это позволяет задачам ждать завершения друг друга и позволяет эффективно управлять общим ходом выполнения задачи.
+Пирамида Doom (пирамида гибели)
+API-интерфейсы Swift, такие как URLSession, являются асинхронными. Методы автоматически отправляются в фоновую очередь и немедленно возвращают управление вызывающему коду. Методы принимают обработчик завершения и вызывают методы делегата. Код завершения или делегирования, который обращается к элементам пользовательского интерфейса, должен быть отправлен в основную очередь.
+Если обработчик завершения вызывает другую асинхронную функцию, а у этой функции есть обработчик завершения, трудно увидеть выход в получившейся пирамиде гибели. Это затрудняет проверку правильности кода. Например, этот пример кода из Meet async/await in Swift на WWDC загружает данные, создает изображение из данных, а затем отображает миниатюру изображения. Обработка ошибок является специальной, потому что обработчики завершения не могут выдавать ошибки.
+func fetchThumbnail(
+  for id: String,
+  completion: @escaping (UIImage?, Error?) -> Void
+) {
+  let request = thumbnailURLRequest(for: id)
+  let task = URLSession.shared
+    .dataTask(with: request) { data, response, error in
+    if let error = error {
+      completion(nil, error)
+    } else if (response as? HTTPURLResponse)?.statusCode != 200 {
+      completion(nil, FetchError.badID)
+    } else {
+      guard let image = UIImage(data: data!) else {
+        completion(nil, FetchError.badImage)
+        return
+      }
+      image.prepareThumbnail(of: CGSize(width: 40, height: 40)) { thumbnail in
+        guard let thumbnail = thumbnail else {
+          completion(nil, FetchError.badImage)
+          return
+        }
+        completion(thumbnail, nil)
+      }
+    }
+  }
+  task.resume()
+}
+Последовательность операций намного проще увидеть с помощью async/await, и вы можете воспользоваться надежным механизмом обработки ошибок Swift:
+func fetchThumbnail(for id: String) async throws -> UIImage {
+  let request = thumbnailURLRequest(for: id)
+  let (data, response) = try await URLSession.shared.data(for: request)
+  guard (response as? HTTPURLResponse)?.statusCode == 200 else {
+    throw FetchError.badID
+  }
+  let maybeImage = UIImage(data: data)
+  guard let thumbnail = await maybeImage?.thumbnail else {
+    throw FetchError.badImage
+  }
+  return thumbnail
+}
+ 
+Data Races (гонки данных)
+Когда несколько задач могут читать или записывать данные объекта, возможны data races. Data Race возникает, когда одна задача приостанавливается, в то время как другая задача записывает и завершает работу, затем спящая задача возобновляет работу и перезаписывает то, что было записано предыдущей задачей. Это создает противоречивые результаты.
+В приложении, использующем старую многопоточность, Xcode может обнаружить data races, если вы включите диагностику Thread Sanitizer во время выполнения в схеме запуска (Run scheme) вашего приложения. Затем вы можете реализовать последовательную очередь для предотвращения одновременного доступа.
+Новая модель многопоточности Swift предоставляет протокол Actor для предотвращения одновременного доступа к данным объекта. Субъекты также позволяют структурировать ваше приложение на код, который выполняется в основном потоке, и код, который выполняется в фоновых потоках, поэтому компилятор может помочь вам предотвратить одновременный доступ.
+ 
+Thread Explosion/Starvation (потоковый взрыв/голодание)
+В GCD основной единицей работы является поток (thread). Если ваш код ставит много задач чтения/записи в последовательную очередь, большинство из них должны спать, пока они ждут. Это означает, что их потоки заблокированы, поэтому система создает больше потоков для следующих задач. Если каждая задача также помещает обработчик завершения в другую очередь, это создает еще больше потоков. Каждый заблокированный поток удерживает стек и структуры данных ядра, чтобы его можно было возобновить. Заблокированный поток может удерживать ресурсы, которые нужны другому потоку, поэтому поток блокируется.
+Это взрыв потоков: система перегружена потоками во много раз больше, чем ядер для их обработки. Планировщик должен выделять время сотням потоков, что приводит к большому количеству переключений контекста. Все это замедляет ваше приложение и может даже привести к голоданию некоторых потоков, поэтому они никогда не запустятся.
+ 
+Задачи и продолжения
+В многопоточности Swift основной единицей работы является задача. Задача последовательно выполняет задания. Для достижения многопоточности задача может создавать дочерние задачи. Или вы можете создавать задачи в группе задач.
+Система знает, что эти задачи связаны, поэтому она может управлять сроками, приоритетом и флагами отмены для всех задач в дереве задач или группе. Это упрощает проверку и реагирование на статус отмены, что позволяет избежать утечки задач. Если важно немедленно реагировать на отмену, вы можете написать функцию с обработчиком отмены.
+Если задача приостанавливается, она освобождает свой поток и сохраняет свое состояние в continuation (продолжении). Потоки переключаются между продолжениями вместо переключения контекста.
+ 
+Потоки переключаются между продолжениями.
+Заметка
+ 
+Это изображение взято из WWDC сессии Swift concurrency: Behind the scenes
+Ключевое слово await отмечает точку приостановки, а async frame (асинхронный фрейм) в куче хранит информацию, которая ему нужна при возобновлении работы.
+В идеале количество потоков никогда не превышает количество ядер. Существует совместный пул потоков и контракт времени выполнения, согласно которому каждый поток будет выполнять свою работу. Ваш код поддерживает этот контракт, используя await, актеров и группы задач, чтобы сделать зависимости видимыми для компилятора. 
+ 
+JokeService
+Хватит теории! Пришло время преобразовать простую загрузку в использование async/await.
+Папка starter содержит JokeService.swift. Добавьте этот файл в WaitForIt.
+JokeService — это ObservableObject, который отправляет запрос к API, который возвращает рандомную (случайную) шутку Chuck Norris (Чака Норриса). Я адаптировал этот код из примера приложения в Combine: Asynchronous Programming with Swift. В элементе запроса указана категория разработчиков, поэтому все шутки имеют технический привкус. Предупреждение: некоторые из этих шуток немного жестоки.
+JokeService публикует шутку и ее статус isFetching. Его метод fetchJoke() использует стандартную задачу URLSession.shared.dataTask с обработчиком завершения. Если что-то пойдет не так, он выводит сообщение об ошибке либо с ошибкой dataTask, либо с “Unknown error”. В случае “Unknown error”, он не предоставляет информации о том, была ли проблема в данных или в декодере.
+ 
+Минимальная обработка ошибок
+Надежная обработка ошибок — одна из основных причин использования async/await. Обработчик завершения задачи данных не может генерировать ошибки, поэтому, если он вызывает функцию генерирования, такую как JSONDecoder().decode(_:from:), он должен обрабатывать любые генерируемые ошибки.
+Обычно выбирают легкий путь и просто игнорируют ошибку. Вот что делает файл starter:
+if let decodedResponse = try? JSONDecoder().decode(Joke.self, from: data)
+Предыдущие версии Xcode предлагают это как исправление, если вы пишете просто try и не заключаете его в do/catch. Это означает: просто присвойте nil, если функция выдает ошибку.
+Удалите ? чтобы увидеть, что происходит:
+ 
+Xcode теперь занимает более жесткую позицию: больше никаких полезных предложений для простых исправлений.
+Но ? все еще работает здесь, так что верните его.
+Покажи мне шутку!
+Чтобы получить шутку, откройте ContentView.swift и замените содержимое ContentView на это:
+@StateObject var jokeService = JokeService()
+var body: some View {
+  ZStack {
+    Text(jokeService.joke)
+      .multilineTextAlignment(.center)
+      .padding(.horizontal)
+    VStack {
+      Spacer()
+      Button { jokeService.fetchJoke() } label: {
+        Text("Fetch a joke")
+          .padding(.bottom)
+          .opacity(jokeService.isFetching ? 0 : 1)
+          .overlay {
+            if jokeService.isFetching { ProgressView() }
+          }
+      }
+    }
+  }
+}
+Запустите Live Preview и нажмите кнопку. Это имеет хороший эффект с непрозрачностью и ProgressView(), чтобы указать, что выборка выполняется.
+ 
+ 
+Concurrent Binding (параллельное связывание)
+Хорошо, старый способ работает, так что теперь вы переведете его на новый.
+Закомментируйте URLSession до .resume() включительно.
+Добавьте этот код ниже isFetching = true:
+async let (data, response) = URLSession.shared.data(from: url)
+Новый метод data(from:) URLSession является асинхронным, поэтому вы используете async let для присвоения возвращаемого значения кортежу (data, response). Это те же data и response, которые dataTask(with:) предоставляет своему обработчику завершения, но data(from:) возвращает их непосредственно в вызывающую функцию.
+Где ошибка, которую выдает dataTask(with:)? Скоро узнаете — ждите! ☺
+Появляются следующие ошибки и предлагаемые исправления:
+ 
+Ошибки похожи: вы не можете вызывать асинхронную функцию в синхронной функции. Вы должны сообщить компилятору, что fetchJoke() является асинхронным.
+Оба исправления одинаковы, поэтому щелкните любое из них. Это дает вам:
+func fetchJoke() async {
+Как и throws, ключевое слово async появляется между закрывающей скобкой и открывающей фигурной скобкой. Вы скоро снова прервете throws.
+Вернемся к async let: это один из способов присвоить результат data(from:) кортежу (data, response). Это называется concurrent binding (параллельное связывание), потому что родительская задача продолжает выполнение после создания дочерней задачи для запуска data(from:) в другом потоке. Дочерняя задача наследует приоритет и локальные значения родительской задачи. Когда родительской задаче необходимо использовать data или response, она приостанавливает себя (освобождает свой поток) до завершения дочерней задачи.
+ 
+Родительские и дочерние задачи выполняются одновременно.
+ 
+Ожидание async
+Глаголом для async является await точно так же, как глаголом для throws является try. Вы пробуете (try) throwing-функцию и ждете (await) асинхронную функцию (async function).
+Добавьте эту строку кода:
+await (data, response)
+ 
+И здесь есть пропущенная ошибка, которую dataTask(with:) передает своему обработчику завершения: data(from:) выдает ее. Итак, вы должны использовать try await:
+try! await (data, response)
+Заметка
+ 
+Ключевые слова должны быть в таком порядке, а не await try.
+Вы на самом деле не собираетесь использовать этот код, так что не утруждайте себя отлавливанием ошибок. Это просто шанс увидеть, что происходит.
+То, что происходит, удивительно:
+ 
+Неизменяемое значение может быть инициализировано только один раз.
+Это удивительно, потому что в видео Explore structured concurrency in Swift говорится: «И не волнуйтесь. Повторное чтение значения результата не приведет к пересчету его значения».
+Заметка
+Похоже, это ошибка кортежа. Вы можете ждать данных или ответа, но не того и другого одновременно.
+Продолжайте и примите предложенное исправление, чтобы изменить let на var:
+ 
+Хм! Вспомните свои первые дни изучения Swift, когда Xcode постоянно говорит: «Здесь этого делать нельзя». Возможно, это баг бета-версии. В данном случае это не имеет значения, потому что между вызовом data(from:) и обработкой того, что он возвращает, нет другого кода для выполнения.
+ 
+Sequential Binding (последовательное связывание)
+Вместо этого вы будете использовать другое связывание: sequential binding (последовательное связывание).
+Замените две строки на этот фрагмент кода:
+let (data, response) = try? await URLSession.shared.data(from: url)
+В отличие от async let, вызов data(from:) таким образом не создает дочернюю задачу. Он выполняется последовательно как задание в задаче fetchJoke(). Пока оно ожидает ответа сервера, это задание приостанавливает себя, освобождая поток задачи.
+ 
+Задача data(from:) задачи приостанавливаются.
+Но есть проблема:
+ 
+Xcode отказывается понимать try? здесь.
+Вы попробуете lazy way (ленивый способ), но на этот раз в Xcode его не будет, даже если вы используете nil объединение для указания кортежа nil:
+let (data, response) = 
+  try? await URLSession.shared.data(from: url) ?? (nil, nil)
+Нет, вам придется поступить правильно. Во-первых, удалите ? и ?? (nil, nil):
+let (data, response) = try await URLSession.shared.data(from: url)
+ 
+Варианты обработки ошибок
+У вас есть два варианта обработки ошибок, вызванных data(from:). Первый — стиснуть зубы и сразу справиться с этим с помощью do/catch:
+do {
+  let (data, response) = try await URLSession.shared.data(from: url)
+} catch {
+  print(error.localizedDescription)
+}
+Более простой (?) вариант - сделать fetchJoke() throw:
+func fetchJoke() async throws {
+Эти ключевые слова должны стоять в указанном порядке — throws async не работают:
+ 
+async должен предшествовать throws.
+Теперь fetchJoke() просто передает ошибку всем, кто вызывает fetchJoke(). Это кнопка в ContentView, где Xcode уже жалуется на асинхронность fetchJoke():
+ 
+fetchJoke() является async и выдает: Сделай что-нибудь!
+Что теперь делать? Вы не можете пометить что-либо в ContentView как async.
+ 
+Создание неструктурированной задачи
+К счастью, вы можете создать асинхронную задачу в действии кнопки. Замените Button { jokeService.fetchJoke() } label: { на этот фрагмент кода:
+Button {
+  async {
+    try? await jokeService.fetchJoke()
+  }
+} label: {
+Вы создаете асинхронную задачу с помощью async {   }. Поскольку она асинхронная, вам нужно дождаться ее завершения. Поскольку она throws, вы должны попытаться поймать любые ошибки. Xcode позволяет использовать try? здесь, или вы можете написать оператор do/catch.
+Заметка
+Синтаксис создания задачи изменится на Task { ... } в будущей бета-версии.
+Это неструктурированная задача, поскольку она не является частью task tree (дерева задач). Задача async let, которую вы создали в fetchJokes(), является дочерней задачей задачи, в которой выполняется fetchJokes(). Дочерняя задача привязана к scope (области действия) своей родительской задачи: задача fetchJokes() не может завершиться, пока не будут завершены ее дочерние задачи.
+Неструктурированная задача наследует actor, приоритет и локальные значения своего источника, но не ограничена областью действия. Отмена исходной задачи не сигнализирует о неструктурированной задаче, и исходная задача может быть завершена, даже если неструктурированная задача не завершена.
+Создание неструктурированной задачи в неасинхронном контексте выглядит так же, как DispatchQueue.global().async, только с меньшим количеством ввода. Но есть большая разница: она работает в потоке MainActor с приоритетом userInteractive, когда основной поток не будет заблокирован.
+Вы можете указать более низкий приоритет с помощью asyncDetached:
+ 
+Укажите приоритет для отдельной задачи.
+Но он все равно будет работать в основном потоке. Подробнее об этом позже.
+ 
+Декодирование Joke
+Вернитесь к JokeService.swift, чтобы закончить написание fetchJoke(). Если вы думали, что сделать throw было более простым вариантом, посмотрим на ваше мнение после этого раздела.
+Так как fetchJoke() throws, он передает любую ошибку, выданную data(from:), вызывающей функции. Вы также можете воспользоваться этим механизмом и выдать другие ошибки, которые могут произойти.
+Ошибки, выдаваемые вызывающей функцией, должны соответствовать протоколу Error, поэтому добавьте этот код над расширением JokeService:
+enum DownloadError: Error {
+  case statusNotOk
+  case decoderError
+}
+Вы создаете перечисление возможных ошибок, которые fetchJoke() может выдать.
+Затем добавьте этот фрагмент кода в fetchJoke():
+guard 
+  let httpResponse = response as? HTTPURLResponse,
+  httpResponse.statusCode == 200   // 1
+else {
+  throw DownloadError.statusNotOk
+}
+guard let decodedResponse = try? JSONDecoder()
+  .decode(Joke.self, from: data) // 2
+else { throw DownloadError.decoderError }
+joke = decodedResponse.value   // 3
+Использование guard позволяет вам передавать ваши конкретные ошибки в вызывающую функцию.
+1. Вы проверяете код состояния ответа и выбрасываете statusNotOk, если он не равен 200.
+2. Вы декодируете ответ и выбрасываете decoderError, если что-то пойдет не так.
+3. Вы присваиваете декодированное значение joke.
+Заметка
+У вас всегда есть возможность перехватить ошибку, в том числе вызванную data(from:), вместо ее выдачи.
+Теперь, где установить isFetching в false? Это значение Published управляет ProgressView кнопки, поэтому вы хотите установить его, даже если fetchJoke() выдает ошибку. Выдача ошибки приводит к выходу из fetchJokes(), поэтому вам все равно нужно установить isFetching в операторе defer до любого возможного раннего выхода.
+Добавьте эту строку прямо под isFetching = true:
+defer { isFetching = false }
+ 
+MainActor
+Если Xcode вас значительно подправил, вы можете чувствовать себя немного неловко. Значения Published обновляют SwiftUI views, поэтому вы не можете установить значения Published из фонового потока. Чтобы установить Published значения isFetching и joke, обработчик завершения dataTask(with:) отправляется в основную очередь. Но ваш новый код не удосуживается сделать это. Будете ли вы получать ошибки основного потока при запуске приложения?
+Попробуйте. Создайте и запустите в симуляторе. Нет, ошибок основного потока нет. Почему нет?
+Поскольку вы использовали async { } для создания задачи fetchJoke() в действии кнопки, она уже выполняется в потоке MainActor с приоритетом пользовательского интерфейса.
+Actor — это механизм многопоточности Swift, позволяющий сделать объект thread-safe (потокобезопасным). Как и Class, это именованный ссылочный тип. Его механизм синхронизации изолирует его общее изменяемое состояние и не гарантирует одновременный доступ к этому состоянию.
+MainActor — это специальный Actor, представляющий основной поток. Вы можете это себе представить как использование только DispatchQueue.main. Все SwiftUI views выполняются в потоке MainActor, как и созданная вами неструктурированная задача.
+Чтобы увидеть это, поместите breakpoint в любом месте fetchJoke(). Сделайте сборку и запустите, затем нажмите кнопку.
+ 
+fetchJoke() работает в основном потоке.
+Да, fetchJoke() работает в основном потоке.
+А если понизить приоритет? В ContentView.swift в действии кнопки измените async { на это:
+asyncDetached(priority: .default) {
+Заметка
+Синтаксис этого параметра изменится на Task.detached в будущей бета-версии.
+Сделайте сборку и запустите. Нажмите на кнопку:
+ 
+fetchJoke() все еще работает в основном потоке.
+Вы понизили приоритет до значения по умолчанию, но это не перемещает задачу в фоновую очередь. Задача по-прежнему выполняется в основном потоке!
+Заметка
+Похоже, это случайность. В видео Explore structured concurrency in Swift говорится, что отсоединенная задача ничего не наследует от своего источника, поэтому она не должна наследовать поток MainActor. Будущая бета-версия Xcode может обеспечить это.
+Измените код обратно на async {.
+Чтобы переместить асинхронную работу из основного потока, вам нужно создать actor, который не является MainActor.
+ 
+Actor
+Акторы позволяют структурировать ваше приложение на акторы в фоновых потоках и акторы в основном потоке, точно так же, как теперь вы создаете модель, просматриваете и просматриваете файлы модели. Код в actor (нижний регистр, а не MainActor) выполняется в фоновом потоке. Так что вам просто нужно переместить асинхронную часть fetchJoke() в отдельный actor.
+В JokeService.swift  удалите breakpoint и добавьте этот фрагмент кода выше JokeService:
+private actor JokeServiceStore {
+  private var loadedJoke = Joke(value: "")
+  
+  func load() async throws -> Joke {
+  }
+}
+Вы создаете actor с переменной Joke и инициализируете его пустой строкой, затем пишете заглушку load(), куда переместите код загрузки. Этот метод сбрасывает loadedJoke, а также возвращает Joke, поэтому вам не нужно свойство Joke для этого простого примера, но, вероятно, оно понадобится для более сложных данных.
+Затем создайте объект JokeServiceStore в JokeService (в классе, а не в расширении):
+private let store = JokeServiceStore()
+Теперь переместите код url из JokeService в JokeServiceStore:
+private var url: URL {
+  urlComponents.url!
+}
+private var urlComponents: URLComponents {
+  var components = URLComponents()
+  components.scheme = "https"
+  components.host = "api.chucknorris.io"
+  components.path = "/jokes/random"
+  components.setQueryItems(with: ["category": "dev"])
+  return components
+}
+Затем переместите код загрузки из fetchJoke() в load(), оставив только две строки isFetching в fetchJoke():
+// move this code from fetchJoke() to load()
+let (data, response) = try await URLSession.shared.data(from: url)
+guard 
+  let httpResponse = response as? HTTPURLResponse,
+  httpResponse.statusCode == 200
+else {
+  throw DownloadError.statusNotOk
+}
+guard let decodedResponse = try? JSONDecoder().decode(Joke.self, from: data)
+else { throw DownloadError.decoderError }
+joke = decodedResponse.value
+JokeServiceStore имеет свойство Joke, а не свойство String, поэтому замените последнюю строку следующим кодом:
+loadedJoke = decodedResponse
+return loadedJoke
+Вместо того, чтобы извлекать только значение из decodedResponse, вы устанавливаете свойство Joke, а также возвращаете этот экземпляр Joke.
+Теперь вызовите load() в fetchJoke():
+let loadedJoke = try await store.load()
+joke = loadedJoke.value
+Сделайте сборку и запустите. Нажмите кнопку.
+Появляется шутка, но у вас фиолетовые предупреждения:
+ 
+Публикация изменений из фоновых потоков не допускается.
+Добавьте breakpoint внутри load() и в fetchJoke() в isFetching = true, let loadedJoke = ... и joke = loadedJoke.value:
+ 
+Установка breakpoints.
+Нажмите кнопку еще раз, затем наблюдайте за потоками, нажимая Continue program execution после каждой точки:
+ 
+fetchJoke() запускается в основном потоке, но переходит в фоновый поток.
+Первые две строки fetchJoke() выполняются в основном потоке, потому что его вызывает view. Затем load() запускается в фоновом потоке, как и должно быть. Но когда выполнение возвращается к fetchJoke(), он все еще находится в фоновом потоке. Вам нужно что-то сделать, чтобы заставить его работать в основном потоке.
+ 
+@MainActor
+Код, который устанавливает значение Published, должен выполняться в потоке MainActor. Когда fetchJoke() делал всю работу и вы вызывали его из Button в неструктурированной задаче, fetchJoke() наследовала MainActor от Button, и весь ее код выполнялся в потоке MainActor.
+Теперь fetchJoke() вызывает load(), который выполняется в фоновом потоке. fetchJoke() по-прежнему запускается в основном потоке, но когда load() завершается, fetchJoke() продолжает выполняться в фоновом потоке.
+fetchJoke() не должен полагаться на наследование MainActor от Button. Вы можете пометить класс или функцию атрибутом @MainActor, чтобы сказать, что они должны выполняться в потоке MainActor. 
+Заметка
+Если вы пометите класс как @MainActor, любые вызовы извне MainActor должны await, даже при вызове метода, который немедленно завершает свою работу. Метод, который не ссылается ни на какое изменяемое состояние, может отказаться от MainActor с ключевым словом nonisolated.
+Добавьте эту строку выше func fetchJoke() throws {
+@MainActor
+Скомпилируйте и запустите снова и нажмите breakpoints:
+ 
+fetchJoke() запускается в основном потоке после завершения load().
+Первые три точки такие же, как и раньше, но теперь fetchJoke() запускается в основном потоке после завершения load().
+ 
+Когда fetchJoke() вызывает load(), он приостанавливается, освобождая основной поток для выполнения заданий пользовательского интерфейса. Когда загрузка завершается, fetchJoke() снова запускается в основном потоке, где разрешено устанавливать значения Published.
+Ваша работа здесь сделана! Попробуйте преобразовать свои собственные проекты SwiftUI: делайте это медленно, вносите небольшие изменения и старайтесь сохранять возможность сборки приложения после каждого изменения.
+ 
+Дополнительно: Asynchronous View Modifiers
+SwiftUI теперь имеет (как минимум) два модификатора view, которые ожидают, что их action (действие) вызовет асинхронную функцию.
+Создайте новый файл SwiftUI View с именем RefreshableView.swift и замените содержимое RefreshableView следующим:
+@StateObject var jokeService = JokeService()
+var body: some View {
+  List {
+    Text("Chuck Norris Joke")
+      .font(.largeTitle)
+      .listRowSeparator(.hidden)
+    Text(jokeService.joke)
+      .multilineTextAlignment(.center)
+      .lineLimit(nil)
+      .lineSpacing(5.0)
+      .padding()
+      .font(.title)
+  }
+  .task {
+    try? await jokeService.fetchJoke()
+  }
+  .refreshable {
+    try? await jokeService.fetchJoke()
+  }
+}
+1. Это view является List (списком), потому что refreshable(action:) работает только с прокручиваемыми view.
+2. Модификатор задачи выполняет свое действие, когда появляется view. Тип его параметра action — @escaping() async -> Void. Он создает задачу для запуска действия, поэтому вам это не нужно.
+3. Тип параметра action модификатора refreshable такой же. Он должен быть асинхронным. При применении к прокручиваемому view пользователь может потянуть вниз, чтобы обновить его содержимое, и он отображает индикатор обновления до завершения асинхронной задачи.
+Запустите Live Preview. Появляется шутка:
+ 
+Шутка появляется при загрузке view.
+Заметка
+На самом деле это алгоритм сложности O(N). ☺
+Потяните вниз, чтобы получить еще одну шутку. Возможно, вам придется тянуть вниз довольно далеко.
+Если вы хотите запустить эту версию в симуляторе или на устройстве, откройте WaitForItApp.swift и измените ContentView() на RefreshableView() в замыкании WindowGroup.
+Загрузите конечный проект.
+В этом туториале вы преобразовали простое приложение SwiftUI из старой реализации многопоточности GCD в новую реализацию многопоточности Swift, используя async/await, неструктурированную задачу, actor и @MainActor.
+Видео с WWDC 2021
+Чтобы узнать больше об основных концепциях многопоточности Swift, сначала посмотрите эти видеоролики:
+Meet async/await in Swift: эта сессия знакомит с try await, get async, неструктурированной задачей и продолжениями.
+Explore structured concurrency in Swift: эта сессия охватывает одновременную и последовательную привязку, отмену, группы задач, неструктурированные и отдельные задачи. В конце есть удобная таблица Flavors of task.
+Protect mutable state with Swift actors. Эта сессия охватывает data races, акторов, соответствие протоколов в расширениях с nonisolated объявлениями, отсоединенные задачи, Sendable (возможность отправки), соответствие и MainActor.
+Эти сессии специфичны для SwiftUI:
+Demystify SwiftUI: получите вдохновение, чтобы проверить весь свой код SwiftUI на неэффективность. Много милых фотографий собак и кошек.
+Discover concurrency in SwiftUI: эта сессия содержит ценные советы по использованию структурированной многопоточности в приложении SwiftUI (SpacePhoto).
+Эти беседы преследуют несколько конкретных целей:
+Meet AsyncSequence
+Use async/await with URLSession: в этой сессии рассматриваются методы защиты и сброса, загрузки и загрузки, отмена, AsyncSequence и AuthenticationDelegate. Много милых изображений собак.
+Bring Core Data concurrency to Swift and SwiftUI
+Выделите побольше времени для этих более глубоких погружений или смотрите их частями по 10-15 минут:
+Swift concurrency: Update a sample app: обновите пример приложения: эта сессия — настоящее золото! Докладчик Ben Cohen является менеджером по обзору предложения Swift Evolution SE-0304 Structured Concurrency.
+Swift concurrency: Behind the scenes: за кулисами: эта сессия подробно рассказывает о взрывном росте потоков, совместном пуле потоков, продолжениях, асинхронных кадрах.
+Melbourne Cocoaheads
+И, наконец, два важных вклада моих коллег из Melbourne Cocoaheads.
+How to test Swift async/await code with XCTest от Джованни Лоди. Это дополнение к его презентации (начало 46:32).
+CombineAsyncually от Роба Амоса. Это сопутствующий репозиторий для его presentation (сразу после презентации Джио, на 1:17:27), где он демонстрирует, как вы можете соединить новую функциональность async/await с Combine.
+Надеюсь, вам понравился этот туториал! Многопоточность Swift меняет правила игры, и она все еще развивается. Есть чему поучиться, поэтому найдите время, чтобы изучить его, даже если вы не сможете использовать его в течение нескольких лет.
+ 
+Ссылка на оригинал статьи
+Комментарии Отменить ответДля отправки комментария вам необходимо авторизоваться. 
+ 
+SwiftBook Самое крупное сообщество iOS разработчиков на языке Swift
+О нас
+Мы в социальных сетяхYouTubeVKontakteFacebookЧат_Telegram
+instagramПолезноеPodlodka
+Подпишись на новости 
+   Политика конфиденциальности
+Пользовательское соглашение
+Найти:
+  © Акулов И.Б., 2014-2021      
+ 
+Сообщить об опечатке
+Текст, который будет отправлен нашим редакторам:
+Ваш комментарий (необязательно):
+Отправить
+Отмена
