@@ -1,26 +1,20 @@
 Query: манипулировать
-Document: 072.txt, Score: 0.014726574565501655
-Document: 077.txt, Score: 0.01071611780307728
-Document: 032.txt, Score: 0.01071611780307728
-Document: 078.txt, Score: 0.01071611780307728
-Document: 064.txt, Score: 0.00031415185161804386
+Document: 064.txt, Score: 0.013679125579874338
+Document: 031.txt, Score: 0.007035517777516202
+Document: 055.txt, Score: 0.00032137269572921604
 
 Query: манипулировать середина
-Document: 023.txt, Score: 0.021959090555029183
-Document: 077.txt, Score: 0.014692202957200907
-Document: 032.txt, Score: 0.014692202957200907
-Document: 078.txt, Score: 0.014692202957200907
-Document: 072.txt, Score: 0.010734797010869355
-Document: 030.txt, Score: 0.01005797937441261
-Document: 064.txt, Score: 0.0012367130786633835
+Document: 022.txt, Score: 0.0208163452627194
+Document: 064.txt, Score: 0.009914993350889946
+Document: 031.txt, Score: 0.009707751246538412
+Document: 029.txt, Score: 0.008202671609608268
+Document: 055.txt, Score: 0.0012780953612589827
 
 Query: манипулировать середина декодирование
-Document: 077.txt, Score: 0.02349355061296214
-Document: 032.txt, Score: 0.02349355061296214
-Document: 078.txt, Score: 0.02349355061296214
-Document: 023.txt, Score: 0.018119901362779415
-Document: 072.txt, Score: 0.01667207302159833
-Document: 030.txt, Score: 0.008299505560875178
-Document: 068.txt, Score: 0.003961495023932943
-Document: 064.txt, Score: 0.0013551350766349407
+Document: 022.txt, Score: 0.017142078072089645
+Document: 031.txt, Score: 0.015583907772839568
+Document: 064.txt, Score: 0.015540987667207769
+Document: 029.txt, Score: 0.006754828254287377
+Document: 060.txt, Score: 0.004060901426496574
+Document: 055.txt, Score: 0.0013983797748161227
 
